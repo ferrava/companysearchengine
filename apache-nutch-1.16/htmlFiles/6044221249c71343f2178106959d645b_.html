@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="de" class="unknown other ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>home - gruetter-schwarz ag</title>
+<base href="http://www.kuechen-creation.ch/">
+
+<meta name="robots" content="index,follow">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="generator" content="Contao Open Source CMS">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<link rel="shortcut icon" href="files/cto_layout/img/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="files/cto_layout/img/apple-touch-icon.png">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="files/cto_layout/scripts/selectivizr-min.js"></script>
+<![endif]-->
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">$.noConflict();</script>
+<!--<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-tools/1.2.7/jquery.tools.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="assets/js/bf0510ec8dd1.js"></script>
+<script src="files/cto_layout/scripts/scripts.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- google fonts start -->
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic' rel='stylesheet' type='text/css'>
+<!-- google fonts end -->
+
+<link rel="stylesheet" type="text/css" media="screen" href="assets/css/a025ff542f38.css">
+
+<link rel="stylesheet" href="system/modules/con4gis_core/lib/wswgEditor/css/editor.css">
+<link rel="stylesheet" href="system/modules/con4gis_core/lib/wswgEditor/css/bbcodes.css">
+<link rel="stylesheet" href="files/cto_layout/scripts/rs-plugin/css/settings.css">
+<link rel="stylesheet" href="system/modules/pct_revolutionslider/assets/css/styles.css">
+<link rel="stylesheet" href="system/modules/pct_articlewrapper/assets/css/styles.css">
+<link rel="stylesheet" href="system/modules/con4gis_maps/html/css/C4GLayerSwitcher.css">
+<link rel="stylesheet" href="files/cto_layout/css/icons.min.css">
+<link rel="stylesheet" href="system/modules/pct_customelements/assets/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/cdac5f75570c.css">
+<link rel="stylesheet" type="text/css" href="files/cto_layout/css/styles.css" media="screen">
+<link rel="stylesheet" type="text/css" href="files/cto_layout/css/customize.css" media="screen">
+
+<script src="system/modules/con4gis_core/lib/wswgEditor/editor.js"></script>
+<script src="files/cto_layout/scripts/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="files/cto_layout/scripts/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script src="system/modules/con4gis_maps/html/OpenLayers-2.13.1/OpenLayers.js"></script>
+<script src="system/modules/con4gis_maps/html/js/C4GMaps.js"></script>
+<script>var c4g_rq = '';</script>
+<script>var apiBaseUrl = 'system/modules/con4gis_core/api/index.php';</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+
+/**
+ * Revolution Slider Template file
+ * For more settings see: http://www.orbis-ingenieria.com/code/documentation/documentation.html#!/documenter_cover
+ */
+jQuery(document).ready(function() 
+{	
+	// add class tp-resizeme to nested elements
+	jQuery('.my_revolutionslider_1575318887').find('.tp-caption,.caption').find('*').addClass('tp-resizeme');
+	
+	// init slider  
+	jQuery('.my_revolutionslider_1575318887').show().revolution({
+		// general settings
+		delay:				6000,
+		startwidth:			1280,
+		startheight:		853,
+		startWithSlide:		0,
+		
+				// fullwidth
+		fullWidth:"on",
+		forceFullWidth:"off",
+				
+				
+		// add controls
+		navigationType:		'bullet',
+		navigationStyle:	'square-old',
+		navigationArrows:	'solo',
+			
+		// thumbnails
+				
+		touchenabled:"on",
+		onHoverStop: 		'off',
+		
+		swipe_velocity: 0.7,
+		swipe_min_touches: 1,
+		swipe_max_touches: 1,
+		drag_block_vertical: false,
+		
+		// arrow navigation alignment
+		soloArrowLeftHalign:"left",
+		soloArrowLeftValign:"center",
+		soloArrowLeftHOffset:20,
+		soloArrowLeftVOffset:0,
+		
+		soloArrowRightHalign:"right",
+		soloArrowRightValign:"center",
+		soloArrowRightHOffset:20,
+		soloArrowRightVOffset:0,
+		
+		// lopp settings
+		stopAtSlide: -1,
+		stopAfterLoops: -1,
+		
+		// shuffle
+				
+		// overlay
+				
+		shadow:0
+	});
+});
+
+/* ]]> */
+</script>
+
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+
+/**
+ * Fix the z-index bug
+ */
+jQuery(document).ready(function() 
+{
+	var api = jQuery('.my_revolutionslider_1575318887').revolution();
+	api.revolution().bind("revolution.slide.onchange",function (e) 
+	{
+		var arrSlides = jQuery(slider).find('.slide');
+		if(arrSlides == undefined || arrSlides.length < 1)
+		{
+			return;
+		}
+		
+		var index  = Math.round(api.revcurrentslide() + 1);
+		if(index >= api.revmaxslide())
+		{
+			index = 0;
+		}
+		
+		arrSlides.css('z-index',10);
+		jQuery(arrSlides[index]).css({'z-index':20});
+	});
+});
+
+/* ]]> */
+</script>
+
+</head>
+
+<body class="unknown other  home full_width  aw_active">
+<!--[if lt IE 9]><p id="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p><![endif]-->
+
+	<div id="off_canvas" class="pushy pushy-left">
+		
+<!-- indexer::stop -->
+<nav class="mod_navigation block">
+
+  
+  <a href="#skipNavigation8" class="invisible">Navigation überspringen</a>
+
+  <ul  class="vlist level_1">
+            <li class="trail sibling first"><a href="index.php/home.html" title="home" class="trail sibling first">home</a></li>
+                <li class="sibling"><a href="index.php/bildergalerien.html" title="bildergalerien" class="sibling">bildergalerien</a></li>
+                <li class="sibling"><a href="index.php/newsletter.html" title="newsletter" class="sibling">newsletter</a></li>
+                <li class="sibling"><a href="index.php/kontakt.html" title="kontakt" class="sibling">kontakt</a></li>
+                <li class="sibling last"><a href="index.php/impressum.html" title="impressum" class="sibling last">impressum</a></li>
+            </ul>
+    
+  <a id="skipNavigation8" class="invisible">&nbsp;</a>
+
+</nav>
+<!-- indexer::continue -->
+
+<div class="mod_sprachwechsler block">
+
+
+
+
+
+
+</div>
+<!-- indexer::stop -->
+<nav class="mod_customnav block">
+
+  
+  <a href="#skipNavigation7" class="invisible">Navigation überspringen</a>
+
+  <ul  class="vlist level_1">
+            <li class="first last"><a href="index.php/impressum.html" title="impressum" class="first last">impressum</a></li>
+            </ul>
+    
+  <a id="skipNavigation7" class="invisible">&nbsp;</a>
+
+</nav>
+<!-- indexer::continue -->
+<div class="offcanvas_address block">
+	</div>	</div>
+
+<div class="site-overlay"></div>
+
+<div id="contentwrapper">
+	
+	<div id="headeroffset">
+				<header id="header">
+			<div class="inside">
+				
+<!-- indexer::stop -->
+<nav class="mod_navigation mainmenu block">
+
+  
+  <a href="#skipNavigation6" class="invisible">Navigation überspringen</a>
+
+  <ul  class="vlist level_1">
+
+    
+	<li class="trail sibling first">
+  		 	      									<a href="index.php/home.html" title="home" class="trail sibling first">home</a>
+						  		</li>
+
+  
+    
+	<li class="sibling">
+  		 	      									<a href="index.php/bildergalerien.html" title="bildergalerien" class="sibling">bildergalerien</a>
+						  		</li>
+
+  
+    
+	<li class="sibling">
+  		 	      									<a href="index.php/newsletter.html" title="newsletter" class="sibling">newsletter</a>
+						  		</li>
+
+  
+    
+	<li class="sibling">
+  		 	      									<a href="index.php/kontakt.html" title="kontakt" class="sibling">kontakt</a>
+						  		</li>
+
+  
+    
+	<li class="sibling last">
+  		 	      									<a href="index.php/impressum.html" title="impressum" class="sibling last">impressum</a>
+						  		</li>
+
+  </ul>
+
+  <a id="skipNavigation6" class="invisible">&nbsp;</a>
+
+</nav>
+<!-- indexer::continue -->
+
+<div class="menu-btn" id="nav-open-btn">
+   <div class="menu-btn-inside"><span class="line"></span></div>
+</div>				<div class="metaheader"><div class="inside">
+<div class="mod_sprachwechsler block">
+
+
+
+
+
+
+</div></div></div>				<div class="clear"></div>
+			</div>
+		</header>
+			</div>
+	
+	<div id="header_after">
+		<div class="inside"></div>
+	</div>
+	
+	<div id="wrapper">
+				<div id="container">
+			<div id="container-inside" class="inside">
+								<section id="main">
+					<div class="inside">
+<div class="mod_article first block" id="slider">
+
+  
+  
+<div class="ce_revolutionslider first last block">
+
+<div class="rs-container responsive block">
+
+
+<div  class="banner  responsive tp-banner fullwidthbanner-container my_revolutionslider_1575318887 odd odd odd odd block">
+<ul>
+<li  class=" slide slide_0 even first" data-transition="fade" data-slotamount="4" data-masterspeed="30" data-title="Slide_0">
+		<img src="files/slider/slider_0.jpg" width="1280" height="853" alt="" title="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">	</li>
+<li  class=" slide slide_1" data-transition="fade" data-slotamount="4" data-masterspeed="30" data-title="Slide_1">
+		<img src="files/slider/slider_1.jpg" width="1280" height="853" alt="" title="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">	</li>
+<li  class=" slide slide_2 even" data-transition="fade" data-slotamount="4" data-masterspeed="30" data-title="Slide_2">
+		<img src="files/slider/slider_2.jpg" width="1280" height="853" alt="" title="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">	</li>
+<li  class=" slide slide_3" data-transition="fade" data-slotamount="4" data-masterspeed="30" data-title="Slide_3">
+		<img src="files/slider/slider_3.jpg" width="1280" height="853" alt="" title="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">	</li>
+<li  class=" slide slide_4 even" data-transition="fade" data-slotamount="4" data-masterspeed="30" data-title="Slide_4">
+		<img src="files/slider/slider_4.jpg" width="1280" height="853" alt="" title="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">	</li>
+<li  class=" slide slide_5" data-transition="fade" data-slotamount="4" data-masterspeed="30" data-title="Slide_5">
+		<img src="files/slider/slider_5.jpg" width="1280" height="853" alt="" title="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">	</li>
+<li  class=" slide slide_6 even" data-transition="fade" data-slotamount="4" data-masterspeed="30" data-title="Slide_6">
+		<img src="files/slider/slider_6.jpg" width="1280" height="853" alt="" title="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">	</li>
+<li  class=" slide slide_7 last" data-transition="fade" data-slotamount="4" data-masterspeed="30" data-title="Slide_7">
+		<img src="files/slider/slider_7.jpg" width="1280" height="853" alt="" title="" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">	</li>
+</ul>
+<div class="tp-bannertimer"></div>
+</div>
+</div>
+
+</div>
+  
+</div>
+<div id="wrap_companies" class="first even articlewrapper fullwidth typ1 articlewrapper_4 block" style="padding-top:40px; padding-bottom:40px;">
+	<div class="inside">
+	
+<div class="mod_article articlewrapper-id_4 first even block" id="companies">
+
+  
+  <div id="autogrid_wrapper_3" class="autogrid_wrapper cte block no_gutter"><div class="inner same-height">
+<div class="ce_text-mit-bild-erweitert autogrid-id_3 autogrid-type_cte autogrid-first n3 one_third autogrid_mode_auto autogrid same-height no_gutter first block">
+
+<div class="customelement_layout_text_bild block standard fontsize_default txt_left" >
+				
+	
+	<div class="ext_txtpic float_left">
+		
+								<div data-animate="keine" class="ext_txtpic_bild ext_ce_image_oben ext_ce_frame_0 ext_ce_noeffect " style="">
+				<a href="index.php/home.html#anchor_team">				<div class="image_container"><img src="files/layout/logo_gwag.jpg"  width="429" height="115" alt=""></div>
+				</a>			</div>
+						
+			<div data-animate="keine" class="ext_txtpic_text ext_ce_text_oben" style="">
+								
+							</div>
+		
+				
+	</div>
+</div>
+</div>
+<div class="ce_text-mit-bild-erweitert autogrid-id_4 autogrid-type_cte n3 one_third autogrid_mode_auto autogrid no_gutter block">
+
+<div class="customelement_layout_text_bild block standard fontsize_default txt_left" >
+				
+	
+	<div class="ext_txtpic float_left">
+		
+								<div data-animate="keine" class="ext_txtpic_bild ext_ce_image_oben ext_ce_frame_0 ext_ce_noeffect " style="">
+				<a href="index.php/home.html#anchor_team">				<div class="image_container"><img src="files/layout/logo_schwarzag.jpg"  width="429" height="115" alt=""></div>
+				</a>			</div>
+						
+			<div data-animate="keine" class="ext_txtpic_text ext_ce_text_oben" style="">
+								
+							</div>
+		
+				
+	</div>
+</div>
+</div>
+<div class="ce_text-mit-bild-erweitert autogrid-id_5 autogrid-type_cte autogrid-last n3 one_third autogrid_mode_auto autogrid same-height no_gutter last block">
+
+<div class="customelement_layout_text_bild block standard fontsize_default txt_left" >
+				
+	
+	<div class="ext_txtpic float_left">
+		
+								<div data-animate="keine" class="ext_txtpic_bild ext_ce_image_oben ext_ce_frame_0 ext_ce_noeffect " style="">
+				<a href="index.php/home.html#anchor_team">				<div class="image_container"><img src="files/layout/logo_kcag.jpg"  width="429" height="115" alt=""></div>
+				</a>			</div>
+						
+			<div data-animate="keine" class="ext_txtpic_text ext_ce_text_oben" style="">
+								
+							</div>
+		
+				
+	</div>
+</div>
+</div><div class="clear autogrid_clear"></div></div><div class="clear autogrid_clear"></div></div>
+  
+</div>
+	</div>
+</div><div id="wrap_generalunternehmen" class="odd articlewrapper fullwidth_contentboxed typ1 articlewrapper_9 block" style="padding-top:40px; padding-bottom:40px;">
+	<div class="inside">
+	
+<div class="mod_article articlewrapper-id_9 odd block" id="generalunternehmen">
+
+  
+  
+<h1 class="ce_headline first">
+  Ihr Rundum-Umbauer</h1>
+
+<div class="ce_text block">
+
+  
+  
+      <p>Über 20 Jahre Erfahrung, 3 Firmen, 1 Ansprechpartner: Grütter + Willi AG, Schreinerei Schwarz AG und Küchen Création AG sind die Spezialisten für Ihr Bauvorhaben. Wir bieten Ihnen – mit 30 Mitarbeitenden unter einem Dach – professionelle Dienstleistungen aus einer Hand an – vom einfachen Küchen- oder Badezimmerumbau bis zur komplexen Gesamtsanierung von Ein- und Mehrfamilienhäusern.</p>  
+  
+  
+
+</div>
+
+<div class="ce_hyperlink-extended last block">
+
+<div class="ce_hyperlink block small style2_dark  left">
+	<a href="index.php/von-a-bis-zufriedenheit.html" class="icon-ok-1" title="VON A BIS ZUFRIEDENHEIT">
+		VON A BIS ZUFRIEDENHEIT	</a>
+</div>
+
+
+
+</div>
+  
+</div>
+	</div>
+</div><div id="wrap_bildergalerie-36" class="even articlewrapper fullwidth_contentboxed typ5 articlewrapper_36 block" style="padding-top:40px; padding-bottom:40px;">
+	<div class="inside">
+	
+<div class="mod_article articlewrapper-id_36 even block" id="bildergalerie-36">
+
+  
+  
+	
+
+<div class="autogrid_wrapper cte block">
+		
+		<div class="ce_autogridWrapperStart ce_autogridwrapper first three_fourth autogrid block">
+		<div class="inside">
+				
+	
+	
+
+
+<div class="ce_text block" style="margin-top:10px; margin-bottom:24px;">
+
+  
+  
+      <h4>Lassen Sie sich in unserer Fotogalerie und unserer Multimediabroschüre inspirieren.</h4>  
+  
+  
+
+</div>
+
+<div class="ce_text-mit-bild-erweitert block">
+
+<div class="customelement_layout_text_bild block standard fontsize_default txt_left" >
+				
+	
+	<div class="ext_txtpic float_left">
+		
+								<div data-animate="fadeInRight" class="ext_txtpic_bild ext_ce_image_oben ext_ce_frame_0 ext_ce_noeffect  animate" style="">
+				<a href="index.php/bildergalerien.html">				<div class="image_container"><img src="files/img/bildergalerien.png"  width="800" height="186" alt=""></div>
+				</a>			</div>
+						
+			<div data-animate="keine" class="ext_txtpic_text ext_ce_text_oben" style="">
+								
+							</div>
+		
+				
+	</div>
+</div>
+</div>
+<div class="ce_hyperlink-extended block" style="margin-top:20px;">
+
+<div class="ce_hyperlink block small style2_dark  left">
+	<a href="index.php/bildergalerien.html" class="icon-picture" title="ICH MÖCHTE DIE BILDER ANSCHAUEN">
+		ICH MÖCHTE DIE BILDER ANSCHAUEN	</a>
+</div>
+
+
+
+</div>
+	
+
+
+	
+			</div></div>
+	
+
+
+	
+
+
+		
+		<div class="ce_autogridWrapperStart ce_autogridwrapper one_fourth autogrid block">
+		<div class="inside">
+				
+	
+	
+
+
+<div class="ce_text-mit-bild-erweitert block">
+
+<div class="customelement_layout_text_bild block standard fontsize_default txt_left" >
+				
+	
+	<div class="ext_txtpic float_left">
+		
+								<div data-animate="slideInRight" class="ext_txtpic_bild ext_ce_image_oben ext_ce_frame_0 ext_ce_noeffect  animate" style="">
+				<a href="http://www.unserebroschuere.ch/guetter/DemoView">				<div class="image_container"><img src="files/img/multimediabroschuere.png"  width="216" height="300" alt=""></div>
+				</a>			</div>
+						
+			<div data-animate="keine" class="ext_txtpic_text ext_ce_text_oben" style="">
+								
+							</div>
+		
+				
+	</div>
+</div>
+</div>
+<div class="ce_hyperlink-extended block" style="margin-top:20px;">
+
+<div class="ce_hyperlink block small style2_dark  left">
+	<a href="http://www.unserebroschuere.ch/guetter/DemoView" class="icon-picture-1" target="_blank" title="UNSERE MULTIMEDIABROSCHÜRE">
+		UNSERE MULTIMEDIABROSCHÜRE	</a>
+</div>
+
+
+
+</div>
+	
+
+
+	
+			</div></div>
+	
+<div class="autogrid clear"></div></div>
+
+  
+</div>
+	</div>
+</div><div id="wrap_news" class="odd articlewrapper fullwidth_contentboxed typ6 articlewrapper_43 block" style="padding-top:40px; padding-bottom:80px;">
+	<div class="inside">
+	
+<div class="mod_article articlewrapper-id_43 odd block" id="news">
+
+  
+  
+<h1 class="ce_headline first">
+  News</h1>
+
+<div class="ce_newsbox block" style="margin-bottom:50px;">
+
+<div data-animate="" class="colorbox block dark animate"  style="background-color: #f3f3f3">
+	<div class="colorbox_content">
+		<h6 class=""><span>Kennen Sie schon den «Wasserhahn der alles kann»?</span></h6>		<p>
+<div  class="ce_image attribute image">
+<div class="ce_image block">
+
+  
+  
+  <figure class="image_container">
+
+    
+    
+
+<img src="files/newsletter/014_PI-Quooker_Cube_Alleskoenner.jpg" width="600" height="428" alt="">
+
+
+
+    
+    
+  </figure>
+
+
+</div>
+</div>
+</p>		<p>Wenn nicht, dann besuchen Sie uns doch in unserer Küchen-Ausstellung an der Bielstrasse 109 in Solothurn.<br><strong>An der HESO vom 20. – 29.09.19</strong> werden wir Ihnen den Quooker Flex gerne <strong>vorführen</strong>.</p>
+<p>Der <strong>Quooker Flex</strong> bieten Ihnen vieles…. <strong>der Alleskönner!<br></strong>Weitere Informationen finden Sie im Internet unter<strong> <a href="https://www.quooker.ch/chde" target="_blank">www.quooker.ch/chde</a>.</strong></p>			</div>
+</div>
+</div>
+<div class="ce_newsbox block" style="margin-bottom:50px;">
+
+<div data-animate="" class="colorbox block dark animate"  style="background-color: #f3f3f3">
+	<div class="colorbox_content">
+		<h6 class=""><span>Ist eine Schraube locker?</span></h6>				<p>...oder steht sonst eine Reparatur in Ihrer Wohnung oder um Ihr Haus an, dann zögern Sie nicht uns anzurufen!</p>
+<p>Unser Service-Team ist für Sie vor Ort:</p>
+<table style="max-width: 600px; background-color: #aaaaaa;">
+<tbody>
+<tr>
+<td style="vertical-align: top; width: 290px; text-align: right; padding-left: 10px;"><img src="files/newsletter/013_heinz_dellenbach.jpg" alt="Heinz Dellenbach" width="280"></td>
+<td style="width: 30px; text-align: center;">&nbsp;</td>
+<td style="vertical-align: top; text-align: center; width: 280px; padding-right: 10px;"><img src="files/newsletter/013_franco_perez.jpg" alt="Franco Perez" width="280"></td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: center;">Heinz Dellenbach</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="vertical-align: top; text-align: center;">Franco Perez</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Auch zum Thema Einbruchschutz kann Sie unser Team bestens beraten. Sei es ein nachrüsten der Hauseingangstüre oder der Fenster, sowie alle anderen Sicherheitsfragen.</strong></p>
+<p>Sollten Sie ein Newsletter verpasst haben, oder wurde er nicht richtig angezeigt, dann besuchen Sie unsere Homepage. Unter der <a title="weiter zur Rubrik Newsletter" href="index.php/newsletter.html">Rubrik Newsletter</a> finden Sie alle News.</p>			</div>
+</div>
+</div>
+<div class="ce_newsbox block" style="margin-bottom:50px;">
+
+<div data-animate="" class="colorbox block dark animate"  style="background-color: #f3f3f3">
+	<div class="colorbox_content">
+		<h6 class=""><span>Ist ein Plättli lose oder sogar defekt?</span></h6>		<p>
+<div  class="ce_image attribute image">
+<div class="ce_image block">
+
+  
+  
+  <figure class="image_container">
+
+    
+    
+
+<img src="files/newsletter/011_Lose_Plaettli.jpg" width="600" height="300" alt="">
+
+
+
+    
+    
+  </figure>
+
+
+</div>
+</div>
+</p>		<p>Trift diese Frage in Ihrem gesamten Wohnbereich zu, dann rufen Sie uns an, wir beheben den Schaden gerne für Sie.</p>
+<p>Unser Team mit <strong>Daniel Kocher</strong> ist für Sie vor Ort.</p>
+<p><strong>Zudem realisieren wir vom Teilumbau bis zur Komplettsanierung, von der Planung bis zum letzten Pinselstrich. Wir bauen unter anderem Badzimmer nach Wunsch und mit Wohlfühlgarantie.</strong></p>			</div>
+</div>
+</div>
+<div class="ce_newsbox block" style="margin-bottom:50px;">
+
+<div data-animate="" class="colorbox block dark animate"  style="background-color: #f3f3f3">
+	<div class="colorbox_content">
+		<h6 class=""><span>Ist Ihre Küche noch fit?</span></h6>		<p>
+<div  class="ce_image attribute image">
+<div class="ce_image block">
+
+  
+  
+  <figure class="image_container">
+
+    
+    
+
+<img src="files/newsletter/010_Kueche.jpg" width="600" height="356" alt="">
+
+
+
+    
+    
+  </figure>
+
+
+</div>
+</div>
+</p>		<p>Wenn nicht, dann zögern Sie nicht uns anzurufen, wir zeigen Ihnen wie Sie Ihre Küche wieder fit bringen. Oder planen Sie sogar eine neue Küche?</p>
+<p>Wir beraten Sie gerne bei Ihnen zu Hause oder in unserer Ausstellung an der Bielstrasse 109 in Solothurn. Anschliessend erhalten Sie eine kostenlose Offerte mit einer farbigen 3D–Darstellung.</p>			</div>
+</div>
+</div>
+<div class="ce_newsbox last block">
+
+<div data-animate="" class="colorbox block dark animate"  style="background-color: #f3f3f3">
+	<div class="colorbox_content">
+		<h6 class=""><span>Kondenswasser am Fenster verhindern</span></h6>		<p>
+<div  class="ce_image attribute image">
+<div class="ce_image block">
+
+  
+  
+  <figure class="image_container">
+
+    
+    
+
+<img src="files/newsletter/009_Kondenswasser.jpg" width="600" height="240" alt="">
+
+
+
+    
+    
+  </figure>
+
+
+</div>
+</div>
+</p>		<p>Geschätzte Kunden</p>
+<p><strong>Sollten Sie Probleme mit Kondenswasser im Fensterbereich haben, empfehlen Ihnen das <a title="Merkblatt " href="files/newsletter/1901_Kondenswasser am Fenster verhindern - GVB Hausinfo.pdf" target="_blank">Merkblatt zur Abhilfe.</a></strong></p>
+<p>Bei weiteren Fragen zu Kondenswasser oder sonstigen Baufragen, kontaktieren Sie uns, wir helfen Ihnen gerne weiter.</p>			</div>
+</div>
+</div>
+  
+</div>
+	</div>
+</div><div id="wrap_das-fuehrungsteam" class="even articlewrapper fullwidth_contentboxed typ4 articlewrapper_23 block" style="padding-top:40px; padding-bottom:40px;">
+	<div class="inside">
+	
+<div class="mod_article articlewrapper-id_23 even block" id="das-fuehrungsteam">
+
+  
+  
+<div class="ce_text first block">
+
+  
+  
+      <p><a name="anchor_team"></a></p>  
+  
+  
+
+</div>
+
+<h1 class="ce_headline">
+  Das Führungsteam</h1>
+<div id="autogrid_wrapper_77" class="autogrid_wrapper cte block"><div class="inner">
+<div class="ce_text autogrid-id_77 autogrid-type_cte n3 one_third autogrid-first blockgrid_start autogrid block">
+
+  
+  
+      <p><a name="placeholder"></a></p>  
+  
+  
+
+</div>
+
+<div class="ce_team autogrid-id_93 autogrid-type_cte n3 one_third autogrid block">
+
+<div class="customelement_layout_team block" >
+
+	<figure class="image_container">
+		<img src="files/team/glutz_christian.jpg"  width="600" height="600" alt="">				<div class="overlay_content">
+			<div class="email"><a href="mailto:ch.glutz@gruetter-schwarz.ch"><i class="icon-mail-1"></i></a></div>
+		</div>
+			</figure>
+	<div class="teambox_content">
+				<div class="name">Christian Glutz | VRP</div>
+		<div class="beschreibung"><p>Geschäftsführer<br>Gruppe</p></div>	</div>
+
+</div>
+</div>
+<div class="ce_text autogrid-id_91 autogrid-type_cte n3 one_third autogrid-last blockgrid_stop autogrid block">
+
+  
+  
+      <p><a name="placeholder"></a></p>  
+  
+  
+
+</div>
+<div class="clear autogrid_clear"></div></div><div class="clear autogrid_clear"></div></div><div id="autogrid_wrapper_80" class="autogrid_wrapper cte block"><div class="inner same-height">
+<div class="ce_team autogrid-id_80 autogrid-type_cte n3 one_third autogrid-first blockgrid_start autogrid break same-height block">
+
+<div class="customelement_layout_team block" >
+
+	<figure class="image_container">
+		<img src="files/team/kocher_daniel.jpg"  width="600" height="600" alt="">				<div class="overlay_content">
+			<div class="email"><a href="mailto:d.kocher@gruetter-schwarz.ch"><i class="icon-mail-1"></i></a></div>
+		</div>
+			</figure>
+	<div class="teambox_content">
+				<div class="name">Daniel Kocher | VR</div>
+		<div class="beschreibung"><p>Geschäftsführer<br>Grütter + Willi AG</p></div>	</div>
+
+</div>
+</div>
+<div class="ce_team autogrid-id_81 autogrid-type_cte n3 one_third autogrid same-height block">
+
+<div class="customelement_layout_team block" >
+
+	<figure class="image_container">
+		<img src="files/team/tabone_pater.jpg"  width="600" height="600" alt="">				<div class="overlay_content">
+			<div class="email"><a href="mailto:peter.tabone@kuechen-creation.ch"><i class="icon-mail-1"></i></a></div>
+		</div>
+			</figure>
+	<div class="teambox_content">
+				<div class="name">Peter Tabone | VR</div>
+		<div class="beschreibung"><p>Geschäftsführer<br>Küchen Création AG</p></div>	</div>
+
+</div>
+</div>
+<div class="ce_team autogrid-id_84 autogrid-type_cte n3 one_third autogrid-last blockgrid_stop autogrid same-height block">
+
+<div class="customelement_layout_team block" >
+
+	<figure class="image_container">
+		<img src="files/team/wenger_michael.jpg"  width="600" height="600" alt="">				<div class="overlay_content">
+			<div class="email"><a href="mailto:m.wenger@gruetter-schwarz.ch"><i class="icon-mail-1"></i></a></div>
+		</div>
+			</figure>
+	<div class="teambox_content">
+				<div class="name">Michael Wenger</div>
+		<div class="beschreibung"><p>Betriebsleiter<br>Schreinerei Schwarz AG</p></div>	</div>
+
+</div>
+</div><div class="clear autogrid_clear"></div></div><div class="clear autogrid_clear"></div></div>
+<h1 class="ce_headline" style="margin-top:40px;">
+  Die Senioren</h1>
+<div id="autogrid_wrapper_82" class="autogrid_wrapper cte block"><div class="inner same-height">
+<div class="ce_team autogrid-id_82 autogrid-type_cte n3 one_third autogrid-first blockgrid_start autogrid break same-height block">
+
+<div class="customelement_layout_team block" >
+
+	<figure class="image_container">
+		<img src="files/team/gruetter_urs.jpg"  width="600" height="600" alt="">				<div class="overlay_content">
+			<div class="email"><a href="mailto:u.gruetter@gruetter-schwarz.ch"><i class="icon-mail-1"></i></a></div>
+		</div>
+			</figure>
+	<div class="teambox_content">
+				<div class="name">Urs Grütter | VR</div>
+			</div>
+
+</div>
+</div>
+<div class="ce_team autogrid-id_83 autogrid-type_cte n3 one_third autogrid-last blockgrid_stop autogrid same-height last block">
+
+<div class="customelement_layout_team block" >
+
+	<figure class="image_container">
+		<img src="files/team/willi_peter.jpg"  width="600" height="600" alt="">				<div class="overlay_content">
+			<div class="email"><a href="mailto:p.willi@gruetter-schwarz.ch"><i class="icon-mail-1"></i></a></div>
+		</div>
+			</figure>
+	<div class="teambox_content">
+				<div class="name">Peter Willi | VR</div>
+			</div>
+
+</div>
+</div><div class="clear autogrid_clear"></div></div><div class="clear autogrid_clear"></div></div>
+  
+</div>
+	</div>
+</div><div id="wrap_adresse_kontaktformular" class="odd articlewrapper fullwidth_contentboxed typ1 articlewrapper_7 block" style="padding-top:40px; padding-bottom:100px;">
+	<div class="inside">
+	
+<div class="mod_article articlewrapper-id_7 odd block" id="adresse_kontaktformular">
+
+  
+  
+<div class="ce_text first block">
+
+  
+  
+      <p><a name="anchor_beratung"></a></p>  
+  
+  
+
+</div>
+
+<h1 class="ce_headline">
+  Kontakt</h1>
+
+<h3 class="ce_headline">
+  Die Anschrift</h3>
+<div id="autogrid_wrapper_19" class="autogrid_wrapper cte block"><div class="inner">
+<div class="ce_text autogrid-id_19 autogrid-type_cte n3 one_third autogrid-first blockgrid_start autogrid border-inner block">
+
+  
+  
+      <p><strong>Grütter + Willi AG</strong><br>Umbau und Renovationen<br>Witmattstrasse 16<br>2540 Grenchen</p>
+<p>Tel &nbsp;032 654 24 24</p>
+<p><a title="E-Mail" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#x66;&#x6F;&#x40;&#x67;&#114;&#117;&#101;&#x74;&#116;&#x65;&#114;&#x2D;&#115;&#x63;&#x68;&#x77;&#97;&#x72;&#122;&#46;&#x63;&#104;">&#105;&#110;&#x66;&#x6F;&#x40;&#x67;&#114;&#117;&#101;&#x74;&#116;&#x65;&#114;&#x2D;&#115;&#x63;&#x68;&#x77;&#97;&#x72;&#122;&#46;&#x63;&#104;</a><br><a title="Website" href="http://www.gruetter-schwarz.ch/">www.gruetter-schwarz.ch</a></p>  
+  
+  
+
+</div>
+
+<div class="ce_text autogrid-id_20 autogrid-type_cte n3 one_third autogrid border-inner block">
+
+  
+  
+      <p><strong>Schreinerei Schwarz AG</strong><br>Witmattstrasse 16<br>2540 Grenchen</p>
+<p>Tel &nbsp;032 654 24 24</p>
+<p><a title="E-Mail" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#x6F;&#x40;&#103;&#114;&#x75;&#x65;&#x74;&#116;&#101;&#x72;&#45;&#115;&#99;&#x68;&#x77;&#97;&#114;&#x7A;&#x2E;&#99;&#104;">&#105;&#110;&#102;&#x6F;&#x40;&#103;&#114;&#x75;&#x65;&#x74;&#116;&#101;&#x72;&#45;&#115;&#99;&#x68;&#x77;&#97;&#114;&#x7A;&#x2E;&#99;&#104;</a><br><a title="Website" href="http://www.gruetter-schwarz.ch/">www.gruetter-schwarz.ch</a><br>&nbsp;</p>  
+  
+  
+
+</div>
+
+<div class="ce_text autogrid-id_26 autogrid-type_cte n3 one_third autogrid-last blockgrid_stop autogrid border-inner block">
+
+  
+  
+      <p><strong>Küchen Création AG</strong><br>Bielstrasse 109<br>4500 Solothurn</p>
+<p>Tel &nbsp;032 621 20 70</p>
+<p><a title="E-Mail" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#x69;&#x6E;&#x66;&#111;&#64;&#x6B;&#117;&#x65;&#x63;&#x68;&#101;&#x6E;&#x2D;&#99;&#x72;&#x65;&#97;&#x74;&#105;&#111;&#x6E;&#x2E;&#x63;&#104;">&#x69;&#x6E;&#x66;&#111;&#64;&#x6B;&#117;&#x65;&#x63;&#x68;&#101;&#x6E;&#x2D;&#99;&#x72;&#x65;&#97;&#x74;&#105;&#111;&#x6E;&#x2E;&#x63;&#104;</a><br><a title="Website" href="http://www.kuechen-creation.ch" target="_blank">www.kuechen-creation.ch</a><br>&nbsp;</p>  
+  
+  
+
+</div>
+<div class="clear autogrid_clear"></div></div><div class="clear autogrid_clear"></div></div>
+<h3 class="ce_headline" style="margin-top:50px;">
+  Das Formular</h3>
+
+<!-- indexer::stop -->
+<div class="ce_form last tableform block">
+
+<form id="f1" method="post" enctype="application/x-www-form-urlencoded" novalidate>
+<div class="formbody">
+<input type="hidden" name="FORM_SUBMIT" value="auto_form_1">
+<input type="hidden" name="REQUEST_TOKEN" value="e0117002678ae10f87668a416cb50c42">
+<input type="hidden" name="MAX_FILE_SIZE" value="">
+<table>
+  <tr class="row_0 row_first even">
+    <td class="col_0 col_first"><label for="ctrl_1">Firma</label></td>
+    <td class="col_1 col_last"><input type="text" name="firma" id="ctrl_1" class="text" value="" placeholder="Firma"></td>
+  </tr>
+  <tr class="row_1 odd">
+    <td class="col_0 col_first"><label for="ctrl_2" class="mandatory"><span class="invisible">Pflichtfeld </span>Vorname / Name<span class="mandatory">*</span></label></td>
+    <td class="col_1 col_last"><input type="text" name="name" id="ctrl_2" class="text mandatory" value="" required placeholder="Vorname / Name"></td>
+  </tr>
+  <tr class="row_2 even">
+    <td class="col_0 col_first"><label for="ctrl_3">Strasse</label></td>
+    <td class="col_1 col_last"><input type="text" name="strasse" id="ctrl_3" class="text" value="" placeholder="Strasse"></td>
+  </tr>
+  <tr class="row_3 odd">
+    <td class="col_0 col_first"><label for="ctrl_4" class="mandatory"><span class="invisible">Pflichtfeld </span>PLZ / Ort<span class="mandatory">*</span></label></td>
+    <td class="col_1 col_last"><input type="text" name="ort" id="ctrl_4" class="text mandatory" value="" required placeholder="Postleitzahl / Ort"></td>
+  </tr>
+  <tr class="row_4 even">
+    <td class="col_0 col_first"><label for="ctrl_5">Telefon</label></td>
+    <td class="col_1 col_last"><input type="text" name="telefon" id="ctrl_5" class="text" value="" placeholder="Telefon / Natel"></td>
+  </tr>
+  <tr class="row_5 odd">
+    <td class="col_0 col_first"><label for="ctrl_8" class="mandatory"><span class="invisible">Pflichtfeld </span>E-Mail<span class="mandatory">*</span></label></td>
+    <td class="col_1 col_last"><input type="email" name="email" id="ctrl_8" class="text mandatory" value="" required placeholder="E-Mail-Adresse"></td>
+  </tr>
+  <tr class="row_6 even">
+    <td class="col_0 col_first"><label for="ctrl_6" class="mandatory"><span class="invisible">Pflichtfeld </span>Anliegen<span class="mandatory">*</span></label></td>
+    <td class="col_1 col_last"><textarea name="anliegen" id="ctrl_6" class="textarea mandatory" rows="4" cols="40" required placeholder="Ihr Anliegen"></textarea></td>
+  </tr>
+	<tr style="display: none !important">
+		<td class="col_0 col_first"><label for="ctrl_9">Dieses Feld nicht ausfüllen</label></td>
+		<td class="col_1 col_last"><input type="text" name="email-2" id="ctrl_9" class="rsas-field" value=""><label for="ctrl_9_2">Dieses Feld nicht ausfüllen</label><input type="text" name="url" id="ctrl_9_2" class="rsas-field" value=""><label for="ctrl_9_3">Dieses Feld nicht ausfüllen</label><input type="text" name="ZnTzrqCRNwaHQv-yyOvnQw" id="ctrl_9_3" class="rsas-field" value="oIaJBiBocN9i166pMUv-sw"><script>(function(){var a=document.getElementById('ctrl_9_3'),b=a.value;a.value=a.name;a.name=b})()</script></td>
+	</tr>
+  <tr class="row_8 row_last even">
+    <td class="col_0 col_first">&nbsp;</td>
+    <td class="col_1 col_last"><div class="submit_container"><input type="submit" id="ctrl_7" class="submit" value="Senden"></div></td>
+  </tr>
+</table>
+</div>
+</form>
+
+</div>
+<!-- indexer::continue -->
+
+  
+</div>
+	</div>
+</div><div id="wrap_googlemaps-ueberschrift" class="even articlewrapper fullwidth_contentboxed typ2 articlewrapper_10 block" style="padding-top:40px;">
+	<div class="inside">
+	
+<div class="mod_article articlewrapper-id_10 even block" id="googlemaps-ueberschrift">
+
+  
+  
+<h1 class="ce_headline first last">
+  Der Weg zu uns</h1>
+
+  
+</div>
+	</div>
+</div><div id="wrap_karten" class="last odd articlewrapper fullwidth typ1 articlewrapper_57 block" style="padding-top:5px; padding-bottom:40px;">
+	<div class="inside">
+	
+<div class="mod_article articlewrapper-id_57 last odd block" id="karten">
+
+  
+  <!-- indexer::stop --> 
+
+<div class="mod_c4g_maps autogrid-id_226 autogrid-type_cte n3 two_third autogrid first block">
+
+<script type="text/javascript">
+//<![CDATA[
+C4GMaps({"profile":"1","id":"1","center_geox":"7.394482851028473","center_geoy":"47.18563653589543","zoom":"10","width":"800px","height":"400px","calc_extent":"LOCATIONS","min_gap":"0","restrict_area":"","child":[{"parent":0,"geox":"7.394458","geoy":"47.185664","locstyle":"1","label":"Gr\u00fctter+Willi AG, Schreinerei Schwarz AG","onclick_zoomto":"0","minzoom":"0","maxzoom":"0","graphicTitle":"","popupInfo":null,"linkurl":""}],"pan_panel":"1","zoom_panel":"1","zoom_panel_world":"","mouse_nav":"1","mouse_nav_wheel":"1","mouse_nav_zoombox":"1","mouse_nav_kinetic":"","mouse_nav_toolbar":"","keyboard_nav":"1","nav_history":"","geosearch":"","attribution":"1","cfg_logo_attribution":"1","overviewmap":"","scaleline":"","mouseposition":"","permalink":"","zoomlevel":"","fullscreen":"","imagepath":"system\/modules\/con4gis_maps\/html\/OpenLayers-2.13.1\/theme\/con4gis\/img\/","switcher_class":"olC4gSwitcher_con4gis","script":"","link_newwindow":"","link_open_on":"CLICK","hover_popups":"","hover_popups_stay":"0","show_minmaxzoom_icon":"","infotext_minmaxzoom":"Nur sichtbar auf einem Zoomlevel gr\u00f6\u00dfer als ##minZoom## und kleiner als ##maxZoom##.","div_layerswitcher":"","locStyles":{"1":{"strokeColor":"#ee0016","strokeWidth":3,"strokeOpacity":1,"fillColor":"#ee0011","fillOpacity":0.5,"pointRadius":10,"graphicName":"","labelAlign":"ct","labelYOffset":-20,"fontColor":"#000000","fontOpacity":1,"fontSize":"1.3em","fontWeight":"400","labelOutlineColor":"#ee0016","popupClass":"OpenLayers.Popup.Anchored","popupXOffset":0,"popupYOffset":0,"popupXSize":200,"popupYSize":200}},"layerSwitcher":false,"service":{"1":{"key":"1","provider":"osm","name":"Grenchen","attribution":"","maxzoomlevel":"0","osm_style":"Mapnik"}},"defaultServiceKey":"1","labels":{"baseLayer":"Basiskarte","overlays":"Ebenen","search_address":"Adresse suchen","no_geo_results":"Keine Ergebnisse f\u00fcr diese Adresse gefunden","error_geocoding":"!! Geokodierung fehlgeschlagen !!","geocoding_progress":"Suche nach Adressen l\u00e4uft..."},"createDiv":true,"div":"c4g_Map1","css":["system\/modules\/con4gis_maps\/html\/OpenLayers-2.13.1\/theme\/default\/style.css","system\/modules\/con4gis_maps\/html\/css\/styles.css","system\/modules\/con4gis_maps\/html\/css\/theme_con4gis.css"],"REQUEST_TOKEN":"e0117002678ae10f87668a416cb50c42"});
+//]]>
+    </script>
+    <div id="c4g_Map1" style="width:800px;height:400px;margin:0">
+  </div>
+  
+</div>    
+<!-- indexer::continue --><!-- indexer::stop --> 
+
+<div class="mod_c4g_maps autogrid-id_227 autogrid-type_cte n3 one_third autogrid last block">
+
+<script type="text/javascript">
+//<![CDATA[
+C4GMaps({"profile":"2","id":"2","center_geox":"","center_geoy":"","zoom":"10","width":"400px","height":"400px","auto_width":true,"auto_width_gap":"13","auto_width_min":"0","auto_width_max":"400","calc_extent":"LOCATIONS","min_gap":"0","restrict_area":"","child":[{"parent":0,"geox":"7.520419","geoy":"47.212068","locstyle":"2","label":"K\u00fcchen Cr\u00e9ation AG","onclick_zoomto":"0","minzoom":"0","maxzoom":"0","graphicTitle":"","popupInfo":null,"linkurl":""}],"pan_panel":"1","zoom_panel":"","zoom_panel_world":"1","mouse_nav":"1","mouse_nav_wheel":"1","mouse_nav_zoombox":"1","mouse_nav_kinetic":"","mouse_nav_toolbar":"","keyboard_nav":"1","nav_history":"","geosearch":"","attribution":"1","cfg_logo_attribution":"1","overviewmap":"","scaleline":"","mouseposition":"","permalink":"","zoomlevel":"","fullscreen":"","imagepath":"system\/modules\/con4gis_maps\/html\/OpenLayers-2.13.1\/theme\/con4gis\/img\/","switcher_class":"olC4gSwitcher_con4gis","script":"","link_newwindow":"","link_open_on":"CLICK","hover_popups":"","hover_popups_stay":"0","show_minmaxzoom_icon":"","infotext_minmaxzoom":"Nur sichtbar auf einem Zoomlevel gr\u00f6\u00dfer als ##minZoom## und kleiner als ##maxZoom##.","div_layerswitcher":"","locStyles":{"2":{"strokeColor":"#ee0016","strokeWidth":2,"strokeOpacity":1,"fillColor":"#ee0011","fillOpacity":0.5,"pointRadius":10,"graphicName":"","labelAlign":"ct","labelYOffset":-20,"fontColor":"#000000","fontOpacity":1,"fontSize":"1.3em","fontWeight":"400","labelOutlineColor":"#ee0016","popupClass":"OpenLayers.Popup.Anchored","popupXOffset":0,"popupYOffset":0,"popupXSize":200,"popupYSize":200}},"layerSwitcher":false,"service":{"1":{"key":"2","provider":"osm","name":"Solothurn","attribution":"","maxzoomlevel":"0","osm_style":"Mapnik"}},"defaultServiceKey":"2","labels":{"baseLayer":"Basiskarte","overlays":"Ebenen","search_address":"Adresse suchen","no_geo_results":"Keine Ergebnisse f\u00fcr diese Adresse gefunden","error_geocoding":"!! Geokodierung fehlgeschlagen !!","geocoding_progress":"Suche nach Adressen l\u00e4uft..."},"createDiv":true,"div":"c4g_Map2","css":["system\/modules\/con4gis_maps\/html\/OpenLayers-2.13.1\/theme\/default\/style.css","system\/modules\/con4gis_maps\/html\/css\/styles.css","system\/modules\/con4gis_maps\/html\/css\/theme_con4gis.css"],"REQUEST_TOKEN":"e0117002678ae10f87668a416cb50c42"});
+//]]>
+    </script>
+    <div id="c4g_Map2" style="width:400px;height:400px;margin:0">
+  </div>
+  
+</div>    
+<!-- indexer::continue -->
+  
+</div>
+	</div>
+</div></div>
+				</section>	
+							</div>
+		</div>
+			
+	</div>
+	
+		<footer id="footer">
+		<div class="inside">
+</div>
+	</footer>
+		
+		<div id="bottom">
+		<div class="inside">
+			
+<div class="totop"><a href="#headeroffset">BACK TO TOP</a></div><div class="bottom_content block">
+	<p>© 1997-2019 • <a title="triangolo informatik gmbh" href="http://www.triangoloinformatik.ch" target="_blank">triangolo informatik gmbh</a></p></div>		</div>
+	</div>
+	
+</div>
+
+<div id="stickyheader">
+	<div class="inside">
+<!-- indexer::stop -->
+<nav class="mod_navigation mainmenu block">
+
+  
+  <a href="#skipNavigation6" class="invisible">Navigation überspringen</a>
+
+  <ul  class="vlist level_1">
+
+    
+	<li class="trail sibling first">
+  		 	      									<a href="index.php/home.html" title="home" class="trail sibling first">home</a>
+						  		</li>
+
+  
+    
+	<li class="sibling">
+  		 	      									<a href="index.php/bildergalerien.html" title="bildergalerien" class="sibling">bildergalerien</a>
+						  		</li>
+
+  
+    
+	<li class="sibling">
+  		 	      									<a href="index.php/newsletter.html" title="newsletter" class="sibling">newsletter</a>
+						  		</li>
+
+  
+    
+	<li class="sibling">
+  		 	      									<a href="index.php/kontakt.html" title="kontakt" class="sibling">kontakt</a>
+						  		</li>
+
+  
+    
+	<li class="sibling last">
+  		 	      									<a href="index.php/impressum.html" title="impressum" class="sibling last">impressum</a>
+						  		</li>
+
+  </ul>
+
+  <a id="skipNavigation6" class="invisible">&nbsp;</a>
+
+</nav>
+<!-- indexer::continue -->
+</div>
+</div>
+		
+
+<script src="assets/jquery/colorbox/1.6.1/js/colorbox.min.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function()
+    {
+      $('a[data-lightbox]').map(function() {
+      	
+      	// break loop if parent is a bx slider clone
+      	if($(this).parent('div').hasClass('bx-clone'))
+      	{
+	      	return false;
+      	}
+      	
+      	$(this).colorbox({
+          // Put custom options here
+          loop: false,
+          rel: $(this).attr('data-lightbox'),
+          maxWidth: '95%',
+          maxHeight: '95%',
+        });
+      });
+    });
+  })(jQuery);
+</script>
+
+<script src="assets/jquery/ui/1.11.4/jquery-ui.min.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $(document).accordion({
+        // Put custom options here
+        heightStyle: 'content',
+        header: 'div.toggler',
+        collapsible: true,
+        create: function(event, ui) {
+          ui.header.addClass('active');
+          $('div.toggler').attr('tabindex', 0);
+        },
+        activate: function(event, ui) {
+          ui.newHeader.addClass('active');
+          ui.oldHeader.removeClass('active');
+          $('div.toggler').attr('tabindex', 0);
+        }
+      });
+    });
+  })(jQuery);
+</script>
+
+<script>setTimeout(function(){var e=function(e,t){try{var n=new XMLHttpRequest}catch(r){return}n.open("GET",e,!0),n.onreadystatechange=function(){this.readyState==4&&this.status==200&&typeof t=="function"&&t(this.responseText)},n.send()},t="system/cron/cron.";e(t+"txt",function(n){parseInt(n||0)<Math.round(+(new Date)/1e3)-60&&e(t+"php")})},5e3);</script>
+      <script>
+              setTimeout(function(){jQuery.ajax("system/cron/cron.txt",{complete:function(e){var t=e.responseText||0;parseInt(t)<Math.round(+(new Date)/1e3)-60&&jQuery.ajax("system/cron/cron.php")}})},5e3)
+          </script>
+  
+ </body>
+</html>

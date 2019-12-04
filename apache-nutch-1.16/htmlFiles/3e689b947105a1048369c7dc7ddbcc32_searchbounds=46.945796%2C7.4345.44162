@@ -1,0 +1,1054 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Chiropraktoren - Medicosearch</title>
+		<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-retina.png">
+		
+
+
+
+
+		
+
+<!--  928dd0ad47834227b632623f7ba6c6e9ce412d9e HEAD 2.97.0 1005 -->
+
+
+<link rel="icon" type="image/png" href="/assets/favicons/apple-touch-icon-60x60-precomposed-a0e563e71bba6a64f81bda6bc7b0e313.png" />
+<link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon-60x60-precomposed-a0e563e71bba6a64f81bda6bc7b0e313.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72-precomposed-f026e2e9c62046e4bd2ae295557325a0.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76-precomposed-ada237ef05ce0de4de0c3dad6defcbb8.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114-precomposed-a15aa650091933d57493ffc9e233a94f.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120-precomposed-f9c943e43af43d8d33bd7f349424afd8.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144-precomposed-9d7c477f9760fb62a521180a848b118e.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152-precomposed-0a19aee1fda0c8f9496a79b4d743dfb9.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon-180x180-precomposed-81289ceb91b01bfd637bac27d2a76ed1.png">
+
+<meta name="google-site-verification" content="4cjO0q6u-rHlnGa87wvhcGGkfZZ1o4dbMjmPITWGtks"/>
+
+
+<script type="text/javascript">
+
+    var ABSOLUTE_BASE_URL = 'https:\u002f\u002fwww.medicosearch.ch\u002f';
+    var BASE_URL = '\u002f';
+    var ASSETS_BASE_URL = '\u002f';
+    var LANGUAGE = 'de';
+    var GOOGLE_MAPS_API_KEY = 'AIzaSyCmrBNVuQwaD2nPuYB-EAH000e03UsV1LM';
+    var IS_LOGGED_IN = false;
+    var COOKIES_POPUP_TEXT = 'Medicosearch verwendet Cookies, um Ihnen den bestmöglichen Service zu gewährleisten. Wenn Sie auf der Seite weitersurfen stimmen Sie der <a href="https://www.medicosearch.ch/content/legal" target="_blank">Cookie-Nutzung</a> zu.';
+    var COOKIES_POPUP_ACCEPT = "Ich stimme zu";
+    var LOGGING_ENABLED = false;
+    var CONTROLLER_NAME = 'search';
+    var ACTION_NAME = 'index';
+    function googleMapsScript() {
+    callbacks = [];
+    return {
+        onLoad: function (callback) {
+            if (typeof(google) !== 'undefined') {
+                callback();
+            } else {
+                callbacks.push(callback);
+            }
+        },
+        loaded: function () {
+            for (var i in callbacks) {
+                callbacks[i]();
+            }
+        }
+    }
+}
+
+var GoogleMapsScript = new googleMapsScript();
+function onGoogleMapsScriptLoaded() {
+    GoogleMapsScript.loaded();
+}
+
+</script>
+
+
+<script type="text/javascript" src="/assets/error_handler-6b4fa4831e4fee73849182a0490af901.js" ></script>
+<link rel="stylesheet" href="/assets/web/common-3d4d93a61a8c08486ebf0d7824c4841f.css" />
+<link rel="stylesheet" href="/assets/application-062094827f3fae7fe24a94c27819e35c.css" />
+
+		<link rel="stylesheet" href="/assets/search-9e511f50274defb7d7fbfb5a88eaf06f.css" />
+
+		
+    <meta name="layout" content="search"/>
+    
+    <link rel="stylesheet" href="/assets/jquery-ui.theme.base-4ca92b6315be624a31cb7cd99910fefe.css" />
+    
+
+
+	</head>
+	<body class="lang-de eupopup eupopup-style-compact eupopup-block eupopup-container-bottom">
+		<div class="page-wrap search-wrap">
+			<div class="body-line"></div>
+
+			
+
+<div class="header-wrap header-wrap-without-search">
+    <div class="container">
+        <a id="logo" href="https://www.medicosearch.ch/">
+            <span class="logo-img logo-img-de"></span>
+        </a>
+
+        
+<div class="sign-option">
+    
+        <a href="/loginandback">Login</a>
+        <a href="/registration">Registrieren</a>
+
+    
+    
+</div>
+
+        <div class="lang-option">
+            <ul id='locale-selector' class='ms-lang-list'>
+  <li class='active ms-btn-lang-switch'><a href="/search?bounds=46.945796%2C7.434597%3B46.947605%2C7.441626&amp;q=Chiropraktoren&amp;withBookings=true" data-lang="de" >de</a></li>
+  <li class='ms-btn-lang-switch'><a href="/fr/search?bounds=46.945796%2C7.434597%3B46.947605%2C7.441626&amp;q=Chiropraktoren&amp;withBookings=true" data-lang="fr" >fr</a></li>
+  <li class='ms-btn-lang-switch'><a href="/it/search?bounds=46.945796%2C7.434597%3B46.947605%2C7.441626&amp;q=Chiropraktoren&amp;withBookings=true" data-lang="it" >it</a></li>
+  <li class='ms-btn-lang-switch'><a href="/en/search?bounds=46.945796%2C7.434597%3B46.947605%2C7.441626&amp;q=Chiropraktoren&amp;withBookings=true" data-lang="en" >en</a></li>
+</ul>
+            
+        </div>
+    </div>
+</div>
+
+			<div class="content-wrap">
+				
+
+<form method="post" action="/search" id="search-form">
+    <div class="search-input-wrap full-width-search-wrap search-page-search-wrap">
+        <div class="container full-width-search-container">
+            <div class="row search-input">
+                <div class="col-xs-8 search-input-what">
+                    <input name="q" tabindex="-1"
+                           autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+                           aria-hidden="true" id="search-what-autocomplete"
+                           data-placeholder="Was?"
+                           data-alt-placeholder="Name, Fachgebiet oder Einrichtung"/>
+                    <input type="submit" class="search-link"/>
+                </div>
+
+                <div class="col-xs-4 search-input-where">
+                    <input type="text" id="search-where-autocomplete"
+                           placeholder="Wo?"
+                           alt-placeholder="Strasse, PLZ oder Ort" value=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="searchpage-autocomplete-dropdown-wrap full-width-dropdown-wrap"></div>
+    </div>
+</form>
+
+<div class="filter-row-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 search-filter-row" id="search-filters">
+                <a href="#" class="clear-filters disabled"></a>
+
+                <div class="search-insurance-filter"
+                     style="display: none; ">
+                    <div id="dropdownInsurance" class="wrapper-dropdown wrapper-insurances-dropdown">
+                        <div class="search-filter-dropdown-content">
+                            <span class="placeholder">Jede Versicherung</span>
+
+                            <div class="dropdown-scroll-wrapper">
+                                <ul class="dropdown">
+                                    <li><a data-value="any">Jede Versicherung</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-lang-filter">
+                    <div id="dropdownLang" class="wrapper-dropdown wrapper-languages-dropdown">
+                        <div class="search-filter-dropdown-content">
+                            <span class="placeholder">Jede Sprache</span>
+
+                            <div class="dropdown-scroll-wrapper">
+                                <ul class="dropdown">
+                                    <li><a data-value="any">Jede Sprache</a></li>
+                                    
+                                        <li><a data-value="ar">Arabisch</a></li>
+                                    
+                                        <li><a data-value="bn">Bengalisch</a></li>
+                                    
+                                        <li><a data-value="bl">Bulgarisch</a></li>
+                                    
+                                        <li><a data-value="hr">Kroatisch</a></li>
+                                    
+                                        <li><a data-value="cs">Tschechisch</a></li>
+                                    
+                                        <li><a data-value="da">Dänisch</a></li>
+                                    
+                                        <li><a data-value="nl">Niederländisch</a></li>
+                                    
+                                        <li><a data-value="en">Englisch</a></li>
+                                    
+                                        <li><a data-value="fi">Finnisch</a></li>
+                                    
+                                        <li><a data-value="fr">Französisch</a></li>
+                                    
+                                        <li><a data-value="de">Deutsch</a></li>
+                                    
+                                        <li><a data-value="el">Griechisch</a></li>
+                                    
+                                        <li><a data-value="hu">Ungarisch</a></li>
+                                    
+                                        <li><a data-value="it">Italienisch</a></li>
+                                    
+                                        <li><a data-value="ja">Japanisch</a></li>
+                                    
+                                        <li><a data-value="no">Norwegisch</a></li>
+                                    
+                                        <li><a data-value="fa">Persisch</a></li>
+                                    
+                                        <li><a data-value="pl">Polnisch</a></li>
+                                    
+                                        <li><a data-value="pt">Portugiesisch</a></li>
+                                    
+                                        <li><a data-value="ro">Rumänisch</a></li>
+                                    
+                                        <li><a data-value="rm">Rätoromanisch</a></li>
+                                    
+                                        <li><a data-value="ru">Russisch</a></li>
+                                    
+                                        <li><a data-value="sr">Serbisch</a></li>
+                                    
+                                        <li><a data-value="sk">Slowakisch</a></li>
+                                    
+                                        <li><a data-value="es">Spanisch</a></li>
+                                    
+                                        <li><a data-value="sv">Schwedisch</a></li>
+                                    
+                                        <li><a data-value="tr">Türkisch</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="search-gender-filter">
+                    <span class="search-label">Geschlecht:</span>
+
+                    <a href="#" class="active gender-any">Alle</a>
+
+                    <a href="/search?bounds=46.945796%2C7.434597%3B46.947605%2C7.441626&amp;q=Chiropraktoren&amp;withBookings=true&amp;gender=MALE" class="gender-male" >
+                        Männlich
+                    </a>
+                    <a href="/search?bounds=46.945796%2C7.434597%3B46.947605%2C7.441626&amp;q=Chiropraktoren&amp;withBookings=true&amp;gender=FEMALE" class="gender-female" >
+                        Weiblich
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="search-category-wrap">
+    <div class="head-line" id="otv-block">
+        <div class="switch">
+            <input id="otv-toggle" class="cmn-toggle cmn-toggle-round" type="checkbox"
+                   checked="checked">
+            <label for="otv-toggle"></label>
+        </div>
+
+        <a href="#" class="search-calendar-link">
+            <span class="search-calendar-title">
+                Online Terminvergabe
+            </span>
+            <span class="search-calendar"></span>
+        </a>
+    </div>
+
+    <div id="otv-calendar-popup">
+        <div id="datePicker" class="calendar">
+        </div>
+        <a href="#" id="confirm-date-select" class="btn transparent-btn">Weiter</a>
+    </div>
+
+    <div class="search-category-block">
+        <ul class="search-category-list">
+            
+                <li 
+                    data-code="arzte" data-id="160">
+                    <a href="https://www.medicosearch.ch/search/arzte?q=Chiropraktoren&withBookings=true&bounds=46.945796%2C7.434597%3B46.947605%2C7.441626"
+                       class="marker-teal specialization-category-160">
+                        <span class="search-category-name">Ärzte</span>
+                        <span class="search-category-kol">0</span>
+                    </a>
+                    
+                </li>
+            
+                <li 
+                    data-code="zahnarzte" data-id="250">
+                    <a href="https://www.medicosearch.ch/search/zahnarzte?q=Chiropraktoren&withBookings=true&bounds=46.945796%2C7.434597%3B46.947605%2C7.441626"
+                       class="marker-green specialization-category-250">
+                        <span class="search-category-name">Zahnärzte</span>
+                        <span class="search-category-kol">0</span>
+                    </a>
+                    
+                </li>
+            
+                <li 
+                    data-code="therapeut" data-id="35548092">
+                    <a href="https://www.medicosearch.ch/search/therapeut?q=Chiropraktoren&withBookings=true&bounds=46.945796%2C7.434597%3B46.947605%2C7.441626"
+                       class="marker-blue specialization-category-35548092">
+                        <span class="search-category-name">Therapeuten</span>
+                        <span class="search-category-kol">0</span>
+                    </a>
+                    
+                </li>
+            
+                <li 
+                    data-code="hospitals" data-id="-1">
+                    <a href="https://www.medicosearch.ch/search/hospitals?q=Chiropraktoren&withBookings=true&bounds=46.945796%2C7.434597%3B46.947605%2C7.441626"
+                       class="marker-yellow specialization-category--1">
+                        <span class="search-category-name">Spitäler/Kliniken</span>
+                        <span class="search-category-kol">0</span>
+                    </a>
+                    
+                </li>
+            
+                <li 
+                    data-code="praxen" data-id="-2">
+                    <a href="https://www.medicosearch.ch/search/surgeries?q=Chiropraktoren&withBookings=true&bounds=46.945796%2C7.434597%3B46.947605%2C7.441626"
+                       class="marker-yellow specialization-category--2">
+                        <span class="search-category-name">Praxen</span>
+                        <span class="search-category-kol">0</span>
+                    </a>
+                    
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class="search-map-row">
+    <div class="search-map" id="search-map"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-4">
+                <div class="search-map-wrap">
+                    <div class="search-map-layer search-map-layer-l"><span></span></div>
+
+                    <div class="head-line">
+                        <span class="search-map-title">Auto Erkennung von Geolocation
+                            <a href="#" class="search-geo" id="getLocationButton"></a>
+                        </span>
+                    </div>
+
+                    <div class="search-map-layer search-map-layer-r"><span></span></div>
+
+                    <a href="javascript:;" class="map-zoom"></a>
+
+                    <div class="map-zoom-controls">
+                        <a href="javascript:;" class="map-zoom-increase" id="mapZoomIncrease"></a>
+                        <a href="javascript:;" class="map-zoom-degrease" id="mapZoomDegrease"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="search-result-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-4 search-result">
+
+                <div class="search-result-list">
+                    <div class="search-result-brand">
+                        
+                    </div>
+
+                    <div class="search-result-kol">Ihre Suche ergab <span>0</span> Treffer
+                    </div>
+
+                    <div class="search-result-items">
+
+                        
+
+                    </div>
+
+                    <div class="pagination-wrap">
+                        <div id="pagination" class="pagination-block">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="adjust-search-params-wrap">
+</div>
+
+
+
+
+<script id="jstpl-autocomplete-clinic-profile" type="text/html">
+<div class="profile-autocomplete-wrap profile-autocomplete-wide">
+    <div class="profileGeneralInfo">
+        {{ if (typeof posterLink !== 'undefined' && posterLink != null) { }}
+        <span class="autocompleteItemPoster">
+            <img src="{{=posterLink}}"/>
+        </span>
+        {{ } }}
+
+        <span class="autocompleteItemInfo">
+            <span class="name">{{=text}}</span>
+            <span class="autocompleteItemRating">
+                <span class="ratingFill" style="width: {{=roundedRating}}%;"></span>
+            </span>
+        </span>
+    </div>
+
+    <div class="profileNavigate">
+        {{ if (typeof link !== 'undefined') { }}
+        <span class="description">
+            <a href="{{=link}}">
+                {{= MedicoApp.__('search.what.autocomplete.label.gotoprofile') }}
+            </a>
+        </span>
+        {{ } }}
+    </div>
+</div>
+</script>
+<script id="jstpl-autocomplete-medico-profile" type="text/html">
+    <div class="profile-autocomplete-wrap profile-autocomplete-wide">
+        <div class="profileGeneralInfo profileMedicoInfo">
+            {{ if (typeof posterLink !== 'undefined' && posterLink != null) { }}
+            <span class="autocompleteItemPoster">
+                <img src="{{=posterLink}}"/>
+            </span>
+            {{ } }}
+
+            <span class="autocompleteItemInfo">
+                {{ if (typeof payload.academicTitle !== 'undefined') { }}
+                    <span class="academicTitle">{{=payload.academicTitle}}</span>
+                {{ } }}
+                <span class="name">{{=payload.firstName}} {{=payload.lastName}}</span>
+                <span class="autocompleteItemRating">
+                    <span class="ratingFill" style="width: {{=roundedRating}}%;"></span>
+                </span>
+            </span>
+        </div>
+        <div class="medicoSpecializations">
+            {{ for (var i = 0; i < specializations.length; i++) { }}
+                <span class="autocomplete-specialization">{{=specializations[i].name}}</span>
+            {{ } }}
+        </div>
+
+        {{ if (languages != null) { }}
+        <span class="medicoLanguages">
+            <span class="autocompleteItemLanguages">
+                {{ for (var i = 0; i < languages.length; i++) { }}
+                <span>{{=languages[i]}}</span>
+                {{ } }}
+            </span>
+        </span>
+        {{ } }}
+
+        <div class="profileNavigate">
+            {{ if (typeof link !== 'undefined') { }}
+            <span class="description">
+                <a href="{{=link}}">
+                    {{= MedicoApp.__('search.what.autocomplete.label.gotoprofile') }}
+                </a>
+            </span>
+            {{ } }}
+        </div>
+    </div>
+</script>
+<script id="jstpl-autocomplete-specialization" type="text/html">
+<span class="title">
+    <span class="name">{{=text}}</span>
+</span>
+</script>
+<script id="jstpl-autocomplete-surgery-profile" type="text/html">
+<div class="profile-autocomplete-wrap profile-autocomplete-wide">
+    <div class="profileGeneralInfo">
+        {{ if (typeof posterLink !== 'undefined' && posterLink != null) { }}
+        <span class="autocompleteItemPoster">
+            <img src="{{=posterLink}}"/>
+        </span>
+        {{ } }}
+
+        <span class="autocompleteItemInfo">
+            <span class="name">{{=text}}</span>
+            <span class="autocompleteItemRating">
+                <span class="ratingFill" style="width: {{=roundedRating}}%;"></span>
+            </span>
+        </span>
+    </div>
+
+    <div class="profileNavigate">
+        {{ if (typeof link !== 'undefined') { }}
+        <span class="description">
+            <a href="{{=link}}">
+                {{= MedicoApp.__('search.what.autocomplete.label.gotoprofile') }}
+            </a>
+        </span>
+        {{ } }}
+    </div>
+</div>
+</script>
+
+<script id="jstpl-search-result-item" type="text/html">
+
+<div class="row">
+    <div class="col-xs-5">
+        <div class="profile-info-t {{ if (typeof(posterLink) !== 'undefined' && posterLink !== null) { }} profile-info-t-img {{ } }}">
+            {{ if (!!posterLink && typeof(posterLink) != "undefined") { }}
+            <div class="profile-img">
+                <img src="{{=posterLink}}" alt="{{=itemName}}">
+            </div>
+            {{ } }}
+
+            <div class="profile-info">
+                {{ if (type === 'MedicoProfile') { }}
+                    <p class="small-green-text">
+                        {{= MedicoApp.__('search.item.medico.' + medicoType) }}
+                    </p>
+                    {{ if (typeof(academicTitle) != "undefined") { }}
+                    <p class="small-text">{{=academicTitle}}</p>
+                    {{ } }}
+
+                    <p class="profile-name">
+                        <a href="{{=permalink}}">{{=firstName}} {{=lastName}}</a>
+                    </p>
+
+                {{ } else { }}
+
+                    <p class="small-green-text">
+                        {{= MedicoApp.__('search.item.' + type) }}
+                    </p>
+
+                    <p class="profile-name">
+                        <a href="{{=permalink}}">{{=itemName}}</a>
+                    </p>
+
+                {{ } }}
+
+
+                {{ if (feedbackable) { }}
+                    <div class="rating rating-md">
+                        <div style="{{= 'width:' + roundedRating + '%'}}"></div>
+                    </div>
+                {{ } }}
+
+                {{ if (type === 'MedicoProfile' && newPatientAllowed === false) { }}
+                <span class="search-result-no-new-patients">
+                    Keine neuen Patienten
+                </span>
+                {{ } }}
+
+                {{ if (isArrayNotEmpty(languages)) { }}
+                <div class="search-result-profile-languages">
+                    {{ for (var i = 0; i < languages.length; i++) { }}
+                    <span>{{=languages[i]}}</span>
+                    {{ } }}
+                </div>
+                {{ } }}
+
+        </div>
+
+        </div>
+
+        <div class="profile-spec">
+            {{ _.each(specializations, function(specialization) { }}
+            <a href="{{=specialization.link}}" data-specialization="{{=specialization.code}}">{{=specialization.name}}</a>
+            {{ }); }}
+        </div>
+    </div>
+
+    <div class="col-xs-7">
+        <div class="row time-title-row">
+            <div class="col-xs-6"></div>
+
+            {{ if (type == 'MedicoProfile' && bookingAvailable) { }}
+            <div class="col-xs-6">
+                <span class="time-title">Nächster freier Termin</span>
+            </div>
+            {{ } }}
+        </div>
+        {{ for (var i = 0; i < locations.length; i++) { }}
+
+        <div class="row time-appointment-row">
+            <div class="col-xs-6">
+                <div class="search-result-work">
+                    {{ if(typeof(locations[i].clinicName) !== 'undefined') { }}
+                    <p class="search-result-work-name">{{=locations[i].clinicName}}</p>
+                    {{ } }}
+
+                    <p class="search-result-work-name">{{=locations[i].name}}</p>
+                    <a href="{{=locations[i].permalink}}"
+                       class="search-result-work-address">{{=locations[i].address}}</a>
+                </div>
+
+                {{ if (typeof(locations[i].insuranceCarriers) != 'undefined' && locations[i].insuranceCarriers != null) { }}
+                <div class="search-result-insurances">
+                    {{ for (var j = 0; j < locations[i].insuranceCarriers.length; j++) { }}
+                        <span>{{=locations[i].insuranceCarriers[j]}}</span>
+                    {{ } }}
+                </div>
+                {{ } }}
+            </div>
+
+            <div class="col-xs-6">
+                <div class="time-appointment-wrap">
+                    {{ if (typeof(locations[i].nearestBookingTimeslot) != "undefined" && locations[i].nearestBookingTimeslot != null) { }}
+                    {{ var nearest = locations[i].nearestBookingTimeslot; }}
+                    <div class="time-appointment">
+
+                        <p>{{=nearest.day}}</p>
+
+                        <p>{{=nearest.timeInterval}}</p>
+                    </div>
+                    <a href="{{=locations[i].permalink}}" class="msr-btn msr-btn-xs termin-btn">Termin buchen</a>
+                    {{ } else if(type == 'SurgeryProfile' && bookingAvailable) { }}
+                    <a href="{{=permalink}}" class="msr-btn msr-btn-xs termin-btn">Termin buchen</a>
+                    {{ } }}
+                </div>
+            </div>
+        </div>
+        {{ } }}
+        
+    </div>
+</div>
+</script>
+<script id="jstpl-search-result-brand-item" type="text/html">
+{{ if (name) { }}
+<div class="row search-result-item">
+    <div class="profile-info-t  {{ if (logo) { }} profile-info-t-img {{ } }}">
+        {{ if (logo) { }}
+        <div class="profile-img col-xs-4">
+            <img src="{{=logo.link}}">
+        </div>
+        {{ } }}
+
+        <div class="profile-info col-xs-8">
+            <h1 class="profile-name">
+                <a href="/search?q={{=name}}">{{=name}}</a>
+            </h1>
+
+            <div class="rating rating-md">
+                <div style="width: {{=rating}}%"></div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 brand-description">{{=description}}</div>
+    </div>
+</div>
+{{ } }}
+</script>
+<script id="jstpl-search-specialization-subcategory-list" type="text/html">
+<ul class="search-subcategory-list search-subcategory-real-list"></ul>
+</script>
+<script id="jstpl-search-specialization-subcategory" type="text/html">
+
+<a href="{{=link}}">
+    <span class="search-category-kol">{{=count}}</span>
+    <span class="search-category-subname">{{=name}}</span>
+</a>
+
+{{if (typeof(specializations) !== 'undefined') { }}
+<ul style="position: absolute;" class="specialization-list">
+    {{ _.each(specializations, function(specialization) { }}
+    <li {{ if (specialization.selected) { }} class="active" {{ } }} data-id="{{=specialization.id}}"
+        data-code="{{=specialization.code}}">
+        <a href="{{=specialization.link}}">
+            <span class="search-category-kol">{{=specialization.count}}</span>
+            <span class="has-sublist-title">{{=specialization.name?specialization.name:specialization.code}}</span>
+            <span class="helper"></span>
+        </a>
+    </li>
+    {{ }); }}
+</ul>
+{{ } }}
+
+</script>
+<script id="jstpl-search-cluster-popup" type="text/html">
+
+<div class="search-cluster-popup-info">
+    <div class="search-cluster-popup-slide">
+        <div class="search-result-item">
+            <div class="profile-info-t">
+                <div class="profile-img"><img src="/assets/profile-search-932afaf2a72077d3bccfbcbceab7c4ab.png" /></div>
+                <div class="profile-info">
+                    <p class="small-green-text">Therapeut</p>
+
+                    <p class="small-text">Dr. med.</p>
+
+                    <p class="profile-name">Thomas Günter Hildebrandt</p>
+
+                    <div class="rating rating-xs"><div style="width: 100%"></div></div>
+                </div>
+            </div>
+            <div class="profile-spec">
+                <a href="#">Allgemaine Innere Medizin</a>
+                <a href="#">Hausarzt</a>
+                <a href="#">Vertrauensarzt</a>
+                <a href="#">Notarzt</a>
+                <a href="#">Praktischer Arzt</a>
+            </div>
+            <div class="search-result-btn-wrap"><a href="#" class="btn green-btn termin-btn">Termin buchen</a></div>
+        </div>
+    </div>
+    <div class="search-cluster-popup-slide">
+        <div class="search-result-item">
+            <div class="profile-info-t">
+                <div class="profile-img"><img src="/assets/profile-search-932afaf2a72077d3bccfbcbceab7c4ab.png" /></div>
+                <div class="profile-info">
+                    <p class="small-green-text">Therapeut</p>
+
+                    <p class="small-text">Dr. med.</p>
+
+                    <p class="profile-name">Thomas Günter Hildebrandt</p>
+
+                    <div class="rating rating-xs"><div style="width: 80%"></div></div>
+                </div>
+            </div>
+            <div class="profile-spec">
+                <a href="#">Allgemaine Innere Medizin</a>
+                <a href="#">Hausarzt</a>
+                <a href="#">Vertrauensarzt</a>
+                <a href="#">Notarzt</a>
+                <a href="#">Praktischer Arzt</a>
+            </div>
+            <div class="search-result-btn-wrap"><a href="#" class="btn green-btn termin-btn">Termin buchen</a></div>
+        </div>
+    </div>
+    <div class="search-cluster-popup-slide">
+        <div class="search-result-item">
+            <div class="profile-info-t">
+                <div class="profile-img"><img src="/assets/profile-search-932afaf2a72077d3bccfbcbceab7c4ab.png" /></div>
+                <div class="profile-info">
+                    <p class="small-green-text">Therapeut</p>
+
+                    <p class="small-text">Dr. med.</p>
+
+                    <p class="profile-name">Thomas Günter Hildebrandt</p>
+
+                    <div class="rating rating-xs"><div style="width: 80%"></div></div>
+                </div>
+            </div>
+            <div class="profile-spec">
+                <a href="#">Allgemaine Innere Medizin</a>
+                <a href="#">Hausarzt</a>
+                <a href="#">Vertrauensarzt</a>
+                <a href="#">Notarzt</a>
+                <a href="#">Praktischer Arzt</a>
+            </div>
+            <div class="search-result-btn-wrap"><a href="#" class="btn green-btn termin-btn">Termin buchen</a></div>
+        </div>
+    </div>
+</div>
+<div class="search-cluster-popup-marker search-marker-doctors">
+    <span class="search-result-item-kol">3</span>
+    <span class="search-result-item-number">1</span>
+</div>
+
+</script>
+<script id="jstpl-search-adjust-params" type="text/html">
+<div class="container offer-adjust-search-params">
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-4 search-result">
+            <div class="offer-message">
+            Nothing was found, but we know that there are results for location nearby.
+            Would you like to see the results?
+            </div>
+            <div class="btn-wrap">
+                <a href="#" id="acceptSuggest" class="btn green-btn popupActionBtn">
+                    Apply suggest!
+                    
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</script>
+
+			</div>
+
+			<div class="page-buffer"></div>
+		</div>
+
+		
+
+<div class="footer-wrap">
+    <div class="footer-top">
+        <div class="container">
+            <div class="msr-flex-row">
+                <div class="msr-flex-col msr-flex-col-0">
+                    <div class="footer-title"><img src="/assets/redesign/msr-logo-f3660ead8ff5fd8c849da2b596e5ec6f.svg" /></div>
+                    <p>Medicosearch ist das führende Schweizer Internetportal zum Suchen und Buchen von medizinischen Leistungen.</p>
+                    <ul>
+                        <li><a href="/content/about">About</a></li>
+                        <li><a href="/content/partner">Partner</a></li>
+
+                            <li><a href="/content/press">Presse</a></li>
+
+                        <li><a href="/content/contacts">Impressum / Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="msr-flex-col">
+                    <div class="footer-title">Für Ärzte, Zahnärzte und Therapeuten</div>
+                    <ul>
+                        <li><a href="https://www.medicosearch.ch/content/medicoInfo">Informationen</a></li>
+                        
+                        <li><a href="https://www.medicosearch.ch/registration/doctor">Registrieren</a></li>
+                        
+                        <li><a href="https://www.medicosearch.ch/content/support/faqMedico">FAQ</a></li>
+                        <li><a href="https://www.medicosearch.ch/content/legal">Datenschutz</a></li>
+                        <li><a href="https://www.medicosearch.ch/content/doctorAgreement">AGB Ärzte</a></li>
+                        <li><a href="/onboarding">Demo buchen</a></li>
+                    </ul>
+                </div>
+                <div class="msr-flex-col msr-flex-col-2">
+                    <div class="footer-title">Für Patienten</div>
+                    <ul>
+                        <li><a href="https://www.medicosearch.ch/content/userInfo">Informationen</a></li>
+                        
+                        <li><a href="https://www.medicosearch.ch/registration/patient">Registrieren</a></li>
+                        
+                        <li><a href="https://www.medicosearch.ch/content/support/faqPatient">FAQ</a></li>
+                        <li><a href="https://www.medicosearch.ch/content/legal">Datenschutz</a></li>
+                        <li><a href="https://www.medicosearch.ch/content/userAgreement">AGB Benutzer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-title">Rechtliches</div>
+            <p>Es ist ausdrücklich festzuhalten, dass die bei Medicosearch veröffentlichten Bewertungen einzig das subjektive Empfinden der Nutzer widerspiegeln. Bei einer geringen Anzahl an Bewertungen ist es zudem möglich, dass das Gesamturteil auf Zufall basiert. Auch ein direkter Vergleich zwischen den Ärzten ist nur bedingt möglich, da es durch die verschiedene Anzahl an Bewertungenn zu Verzerrungen kommen kann.</p>
+        </div>
+    </div>
+</div>
+
+
+		<div id="outdated"></div>
+<script type="text/javascript" src="/assets/application-0daa1202997d5e6abc799156f8eba6f7.js" ></script>
+
+
+    
+        <script type="text/javascript" src="/assets/search-a92c76eaa28b506b15f910503ce744b4.js" ></script>
+    
+
+
+<script >
+    MedicoApp.Utils.I18n.add("search.item.SurgeryProfile", "Praxis");
+    MedicoApp.Utils.I18n.add("search.item.ClinicProfile", "Spital/Klinik");
+    MedicoApp.Utils.I18n.add("search.item.medico.DOCTOR", "Arzt");
+    MedicoApp.Utils.I18n.add("search.item.medico.DENTIST", "Zahnarzt");
+    MedicoApp.Utils.I18n.add("search.item.medico.THERAPIST", "Therapeut");
+</script><script >
+    MedicoApp.Utils.I18n.add("pagination.next", "Weiter");
+    MedicoApp.Utils.I18n.add("pagination.prev", "Zurück");
+</script><script >
+    MedicoApp.Utils.I18n.add("search.calendar.title", "Online Terminvergabe");
+    MedicoApp.Utils.I18n.add("search.calendar.from", "Online verfügbar:");
+</script><script >
+    MedicoApp.Utils.I18n.add("search.what.placeholder.original", "Was?" );
+    MedicoApp.Utils.I18n.add("search.what.placeholder.hover", "Name, Fachgebiet oder Einrichtung");
+
+    MedicoApp.Utils.I18n.add("search.where.placeholder.original", "Wo?" );
+    MedicoApp.Utils.I18n.add("search.where.placeholder.hover", "Strasse, PLZ oder Ort");
+
+    MedicoApp.Utils.I18n.add("search.what.autocomplete.label.search", "Name, Fachgebiet oder Einrichtung" );
+    MedicoApp.Utils.I18n.add("search.what.autocomplete.label.gotoprofile", "Zum Profil" );
+
+</script><script type="text/javascript">
+    
+    var searchOptions = {
+        searchFilters: {},
+        allLanguagesCodes: ["ar","bn","bl","hr","cs","da","nl","en","fi","fr","de","el","hu","it","ja","no","fa","pl","pt","ro","rm","ru","sr","sk","es","sv","tr"],
+        adjustSearchParamsIsEnabled: false
+    };
+
+    
+        searchOptions.searchFilters.q = "Chiropraktoren";
+    
+
+    
+
+    
+        searchOptions.searchFilters.withBookings = "true";
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    searchOptions.defaultMapBounds = {"ne":{"lat":48.271983,"lng":15.088428,"lon":15.088428},"nw":{"lat":48.271983,"lng":0.916064,"lon":0.916064},"se":{"lat":45.479137,"lng":15.088428,"lon":15.088428},"sw":{"lat":45.479137,"lng":0.916064,"lon":0.916064}};
+    searchOptions.map = {
+            controls: "ruler",
+            circle: false,
+            bounds: {"ne":{"lat":46.947605,"lng":7.441626,"lon":7.441626},"nw":{"lat":46.947605,"lng":7.434597,"lon":7.434597},"se":{"lat":46.945796,"lng":7.441626,"lon":7.441626},"sw":{"lat":46.945796,"lng":7.434597,"lon":7.434597}},
+            scrollwheel: false,
+            zoomControl: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            streetViewControl: false,
+            rotateControl: false,
+            styles: [
+                {
+                    "featureType": "water",
+                    "stylers": [
+                        {
+                            "saturation": 43
+                        },
+                        {
+                            "lightness": -11
+                        },
+                        {
+                            "hue": "#0088ff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "hue": "#ff0000"
+                        },
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": 99
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#808080"
+                        },
+                        {
+                            "lightness": 54
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape.man_made",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#ece2d9"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#ccdca1"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#767676"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape.natural",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        },
+                        {
+                            "color": "#EBE5E0"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.sports_complex",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                }
+            ]
+    };
+    searchOptions.categories = [{"id":160,"type":"SPECIALIZATION_CATEGORY","name":"Ärzte","color":"teal","code":"arzte","link":"https://www.medicosearch.ch/search/arzte?q=Chiropraktoren&withBookings=true&bounds=46.945796%2C7.434597%3B46.947605%2C7.441626","count":0,"selected":false},{"id":250,"type":"SPECIALIZATION_CATEGORY","name":"Zahnärzte","color":"green","code":"zahnarzte","link":"https://www.medicosearch.ch/search/zahnarzte?q=Chiropraktoren&withBookings=true&bounds=46.945796%2C7.434597%3B46.947605%2C7.441626","count":0,"selected":false},{"id":35548092,"type":"SPECIALIZATION_CATEGORY","name":"Therapeuten","color":"blue","code":"therapeut","link":"https://www.medicosearch.ch/search/therapeut?q=Chiropraktoren&withBookings=true&bounds=46.945796%2C7.434597%3B46.947605%2C7.441626","count":0,"selected":false},{"id":-1,"type":"UNIT","unitType":"hospitals","name":"Spitäler/Kliniken","color":"yellow","code":"hospitals","link":"https://www.medicosearch.ch/search/hospitals?q=Chiropraktoren&withBookings=true&bounds=46.945796%2C7.434597%3B46.947605%2C7.441626","count":0,"selected":false},{"id":-2,"type":"UNIT","unitType":"surgeries","name":"Praxen","color":"yellow","code":"praxen","link":"https://www.medicosearch.ch/search/surgeries?q=Chiropraktoren&withBookings=true&bounds=46.945796%2C7.434597%3B46.947605%2C7.441626","count":0,"selected":false}];
+    searchOptions.results = {"countForPagination":0,"currentPage":0,"items":[],"locations":[],"total":0};
+    MedicoApp.module('Page.Search.Desktop').start(searchOptions);
+</script><script >
+                MedicoApp.module("Widget.LocaleSelector").start();
+            </script>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+
+    ga('create', 'UA-4851953-1');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+</script>
+
+	<script type="text/javascript"
+			src="//maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCmrBNVuQwaD2nPuYB-EAH000e03UsV1LM&callback=onGoogleMapsScriptLoaded&libraries=places,geometry&language=de"
+			async defer></script>
+	</body>
+</html>

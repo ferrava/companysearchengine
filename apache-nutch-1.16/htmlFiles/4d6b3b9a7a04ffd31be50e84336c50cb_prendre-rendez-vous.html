@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-ch" lang="fr-ch" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="/media/system/js/mootools-core.js"></script>
+	<script type="text/javascript" src="/media/system/js/core.js"></script>
+	<script type="text/javascript" src="/templates/servicestation/javascript/jquery.min.js"></script>
+	<script type="text/javascript">jQuery.noConflict();</script>
+	
+
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Dosis:200,300,400,500,600,700,800|Abel|Droid+Sans:400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Lora:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700|Quicksand:300,400,700|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Lobster|Ubuntu+Condensed|Oxygen:400,300,700|Oswald:700,400,300|Open+Sans+Condensed:300,700,300italic|Roboto+Condensed:300italic,400italic,700italic,400,700,300|Open+Sans:300italic,400italic,600italic,700italic,800italic,800,700,400,600,300|Prosto+One|Francois+One|Comfortaa:700,300,400|Raleway:300,600,900,500,400,100,800,200,700|Roboto:300,700,500italic,900,300italic,400italic,900italic,100italic,100,500,400,700italic|Roboto+Slab:300,700,100,400|Share:700,700italic,400italic,400' rel='stylesheet' type='text/css'
+>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+ <base href="https://psyche-sa.ch/en-pratique/prendre-rendez-vous" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="psyche, psyche-sa, psyche neuchatel, docteur, docteur psychiatre, psychiatre, psychiatre psychologue, psychiatre neuchatel, medecin psychiatre, pedo psychiatre, psychologue, psychologue neuchatel, psychologie, psy, psychologue scolaire, psychologue du travail, psychotherapie, psychotherapie analytique, psychotherapie de couple, medecin, neuchatel, neuch, adulte, adolescent, psychanalyse, therapie, therapie comportementale, therapie cognitivo comportementale, evaluation, expertise, bilan, comportemental, soutien, accompagnement, familial, systemique, infirmier, domicile, soin, education, psycho, centre, interdisciplinaire,  neuro, trouble, anxiete, angoisse, personnalite, schizophrenie, humeur, depression, bipolaire, borderline, obsession, sommeil, fatigue, psychique, mental, rengade, docteur" />
+	<meta name="og:title" content="Prendre Rendez-Vous" />
+	<meta name="og:type" content="article" />
+	<meta name="og:image" content="https://psyche-sa.ch/images/config/logo/Logo-Nom_psyche_centre_de_psychotherapies_700x300.png" />
+	<meta name="og:url" content="https://psyche-sa.ch/en-pratique/prendre-rendez-vous" />
+	<meta name="og:site_name" content="Psyché, centre de psychothérapies SA" />
+	<meta name="og:description" content="Consultation uniquement sur rendez-vous, Vous pouvez contacter Psyché, centre de psychothérapies : par téléphone, e-mail ou par un message sur le site." />
+	<meta name="author" content="Super Utilisateur" />
+	<meta name="description" content="Consultation uniquement sur rendez-vous, Vous pouvez contacter Psyché, centre de psychothérapies : par téléphone, e-mail ou par un message sur le site." />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Prendre Rendez-Vous</title>
+	<link href="/templates/servicestation/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/templates/servicestation/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/servicestation/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="/media/coalawebsociallinks/modules/sociallinks/css/cw-default.css" rel="stylesheet" type="text/css" />
+	<link href="/media/coalawebsociallinks/components/sociallinks/themes-icon/cws-circle/cwsl_style.css" rel="stylesheet" type="text/css" />
+	<link href="/modules/mod_bt_login/tmpl/css/style2.0.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+  .rapid_contact .form-control { max-width: 95%; }
+  .rapid_contact .g-recaptcha { margin-bottom: 10px; max-width: 95%; }
+
+ .cloaked_email span:before { content: attr(data-ep-a598a); } .cloaked_email span:after { content: attr(data-ep-b80c0); } 
+
+	</style>
+	<script src="/media/jui/js/jquery.min.js?41fa1768dbdb2a7c88bccaf554b65a6f" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?41fa1768dbdb2a7c88bccaf554b65a6f" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?41fa1768dbdb2a7c88bccaf554b65a6f" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js?41fa1768dbdb2a7c88bccaf554b65a6f" type="text/javascript"></script>
+	<script src="/templates/servicestation/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+	<script src="/templates/servicestation/javascript/custom.js" type="text/javascript"></script>
+	<script src="/modules/mod_bt_login/tmpl/js/jquery.simplemodal.js" type="text/javascript"></script>
+	<script src="/modules/mod_bt_login/tmpl/js/default.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+  function rp_checkCaptcha(form_id) {
+    result = true;
+    if (document.getElementById(form_id+"_hasCaptcha")) {
+      if ((grecaptcha) && (jQuery(".g-recaptcha").length == 1)) { // We only know how to deal with Google ReCaptcha, and only one of it in JS
+        if (grecaptcha.getResponse().length == 0) {
+          alert("Please complete the Captcha");
+          result = false;
+        }
+      }
+    }
+    return result;
+  }
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+ var emailProtector=emailProtector||{};emailProtector.addCloakedMailto=function(g,l){var h=document.querySelectorAll("."+g);for(i=0;i<h.length;i++){var b=h[i],k=b.getElementsByTagName("span"),e="",c="";b.className=b.className.replace(" "+g,"");for(var f=0;f<k.length;f++)for(var d=k[f].attributes,a=0;a<d.length;a++)0===d[a].nodeName.toLowerCase().indexOf("data-ep-a598a")&&(e+=d[a].value),0===d[a].nodeName.toLowerCase().indexOf("data-ep-b80c0")&&(c=d[a].value+c);if(!c)break;b.innerHTML=e+c;if(!l)break;b.parentNode.href="mailto:"+e+c}}; 
+
+	</script>
+
+ 
+<script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-99654652-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!--[if IE 7]> <link type="text/css" rel="stylesheet" href="/templates/servicestation/css/style_ie7.css" /> <![endif]-->
+<!--[if IE 8]> <link type="text/css" rel="stylesheet" href="/templates/servicestation/css/style_ie8.css" /> <![endif]-->
+<!--[if IE 9]> <link type="text/css" rel="stylesheet" href="/templates/servicestation/css/style_ie9.css" /> <![endif]-->
+
+<style type="text/css">
+body {
+    font-family:"Open Sans";
+    background-color:#c3dfab; 
+    background-image: url('/templates/servicestation/images/04.png');
+}
+a {
+    color:#638ecb;
+    text-decoration:none;
+    font-family:"Open Sans";
+}
+a:hover {
+    color:#3b5579;
+    text-decoration:none;
+}
+.top_menu li a {
+    color:#92999E;
+    text-decoration:none;
+    font-family:"PT Sans Narrow";
+}
+.top_menu li a:hover {
+    color:#c1c1c1;
+    text-decoration:none;
+} 
+.main_menu li a {
+    color:#ffffff;
+    text-decoration:none;
+    font-family:"PT Sans Narrow";
+}
+.main_menu li a:hover {
+    color:#8ecb63;
+    text-decoration:none;
+}
+.footer_menu li a {
+    color:#92999E;
+    text-decoration:none;
+    font-family:"PT Sans Narrow";
+}
+.footer_menu li a:hover {
+    color:#000000;
+    text-decoration:none;
+}
+
+
+h1 {font-family:"Roboto";}
+h2 {font-family:"PT Sans Narrow";}
+h3 {font-family:"PT Sans Narrow";}
+h4 {font-family:"PT Sans Narrow";}
+h5 {font-family:"PT Sans Narrow";}
+h6 {font-family:"PT Sans Narrow";}
+</style>
+  
+<link rel="apple-touch-icon" sizes="180x180" href="/FaviconFiles/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/FaviconFiles/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/FaviconFiles/favicon-16x16.png">
+<link rel="manifest" href="/FaviconFiles/manifest.json">
+<link rel="mask-icon" href="/FaviconFiles/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/FaviconFiles/favicon.ico">
+<meta name="msapplication-config" content="/FaviconFiles/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+  
+</head>
+<body>
+	<div class="header">
+			<div  class="row">
+				 								</div>
+
+			    				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="moduletable">
+						
+
+<div class="custom"  >
+	<div class="header_contacts" style="text-align: center;">
+<p><a href="https://psyche-sa.ch" target="_self"><img style="vertical-align: middle; margin-right: 5px; margin-left: 5px; margin-bottom: 10px;" src="/images/config/logo/Logo-rond_psyche_centre_de_psychotherapies_86x86.png" alt="Psyché centre de psychothérapies" width="30%" height="NaN" /></a> <span style="font-size: 11pt;"><strong><span style="font-size: 18pt;">Psyché</span><br /></strong>Centre de Psychothérapies SA</span></p>
+</div></div>
+		</div>
+	
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="moduletable">
+						<div id="btl">
+	<!-- Panel top -->	
+	<div class="btl-panel">
+					<!-- Login button -->
+						<span id="btl-panel-login" class="btl-dropdown">Accès Privé</span>
+						<!-- Registration button -->
+						
+			
+			</div>
+	<!-- content dropdown/modal box -->
+	<div id="btl-content">
+			
+		<!-- Form login -->	
+		<div id="btl-content-login" class="btl-content-block">
+						
+			<!-- if not integrated any component -->
+						<form name="btl-formlogin" class="btl-formlogin" action="/en-pratique/prendre-rendez-vous" method="post">
+				<div id="btl-login-in-process"></div>	
+				<p><p style="font-size:18px;text-align:center;">Accès Privé, réservé à <strong>Psyché</strong></p></p>
+									<div class="spacer"></div>
+								<div class="btl-error" id="btl-login-error"></div>
+				<div class="btl-field">
+					<div class="btl-label">Identifiant</div>
+					<div class="btl-input">
+						<input id="btl-input-username" type="text" name="username"	/>
+					</div>
+				</div>
+				<div class="btl-field">
+					<div class="btl-label">Mot de passe</div>
+					<div class="btl-input">
+						<input id="btl-input-password" type="password" name="password" alt="password" />
+					</div>
+				</div>
+				<div class="clear"></div>
+								<div class="btl-field">				
+					
+					<div class="btl-input" id="btl-input-remember">
+						<input id="btl-checkbox-remember"  type="checkbox" name="remember"
+							value="yes" />
+							Maintenir la connexion active sur ce site					</div>	
+				</div>
+				<div class="clear"></div>
+								<div class="btl-buttonsubmit">
+					<input type="submit" name="Submit" class="btl-buttonsubmit" onclick="return loginAjax()" value="Accès Privé" /> 
+					<input type="hidden" name="bttask" value="login" /> 
+					<input type="hidden" name="return" id="btl-return"	value="aW5kZXgucGhwP0l0ZW1pZD0xODY=" />
+					<input type="hidden" name="ac859139b17d7947f6c0ca9a9d451a6b" value="1" />				</div>
+			</form>	
+			<ul id ="bt_ul">
+				<li>
+					<a href="/connect?view=reset">
+					Mot de passe perdu ?</a>
+				</li>
+				<li>
+					<a href="/connect?view=remind">
+					Identifiant perdu  ?</a>
+				</li>				
+			</ul>
+			
+		<!-- if integrated with one component -->
+						
+		</div>
+		
+				
+	</div>
+	<div class="clear"></div>
+</div>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+var btlOpt = 
+{
+	BT_AJAX					:'https://psyche-sa.ch/en-pratique/prendre-rendez-vous',
+	BT_RETURN				:'/en-pratique/prendre-rendez-vous',
+	RECAPTCHA				:'none',
+	LOGIN_TAGS				:'',
+	REGISTER_TAGS			:'',
+	EFFECT					:'btl-dropdown',
+	ALIGN					:'center',
+	BG_COLOR				:'#233348',
+	MOUSE_EVENT				:'click',
+	TEXT_COLOR				:'#58606b',
+	MESSAGES 				: {
+		E_LOGIN_AUTHENTICATE 		: 'L\'identifiant et le mot de passe ne correspondent pas ou, votre compte n\'a peut-être pas été validé.',
+		REQUIRED_NAME				: 'Veuillez indiquer votre nom !',
+		REQUIRED_USERNAME			: 'Veuillez indiquer votre identifiant !',
+		REQUIRED_PASSWORD			: 'Veuillez indiquer votre mot de passe !',
+		REQUIRED_VERIFY_PASSWORD	: 'Ressaisissez votre mot de passe !',
+		PASSWORD_NOT_MATCH			: '\'Le mot de passe ne correspond pas\';',
+		REQUIRED_EMAIL				: 'Indiquez votre adresse e-mail !',
+		EMAIL_INVALID				: 'Veuillez indiquer une adresse e-mail valide !',
+		REQUIRED_VERIFY_EMAIL		: 'Ressaisissez votre adresse e-mail !',
+		EMAIL_NOT_MATCH				: '\'L\'adresse e-mail ne correspond pas\';',
+		CAPTCHA_REQUIRED			: 'Please enter captcha key'
+	}
+}
+if(btlOpt.ALIGN == "center"){
+	BTLJ(".btl-panel").css('textAlign','center');
+}else{
+	BTLJ(".btl-panel").css('float',btlOpt.ALIGN);
+}
+BTLJ("input.btl-buttonsubmit,button.btl-buttonsubmit").css({"color":btlOpt.TEXT_COLOR,"background":btlOpt.BG_COLOR});
+BTLJ("#btl .btl-panel > span").css({"color":btlOpt.TEXT_COLOR,"background-color":btlOpt.BG_COLOR,"border":btlOpt.TEXT_COLOR});
+/*]]>*/
+</script>
+
+		</div>
+	
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p style="font-size: 1pt;">&nbsp;</p>
+<div class="header_contacts">
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td rowspan="2" style="width: 30%; vertical-align: middle; text-align: right;"><i class="fa fa-home fa-2x"></i></td>
+<td style="width: 70%; text-align: left;">
+<p>&nbsp;&nbsp;Rue&nbsp;des&nbsp;poudrières,&nbsp;135<br />&nbsp;&nbsp;2000 Neuchâtel</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+		</div>
+	
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p style="font-size: 5pt;">&nbsp;</p>
+<div class="header_contacts">
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 30%; text-align: right;"><i class="fa fa-phone"></i></td>
+<td style="width: 70%; text-align: left;">&nbsp;Standard +41 (0)32 566 75 65</td>
+</tr>
+<tr>
+<td style="width: 30%; text-align: right;"><i class="fa fa-envelope-o"></i></td>
+<td style="width: 70%; text-align: left;">&nbsp;&nbsp;<a href="javascript:/* This email address is being protected from spambots.*/"><span class="cloaked_email ep_de0a17cc"><span data-ep-b80c0="&#97;&#46;&#99;&#104;" data-ep-a598a="&#115;&#101;&#99;&#114;"><span data-ep-a598a="et&#97;r" data-ep-b80c0="&#104;&#101;&#45;s"><span data-ep-b80c0="&#112;&#115;y&#99;" data-ep-a598a="&#105;&#97;&#116;&#64;"></span></span></span></span><span class="cloaked_email ep_97c56e53" style="display:none;"><span data-ep-a598a="&#115;&#101;&#99;r" data-ep-b80c0="a.&#99;h"><span data-ep-a598a="&#101;&#116;&#97;&#114;" data-ep-b80c0="&#104;&#101;&#45;&#115;"><span data-ep-b80c0="&#112;&#115;&#121;c" data-ep-a598a="&#105;&#97;&#116;&#64;"></span></span></span></span></a><script type="text/javascript">emailProtector.addCloakedMailto("ep_97c56e53", 1);</script></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+		</div>
+	
+					</div>
+				</div>
+			    			    
+		<div id="header">
+			<div class="container">
+			    <div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					    <!-- div id="logo"-->
+						  <!-- a href="/<!--?php echo $this->params->get('logo_link')?>"-->
+						      <!--img style="width:<!--?php echo $this->params->get('logo_width')?>px; height:<!--?php echo $this->params->get('logo_height')?>px; " src="/<!--?php echo $this->params->get('logo_file')?>" alt="" /-->
+						  <!--/a-->
+					    <!--/div-->
+					</div>
+								    <div class="main_menu">
+						<nav id="site-navigation-main" class="navbar" role="navigation">
+							<div class="navbar-header">
+						      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+						        <i class="fa fa-bars"></i>
+						      </button>
+						    </div>
+							<div id="main-navbar-collapse" class="collapse navbar-collapse">
+										<div class="moduletable_menu">
+						<ul class="nav navbar-nav menu">
+<li class="item-101"><a href="/" >Accueil</a></li><li class="item-221 deeper parent"><a href="#" >L'Equipe</a><ul class="nav-child unstyled small"><li class="item-214"><a href="/l-equipe/votre-equipe" >Votre Equipe</a></li><li class="item-223 deeper parent"><a href="#" >Psychiatre</a><ul class="nav-child unstyled small"><li class="item-251"><a href="/l-equipe/psychiatre/crionnet-marc-antoine" >CRIONNET Marc-Antoine</a></li><li class="item-215"><a href="/l-equipe/psychiatre/rengade-charles-edouard" >RENGADE Charles-Edouard </a></li></ul></li><li class="item-222 deeper parent"><a href="#" >Psychologue</a><ul class="nav-child unstyled small"><li class="item-250"><a href="/l-equipe/psychologue/avigdor-marie" >AVIGDOR Marie </a></li><li class="item-347"><a href="/l-equipe/psychologue/mercier-pierrick" >MERCIER Pierrick</a></li><li class="item-216"><a href="/l-equipe/psychologue/dr-joanna-moussally" >MOUSSALLY BEC Joanna </a></li><li class="item-252"><a href="/l-equipe/psychologue/muller-stephanie" >MULLER Stéphanie</a></li><li class="item-348"><a href="/l-equipe/psychologue/oechslin-leitja" >OECHSLIN Leitja</a></li></ul></li></ul></li><li class="item-150 deeper parent"><a href="#" >Nos Prestations</a><ul class="nav-child unstyled small"><li class="item-152"><a href="/nos-prestations/psychotherapies-individuelles" title="Adaptées à vos besoins / centrées sur la relation - Présentation en cours">Psychothérapies Individuelles</a></li><li class="item-275 deeper parent"><a href="/nos-prestations/groupes-therapeutiques" title="Flexibles et dynamiques / animés par des spécialistes">Groupes Thérapeutiques</a><ul class="nav-child unstyled small"><li class="item-296"><a href="/nos-prestations/groupes-therapeutiques/affirmation-de-soi" >Affirmation de Soi</a></li><li class="item-295"><a href="/nos-prestations/groupes-therapeutiques/gestion-des-emotions" >Gestion des Émotions</a></li><li class="item-289"><a href="/nos-prestations/groupes-therapeutiques/image-du-corps" >Image du corps</a></li><li class="item-294"><a href="/nos-prestations/groupes-therapeutiques/meditation-de-pleine-conscience" >Méditation de pleine conscience</a></li><li class="item-297"><a href="/nos-prestations/groupes-therapeutiques/new-games" >New Games</a></li><li class="item-290"><a href="/nos-prestations/groupes-therapeutiques/theatre" >Théâtre</a></li></ul></li><li class="item-153 deeper parent"><a href="#" title="Civiles, pénales, d’orientation professionnel, bilans cognitifs - Présentation en cours">Evaluations</a><ul class="nav-child unstyled small"><li class="item-193"><a href="#" >Expertises</a></li><li class="item-211"><a href="#" >Bilans</a></li></ul></li><li class="item-155 deeper parent"><a href="#" title="Supervisions et formations sur-mesure - Présentation en cours">Formations</a><ul class="nav-child unstyled small"><li class="item-206"><a href="#" >Supervisions</a></li><li class="item-207"><a href="#" >Sur-mesure</a></li></ul></li></ul></li><li class="item-185 active deeper parent"><a href="#" >En Pratique</a><ul class="nav-child unstyled small"><li class="item-186 current active"><a href="/en-pratique/prendre-rendez-vous" >Prendre Rendez-Vous</a></li><li class="item-213"><a href="/en-pratique/venir-au-centre" >Venir au Centre</a></li><li class="item-235"><a href="/en-pratique/nos-valeurs" >Nos Valeurs</a></li></ul></li><li class="item-236"><a href="#" >     |     </a></li><li class="item-228 deeper parent"><a href="/offres-d-emploi" >Offres d'Emploi</a><ul class="nav-child unstyled small"><li class="item-227"><a href="/offres-d-emploi/psychiatre-psychotherapeute" >Psychiatre - Psychothérapeute</a></li><li class="item-345"><a href="/offres-d-emploi/medecin-assistant" >Médecin Assistant</a></li></ul></li></ul>
+		</div>
+	
+							</div>
+						</nav><!-- #site-navigation -->
+				    </div>
+							    </div>
+			</div>
+		</div> <!--id header-->
+	</div> <!--class header-->
+
+		    
+		<div id="wrapper" class="container">
+		    
+		    
+			<div id="globalContent">
+
+				
+			    <div class="row">
+					
+						<div id="contentBox" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							
+							<div><div id="system-message-container">
+	</div>
+</div>
+							<div><div class="item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="fr-CH" />
+		<div class="page-header">
+		<h1> Prendre Rendez-Vous </h1>
+	</div>
+	
+		
+						
+		
+	
+	
+		
+								<div itemprop="articleBody">
+		<table style="width: 100%; vertical-align: top;">
+<tbody>
+<tr>
+<td style="vertical-align: top;"><img src="/images/config/logo/Logo-Nom_psyche_centre_de_psychotherapies_700x300.png" alt="Psyché centre de psychothérapies" width="40%" height="NaN" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%; vertical-align: top;">
+<tbody>
+<tr>
+<td style="width: 40%; vertical-align: top;">&nbsp;</td>
+<td style="width: 60%; vertical-align: top;">&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 40%; vertical-align: middle; text-align: right;"><i class="fa fa-home fa-2x"></i>&nbsp;&nbsp;</td>
+<td style="width: 60%; vertical-align: middle; text-align: left;"><span style="font-size: 14pt;"><strong>Rue des Poudrières, 135</strong></span><br /><span style="font-size: 14pt;"><strong>2000 NEUCHATEL<br /></strong></span></td>
+</tr>
+<tr>
+<td style="width: 40%; vertical-align: top;">&nbsp;</td>
+<td style="width: 60%; vertical-align: top;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 40%; vertical-align: middle; text-align: right; padding-bottom: 8px;"><i class="fa fa-phone fa-2x"></i>&nbsp;&nbsp;</td>
+<td style="width: 60%; vertical-align: middle; text-align: left;">
+<p>&nbsp;<strong><span style="font-size: 14pt;">+41 (0) 32 566 75 65</span></strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 40%; vertical-align: middle; text-align: right; padding-bottom: 8px;"><i class="fa fa-envelope-o fa-2x"></i>&nbsp;&nbsp;</td>
+<td style="width: 60%; vertical-align: middle; text-align: left;">
+<p><strong><span style="font-size: 14pt;">&nbsp;<a href="javascript:/* This email address is being protected from spambots.*/"><span class="cloaked_email ep_3fd65fca"><span data-ep-b80c0="a&#46;c&#104;" data-ep-a598a="&#115;e&#99;r"><span data-ep-a598a="e&#116;&#97;&#114;" data-ep-b80c0="&#104;e-&#115;"><span data-ep-b80c0="&#112;s&#121;&#99;" data-ep-a598a="ia&#116;&#64;"></span></span></span></span><span class="cloaked_email ep_76873548" style="display:none;"><span data-ep-b80c0="&#97;&#46;c&#104;" data-ep-a598a="&#115;&#101;cr"><span data-ep-b80c0="he-&#115;" data-ep-a598a="e&#116;a&#114;"><span data-ep-a598a="i&#97;&#116;&#64;" data-ep-b80c0="p&#115;&#121;&#99;"></span></span></span></span></a><script type="text/javascript">emailProtector.addCloakedMailto("ep_76873548", 1);</script></span></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="width: 100%; vertical-align: top;">
+<tbody>
+<tr>
+<td style="width: 48%; vertical-align: top;">
+<h2>&nbsp;Prise en Charge et Tarifs</h2>
+<hr />
+<p><span style="font-weight: 400; font-size: 14pt;">Les soins proposés sont remboursés selon la LaMal par le numéro RCC : M101724. <br />Merci de vous munir de votre carte d’assuré. </span></p>
+<p><strong><span style="font-size: 14pt;">Nous pratiquons le tiers payant.</span></strong></p>
+<p><span style="font-weight: 400; font-size: 14pt;">Toute consultation manquée, non excusée, sera facturée.<br />Merci de nous prévenir dès que possible en cas d’empêchement.</span></p>
+</td>
+<td style="width: 4%;">&nbsp;</td>
+<td style="width: 48%; vertical-align: top;">
+<h2>&nbsp;Prendre un rendez vous</h2>
+<hr />
+<p style="text-align: left;"><span style="font-size: 14pt;">Merci de prendre rendez-vous</span></p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i>&nbsp;&nbsp;&nbsp;<span style="font-size: 14pt;">par <strong>téléphone</strong><span style="font-size: 10pt;"><em>, pensez à laisser vos coordonnées sur le répondeur, </em></span></span></p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i>&nbsp;&nbsp;&nbsp;<span style="font-size: 14pt;">par <strong>e-mail</strong>,</span></p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i>&nbsp;&nbsp;&nbsp;<span style="font-size: 14pt;">ou en utilisant le <strong>formulaire</strong> suivant : <br /></span><span style="font-size: 14pt;"></span>		<div class="moduletable">
+						<div class="rapid_contact "><form  id="rp_5de52e847aa3e" method="post" onSubmit="return rp_checkCaptcha('rp_5de52e847aa3e');">
+<div class="rapid_contact intro_text "></div>
+<div class="rapid_contact_form" id="rapid_contact_form_rp_5de52e847aa3e"><div class="input-group"><label for="rp_5de52e847aa3e_email">Votre e-mail</label><input class="rapid_contact form-control inputbox " type="email" name="rp_email" id="rp_5de52e847aa3e_email" size="45" value="" /></div><div class="input-group"><label for="rp_5de52e847aa3e_subject">Sujet</label><input class="rapid_contact form-control inputbox " type="text" name="rp_subject" id="rp_5de52e847aa3e_subject" size="51" value="" /></div><div class="input-group"><label for="rp_5de52e847aa3e_message">Message</label><textarea class="rapid_contact form-control textarea " name="rp_message" id="rp_5de52e847aa3e_message" cols="46" rows="4" ></textarea></div><div class="input-group"></div><div class="input-group"><input class="rapid_contact btn btn-primary button " type="submit" value="Envoyer"/></div></div></form></div>		</div>
+	</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt;"><em><span style="color: #000066;"><strong>En cas d’urgence</strong>, merci de vous adresser au Centre d’Urgence en Psychiatrie (CUP)</span> : <a href="http://www.cnp.ch/patients-et-entourage/urgences/" target="_blank" rel="noopener noreferrer">www.cnp.ch/patients-et-entourage/urgences/</a></em></span></p> 	</div>
+
+	
+							</div></div>
+							
+						</div>
+
+								    </div>
+
+				
+			</div> <!--globalContent-->
+
+		    		</div> <!--wrapper-->
+
+		<div id="footer">
+		    <div class="container">
+				
+				
+				<div class="content_footer row">
+					<div class="copyrights col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											</div>
+					<div class="soc_icons_box col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<ul class="soc_icons" >
+													</ul>
+					</div>
+				</div> <!--content_footer-->
+
+									<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="moduletable">
+						
+
+<div class="custom"  >
+	<table style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 30%;"><img src="/images/config/logo/Logo-rond_psyche_centre_de_psychotherapies_86x86.png" alt="Psyché, centre de psychothérapies" width="50%" height="NaN" style="margin: 10px; float: right;" /><br style="clear: right;" /></td>
+<td style="width: 70%;"><span style="color: #000000; font-size: 20pt;"><strong>Psyché</strong></span><br /><span style="color: #000000; font-size: 14pt;">Centre de Psychothérapie SA</span></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 10%;">&nbsp;</td>
+<td style="width: 80%;">
+<div style="font-size: 14pt; color: #000000; text-align: center;">
+<p><span style="font-size: 8pt;"></span></p>
+<i class="fa fa-home fa-2x"></i>
+<p>Rue des Poudrières, 135<br />2000 NEUCHATEL</p>
+<p><span style="font-size: 8pt;"></span></p>
+<p style="text-align: center;"><a href="/en-pratique/venir-au-centre"><button type="button" class="btn btn-info btn-lg" style="text-align: center;">VENIR AU CENTRE</button></a><br />&nbsp;</p>
+<i class="fa fa-clock-o fa-2x"></i>
+<p>Sur Rendez-vous</p>
+<p style="text-align: center;"><a href="/en-pratique/prendre-rendez-vous"><button type="button" class="btn btn-info btn-lg" style="text-align: center;">PRENDRE RENDEZ-VOUS</button></a><br />&nbsp;</p>
+</div>
+</td>
+<td style="width: 10%;">&nbsp;</td>
+</tr>
+</tbody>
+</table></div>
+		</div>
+	
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="moduletable">
+						
+
+<div class="custom"  >
+	<p><a href="/en-pratique/venir-au-centre" target="_self"><img src="/images/config/plan-psyche-neuchatel-footer.jpg" alt="plan psyche neuchatel footer" width="100%" height="NaN" /></a></p></div>
+		</div>
+	
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="moduletable">
+						<ul class="nav navbar-nav menu">
+<li class="item-122 active"><a href="/plan-du-site" >Plan du Site</a></li></ul>
+		</div>
+			<div class="moduletable">
+						<div class="cw-sl-width-100" id="cw-sl-129">
+            <div class="cw-social-mod">
+                                <div class="cw-social-mod-bookmark">
+                    
+                                            <h4 style="color:#63CB6C" class="cw-social-mod-title-ac">
+                            Partager Avec Vos Amis                        </h4>
+                                            
+                                            
+                    <div class="cw-social-mod-icon-ac">
+
+                        <ul class="cw-social-mod-icons-cws-circle fadein">
+                            <li>
+<a class="facebook48" href="https://www.facebook.com/dialog/share?app_id=1181142472014308&amp;display=popup&amp;href=https%3A%2F%2Fpsyche-sa.ch&amp;redirect_uri=https://psyche-sa.ch/media/coalaweb/modules/generic/html/popup-close.html" title="Share on Facebook"  target="_blank"></a>
+</li><li>
+<a class="twitter48" href="https://twitter.com/intent/tweet?text=Partager&amp;url=https%3A%2F%2Fpsyche-sa.ch" title="Share on Twitter"  target="_blank"></a>
+</li><li>
+<a class="linkedin48" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fpsyche-sa.ch&amp;title=Partager" title="Share on LinkedIn"  target="_blank"></a>
+</li>                        </ul>
+                    </div>
+                </div>
+            </div>
+                        </div>
+		</div>
+	
+						</div>
+					</div>
+						    </div> 
+		</div> <!--id footer-->
+	</body>
+</html>

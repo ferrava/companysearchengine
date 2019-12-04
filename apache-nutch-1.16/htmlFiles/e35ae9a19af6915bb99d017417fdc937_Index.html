@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="PolyIT GmbH - www.polyit.ch" />
+  <meta name="copyright" content="Martin Engineering AG" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <title>RB SWISS DENTAL - Choice according to practitioner</title>
+
+  <script src="/Scripts/modernizr-custom.js"></script>
+  
+  <link href="/Scripts/fullcalendar/fullcalendar.min.css" rel="stylesheet" />
+  <link href="/Scripts/qtip/jquery.qtip.min.css" rel="stylesheet" />
+
+  <link href="/Content/themes/cupertino/jquery-ui.theme.min.css" rel="stylesheet" />
+  <link href="/Content/themes/cupertino/jquery-ui.min.css" rel="stylesheet" />
+  <link href="/Content/css?v=WDqLWojwk8t2e9Z5DfbMt9xghgElumvxQl3EBAmHJJE1" rel="stylesheet"/>
+
+</head>
+<body>
+
+  <header>
+     <link href="/Images/k6550_01/customer.css" rel="stylesheet" />   <div class="content-wrapper">
+ <div class="logoDiv"><img src="/Images/k6550_01/OA_P1_PraxisLogo.png" /><br /></div>    <div>    <div class="float-right">
+      <section id="login">
+        <ul>
+            <li class='active'><a href="/k6550_01/Agenda/Index">Practitioner</a></li>
+              <li class=''><a href="/k6550_01/Agenda/Behandlung">Treatment</a></li>
+          
+          <li class=''><a href="/k6550_01/Account/LoginSMS?returnUrl=%2Fk6550_01%2FAgenda%2FIndex" id="loginLink">Log in</a></li>
+          <li><a href="/Content/HelpOnlineAgenda.en.pdf" target="_blank" title="Help operate as a pdf" style="padding:1px 0 0  0;margin:0;display:inline-block;"><img src="/Images/help.png" style="border:none;height:20px;" /></a></li>
+          <li class=''><img src="/Content/flags/ch.png" class="language" lang="de" title="Deutsch" /></li>
+          <li class=''><img src="/Content/flags/fr.png" class="language" lang="fr" title="Français" /></li>
+          <li class=''><img src="/Content/flags/it.png" class="language" lang="it" title="Italiano" /></li>
+          <li class=''><img src="/Content/flags/es.png" class="language" lang="es" title="Español" /></li>
+          <li class='active'><img src="/Content/flags/en.png" class="language" lang="en" title="English" /></li>
+        </ul>
+      </section>
+    </div>
+</div>
+    <div style="clear: both"></div>
+  </div>
+
+
+  </header>
+   
+  <div id="body">
+    
+    <section class="content-wrapper main-content clear-fix">
+      
+<article>
+  <div>
+    <div class="nebeneinander">
+      <h2>Practitioner</h2>
+  <div style="display:none" id="selectBehandler">Please choose your practitioner</div>
+  <div class="image-checkbox-container">
+  <div class="behandler" title="BARBALONGA">
+    <img src="/Images/k6550_01/OA_B3_Bild.jpg"
+         data-oazeitraster="15"
+         data-oaid="3"
+         data-oaterminabsage="1440"
+         data-oaterminvorlauf="120"
+         alt="BARBALONGA" />
+    <span></span>
+    <br />Dott.sa
+    <br />BARBALONGA
+    <input style="display:none" type="checkbox" id="behandler_3" value="false" />
+    <div style="clear:both"></div>
+  </div>
+
+  <div class="behandler" title="RUSSO">
+    <img src="/Images/k6550_01/OA_B4_Bild.jpg"
+         data-oazeitraster="15"
+         data-oaid="4"
+         data-oaterminabsage="1440"
+         data-oaterminvorlauf="960"
+         alt="RUSSO" />
+    <span></span>
+    <br />Dott.
+    <br />RUSSO
+    <input style="display:none" type="checkbox" id="behandler_4" value="false" />
+    <div style="clear:both"></div>
+  </div>
+
+  </div>
+
+    </div>
+    <div id="terminvorgaben" class="nebeneinander"></div>
+  </div>
+  <div style="clear:both"></div>
+
+  <div id="calendar" style="position:relative"><div id="infoKeinTermin" class="ui-corner-all"></div></div>
+  <br /><H2>Do you have any questions / do you need another appointment?</H2><br /> Call us (0917520232). We are willing to help you.<br />RB SWISS DENTAL
+  <div id="dialog-form" title="Deleting an appointment" style="display: none;">
+  <span class="msg-icon msg-icon-question"></span>
+  <p>Do you want to delete the following appointment?</p>
+  <p style="clear:both" id="terminLoeschen"></p>
+  <p class="validateTips">Additional information about deleting the event.</p>
+  <form>
+    <textarea id="mutBemerkung" rows="4" style="width: 100%"></textarea>
+  </form>
+</div>
+<div id="dialog-form-ok" style="display: none;" title="Deleting an appointment">
+  <span class="msg-icon msg-icon-exclamation"></span>
+  <p>The date can not be deleted. Please contact us.</p>
+    <p style="clear:both">
+RB SWISS DENTAL      <br />Via Lavizzari 10b       <br />6600&nbsp;Locarno    </p>
+  <p>Tel. 091 752 02 32 / email: rbwissdental@gmail.com</p>   <p id="dialog-form-message"></p>
+</div>
+<div id="dialog-form-not-online" style="display: none;" title="Deleting an appointment">
+  <span class="msg-icon msg-icon-exclamation"></span>
+  <p>This date can not be deleted online. Please get in touch with the practice.</p>
+    <p style="clear:both">
+RB SWISS DENTAL      <br />Via Lavizzari 10b       <br />6600&nbsp;Locarno    </p>
+  <p>Tel. 091 752 02 32 / email: rbwissdental@gmail.com</p>   <p id="dialog-form-online-message"></p>
+</div>
+<div id="dialog-confirm" style="display: none;" title="New Appointment">
+  <span class="msg-icon msg-icon-info"></span>
+  <p>Thank you for your booking.</p>
+  <p>The date is entered and transmitted to the practice.</p>
+  <p>Unless otherwise stated, the appointment is booked.</p>
+</div>
+<div id="dialog-failed" style="display: none;" title="New Appointment">
+  <span class="msg-icon msg-icon-exclamation"></span>
+  <p>When transmitting the appointment an error has occurred. Please try again.</p>
+  <p id="dialog-failed-message" style="clear:both"></p>
+</div>
+
+</article>
+
+<aside>
+  <div>
+<div id="terminKarte" class="nebeneinander" style="visibility:hidden;display:none;">
+  <h2>My appointments</h2>
+      No events.
+
+</div>
+
+  
+  <div class="nebeneinander" style="visibility:visible;">
+    <h2>Registration</h2>
+    To schedule please log in.<br />
+    <a class="linkbutton" href="/k6550_01/Account/LoginSMS?returnUrl=%2Fk6550_01%2FAgenda%2FIndex" id="loginLink">Log In</a>
+  </div>
+  <div id="termine" class="nebeneinander">
+    <h2>Available dates</h2>
+    <select id="Daten" size="8" style="width:220px"></select>
+    <div id="terminNurTelefonisch" style="display:none">This appointment can only booked direct by doctor's office. Please contact the doctor's office.</div>
+  </div>
+  <div id="meineTermine" class="nebeneinander" style="visibility:hidden;display:none;">
+    <h2>Book New appointment</h2>
+    <div id="terminWahl">Please select a date</div>
+    <div id="terminBuchen">
+      <br />
+      Comment:<br />
+      <textarea id="kommentar" rows="4"></textarea><br />
+      <input type="button" id="neuerTermin" value="Book appointment" />
+    </div>
+  </div>
+  <div style="clear: both"></div>
+</div>
+
+</aside>
+
+
+    </section>
+  </div>
+  <footer>
+    <div class="content-wrapper">
+      <div class="float-left">
+        <p>&copy; 2013 - 2019 - Martin Engineering AG</p>
+      </div>
+    </div>
+  </footer>
+  <!--[if lt IE 9]>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <![endif]-->
+  <!--[if gte IE 9]><!-->
+  <script src="/bundles/jquery?v=gkWyJthHPtwkFjvHuNinBjchIfwLwc_KbE-H26J2kAI1"></script>
+
+  <!--<![endif]-->
+  <script src="/bundles/jqueryui?v=nmuMA-O4C0zphhL2ApoyudBi4v4VCXr0cCFlFmBK2eU1"></script>
+
+  <script src="/Scripts/jquery.cookie.min.js"></script>
+  <script src="/Scripts/iframe.seamless.min.js"></script>
+  <script>
+    $(function () {
+      $.iframeExternal();
+      $('.language').click(function (event) {
+        $.cookie('lang', $(this).attr('lang'), { path: '/' });
+        window.location.reload();
+      });
+    });
+  </script>
+  
+<script src="/Scripts/moment-with-locales.min.js"></script>
+<script src="/Scripts/qtip/jquery.qtip.min.js"></script>
+<script src="/Scripts/fullcalendar/fullcalendar.min.js"></script>
+<script src="/Scripts/OnlineAgenda.ipad.min.js"></script>
+<script src="/Scripts/OnlineAgenda.min.js"></script>
+
+<script>
+  $(function () {
+    moment.locale('en');
+
+    OnlineAgenda.UrlGetTerminZeiten = "/k6550_01/Agenda/GetTerminZeiten";
+    OnlineAgenda.UrlDeleteTermin = "/k6550_01/Agenda/DeleteTermin";
+    OnlineAgenda.UrlNeuerTermin = "/k6550_01/Agenda/NeuerTermin";
+    OnlineAgenda.UrlGetTerminVorgabe = "/k6550_01/Agenda/_GetTerminVorgabe";
+    OnlineAgenda.UrlMeineTermine = "/k6550_01/Agenda/_MeineTermine";
+
+    OnlineAgenda.text.TerminWaehlen = "Please select a date";
+    OnlineAgenda.text.TerminBestaetigt = "<p><b>The appointment is confirmed</b></p>";
+    OnlineAgenda.text.TerminPraxisBestaetigt = "<p><b>This appointment cancellation<br />has not yet been processed<br />by our administration;<br />this should be done in a<br />few minutes.</b></p>";
+    OnlineAgenda.text.TerminNurTelefonischReservieren = "This appointment can only booked direct by doctor's office. Please contact the doctor's office.";
+    OnlineAgenda.text.TerminPraxisUnbestaetigt = "<p><b>The date has not yet been<br />transmitted to the practice, please be patient.</b></p>";
+    OnlineAgenda.text.TerminNichtReserviert = "<p><b>You still need to<br />book appointments</b></p>";
+    OnlineAgenda.text.TerminNext = "The earliest possible date:";
+    OnlineAgenda.text.TerminKeine = "Sorry, no appointments are available";
+    OnlineAgenda.text.TerminOptionKeine = "Sorry, no dates";
+    OnlineAgenda.text.TerminZeit = '';
+
+    OnlineAgenda.text.dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    OnlineAgenda.text.dayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    OnlineAgenda.text.monthNames = ['January', 'February', 'March', 'April', 'Mai', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    OnlineAgenda.text.monthNamesShort = ['Jan','Feb','Mar','Apr','Mai','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+    OnlineAgenda.text.buttonText = { today: 'Today', month: 'Month', week: 'Week', day: 'Day' };
+
+    OnlineAgenda.text.btnLoeschen = "Delete";
+    OnlineAgenda.text.btnSchliessen = "Close";
+    OnlineAgenda.text.btnOk = "Ok";
+    OnlineAgenda.text.btnAbbrechen = "Cancel";
+
+    OnlineAgenda.vonZeit = "09:00:00";
+    OnlineAgenda.bisZeit = "19:00:00";
+
+    OnlineAgenda.configFlags = 4;
+
+    OnlineAgenda.Behandler_Setup();
+  });
+</script>
+
+</body>
+</html>

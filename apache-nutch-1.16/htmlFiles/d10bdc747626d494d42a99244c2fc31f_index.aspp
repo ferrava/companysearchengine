@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="de"><!--<![endif]--><head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Ristorante Azzurro Bern – Italienisches Restaurant - Ristorante Azzurro - Terra e Mare in Bern</title>
+	<meta http-equiv="Content-Language" content="DE" />
+<meta name="description" content="Das italienische Restaurant Ristorante Azzurro - Terra e Mare in Bern ist mit dem exklusiven Siegel «Ospitalita Italiana» ausgezeichnet. Geniessen Sie bei uns in schönem, mediterranem Ambiente tradizionell Italienisches Essen mit Pizza, Pasta, Fleisch oder köstlich zubereitete Meeresfrüchte und mediterrane Fischspeziaitäten. Unser riesiges Meerwasser-Aquarium im Raum Mare begeistert Gross und Klein." />
+<meta name="keywords" lang="DE" content="Azzurro, Ristorante, Restaurant, Bern, Italienisch, italienisches Restaurant, Terrasse, Ospitalita Italiana, Speisekarte, Speisen, Weinkarte, Wein, Saisonale Spezialitäten, Antipasti, Primi Piatti, Secondi Piatti, Marinelli" />
+<meta name="author" content="Ristorante Azzurro, Bern, Schweiz" />
+<meta name="copyright" content="Ristorante Azzurro, Bern, Schweiz" />
+<meta name="robots" content="index, follow, noydir, noodp, noarchive" />
+<meta name="revisit-after" content="14 days" />
+<meta name="DC.title" content="Ristorante Azzurro - Terra e Mare in Bern" />
+<meta name="DC.description" content="Das italienische Restaurant Ristorante Azzurro - Terra e Mare in Bern ist mit dem exklusiven Siegel «Ospitalita Italiana» ausgezeichnet. Geniessen Sie bei uns in schönem, mediterranem Ambiente tradizionell Italienisches Essen mit Pizza, Pasta, Fleisch oder köstlich zubereitete Meeresfrüchte und mediterrane Fischspeziaitäten. Unser riesiges Meerwasser-Aquarium im Raum Mare begeistert Gross und Klein." />
+<meta name="DC.publisher" content="Ristorante Azzurro, Bern, Schweiz" />
+<meta name="DC.language" content="DE" scheme="DCTERMS.RFC3066" />
+<meta name="DC.rights" content="Ristorante Azzurro, Bern, Schweiz" />
+<meta name="DC.creator" content="Blowfish AG, Switzerland" />
+<meta name="format-detection" content="telephone=no" />
+
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+  	<!-- <style type='text/css'>
+div.delimiterline {clear: both;height: 1px;width: 100%;margin-top: 15px;margin-bottom: 15px;background: url('/pic/form/form_delimiter.gif') repeat-x;}
+</style>
+<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Cardo:400italic|Open+Sans:400italic,400italic' />
+<link rel="stylesheet" type="text/css" media="screen" href="//extreme.quickcms.ch/includes/qestyler.asp?did=215" /> -->
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
+	<!-- <link rel="stylesheet" href="css/font-awesome.css" /> -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/retina.css"/>
+	<link rel="stylesheet" href="css/colorbox.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/quickcms.css"/>
+
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/color-yellow.css" title="yellow">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">	
+    <link href="https://fonts.googleapis.com/css?family=Caudex:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Cardo:400,400italic,700" rel="stylesheet" type="text/css">
+    
+    <!--[if lte IE 8]>
+        <script src="js/html5.js"></script>
+    <![endif]-->		
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+    <link   type='text/css'       href='javascript/fancybox/jquery.fancybox.css' rel='stylesheet' media='screen' />
+<link   type='text/css'       href='javascript/lwtooltip/lwtooltip.css' rel='stylesheet' />
+<script type='text/javascript' src='https://extreme.quickcms.ch/javascript/jquery/jquery.min.js'></script>
+<script type='text/javascript' src='https://extreme.quickcms.ch/javascript/jquery/jquery-ui.custom.min.js'></script>
+<script type='text/javascript' src='https://extreme.quickcms.ch/javascript/quickcms/common.js'></script>
+<script type='text/javascript' src='javascript/fancybox/jquery.mousewheel.pack.js'></script>
+<script type='text/javascript' src='javascript/fancybox/jquery.fancybox.js'></script>
+<script type='text/javascript' src='javascript/lwtooltip/lwtooltip.js'></script>
+<style type='text/css'>
+.fancybox-title-inside { padding-top:9px; color: #464441; background-color: #FAF2E7;}
+</style>
+<script type='text/javascript'>
+$(document).ready(function() {
+$("a[rel=Lightbox]").fancybox({'overlayColor':'#464441','overlayOpacity':0.8,'padding':0,'titleShow': true,'transitionIn': 'elastic', 'transitionOut': 'elastic'});
+$("a[rel=TitleLightbox]").fancybox({'overlayColor':'#464441','overlayOpacity':0.8,'padding':0,'titleShow': true, 'transitionIn': 'elastic', 'transitionOut': 'elastic'});});
+$(function() {$("#cmsfaq").accordion({active: false, autoHeight: false, collapsible: true });});
+$(function() {$("#cmsjob").accordion({active: false, autoHeight: false, collapsible: true });});
+</script>
+
+    <script type='text/javascript' src='slideshowscript/slideshow.js'></script>
+
+	<!-- Azzurro, Ristorante, Restaurant -->
+
+</head>
+<body>
+
+
+	
+	<!-- Primary Page Layout
+	================================================== -->
+	<div id="preloader">
+		<div id="logo-preload">&nbsp;</div>
+	</div>
+	
+
+	
+	
+		<div id="menu-wrap" class="menu-back cbp-af-header">
+			<div class="container">
+				<div class="sixteen columns">
+					<a class="scroll" href="#home"><div class="logo"></div></a>
+					<ul class="slimmenu">
+					<li class='topnav_std topnav_active'><a href='index.asp?page=italienisches-restaurant-bern'>Home</a></li>
+<li class='topnav_std'><a class='scroll' href=' #about'>Ihre Gastgeber</a></li>
+<li class='topnav_std'><a class='scroll' href=' #facts'>Auszeichnung</a></li>
+<li class='topnav_std'><a class='scroll' href=' #team'>Team</a></li>
+<li class='topnav_std'><a class='scroll' href=' #services'>Speisen & Weine</a></li>
+<li class='topnav_std'><a class='scroll' href=' #portfolio'>Bilder</a></li>
+<li class='topnav_std'><a class='scroll' href=' #contact'>Kontakt</a></li>
+				
+					</ul>
+				</div>
+			</div>
+		</div>		
+	
+
+        <div id="wrapper-slider">
+            <div id="controls">
+                <div class="prev"></div>
+                <div class="next"></div>
+            </div>
+        </div>
+
+	
+		<!-- Animierter Banner -->
+        
+		<div id="home"> 
+			<ul id="home-slide" class="owl-carousel owl-theme"> 
+				<li class="carousel-home-sec background-home9">
+					<div class="home-text">
+						<div class="container">
+							<div class="sixteen columns">
+								<h3><span class="boxwords" style="font-size: 70px;">Benvenuto</span></h3>
+								<p><span>Gut italienisch Essen im Ristorante Azzurro Terra e Mare in Bern</span></p>
+								<div class="arrow-wrap"><a class="arrow-down scroll" href="#home-top"></a></div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="carousel-home-sec background-home1">
+					<div class="home-text">
+						<div class="container">
+							<div class="sixteen columns">
+								<h3><span class="boxwords">Bitte treten Sie ein</span></h3>
+								<p><span>Erleben Sie bei uns echte italienische Gastfreundschaft</span></p>
+								<div class="arrow-wrap"><a class="arrow-down scroll" href="#home-top"></a></div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="carousel-home-sec background-home2">
+					<div class="home-text">
+						<div class="container">
+							<div class="sixteen columns">
+								<h3><span class="boxwords">Mediterranes Ambiente</span></h3>
+								<p><span>Geniessen Sie schöne Momente wie in Italien</span></p>
+								<div class="arrow-wrap"><a class="arrow-down scroll" href="#home-top"></a></div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="carousel-home-sec background-home8">
+					<div class="home-text">
+						<div class="container">
+							<div class="sixteen columns">
+								<h3><span class="boxwords">Ausgezeichnete italienische Küche</span></h3>
+								<p><span>Ospitalità  Italiana zeichnet das Ristorante Azzurro in Bern aus</span></p>
+								<div class="arrow-wrap"><a class="arrow-down scroll" href="#home-top"></a></div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="carousel-home-sec background-home5">
+					<div class="home-text">
+						<div class="container">
+							<div class="sixteen columns">
+								<h3><span class="boxwords">Pizza italiana</span></h3>
+								<p><span>Echte italienische Pizza für jeden Geschmack aus dem Holzofen</span></p>
+								<div class="arrow-wrap"><a class="arrow-down scroll" href="#home-top"></a></div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="carousel-home-sec background-home7">
+					<div class="home-text">
+						<div class="container">
+							<div class="sixteen columns">
+								<h3><span class="boxwords">Erlesene italienische Weine</span></h3>
+								<p><span>Bolgheri Sassicaia, Barbaresco, Barolo, Montepulciano und mehr...</span></p>
+								<div class="arrow-wrap"><a class="arrow-down scroll" href="#home-top"></a></div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Animierter Banner End -->
+	
+		<!-- Seite 1 - Home -->
+
+        <div id="home-top">
+            <span class="ss-style-doublediagonal"></span>
+            <div class="container">
+                <div class="sixteen columns">
+                    <h1>Ristorante Azzurro - Terra e Mare in Bern</h1> 
+                    <div class="sep-center"></div> 
+                    <div class="sub-center">Ein herzliches, italienisches &laquo;Willkommen&raquo; im Ristorante Azzurro Bern</div> 
+                    <p>Erleben Sie bei uns in der Stadt Bern echte italienische Gastfreundschaft. Das mit dem exklusiven Siegel «Ospitalita Italiana» ausgezeichnete «Azzurro – Terra e Mare» gehört zu den besten italienischen Restaurants. 
+Eindrucksvolle Speisen, ausgewählte Weine und das einzigartige, mediterrane Ambiente garantieren Genusserlebnisse.&nbsp;
+
+Das Ristorante Azzurro bietet ca. 120 – 130 Gästen eine gemütliche Atmosphäre im Raum Terra
+oder im speziellen Raum Mare, wo ein grosses Meerwasser-Aquarium im Mittelpunkt steht, welches Klein und Gross begeistert.  Geniessen Sie bei schönem 
+Wetter auf der gedeckten Terrasse des Restaurants die Sonne wie in Italien.</p>
+                </div>
+                <div class="sixteen columns">
+                    <div class="sep-wrap"></div>
+                </div>
+            </div>
+        </div>
+
+		<!-- Seite 1 - Home End -->
+
+		<!-- Seite 2 - Über uns & Auszeichnungen -->
+
+		<div id="about">
+			<div class="container">
+				<div class="sixteen columns padding-bottom">
+					<h1>Ihre Gastgeber</h1> 
+					<div class="sep-center"></div> 
+					<p>Franco und Luci Marinelli – Inhaber und die Seelen des Hauses – umsorgen Sie und 
+Ihre Begleitung aufmerksam und mit italienischem Charme im Azzurro. Wir empfangen 
+auch neue Gäste, als gingen sie schon lange bei uns ein und aus.</p>
+				</div>
+				<div class="sixteen columns remove-bottom animated slide delay">
+					<img src="/pic/franco_luci_marinelli.png" alt="Franco und Luci Marinelli - Inhaber vom Ristorante Azzurro in Bern"/>
+				</div>
+			</div>
+
+		<!-- Teil 2 - Auszeichnungen -->
+            
+			<div id="facts">
+				<div class="container">
+					<div class="sixteen columns">
+						<div class="facts-wrap">
+							<div class="facts-line"></div>
+							<h5>Ausgezeichnete italienische Küche</h5> 
+                    		<div class="sep-center-gold"></div> 
+							<p><p><a href="https://www.10q.it/?lang=de" title="Webseite Ospitalità Italiana anzeigen" target="_blank"><img alt="Auszeichnung Ostpitalità Italiana für das Restaurant Azzurro in Bern" title="Auszeichnung Ostpitalità Italiana für das Restaurant Azzurro in Bern" src="Images/ospitalita-italiana/ospitalita_italiana_350x243.png"></a>&nbsp;</p><p>Das Ristorante Azzurro Terra e Mare hat im Juli 2013 das Siegel «Ospitalita Italiana» erhalten.<br>Das
+Siegel «Ospitalità Italiana» ist ein von der Industrie- und
+Handelskammer in Rom gefördertes&nbsp;Zertifikat, welches die Qualität von Gastronomie-Angeboten weltweit bewertet.</p><p>Mit der Zertifizierung «Ospitalità Ristoranti Italiani nel Mondo» 
+werden Lokale ausgezeichnet, die einem strengen Kriterienkatalog 
+standhalten und somit als echte italienische Lokale gelten dürfen. Ziel ist, der hohen 
+Qualität dieser ausgezeichneten Lokale einen Schutz zu bieten.</p><p>Prämiert werden 
+Restaurants, welche die Qualität der italienischen 
+Kochkultur durch die exklusive Verwendung original italienischer 
+Produkte und Rezepte garantieren, die kulinarische Tradition 
+Italiens voll und ganz respektieren und zur Geltung bringen und zudem echte 
+italienische Gastfreundschaft zelebrieren.</p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+            
+			<!-- Seite 2 - Über uns & Auszeichnungen End -->
+
+
+			<!-- Seite 3 - Team -->
+
+			<div id="team">
+				<div class="container">
+					<div class="sixteen columns padding-bottom">
+						<h1>Gli Azzurrini - das Team vom Azzurro Bern</h1> 
+						<div class="sep-center"></div> 
+						<p>Einzigartige Speisen macht man aus Liebe zum Detail, aus Liebe zum 
+Kreieren und mit viel Erfahrung. Unser Koch-Team ist italienischer Herkunft und bemüht sich tagtäglich, Sie mit den hohen Standards des Restaurants zu verwöhnen.<br>Die Azzurrini – das Team vom Ristorante Azzurro in Bern – stellen sich Ihnen vor:<br></p>
+					</div>
+					<div class="sixteen columns">
+						<div id="sync1" class="owl-carousel">
+							<div class="item" >
+								<img src="pic/team/franco_marinelli_400x400.jpg" alt="Franco Marinelli"/>
+								<h5>Franco Marinelli</h5> 
+								<p><small><em>Gastgeber</em></small></p>
+								<!-- <p>Duis fringilla fringilla lorem, at ultricies tortor elementum sed. Fusce non ligula tortor, ut hendrerit magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nunc risus, ac vehicula turpis.</p> -->
+							</div>
+							<div class="item" >
+								<img src="pic/team/luci_marinelli_400x400.jpg" alt="Luci Marinelli"/>
+								<h5>Luci Marinelli</h5> 
+								<p><small><em>Gastgeberin</em></small></p>
+								<!-- <p>Duis fringilla fringilla lorem, at ultricies tortor elementum sed. Fusce non ligula tortor, ut hendrerit magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nunc risus, ac vehicula turpis.</p> -->
+							</div>
+							<div class="item" >
+								<img src="pic/team/service_mann_2_400x400.jpg" alt="Alfonso"/>
+								<h5>Alfonso</h5> 
+								<p><small><em>Chef de Service</em></small></p>
+								<!-- <p>Unserer fröhliche sizilianische. Seit 2009 im Team.</p> -->
+							</div>
+							<div class="item" >
+								<img src="pic/team/service_mann_3_400x400.jpg" alt="Raffaele"/>
+								<h5>Raffaele</h5> 
+								<p><small><em>Service</em></small></p>
+								<!-- <p>Duis fringilla fringilla lorem, at ultricies tortor elementum sed. Fusce non ligula tortor, ut hendrerit magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nunc risus, ac vehicula turpis.</p> -->
+							</div>
+							<div class="item" >
+								<img src="pic/team/service_mann_1_400x400.jpg" alt="Mario"/>
+								<h5>Mario</h5> 
+								<p><small><em>Bar &amp; Buffet</em></small></p>
+								<!-- <p>Duis fringilla fringilla lorem, at ultricies tortor elementum sed. Fusce non ligula tortor, ut hendrerit magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nunc risus, ac vehicula turpis.</p> -->
+							</div>
+							<div class="item" >
+								<img src="pic/team/service_frau_1_400x400.jpg" alt="Carmen"/>
+								<h5>Carmen</h5> 
+								<p><small><em>Service</em></small></p>
+								<!-- <p>Duis fringilla fringilla lorem, at ultricies tortor elementum sed. Fusce non ligula tortor, ut hendrerit magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nunc risus, ac vehicula turpis.</p> -->
+							</div>
+							<div class="item" >
+								<img src="pic/team/pizzaiolo_1_400x400.jpg" alt="Marco"/>
+								<h5>Marco</h5> 
+								<p><small><em>Chef-Pizzaiolo</em></small></p>
+								<!-- <p>Duis fringilla fringilla lorem, at ultricies tortor elementum sed. Fusce non ligula tortor, ut hendrerit magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nunc risus, ac vehicula turpis.</p> -->
+							</div>
+							<div class="item" >
+								<img src="pic/team/kueche_mann_1_400x400.jpg" alt="Giacomo"/>
+								<h5>Giacomo</h5> 
+								<p><small><em>Chefkoch</em></small></p>
+								<!-- <p>Duis fringilla fringilla lorem, at ultricies tortor elementum sed. Fusce non ligula tortor, ut hendrerit magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nunc risus, ac vehicula turpis.</p> -->
+							</div>
+							<div class="item" >
+								<img src="pic/team/kueche_mann_2_400x400.jpg" alt="Giovanni"/>
+								<h5>Giovanni</h5> 
+								<p><small><em>Koch</em></small></p>
+								<!-- <p>Duis fringilla fringilla lorem, at ultricies tortor elementum sed. Fusce non ligula tortor, ut hendrerit magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nunc risus, ac vehicula turpis.</p> -->
+							</div>
+						</div>
+
+						<div id="sync2" class="owl-carousel">
+							<div class="item" ><img src="pic/team/franco_marinelli_400x400.jpg" alt="Franco Marinelli" title="Franco Marinelli - Gastgeber"/></div>
+							<div class="item" ><img src="pic/team/luci_marinelli_400x400.jpg" alt="Luci Marinelli" title="Luci Marinelli - Gastgeberin"/></div>
+							<div class="item" ><img src="pic/team/service_mann_2_400x400.jpg" alt="Alfonso" title="Alfonso"/></div>
+							<div class="item" ><img src="pic/team/service_mann_3_400x400.jpg" alt="Raffaele" title="Raffaele"/></div>
+							<div class="item" ><img src="pic/team/service_mann_1_400x400.jpg" alt="Mario" title="Mario"/></div>
+							<div class="item" ><img src="pic/team/service_frau_1_400x400.jpg" alt="Carmen" title="Carmen"/></div>
+							<div class="item" ><img src="pic/team/pizzaiolo_1_400x400.jpg" alt="Marco" title="Marco"/></div>
+							<div class="item" ><img src="pic/team/kueche_mann_1_400x400.jpg" alt="Giacomo" title="Giacomo"/></div>
+							<div class="item" ><img src="pic/team/kueche_mann_2_400x400.jpg" alt="Giovanni" title="Giovanni"/></div>
+						</div>					
+					</div>
+                    <!-- 
+					<div class="sixteen columns">
+						<div class="sep-wrap"></div>
+					</div>
+                     -->
+				</div>
+			</div>
+
+			<!-- Seite 3 - Team End -->
+
+		</div>
+			
+
+		<!-- Seite 5 - Referenzen Parallax -->
+
+		<div id="separ"> <!-- Trennlinie -->
+			<div class="parallax"></div>
+			<div class="container">
+				<div class="sixteen columns">
+					<div class="top-separ">
+						<h3>Was unsere Kunden sagen</h3> 
+						<div class="sep-center-small"></div>			
+					</div>
+					<div id="sync3" class="owl-carousel">
+						<!-- 
+						<div class="item" >
+							<div class="testi-wrap">
+								<p><em>Im Ristorante Azzurro in Bern werde ich stets zuvorkommend und kompetent bedient. Die italienische Küche schmeckt mir wunderbar. Man fühlt sich, als wäre man in Italien in den Ferien.</em></p>
+								<h6>Heinz Rohrbach, <small><em>CEO bei MAK Consulting AG</em></small></h6> 	
+							</div>				
+						</div>
+						 -->
+						<div class="item" >
+							<div class="testi-wrap">
+								<p><em>Mein Papi hat mich ins Azzurro eingeladen, um ein Filetto di Manzo con Porcini zu essen. Das hat so gut geschmeckt! Und die Nemo-Fische im Mare-Aquarium haben mir und meinem kleinen Bruder auch sehr gut gefallen.</em></p>
+								<h6>Naima (13), <small><em>Schülerin</em></small></h6> 	
+							</div>				
+						</div>
+						<!-- 
+						<div class="item" >
+                              <div class="testi-wrap">
+								<p><em>Ich esse regelmässig im Ristorante Azzurro. Der herzliche, exzellente Service wie auch die gut zubereiteten Speisen bereiten mir und meiner Begleitung jedes Mal von Neuem Freude.</em></p>
+								<h6>Prof. Dr. med. Stefan Eggli, <small><em>Sonnenhof Spital</em></small></h6> 	
+							</div>				
+						</div>
+						 -->
+						<!-- 
+						<div class="item" >
+                              <div class="testi-wrap">
+								<p><em>Ich esse regelmässig im Ristorante Azzurro. Der herzliche, exzellente Service wie auch die gut zubereiteten Speisen bereiten mir und meiner Begleitung jedes Mal von Neuem Freude.</em></p>
+								<h6>Prof. Dr. med. Stefan Eggli, <small><em>Sonnenhof Spital</em></small></h6> 	
+							</div>				
+						</div>
+						 -->
+					</div>
+					<div id="sync4" class="owl-carousel">
+						<!-- 
+						<div class="item" ><img src="/pic/referenzen/rohrbach_heinz_mak_consulting_100x100.jpg" alt="Heinz Rohrbach, CEO bei MAK Consulting AG"/></div>
+						 -->
+						<div class="item" ><img src="/pic/referenzen/naima_100x100.jpg" alt="Naima, Schülerin"/></div>
+						<!-- 
+						<div class="item" ><img src="/pic/referenzen/stefan_eggli_sonnenhof_100x100.jpg" alt="Prof. Dr. med. Stefan Eggli, Sonnenhof Spital"/></div>
+						 -->
+						<!-- 
+						<div class="item" ><img src="/pic/referenzen/stefan_eggli_sonnenhof_100x100.jpg" alt="Prof. Dr. med. Stefan Eggli, Sonnenhof Spital"/></div>
+						 -->
+					</div>						
+				</div>	
+			</div>
+		</div>
+
+		<!-- Seite 5 - Referenzen Parallax End -->
+
+		<!-- Seite 6 - Speisekarten -->
+		
+		<div id="services">	
+			<div class="container">
+				<div class="sixteen columns padding-bottom">
+					<h1>Unsere Speisen und Weine</h1> 
+					<div class="sep-center"></div> 
+					<p>Erleben Sie bei uns im Ristorante Azzurro echte italienische, gastronomische Höhenflüge. Unsere italienischen Köche und Pizzaiolos beherrschen die Zubereitung einer Pizza Margherita ebenso wie ein Filetto di Manzo, eine Orata al Cartoccio oder Strigoloni del Marinaio. Authentische, italienische Spezialisten machen das Azzurro Bern zum gastronomischen Place-to-go in Bern. </p>
+				</div>
+				<div class="one-third column animated bounceInLeft">
+					<div class="services-wrap">
+						<a href="/Files/Speisekarten/azzurro-karte-mare-de.pdf" target="_blank">
+                        <div class="font-awesome-icon">&#xf0f5;</div>
+						<h5>Speisekarte (DE)</h5>
+                         <div class="services-discr">
+                            <h5>Speisekarte (DE)</h5>
+                            <p>Hier klicken um unsere Speisekarte Deutsch als PDF-Download anzuzeigen.</p>
+                        </div>
+                        </a>
+					</div>
+				</div>
+				<div class="one-third column animated bounceInLeft">
+					<div class="services-wrap">
+						<a href="/Files/Speisekarten/azzurro-karte-mare-fr-en.pdf" target="_blank">
+                        <div class="font-awesome-icon">&#xf0f5;</div>
+						<h5>Speisekarte (FR &amp; EN)</h5>
+                         <div class="services-discr">
+                            <h5>Speisekarte (FR &amp; EN)</h5>
+                            <p>Hier klicken um unsere Speisekarte Französisch und Englisch als PDF-Download anzuzeigen.</p>
+                        </div>
+                        </a>
+					</div>
+				</div>
+				<div class="one-third column animated bounceIn">
+					<div class="services-wrap">
+						<a href="/Files/Speisekarten/azzurro-silvester-terra.pdf" target="_blank">
+						<div class="font-awesome-icon" style="color:#6d3c00;">&#xf005;</div>
+						<h5>Silvestermenü Terra</h5> 
+                        <div class="services-discr" style="background-color:#6d3c00;">
+                            <h5>Silvester im Terra</h5> 
+                            <p>Felice Anno Nuovo. Hier klicken um unsere Silvestermenü Terra (Fleisch) als PDF-Download anzuzeigen.</p>
+                        </div>
+                        </a>
+					</div>
+				</div>	
+				<div class="one-third column animated bounceIn">
+					<div class="services-wrap">
+						<a href="/Files/Speisekarten/azzurro-silvester-mare.pdf" target="_blank">
+						<div class="font-awesome-icon" style="color:#275da6;">&#xf005;</div>
+						<h5>Silvestermenü Mare</h5> 
+                        <div class="services-discr" style="background-color:#275da6;">
+                            <h5>Silvester im Mare</h5> 
+                            <p>Felice Anno Nuovo. Hier klicken um unser Silvestermenü Mare (Fisch) als PDF-Download anzuzeigen.</p>
+                        </div>
+                        </a>
+					</div>
+				</div>	
+				<div class="one-third column animated bounceIn">
+					<div class="services-wrap">
+						<a href="/Files/Speisekarten/azzurro_spezialitaeten.pdf" target="_blank">
+						<div class="font-awesome-icon">&#xf0d0;</div>
+						<h5>Saisonale Spezialitäten</h5> 
+                        <div class="services-discr">
+                            <h5>Saisonale Spezialitäten</h5> 
+                            <p>Hier klicken um unsere Spezialitätenkarte als PDF-Download anzuzeigen.</p>
+                        </div>
+                        </a>
+					</div>
+				</div>	
+				<div class="one-third column animated bounceInRight">
+					<div class="services-wrap">
+						<a href="/flipbook/weinkarte/index.html" target="_blank">
+						<div class="font-awesome-icon">&#xf000;</div>
+                        <h5>Weinkarte</h5> 
+                        <div class="services-discr">
+                            <h5>Weinkarte</h5>
+                            <p>Hier klicken um unsere Weinkarte als Flipbook und PDF-Download anzuzeigen.</p>
+                        </div>
+                        </a>
+					</div>
+				</div>	
+				<div class="clear"></div>	
+				<!-- Trennlinie -->
+				<!-- <div class="sixteen columns">
+					<div class="sep-wrap"></div>
+				</div>	-->
+				<!-- Trennlinie End -->
+			</div>
+            
+            
+		</div>			
+			
+
+
+		<div id="separ1"> 
+			<div class="parallax1"></div>
+			<div class="background-color"></div>
+			<div class="container">
+				<div class="sixteen columns">
+					<div class="tweet">
+						<ul class="slider"> 
+							<li>
+								<h6>Das Essen ist einer der vier Zwecke des Daseins. Welches die drei anderen sind, darauf bin ich noch nicht gekommen.</h6> 
+								<p>Baron de la Brède et de Montesquieu &middot; Schriftsteller (1689 - 1755)</p> 
+							</li> 
+							<li>
+								<h6>Eine wahrhaftige und gute Küche besteht zu neunzig Prozent aus hochwertigen und frischen Zutaten und zu zehn Prozent aus Phantasie.</h6>
+								<p>Paul Bocuse &middot; Starkoch</p> 
+							</li> 
+							<li>
+								<h6>Sage mir, wie du isst, und ich sage dir, was du bist.</h6>
+								<p>Jean Anthelme Brillat-Savarin &middot; Schriftsteller (1755 - 1826)</p> 
+							</li> 
+							<li>
+								<h6>Das Leben ist zu kurz, um schlechten Wein zu trinken.</h6>
+								<p>Johann Wolfgang von Goethe &middot; Dichter (1749 - 1832)</p> 
+							</li>
+							<li>
+								<h6>Kochen ist eine Kunst und keineswegs die unbedeutendste.</h6>
+								<p>Luciano Pavarotti &middot; Opernsänger (1935 - 2007)</p> 
+							</li>
+							<li>
+								<h6>Essen und Trinken sind die drei schönsten Dinge des Lebens.</h6>
+								<p>Willy Millowitsch &middot; Schauspieler (1909 - 1999)</p> 
+							</li>
+							<li>
+								<h6>Falsche Gewürze tun ebenso weh wie falsche Töne.</h6>
+								<p>Gioachino Rossini &middot; Komponist (1792 - 1868)</p> 
+							</li>
+							<li>
+								<h6>Keine Liebe ist aufrichtiger als die Liebe zum Essen.</h6>
+								<p>George Bernard Shaw &middot; Dramatiker (1856 - 1950)</p> 
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+
+
+		<div id="portfolio">	
+			<div class="container">
+				<div class="sixteen columns">
+					<h1>Ristorante Azzurro in Bildern</h1> 
+					<div class="sep-center"></div> 
+					<p><p>Das Ristorante Azzurro bietet ca. 120 – 130 Gästen eine gemütliche Atmosphäre im Raum Terra oder im speziellen Raum Mare, wo ein grosses Meerwasser-Aquarium im Mittelpunkt steht, welches Klein und Gross begeistert. Geniessen Sie bei schönem Wetter auf der gedeckten Terrasse des Restaurants die Sonne wie in Italien.</p><p>Besuchen Sie das Azzurro Bern auch virtuell. Wir haben für Sie einen Panorama-Rundgang vorbereitet, wo Sie unsere Räume Terra und Mare fast wie in echt besuchen können. Herzlich willkommen.</p></p>
+				</div>
+				<div class="sixteen columns">
+					<div id="portfolio-filter">
+						<ul id="filter">
+							<li><div class="cl-effect-7"><a href="#" class="current" data-filter="*" title="">Alles</a></div></li>
+							<li><div class="cl-effect-7"><a href="#" data-filter=".terra" title="">Raum Terra</a></div></li>
+							<li><div class="cl-effect-7"><a href="#" data-filter=".mare" title="">Raum Mare</a></div></li>
+							<li><div class="cl-effect-7"><a href="#" data-filter=".terrasse" title="">Terrasse</a></div></li>
+							<li><div class="cl-effect-7"><a href="#" data-filter=".kueche" title="">Küche</a></div></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<ul class="portfolio-wrap">
+				<li class="portfolio-box terra mare">	
+					<a class="iframe group1" href="index.asp?page=italienisches-restaurant-bern-panorama" title="360° Panorama vom Ristorante Azzurro in Bern">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="pic/gallery/panorama360_600x400.jpg" alt="360° Panorama vom Ristorante Azzurro in Bern" />	
+						<h6>360° Panorama</h6> 	
+						<p><em><span>Hier klicken</span></em></p> 	
+					</a>	
+				</li>
+				<li class="portfolio-box terra mare">	
+					<a class="iframe group1" href="index.asp?page=italienisches-restaurant-bern-restaurant" title="Fotos vom Ristorante Azzurro Bern">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="pic/gallery/azzurro_mare2_600x400.jpg" alt="Fotos vom Ristorante Azzurro Bern" />	
+						<h6>Ristorante Azzurro</h6> 	
+						<p><em><span>Hier klicken</span></em></p> 	
+					</a>		
+				</li>		
+				<li class="portfolio-box mare">	
+					<a class="iframe group1" href="index.asp?page=italienisches-restaurant-bern-aquarium" title="Aquarium im Raum Mare im Ristorante Azzurro Bern">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="pic/gallery/azzurro_aquarium2_600x400.jpg" alt="Aquarium im Raum Mare im Ristorante Azzurro Bern" />
+						<h6>Aquarium im Mare</h6> 	
+						<p><em><span>Hier klicken</span></em></p> 
+					</a>				
+				</li>	
+				<li class="portfolio-box terra mare">
+					<a class="iframe group1" href="index.asp?page=italienisches-restaurant-bern-restaurant" title="Fotos vom Ristorante Azzurro Bern">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="pic/gallery/azzurro_pizza_600x400.jpg" alt="Fotos vom Ristorante Azzurro Bern" />	
+						<h6>Ristorante Azzurro</h6> 	
+						<p><em><span>Hier klicken</span></em></p>
+					</a> 			
+				</li>	
+				<li class="portfolio-box terra mare">	
+					<a class="iframe group1" href="index.asp?page=italienisches-restaurant-bern-restaurant" title="Fotos vom Ristorante Azzurro Bern">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="pic/gallery/azzurro_spirituosen_600x400.jpg" alt="Fotos vom Ristorante Azzurro Bern" />
+						<h6>Ristorante Azzurro</h6> 	
+						<p><em><span>Hier klicken</span></em></p> 		
+					</a>			
+				</li>
+				<li class="portfolio-box kueche">	
+					<a class="iframe group1" href="index.asp?page=italienisches-restaurant-bern-kueche" title="Fotos aus der Küche vom Ristorante Azzurro Bern">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="pic/gallery/azzurro_kueche1_600x400.jpg" alt="Fotos aus der Küche vom Ristorante Azzurro Bern" />
+						<h6>Küche Azzurro</h6> 	
+						<p><em><span>Hier klicken</span></em></p> 	
+					</a>			
+				</li>	
+				<li class="portfolio-box terra mare">
+					<a class="iframe group1" href="index.asp?page=italienisches-restaurant-bern-restaurant" title="Fotos vom Ristorante Azzurro Bern">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="pic/gallery/wein_600x400.jpg" alt="Fotos vom Ristorante Azzurro Bern" />	
+						<h6>Ristorante Azzurro</h6> 	
+						<p><em><span>Hier klicken</span></em></p> 
+					</a>			
+				</li>	
+				<li class="portfolio-box terrasse">
+					<a class="iframe group1" href="index.asp?page=italienisches-restaurant-bern-terrasse" title="Fotos der Terrasse vom Ristorante Azzurro Bern">
+						<div class="folio-mask1"></div> 
+						<div class="folio-mask2"></div> 
+						<img  src="pic/gallery/azzurro_eingang_nacht_600x400.jpg" alt="Terrasse vom Ristorante Azzurro Bern" />	
+						<h6>Terrasse Azzurro</h6> 	
+						<p><em><span>Hier klicken</span></em></p> 
+					</a>			
+				</li>	
+			</ul>		
+		</div>
+
+		<!-- Klickbutton ganze Breite -->
+		<!-- 
+        <a href="#">
+			<div id="action">	
+				<div class="container">	
+					<div class="sixteen columns animated bounceInRight">
+						<h6>Call To Action Big Button</h6> 
+						<p><small><em><span>Diese Webseite is beautiful and fully responsive!</span></em></small></p>
+					</div>	
+				</div>			
+			</div>
+		</a>		
+		 -->
+		<!-- Klickbutton ganze Breite End -->
+
+		<!-- 
+		<div id="separ2"> 
+			<div class="parallax2"></div>
+			<div class="background-color1"></div>
+			<div class="container">
+				<div class="sixteen columns">
+					<h1><span>Telefon +41 31 385 85 85</span></h1>
+					<h6><script type="text/javascript">decremailink('ristorante-azzurro', 'info', 'ch', 'e-mail' );</script></h6>
+					<h3>Ristorante Azzurro Terra e Mare &middot; Murtenstrasse 2 &middot; 3008 Bern &middot; Schweiz</h3>
+				</div>			
+			</div>			
+		</div>
+		 -->
+		
+		<div id="contact">	
+			<div class="container">
+				<div class="sixteen columns">
+					<h1>Kontakt & Öffnungszeiten</h1> 
+                    <div class="sep-center"></div> 
+                    <div class="sub-center"><p>Telefon +41 31 385 85 85 · E-Mail <script type="text/javascript">decremailink('ristorante-azzurro', 'info', 'ch', 'e-mail' );</script><br />
+  Ristorante Azzurro Terra e Mare · Murtenstrasse 2 · 3008 Bern · Schweiz  </p></div> 
+					<div><p><span style="font-weight: bold;">Öffnungszeiten Ristorante</span><br>Montag – Freitag: 09.00 – 24.00 Uhr<br>Samstag, Sonntag: 10.00 – 24.00 Uhr<br></p><p><span style="font-weight: bold;">Öffnungszeiten Küche</span><br>Montag: 11.30 – 14.00 und 18.00 - 22.00<br>Dienstag – Samstag: 11.30 – 14.00 und 18.00 - 22.30<br>Sonntag: 11.30 – 14.00 und 18.00 - 22.00 (14.00 – 18.00 kleine Speisekarte)</p><p><span style="font-weight: bold;">Öffnungszeiten Pizzeria</span><br>Montag: 11.30 – 14.00 und 18.00 - 22.30<br>Dienstag – Samstag: 11.30 – 14.00 und 18.00 – 23.00<br>Sonntag: 11.30 – 14.00 und 18.00 - 22.30</p><p>Sie haben einen Wunsch oder eine Frage? Senden Sie uns eine E-Mail, wir sind gerne für Sie da.<br>Wichtig: Reservationen werden nur telefonisch angenommen unter +41 31 385 85 85 !<br><br></p></div>
+				</div>
+					<div class="sixteen columns animated slide delay">
+						<form name="ajax-form" id="ajax-form" action="/contact_form/sendemail.asp" method="post">
+							<label for="name">Name: * 
+								<span class="error" id="err-name">Bitte geben Sie Ihren Namen an!</span>
+							</label>
+							<input name="name" id="name" type="text" />
+							<label for="email">E-Mail: * 
+								<span class="error" id="err-email">Bitte geben Sie Ihre E-Mail Adresse an!</span>
+								<span class="error" id="err-emailvld">Die E-Mail Adresse ist ungültig!</span>
+							</label>
+							<input name="email" id="email" type="text" />
+							<label for="message">Nachricht: *
+								<span class="error" id="err-message">Bitte geben Sie Ihre Nachricht ein!</span>
+                             </label>
+							<textarea name="message" id="message"></textarea>
+							<div id="button-con"><button class="send_message" id="send">Senden</button></div>	
+							<div class="error text-align-center" id="err-form">Es ist ein Problem aufgetreten. Bitte prüfen Sie Ihre Angaben!</div>
+							<div class="error text-align-center" id="err-timedout">Entschuldigung, es bestehen Verbindungsprobleme zum Server!</div>
+							<div class="error" id="err-state"></div>
+						</form>
+						<div id="ajaxsuccess">Vielen Dank. Ihre E-Mail wurde erfolgreich zugestellt!</div>	
+					</div>			
+			</div>
+			<div class="clear"></div>	
+			<div id="map"></div>
+			<span class="ss-style-doublediagonal"></span>			
+		</div>
+		
+		
+		<div id="footer">
+			<div class="container">
+				<div class="sixteen columns">
+					<a class="scroll" href="#home"><img  src="pic/logo_zusatz.png" alt="Logo RIstorante Azzurro in Bern - Feines vom Land, Frisches vom Meer" /></a>
+				</div>
+				<div class="sixteen columns">
+					<div class="cl-effect-7">
+                        <a href="index.asp?page=ristorante-azzurro-newsletter" class="iframe group1" ><span class="facebook-color" >Newsletter</span></a>
+                        <a href="https://www.facebook.com/pages/Ristorante-Azzurro-Terra-e-Mare/367895816686840" target="_blank"><span class="facebook-color" >Facebook</span></a>
+                        <a href="https://google.com/+RistoranteAzzurroTerraeMareBern" target="_blank"><span class="google-color" >Google +</span></a>
+                        <!-- <a href="https://vimeo.com/41087957" target="_blank"><span class="vimeo-color" >vimeo</span></a> -->
+                    	<!-- <a href="#" target="_blank"><span class="twitter-color" >twitter</span></a> -->
+                    </div>			
+				</div>
+				<div class="sixteen columns">
+					<p>&copy; Ristorante Azzurro Terra e Mare - Italienisches Restaurant in Bern</p>
+					<p id="copyright">Swiss Made Website by <a href="https://www.blowfish.ch/" title="Design, Konzept und Programmierung der Webseite durch Blowfish AG" target="_blank">Blowfish AG</a></p>
+				</div>	
+			</div>		
+		</div>			
+	
+<!-- JAVASCRIPT
+================================================== -->
+<!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/styleswitcher.js"></script>
+<script type="text/javascript" src="js/pace.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/jquery.slimmenu.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/cbpAnimatedHeader.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script> 
+<script type="text/javascript" src="js/jquery.counterup.min.js"></script> 
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script> 		
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script> 		
+<script type="text/javascript" src="js/gmaps.js"></script>
+<script type="text/javascript" src="js/template.js"></script>  	  
+<!-- End Document
+================================================== -->
+
+<iframe frameborder='0' id='printer' name='printer' style='display:none;height:0px; width:0px; border:none'></iframe>
+
+</body>
+</html>

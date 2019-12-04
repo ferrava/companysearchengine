@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Me Manuela Bracher Edelmann</title>
+	<link rel="stylesheet" href="css/a.css" type="text/css"/>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div class="wrapper">
+		
+		<nav class="nav">
+			<ul id="menuItemBox">
+				<li><a href="#accueil" onclick="autoScroll(0)">Accueil</a></li>
+				<li><a href="#presentation">Presentation</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			
+			<ul id="menuLangBox">
+				<li><a href="index.php">FR</a></li>
+				<li><a href="index-de.php">DE</a></li>
+			</ul>
+		</nav>
+		
+		<div class="pageContent">
+			
+			<section id="presentation">
+				<div id="presTitle">Présentation</div>
+				<div id="presName">Me Manuela Bracher Edelmann</div>
+				<hr>
+				<div id="presSubTitle">Membre de l’Ordre fribourgeois et de la Fédération suisse des avocats</div>
+				<div id="presText">
+					J’exerce une importante activité judiciaire, assiste et représente mes clients devant les Tribunaux dans les domaines du civil et du pénal et attache tout particulièrement de l’importance à l’écoute de mes clients et à la recherche de la meilleure solution possible eu égard aux circonstances.
+					<br><br>
+					De par sa structure l'étude garantit un service personnalisé.
+					<br><br>
+					Je maîtrise le français, l’allemand, le suisse-allemand, l’espagnol et l’anglais et dispose de bonnes connaissances en italien.
+					<br><br>
+					En marge de mon étude je suis membre du Comité de l’association Fri-Santé
+				</div>
+				<div id="presImgBox">
+					<img src="img/conference.jpg" alt="Salle de conférence" draggable="false">
+					<img src="img/portrait.jpg" alt="Manuela Bracher Edelmann" style="margin-left:9px;" draggable="false">
+				</div>
+				<img src="img/signature.jpg" alt="Manuela Bracher Edelmann" style="margin-top:30px;" draggable="false">
+			</section>
+			
+			<section id="services">
+				<div class="servicesImg">
+					<span class="servicesImgText">Services</span>
+				</div>
+				<div class="servicesTextBox">
+					<div class="servicesText">
+						Les différents mandats qui m'ont été confiés m'ont permis de devenir une avocate généraliste. J'ai toutefois acquis une expérience toute particulière dans les domaines suivants :
+						<hr>
+						<ul>
+							<li>la défense de victimes d'infractions sexuelles (LAVI)</li>
+							<li>la défense de victimes d'accidents de la circulation routière</li>
+							<li>le droit de la famille</li>
+							<li>le droit du divorce et la rédaction de conventions de divorce</li>
+							<li>le droit pénal général</li>
+							<li>la convention de La Haye sur les enlèvements internationaux d'enfants</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+			<section id="contact">
+				<div class="contactImg">
+					<span class="contactImgText">Contact</span>
+				</div>
+				<div class="contactTextBox">
+					<div class="contactText">
+						<img src="img/bureau.jpg" alt="Etude Bracher" style="float:left;margin-top: 10px;" draggable="false">
+						<div style="margin-top: 100px;margin-right:-21px;float: right;">
+							<span class="contactMisc noMarginTop">Adresse</span>
+							Rue de Romont 33<br>
+							1701 Fribourg<br>
+							CCP 17-17832-0<br>
+							<span class="contactMisc">Contact</span>
+							T +41 26 350 11 50<br>
+							F +41 26 350 11 55<br>
+							<span id="emailLink"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="plan">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1365.4978401830217!2d7.152872158229484!3d46.804390994784896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e692e753c8d39%3A0xadbcbfae45f08c21!2sRue+de+Romont+33%2C+1700+Fribourg%2C+Suisse!5e0!3m2!1sfr!2sus!4v1459490242789" width="1000" height="405" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</section>
+			
+		</div>
+		
+		<footer class="footer">
+			<a href="http://asphalte-design.ch/" target="_blank">DESIGN: ASPHALTE-DESIGN.CH</a><div id="footerInterSpace"></div><a href="http://fbisa.ch/" target="_blank">DEVELOPPEMENT: FBI informatique s.a.</a>
+		</footer>
+		
+	</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>
+$('a[href*="#"]:not([href="#"])').click(function() {
+	if(location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname){
+		var target = $(this.hash);
+		target = target.length ? target : $('#'+this.hash.slice(1));
+		if(target.length){
+			autoScroll(target.offset().top-90);
+			return false;
+		}
+	}
+});
+function autoScroll(target){
+	$('html, body').animate({
+		scrollTop: target
+	}, 600);
+}
+
+{
+	coded 	= "jK5ijqm@Bq8FBGVjibBV.ib"
+	key 	= "LMoAm0CEgq4GUj6ZefVHQlwdc5vh9TDYyknXW2uBzI1s3OFitKbpaPRxJr7SN8"
+	shift	= coded.length
+	link	= ""
+	for(i=0;i<coded.length;i++){
+		if(key.indexOf(coded.charAt(i))==-1){
+			ltr   = coded.charAt(i)
+			link += (ltr)
+		}else{     
+			ltr  = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+			link+= (key.charAt(ltr))
+		}
+	}
+	a			= document.createElement("a");
+	a.href  	= "mailto:"+link
+	a.className	= "mailto"
+	a.innerText = link
+	document.getElementById('emailLink').appendChild(a);
+}
+</script>
+</html>

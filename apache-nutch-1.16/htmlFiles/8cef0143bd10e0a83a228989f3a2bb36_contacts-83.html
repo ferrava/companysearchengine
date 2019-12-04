@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   	<title>Contacts :: Croix-Bleue romande ::  Association de pr&eacute;vention des d&eacute;pendances et des probl&egrave;mes d'alcool :: Lausanne :: Gen&egrave;ve :: Suisse</title>
+	   	<meta name="description" content="Association de prévention des dépendances et des problèmes d'alcool "/>
+	   	<meta name="keywords" content="Association, sans but lucratif, Croix-Bleue, Suisse, engagement d'abstinence, pr&eacute;vention, aide aux personnes d&eacute;pendantes, alcool"/>
+	   	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	   	<meta property="og:image" content="http://www.croix-bleue.ch/data/images/accroches/entraide-bras.jpg"/>
+		<meta name="viewport" content="width=1202"/>
+		<meta name="msvalidate.01" content="8F9F977B766D77B34385DE142B9CCD01" />
+		<meta name="google-site-verification" content="PTXNkX83Ff3q24zcH3OQUE5GRfElsWdVsWELh1HE8ZY" />
+<link rel="stylesheet" type="text/css" href="/js/jscalendar/calendar-win2k-cold-1.css"/>
+<link rel="stylesheet" type="text/css" href="/template/adminzone.css"/>
+<link rel="stylesheet" type="text/css" href="/style/T1.css"/>
+<link rel="stylesheet" type="text/css" href="/js/jquery/fancybox/fancybox.css"/>
+<script src="/js/jscalendar/calendar.js" type="text/javascript"></script>
+<script src="/js/jscalendar/calendar-setup.js" type="text/javascript"></script>
+<script src="/js/jscalendar/lang/calendar-fr.js" type="text/javascript"></script>
+<script src="/js/milonic/milonic_src.js" type="text/javascript"></script>
+<script src="/js/milonic/milonic_inc.js" type="text/javascript"></script>
+<script src="/js/jquery/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="/plugin/searchapi/js/searchapi.js" type="text/javascript"></script>
+<script src="/js/functions.js" type="text/javascript"></script>
+<script src="/js/mandatory.js" type="text/javascript"></script>
+<script src="/js/adminzone.js" type="text/javascript"></script>
+<script src="/js/jquery/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+<script src="/js/jquery/openbox.js" type="text/javascript"></script>
+
+
+
+<script>
+
+</script>
+
+
+
+<script>
+$(document).ready(function()
+{
+	openboxInit();
+	$('input#searchquery-api').one('click', function(){ this.value=''; });
+$('#cse-search-box-api').submit(function(event){ if($('#searchquery-api', this).val().trim()==''){ event.preventDefault();event.stopPropagation(); } });
+	
+	
+	//Fonction pour le changement on/off sur le accès direct
+	$('.divIconesAccesDirect').hover(function()
+            {
+		
+			var nomImage = $(this).find('.imgPicto').attr('src');
+			var newNomImage = nomImage.replace(".png","On.png");
+			
+           	$(this).find('.imgPicto').attr('src',newNomImage);
+            $(this).find(".txtSoutenir").css("color","#acc8e8");
+           
+            },
+            function()
+            {
+            	var nomImage = $(this).find('.imgPicto').attr('src');
+            	var newNomImage = nomImage.replace("On.png",".png");
+            	
+            	 $(this).find('.imgPicto').attr('src',newNomImage);
+            	 $(this).find(".txtSoutenir").css("color","#f6f7f7");
+            });
+	
+	//Effet sur le cartouche des Actus
+	$('.cartoucheActu').hover( function()
+			{ 
+				
+				$(this).find('.titleCartouche').css("color","#4390ad");
+				$(this).find('.tableActu img').stop().fadeTo(300, 0.8); 
+				
+			}, 
+			function()
+			{ 
+				$(this).find('.titleCartouche').css("color","#50adcf"); 
+				$(this).find('.tableActu img').stop().fadeTo(100, 1.0); 
+				
+			});
+	
+	$('.cartoucheAgenda').hover( function()
+			{ 
+				$(this).find('.titleCartoucheAgendaLieu').css("color","#4390ad");
+				$(this).find('.titleCartoucheAgenda').css("color","#4390ad"); 
+			}, 
+			function()
+			{ 
+				$(this).find('.titleCartoucheAgendaLieu').css("color","#50adcf"); 
+				$(this).find('.titleCartoucheAgenda').css("color","#50adcf"); 
+			});
+	
+	//Effet sur les bulles de home
+	$('.divBulles').hover(function()
+            {
+		
+			$(this).find('img').attr('class','imgBulleHomeOn');
+           
+            },
+            function()
+            {
+            	$(this).find('img').attr('class','imgBulleHomeOff');
+            });
+	
+	//Effet rollover sur les liste
+	$('.idZoneListe').hover( function()	
+	{ 
+		$(this).find('.TDListeBG').css("background-image","url('/template/image/fondListe.jpg')");
+	}, 
+	function()
+	{ 
+		$(this).find('.TDListeBG').css("background-image","none");
+
+	});
+
+		
+	//si on est en mobile, je charge d'autre images de fond car trop lourdes
+	if(window.isMobile)
+		{
+		$('.myBody').css("background","url('/template/image/bgHomeMobile.jpg') no-repeat top center #e8e6e3");
+		$('.myBodyInterieur').css("background","url('/template/image/bgInterieurMobile.jpg') no-repeat top center #e8e6e3");
+		}
+		
+});
+</script>
+<script>
+(function() {
+var cx = '';
+var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})(); </script>
+</head>
+<body class="myBodyInterieur">
+<div id="dhtmltooltip"></div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7213472-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- Tunning Menu Part -->
+<script type="text/javascript">
+
+/*------ Definitions des style du menu selon le niveau ------*/
+with(menuLevel0=new mm_style()){
+onbgcolor="";
+oncolor="#c7d9ec";
+offbgcolor="";
+offcolor="#c7d9ec";
+bordercolor="";
+borderstyle="";
+borderwidth=0;
+separatorcolor="transparent";
+separatorsize= "21";//10
+separatorimage  = "/plugin/menu/template/images/separator.png";
+padding= "0px 0px 7px 0px"; //padding top right bottom left
+fontsize="17px";
+fontstyle="normal";
+fontweight="standard";
+fontfamily="source_sans_proregular";
+pagecolor="#c7d9ec";
+pagebgcolor="";
+headercolor="";
+headerbgcolor="";
+imageposition="right";
+subimagepadding="";
+overfilter="";
+outfilter="";
+valign="middle";
+align="center";
+
+offclass="menuOff";
+onclass="menuOn";
+pageclass="menuOn";
+
+}
+
+
+with(menuLevel1=new mm_style()){
+onbgcolor="";
+oncolor="#fdfdfd";
+offbgcolor="";
+offcolor="#005d8e";
+bordercolor="";
+borderstyle="";
+borderwidth=0;
+separatorcolor="";
+separatorsize="1"; // "21";
+separatorimage  = "/plugin/menu/template/images/subseparator.png";
+padding= "3px 5px 3px 54px"; //padding top right bottom left
+fontsize="15px";
+fontstyle="";
+fontweight="";
+fontfamily="source_sans_proitalic";
+pagecolor="#fdfdfd";
+pagebgcolor="";
+headercolor="";
+headerbgcolor="";
+itemwidth="385px";
+
+offclass="sousmenuOff";
+onclass="sousmenuOn";
+pageclass="sousmenuOn";
+
+
+}
+
+/*------ Bloc pour generation des sous-menus ------*/
+with(milonic=new menuname("menusub28"))
+{
+	style=GetStyle("menu", 2);
+	divides=1;
+	left="offset=-32px";
+	
+	if(2>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/topSousMenu.png;overimage=/plugin/menu/template/images/topSousMenu.png;pageimage=/plugin/menu/template/images/topSousMenu.png;url=;imagewidth=385;imageheight=23;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+	aI("text=Histoire;url=/alcool-dependance/plus-experience-41.html;showmenu=;target=_self;type=;pagematch=/plus-experience-41.html,/plus-experience-41/;");
+aI("text=Statuts;url=/alcool-dependance/statuts-croix-bleue-romande-42.html;showmenu=;target=_self;type=;pagematch=/statuts-croix-bleue-romande-42.html,/statuts-croix-bleue-romande-42/;");
+aI("text=Mission;url=/alcool-dependance/prevenir-conseiller-accompagner-43.html;showmenu=;target=_self;type=;pagematch=/prevenir-conseiller-accompagner-43.html,/prevenir-conseiller-accompagner-43/;");
+aI("text=Valeurs;url=/alcool-dependance/engagement-abstinence-46.html;showmenu=;target=_self;type=;pagematch=/engagement-abstinence-46.html,/engagement-abstinence-46/;");
+aI("text=En chiffres;url=/alcool-dependance/travail-croix-bleue-romande-44.html;showmenu=;target=_self;type=;pagematch=/travail-croix-bleue-romande-44.html,/travail-croix-bleue-romande-44/;");
+aI("text=Les dons;url=/alcool-dependance/aidez-nous-aider-1852.html;showmenu=;target=_self;type=;pagematch=/aidez-nous-aider-1852.html,/aidez-nous-aider-1852/;");
+aI("text=Organigramme ;url=/alcool-dependance/structure-croix-bleue-romande-45.html;showmenu=;target=_self;type=;pagematch=/structure-croix-bleue-romande-45.html,/structure-croix-bleue-romande-45/;");
+	
+	if(2>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/bottomSousMenu.png;overimage=/plugin/menu/template/images/bottomSousMenu.png;pageimage=/plugin/menu/template/images/bottomSousMenu.png;url=;imagewidth=385;imageheight=46;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+
+}
+with(milonic=new menuname("menusub37"))
+{
+	style=GetStyle("menu", 2);
+	divides=1;
+	left="offset=-32px";
+	
+	if(2>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/topSousMenu.png;overimage=/plugin/menu/template/images/topSousMenu.png;pageimage=/plugin/menu/template/images/topSousMenu.png;url=;imagewidth=385;imageheight=23;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+	aI("text=Journaux -Abo;url=/alcool-dependance/journaux-51.html;showmenu=;target=_self;type=;pagematch=/journaux-51.html,/journaux-51/;");
+	
+	if(2>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/bottomSousMenu.png;overimage=/plugin/menu/template/images/bottomSousMenu.png;pageimage=/plugin/menu/template/images/bottomSousMenu.png;url=;imagewidth=385;imageheight=46;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+
+}
+with(milonic=new menuname("menusub27"))
+{
+	style=GetStyle("menu", 1);
+	divides=1;
+	left="offset=-32px";
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/topSousMenu.png;overimage=/plugin/menu/template/images/topSousMenu.png;pageimage=/plugin/menu/template/images/topSousMenu.png;url=;imagewidth=385;imageheight=23;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+	aI("text=Actualités;url=/alcool-dependance/news-4.html;showmenu=;target=_self;type=;pagematch=/news-4.html,/news-4/;");
+aI("text=La Croix-Bleue;url=/alcool-dependance/croix-bleue-38.html;showmenu=menusub28;target=_self;type=;pagematch=/croix-bleue-38.html,/croix-bleue-38/;");
+aI("text=Rapport annuel;url=/alcool-dependance/rapports-annuels-47.html;showmenu=;target=_self;type=;pagematch=/rapports-annuels-47.html,/rapports-annuels-47/;");
+aI("text=Nos journaux;url=/alcool-dependance/journaux-48.html;showmenu=menusub37;target=_self;type=;pagematch=/journaux-48.html,/journaux-48/;");
+aI("text=Les corps de musique de la Croix-Bleue;url=/alcool-dependance/corps-musique-croix-bleue-52.html;showmenu=;target=_self;type=;pagematch=/corps-musique-croix-bleue-52.html,/corps-musique-croix-bleue-52/;");
+aI("text=Location salles;url=/alcool-dependance/location-salles-chalets-1597.html;showmenu=;target=_self;type=;pagematch=/location-salles-chalets-1597.html,/location-salles-chalets-1597/;");
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/bottomSousMenu.png;overimage=/plugin/menu/template/images/bottomSousMenu.png;pageimage=/plugin/menu/template/images/bottomSousMenu.png;url=;imagewidth=385;imageheight=46;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+
+}
+with(milonic=new menuname("menusub42"))
+{
+	style=GetStyle("menu", 1);
+	divides=1;
+	left="offset=-32px";
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/topSousMenu.png;overimage=/plugin/menu/template/images/topSousMenu.png;pageimage=/plugin/menu/template/images/topSousMenu.png;url=;imagewidth=385;imageheight=23;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+	aI("text=RaidBlue;url=/alcool-dependance/raidblue-53.html;showmenu=;target=_self;type=;pagematch=/raidblue-53.html,/raidblue-53/;");
+aI("text=Label \"Vente d\'alcool aux jeunes\";url=/alcool-dependance/label-protection-jeunesse-54.html;showmenu=;target=_self;type=;pagematch=/label-protection-jeunesse-54.html,/label-protection-jeunesse-54/;");
+aI("text=Alcool au travail;url=/alcool-dependance/alcool-travail-55.html;showmenu=;target=_self;type=;pagematch=/alcool-travail-55.html,/alcool-travail-55/;");
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/bottomSousMenu.png;overimage=/plugin/menu/template/images/bottomSousMenu.png;pageimage=/plugin/menu/template/images/bottomSousMenu.png;url=;imagewidth=385;imageheight=46;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+
+}
+with(milonic=new menuname("menusub46"))
+{
+	style=GetStyle("menu", 1);
+	divides=1;
+	left="offset=-32px";
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/topSousMenu.png;overimage=/plugin/menu/template/images/topSousMenu.png;pageimage=/plugin/menu/template/images/topSousMenu.png;url=;imagewidth=385;imageheight=23;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+	aI("text=Consultations individuelles ;url=/alcool-dependance/consultations-individuelles-57.html;showmenu=;target=_self;type=;pagematch=/consultations-individuelles-57.html,/consultations-individuelles-57/;");
+aI("text=Consultations familiales;url=/alcool-dependance/consultations-familiales-58.html;showmenu=;target=_self;type=;pagematch=/consultations-familiales-58.html,/consultations-familiales-58/;");
+aI("text=Permanence SOS Alcool;url=/alcool-dependance/permanence-alcool-59.html;showmenu=;target=_self;type=;pagematch=/permanence-alcool-59.html,/permanence-alcool-59/;");
+aI("text=Alcorisk;url=/alcool-dependance/alcorisk-60.html;showmenu=;target=_self;type=;pagematch=/alcorisk-60.html,/alcorisk-60/;");
+aI("text=Alcochoix+;url=/alcool-dependance/alcochoix-61.html;showmenu=;target=_self;type=;pagematch=/alcochoix-61.html,/alcochoix-61/;");
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/bottomSousMenu.png;overimage=/plugin/menu/template/images/bottomSousMenu.png;pageimage=/plugin/menu/template/images/bottomSousMenu.png;url=;imagewidth=385;imageheight=46;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+
+}
+with(milonic=new menuname("menusub52"))
+{
+	style=GetStyle("menu", 1);
+	divides=1;
+	left="offset=-32px";
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/topSousMenu.png;overimage=/plugin/menu/template/images/topSousMenu.png;pageimage=/plugin/menu/template/images/topSousMenu.png;url=;imagewidth=385;imageheight=23;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+	aI("text=Appartements de transition;url=/alcool-dependance/appartements-transition-1457.html;showmenu=;target=_self;type=;pagematch=/appartements-transition-1457.html,/appartements-transition-1457/;");
+aI("text=Dépendance;url=/alcool-dependance/dependance-156.html;showmenu=;target=_self;type=;pagematch=/dependance-156.html,/dependance-156/;");
+aI("text=Codépendance;url=/alcool-dependance/codependance-162.html;showmenu=;target=_self;type=;pagematch=/codependance-162.html,/codependance-162/;");
+aI("text=Les Espace Rencontres;url=/alcool-dependance/espace-rencontres-62.html;showmenu=;target=_self;type=;pagematch=/espace-rencontres-62.html,/espace-rencontres-62/;");
+aI("text=Projet Enfance et Familles;url=/alcool-dependance/programme-enfance-familles-63.html;showmenu=;target=_self;type=;pagematch=/programme-enfance-familles-63.html,/programme-enfance-familles-63/;");
+aI("text=Espace Femmes;url=/alcool-dependance/espace-femmes-136.html;showmenu=;target=_self;type=;pagematch=/espace-femmes-136.html,/espace-femmes-136/;");
+aI("text=Alcool et 3ème âge;url=/alcool-dependance/alcool-3eme-64.html;showmenu=;target=_self;type=;pagematch=/alcool-3eme-64.html,/alcool-3eme-64/;");
+aI("text=Activités;url=/alcool-dependance/activites-65.html;showmenu=;target=_self;type=;pagematch=/activites-65.html,/activites-65/;");
+aI("text=Réinsertion sociale et professionnelle;url=/alcool-dependance/reinsertion-sociale-professionnelle-66.html;showmenu=;target=_self;type=;pagematch=/reinsertion-sociale-professionnelle-66.html,/reinsertion-sociale-professionnelle-66/;");
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/bottomSousMenu.png;overimage=/plugin/menu/template/images/bottomSousMenu.png;pageimage=/plugin/menu/template/images/bottomSousMenu.png;url=;imagewidth=385;imageheight=46;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+
+}
+with(milonic=new menuname("menusub58"))
+{
+	style=GetStyle("menu", 1);
+	divides=1;
+	left="offset=-32px";
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/topSousMenu.png;overimage=/plugin/menu/template/images/topSousMenu.png;pageimage=/plugin/menu/template/images/topSousMenu.png;url=;imagewidth=385;imageheight=23;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+	aI("text=Formation à l’écoute;url=/alcool-dependance/formation-ecoute-68.html;showmenu=;target=_self;type=;pagematch=/formation-ecoute-68.html,/formation-ecoute-68/;");
+aI("text=Formation bénévoles;url=/alcool-dependance/formation-benevoles-69.html;showmenu=;target=_self;type=;pagematch=/formation-benevoles-69.html,/formation-benevoles-69/;");
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/bottomSousMenu.png;overimage=/plugin/menu/template/images/bottomSousMenu.png;pageimage=/plugin/menu/template/images/bottomSousMenu.png;url=;imagewidth=385;imageheight=46;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+
+}
+with(milonic=new menuname("menusub65"))
+{
+	style=GetStyle("menu", 1);
+	divides=1;
+	left="offset=-32px";
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/topSousMenu.png;overimage=/plugin/menu/template/images/topSousMenu.png;pageimage=/plugin/menu/template/images/topSousMenu.png;url=;imagewidth=385;imageheight=23;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+	aI("text=Rechercher un évènement;url=/alcool-dependance/agenda-croix-bleue-8.html;showmenu=;target=_self;type=;pagematch=/agenda-croix-bleue-8.html,/agenda-croix-bleue-8/;");
+aI("text=Groupe de rencontres et parole;url=/alcool-dependance/groupe-rencontres-parole-77.html;showmenu=;target=_self;type=;pagematch=/groupe-rencontres-parole-77.html,/groupe-rencontres-parole-77/;");
+aI("text=Loisirs;url=/alcool-dependance/loisirs-78.html;showmenu=;target=_self;type=;pagematch=/loisirs-78.html,/loisirs-78/;");
+aI("text=Formations;url=/alcool-dependance/formations-79.html;showmenu=;target=_self;type=;pagematch=/formations-79.html,/formations-79/;");
+aI("text=Conférences tout-public;url=/alcool-dependance/conferences-tout-public-80.html;showmenu=;target=_self;type=;pagematch=/conferences-tout-public-80.html,/conferences-tout-public-80/;");
+aI("text=Espace Rencontres – activités;url=/alcool-dependance/espace-rencontres-activites-452.html;showmenu=;target=_self;type=;pagematch=/espace-rencontres-activites-452.html,/espace-rencontres-activites-452/;");
+aI("text=Centres de jour;url=/alcool-dependance/centres-jour-4614.html;showmenu=;target=_self;type=;pagematch=/centres-jour-4614.html,/centres-jour-4614/;");
+aI("text=Séjours et week-end;url=/alcool-dependance/sejours-week-end-110.html;showmenu=;target=_self;type=;pagematch=/sejours-week-end-110.html,/sejours-week-end-110/;");
+	
+	if(1>0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/bottomSousMenu.png;overimage=/plugin/menu/template/images/bottomSousMenu.png;pageimage=/plugin/menu/template/images/bottomSousMenu.png;url=;imagewidth=385;imageheight=46;padding=0px;pointer=default;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+
+}
+
+drawMenus();
+
+/*------ Gestion du menu principal: fait un bloc pour utiliser la meme fct que sous-menus ------*/
+with(milonic=new menuname("menumain0"))
+{
+	style=GetStyle("menu",0);
+	alwaysvisible=1;
+	orientation="horizontal";
+	menuwidth="140";
+	divides= 1;
+	
+	aI("text=Accueil;url=http://www.croix-bleue.ch/alcool-dependance/croix-bleue-38.html;showmenu=menusub27;target=_self;type=;pagematch=;");
+aI("text=Prévenir;url=/alcool-dependance/prevenir-71.html;showmenu=menusub42;target=_self;type=;pagematch=/prevenir-71.html,/prevenir-71/;");
+aI("text=Conseiller;url=/alcool-dependance/conseiller-56.html;showmenu=menusub46;target=_self;type=;pagematch=/conseiller-56.html,/conseiller-56/;");
+aI("text=Accompagner;url=/alcool-dependance/accompagner-72.html;showmenu=menusub52;target=_self;type=;pagematch=/accompagner-72.html,/accompagner-72/;");
+aI("text=Former;url=/alcool-dependance/former-67.html;showmenu=menusub58;target=_self;type=;pagematch=/former-67.html,/former-67/;");
+aI("text=Agenda;url=/alcool-dependance/agenda-76.html;showmenu=menusub65;target=_self;type=;pagematch=/agenda-76.html,/agenda-76/;");
+aI("text=Shop en ligne;url=/alcool-dependance/shop-ligne-33.html;showmenu=;target=_self;type=;pagematch=/shop-ligne-33.html,/shop-ligne-33/;");
+}
+
+</script>		
+<div id="mainContainer">
+		<div id="divBandeauInt">
+		<div id="divImgInterieur"><img src="/template/image/imgInterieur.jpg" border="0"></div>
+		<div id="divAccesDirectInt" style="padding-top:4px;">
+			<!-- <div><a href="/alcool-dependance/faire-32.html"><img src="/template/image/btnSoutenirNotreAction.jpg" border="0"></a></div> -->
+			<div>
+	<div class="divIconesAccesDirect">
+		<div class="iconeSoutenir"><img src="/template/image/pictopouce.png" class="imgPicto"></div>
+		<div class="divtxtSoutenir"><a href="/alcool-dependance/faire-32.html" class="txtSoutenir">Soutenir notre action</a></div>
+		<div class="divwrapper"></div>
+	</div>
+	<div class="paddingLigneSoutenir"><img src="/template/image/ligneNotreAction.jpg" ></div>
+	<!-- <div class="divIconesAccesDirect">
+		<div class="iconeSoutenir"><img src="/template/image/pictomain.png" class="imgPicto"></div>
+		<div class="divtxtSoutenir"><a href="/alcool-dependance/ligne-111.html" class="txtSoutenir">Faire un don</a></div>
+		<div class="divwrapper"></div>
+	</div> -->
+	<div class="divIconesAccesDirect">
+		<div class="iconeSoutenir"><img src="/template/image/pictocalendar.png" class="imgPicto"></div>
+		<div class="divtxtSoutenir"><a href="/location" class="txtSoutenir">Réservation de salle</a></div>
+		<div class="divwrapper"></div>
+	</div>
+	<div class="paddingLigneSoutenir"><img src="/template/image/ligneNotreAction.jpg" ></div>
+	<div class="divIconesAccesDirect">
+		<div class="iconeSoutenir"><img src="/template/image/pictocoeur.png" class="imgPicto"></div>
+		<div class="divtxtSoutenir"><a href="/alcool-dependance/devenir-benevole-85.html" class="txtSoutenir">Devenir bénévole</a></div>
+		<div class="divwrapper"></div>
+	</div>
+	<div class="paddingLigneSoutenir"><img src="/template/image/ligneNotreAction.jpg"></div>
+	<div class="divIconesAccesDirect">
+		<div class="iconeSoutenir"><img src="/template/image/pictotete.png" class="imgPicto"></div>
+		<div class="divtxtSoutenir" style="height:22px;"><a href="/alcool-dependance/etre-membre-86.html" class="txtSoutenir">Etre membre</a></div>
+		<div class="divwrapper"></div>
+	</div>
+	<div class="paddingLigneSoutenir"><img src="/template/image/ligneNotreAction.jpg"></div>
+	<div class="divIconesAccesDirect">
+		<div class="iconeSoutenir"><img src="/template/image/pictosoleil.png" class="imgPicto"></div>
+		<div class="divtxtSoutenir" style="height:22px;"><a href="/alcool-dependance/financer-projets-90.html" class="txtSoutenir">Financer nos projets</a></div>
+		<div class="divwrapper"></div>
+	</div>
+	<div class="paddingLigneSoutenir"><img src="/template/image/ligneNotreAction.jpg"></div>
+	<div class="divIconesAccesDirect">
+		<div class="iconeSoutenir"><img src="/template/image/pictorond.png" class="imgPicto"></div>
+		<div class="divtxtSoutenir" ><a href="/alcool-dependance/point-bleu-104.html" class="txtSoutenir">Le Point Bleu</a></div>
+		<div class="divwrapper"></div>
+	</div>
+</div>
+		</div>
+		<div class="divwrapper"></div>
+	</div>
+	<div id="divMenuHaut"><script>drawMenus();</script></div>
+	<div id="zoneContenus">
+		<div id="logoCroixBleue"><a href="/"><img src="/template/image/logo.png" border=0 class="noAeffect"></a></div>
+		<div id="colGauche">
+	<div id="zoneAccroche" style=""><table width="100%" height="100%"><tr><td valign=middle align=center><img src='/data/images/accroches/entraide-bras.jpg'></td></tr></table></div>
+	<div style=""><span id="youarehereItem">Contact</span></div>
+	<div>
+		<div lang="Entête de la page" id="page">
+	<div id="pageContextMenu" class="zoneMenu"></div>
+	<div>
+		<div style="width:100%;"><h1>Contacts</h1></div>
+		<div style="float:right;width:25px;display:none;"></div>
+		<div class="divwrapper"></div>
+	</div>
+	<div class="pageresume" style="">
+		
+	</div>
+	<div class="divwrapper"></div>
+
+	
+
+</div>
+
+			
+		
+		
+		
+		
+		<div lang="Zone HTML" id="pagehtmlcontent" >
+<div id="pagehtmlcontentContextMenu"></div>										
+<h2><span>Croix-Bleue romande</span></h2>
+<p>Av Gare 31<br />
+1022 Chavannes-Renens<br />
+Tél.: +41 21.633.44.32 <br />
+Fax: +41 21.633.44.39<br />
+Natel: +41 79.353.70.09 <br />
+<script>buildMail("info", "croix-bleue.ch","", "" , "");</script><br />
+CCP 10-586-2<br />
+&nbsp;</p>
+<h2>Croix-Bleue Suisse</h2>
+<p>Lindenrain 5<br />
+3012 Berne<br />
+Tél.:+41 31 300 58 60</p>
+<p>
+Fax:+41 31 300 58 65 </p>
+<p><script>buildMail("info", "blaueskreuz.ch","", "" , "");</script> <br />
+<a title="" target="_blank" href="http://www.blaueskreuz.ch">www.blaueskreuz.ch</a> &nbsp;<br />
+&nbsp;</p>
+<h2>Croix-Bleue Internationale</h2>
+<p><span>Gesellschaftsstrasse 78 <br />
+3012 Bern <br />
+Suisse <br />
+Tél.: +41 31 301 98 04 <br />
+Fax: +41 31 301 98 05 <br />
+</span><script>buildMail("office", "ifbc.info","", "" , "");</script><span> <br />
+<a target="_blank" href="http://www.ifbc.info">www.ifbc.info</a></span><br />
+&nbsp;&nbsp; </p>
+<h2>RaidBlue</h2>
+<p>
+Avenue de la Gare 31<br />
+1022 Chavannes-Renens<br />
+Tél.: +41 21 633 44 33<br />
+Fax: &nbsp;+41 21 633 44 39<br />
+<script>buildMail("jeunesse", "croix-bleue.ch","", "" , "");</script> <br />
+<a target="_blank" href="http://www.raidblue.ch">www.raidblue.ch</a><br />
+</p>
+</div>
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+	<div style="padding-top:35px;"></div>
+	<div style="padding-top:35px;"><div style="float:left;width:58px;display:block;"><img src="/plugin/printsend/template/image/bordGauche.png"></div>
+<div id="zoneIconesPrintSend">
+	<a href="javascript:var win=window.open('/noindex/alcool-dependance/contacts-83.html?media=print&plugin=%2Fprintsend-print-1','print', 'width=500, height=500,scrollbars=1, resizable=1');" id="iconePrint"></a>
+	<a href="/noindex/alcool-dependance/contacts-83.html?media=print&plugin=%2Fprintsend-pdf-1" id="iconePDF"></a>
+	<a href="/noindex/alcool-dependance/contacts-83/ajaxmanager-plug-printsend-fct-sendAFriendView-returnformat-html.html" id="iconeMail" target="openbox" onclick="void('openbox.ajax')"></a>
+	<div class="addthis_default_style" id="zoneFTA">
+		<a class="addthis_button_facebook" id="iconeFacebook"><img src="/template/image/vide.gif" border=0></a> 
+		<a class="addthis_button_twitter" id="iconeTwitter"><img src="/template/image/vide.gif" border=0></a>
+		<a href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=Conchita123" class="addthis_button_compact" id="iconeShare"><img src="/template/image/vide.gif" border=0></a> 
+	</div>
+	
+</div>
+<div style="float:left;width:306px;display:block"><img src="/plugin/printsend/template/image/bordDroite.png"></div>
+<div class="divwrapper"></div>
+<script type="text/javascript">var addthis_config = {ui_language: "fr", data_track_clickback:true}</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=Conchita123"></script>
+</div>
+	
+
+</div>
+<div id="colDroite" style="">
+	<div><div id="searchCtnAPI">
+	<form id="cse-search-box-api" action="/alcool-dependance/contacts-83.html">
+		<table style="width:318px;border-collapse:collapse;">
+			<tr>
+				<td width="70"></td>
+				<td><input type="submit" name="sa" value=" " class="btnSearch"/></td>
+				
+				<td style="padding-top:4px;">
+					<input type="hidden" name="plug-searchapi-gosearch-go"/>	
+					<input type="text" id="searchquery-api" name="q" value="chercher" size="12" class="inputSearch"/>
+				</td>
+				
+			</tr>
+		</table>
+	</form>
+</div></div>
+	<div style="margin:-25px 0px 20px -25px;"><a href="/alcool-dependance/ligne-111.html"><img src="/template/image/btnDonsEnLigne.jpg" border="0"></a></div>
+	<div></div>
+	<div style=""><table style="width:100%;padding:0px;margin:0px;border-collapse:collapse;" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="right" style="padding-bottom:5px;">
+			<table style="padding:0px;margin:0px;border-collapse:collapse;" cellspacing="0" cellpadding="0">
+				<tr>
+					<td style="padding-right:8px;"><img src="/template/image/iconeAgenda.png"></td>
+					<td><span class="txtTitreBleuColDroite">Agenda </span></td>
+				</tr>	
+			</table>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<div style="margin-bottom:34px;">
+	
+		<div style="width:314px;height:61px;background:url(/plugin/agenda/template/images/fondCartouche.png) no-repeat;" class="cartoucheAgenda">
+	  	<table class="tableAgenda"><tr>
+	  		<td valign="top" class="largeurDateAgenda">
+	  		<a href="/alcool-dependance/espace-femmes-sonceboz-4958.html" target="_self" style="text-decoration:none;">
+				<div class="jourCartouche">02</div>
+				<div class="moisCartouche">Décembre</div>
+			</a>
+			</td>
+	  		<td><img src="/plugin/agenda/template/images/separator.png" border="0"></td>
+		    <td style="padding-left:15px;">
+	    		<div class="titleCartoucheAgendaLieu"><a href="/alcool-dependance/espace-femmes-sonceboz-4958.html" class="titleCartoucheAgendaLieu" target="_self"><i>Espace Rencontres</i> Sonceboz</a></div>
+	    		<div class="titleCartoucheAgenda"><a href="/alcool-dependance/espace-femmes-sonceboz-4958.html" class="titleCartoucheAgenda" target="_self">Espace Femmes Sonceboz</a></div>
+			</td>
+	  	</tr>
+	  	</table></div>
+		<div style="width:314px;height:61px;background:url(/plugin/agenda/template/images/fondCartouche.png) no-repeat;" class="cartoucheAgenda">
+	  	<table class="tableAgenda"><tr>
+	  		<td valign="top" class="largeurDateAgenda">
+	  		<a href="/alcool-dependance/atelier-bien-etre-5303.html" target="_self" style="text-decoration:none;">
+				<div class="jourCartouche">02</div>
+				<div class="moisCartouche">Décembre</div>
+			</a>
+			</td>
+	  		<td><img src="/plugin/agenda/template/images/separator.png" border="0"></td>
+		    <td style="padding-left:15px;">
+	    		<div class="titleCartoucheAgendaLieu"><a href="/alcool-dependance/atelier-bien-etre-5303.html" class="titleCartoucheAgendaLieu" target="_self"><i>Espace Rencontres</i> Genève</a></div>
+	    		<div class="titleCartoucheAgenda"><a href="/alcool-dependance/atelier-bien-etre-5303.html" class="titleCartoucheAgenda" target="_self">Atelier Bien-être</a></div>
+			</td>
+	  	</tr>
+	  	</table></div>
+		<div style="width:314px;height:61px;background:url(/plugin/agenda/template/images/fondCartouche.png) no-repeat;" class="cartoucheAgenda">
+	  	<table class="tableAgenda"><tr>
+	  		<td valign="top" class="largeurDateAgenda">
+	  		<a href="/alcool-dependance/atelier-informatique-geneve-5411.html" target="_self" style="text-decoration:none;">
+				<div class="jourCartouche">02</div>
+				<div class="moisCartouche">Décembre</div>
+			</a>
+			</td>
+	  		<td><img src="/plugin/agenda/template/images/separator.png" border="0"></td>
+		    <td style="padding-left:15px;">
+	    		<div class="titleCartoucheAgendaLieu"><a href="/alcool-dependance/atelier-informatique-geneve-5411.html" class="titleCartoucheAgendaLieu" target="_self"><i>Espace Rencontres</i> Genève</a></div>
+	    		<div class="titleCartoucheAgenda"><a href="/alcool-dependance/atelier-informatique-geneve-5411.html" class="titleCartoucheAgenda" target="_self">Atelier informatique Genève</a></div>
+			</td>
+	  	</tr>
+	  	</table></div>
+	
+	  	<div style="padding-bottom:5px;"><a href="/alcool-dependance/agenda-8.html"><img src="/plugin/cartouche/template/images/plus.png" border="0" class="noAeffect"></a></div>
+	  	
+	
+	
+</div>
+		</td>
+	</tr>
+</table>
+
+<script>
+	$(".titleCartoucheAgenda").each(function(index){
+		console.log("TEST");
+		var buffer = $(this).text();
+		if (buffer.length > 20){ $(this).text(buffer.substring(0,20) + "...");}
+	});
+</script>
+
+
+
+
+
+	</div>
+	<div style=""><table style="width:100%;padding:0px;margin:0px;border-collapse:collapse;" cellspacing="0" cellpadding="0">
+	<tr>
+		<td align="right" style="padding-bottom:5px;">
+			<table style="padding:0px;margin:0px;border-collapse:collapse;" cellspacing="0" cellpadding="0">
+				<tr>
+					<td style="padding-right:8px;"><img src="/template/image/iconePorteVoix.png"></td>
+					<td><span class="txtTitreBleuColDroite">Actualités </span></td>
+				</tr>	
+			</table>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<div >
+	
+		<div style="width:314px;height:115px;background:url(/template/image/fondCartoucheNews.png) no-repeat;" class="cartoucheActu">
+	  	<table class="tableActu"><tr>
+	  		<td valign="top" class="accrocheNews"><a href="/alcool-dependance/offre-emploi-aide-comptable-5486.html" target="_self"><img src="/plugin/cartouche/template/images/accroche1.jpg" border=0 width="160" height="96"></a></td>
+		    <td>
+	    		<div class="titleCartouche"><a href="/alcool-dependance/offre-emploi-aide-comptable-5486.html" class="titleCartouche" target="_self">Offre d'emploi - Aide-comptable</a></div>
+	    		<a href="/alcool-dependance/offre-emploi-aide-comptable-5486.html" target="_self" class="resumeCartouche">Pour son siège de Chavannes-Renens la Croix-Bleue romande... </a>
+			</td>
+	  	</tr>
+	  	</table></div>
+	
+	  	<div style="display:nonepadding-bottom:5px;"><a href="/alcool-dependance/news-4.html"><img src="/plugin/cartouche/template/images/plus.png" border="0" class="noAeffect"></a></div>
+	  	
+	
+	
+</div>
+		</td>
+	</tr>
+</table>
+</div>
+	<div></div>
+	<div id="divlogoRejoignezNous"">
+			<div class="txtTitreBleuColDroite">Nous rejoindre</div>
+			<div style="padding-left:6px;">
+			<a id="aLogoFacebook" href="https://www.facebook.com/pages/Croix-Bleue/178645961074?ref=ts" target="_blank"></a>
+			<a id="aLogoTwitter" href="https://twitter.com/croixbleue" target="_blank"></a>
+			<a id="aLogoYouTube" href="http://www.youtube.com/user/RaidBlue2008" target="_blank"></a>
+			<a id="aLogoRSS" href="/rss-cb" target="_blank"></a>
+			<div class="divwrapper"></div>
+			</div>
+	</div>
+		<div style="padding-top:60px">
+		<div class="txtTitreBleuColDroite">Besoin d'aide ?</div>
+		<div style="float:right;padding-top:15px;">
+		<map id="logos-aide" name="mapLogoAide">
+			<area alt="" href="/alcool-dependance/alcorisk-60.html" shape="rect" coords="101,-2,181,51"/>
+			<area alt="" href="/alcool-dependance/permanence-alcool-59.html" shape="rect" coords="-1,0,84,57"/>
+		</map>
+			<img src="/template/image/logos-aide.png" border="0" usemap="#mapLogoAide">
+		</div>
+		<div class="divwrapper"></div>
+	</div>
+		
+</div>
+<div class="divwrapper"></div>
+	</div>
+</div>
+<div id="footerEcran">
+	<div id="footerContainer">
+		<div id="DivMenuFond" style="position:relative;top:-1px;"><table class="tabMenuFond"><tr><td align=right style="padding-right:375px;"><!-- Tunning Menu Part -->
+<script type="text/javascript">
+
+/*------ Definitions des style du menu selon le niveau ------*/
+with(menufondLevel0=new mm_style()){
+onbgcolor="";
+oncolor="#00466b";
+offbgcolor="";
+offcolor="#00466b";
+bordercolor="";
+borderstyle="";
+borderwidth=0;
+separatorcolor="";
+separatorsize= "";//10
+padding= "0px 7px 0px 0px"; //padding top right bottom left
+fontsize="13px";
+fontstyle="normal";
+fontweight="standard";
+fontfamily="source_sans_proregular";
+pagecolor="#00466b";
+pagebgcolor="";
+headercolor="";
+headerbgcolor="";
+imageposition="right";
+subimagepadding="";
+overfilter="";
+outfilter="";
+valign="middle";
+align="center";
+bgimage= "/plugin/menu/template/images/repeatMenuFond.png";
+rawcss="text-transform:uppercase;";
+itemheight="25px";
+}
+
+
+with(menufondLevel1=new mm_style()){
+	onbgcolor="#FFFFFF";
+	oncolor="#00466b";
+	offbgcolor="#FFFFFF";
+	offcolor="#00466b";
+	bordercolor="";
+	borderstyle="";
+	borderwidth=0;
+	separatorcolor="";
+	separatorsize= "";//10
+	padding= "0px 7px 0px 7px"; //padding top right bottom left
+	fontsize="13px";
+	fontstyle="normal";
+	fontweight="standard";
+	fontfamily="source_sans_proregular";
+	pagecolor="#00466b";
+	pagebgcolor="#FFFFFF";
+	headercolor="";
+	headerbgcolor="";
+	imageposition="right";
+	subimagepadding="";
+	overfilter="";
+	outfilter="";
+	valign="middle";
+	align="center";
+	
+	rawcss="text-transform:uppercase;";
+	itemheight="25px";
+
+
+}
+
+/*------ Bloc pour generation des sous-menus ------*/
+
+drawMenus();
+
+/*------ Gestion du menu principal: fait un bloc pour utiliser la meme fct que sous-menus ------*/
+with(milonic=new menuname("menufondmain0"))
+{
+	style=GetStyle("menufond",0);
+	alwaysvisible=1;
+	orientation="horizontal";
+	divides= 1;
+	position="relative";
+	
+	if(0==0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/bordGauche.png;overimage=/plugin/menu/template/images/bordGauche.png;pageimage=/plugin/menu/template/images/bordGauche.png;url=;imagewidth=19;imageheight=25;padding=0px;pointer=default;bgimage=;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+	aI("text=Extranet;url=/login.php;showmenu=;target=_self;type=;pagematch=;");
+aI("text=Jobs;url=/alcool-dependance/jobs-5007.html;showmenu=;target=_self;type=;pagematch=/jobs-5007.html,/jobs-5007/;");
+aI("text=MÉDIAS;url=/alcool-dependance/medias-880.html;showmenu=;target=_self;type=;pagematch=/medias-880.html,/medias-880/;");
+aI("text=Contact;url=/alcool-dependance/contacts-83.html;showmenu=;target=_self;type=;pagematch=/contacts-83.html,/contacts-83/;");
+aI("text=Liens;url=/alcool-dependance/liens-75.html;showmenu=;target=_self;type=;pagematch=/liens-75.html,/liens-75/;");
+aI("text=Plan du site;url=/alcool-dependance/homepage/sitemap-view-1.html;showmenu=;target=_self;type=;pagematch=;");
+aI("text=Mentions légales;url=/alcool-dependance/homepage/mentionslegales-view-1.html;showmenu=;target=_self;type=;pagematch=;");
+	
+	if(0==0 && !0)
+		aI("text=;imagepadding=0;image=/plugin/menu/template/images/bordDroite.png;overimage=/plugin/menu/template/images/bordDroite.png;pageimage=/plugin/menu/template/images/bordDroite.png;url=;imagewidth=18;imageheight=25;padding=0px;pointer=default;bgimage=;offclass=sousmenuNoBackground;pageclass=sousmenuNoBackground;onclass=sousmenuNoBackground");
+
+}
+
+</script>	<script>drawMenus();</script></td></tr></table></div>
+		<div>
+			<div id="zoneAdresses">
+				<div class="divAdresse">
+					<div class="divEnteteAdresse"><div class="firstEntete">Croix-Bleue romande</div></div>
+					<div class="txtAdresse">Avenue Gare 31<br />
+1022 Chavannes-Renens<br />
+T 021 633 44 33<br />
+F 021 633 44 39 <br />
+<script>buildMail("info", "croix-bleue.ch","txtAdresse", "" , "");</script><br />
+CCP 10-586-2</div>
+				</div>
+				<div class="divAdresse">
+					<div class="divEnteteAdresse">
+						<div class="firstEntete">Croix-Bleue romande</div>
+						<div class="secondEntete"><a href="/section-genevoise" style="text-decoration:none;" class="secondEntete">Section genevoise</a></div>
+					</div>
+					<div class="txtAdresse">Chemin de la Gravière 4<br />
+1227 Les Acacias<br />
+T 022 320 41 00<br />
+<script>buildMail("info-ge", "croix-bleue.ch","txtAdresse", "" , "");</script><br />
+CCP 12-1097-2</div>
+				</div>
+				<div class="divAdresse">
+					<div class="divEnteteAdresse">
+						<div class="firstEntete">Croix-Bleue romande</div>
+						<div class="secondEntete"><a href="/section-jura-bernois" style="text-decoration:none;" class="secondEntete">Section Jura bernois<!-- <br>&nbsp; --></a></div>
+					</div>
+					<div class="txtAdresse">Rue de l'Envers 19<br />
+2605 Sonceboz<br />
+T 032 489 13 06<br />
+<script>buildMail("info-jb", "croix-bleue.ch","txtAdresse", "" , "");</script><br />
+CCP 25-2148-5</div>
+				</div>
+				<div class="divAdresse">
+					<div class="divEnteteAdresse">
+						<div class="firstEntete">Croix-Bleue romande</div>
+						<div class="secondEntete"><a href="/section-neuchatel" style="text-decoration:none;" class="secondEntete">Section Neuchâtel</a></div>
+					</div>
+					<div class="txtAdresse">Rue du Verger-Rond 7A<br />
+2000 Neuchâtel<br />
+T 032 710 16 07<br />
+<a href="info-ne@croix-bleue.ch" class="txtAdresse">info-ne@croix-bleue.ch</a><br />
+CCP 17-610740-5</div>
+				</div>
+				<div class="divAdresse">
+					<div class="divEnteteAdresse">
+						<div class="firstEntete">Croix-Bleue romande</div>
+						<div class="secondEntete"><a href="/section-vaudoise" style="text-decoration:none;" class="secondEntete">Section vaudoise</a></div>
+					</div>
+					<div class="txtAdresse">Avenue de la Gare 31<br />
+1022 Chavannes<br />
+T 021 633 44 33 <br />
+<script>buildMail("info-vd", "croix-bleue.ch","txtAdresse", "" , "");</script><br />
+CCP 10-4561-3</div>
+				</div>
+				
+			
+				<div class="divwrapper"></div>
+			</div>
+			<div id="zoneLogos">
+				<div style="padding-left:0px;">
+				
+				<table>
+					<tr>
+						<td>
+						<map name="logoFond" id="logoFond">
+				<area alt="" href="/alcool-dependance/quatheda-74.html" shape="rect" coords="80,1,153,80"/>
+    			<area alt="" href="/alcool-dependance/zewo-73.html" shape="rect" coords="0,0,73,80"/></map>
+				<img src="/template/image/logoFond.png" border="0" usemap="#logoFond">
+						</td><td style="padding-left:3px;"><img src="/template/image/iqnet.gif" border="0"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="http://www.fer.ch" target="_blank" class="txtPowered">Croix-Bleue Romande est Swiss GAAP RPC 21</a></td>
+					</tr>
+				</table>
+				
+				</div>
+				
+				<div class="txtPowered" style="padding-top:33px;padding-left:30px;">2013 - powered by <a href="http://www.boomerang.ch" target="_blank" class="txtPowered">/boomerang</a></div>
+			</div>
+			<div class="divwrapper"></div>
+		</div>
+	</div>
+</div>
+	<div id="disclaimerCtn">
+	<div class="disclaimer">
+		<div class="txt">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour améliorer votre expérience utilisateur et réaliser des statistiques de visites.</div>
+		<a class="read" href="/alcool-dependance/homepage/mentionslegales-view-1.html">Lire les mentions légales</a>
+		<a class="close" href="#">ok</a>
+	</div>	
+	<script>
+		$(document).ready(function(){	
+			$('#disclaimerCtn .close').click(function(evt){
+				evt.preventDefault(); 
+				$('#disclaimerCtn').addClass("hide");
+				$.post("/alcool-dependance/contacts-83/mentionslegales-disclaimer-OK/ajaxmanager-plug-mentionslegales-fct-setDisclaimer.html");
+			}); 
+		});
+	</script>
+</div>
+	
+	
+	</body>
+
+</html>

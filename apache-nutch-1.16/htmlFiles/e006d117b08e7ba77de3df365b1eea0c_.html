@@ -1,0 +1,208 @@
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+<meta http-equiv="X-UA-Compatible" content="IE=10,11,edge"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+
+
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/utils.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery/granite.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/jquery.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/shared.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/main.js"></script>
+
+
+
+    
+    <link href="/etc/designs/ddp-dws.css" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<link rel="stylesheet" href="/etc.clientlibs/settings/wcm/designs/ddp-dws/clientlibs-base.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/settings/wcm/designs/ddp-dws/clientlibs-rollout-config.css" type="text/css">
+
+
+
+
+
+
+<script defer src="/etc/designs/ddp-dws/clientlibs-base-new/js/ddp-vendors-9.3.9.js"></script>
+
+<script defer src="/etc/designs/ddp-dws/clientlibs-base-new/js/ddp-scripts-9.3.9.js"></script>
+
+
+
+    
+<script type="text/javascript" src="/etc/designs/ddp-dws/clientlibs-base-new.js"></script>
+
+
+
+
+	<link rel="icon" type="image/vnd.microsoft.icon" href="/etc/designs/ddp-dws/favicon.ico"/>
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc/designs/ddp-dws/favicon.ico"/>
+
+
+
+<title></title>
+<meta name="description"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+</head>
+    <body>
+
+
+<section class="content">  
+    <div class="content__wrapper"> 
+
+        <div class="content__header">
+            <div class="content__title">
+                <h1>Aggregate site: 3128_0000674 (FCA MOTOR VILLAGE)</h1>
+            </div>
+            
+			
+            
+        </div>
+
+		
+        
+		
+		
+        
+    </div>
+</section>
+
+<div style="display: none" class="importer-loader">
+    <div class="loader"></div>
+</div>
+
+
+
+    
+<script type="text/javascript" src="/etc.clientlibs/settings/wcm/designs/ddp-dws/clientlibs-base.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/settings/wcm/designs/ddp-dws/clientlibs-rollout-config.js"></script>
+
+
+
+
+
+<script>
+	var setDealerId = function() {
+	    var errorMessage = ", dealerID is not going to be overwritten"
+	    
+	    function logMessage(message) {
+	    	return "[window.setDealerId]: " + message
+	    }
+	
+	    function getQSParameterByName(name, url) {
+		    if (!url) url = window.location.href;
+		    name = name.replace(/[\[\]]/g, "\\$&");
+		    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		    results = regex.exec(url);
+		    if (!results) return null;
+		    if (!results[2]) return '';
+		    return decodeURIComponent(results[2].replace(/\+/g, " "));
+	    }
+	
+	    var dealersData = localStorage.getItem("Ddp.dealersData");
+	    if(dealersData) {
+	    	dealersData = JSON.parse(dealersData);
+	    } else {
+	        console.warn(logMessage("No dealers data in localStorage" + errorMessage));
+	        return;
+	    }
+	
+	    
+	    var tcoQueryStringBrand = getQSParameterByName('preselect')
+	
+	    var maincodeToSelect = CONST.dealer.maincode;
+	    var currentBrand
+	    if(tcoQueryStringBrand) {
+		    switch(tcoQueryStringBrand) {
+		        case 'alfaromeo': currentBrand = 'alfa-romeo'; break;
+		        case 'fiatprofessional': currentBrand = 'fiat-professional'; break;
+		        default: currentBrand = tcoQueryStringBrand
+	        }
+	    } else {
+	    	currentBrand = CONST.currentBrand;
+	    }
+	
+	    if(!dealersData.length || dealersData.length == 0) {
+		    console.warn(logMessage("Dealers data is in localStorage but have no elements" + errorMessage));
+		    return;
+	    }
+	
+	    var dealerDataSelected = null;
+	    for(var i = 0; i < dealersData.length; i++) {
+	    	var dealerData = dealersData[i];
+		    if(dealerData.maincode == maincodeToSelect) {
+		        dealerDataSelected = dealerData;
+		        break;
+		    }
+	    }
+	
+	    if(dealerDataSelected) {
+		    var officeSelected = dealerDataSelected.officesSelected[currentBrand];
+		    if(!officeSelected) {
+	        	throw console.warn(logMessage("Office to select from brand " + currentBrand + " not found" + errorMessage));
+		    }
+		    var sincomDealerId = officeSelected.sincom;
+		    var sitecodeDealerId = officeSelected.sitecode;
+		    var outletCodeDealerId = officeSelected.outletCode["sales"] || officeSelected.outletCode["afterSales"];
+		
+		    if(!sincomDealerId) {
+		        console.warn(logMessage("DealerID sincom not available" + errorMessage));
+		        return;
+		    }
+		    if(!sitecodeDealerId) { 
+		        console.warn(logMessage("DealerID sitecode not available" + errorMessage));
+		        return; 
+		    }
+		    if(!outletCodeDealerId) { 
+		        console.warn(logMessage("DealerID outletCode not available" + errorMessage));
+		        return; 
+		    }	    
+		
+		    if(!window.digitalData) window.digitalData = {};
+		    if(!window.digitalData.page) window.digitalData.page = {};
+		    if(!window.digitalData.page.pageInfo) window.digitalData.page.pageInfo = {};
+		    
+		    window.digitalData.page.pageInfo.dealerID = sincomDealerId + "." + outletCodeDealerId + "." + sitecodeDealerId;
+		    console.info(logMessage("DealerID correctly setted: " + window.digitalData.page.pageInfo.dealerID));
+	    } else {
+	        console.warn(logMessage("No dealerData found for maincode " + maincodeToSelect + errorMessage));
+	        return;
+	    }
+	}
+	
+	setDealerId();
+	delete setDealerId;
+</script>
+
+
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+</body>
+</html>

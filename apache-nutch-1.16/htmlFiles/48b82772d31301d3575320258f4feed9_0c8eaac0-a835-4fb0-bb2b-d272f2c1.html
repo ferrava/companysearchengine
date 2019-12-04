@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- register in head to be able to post errors to the server $.post -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+        // register first to make sure we catch all errors!
+        window.onerror = function (message, filename, lineno, colno, error) {
+            var stack = "";
+            if (error != null) {
+                stack = error.stack;
+            }
+
+            var exception = {
+                message: message,
+                url: filename || window.location.href,
+                line: lineno,
+                column: colno,
+                stack: stack
+            };
+
+            // we deliberatly do not use the generated controllers and classes to avoid any dependencies!
+            $.post("/api/errors", exception);
+        };
+    </script>
+
+    <meta charset="utf-8" />
+    <title>Agenda - TinkTime</title>
+
+    <!-- for Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/Content/icons/icon-180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/Content/icons/icon-167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/Content/icons/icon-152.png">
+    <link rel="apple-touch-icon" href="/Content/icons/icon-152.png">
+    <meta name="apple-mobile-web-app-title" content="TinkTime">
+    <!-- hiding navigation part  -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- painting status bar "black" -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#252525">
+
+    <!-- for Android -->
+    <link rel="icon" sizes="192x192" href="/Content/icons/icon-192.png">
+    <link rel="icon" sizes="128x128" href="/Content/icons/icon-128.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="/bundles/styles?v=lo_3wC9mhXh8ipydGDOiLQDY-fV4ALJhah6sNhhbFNI1" rel="stylesheet"/>
+
+    <!-- direct CDN include -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/store.js/1.3.20/store.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans+Mono" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/68a69650ed.css">
+    <script type="text/javascript">    var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement("script"); b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;)b("track" + f.pop()); if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) { f = "onerror", b("_" + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c["_" + f](a, b, d, e, h), i } } return c }({ instrumentationKey: "48f2ff0b-9dc2-40e6-b3b6-18ee983e144c" }); window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView();</script>
+</head>
+<body class="noNavigation">
+    <div id="busyindicator" class="hidden">
+        <div class="loader">
+        </div>
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top ">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">TinkTime</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                
+
+<ul class="nav navbar-nav navbar-right">
+        <li>
+            <a class="" href="/Account" id="loginLink">Log in</a>
+        </li>
+
+    <li id="languages" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <span id="current"></span>
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a data-lang="de" href="#">de</a></li>
+            <li><a data-lang="en" href="#">en</a></li>
+            <li><a data-lang="fr" href="#">fr</a></li>
+            <li><a data-lang="it" href="#">it</a></li>
+        </ul>
+    </li>
+</ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        
+
+<div id="Agenda">
+    <div class="loading" data-bind="visible: loading">Wird geladen...</div>
+
+    <div id="Calendar" style="display: none" data-bind="visible: !$data.appointment()">
+        <div class="collapsedFilter">
+            <a class="todayPart" data-bind="attr: { href: $data.app.practiceLink }">
+                <tt-avatar params="avatarId: $root.app.context.avatarId, size: 'medium'"></tt-avatar>
+                <tt-avatar params="avatarId: $root.app.context.avatarId, size: 'tiny'"></tt-avatar>
+            </a>
+            <a class="practiceTitle" data-bind="attr: { href: $data.app.practiceLink }">
+                <h3>
+                    <!-- ko text: $data.app.context.practiceName --><!-- /ko -->
+                </h3>
+            </a>
+            <!-- ko ifnot: $root.app.multipleCalendars -->
+            <tt-calendar-label params="calendar: $root.app.currentCalendar"></tt-calendar-label>
+            <!-- /ko -->
+            <!-- ko if: $root.app.multipleCalendars -->
+            <tt-calendar-dropdown></tt-calendar-dropdown>
+            <!-- /ko -->
+
+            <a class="filterPart" data-bind="attr: { href: $data.app.practiceLink }">
+                <i class="fa fa-sign-in"></i>
+                <span class="sign-in">
+                    <span>Anmelden</span>
+                    <i class="fa fa-sign-in"></i>
+                </span>
+            </a>
+        </div>
+        <ul id="events">
+            <!-- ko foreach: {data: $data.items } -->
+            <!-- ko template: { name: template } -->
+            <!-- /ko -->
+            <!-- /ko -->
+        </ul>
+    </div>
+
+    <div id="Appointment" style="display: none" data-bind="with: $data.appointment, visible: $data.appointment">
+        <div class="form">
+            <div class="header">
+                <h1 data-bind="text: $data.app.context.practiceName"></h1>
+                <h4 data-bind="text: title"></h4>
+                <button class="btn btn-icon btn-primary" data-bind="click: $data.app.closeAppointment.bind($data.app)">
+                    <i class="fa fa-times fa-lg"></i>
+                </button>
+            </div>
+            <label>Standort</label>
+            <tt-select-label params="id: $data.app.currentLocationId, items: $data.app.currentLocations"></tt-select-label>
+            <br />
+            <label>Therapeut/in</label>
+            <tt-select-label params="id: $data.app.currentEmployeeId, items: $data.app.currentEmployees"></tt-select-label>
+            <br />
+            <tt-select params="items: $data.app.treatments, key: 'treatments', type: 'Treatments', id: $data.treatmentId,
+                   filterTrigger: $data.maxDuration, filterHandler: TinkTime.Models.Treatment.Filter.bind($data)">
+            </tt-select>
+            <tt-select params="items: $data.app.currentDurations, key: 'durations', type: 'Duration', id: $data.duration,
+                   filterTrigger: $data.treatmentId, filterHandler: TinkTime.Models.DurationEntry.Filter.bind($data, $data.app.treatments)">
+            </tt-select>
+            <tt-buttons params="save: saveNewAppointment.bind($data), cancel: $root.closeAppointment.bind($root)"></tt-buttons>
+        </div>
+    </div>
+</div>
+
+<template id='tt-calendar-dropdown-template'>
+    <!-- ko if: $root.app.multipleCalendars -->
+    <div class="calendar dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="calendarSelection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <tt-calendar-label params="calendar: $root.app.currentCalendar"></tt-calendar-label>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="calendarSelection" data-bind="foreach: $root.app.calendars">
+            <li>
+                <input type="radio" value="" data-bind="attr: {id: 'label' + id}, checkedValue: id, checked: $root.app.currentCalendarId">
+                <label data-bind="attr: {for: 'label' + id}">
+                    <tt-calendar-label params="calendar: $data"></tt-calendar-label>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <!-- /ko -->
+</template>
+<template id='tt-calendar-filter-template'>
+    <div class="collapsedFilter">
+        <div class="todayPart">
+            <button class="btn btn-default btn-icon pull-left" data-bind="click: scrollToToday.bind($data, false)" title="Heute">
+                <i class="fa fa-calendar-check-o fa-lg" aria-hidden="true"></i>
+            </button>
+            <span class="pull-left todayLabel">Heute</span>
+        </div>
+        <!-- ko ifnot: $root.app.multipleCalendars -->
+        <tt-calendar-label params="calendar: $root.app.currentCalendar"></tt-calendar-label>
+        <!-- /ko -->
+        <!-- ko if: $root.app.multipleCalendars -->
+        <tt-calendar-dropdown></tt-calendar-dropdown>
+        <!-- /ko -->
+        <div class="filterPart">
+            <button class="btn btn-icon pull-right" data-bind="click: filtering.showFilter.bind(filtering), css: buttonStyle">
+                <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    <div class="filterSelection popup" data-bind="visible: filtering.filterExpanded">
+        <div class="header">
+            <h4>Kalender Filter</h4>
+            <button class="btn btn-icon btn-primary" data-bind="click: filtering.cancel.bind(filtering)">
+                <i class="fa fa-times fa-lg"></i>
+            </button>
+        </div>
+        <div class="form">
+            <p>Schränke die möglichen Termine ein.</p>
+            <div class="durations">
+                <h3>Terminlänge</h3>
+                <ul data-bind="foreach: filtering.durations.items">
+                    <li>
+                        <input type="checkbox" value="" data-bind="attr: {id: labelId}, checkedValue: id, checked: $parent.filtering.durations.selectedIds">
+                        <label data-bind="attr: {for: labelId}, text: display"></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="treatments">
+                <h3>Behandlungsmethoden</h3>
+                <ul data-bind="foreach: filtering.treatments.items">
+                    <li>
+                        <label data-bind="attr: {for2: id}, style: { 'border-left-color': color}">
+                            <input type="checkbox" value="" data-bind="attr: {id: id}, checkedValue: id, checked: $parent.filtering.treatments.selectedIds">
+                            <!-- ko text: display -->
+                            <!-- /ko -->
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="btn btn-block btn-primary" data-bind="click: filtering.filter.bind(filtering)">Filtern</button>
+            <button class="btn btn-block btn-default" data-bind="click: filtering.reset.bind(filtering)">Filter zurücksetzen</button>
+            <button class="btn btn-block btn-default" data-bind="click: filtering.cancel.bind(filtering)">Abbrechen</button>
+        </div>
+    </div>
+</template>
+<template id='tt-buttons'>
+    <button class="btn btn-block btn-primary" data-bind="visible: saveVisible, click: save">Speichern</button>
+    <button class="btn btn-block btn-default" data-bind="visible: showCancel, click: cancel">Abbrechen</button>
+    <button class="btn btn-block btn-default" data-bind="visible: showDelete, click: toggleDelete">Löschen</button>
+    <div class="popup confirmDelete" data-bind="visible: showConfirm">
+        <!-- ko if: $component.useInlineTemplate -->
+        <!-- ko template: { nodes: $componentTemplateNodes } --><!-- /ko -->
+        <!-- /ko -->
+        <div class="form">
+            <button class="btn btn-block btn-danger" data-bind="click: reallyDelete">Wirklich löschen?</button>
+            <button class="btn btn-block btn-default" data-bind="click: toggleDelete">Löschen abbrechen</button>
+        </div>
+    </div>
+</template>
+<template id='tt-select-template'>
+    <!-- form element -->
+    <span class="selectWrapper element" data-bind="click: openSearch">
+        <tt-textinput params="placeholder: title, hasFocus: hasFocus, text: selected, readonly: true, required: isRequired, key: key, inputClass: inputClass, clearable: isClearable"></tt-textinput>
+    </span>
+    <!-- /form element -->
+    <div class="searchComponent popup hasSidebar" data-bind="css : $component.key, visible: visible">
+        <!-- search part -->
+        <div class="searchPart form">
+            <div class="header">
+                <h4 data-bind="text: title"></h4>
+                <button class="btn btn-icon btn-primary" data-bind="click: $component.closeSearch">
+                    <i class="fa fa-times fa-lg"></i>
+                </button>
+            </div>
+            <span class="searchWrapper">
+                <tt-textinput params="type: 'search', placeholder:'Suchen', text: search, key: 'search', hasFocus: searchHasFocus"></tt-textinput>
+            </span>
+        </div>
+        <!-- /search part -->
+        <!-- list items -->
+        <div class="entries">
+            <ol data-bind="foreach: $component.letters">
+                <!-- ko if: hasEntries -->
+                <li data-bind="css: letterKey" class="letterHead">
+                    <span class="name" data-bind="text: letter"> </span>
+                </li>
+
+                <!-- ko foreach: entries.sort(function (l, r) { return l.sort > r.sort ? 1 : -1 }) -->
+                <!-- ko if: visible -->
+                <li class="listEntry" data-bind="click: $component.selectEntry.bind($component, $data), css: {'selected' : selected}">
+                    <!-- ko if: $component.useInlineTemplate -->
+                    <!-- ko template: { nodes: $componentTemplateNodes } --><!-- /ko -->
+                    <!-- /ko -->
+                    <!-- ko ifnot: $component.useInlineTemplate -->
+                    <span class="name" data-bind="text: display"> </span>
+                    <!-- /ko -->
+                </li>
+                <!-- /ko -->
+                <!-- /ko -->
+                <!-- /ko -->
+            </ol>
+            <ol class="sidebarLetters" data-bind="foreach: $component.letters">
+                <li data-bind="css: {'exist' : hasEntries}, click: $component.scrollTo.bind($parent, letterKey), text: letter"></li>
+            </ol>
+        </div>
+        <!-- /list items -->
+        <!-- create entry -->
+        <div class="newListEntry" data-bind="visible: newEntryLink">
+            <a href="#" class="btn btn-block btn-primary" data-bind="attr: {href: newEntryLink}">Erfassen</a>
+        </div>
+        <div class="newListEntry" data-bind="visible: newEntryVisible">
+            <button class="btn btn-block btn-default" data-bind="text: $component.newEntryTitle, click: $component.toggleNewEntryForm"></button>
+        </div>
+        <div class="newEntryForm" data-bind="visible: newEntryFormVisible">
+            <div class="header">
+                <h4 data-bind="text: newEntryTitle"></h4>
+                <button class="btn btn-icon btn-primary" data-bind="click: toggleNewEntryForm">
+                    <i class="fa fa-times fa-lg"></i>
+                </button>
+            </div>
+
+            <input type="text" class="newEntry form-control" required data-bind="placeholder: newEntryTitle, textInput: newEntry, title: selected" />
+            <button class="btn btn-block btn-primary" data-bind="click: saveNewEntry">Speichern</button>
+            <button class="btn btn-block btn-default" data-bind="click: toggleNewEntryForm">Abbrechen</button>
+        </div>
+        <!-- /create entry -->
+    </div>
+</template>
+
+<template id="slot-date">
+    <li class="date">
+        <span class="day" data-bind="text: day"></span>
+        <span class="date" data-bind="text: date"></span>
+        <span class="year" data-bind="text: year"></span>
+    </li>
+</template>
+
+<template id="slot-day-end">
+    <li class="dayEnd">
+        <span class="time" data-bind="text: time"></span>
+    </li>
+</template>
+
+<template id="slot-blocked">
+    <li class="blocked" data-bind="css: {selected: isSelected}">
+        <span class="time" data-bind="text: time"></span>
+        <div class="deselector" data-bind="toggleClick: isSelected, event: { mouseover: deselect.bind($data)}"></div>
+        <button class="btn btn-block btn-danger blocker" data-bind="toggleClick: isSelected, event: { mouseover: select.bind($data)}">Blockiert</button>
+        <button class="btn btn-block btn-warning unblock" data-bind="click: $root.unblock.bind($root, $data)">Entblocken</button>
+    </li>
+</template>
+
+<template id="slot-free">
+    <li class="free" data-bind="css: {past: isPast, filtered: isFiltered, selected: isSelected}">
+        <span class="time" data-bind="text: time"></span>
+        <div class="select" data-bind="toggleClick: isSelected, event: { mouseover: select.bind($data)}"></div>
+        <div class="deselector" data-bind="toggleClick: isSelected, event: { mouseover: deselect.bind($data)}"></div>
+        <span class="btn btn-danger block" data-bind="click: $root.block.bind($root, $data)">Block</span>
+        <a class="btn btn-primary open" data-bind="attr: { href: bookingLink }">Buchen</a>
+    </li>
+</template>
+
+<template id="slot-not-bookable">
+    <li class="notBookable" title="Ausserhalb des buchbaren Bereiches">
+        <span class="time" data-bind="text: time"></span>
+        <div class="">Nicht buchbar</div>
+    </li>
+</template>
+
+<template id="slot-bookable">
+    <li class="bookable" data-bind="css: {filtered: isFiltered}">
+        <span class="time" data-bind="text: time"></span>
+        <a class="open" data-bind="attr: { href: bookingLink }">Buchen</a>
+    </li>
+</template>
+
+<template id="slot-agenda">
+    <li class="bookable">
+        <span class="time" data-bind="text: time"></span>
+        <a class="open" data-bind="click: agenda.loadAppointment.bind(agenda, $data)">Buchen</a>
+    </li>
+</template>
+
+<template id="slot-break">
+    <li class="break">
+        <span class="time" data-bind="text: time"></span>
+        <div class="break" data-bind="text: reason"></div>
+    </li>
+</template>
+
+<template id="slot-booked">
+    <li class="booked" data-bind="css: {past: isPast}">
+        <span class="time" data-bind="text: time"></span>
+        <!-- ko if: bookingLink -->
+        <a class="booked" data-bind="text: display, attr: { href: bookingLink }"></a>
+        <!-- /ko -->
+        <!-- ko ifnot: bookingLink -->
+        <div data-bind="text: display"></div>
+        <!-- /ko -->
+    </li>
+</template>
+
+<template id="slot-holiday">
+    <li class="holiday">
+        <span class="time" data-bind="text: time"></span>
+        <div>
+            <!-- ko if: holidayId -->
+            <a data-bind="text: display, attr: { href: holidayLink }"></a>
+            <!-- /ko -->
+
+            <!-- ko ifnot: holidayId -->
+            <!-- ko text: display --><!-- /ko -->
+            <!-- /ko -->
+
+            <i class="fa fa-suitcase"></i>
+            <!-- ko if: isPublic -->
+            <i class="fa fa-eye"></i>
+            <!-- /ko -->
+        </div>
+    </li>
+</template>
+
+
+
+        <hr />
+        <footer>
+            <p class="copyRight">&copy; 2019 - TinkTime - v<p>1.3.5.1290</p>
+                <span class="loadingTime">RD0003FF1CB41A</span>
+                <span class="loadingTime">Loading Time: 0.0468736s</span>
+
+        </footer>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#practiceSwitcher").on("click", "a.practiceLink", function () {
+                window.location.href = $(this).data("value");
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+
+    <script src="/bundles/language-1351290?v=2kUk_DjsoLyRVkSmny_nfHos2wnKQqKR1HuWPh0NPz41"></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.2.2.min.js"></script>
+
+    <script src="/bundles/common-1351290?v=6LHtq7EFSfMQu4IddpmZN7zINrWs5WlUo7pd9WePVvI1"></script>
+
+    
+    <script>
+        var tinkTimeVersion = "1351290";
+        var startup = {"language":1,"iFrame":false,"practiceLink":"0c8eaac0-a835-4fb0-bb2b-d272f2c11aaf","employeeLink":"cf509604-19a6-4761-a663-0b6f1e52d94e","locationLink":"7c237a60-2638-4c07-9088-635bf00000a5","baseUrl":"https://app.tinktime.ch/"};
+        startup.translations = {
+            "Search.Treatments.Title": "Behandlungsmethode auswählen",
+            "Search.Duration.Title": "Dauer auswählen"
+        };
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout-validation/2.0.3/knockout.validation.min.js"></script>
+
+    <script src="/bundles/knockout-validation-locale?v=dglo7nIxhfUEv5tzDLHvdYcTM62GhF-Oz_8kPFwQA4g1"></script>
+
+    <script src="/bundles/libs?v=L0HOHoAxLvxIzMG3tiofKkZMfrS2f-Uahn_XJrcpDmE1"></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.2.2.min.js"></script>
+
+    <!--Reference the autogenerated SignalR hub script. -->
+    <script src="/signalr/hubs?version=1351290"></script>
+
+    <script src="/bundles/agenda-1351290?v=GnEdnGknKb-qqvMGuX18m6AcZKSOnqtbsscCiHuU8Mw1"></script>
+
+
+    <!--Reference the autogenerated SignalR hub script. -->
+    <script src="/signalr/hubs?version=1351290"></script>
+</body>
+</html>

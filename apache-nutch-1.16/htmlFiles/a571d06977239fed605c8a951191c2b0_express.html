@@ -1,0 +1,10 @@
+<!doctype html><html lang="en" ng-app="nog" ng-controller="AppCtrl as app"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="Description" content="{{'app.description' | i18n}}"><meta name="fragment" content="!"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="author" content="{{'app.author' | i18n}}"><title ng-bind-template="{{'app.title' | i18n}}: {{page.title}}"></title><base href="/"><script>var mypath = window.location.href ;
+			var mypath_vector = mypath.split('/');
+			var path_group_id = mypath_vector[4];
+
+					        var fileref = document.createElement("link");
+	        fileref.setAttribute("rel",  "stylesheet");
+	        fileref.setAttribute("type", "text/css");
+	        fileref.setAttribute("href", '/assets/css/' + path_group_id);
+
+	        	        document.getElementsByTagName("head")[0].appendChild(fileref);</script></head><body class="deploy" id="nrg-page-content" ng-class="context"><nrg-cookies></nrg-cookies><div id="css_anchor"></div><toast></toast><div ui-view class="view-frame"></div><script src="js/app.min.js"></script></body></html>

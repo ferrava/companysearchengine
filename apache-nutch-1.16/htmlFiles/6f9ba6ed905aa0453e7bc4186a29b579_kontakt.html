@@ -1,0 +1,683 @@
+<!DOCTYPE html><html
+xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-de" lang="de-de" dir="ltr"><head><meta
+http-equiv="X-UA-Compatible" content="IE=edge"><meta
+name="viewport" content="width=device-width, initial-scale=1.0" /><meta
+charset="utf-8" /><base
+href="https://www.coiffeur-gaehwiler.ch/kontakt" /><meta
+name="keywords" content="Was immer Sie sich vorstellen - wir bieten Ihnen Ihre ganz persönliche und individuelle Beratung. Nur so kommen Sie zu Ihrem optimal auf Sie abgestimmten Haarschnitt. Frisuren - zeitlos trendig" /><meta
+name="description" content="Was immer Sie sich vorstellen - wir bieten Ihnen Ihre ganz persönliche und individuelle Beratung. Nur so kommen Sie zu Ihrem optimal auf Sie abgestimmten Haarschnitt. Frisuren - zeitlos trendig" /><meta
+name="generator" content="Joomla! - Open Source Content Management" /><title>Kontakt - Gähwiler Coiffeur</title><link
+href="/templates/jm-beauty-center-ef4/cache/jmf_173d54eaf3a2dca272397ba1ce065466.css?v=1557292001" rel="stylesheet" /><link
+href="//fonts.googleapis.com/css?family=Raleway:400,500,300,700" rel="stylesheet" /><link
+href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" /><style>form#mod-visform1 div.control-group.required span.control-label:before {content:"*"; color:red; display: inline-block; padding-right: 0;} form#mod-visform1 div.control-group.required .control-label:before {content:"*"; color:red; display: inline-block; padding-right: 10px;} form#mod-visform1 .vflocationsubform {display: block;}form#mod-visform1 .vflocationsubform .locationinput, form#mod-visform1 .vflocationsubform .getmylocationbutton {display: inline-block; margin-bottom: 0; vertical-align: middle;}		.dj-hideitem { display: none !important; }
+
+			#dj-megamenu93mobile { display: none; }
+		@media (max-width: 979px) {
+			#dj-megamenu93, #dj-megamenu93sticky, #dj-megamenu93placeholder { display: none; }
+			#dj-megamenu93mobile { display: block; }
+		}</style> 
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3&amp;language=de-DE&amp;libraries=places'></script>
+<script src="/templates/jm-beauty-center-ef4/cache/jmf_ff0dcba22cec91e58d474324f0e0ab52.js?v=1572692680"></script> <script src="/templates/jm-beauty-center-ef4/cache/jmf_6d2b4b2f12ecf5d25187510fd5a59d60.js?v=1459673356" defer></script>
+<script type='text/javascript' src='/media/plugin_googlemap3/site/googlemaps/googlemapsv3.js'></script>
+ <script>jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });jQuery(document).ready(function () {
+            jQuery.extend(jQuery.validator.messages, {
+            required: "Dieses Feld ist ein Pflichtfeld.",
+            remote: "Please fix this field.",
+            email: "Bitte geben Sie eine valide E-Mail Adresse ein.",
+            url: "Bitte geben Sie eine valide URL ein, die mit http:// beginnt.",
+            date: "Bitte geben Sie ein valides Datum ein",
+            dateISO: "Please enter a valid date (ISO).",
+            number: "Bitte geben Sie eine Zahl (mit Punkt als Dezimaltrenner) ein.",
+            digits: "Bitte geben Sie eine ganze Zahl ein",
+            creditcard: "Please enter a valid credit card number.",
+            equalTo: "Bitte den Wert wiederholen",
+            maxlength: jQuery.validator.format("Bitte geben Sie höchstens {0} Zeichen ein."),
+            minlength: jQuery.validator.format("Bitte geben Sie mindestens {0} Zeichen ein."),
+            rangelength: jQuery.validator.format("Bitte geben Sie {0} bis {1} Zeichen ein."),
+            range: jQuery.validator.format("Bitte geben Sie einen Zahl zwischen {0} und {1} ein."),
+            max: jQuery.validator.format("Bitte geben Sie einen Zahl kleiner oder gleich {0} ein."),
+            min: jQuery.validator.format("Bitte geben Sie eine Zahl grö&szlig;er oder gleich {0} ein."),
+            customvalidation: "Fehlerhafte Eingabe",
+            ispair: "Latitude und Longitude müssen gültige Geocoordinaten im Dezimalformat sein und als Paar eingegeben werden."
+            });
+            });jQuery(document).ready(function () {
+            jQuery.validator.addMethod("dateDMY", function (value, element) {
+                var check = false;
+                var re = /^(0[1-9]|[12][0-9]|3[01])[\.](0[1-9]|1[012])[\.]\d{4}$/;
+                    if (re.test(value)) {
+                        var adata = value.split(".");
+                        var day = parseInt(adata[0], 10);
+                        var month = parseInt(adata[1], 10);
+                        var year = parseInt(adata[2], 10);
+                        if (day == 31 && (month == 4 || month == 6 || month == 9 || month == 11)) {
+                            check = false; // 31st of a month with 30 days
+                        } else if (day >= 30 && month == 2) {
+                            check = false; // February 30th or 31st
+                        } else if (month == 2 && day == 29 && !(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))) {
+                            check = false; // February 29th outside a leap year
+                        } else {
+                            check = true; // Valid date
+                        }
+                    }
+                    //the calender does not allow to clear values if it is required (js). So the required option in this validation is just a workaround fallback
+                    if (value == "0000-00-00 00:00:00" && !jQuery(element).prop("required")) {
+                        check = true;
+                    }
+                    return this.optional(element) || check;
+            });
+            jQuery.validator.addMethod("dateMDY", function (value, element) {
+                var check = false;
+                var re = /^(0[1-9]|1[012])[\/](0[1-9]|[12][0-9]|3[01])[\/]\d{4}$/;
+                    if (re.test(value)) {
+                        var adata = value.split("/");
+                        var month = parseInt(adata[0], 10);
+                        var day = parseInt(adata[1], 10);
+                        var year = parseInt(adata[2], 10);
+                        if (day == 31 && (month == 4 || month == 6 || month == 9 || month == 11)) {
+                            check = false; // 31st of a month with 30 days
+                        } else if (day >= 30 && month == 2) {
+                            check = false; // February 30th or 31st
+                        } else if (month == 2 && day == 29 && !(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))) {
+                            check = false; // February 29th outside a leap year
+                        } else {
+                            check = true; // Valid date
+                        }
+                    }
+                    //the calender does not allow to clear values if it is required (js). So the required option in this validation is just a workaround fallback
+                    if (value == "0000-00-00 00:00:00" && !jQuery(element).prop("required")) {
+                        check = true;
+                    }
+                    return this.optional(element) || check;
+            });
+            jQuery.validator.addMethod("dateYMD", function (value, element) {
+                var check = false;
+                var re = /^\d{4}[\-](0[1-9]|1[012])[\-](0[1-9]|[12][0-9]|3[01])$/;
+                    if (re.test(value)) {
+                        var adata = value.split("-");
+                        var year = parseInt(adata[0], 10);
+                        var month = parseInt(adata[1], 10);
+                        var day = parseInt(adata[2], 10);
+                        if (day == 31 && (month == 4 || month == 6 || month == 9 || month == 11)) {
+                            check = false; // 31st of a month with 30 days
+                        } else if (day >= 30 && month == 2) {
+                            check = false; // February 30th or 31st
+                        } else if (month == 2 && day == 29 && !(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))) {
+                            check = false; // February 29th outside a leap year
+                        } else {
+                            check = true; // Valid date
+                        }
+                    }
+                    //the calender does not allow to clear values if it is required (js). So the required option in this validation is just a workaround fallback
+                    if (value == "0000-00-00 00:00:00" && !jQuery(element).prop("required")) {
+                        check = true;
+                    }
+                    return this.optional(element) || check;
+            });
+            jQuery.validator.addMethod("filesize", function (value, element, maxsize) {
+                var check = false;
+                if ((maxsize === 0) || ((!(element.files.length == 0)) && (element.files[0].size < maxsize)))
+                {
+                    check = true;
+                }
+                return this.optional(element) || check;
+            });
+            jQuery.validator.addMethod("fileextension", function (value, element, allowedextension) {
+                var check = false;
+                allowedextension = allowedextension.replace(/\s/g, "");
+                allowedextension = allowedextension.split(",");
+                var fileext = jQuery(element).val().split(".").pop().toLowerCase();
+                if (jQuery.inArray(fileext, allowedextension) > -1)
+                {
+                    check = true;
+                }
+                return this.optional(element) || check;
+            });
+            jQuery.validator.addMethod("customvalidation", function (value, element, re) {
+                return this.optional(element) || re.test(value);
+            });
+            jQuery.validator.addMethod("ispair", function (value, element, id) {
+                var latval = document.getElementById(id+"_lat").value;
+                var lngval = document.getElementById(id+"_lng").value;
+                //false if on field is empty and the other not
+                var check = ((latval === "" && lngval === "") || (latval !== "" && lngval !== ""));
+                var relatval = /^[-]?(([0-8]?[0-9])\.(\d+))|(90(\.0+)?)$/;
+                var relngval = /^[-]?((((1[0-7][0-9])|([0-9]?[0-9]))\.(\d+))|180(\.0+)?)$/;
+                check = (latval === "" || relatval.test(latval)) && check;
+                check = (lngval === "" || relngval.test(lngval)) && check;
+                return check;
+            });
+            jQuery.validator.addMethod("mindate", function(value, element, options) {
+	            var check = false;
+	            var minDate = "";
+	            if (value) {
+	                if (options.fromField) {
+	                    var fieldId = options.value;
+	                    var field = document.getElementById(fieldId);
+	                    if (!field) {
+	                        return true;
+	                    }
+	                    if (field.disabled) {
+	                        return true;
+	                    }
+	                    minDate = field.value;
+	                    if (!minDate) {
+	                        return true;
+	                    }
+	                } else {
+	                    minDate = options.value;
+	                }
+	                var  format, i = 0, fmt = {}, minDateFormat, j = 0, minDateFmt = {}, day;
+	                format = (value.indexOf(".") > -1) ? "dd.mm.yyyy" : ((value.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+	                format.replace(/(yyyy|dd|mm)/g, function(part) { fmt[part] = i++; });
+	                minDateFormat = (minDate.indexOf(".") > -1) ? "dd.mm.yyyy" : ((minDate.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+	                minDateFormat.replace(/(yyyy|dd|mm)/g, function(part) { minDateFmt[part] = j++; });
+	                var minDateParts = minDate.match(/(\d+)/g);
+	                var valueParts = value.match(/(\d+)/g);
+	                minDate = new Date(minDateParts[minDateFmt["yyyy"]], minDateParts[minDateFmt["mm"]]-1, minDateParts[minDateFmt["dd"]],0,0,0,0);
+	                if (options.shift) {
+	                    var shift = options.shift;
+	                    day = minDate.getDate();
+	                    day = day + parseInt(shift);
+	                    minDate.setDate(day);
+	                }
+	                value = new Date(valueParts[fmt["yyyy"]], valueParts[fmt["mm"]]-1, valueParts[fmt["dd"]],0,0,0,0);
+	                check = value >= minDate;
+                }
+                return this.optional(element) || check;
+            }, function(options, element) {
+            //validation message
+             if (options.fromField) {
+                    var minDate = "";
+                    var fieldId = options.value;
+                    var field = document.getElementById(fieldId);
+                    if (field) {
+                        minDate = field.value;
+                    }
+                } else {
+                    minDate = options.value;
+                }
+                var format, minDateFormat, j = 0, minDateFmt = {}, day, month, year, valDate;
+                minDateFormat = (minDate.indexOf(".") > -1) ? "dd.mm.yyyy" : ((minDate.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+                minDateFormat.replace(/(yyyy|dd|mm)/g, function(part) { minDateFmt[part] = j++; });
+                var minDateParts = minDate.match(/(\d+)/g);
+                minDate = new Date(minDateParts[minDateFmt["yyyy"]], minDateParts[minDateFmt["mm"]]-1, minDateParts[minDateFmt["dd"]],0,0,0,0);
+                if (options.shift) {
+                    var shift = options.shift;
+                    day = minDate.getDate();
+                    day = day + parseInt(shift);
+                    minDate.setDate(day);
+                }
+                format = options.format;
+                valDate = "";
+                day = minDate.getDate();
+                if (day < 10) {
+                    day = "0" + day;
+                }
+                month = 1 + minDate.getMonth();
+                if (month < 10) {
+                    month = "0" + month;
+                }
+                year = minDate.getFullYear();
+                switch (format) {
+                    case "%Y-%m-%d" :
+                        valDate = year + "-" + month + "-" + day;
+                        break;
+                    case "%m/%d/%Y" :
+                        valDate = month + "/" + day  + "/" + year;
+                        break;
+                    default :
+                        valDate = day + "." + month + "." + year;
+                        break;
+                }
+                return jQuery.validator.format("Das gewählte Datum muss mindestens {0} sein.", valDate);               
+            });
+            jQuery.validator.addMethod("maxdate", function(value, element, options) {
+	            var check = false;
+	            var minDate = "";
+	            if (value) {
+	                if (options.fromField) {
+	                    var fieldId = options.value;
+	                    var field = document.getElementById(fieldId);
+	                    if (!field) {
+	                        return true;
+	                    }
+	                    if (field.disabled) {
+	                        return true;
+	                    }
+	                    minDate = field.value;
+	                    if (!minDate) {
+	                        return true;
+	                    }
+	                } else {
+	                    minDate = options.value;
+	                }
+	                var  format, i = 0, fmt = {}, minDateFormat, j = 0, minDateFmt = {}, day;
+	                format = (value.indexOf(".") > -1) ? "dd.mm.yyyy" : ((value.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+	                format.replace(/(yyyy|dd|mm)/g, function(part) { fmt[part] = i++; });
+	                minDateFormat = (minDate.indexOf(".") > -1) ? "dd.mm.yyyy" : ((minDate.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+	                minDateFormat.replace(/(yyyy|dd|mm)/g, function(part) { minDateFmt[part] = j++; });
+	                var minDateParts = minDate.match(/(\d+)/g);
+	                var valueParts = value.match(/(\d+)/g);
+	                minDate = new Date(minDateParts[minDateFmt["yyyy"]], minDateParts[minDateFmt["mm"]]-1, minDateParts[minDateFmt["dd"]],0,0,0,0);
+	                if (options.shift) {
+	                    var shift = options.shift;
+	                    day = minDate.getDate();
+	                    day = day + parseInt(shift);
+	                    minDate.setDate(day);
+	                }
+	                value = new Date(valueParts[fmt["yyyy"]], valueParts[fmt["mm"]]-1, valueParts[fmt["dd"]],0,0,0,0);
+	                check = value <= minDate;
+                }
+                return this.optional(element) || check;
+            }, function(options, element) {
+            //validation message
+             if (options.fromField) {
+                    var minDate = "";
+                    var fieldId = options.value;
+                    var field = document.getElementById(fieldId);
+                    if (field) {
+                        minDate = field.value;
+                    }
+                } else {
+                    minDate = options.value;
+                }
+                var format, minDateFormat, j = 0, minDateFmt = {}, day, month, year, valDate;
+                minDateFormat = (minDate.indexOf(".") > -1) ? "dd.mm.yyyy" : ((minDate.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+                minDateFormat.replace(/(yyyy|dd|mm)/g, function(part) { minDateFmt[part] = j++; });
+                var minDateParts = minDate.match(/(\d+)/g);
+                minDate = new Date(minDateParts[minDateFmt["yyyy"]], minDateParts[minDateFmt["mm"]]-1, minDateParts[minDateFmt["dd"]],0,0,0,0);
+                if (options.shift) {
+                    var shift = options.shift;
+                    day = minDate.getDate();
+                    day = day + parseInt(shift);
+                    minDate.setDate(day);
+                }
+                format = options.format;
+                valDate = "";
+                day = minDate.getDate();
+                if (day < 10) {
+                    day = "0" + day;
+                }
+                month = 1 + minDate.getMonth();
+                if (month < 10) {
+                    month = "0" + month;
+                }
+                year = minDate.getFullYear();
+                switch (format) {
+                    case "%Y-%m-%d" :
+                        valDate = year + "-" + month + "-" + day;
+                        break;
+                    case "%m/%d/%Y" :
+                        valDate = month + "/" + day  + "/" + year;
+                        break;
+                    default :
+                        valDate = day + "." + month + "." + year;
+                        break;
+                }
+                return jQuery.validator.format("Das gewählte Datum darf höchstens {0} sein.", valDate);
+            });
+        });
+	(function(){
+		var cb = function() {
+			var add = function(css) {
+				var ss = document.styleSheets;
+			    for (var i = 0; i < ss.length; i++) {
+			        if (ss[i].href == css) return;
+			    }
+				var l = document.createElement('link'); l.rel = 'stylesheet';
+				l.href = css;
+				var h = document.getElementsByTagName('head')[0]; h.appendChild(l);
+			}
+			add('/media/djextensions/css/animate.min.css');
+			add('/media/djextensions/css/animate.ext.css');
+		};
+		var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+		if (raf) raf(cb);
+		else window.addEventListener('load', cb);
+	})();</script> <link
+href="https://www.coiffeur-gaehwiler.ch/assets/favicon.ico" rel="Shortcut Icon" />
+<link href='/plugins/system/plugin_googlemap3/plugin_googlemap3.css.php' rel='stylesheet' type='text/css' />
+</head><body
+class=" sticky-bar "><div
+id="jm-allpage">
+<header
+id="jm-bar-wrapp" class=""><div
+id="jm-bar"><div
+id="jm-bar-in" class="container-fluid"><div
+class="row-fluid"><div
+id="jm-bar-left" class="pull-left"><div
+id="jm-logo-sitedesc"><div
+id="jm-logo-sitedesc-in"><div
+id="jm-logo">
+<a
+href="https://www.coiffeur-gaehwiler.ch/">
+<img
+src="https://www.coiffeur-gaehwiler.ch/assets/logo_coiffeur_gaehwiler_75.jpg" alt="Gähwiler Coiffeur" />
+</a></div></div></div></div>
+<nav
+id="jm-bar-right" class="pull-right "><div
+id="jm-djmenu" class="clearfix"><div
+class="jm-module-raw "><ul
+id="dj-megamenu93" class="dj-megamenu dj-megamenu-override " data-options='{"wrap":null,"animIn":"fadeInUp","animOut":"zoomOut","animSpeed":"normal","openDelay":"250","closeDelay":"500","event":"mouseenter","fixed":"0","offset":"0","theme":"override","direction":"ltr","wcag":"1"}' data-trigger="979"><li
+class="dj-up itemid101 first"><a
+class="dj-up_a  " href="/" ><span >Startseite</span></a></li><li
+class="dj-up itemid106 parent"><a
+class="dj-up_a  " href="/angebote" ><span
+class="dj-drop" >Angebote<i
+class="arrow"></i></span></a><div
+class="dj-subwrap  single_column subcols1"><div
+class="dj-subwrap-in" style="width:200px;"><div
+class="dj-subcol" style="width:200px"><ul
+class="dj-submenu"><li
+class="itemid107 first"><a
+href="/angebote/damen" >Damen</a></li><li
+class="itemid108"><a
+href="/angebote/herren" >Herren</a></li><li
+class="itemid109"><a
+href="/angebote/kids" >Kids</a></li></ul></div><div
+style="clear:both;height:0"></div></div></div></li><li
+class="dj-up itemid110 parent"><a
+class="dj-up_a  " href="/team" ><span
+class="dj-drop" >Team<i
+class="arrow"></i></span></a><div
+class="dj-subwrap  single_column subcols1"><div
+class="dj-subwrap-in" style="width:200px;"><div
+class="dj-subcol" style="width:200px"><ul
+class="dj-submenu"><li
+class="itemid111 first"><a
+href="/team/rene-gaehwiler" >René Gähwiler</a></li><li
+class="itemid112"><a
+href="/team/alois-gaehwiler" >Alois Gähwiler</a></li><li
+class="itemid113"><a
+href="/team/rene-widmer" >René Widmer</a></li><li
+class="itemid114"><a
+href="/team/sarah-kradolfer" >Sarah Kradolfer</a></li><li
+class="itemid115"><a
+href="/team/carol-rickenbacher" >Carol Rickenbacher</a></li><li
+class="itemid129"><a
+href="/team/ariana-steiger" >Ariana Steiger</a></li></ul></div><div
+style="clear:both;height:0"></div></div></div></li><li
+class="dj-up itemid118 current active"><a
+class="dj-up_a active " href="/kontakt" ><span >Kontakt</span></a></li><li
+class="dj-up itemid120"><a
+class="dj-up_a  " href="/fun" ><span >Fun</span></a></li><li
+class="dj-up itemid121"><a
+class="dj-up_a  " href="/ambiente" ><span >Ambiente</span></a></li><li
+class="dj-up itemid122"><a
+class="dj-up_a  " href="/links" ><span >Links</span></a></li></ul><div
+id="dj-megamenu93mobile" class="dj-megamenu-offcanvas dj-megamenu-offcanvas-dark ">
+<a
+href="#" class="dj-mobile-open-btn"><i
+class="fa fa-bars"></i></a>
+<aside
+class="dj-offcanvas dj-offcanvas-dark " data-effect="3"><div
+class="dj-offcanvas-top">
+<a
+href="#" class="dj-offcanvas-close-btn"><i
+class="fa fa-close"></i></a></div><div
+class="dj-offcanvas-content"><ul
+class="dj-mobile-nav dj-mobile-dark "><li
+class="dj-mobileitem itemid-101"><a
+href="/" >Startseite</a></li><li
+class="dj-mobileitem itemid-106 deeper parent"><a
+href="/angebote" >Angebote</a><ul
+class="dj-mobile-nav-child"><li
+class="dj-mobileitem itemid-107"><a
+href="/angebote/damen" >Damen</a></li><li
+class="dj-mobileitem itemid-108"><a
+href="/angebote/herren" >Herren</a></li><li
+class="dj-mobileitem itemid-109"><a
+href="/angebote/kids" >Kids</a></li></ul></li><li
+class="dj-mobileitem itemid-110 deeper parent"><a
+href="/team" >Team</a><ul
+class="dj-mobile-nav-child"><li
+class="dj-mobileitem itemid-111"><a
+href="/team/rene-gaehwiler" >René Gähwiler</a></li><li
+class="dj-mobileitem itemid-112"><a
+href="/team/alois-gaehwiler" >Alois Gähwiler</a></li><li
+class="dj-mobileitem itemid-113"><a
+href="/team/rene-widmer" >René Widmer</a></li><li
+class="dj-mobileitem itemid-114"><a
+href="/team/sarah-kradolfer" >Sarah Kradolfer</a></li><li
+class="dj-mobileitem itemid-115"><a
+href="/team/carol-rickenbacher" >Carol Rickenbacher</a></li><li
+class="dj-mobileitem itemid-129"><a
+href="/team/ariana-steiger" >Ariana Steiger</a></li></ul></li><li
+class="dj-mobileitem itemid-118 current active"><a
+href="/kontakt" >Kontakt</a></li><li
+class="dj-mobileitem itemid-120"><a
+href="/fun" >Fun</a></li><li
+class="dj-mobileitem itemid-121"><a
+href="/ambiente" >Ambiente</a></li><li
+class="dj-mobileitem itemid-122"><a
+href="/links" >Links</a></li></ul></div><div
+class="dj-offcanvas-end" tabindex="0"></div>
+</aside></div></div><div
+class="jm-module-raw "><div
+id="dj-megamenu93mobileWrap"></div></div></div>
+</nav></div></div></div>
+</header><div
+id="jm-system-message"><div
+class="container-fluid"><div
+id="system-message-container"></div></div></div><div
+id="jm-header" class=""><div
+class="jm-module "><div
+class="jm-module-in"><div
+class="jm-module-content clearfix notitle"><div
+class="custom"  >
+
+<!-- Plugin Google Maps version 3.4 by Mike Reumer --><!-- fail nicely if the browser has no Javascript -->
+				<noscript><blockquote class='warning'><p><b>JavaScript must be enabled in order for you to use Google Maps.</b> <br/>However, it seems JavaScript is either disabled or not supported by your browser. <br/>To view Google Maps, enable JavaScript by changing your browser options, and then try again.</p></blockquote></noscript><div id='mapplaceholder5_xdmll_0' style="height:100%;"><div id='mapbody5_xdmll_0' style="display: none; height:100%; text-align:center"><div id="googlemap5_xdmll_0" class="map" style="margin-right: auto; margin-left: auto; width:100%; height:400px;"></div><div id="dirsidebar5_xdmll_0" class='directions' ></div></div></div>
+<script type='text/javascript'>/*<![CDATA[*/
+google.maps.visualRefresh = false;
+var mapconfig5_xdmll_0 = {"debug":"0","signedin":"0","show":"1","mapprint":"none","mapclass":"","loadmootools":"1","timeinterval":"500","loadfont":"1","googlewebsite":"maps.google.ch","align":"center","width":"100%","height":"400px","effect":"none","deflatitude":"52.075581","deflongitude":"4.541513","centerlat":"","centerlon":"","address":"Bahnhostrasse 21, 8586 Erlen TG Schweiz","geoloc":"0","geocenter":"0","geomarkerurl":"\/media\/plugin_googlemap3\/site\/geolocation\/images\/gpsloc.png","geomarkersizex":"34","geomarkersizey":"34","geomarkerscaledx":"17","geomarkerscaledy":"17","geomarkeranchorx":"8","geomarkeranchory":"8","geocirclefill":"#61a0bf","geocirclestroke":"#1bb6ff","geocirclestrokeop":".4","geocirclefillop":".4","geocirclestrokeweight":"1","controltype":"UI","oldcontrol":"0","zoomtype":"3D-large","svcontrol":"1","returncontrol":"1","zoom":"18","corzoom":"0","minzoom":"0","maxzoom":"19","rotation":"1","zoomnew":"0","zoomwheel":"0","keyboard":"0","maptype":"Normal","showmaptype":"1","shownormalmaptype":"1","showsatellitemaptype":"1","showhybridmaptype":"1","showterrainmaptype":"1","showscale":"0","overview":"0","dragging":"1","marker":"1","labelcolor":"","labelfont":"","labelfontsize":"","labelfontweight":"","labelanchorx":"","labelanchory":"","traffic":"0","transit":"0","bicycle":"0","dir":"0","dirtype":"D","formdirtype":"1","avoidhighways":"0","avoidtoll":"0","diroptimize":"0","diralternatives":"0","showdir":"1","animdir":"0","animspeed":"1","animautostart":"0","animunit":"kilometers","formspeed":"0","formaddress":"0","formdir":"0","autocompl":"both","txtdir":"Directions: ","txtgetdir":"Get Directions","txtfrom":"From here","txtto":"To here","txtdiraddr":"Address: ","txt_driving":"","txt_avhighways":"","txt_avtoll":"","txt_walking":"","txt_bicycle":"","txt_transit":"","txt_optimize":"","txt_alternatives":"","dirdefault":"0","gotoaddr":"0","gotoaddrzoom":"0","gotoaddrtimeout":"5000","txtaddr":"Address: ##","erraddr":"Address ## not found!","txtgotoaddr":"Goto","clientgeotype":"google","lightbox":"0","txtlightbox":"Open lightbox","lbxcaption":"","lbxwidth":"500px","lbxheight":"700px","lbxcenterlat":"","lbxcenterlon":"","lbxzoom":"","sv":"none","svpano":"","svwidth":"100%","svheight":"300px","svautorotate":"0","svaddress":"1","kmlrenderer":"google","kmlsidebar":"none","kmlsbwidth":"200px","kmllightbox":"0","kmlhighlite":"{ \"color\": \"#aaffff\", \"opacity\": 0.3,  \"textcolor\": \"#000000\" }","proxy":"0","tilelayer":"","tilemethod":"","tileopacity":"1","tilebounds":"","tileminzoom":"0","tilemaxzoom":"19","twittername":"","twittertweets":"15","twittericon":"\/media\/plugin_googlemap3\/site\/Twitter\/twitter_map_icon.png","twitterline":"#ff0000ff","twitterlinewidth":"4","twitterstartloc":"0,0,0","lang":"de-DE","mapType":"satellite","geocoded":0,"tolat":"","tolon":"","toaddress":"","description":"G&auml;hwiler Coiffeur&lt;br\n\/&gt;Bahnhofstrasse 21&lt;br\n\/&gt;8586 Erlen","tooltip":"G&auml;hwiler Coiffeur","labeltext":"","kml":[],"kmlsb":[],"layer":[],"lookat":[],"camera":[],"searchtext":"","latitude":"","longitude":"","waypoints":[],"mapnm":"5_xdmll_0","Array":["left"],"descr":"1","geoxmloptions":{"titlestyle":" class=kmlinfoheader ","descstyle":" class=kmlinfodesc ","veryquiet":true,"quiet":true,"iwmethod":"click","sortbyname":null,"zoomhere":0,"linktarget":"_self","linkmethod":"dblclick","hilite":{"color":"#aaffff","opacity":0.299999999999999988897769753748434595763683319091796875,"textcolor":"#000000"},"lang":{"txtdir":"Directions: ","txtto":"To here","txtfrom":"From here","txtsrchnrby":"Search nearby","txtzoomhere":"Zoom Here","txtaddrstart":"Start address:","txtgetdir":"Go","txtback":"\u00ab Back","txtsearchnearby":"Search nearby: e.g. pizza","txtsearch":"Go"},"inputsize":"25"},"icontype":""};
+var mapstyled5_xdmll_0 = null;
+var googlemap5_xdmll_0 = new GoogleMaps('5_xdmll_0', mapconfig5_xdmll_0, mapstyled5_xdmll_0);
+/*]]>*/</script></div></div></div></div></div><div
+id="jm-main" class=""><div
+id="jm-main-in" class="container-fluid"><div
+class="row-fluid"><div
+id="jm-content" class="span9" data-xtablet="span12" data-tablet="span12" data-mobile="span12">
+<main
+id="jm-maincontent"><div
+class="item-page" itemscope itemtype="https://schema.org/Article"><meta
+itemprop="inLanguage" content="de-DE" /><div
+class="page-header"><h2 itemprop="headline">
+Kontakt</h2></div><div
+itemprop="articleBody"></div></div></main><div
+id="jm-content-bottom" class=""><div
+class="jm-module "><div
+class="jm-module-in"><div
+class="jm-module-content clearfix notitle">
+<noscript><div
+class="alert alert-danger">Warnung! Javascript muss aktiviert sein, damit dieses Formular fehlerfrei funktioniert.</div></noscript><div
+class="visforms visforms-form"><div
+class="alert alert-danger error-note" style="display: none;"></div> <script type="text/javascript">jQuery(document).ready(function () {
+                jQuery('#mod-visform1').validate({
+                    submitHandler: function (form) {
+                        var returnVal = true;
+                        if (window["mod-visform1SubmitAction"] && typeof window["mod-visform1SubmitAction"] !== "undefined") {
+                            returnVal = window["mod-visform1SubmitAction"](this);
+                        }
+                        if (!returnVal) {
+                            return false;
+                        }
+                        form.submit();
+                        jQuery(form).find('input[type="submit"]').prop("disabled", true);
+                        jQuery(form).find('input[type="reset"]').prop("disabled", true);
+                        jQuery(form).find('input[type="image"]').prop("disabled", true);
+                                            },
+                    wrapper: "p",
+                    //absolutly necessary when working with tinymce!
+                    ignore: ".ignore",
+                    rules: {                     },
+                    messages: {                     },
+                    //in accordion view, display a summary message, that form contains errors
+                                        errorPlacement: function (error, element) {
+                        var errorfieldid = element.attr("data-error-container-id");
+                        if (!errorfieldid && element.attr("id") === "g-recaptcha-response") {
+                            errorfieldid = 'fc-tbxrecaptcha_response_field';
+                        }
+                        jQuery('#mod-visform1' + ' div.' + errorfieldid).html('');
+                        error.appendTo('#mod-visform1' + ' div.' + errorfieldid);
+                        error.addClass("errorcontainer");
+                    },
+                });
+
+            jQuery('.captcharefresh1').on(
+                'click', function () {
+                    if (jQuery('#captchacode1')) {
+                        jQuery('#captchacode1').attr('src', '/index.php?option=com_visforms&task=visforms.captcha&sid=' + Math.random() + '&id=1');
+                    }
+                });
+                jQuery('#mod-visform1').initVisform({
+                    visform: {"fid":"1","initEditor":false,"parentFormId":"mod-visform1","steps":1,"nbFields":5,"summaryLayout":"table","summaryLayoutClass":"table","summaryRowLayout":"tr","oSummaryFirstElementLayout":"<td>","cSummaryFirstElementLayout":"<\/td>","oSummarySecondElementLayout":"<td>","cSummarySecondElementLayout":"<\/td>","displaysummarypage":false,"hideemptyfieldsinsummary":false,"summaryemptycaliszero":false,"fields":{"0":{"id":1,"type":"text","label":"Name"},"1":{"id":2,"type":"email","label":"E-Mail"},"2":{"id":3,"type":"text","label":"Betreff"},"3":{"id":4,"type":"textarea","label":"Nachricht"},"4":{"id":5,"type":"submit","label":"Senden"}}},
+                    restrictData: {},
+                    userInputs:  [{"type":"text","label":"field1","value":"","isDisabled":false,"isForbidden":false},{"type":"email","label":"field2","value":"","isDisabled":false,"isForbidden":false},{"type":"text","label":"field3","value":"","isDisabled":false,"isForbidden":false},{"type":"textarea","label":"field4","value":"","isDisabled":false,"isForbidden":false}]});
+        });</script> <form
+action="/index.php?option=com_visforms&amp;task=visforms.send&amp;id=1" method="post" name="visform"
+id="mod-visform1"
+class="visform bthorizontal  form-horizontal " role="form"><fieldset
+class="fieldset-1 active"><div
+class="fc-tbxfield1"></div><div
+class="control-group field1 required"><label
+class="  control-label  " id="modvisform107namelbl" for="field1">Name</label><div
+class="controls"><input
+class="" id="field1" data-error-container-id="fc-tbxfield1" aria-labelledby="modvisform107namelbl" name="modvisform107name" placeholder="Name eingeben" aria-required="true" required="required" value="" type="text"/></div></div><div
+class="fc-tbxfield2"></div><div
+class="control-group field2 required"><label
+class="  control-label  " id="modvisform107emaillbl" for="field2">E-Mail</label><div
+class="controls"><input
+class="" id="field2" data-error-container-id="fc-tbxfield2" aria-labelledby="modvisform107emaillbl" name="modvisform107email" placeholder="E-Mail eingeben" aria-required="true" required="required" value="" type="email"/></div></div><div
+class="fc-tbxfield3"></div><div
+class="control-group field3 required"><label
+class="  control-label  " id="modvisform107betrefflbl" for="field3">Betreff</label><div
+class="controls"><input
+class="" id="field3" data-error-container-id="fc-tbxfield3" aria-labelledby="modvisform107betrefflbl" name="modvisform107betreff" placeholder="Betreff eingeben" aria-required="true" required="required" value="" type="text"/></div></div><div
+class="fc-tbxfield4"></div><div
+class="control-group field4 required"><label
+class="  control-label  " id="modvisform107nachrichtlbl" for="field4">Nachricht</label><div
+class="controls"><textarea class="" id="field4" data-error-container-id="fc-tbxfield4" cols="10" rows="20" aria-labelledby="modvisform107nachrichtlbl" name="modvisform107nachricht" aria-required="true" required="required"></textarea></div></div><div
+class="form-actions"><input
+class="btn " id="field5" aria-label="Senden" value="Senden" disabled="disabled" name="modvisform107senden" type="submit"/>&nbsp;</div></fieldset>    <input
+type="hidden" name="return" value="aHR0cHM6Ly93d3cuY29pZmZldXItZ2FlaHdpbGVyLmNoL2tvbnRha3Q," />
+<input
+type="hidden" value="1" name="postid" />
+<input
+type="hidden" value="modvisform107" name="context" />
+<input
+type="hidden" value="pagebreak" name="addSupportedFieldType[]" />
+<input
+type="hidden" name="c3955996ae9edb11b53cd728fd4daacb" value="1" /></form></div></div></div></div></div></div>
+<aside
+id="jm-right" class="span3" data-xtablet="span12 first-span" data-tablet="span12 first-span" data-mobile="span12 first-span"><div
+class=""><div
+class="jm-module "><div
+class="jm-module-in"><h3 class="jm-title ">Wo sind wir</h3><div
+class="jm-module-content clearfix "><div
+class="custom"  ><p>
+Bahnhofstrasse 21<br
+/>
+8586 Erlen <br
+/>
+071 - 648 12 72</p><p>
+Dienstag bis Freitag<br
+/>
+08.00 - 12:00 13.15 - 18.30<br
+/>
+Samstag<br
+/>
+07.30 - 15.00</p><p>Montag geschlossen</p></div></div></div></div></div>
+</aside></div></div></div>
+<footer
+id="jm-footer" class=""><div
+id="jm-footer-in"><div
+id="jm-footer-mod" class="container-fluid"><div
+class="row-fluid jm-flexiblock jm-footer"><div
+class="span3"  data-default="span3" data-wide="span3" data-normal="span3" data-xtablet="span3" data-tablet="span100" data-mobile="span100"><div
+class="jm-module "><div
+class="jm-module-in"><h3 class="jm-title ">Kontakt</h3><div
+class="jm-module-content clearfix "><div
+class="custom"  ><div
+class="vcard">
+<a
+class="url fn" href="http://coiffeur-gaehwiler.ch.ch"><div
+class="org">Gähwiler Coiffeur</div>
+</a>
+<img
+src="/assets/logo_coiffeur_gaehwiler_75.jpg" class="photo" style="display:none;" alt="Logo Coiffeur Gähwiler" /><div
+class="adr work"><div
+class="street-address">Bahnhofstrasse 21</div>
+<span
+class="postal-code">8586</span>
+<span
+class="locality">Erlen</span>
+<span
+class="region" style="display:none;">Thurgau</span><div
+class="country-name" style="display:none;">Schweiz</div></div><div
+class="tel"><span
+class="type" style="display:none;">work</span><span
+class="value">+41</span> <span
+class="value">71</span> <span
+class="value">648</span> <span
+class="value">12</span> <span
+class="value">72</span></div><div
+class="geo">
+<span
+class="latitude" style="display:none;">47.55060</span>
+<span
+class="longitude" style="display:none;">9.22477</span></div>
+<a
+href="mailto:rene@coiffeur-gaehwiler.ch" class="email">rene@coiffeur-gaehwiler.ch</a></div></div></div></div></div></div><div
+class="span3"  data-default="span3" data-wide="span3" data-normal="span3" data-xtablet="span3" data-tablet="span100 first-span" data-mobile="span100 first-span"><div
+class="jm-module "><div
+class="jm-module-in"><h3 class="jm-title ">Social Media</h3><div
+class="jm-module-content clearfix "><div
+class="custom"  ><div
+class="sm-icons">
+<a
+href="http://www.facebook.com/pages/G%C3%A4hwiler-Coiffeur/195445227158766" title="Facebook-Seite"><i
+class="fa fa-facebook"></i></a>
+<a
+href="https://www.instagram.com/gaehwiler_coiffeur/" title="Instagram-Seite"><i
+class="fa fa-instagram"></i></a></div>
+<iframe
+src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FG%25C3%25A4hwiler-Coiffeur%2F195445227158766&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21&amp;appId=291701364177376" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe></div></div></div></div></div><div
+class="span3"  data-default="span3" data-wide="span3" data-normal="span3" data-xtablet="span3" data-tablet="span100 first-span" data-mobile="span100 first-span"><div
+class="jm-module "><div
+class="jm-module-in"><h3 class="jm-title ">Anmeldung</h3><div
+class="jm-module-content clearfix "><div
+class="custom"  ><p>
+Wir nehmen Ihre Reservation gerne telefonisch entgegen.</p><p>
+Wählen Sie 071 - 648 12 72<br
+/>
+oder klicken Sie auf<br
+/>
+<a
+href="mailto:rene@coiffeur-gaehwiler.ch">rene@coiffeur-gaehwiler.ch</a></p></div></div></div></div></div><div
+class="span3"  data-default="span3" data-wide="span3" data-normal="span3" data-xtablet="span3" data-tablet="span100 first-span" data-mobile="span100 first-span"><div
+class="jm-module "><div
+class="jm-module-in"><h3 class="jm-title ">Öffnungszeiten</h3><div
+class="jm-module-content clearfix "><div
+class="custom"  ><p>
+<b>Dienstag bis Freitag</b><br
+/>
+08.00 - 12.00<br
+/>
+13.15 - 18.30<br
+/>
+<b>Samstag</b><br
+/>
+07.30 - 15.00</p><p>Montag geschlossen</p></div></div></div></div></div></div></div><div
+id="jm-footer-wrapper" class="container-fluid"><div
+class="row-fluid"><div
+id="jm-footer-center" class="pull-left span6"><div
+id="jm-back-top"><a
+id="backtotop" href="javascript:void(0);">Back to top</a></div></div><div
+id="jm-footer-right" class="pull-right span4"><div
+id="jm-poweredby">
+<a
+href="http://www.joomla-monster.com" target="_blank" title="Joomla Templates">Joomla Templates</a> by Joomla-Monster.com</div></div></div></div></div>
+</footer></div></body></html>

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+<head>
+
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='origin' name='referrer'>
+<!--
+        ,--._______,-. 
+       ,','  ,    .  ,_`-. 
+      / /  ,' , _` ``. |  )       `-.. 
+     (,';'""`/ '"`-._ ` \/ ______    \\ 
+       : ,o.-`- ,o.  )\` -'      `---.)) 
+       : , d8b ^-.   '|   `.      `    `. 
+       |/ __:_     `. |  ,  `       `    \ 
+       | ( ,-.`-.    ;'  ;   `       :    ; 
+       | |  ,   `.      /     ;      :    \ 
+       ;-'`:::._,`.__),'             :     ; 
+      / ,  `-   `--                  ;     | 
+     /  \                   `       ,      | 
+    (    `     :              :    ,\      | 
+     \   `.    :     :        :  ,'  \    : 
+      \    `|-- `     \ ,'    ,-'     :-.-'; 
+      :     |`--.______;     |        :    : 
+       :    /           |    |         |   \ 
+       |    ;           ;    ;        /     ; 
+     _/--' |           :`-- /         \_:_:_| 
+   ,',','  |           |___ \ 
+   `^._,--'           / , , .) 
+                      `-._,-' 
+
++---------------------------------------------------------------------------------------------------------------------+
+| If you're interested in working with us on awesome products with Ruby, Javascript and Kubernetes, please contact us:|
+|                                                                                                                     |
+|                                             https://local-ch.github.io/                                             |
++---------------------------------------------------------------------------------------------------------------------+
+
+-->
+
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta content='noarchive' name='robots'>
+<link href='https://www.local.ch/de' hreflang='de' rel='alternate'>
+<link href='https://www.local.ch/en' hreflang='en' rel='alternate'>
+<link href='https://www.local.ch/fr' hreflang='fr' rel='alternate'>
+<link href='https://www.local.ch/it' hreflang='it' rel='alternate'>
+
+<title>local.ch - the official phonebook and yellow pages of Switzerland</title>
+<meta content='Find phone numbers and adresses for professionals or private people as well as practical informations for every place in Switzerland' name='description'>
+<meta content='local.ch' name='application-name'>
+<meta content='Find phone numbers and adresses for professionals or private people as well as practical informations for every place in Switzerland' name='msapplication-tooltip'>
+<meta content='https://www.local.ch/en' name='msapplication-starturl'>
+<meta content='#009ee3' name='msapplication-navbutton-color'>
+<meta content='name=Find;action-uri=https://www.local.ch/en;icon-uri=/favicon.ico' name='msapplication-task'>
+<meta content='name=Phone Book;action-uri=https://tel.local.ch/en;icon-uri=/favicon.ico;' name='msapplication-task'>
+<meta content='name=The Yellow Pages;action-uri=https://yellow.local.ch/en;icon-uri=/favicon.ico;' name='msapplication-task'>
+
+<meta content='/assets/logo_en-2e51424a8125b8caf411aea95bfa6fd305ac91c29cb2624ea6f63c21e3ad561e.gif' property='og:image'>
+<meta content='website' property='og:type'>
+<meta content='https://www.local.ch/en' property='og:url'>
+<meta content='local.ch - the official phonebook and yellow pages of Switzerland' property='og:title'>
+
+<meta content='TRUE' name='MSSmartTagsPreventParsing'>
+<meta content='SKYPE_TOOLBAR_PARSER_COMPATIBLE' name='SKYPE_TOOLBAR'>
+<meta content='58bXhH8otXbtynDykH1JD8BwObuu9iEn5XIX+Q7Ahdg=' name='verify-v1'>
+<meta content='DPR' http-equiv='Accept-CH'>
+<link href='android-app://ch.local.android/localch/tel' rel='alternate'>
+<link href='https://www.local.ch/en' rel='canonical'>
+<link rel="icon" type="image/x-icon" href="/assets/local-ui/favicons/local_favicon-29494f44ac3bfd600e3516715eb833612a24e472a16a3bceda7a7bf737b23d33.ico" />
+<link rel="icon" type="image/png" href="/assets/local-ui/favicons/local_icon_128-b31be62573dfb2bb118fa2a9067e2a7b5f95027417b2c066ced0214a4786dbd6.png" sizes="128x128" />
+<link rel="icon" type="image/png" href="/assets/local-ui/favicons/local_icon_192-eb4c9f2cc9ef80fb69621dd20c28a187a2d5dced852c00f208fd0ba28a0084f9.png" sizes="192x192" />
+<link rel="apple-touch-icon" type="image/png" href="/assets/local-ui/favicons/local_icon_180-fd4da6dc8e989959cd4c84fcfb4b59bf4c5d8aed6e441af96d7643d221fd56cf.png" />
+<link rel="apple-touch-icon" type="image/png" href="/assets/local-ui/favicons/local_icon_76-a5b7ce0fd870ff36cbc953f26a79e27cea9dd72cbd38eb643b0847cfdd440005.png" sizes="76x76" />
+<link rel="apple-touch-icon" type="image/png" href="/assets/local-ui/favicons/local_icon_120-f7bfcacdba1b1daab23d3b95dd70824629e9346fa89cf73397104451480f6893.png" sizes="120x120" />
+<link rel="apple-touch-icon" type="image/png" href="/assets/local-ui/favicons/local_icon_152-a0ee035152f382e725ed43f7cccbb6ae040fadda6fbc9eb6ff395fb1135207b3.png" sizes="152x152" />
+<link rel="apple-touch-icon" type="image/png" href="/assets/local-ui/favicons/local_icon_167-e8012d4fa72a21479ab1137aab00a02a7ffc6ae5c30a0ba37be85052a6f762eb.png" sizes="167x167" />
+<link rel="apple-touch-icon" type="image/png" href="/assets/local-ui/favicons/local_icon_180-fd4da6dc8e989959cd4c84fcfb4b59bf4c5d8aed6e441af96d7643d221fd56cf.png" sizes="180x180" />
+<meta content='#009ee3' name='apple-mobile-web-app-status-bar-style'>
+<meta content='#009ee3' name='theme-color'>
+<meta content='#009ee3' name='msapplication-TileColor'>
+<meta content='https://www.local.ch/assets/local-ui/favicons/local_icon_192-eb4c9f2cc9ef80fb69621dd20c28a187a2d5dced852c00f208fd0ba28a0084f9.png' name='msapplication-TileImage'>
+
+<link rel="stylesheet" media="all" href="/assets/application-aa1f038fcba5ee4fc5f30d75af925068d473cb205972d8dee8497e33cb6ea4fd.css" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="DLxBhDm4ksVjulKeQHLRU0g5MJJCzKaHmXqADNoLYPf1AoD5qC0RR/GJgd7XdefZ1MJO1qC7yHajM0DFqVOZeQ==" />
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({"PageType":"HomePage"});dataLayer.push({"ListType":null});dataLayer.push({"BrowseAccess":"false"});dataLayer.push({"DynamicBannerShown":"no"});dataLayer.push({"GuidanceRedirect":"false"});dataLayer.push({"Feedbacks":"false"});dataLayer.push({"LoginType":"Visitor"});dataLayer.push({"Language":"en"});dataLayer.push({"Slot":"www"});
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NT77MB');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<script async src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1885185771564601",
+    enable_page_level_ads: true
+  });
+</script>
+    <script async src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/21785248467/local_homepage_en', [[300, 600], [160, 600]], 'div-gpt-ad-1556518309794-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+      });
+    </script>
+
+
+<script type='text/javascript'>
+(function(a,d,m,e,i,ra) {
+a.admTagMan = a.admTagMan || {}; a.admTagMan.q = a.admTagMan.q || [];
+a.admTagMan.cq = a.admTagMan.cq || []; a.admTagMan.publisher = d;
+a.admTagMan.lang = m; a.admTagMan.version = e; a.admTagMan.env = i;
+e = a.document.createElement('script');
+e.src = 'https://cdn.admeira.ch/prod/tagmanager/loader.min.js';
+e.async = true; e.defer = true;
+a.document.head.appendChild(e);
+})(window, 'Local.ch', 'EN', 'latest');
+</script>
+
+</head>
+<body class='en controller-homepage controller-homepage-action-index'>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NT77MB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager -->
+
+
+<div id='header'>
+<nav class='navbar navbar-default navbar-static-top' id='site-navigation'>
+<div class='container-semi-fluid'>
+<div aria-expanded='false' class='pull-left navbar-toggle collapsed' data-target='#slot-navigation-selector' data-toggle='collapse'>
+<i class='icon-hamburger'></i>
+</div>
+<!-- / Languange Picker -->
+<ul class='nav pull-right' id='language-selector'>
+<li class='dropdown dropdown-nav text-uppercase'>
+<a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle navbar-link navbar-link-vertical-centered js-gtm-event' data-gtm-action='click' data-gtm-category='Header' data-gtm-label='dropdown-toggle' data-toggle='dropdown' href='#site-navigation-locale-dropdown'>
+<span>
+en
+</span>
+<span class='caret caret-navbar'></span>
+</a>
+<ul class='dropdown-menu dropdown-menu-nav'>
+<li>
+<a class="de js-gtm-event" data-gtm-category="Header" data-gtm-label="de" data-gtm-action="click" href="/de">de</a>
+</li>
+<li>
+<a class="fr js-gtm-event" data-gtm-category="Header" data-gtm-label="fr" data-gtm-action="click" href="/fr">fr</a>
+</li>
+<li>
+<a class="it js-gtm-event" data-gtm-category="Header" data-gtm-label="it" data-gtm-action="click" href="/it">it</a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- / User Navigation -->
+<ul class='nav pull-right nav-username'>
+<li>
+<a class="cc-login js-gtm-event" data-gtm-category="Header" data-gtm-label="Customer Center" data-gtm-action="click" href="/auth/localch?locale=en&amp;origin=https%3A%2F%2Fwww.local.ch%2F">Log in</a>
+</li>
+</ul>
+<div class='collapse navbar-collapse' id='slot-navigation-selector'>
+<ul class='nav navbar-nav'>
+<li class='active menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Www" data-gtm-action="click" title="local.ch - the official phonebook and yellow pages of Switzerland" href="https://www.local.ch">Home</a>
+</li>
+<li class='menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Tel" data-gtm-action="click" title="Official phonebook of Switzerland – local.ch" data-add-search-params="" href="https://tel.local.ch">Phone Book</a>
+</li>
+<li class='menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Yellow" data-gtm-action="click" title="Switzerland&#39;s Yellow Pages at local.ch - Find a company quickly" data-add-search-params="" href="https://yellow.local.ch">The Yellow Pages</a>
+</li>
+<li class='menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Free-table-search" data-gtm-action="click" title="Find and book a free table in a restaurant" href="https://www.local.ch/en/restaurants">Book a table</a>
+</li>
+<li class='menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Maps" data-gtm-action="click" title="Map of Switzerland for address searches and route planning - now on local.ch" data-add-search-params="" href="https://www.local.ch/en/map">Map</a>
+</li>
+<li class='menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Weather" data-gtm-action="click" title="Weather" href="https://www.local.ch/en/weather">Weather</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class='search-bar search-bar-transparent'>
+<div class='container'>
+<div class='row'>
+<div class='col-xs-12'>
+<div class='clearfix'>
+<div class='search-bar-left'>
+<a title="Switzerland&#39;s official Phone Book by local.ch" class="lui-logo js-gtm-event" data-gtm-category="Header" data-gtm-label="Logo" data-gtm-action="click" href="https://www.local.ch/en"><img alt="Logo local.ch" class="lui-logo-img" srcset="https://www.local.ch/assets/local-ui/local_logo@2x-587e3ba4db265aa373c78f37e419342f9eafd63ffd5f61f4c65d986bfd7c9846.png 2x" src="https://www.local.ch/assets/local-ui/local_logo-96b29ea0ed57b9657006a8aa8b4c2dfcf673c2e977cb20df64e7a6e754f162a7.png" />
+</a>
+
+</div>
+<div class='search-bar-right'>
+
+
+<form accept-charset='UTF-8'
+      action='https://tel.local.ch/en/q'
+      class='search-bar-form tel'
+      lcl-search-form-url="https://www.local.ch/search_suggestions.json?locale=en"
+      lcl-search-form-ad-slot="rnd">
+  <input autocomplete='off' class='form-control search-bar-what' name='what' placeholder='Who or what?' tabindex='1' title='Who or what?' value=''><input autocomplete='off' class='form-control search-bar-where' name='where' placeholder='Where?' tabindex='2' title='Where?' value=''><button class='btn btn-primary search-bar-submit' tabindex='3' title='Find It' type='submit'>
+    <i class='icon-ios_search_accessory search-bar-button-icon'></i><span class='search-bar-button-text'> Search</span>
+  </button>
+
+  <input class='randomizer' name='rid' type='hidden' value='maNz'>
+
+  <!--[if lt IE 10]>
+  <input name="utf8" type="hidden" value="&#x2713;" />
+  <![endif]-->
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+<style>
+    .panorama {
+        background-image: url('//images.services.local.ch/ext?center=0%2C0&scale=fit&size=1024x&src=https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Flocalch-stock-images%2F2015_Matterhorn_Winter_Tag_01a.jpg&v=2&sig=9a86a26028508ea5787cf908f4c1f851a1f169e4c88c6e876fcb9724c97ffd95');background-position: 50% 22%;
+    }
+    @media (min-width: 1280px ) {
+        .panorama { background-image: url('//images.services.local.ch/ext?center=0%2C0&scale=fit&size=1280x&src=https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Flocalch-stock-images%2F2015_Matterhorn_Winter_Tag_01a.jpg&v=2&sig=1d60162a742fc19a164b1c397eb07a9950fa581b3aafaba11a5b61b0f9a9cbea');background-position: 50% 22%; }
+    }
+    @media (min-width: 1680px ) {
+        .panorama { background-image: url('//images.services.local.ch/ext?center=0%2C0&scale=fit&size=1680x&src=https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Flocalch-stock-images%2F2015_Matterhorn_Winter_Tag_01a.jpg&v=2&sig=cb45eb98d6054ae62e471266ef5011eea8a5fc17072fa37791e758cf59116a8c');background-position: 50% 22%; }
+    }
+    @media (min-width: 1920px ) {
+        .panorama { background-image: url('//images.services.local.ch/ext?center=0%2C0&scale=fit&size=1920x&src=https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Flocalch-stock-images%2F2015_Matterhorn_Winter_Tag_01a.jpg&v=2&sig=66cc146686423b7a00576a87365a8bc392f7df2acd4748069cc08997cbf6c99b');background-position: 50% 22%; }
+    }
+    @media (min-width: 2560px ) {
+        .panorama { background-image: url('//images.services.local.ch/ext?center=0%2C0&scale=fit&size=2560x&src=https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Flocalch-stock-images%2F2015_Matterhorn_Winter_Tag_01a.jpg&v=2&sig=96011f24252f2229ba983ca88a6052f28156972918c2aa699ab940248c4e07a7');background-position: 50% 22%; }
+    }
+    .oldie #backdrop, .ie8 #backdrop {
+        background-image: url('//images.services.local.ch/ext?center=0%2C0&scale=fit&size=1280x&src=https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Flocalch-stock-images%2F2015_Matterhorn_Winter_Tag_01a.jpg&v=2&sig=1d60162a742fc19a164b1c397eb07a9950fa581b3aafaba11a5b61b0f9a9cbea');
+    }
+</style>
+
+<div class='js-panorama panorama'></div>
+<div class='container homepage-container'>
+<div class='row'>
+<div class='col-xs-12 col-sm-3 circle-map-container hidden-xs'>
+<a class="circle-map" style="background-image: url(&#39;https://map.search.ch/chmap.jpg?base=47.536708%2C7.567575&amp;h=240&amp;layer=sym%2Cfg&amp;w=240&amp;zd=8&#39;)" href="//www.local.ch/en/map/q?query&amp;where=Binningen"><!--[if gt IE 8]><!-->
+<span class='copyright-map' style='background-image: url(&#39;https://map.search.ch/chmap.jpg?base=47.536708%2C7.567575&amp;h=240&amp;layer=sym%2Cfg&amp;w=69&amp;zd=8&#39;)'></span>
+<!--<![endif]-->
+</a>
+</div>
+<div class='col-xs-6 lui-margin-top-xxl location-picker-container'>
+<h3 class='h3-bright location-picker-subtitle'>
+Just find it in
+</h3>
+<div class='location-picker js-location-picker' data-cookie-domain='local.ch'>
+<span class='location-picker-selection js-location-picker-selection' data-id='34190'>Binningen</span>
+<span class='location-picker-arrow lui-margin-right-s'>
+<i class='icon-arrow-locationpicker'></i>
+</span>
+</div>
+<div class='modal location-picker-modal js-location-picker-modal' role='dialog' tabindex='-1'>
+<div class='modal-dialog location-picker-modal-dialog js-location-picker-modal-dialog' role='document'>
+<div class='modal-content location-picker-modal-content'>
+<div class='modal-header location-picker-modal-header'>
+<div class='alert alert-warning location-picker-find-me-error js-location-picker-find-me-error'>
+<strong>Position cannot be determined.</strong>
+Please enter your location manually.
+</div>
+<input class='location-picker-search js-location-picker-search' data-url='https://www.local.ch/en/api/location/autosuggest' type='search'>
+</div>
+<div class='modal-body location-picker-modal-body'>
+<i class='icon-spinner js-location-picker-loading location-picker-loading'></i>
+<div class='row js-location-picker-results location-picker-results'>
+<div class='col-xs-12 js-location-picker-find-me location-picker-find-me location-picker-entry js-location-picker-entry-selectable'>
+Find me
+<i class='icon-find-me'></i>
+<i class='icon-spinner'></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class='col-xs-6 col-sm-3 lui-margin-top-xxl'>
+<div class='weather-brief js-weather-brief' data-component='weather-brief' data-name='Binningen' data-src='https://www.local.ch/en/weather/api/brief'></div>
+</div>
+</div>
+<div class='row lui-sidenav homepage-wrapper'>
+<div class='col-xs-4 col-sm-3 lui-sidenav-left homepage-sidenav'>
+<form class='category-search-form js-category-search-form' data-result-url='https://yellow.local.ch/en/q' data-target-url='/en/api/as/yellow.what'>
+<input class='category-search-form-field js-category-search-form-field form-control lui-margin-bottom-s' placeholder='Find category in Binningen...' type='text'>
+</form>
+<a class="lui-sidenav-link homepage-sidenav-link js-homepage-sidenav-link homepage-sidenav-link-active" data-remote="true" href="https://www.local.ch/en?browse_access_category_key=food-lifestyle"><span class='lui-sidenav-text'>Food &amp; Lifestyle</span>
+</a><a class="lui-sidenav-link homepage-sidenav-link js-homepage-sidenav-link " data-remote="true" href="https://www.local.ch/en?browse_access_category_key=home-craftsmen"><span class='lui-sidenav-text'>Home &amp; Craftsmen</span>
+</a><a class="lui-sidenav-link homepage-sidenav-link js-homepage-sidenav-link " data-remote="true" href="https://www.local.ch/en?browse_access_category_key=health-beauty"><span class='lui-sidenav-text'>Health &amp; Beauty</span>
+</a><a class="lui-sidenav-link homepage-sidenav-link js-homepage-sidenav-link " data-remote="true" href="https://www.local.ch/en?browse_access_category_key=shopping"><span class='lui-sidenav-text'>Shopping</span>
+</a><a class="lui-sidenav-link homepage-sidenav-link js-homepage-sidenav-link " data-remote="true" href="https://www.local.ch/en?browse_access_category_key=cars-transportation"><span class='lui-sidenav-text'>Cars &amp; Transportation</span>
+</a><a class="lui-sidenav-link homepage-sidenav-link js-homepage-sidenav-link " data-remote="true" href="https://www.local.ch/en?browse_access_category_key=recreation-sport"><span class='lui-sidenav-text'>Recreation &amp; Sport</span>
+</a><a class="lui-sidenav-link homepage-sidenav-link js-homepage-sidenav-link " data-remote="true" href="https://www.local.ch/en?browse_access_category_key=popular-searches"><span class='lui-sidenav-text'>Popular searches</span>
+</a><a class="lui-sidenav-link homepage-sidenav-link js-homepage-sidenav-link " data-remote="true" href="https://www.local.ch/en?browse_access_category_key=compare"><span class='lui-sidenav-text'>Compare</span>
+</a></div>
+<div class='col-xs-8 col-sm-9 lui-sidenav-right lui-sidenav-left homepage-sidenav-content'>
+<div class='lui-sidenav-content lui-sidenav-content-min-height homepage-sidenav-list pull-left'>
+<div class='js-category-search-results'></div>
+<div class='js-category-search-no-results'>
+Sorry, we could not find a matching category. Please check the spelling.
+</div>
+<div class='js-browse-access-category-placeholder'>
+<h2 class='lui-margin-bottom-m col-xs-12'>
+Food &amp; Lifestyle
+in
+Binningen
+</h2>
+<div class='list-unstyled col-xs-12'>
+<div class='lui-margin-bottom-xs'>
+<h4>
+Restaurants
+</h4>
+<div class='multi-col-list js-super-topic-list'>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Bar" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Bar.html">Bar</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Catering" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Catering.html">Catering</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Wine tasting" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Wine%20tasting.html">Wine tasting</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Kebab, Döner" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Kebab,%20D%C3%B6ner.html">Kebab, Döner</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Cooking School cookery courses" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Cooking%20School%20cookery%20courses.html">Cooking School cookery courses</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Pizza Take Away" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Pizza%20Take%20Away.html">Pizza Take Away</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Pub" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Pub.html">Pub</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Restaurant" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Restaurant.html">Restaurant</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Steakhouse" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Steakhouse.html">Steakhouse</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Takeout" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Takeout.html">Takeout</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Tea room" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Tea%20room.html">Tea room</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Caterer" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Caterer.html">Caterer</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Winery" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Winery.html">Winery</a>
+</div>
+</div>
+</div>
+<div class='lui-margin-bottom-xs'>
+<h4>
+Restaurants according to speciality
+</h4>
+<div class='multi-col-list js-super-topic-list'>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Chinese Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Chinese%20Cuisine.html">Chinese Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="French Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/French%20Cuisine.html">French Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Greek Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Greek%20Cuisine.html">Greek Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Indian Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Indian%20Cuisine.html">Indian Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Italien Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Italien%20Cuisine.html">Italien Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Japanese Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Japanese%20Cuisine.html">Japanese Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Mexican Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Mexican%20Cuisine.html">Mexican Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Portuguese Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Portuguese%20Cuisine.html">Portuguese Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Swiss Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Swiss%20Cuisine.html">Swiss Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Spanish Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Spanish%20Cuisine.html">Spanish Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Thai Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Thai%20Cuisine.html">Thai Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Turkish Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Turkish%20Cuisine.html">Turkish Cuisine</a>
+</div>
+<div class='lui-margin-bottom-xs'>
+<a class="js-gtm-event" data-gtm-category="Homepage Rubric" data-gtm-label="Vegetarian Cuisine" data-gtm-action="click" href="https://yellow.local.ch/en/q/Binningen/Vegetarian%20Cuisine.html">Vegetarian Cuisine</a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class='banner-container hidden-xs homepage-banner homepage-banner-en pull-right'>
+  <!-- /21785248467/local_homepage_en -->
+  <div id="div-gpt-ad-1556518309794-0">
+    <script>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1556518309794-0'); });
+    </script>
+  </div>
+  
+
+</div>
+</div>
+</div>
+</div>
+
+<div class='lui-margin-bottom-m'></div>
+<div class='footer'>
+<div class='lui-padding-top-l lui-padding-bottom-l'>
+<div class='container'>
+<div class='row'>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'>Customer service</h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a class="footer-link" rel="nofollow" target="_top" href="http://info.local.ch/en/medien/kontakt">Contact local.ch</a>
+</li>
+</ul>
+</div>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'><a target="_top" class="footer-link" href="https://www.localsearch.ch/en/dienste-fur-kmu">Advertising</a></h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/solutions-for-smb/directory-listing">Directory listing for SMB</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/solutions-for-smb/personal-website">Personal website</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/ratings-reviews">Customer recommendation for SME</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/customer-management/mylocalina">For restaurateurs: MyLOCALINA</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://xpress.local.ch/locksmith">localXpress</a>
+</li>
+</ul>
+</div>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'><a target="_top" class="footer-link" href="http://info.local.ch/en/your-listing">Your listing</a></h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/your-listing/kostenlos-firmenprasenz-erstellen">Business listing</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/your-listing/kostenlos-als-privatperson-eintragen">Private listing</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://tel.local.ch/en/advertising-calls">Telemarketing</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='row'>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'>Directories</h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/directories/print">Print</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/directories/mobile">Mobile</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/directories/online">Online</a>
+</li>
+</ul>
+</div>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'><a target="_top" class="footer-link" href="http://info.local.ch/en/about-us">About local.ch</a></h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/about-us/organisation">Organisation</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://info.local.ch/en/our-services">Our services</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/about-us/jobs">Careers</a>
+</li>
+</ul>
+</div>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'><a target="_top" class="footer-link" href="http://info.local.ch/en/medien">Media</a></h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/medien/medienmitteilungen">Media information</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/medien/local-dot-ch-in-den-medien">local.ch in the media</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='footer-bottom'>
+<div class='container'>
+<div class='row lui-padding-top-m'>
+<div class='col-sm-6'>
+<small class='lui-margin-bottom-xs'>
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/legal-notice">Imprint</a>
+|
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/terms-and-conditions-use">Terms and Conditions of Use</a>
+|
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/general-terms-and-conditions">GT &amp; C</a>
+|
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/privacy-statement">Privacy Statement</a>
+</small>
+</div>
+<div class='col-sm-6'>
+<div class='clearfix'>
+<ul class='footer-sozial-media list-inline lui-margin-bottom-m'>
+<li>
+<a class="footer-social-media-link" rel="nofollow" target="_top" href="http://www.facebook.com/localch"><i class='icon-facebook'></i>
+</a></li>
+<li>
+<a class="footer-social-media-link" rel="nofollow" target="_top" href="http://twitter.com/localch"><i class='icon-twitter'></i>
+</a></li>
+<li>
+<a class="footer-social-media-link" rel="publisher" target="_top" href="https://www.instagram.com/local_ch/"><i class='icon-instagram'></i>
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  window.jQuery || document.write('&lt;script src=&quot;/assets/jquery/dist/jquery-b87d9e439e3901ea8798e344a77bd190e48c94a7481d267e02e8b28f0c8749b3.js&quot;&gt;&lt;\/script&gt;');
+</script>
+
+<script src="/assets/global/vendor-1b5ed2af885dc85b7d736681dab804714a67687e141bc30da89aab74cf569f7b.js"></script>
+<script src="/assets/listings/application-00a6cd95f2fe504f39aeb7ee73c87ba6a8aab830d35ed4af9eb85a61d464c061.js"></script>
+<script src="/assets/listings/locales/en-d6e113b02f313f0cfb092cf78399ec17eae11c43e186dc84f0df3ceba13c8f9c.js"></script>
+
+<!-- NET-Metrix-Audit version="1.5" -->
+<script id="netmetrix" type="text/javascript">
+    <!--
+    var WEMF="https://loca-ssl.wemfbox.ch/cgi-bin/ivw/CP/web/content/homepage";
+    document.write("<img src=\""+WEMF+"?r="+escape(document.referrer)+"&d="+(Math.random()*100000)+"&x="+screen.width+"x"+screen.height+"\" width=\"1\" height=\"1\" alt=\"\" />");
+    // -->
+  var szmvars="local//CP//web/content/homepage";
+</script>
+<noscript>
+  <img src="https://loca-ssl.wemfbox.ch/cgi-bin/ivw/CP/web/content/homepage" width="1" height="1" alt="" />
+</noscript>
+<script src="https://loca-ssl.wemfbox.ch/2004/01/survey.js" async defer></script>
+<!-- /NET-Metrix-Audit -->
+
+
+<!-- Qualaroo for local.ch -->
+<script type="text/javascript">
+  var _kiq = _kiq || [];
+  (function() {
+    setTimeout(function() {
+      var d = document,
+          f = d.getElementsByTagName('script')[0],
+          s = d.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//d3vk40ihlliju7.cloudfront.net/49252/acC.js';
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  })();
+</script>
+
+<script type='text/javascript'>
+window.initAdverts('www');
+</script>
+
+</body>
+</html>

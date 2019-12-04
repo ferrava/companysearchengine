@@ -1,0 +1,244 @@
+ 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Autocarrosserie & Spritzwerk Scarascia GmbH | Kontakt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />          
+
+<link rel="stylesheet" type="text/css" href="css/socialize-bookmarks.css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css' />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/custom.js"></script>
+<script type="text/javascript" src="javascript/header.js"></script>
+<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+<!-- PrettyPhoto --> 
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
+<script type="text/javascript" src="javascript/prettyPhoto.js"></script>	
+<!-- Photostream Javascript --> 
+<script type="text/javascript" src="javascript/bra.photostream.js"></script>
+<!-- Flexslider JavaScript Files -->	
+<script type="text/javascript" src="javascript/jquery.flexslider.js"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />	
+<link href="images/favicon.ico" rel="shortcut icon">   
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon-precomposed"> 
+
+
+	<script type="text/javascript" src="files/addons/rexfancy/js/jquery.easing-1.3.pack.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="files/addons/rexfancy/css/jquery.fancybox-1.3.4.css" />
+	<script type="text/javascript" src="files/addons/rexfancy/js/jquery.fancybox-1.3.4.js"></script>
+	</head>
+
+
+<body id="top">
+    <div class="content-wrapper2">
+        <div id="top-header">
+                            <ul class="header-logos">
+                    <li class="logo"><a title="Startseite" href="index.php"><img src="images/logo.png"></a>
+					<li class="marke1"><a title="E-Mail" href="mailto:&#105;&#110;&#102;&#111;&#064;&#097;&#099;&#045;&#115;&#046;&#099;&#104;"><div style="margin-top:-2px;">&#105;&#110;&#102;&#111;&#064;&#097;&#099;&#045;&#115;&#046;&#099;&#104;</div></a></li>
+					<li class="marke2"><a title="Telefon" href="tel:+4171 672 44 22">+41 (0) 71 672 44 22</a></li>
+                            </ul> 
+        </div>
+        <div id="header-wrapper">
+            <div class="header clear">              
+                <div id="primary-menu">
+				 <ul class="menu">
+<li><a href="1-0-Startseite.html" title="Startseite">Startseite</a></li>
+<li><a href="30-0-Dienstleistungen.html" title="Dienstleistungen">Dienstleistungen
+<!--[if IE 7]><!-->
+</a>
+<!--<![endif]-->
+<ul>
+<li><a href="32-0-Carrosseriearbeiten.html" title="Carrosseriearbeiten">Carrosseriearbeiten</a></li>
+<li><a href="33-0-Lackierarbeiten---Spritzwerk.html" title="Lackierarbeiten - Spritzwerk">Lackierarbeiten - Spritzwerk</a></li>
+<li><a href="34-0-Restaurationsarbeiten.html" title="Restaurationsarbeiten">Restaurationsarbeiten</a></li>
+<li><a href="37-0-Sonstiges.html" title="Sonstiges">Sonstiges</a></li>
+</ul>
+<!--[if lte IE 6]>
+</a>
+<![endif]--></li>
+<li><a href="7-0-Kontakt.html" class="current" title="Kontakt">Kontakt</a></li>
+<li><a href="31-0-Firmenprofil.html" title="Firmenprofil">Firmenprofil
+<!--[if IE 7]><!-->
+</a>
+<!--<![endif]-->
+<ul>
+<li><a href="35-0-Team.html" title="Team">Team</a></li>
+<li><a href="36-0-Galerie.html" title="Galerie">Galerie</a></li>
+<li><a href="38-0-Geschichte.html" title="Geschichte">Geschichte</a></li>
+</ul>
+<!--[if lte IE 6]>
+</a>
+<![endif]--></li>
+</ul>                </div><!--END PRIMARY MENU-->
+			</div><!--END HEADER-->	
+		</div><!--END HEADER-WRAPPER-->		
+<!-- END HEADER -->
+        <div id="wrapper">	
+<!-- START HOME -->
+			<div class="content-wrapper clear">
+			<!-- Einbindung Inhalt --> 
+
+				<script type="text/javascript">
+
+var xmlHttp;
+
+function createXMLHttpRequest() {
+  if (window.ActiveXObject) {
+      xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  else if (window.XMLHttpRequest) {
+      xmlHttp = new XMLHttpRequest();
+  }
+}
+
+
+function validateFields() {
+	document.getElementById('responseText').innerHTML = '<img src="./images/ajax-loader.gif"></img>';
+	createXMLHttpRequest();
+
+    xmlHttp.onreadystatechange = handleStateChange;
+    xmlHttp.open("POST", "inc/mail_kontakt.php", true);
+	  var msg=document.getElementById("msg").value;
+	  var name=document.getElementById("name").value;
+	  var tel=document.getElementById("tel").value;
+	  var email=document.getElementById("email").value;
+	  var kopie;	  
+	  if(document.getElementById("kopie").checked){
+			kopie="yes";
+			}
+	  xmlHttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	  xmlHttp.send('msg='+msg+'&name='+name+'&email='+email+'&tel='+tel+'&kopie='+kopie);
+
+}
+
+
+function handleStateChange() {
+
+	    if(xmlHttp.readyState == 4) {
+	    	 document.getElementById('responseText').innerHTML = '<ul style="color:red; font-size:98%">'+xmlHttp.responseText+'</ul>'; 
+	    }
+	}
+
+</script>
+
+	<div class="section-title">
+	
+		<h1 class="title">Kontaktieren Sie uns<span></span></h1>	
+						
+	</div><!--END SECTION TITLE-->	
+			
+	<div class="one-half">
+			
+		<h3 class="title">Kontaktadresse</h3>	
+		
+		<div>
+<iframe width="100%" height="465" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ch/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=scarascia&amp;aq=&amp;sll=46.813187,8.22421&amp;sspn=3.236906,8.453979&amp;t=m&amp;ie=UTF8&amp;hq=scarascia&amp;hnear=&amp;cid=6228528529189306613&amp;ll=47.659664,9.15719&amp;spn=0.026882,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /></div><br />
+		
+                
+					
+	</div><!--END ONE-HALF-->	
+
+	<div class="one-half last">
+			
+		<h3 class="title">Senden Sie uns eine Nachricht</h3>
+    	
+        Autocarrosserie & Spritzwerk <br />Scarascia GmbH<br />
+Emmishoferstrasse 3<br />
+8280 Kreuzlingen<br />
+Tel: 071 672 44 22<br />
+Fax: 071 672 44 32<br /><br />
+        Montag - Freitag:<br />
+07:30 - 12:00 Uhr<br />
+13:30 - 18:00 Uhr
+<br /><br />
+Samstag:<br />
+nach Vereinbarung<br /><br />
+		<form  class="form">
+			<ul>	
+				<li>
+					<p><strong>Name</strong> <em>(*)</em></p>
+					<input id="name" type="text" />
+				</li>
+							
+				<li>
+					<p><strong>E-Mail</strong> <em>(*)</em></p>
+					<input id="email" type="text" />		
+				</li>
+						
+				<li>
+					<p><strong>Telefon</strong></p>	
+					<input id="tel" type="text" />
+				</li>
+							
+				<li>
+					<p><strong>Nachricht</strong> <em>(*)</em></p>
+					<textarea id="msg" rows="20" cols="26" ></textarea>		
+				</li>
+                <li><p><input value="1" type="checkbox" id="kopie" class="checkbox2"> Kopie dieser E-Mail Nachricht an mich senden</p>
+                
+                </li>
+                <li>
+                <div id="responseText" style="margin:10px 0 10px 0"></div>
+                </li>				
+					
+				<li class="submit-button">
+                    <button  class="submit" type="button" onclick="validateFields();">Nachricht senden</button>
+				</li>
+			</ul>
+		</form><!--END CONTACT FORM-->
+				
+	</div><!--END ONE-HALF LAST-->	 
+             </div><!-- END CONTENT-WRAPPER --> 
+
+<!-- END HOME -->
+<!-- START FOOTER -->
+            <div id="footer">
+                <div id="footer-content">
+                    <div id="footer-top" class="clear">
+			<div class="one-fourth">
+				<h3>Adresse</h3>	
+				<p><strong>Autocarrosserie & Spritzwerk Scarascia GmbH</strong><br>
+				  Emmishoferstrasse 3<br>
+                  8280 Kreuzlingen
+                  <br>
+                  <strong>Tel:</strong> 071 672 44 22<br>
+                  <strong>Fax:</strong> 071 672 44 32<br><br>
+                  <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#097;&#099;&#045;&#115;&#046;&#099;&#104;" title="&#105;&#110;&#102;&#111;&#064;&#097;&#099;&#045;&#115;&#046;&#099;&#104;">&#105;&#110;&#102;&#111;&#064;&#097;&#099;&#045;&#115;&#046;&#099;&#104;</a><br>
+                  <a href="http://www.ac-s.ch" title="ac-s.ch">www.ac-s.ch</a>
+                  <br>
+				  
+				</p>		
+			</div><!--END ONE-FOURTH-->	
+						
+			<div class="one-fourth">
+				<h3>Öffnungszeiten</h3>	
+				<p><strong>Montag - Freitag:</strong><br>
+                07:30 - 12:00 Uhr<br>
+                13:30 - 18:00 Uhr<br><br>  
+                <strong>Samstag:</strong> <br>
+                nach Vereinbarung            
+				</p>
+                        </div>			
+            <!--END ONE-FOURTH-->	
+                        </div><!--END FOOTER-TOP-->
+                        <div id="footer-bottom" class="clear">
+                            <div class="one-half">
+                                <p>&copy; 2019 powered by <a title="FAHRZEUGNET.ch - Fahrzeuge mit Qualität" href="http://www.fahrzeugnet.ch" target="_blank"><span style="color: #3871F5">FAHRZEUG</span><span style="color: #999">NET</span><span style="color: #3871F5; font-size: 10px">.CH</span></a></p>
+                            </div><!--END ONE-HALF-->	
+                        </div><!--END FOOTER-BOTTOM-->	
+                    </div><!--END FOOTER-CONTENT-->	
+				</div><!--END FOOTER-->
+            </div>
+        </div>
+	</div>
+</body>
+ </html>

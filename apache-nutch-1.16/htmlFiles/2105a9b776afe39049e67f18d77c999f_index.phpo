@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<!-- jsn_gruve_pro 3.1.0 -->
+<html lang="" dir="ltr">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="tanzen, boogie-woogie, dancing, kurse, anfänger, disko-fox, disco-fox, zumba, maturball, jugendkurse, salsa, ferienkurs, tango, walzer, rumba, cha-cha-cha, jive, paso, doble, quickstep, slowfox" />
+	<meta name="description" content="Tanzzentrum Schaffhausen" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Tanzkurse</title>
+	<link href="/templates/jsn_gruve_pro/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/cache/jsn_gruve_pro/b01410f3868124f4c6d3c05e60eae524.css?c234ea307391178959b5675c3c2b92e0" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+	div.jsn-modulecontainer ul.menu-mainmenu ul,
+	div.jsn-modulecontainer ul.menu-mainmenu ul li {
+		width: 210px;
+	}
+	div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+		margin-left: 209px;
+	}
+	#jsn-pos-toolbar div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+		margin-right: 209px;
+		margin-left : auto
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu ul,
+	div.jsn-modulecontainer ul.menu-sidemenu ul li {
+		width: 210px;
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu li ul {
+		right: -210px;
+	}
+	body.jsn-direction-rtl div.jsn-modulecontainer ul.menu-sidemenu li ul {
+		left: -210px;
+		right: auto;
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu ul ul {
+		margin-left: 209px;
+	}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"ea27b342149fbd063fd145192b7735ff","system.paths":{"root":"","base":""},"system.keepalive":{"interval":3540000,"uri":"\/index.php?option=com_ajax&amp;format=json"}}</script>
+	<script src="https://tanzzentrum-sh.ch/cache/jsn_gruve_pro/ee96d0660fdb7affface901b28413d96.js?c234ea307391178959b5675c3c2b92e0" type="text/javascript"></script>
+	<script src="https://tanzzentrum-sh.ch/cache/jsn_gruve_pro/8416f345db4eeb3a7143663e311374bd.js?c234ea307391178959b5675c3c2b92e0" type="text/javascript"></script>
+	<script src="https://tanzzentrum-sh.ch/cache/jsn_gruve_pro/4b151084d93fee3022ab2e774e3dec44.js?c234ea307391178959b5675c3c2b92e0" type="text/javascript"></script>
+	<script src="https://tanzzentrum-sh.ch/cache/jsn_gruve_pro/716825da8d1e19b2d110160d3453fbfa.js?c234ea307391178959b5675c3c2b92e0" type="text/javascript"></script>
+	<script src="https://tanzzentrum-sh.ch/cache/jsn_gruve_pro/f3940a0cb8608e49c713abc9d7ad2eff.js?c234ea307391178959b5675c3c2b92e0" type="text/javascript"></script>
+	<script src="/media/system/js/modal.js?c234ea307391178959b5675c3c2b92e0" type="text/javascript"></script>
+	<script src="https://tanzzentrum-sh.ch/cache/jsn_gruve_pro/d279355364f2e848a4244371126c6a67.js?c234ea307391178959b5675c3c2b92e0" type="text/javascript"></script>
+	<script type="text/javascript">
+
+				JSNTemplate.initTemplate({
+					templatePrefix			: "jsn_gruve_pro_",
+					templatePath			: "/templates/jsn_gruve_pro",
+					enableRTL				: 0,
+					enableGotopLink			: 0,
+					enableMobile			: 1,
+					enableMobileMenuSticky	: 1,
+					enableDesktopMenuSticky	: 1,
+					responsiveLayout		: ["mobile"],
+					mobileMenuEffect		: "default"
+				});
+			
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			initSqueezeBox();
+			$(document).on('subform-row-add', initSqueezeBox);
+
+			function initSqueezeBox(event, container)
+			{
+				SqueezeBox.assign($(container || document).find('a.modal').get(), {
+					parse: 'rel'
+				});
+			}
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		window.cookieconsent_options = {"learnMore":"Weitere Informationen in unserer Datenschutzerkl\u00e4rung","dismiss":"Einverstanden","message":"Wie viele andere Webseiten verwenden wir auch so genannte \u201eCookies\u201c. Cookies sind kleine Textdateien, die von einem Websiteserver auf Ihre Festplatte \u00fcbertragen werden. Hierdurch erhalten wir automatisch bestimmte Daten wie z. B. IP-Adresse, verwendeter Browser, Betriebssystem und Ihre Verbindung zum Internet.","link":"index.php?option=com_content&view=article&id=275&Itemid=507","theme":"\/plugins\/system\/jsntplframework\/assets\/3rd-party\/cookieconsent\/styles\/light-floating.css"};
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+
+	<!-- html5.js and respond.min.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="/plugins/system/jsntplframework/assets/3rd-party/respond/respond.min.js"></script>
+	<![endif]-->
+	</head>
+<body id="jsn-master" class="jsn-textstyle-business jsn-color-blue jsn-direction-ltr jsn-responsive jsn-mobile jsn-joomla-30  jsn-com-matukio jsn-view-upcomingevents jsn-itemid-59">
+	<a id="top"></a>
+		<div id="jsn-page" class="container">
+			<div id="jsn-header">
+			<div id="jsn-logo" class="pull-left">
+							<div id="jsn-pos-logo">
+					<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p style="text-align: justify;"><img src="/images/top_logos/header_tz.jpg" alt="" border="0" /></p></div><div class="clearbreak"></div></div></div></div>
+				</div>
+
+						</div>
+			<div id="jsn-headerright" class="pull-right">
+						</div>
+			<div class="clearbreak"></div>
+		</div>
+		<div id="jsn-body">
+					<div id="jsn-menu">
+						<div id="jsn-pos-mainmenu" >
+				<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle"><i class="fa fa-navicon"></i></span>
+<ul class="menu-mainmenu menu-iconmenu">
+	<li class="jsn-menu-mobile-control"><span class="close-menu"><i class="fa fa-times"></i></span></li>
+	<li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=featured&amp;Itemid=53" >
+		<span>
+		<span class="jsn-menutitle">Home</span>	</span>
+</a></li><li  class="current active parent"><a class="current clearfix" href="/index.php?option=com_matukio&amp;view=upcomingevents&amp;Itemid=59" >
+		<span>
+		<span class="jsn-menutitle">Tanzkurse</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=885" >
+		<span>
+		<span class="jsn-menutitle">Anfänger-Grundkurs G1</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=460" >
+		<span>
+		<span class="jsn-menutitle">Fortgeschrittenenkurse G2</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=461" >
+		<span>
+		<span class="jsn-menutitle">	Fortgeschrittenenkurse G3</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=462" >
+		<span>
+		<span class="jsn-menutitle">Fortgeschrittenenk. G3+</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=1155" >
+		<span>
+		<span class="jsn-menutitle">Tanzkreis</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=532&amp;Itemid=1759" >
+		<span>
+		<span class="jsn-menutitle">Tanzkurs für Senioren</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=60&amp;Itemid=468" >
+		<span>
+		<span class="jsn-menutitle">Kursaufbau</span>	</span>
+</a></li></ul></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_matukio&amp;view=categorytable&amp;Itemid=887" >
+		<span>
+		<span class="jsn-menutitle">Spezialkurse</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=1440" >
+		<span>
+		<span class="jsn-menutitle">West Coast Swing (NEU!)</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=882" >
+		<span>
+		<span class="jsn-menutitle">Boogie Woogie</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=114&amp;Itemid=431" >
+		<span>
+		<span class="jsn-menutitle">Line Dance</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=883" >
+		<span>
+		<span class="jsn-menutitle">Disko-Fox</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=884" >
+		<span>
+		<span class="jsn-menutitle">Rock 'n' Roll / Jive</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=744" >
+		<span>
+		<span class="jsn-menutitle">Standard/Latein Intensiv</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=268&amp;Itemid=474" >
+		<span>
+		<span class="jsn-menutitle">Salsa</span>	</span>
+</a></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=96&amp;Itemid=476" >
+		<span>
+		<span class="jsn-menutitle">Zumba®</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=506&amp;Itemid=606" >
+		<span>
+		<span class="jsn-menutitle">Newsletter abonnieren</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=101&amp;Itemid=604" >
+		<span>
+		<span class="jsn-menutitle">Das Zumba & Fitness Team</span>	</span>
+</a></li></ul></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=102&amp;Itemid=757" >
+		<span>
+		<span class="jsn-menutitle">Maturaball-Tanzkurs</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=77&amp;Itemid=473" >
+		<span>
+		<span class="jsn-menutitle">Hochzeits-Tanzkurse</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=105&amp;Itemid=491" >
+		<span>
+		<span class="jsn-menutitle">Privat-Tanzstunden</span>	</span>
+</a></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=1033" >
+		<span>
+		<span class="jsn-menutitle">Workshops</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=526&amp;Itemid=1255" >
+		<span>
+		<span class="jsn-menutitle">West Coast Swing Workshop</span>	</span>
+</a></li></ul></li></ul></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=78&amp;Itemid=493" >
+		<span>
+		<span class="jsn-menutitle">Jugendkurse</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=107&amp;Itemid=495" >
+		<span>
+		<span class="jsn-menutitle">Hip-Hop</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=113&amp;Itemid=504" >
+		<span>
+		<span class="jsn-menutitle">Breakdance</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=108&amp;Itemid=1134" >
+		<span>
+		<span class="jsn-menutitle">Line Dance (Kids & Teens)</span>	</span>
+</a></li></ul></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=203&amp;Itemid=215" >
+		<span>
+		<span class="jsn-menutitle">Line Dance</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=93&amp;Itemid=525" >
+		<span>
+		<span class="jsn-menutitle">Line Dance News</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=114&amp;Itemid=526" >
+		<span>
+		<span class="jsn-menutitle">Kursangebote</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=108&amp;Itemid=740" >
+		<span>
+		<span class="jsn-menutitle">Kursangebote (Kids & Teens)</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=530" >
+		<span>
+		<span class="jsn-menutitle">Line Dance Night</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=74&amp;Itemid=1032" >
+		<span>
+		<span class="jsn-menutitle">Tanzarchiv</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=category&amp;catid=2&amp;Itemid=532" >
+		<span>
+		<span class="jsn-menutitle">Photoalbum</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=76&amp;Itemid=533" >
+		<span>
+		<span class="jsn-menutitle">Presseberichte</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=213&amp;Itemid=534" >
+		<span>
+		<span class="jsn-menutitle">Glossar</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=214&amp;Itemid=535" >
+		<span>
+		<span class="jsn-menutitle">Tanzknigge</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=215&amp;Itemid=536" >
+		<span>
+		<span class="jsn-menutitle">Line Dance Weblinks</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=205&amp;Itemid=527" >
+		<span>
+		<span class="jsn-menutitle">Tanzlehrer</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=252&amp;Itemid=528" >
+		<span>
+		<span class="jsn-menutitle">Einführung</span>	</span>
+</a></li><li  class="parent last"><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=97&amp;Itemid=529" >
+		<span>
+		<span class="jsn-menutitle">Competition Dancers</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=92&amp;Itemid=538" >
+		<span>
+		<span class="jsn-menutitle">Allgemein / News</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=304&amp;Itemid=539" >
+		<span>
+		<span class="jsn-menutitle">Team Unique</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=292&amp;Itemid=540" >
+		<span>
+		<span class="jsn-menutitle">The Dancer</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=422&amp;Itemid=702" >
+		<span>
+		<span class="jsn-menutitle">Maturarbeit Vanessa Rauer</span>	</span>
+</a></li></ul></li></ul></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=266&amp;Itemid=290" >
+		<span>
+		<span class="jsn-menutitle">Salsa</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=134&amp;Itemid=620" >
+		<span>
+		<span class="jsn-menutitle">Salsa News</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=505&amp;Itemid=543" >
+		<span>
+		<span class="jsn-menutitle">Newsletter abonnieren</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=267&amp;Itemid=544" >
+		<span>
+		<span class="jsn-menutitle">Die Kurs-Idee</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=268&amp;Itemid=545" >
+		<span>
+		<span class="jsn-menutitle">Salsa-Kurse</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=96&amp;Itemid=546" >
+		<span>
+		<span class="jsn-menutitle">Zumba & Fitness Kurse</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=category&amp;catid=84&amp;Itemid=548" >
+		<span>
+		<span class="jsn-menutitle">Salsa Photo-Galerie</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=84&amp;Itemid=549" >
+		<span>
+		<span class="jsn-menutitle">Salsa Team</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=273&amp;Itemid=550" >
+		<span>
+		<span class="jsn-menutitle">Kontakt</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=274&amp;Itemid=551" >
+		<span>
+		<span class="jsn-menutitle">Salsa Weblinks</span>	</span>
+</a></li></ul></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=105" >
+		<span>
+		<span class="jsn-menutitle">Veranstaltungen</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=1227" >
+		<span>
+		<span class="jsn-menutitle">Abenteuer Disco Party</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=557" >
+		<span>
+		<span class="jsn-menutitle">Line Dance Night</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=559" >
+		<span>
+		<span class="jsn-menutitle">Milonga Tango-Argentino</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=560" >
+		<span>
+		<span class="jsn-menutitle">Insieme Disco</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=563" >
+		<span>
+		<span class="jsn-menutitle">Salsa</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=552" >
+		<span>
+		<span class="jsn-menutitle">Tanzparty</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=553" >
+		<span>
+		<span class="jsn-menutitle">Tanzabend</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=555" >
+		<span>
+		<span class="jsn-menutitle">WUKO Wunschkonzert</span>	</span>
+</a></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=556" >
+		<span>
+		<span class="jsn-menutitle">Boogie Woogie Night</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=120&amp;Itemid=729" >
+		<span>
+		<span class="jsn-menutitle">Videos Boogie Night</span>	</span>
+</a></li></ul></li><li  class=""><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=706" >
+		<span>
+		<span class="jsn-menutitle">Tanznachmittag</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=1801" >
+		<span>
+		<span class="jsn-menutitle">Schlagerparty</span>	</span>
+</a></li></ul></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=177&amp;Itemid=888" >
+		<span>
+		<span class="jsn-menutitle">Info</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=183&amp;Itemid=147" >
+		<span>
+		<span class="jsn-menutitle">Mieten</span>	</span>
+</a></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=110&amp;Itemid=103" >
+		<span>
+		<span class="jsn-menutitle">Genossenschaft</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=81&amp;Itemid=584" >
+		<span>
+		<span class="jsn-menutitle">Die Genossenschaft</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=135&amp;Itemid=586" >
+		<span>
+		<span class="jsn-menutitle">Statuten</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=83&amp;Itemid=587" >
+		<span>
+		<span class="jsn-menutitle">Vorstand</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=222&amp;Itemid=589" >
+		<span>
+		<span class="jsn-menutitle">Beitrittserklärung</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=88&amp;Itemid=590" >
+		<span>
+		<span class="jsn-menutitle">Diverses</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=98&amp;Itemid=591" >
+		<span>
+		<span class="jsn-menutitle">Presseberichte</span>	</span>
+</a></li></ul></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=520&amp;Itemid=75" >
+		<span>
+		<span class="jsn-menutitle">Kontakt</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=275&amp;Itemid=294" >
+		<span>
+		<span class="jsn-menutitle">Datenschutz</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_adsmanager&amp;view=front&amp;rootid=0&amp;Itemid=892" >
+		<span>
+		<span class="jsn-menutitle">Tanzpartnersuche</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=134&amp;Itemid=351" >
+		<span>
+		<span class="jsn-menutitle">Tanzschuhe</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=463&amp;Itemid=76" >
+		<span>
+		<span class="jsn-menutitle">Anfahrt</span>	</span>
+</a></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=67&amp;Itemid=48" >
+		<span>
+		<span class="jsn-menutitle">Weblinks</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=69&amp;Itemid=78" >
+		<span>
+		<span class="jsn-menutitle">Tanzclub-Links</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=70&amp;Itemid=79" >
+		<span>
+		<span class="jsn-menutitle">Dancing & Tanzparty-Links</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=71&amp;Itemid=80" >
+		<span>
+		<span class="jsn-menutitle">Musik-Links</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=72&amp;Itemid=81" >
+		<span>
+		<span class="jsn-menutitle">Schaffhauser Links</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=73&amp;Itemid=82" >
+		<span>
+		<span class="jsn-menutitle">Diverse Links</span>	</span>
+</a></li></ul></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=198&amp;Itemid=148" >
+		<span>
+		<span class="jsn-menutitle">Sicherheit</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=90&amp;Itemid=149" >
+		<span>
+		<span class="jsn-menutitle">Im Brandfall</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=256&amp;Itemid=272" >
+		<span>
+		<span class="jsn-menutitle">Notausgänge</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=257&amp;Itemid=273" >
+		<span>
+		<span class="jsn-menutitle">Verhalten im Notfall</span>	</span>
+</a></li></ul></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=91&amp;Itemid=100" >
+		<span>
+		<span class="jsn-menutitle">Raucherzimmer</span>	</span>
+</a></li></ul></li><li  class="parent"><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=gallery&amp;Itemid=291" >
+		<span>
+		<span class="jsn-menutitle">Fotos</span>	</span>
+</a><span class="jsn-menu-toggle right-10"></span><ul><li  class="first"><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=toplist&amp;type=lastadded&amp;Itemid=641" >
+		<span>
+		<span class="jsn-menutitle">Neueste Fotos</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=category&amp;catid=2&amp;Itemid=595" >
+		<span>
+		<span class="jsn-menutitle">Line Dance</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=category&amp;catid=84&amp;Itemid=596" >
+		<span>
+		<span class="jsn-menutitle">Salsa</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=category&amp;catid=19&amp;Itemid=597" >
+		<span>
+		<span class="jsn-menutitle">Freizeitschule</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=category&amp;catid=48&amp;Itemid=598" >
+		<span>
+		<span class="jsn-menutitle">Kurse & Workshops</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=category&amp;catid=27&amp;Itemid=599" >
+		<span>
+		<span class="jsn-menutitle">Veranstaltungen</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=category&amp;catid=32&amp;Itemid=600" >
+		<span>
+		<span class="jsn-menutitle">Umbau Tonwerk</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=category&amp;catid=35&amp;Itemid=601" >
+		<span>
+		<span class="jsn-menutitle">Veranstaltungen Mieter</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=category&amp;catid=64&amp;Itemid=593" >
+		<span>
+		<span class="jsn-menutitle">Zumba Fitness</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_joomgallery&amp;view=category&amp;catid=43&amp;Itemid=594" >
+		<span>
+		<span class="jsn-menutitle">Boogie Woogie</span>	</span>
+</a></li></ul></li></ul>
+<div class="clearbreak"></div></div></div></div>
+				 			</div>
+						            <div class="clearbreak"></div>
+			</div>
+					<div id="jsn-content" class="jsn-hasright ">
+				<div id="jsn-content_inner" class="row-fluid">
+							<div id="jsn-maincontent" class="span9 order1  row-fluid">
+					<div id="jsn-maincontent_inner">
+						<div id="jsn-centercol"><div id="jsn-centercol_inner">
+									<div id="jsn-mainbody-content" class=" jsn-hasmainbody">
+								<div id="jsn-mainbody-content-inner1"><div id="jsn-mainbody-content-inner2"><div id="jsn-mainbody-content-inner3"><div id="jsn-mainbody-content-inner4" class="row-fluid">
+								
+										
+								
+								<div id="jsn-mainbody-content-inner" class="span12 order1 ">
+		
+										<div id="jsn-mainbody">
+										<div id="system-message-container">
+	</div>
+
+										<!-- Start Matukio Events by compojoom.com --><div id="mat_holder" class="compojoom-bootstrap"><form id="upcomingForm" name="upcomingForm"
+      action="/index.php?option=com_matukio&amp;view=upcomingevents&amp;Itemid=59" method="get">
+
+			<div class="componentheading">
+			<h2>Nächste Kurse</h2>
+		</div>
+	
+	<div class="container-fluid">
+		<ul class="mat_timeline">
+							<li>
+					<div class="mat_timeline-badge">Mo 6 . <br> Jan</div>
+					<div
+						class="mat_timeline-panel mat_event_single_even mat_top_event">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-9 col-lg-10">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=139:grundkurs-g1&amp;id=357:grundkurs-fuer-anfaenger-g1&amp;Itemid=885" title="Grundkurs für Anfänger (G1)">
+											Grundkurs für Anfänger (G1)										</a>
+																				 <i class="glyphicon glyphicon-star-empty"></i>									</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=893&amp;catid=139:grundkurs-g1" title="Grundkurs G1">
+													Grundkurs G1												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Universaltanzkurs: Standard- Latein für Ehepaare, Singles und Tanzpaare</strong></p>
+<p><strong>Kursdauer:</strong> 8 Abende je 90 Minuten, exklusiv Pause.</p>
+<p><strong>Honorar:</strong> 190,- CHF pro Person</p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Montag, 06. Januar 2020 bis Montag, 24. Februar 2020 18:45 - 20:30										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=139:grundkurs-g1&amp;id=357:grundkurs-fuer-anfaenger-g1&amp;Itemid=885"
+										   title="Grundkurs für Anfänger (G1)">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=357:grundkurs-fuer-anfaenger-g1&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+															<div class="mat_event_image_holder col-xs-12 col-sm-3 col-md-3 col-lg-2">
+									<div class="mat_event_image_holder_inner">
+										<img src="/images/kurse/grundkurs.gif" class="mat_event_img img-thumbnail"
+										     alt="Grundkurs für Anfänger (G1)"/>
+									</div>
+								</div>
+													</div>
+					</div>
+				</li>
+								<li>
+					<div class="mat_timeline-badge">Mo 6 . <br> Jan</div>
+					<div
+						class="mat_timeline-panel mat_top_event">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-9 col-lg-10">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=139:grundkurs-g1&amp;id=358:grundkurs-fuer-anfaenger-g1&amp;Itemid=885" title="Grundkurs für Anfänger (G1)">
+											Grundkurs für Anfänger (G1)										</a>
+																				 <i class="glyphicon glyphicon-star-empty"></i>									</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=893&amp;catid=139:grundkurs-g1" title="Grundkurs G1">
+													Grundkurs G1												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Universaltanzkurs: Standard- Latein für Ehepaare, Singles und Tanzpaare</strong></p>
+<p><strong>Kursdauer:</strong> 8 Abende je 90 Minuten, exklusiv Pause.</p>
+<p><strong>Honorar:</strong> 190,- CHF pro Person</p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Montag, 06. Januar 2020 bis Montag, 24. Februar 2020 20:30 - 22:15										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=139:grundkurs-g1&amp;id=358:grundkurs-fuer-anfaenger-g1&amp;Itemid=885"
+										   title="Grundkurs für Anfänger (G1)">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=358:grundkurs-fuer-anfaenger-g1&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+															<div class="mat_event_image_holder col-xs-12 col-sm-3 col-md-3 col-lg-2">
+									<div class="mat_event_image_holder_inner">
+										<img src="/images/kurse/grundkurs.gif" class="mat_event_img img-thumbnail"
+										     alt="Grundkurs für Anfänger (G1)"/>
+									</div>
+								</div>
+													</div>
+					</div>
+				</li>
+								<li>
+					<div class="mat_timeline-badge">Mi 8 . <br> Jan</div>
+					<div
+						class="mat_timeline-panel mat_event_single_even mat_top_event">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-12 col-lg-12">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=152:west-coast-swing&amp;id=351:west-coast-swing-grundkurs&amp;Itemid=885" title="West Coast Swing Grundkurs">
+											West Coast Swing Grundkurs										</a>
+																				 <i class="glyphicon glyphicon-star-empty"></i>									</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=1440&amp;catid=152:west-coast-swing" title="West Coast Swing">
+													West Coast Swing												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Kursdauer:</strong> 8 Abende à 60 Minuten</p>
+<p><strong>Kurspreis:</strong> CHF 120.- pro Person</p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Mittwoch, 08. Januar 2020 bis Mittwoch, 26. Februar 2020 19:15 - 20:15										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=152:west-coast-swing&amp;id=351:west-coast-swing-grundkurs&amp;Itemid=885"
+										   title="West Coast Swing Grundkurs">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=351:west-coast-swing-grundkurs&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</li>
+								<li>
+					<div class="mat_timeline-badge">Mi 8 . <br> Jan</div>
+					<div
+						class="mat_timeline-panel">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-12 col-lg-12">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=152:west-coast-swing&amp;id=353:west-coast-swing-fortgeschrittenen-kurs&amp;Itemid=885" title="West Coast Swing Fortgeschrittenen-Kurs">
+											West Coast Swing Fortgeschrittenen-Kurs										</a>
+																													</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=1440&amp;catid=152:west-coast-swing" title="West Coast Swing">
+													West Coast Swing												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Kursdauer:</strong> 8 Abende à 60 Minuten</p>
+<p><strong>Kurspreis:</strong> CHF 120.- pro Person</p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Mittwoch, 08. Januar 2020 bis Mittwoch, 26. Februar 2020 20:15 - 21:15										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=152:west-coast-swing&amp;id=353:west-coast-swing-fortgeschrittenen-kurs&amp;Itemid=885"
+										   title="West Coast Swing Fortgeschrittenen-Kurs">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=353:west-coast-swing-fortgeschrittenen-kurs&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</li>
+								<li>
+					<div class="mat_timeline-badge">Do 9 . <br> Jan</div>
+					<div
+						class="mat_timeline-panel mat_event_single_even mat_top_event">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-9 col-lg-10">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=355:disko-fox-grundkurs&amp;Itemid=885" title="Disko-Fox Grundkurs">
+											Disko-Fox Grundkurs										</a>
+																				 <i class="glyphicon glyphicon-star-empty"></i>									</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=898&amp;catid=136:disko-fox" title="Disko-Fox">
+													Disko-Fox												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Kursdauer:</strong> 8 Abende à 60 Minuten</p>
+<p><strong>Kurspreis:</strong> CHF 120.- pro Person</p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Donnerstag, 09. Januar 2020 bis Donnerstag, 05. März 2020 18:30 - 19:30										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=355:disko-fox-grundkurs&amp;Itemid=885"
+										   title="Disko-Fox Grundkurs">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=355:disko-fox-grundkurs&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+															<div class="mat_event_image_holder col-xs-12 col-sm-3 col-md-3 col-lg-2">
+									<div class="mat_event_image_holder_inner">
+										<img src="/images/kurse/diskofox480.gif" class="mat_event_img img-thumbnail"
+										     alt="Disko-Fox Grundkurs"/>
+									</div>
+								</div>
+													</div>
+					</div>
+				</li>
+								<li>
+					<div class="mat_timeline-badge">Do 9 . <br> Jan</div>
+					<div
+						class="mat_timeline-panel">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-9 col-lg-10">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=359:disko-fox-aufbaukurs-d&amp;Itemid=885" title="Disko-Fox Aufbaukurs D">
+											Disko-Fox Aufbaukurs D										</a>
+																													</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=898&amp;catid=136:disko-fox" title="Disko-Fox">
+													Disko-Fox												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Kursdauer:</strong> 8 Abende à 60 Minuten</p>
+<p><strong>Kurspreis: </strong>CHF 120.- pro Person</p>
+<p><strong>Für den Besuch des Aufbaukurses sind Grundkenntisse im Disko-Fox notwendig!</strong></p>
+<p>Kein Kurs am 27. Feb.</p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Donnerstag, 09. Januar 2020 bis Donnerstag, 05. März 2020 19:30 - 20:30										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=359:disko-fox-aufbaukurs-d&amp;Itemid=885"
+										   title="Disko-Fox Aufbaukurs D">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=359:disko-fox-aufbaukurs-d&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+															<div class="mat_event_image_holder col-xs-12 col-sm-3 col-md-3 col-lg-2">
+									<div class="mat_event_image_holder_inner">
+										<img src="/images/kurse/diskofox480.gif" class="mat_event_img img-thumbnail"
+										     alt="Disko-Fox Aufbaukurs D"/>
+									</div>
+								</div>
+													</div>
+					</div>
+				</li>
+								<li>
+					<div class="mat_timeline-badge">Di 3 . <br> Mär</div>
+					<div
+						class="mat_timeline-panel mat_event_single_even">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-12 col-lg-12">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=152:west-coast-swing&amp;id=354:west-coast-swing-fortgeschrittenen-kurs&amp;Itemid=885" title="West Coast Swing Fortgeschrittenen-Kurs">
+											West Coast Swing Fortgeschrittenen-Kurs										</a>
+																													</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=1440&amp;catid=152:west-coast-swing" title="West Coast Swing">
+													West Coast Swing												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Kursdauer:</strong> 8 Abende à 60 Minuten</p>
+<p><strong>Kurspreis:</strong> CHF 120.- pro Person</p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Dienstag, 03. März 2020 bis Mittwoch, 22. April 2020 20:15 - 21:15										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=152:west-coast-swing&amp;id=354:west-coast-swing-fortgeschrittenen-kurs&amp;Itemid=885"
+										   title="West Coast Swing Fortgeschrittenen-Kurs">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=354:west-coast-swing-fortgeschrittenen-kurs&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</li>
+								<li>
+					<div class="mat_timeline-badge">Mi 4 . <br> Mär</div>
+					<div
+						class="mat_timeline-panel mat_top_event">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-12 col-lg-12">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=152:west-coast-swing&amp;id=352:west-coast-swing-grundkurs&amp;Itemid=885" title="West Coast Swing Grundkurs">
+											West Coast Swing Grundkurs										</a>
+																				 <i class="glyphicon glyphicon-star-empty"></i>									</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=1440&amp;catid=152:west-coast-swing" title="West Coast Swing">
+													West Coast Swing												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Kursdauer:</strong> 8 Abende à 60 Minuten</p>
+<p><strong>Kurspreis:</strong> CHF 120.- pro Person</p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Mittwoch, 04. März 2020 bis Mittwoch, 22. April 2020 19:15 - 20:15										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=152:west-coast-swing&amp;id=352:west-coast-swing-grundkurs&amp;Itemid=885"
+										   title="West Coast Swing Grundkurs">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=352:west-coast-swing-grundkurs&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+													</div>
+					</div>
+				</li>
+								<li>
+					<div class="mat_timeline-badge">Do 12 . <br> Mär</div>
+					<div
+						class="mat_timeline-panel mat_event_single_even mat_top_event">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-9 col-lg-10">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=356:disko-fox-grundkurs&amp;Itemid=885" title="Disko-Fox Grundkurs">
+											Disko-Fox Grundkurs										</a>
+																				 <i class="glyphicon glyphicon-star-empty"></i>									</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=898&amp;catid=136:disko-fox" title="Disko-Fox">
+													Disko-Fox												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Kursdauer:</strong> 8 Abende à 60 Minuten</p>
+<p><strong>Kurspreis:</strong> CHF 120.- pro Person</p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Donnerstag, 12. März 2020 bis Donnerstag, 30. April 2020 18:30 - 19:30										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=356:disko-fox-grundkurs&amp;Itemid=885"
+										   title="Disko-Fox Grundkurs">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=356:disko-fox-grundkurs&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+															<div class="mat_event_image_holder col-xs-12 col-sm-3 col-md-3 col-lg-2">
+									<div class="mat_event_image_holder_inner">
+										<img src="/images/kurse/diskofox480.gif" class="mat_event_img img-thumbnail"
+										     alt="Disko-Fox Grundkurs"/>
+									</div>
+								</div>
+													</div>
+					</div>
+				</li>
+								<li>
+					<div class="mat_timeline-badge">Do 12 . <br> Mär</div>
+					<div
+						class="mat_timeline-panel">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-9 col-lg-10">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=360:disko-fox-aufbaukurs-e&amp;Itemid=885" title="Disko-Fox Aufbaukurs E">
+											Disko-Fox Aufbaukurs E										</a>
+																													</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=898&amp;catid=136:disko-fox" title="Disko-Fox">
+													Disko-Fox												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Kursdauer:</strong> 8 Abende à 60 Minuten</p>
+<p><strong>Kurspreis: </strong>CHF 120.- pro Person</p>
+<p><strong>Für den Besuch des Aufbaukurses sind Grundkenntisse im Disko-Fox notwendig!</strong></p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Donnerstag, 12. März 2020 bis Donnerstag, 30. April 2020 19:30 - 20:30										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=360:disko-fox-aufbaukurs-e&amp;Itemid=885"
+										   title="Disko-Fox Aufbaukurs E">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=360:disko-fox-aufbaukurs-e&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+															<div class="mat_event_image_holder col-xs-12 col-sm-3 col-md-3 col-lg-2">
+									<div class="mat_event_image_holder_inner">
+										<img src="/images/kurse/diskofox480.gif" class="mat_event_img img-thumbnail"
+										     alt="Disko-Fox Aufbaukurs E"/>
+									</div>
+								</div>
+													</div>
+					</div>
+				</li>
+								<li>
+					<div class="mat_timeline-badge">Do 7 . <br> Mai</div>
+					<div
+						class="mat_timeline-panel mat_event_single_even mat_top_event">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-9 col-lg-10">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=362:disko-fox-grundkurs&amp;Itemid=885" title="Disko-Fox Grundkurs">
+											Disko-Fox Grundkurs										</a>
+																				 <i class="glyphicon glyphicon-star-empty"></i>									</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=898&amp;catid=136:disko-fox" title="Disko-Fox">
+													Disko-Fox												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Kursdauer:</strong> 8 Abende à 60 Minuten</p>
+<p><strong>Kurspreis:</strong> CHF 120.- pro Person</p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Donnerstag, 07. Mai 2020 bis Donnerstag, 02. Juli 2020 18:30 - 19:30										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=362:disko-fox-grundkurs&amp;Itemid=885"
+										   title="Disko-Fox Grundkurs">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=362:disko-fox-grundkurs&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+															<div class="mat_event_image_holder col-xs-12 col-sm-3 col-md-3 col-lg-2">
+									<div class="mat_event_image_holder_inner">
+										<img src="/images/kurse/diskofox480.gif" class="mat_event_img img-thumbnail"
+										     alt="Disko-Fox Grundkurs"/>
+									</div>
+								</div>
+													</div>
+					</div>
+				</li>
+								<li>
+					<div class="mat_timeline-badge">Do 7 . <br> Mai</div>
+					<div
+						class="mat_timeline-panel">
+						<div class="row">
+							<div class="mat_event_row col-xs-12 col-sm-9 col-sm-9 col-lg-10">
+								<div class="mat_timeline-heading">
+									<h4 class="mat_timeline-title">
+										<a href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=361:disko-fox-aufbaukurs-f&amp;Itemid=885" title="Disko-Fox Aufbaukurs F">
+											Disko-Fox Aufbaukurs F										</a>
+																													</h4>
+									<div class="mat_event_top_informations">
+											<span class="mat_event_category">
+												<i class="glyphicon glyphicon-inbox"></i>
+												<a href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=898&amp;catid=136:disko-fox" title="Disko-Fox">
+													Disko-Fox												</a>
+											</span>
+																																																											</div>
+								</div>
+								<div class="mat_timeline-body">
+									<p class="mat_event_short_description">
+										<p><strong>Kursdauer:</strong> 8 Abende à 60 Minuten</p>
+<p><strong>Kurspreis: </strong>CHF 120.- pro Person</p>
+<p><strong>Für den Besuch des Aufbaukurses sind Grundkenntisse im Disko-Fox notwendig!</strong></p>																			</p>
+																												<div class="mat_event_date">
+											<i class="glyphicon glyphicon-calendar"></i>
+											Donnerstag, 07. Mai 2020 bis Donnerstag, 02. Juli 2020 19:30 - 20:30										</div>
+																		<div class="mat_event_location">
+										<i class="glyphicon glyphicon-map-marker"></i><strong><a href="/index.php?option=com_matukio&amp;view=location&amp;id=1:tanzzentrum-schaffhausen&amp;Itemid=59" title="Tanzzentrum Schaffhausen">Tanzzentrum Schaffhausen</a> </strong>									</div>
+									<div class="mat_timeline-buttons">
+										<a class="btn btn-primary" href="/index.php?option=com_matukio&amp;view=event&amp;catid=136:disko-fox&amp;id=361:disko-fox-aufbaukurs-f&amp;Itemid=885"
+										   title="Disko-Fox Aufbaukurs F">
+											Mehr Informationen										</a>
+																					 <a title="Buchen" class="btn btn-primary mat_btn_book" href="/index.php?option=com_matukio&amp;view=book&amp;event_id=361:disko-fox-aufbaukurs-f&amp;Itemid=59">Jetzt buchen</a>																			</div>
+								</div>
+							</div>
+															<div class="mat_event_image_holder col-xs-12 col-sm-3 col-md-3 col-lg-2">
+									<div class="mat_event_image_holder_inner">
+										<img src="/images/kurse/diskofox480.gif" class="mat_event_img img-thumbnail"
+										     alt="Disko-Fox Aufbaukurs F"/>
+									</div>
+								</div>
+													</div>
+					</div>
+				</li>
+						</ul>
+	</div>
+	
+	<input type="hidden" name="limitstart" id="limitstart" value="0"/>
+
+	<script>
+		(function ($) {
+			$(document).ready(function ($) {
+				$(".mat_event_image_holder").css({
+					"max-height": function () {
+						return ($(this).prev(".mat_event_row").height()) + "px";
+					}
+				});
+
+				$("a.filter_limitstart").click(function (e) {
+					e.preventDefault();
+					var limitstart = $(this).attr("limitstart");
+					$("#limitstart").val(limitstart);
+					$("#upcomingForm").submit();
+				})
+			});
+		})(jQuery);
+	</script>
+</form>
+</div><!-- End Matukio Events by compojoom.com -->
+									</div>
+				
+							</div>
+							
+				        							
+							
+							</div></div></div></div></div>			
+							
+							
+		        				</div></div> <!-- end centercol -->
+				</div></div><!-- end jsn-maincontent -->
+							<div id="jsn-rightsidecontent" class="span3 order2 ">
+						<div id="jsn-rightsidecontent_inner">
+							<div id="jsn-pos-right">
+								<div class="richbox-1 jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><h3 class="jsn-moduletitle"><span class="jsn-moduleicon">Anmeldung</span></h3><div class="jsn-modulecontent"><form action="/index.php?option=com_matukio&amp;view=upcomingevents&amp;Itemid=59" method="post" id="login-form" class="form-inline">
+			<div class="pretext">
+		<p>Wenn bereits ein Benutzerkonto angelegt wurde, dann hier vor der Kursbuchung anmelden:</p>
+		</div>
+		<div class="userdata">
+		<div id="form-login-username" class="control-group">
+			<div class="controls">
+				<div class="input-prepend input-append">
+					<span class="add-on"><i class="icon-user tip" title="Benutzername"></i><label for="modlgn-username" class="element-invisible">Benutzername</label></span><input id="modlgn-username" type="text" name="username" class="input-small" tabindex="1" size="18" placeholder="Benutzername" /><a href="/index.php?option=com_users&amp;view=remind&amp;Itemid=53" class="btn hasTooltip" title="Benutzername vergessen?"><i class="icon-question-sign"></i></a>
+				</div>
+			</div>
+		</div>
+		<div id="form-login-password" class="control-group">
+			<div class="controls">
+				<div class="input-prepend input-append">
+					<span class="add-on"><i class="icon-lock tip" title="Passwort"></i><label for="modlgn-passwd" class="element-invisible">Passwort</label></span><input id="modlgn-passwd" type="password" name="password" class="input-small" tabindex="2" size="18" placeholder="Passwort" /><a href="/index.php?option=com_users&amp;view=reset&amp;Itemid=53" class="btn hasTooltip" title="Passwort vergessen?"><i class="icon-question-sign"></i></a>
+				</div>
+			</div>
+		</div>
+					
+						
+				<div id="form-login-remember" class="control-group checkbox">
+			<label for="modlgn-remember" class="control-label">Angemeldet bleiben</label> <input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
+		</div>
+				<div id="form-login-submit" class="control-group">
+			<div class="controls">
+				<button type="submit" tabindex="3" name="Submit" class="btn btn-primary btn">Anmelden</button>
+			</div>
+		</div>
+					<ul class="unstyled">
+				<li>
+					<a href="/index.php?option=com_users&amp;view=registration&amp;Itemid=53">
+					Registrieren <i class="icon-arrow-right"></i></a>
+				</li>
+
+			</ul>
+				<input type="hidden" name="option" value="com_users" />
+		<input type="hidden" name="task" value="user.login" />
+		<input type="hidden" name="return" value="aHR0cHM6Ly90YW56emVudHJ1bS1zaC5jaC9pbmRleC5waHA/b3B0aW9uPWNvbV9tYXR1a2lvJnZpZXc9dXBjb21pbmdldmVudHMmSXRlbWlkPTU5" />
+		<input type="hidden" name="ea27b342149fbd063fd145192b7735ff" value="1" />	</div>
+	</form>
+<div class="clearbreak"></div></div></div></div><div class="lightbox-1 jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">	<div class="searchlightbox-1">
+		<form action="/index.php?option=com_matukio&amp;view=upcomingevents&amp;Itemid=59" method="post" class="form-inline">
+			<label for="mod-search-searchword" class="element-invisible">Suchen ...</label> <input name="searchword" id="mod-search-searchword" maxlength="200"  class="inputbox search-query" type="text" size="20" value="Suchen"  onblur="if (this.value=='') this.value='Suchen';" onfocus="if (this.value=='Suchen') this.value='';" />			<input type="hidden" name="task" value="search" />
+			<input type="hidden" name="option" value="com_search" />
+			<input type="hidden" name="Itemid" value="59" />
+		</form>
+	</div>
+
+<div class="clearbreak"></div></div></div></div><div class="lightbox-1 jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p>&nbsp;</p>
+<p style="text-align: center;"><a href="/index.php/sonderkurse/zumba.html" title="Zumba"><img src="/images/stories/logos/zumba_logo.png" alt="" style="width: 107px; height: 165px;" border="0" /></a></p></div><div class="clearbreak"></div></div></div></div><div class="richbox-1 jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p style="text-align: center;"><a href="/index.php?option=com_content&amp;view=article&amp;id=203&amp;Itemid=215" target="_self"><img src="/images/logos/rrd-logo.gif" alt="Rhine River Dancers" border="0" /></a></p></div><div class="clearbreak"></div></div></div></div>
+							</div>
+						</div>
+					</div>
+						</div>
+			</div>
+					<div id="jsn-content-bottom">
+			                <div id="jsn-pos-content-bottom" class="jsn-modulescontainer jsn-horizontallayout jsn-modulescontainer4 row-fluid">
+                	<div class="lightbox-2 jsn-modulecontainer span3"><div class="jsn-modulecontainer_inner"><h3 class="jsn-moduletitle"><span class="jsn-moduleicon">Tanzkurse</span></h3><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle"><i class="fa fa-navicon"></i></span>
+<ul class="menu-sidemenu">
+	<li class="jsn-menu-mobile-control"><span class="close-menu"><i class="fa fa-times"></i></span></li>
+	<li  class="first"><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=893" >
+		<span>
+		<span class="jsn-menutitle">Anfänger-Grundkurse G1</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=894" >
+		<span>
+		<span class="jsn-menutitle">Fortgeschrittenenkurse G2</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=895" >
+		<span>
+		<span class="jsn-menutitle">Fortgeschrittenenkurse G3</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=896" >
+		<span>
+		<span class="jsn-menutitle">Fortgeschrittenenkurse G3+</span>	</span>
+</a></li></ul>
+<div class="clearbreak"></div></div></div></div><div class="lightbox-2 jsn-modulecontainer span3"><div class="jsn-modulecontainer_inner"><h3 class="jsn-moduletitle"><span class="jsn-moduleicon">Spezialkurse</span></h3><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle"><i class="fa fa-navicon"></i></span>
+<ul class="menu-sidemenu">
+	<li class="jsn-menu-mobile-control"><span class="close-menu"><i class="fa fa-times"></i></span></li>
+	<li  class="first"><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=897" >
+		<span>
+		<span class="jsn-menutitle">Boogie Woogie</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=898" >
+		<span>
+		<span class="jsn-menutitle">Disko-Fox</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_matukio&amp;view=eventlist&amp;Itemid=899" >
+		<span>
+		<span class="jsn-menutitle">Rock 'n' Roll</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=77&amp;Itemid=900" >
+		<span>
+		<span class="jsn-menutitle">Hochzeits-Tanzkurs</span>	</span>
+</a></li></ul>
+<div class="clearbreak"></div></div></div></div><div class="lightbox-2 jsn-modulecontainer span3"><div class="jsn-modulecontainer_inner"><h3 class="jsn-moduletitle"><span class="jsn-moduleicon">Weitere Kurse</span></h3><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle"><i class="fa fa-navicon"></i></span>
+<ul class="menu-sidemenu">
+	<li class="jsn-menu-mobile-control"><span class="close-menu"><i class="fa fa-times"></i></span></li>
+	<li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=268&amp;Itemid=901" >
+		<span>
+		<span class="jsn-menutitle">Salsa Kurse</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=114&amp;Itemid=904" >
+		<span>
+		<span class="jsn-menutitle">Line Dance</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=113&amp;Itemid=905" >
+		<span>
+		<span class="jsn-menutitle">Break-Dance</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=107&amp;Itemid=906" >
+		<span>
+		<span class="jsn-menutitle">Hip-Hop</span>	</span>
+</a></li></ul>
+<div class="clearbreak"></div></div></div></div><div class="lightbox-2 jsn-modulecontainer span3"><div class="jsn-modulecontainer_inner"><h3 class="jsn-moduletitle"><span class="jsn-moduleicon">Infos</span></h3><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle"><i class="fa fa-navicon"></i></span>
+<ul class="menu-sidemenu">
+	<li class="jsn-menu-mobile-control"><span class="close-menu"><i class="fa fa-times"></i></span></li>
+	<li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=520&amp;Itemid=907" >
+		<span>
+		<span class="jsn-menutitle">Kontakt</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_icagenda&amp;view=list&amp;Itemid=908" >
+		<span>
+		<span class="jsn-menutitle">Veranstaltungen</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_adsmanager&amp;view=front&amp;rootid=0&amp;Itemid=909" >
+		<span>
+		<span class="jsn-menutitle">Tanzpartnersuche</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=463&amp;Itemid=910" >
+		<span>
+		<span class="jsn-menutitle">Anfahrt</span>	</span>
+</a></li></ul>
+<div class="clearbreak"></div></div></div></div>
+                </div>
+						</div>
+				</div>
+				<div id="jsn-footer">
+				<div id="jsn-footermodules" class="jsn-modulescontainer jsn-modulescontainer1 row-fluid">
+								<div id="jsn-pos-footer" class="span12">
+						<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p>© 2019 Tanzzentrum im Tonwerk · Tanz- Bewegungs- und Begegnungsgenossenschaft Schaffhausen · Rheinweg 6 · CH-8200 Schaffhausen · <span id="cloak6efddf845132e0210ef24d3dc592e1f3">Diese E-Mail-Adresse ist vor Spambots geschützt! Zur Anzeige muss JavaScript eingeschaltet sein!</span><script type='text/javascript'>
+				document.getElementById('cloak6efddf845132e0210ef24d3dc592e1f3').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy6efddf845132e0210ef24d3dc592e1f3 = '&#105;nf&#111;' + '&#64;';
+				addy6efddf845132e0210ef24d3dc592e1f3 = addy6efddf845132e0210ef24d3dc592e1f3 + 't&#97;nzz&#101;ntr&#117;m-sh' + '&#46;' + 'ch';
+				var addy_text6efddf845132e0210ef24d3dc592e1f3 = '&#105;nf&#111;' + '&#64;' + 't&#97;nzz&#101;ntr&#117;m-sh' + '&#46;' + 'ch';document.getElementById('cloak6efddf845132e0210ef24d3dc592e1f3').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy6efddf845132e0210ef24d3dc592e1f3 + '\'>'+addy_text6efddf845132e0210ef24d3dc592e1f3+'<\/a>';
+		</script></p></div><div class="clearbreak"></div></div></div></div><div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle"><i class="fa fa-navicon"></i></span>
+<ul class="menu-divmenu">
+	<li class="jsn-menu-mobile-control"><span class="close-menu"><i class="fa fa-times"></i></span></li>
+	<li  class="first"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=520&amp;Itemid=505" >
+		<span>
+		<span class="jsn-menutitle">Kontakt</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=463&amp;Itemid=506" >
+		<span>
+		<span class="jsn-menutitle">Anfahrt</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=177&amp;Itemid=508" >
+		<span>
+		<span class="jsn-menutitle">Standort</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/index.php?option=com_content&amp;view=article&amp;id=275&amp;Itemid=507" >
+		<span>
+		<span class="jsn-menutitle">Datenschutz</span>	</span>
+</a></li></ul>
+<div class="clearbreak"></div></div></div></div>
+					</div>
+								<div class="clearbreak"></div>
+				</div>
+			</div>
+			</div>
+	
+</body>
+</html>

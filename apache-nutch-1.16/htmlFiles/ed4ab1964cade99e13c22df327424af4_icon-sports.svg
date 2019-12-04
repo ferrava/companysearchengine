@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="26px" viewBox="0 0 40 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-sports</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="New-Icons---no-artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-sports" transform="translate(-12.000000, -19.000000)" fill-rule="nonzero" fill="#000000">
+            <g transform="translate(12.500000, 19.000000)">
+                <path d="M21.1,0.2 L21.1,6.85 C23.85,7.55 25.9,10.05 25.9,13 C25.9,15.95 23.85,18.45 21.1,19.15 L21.1,25.8 L38.7,25.8 L38.7,19.4 L32.3,19.4 L32.3,6.6 L38.7,6.6 L38.7,0.2 L21.1,0.2 Z" id="Shape"></path>
+                <path d="M13.1,13 C13.1,10.05 15.15,7.55 17.9,6.85 L17.9,0.2 L0.3,0.2 L0.3,6.6 L6.7,6.6 L6.7,19.4 L0.3,19.4 L0.3,25.8 L17.9,25.8 L17.9,19.15 C15.15,18.45 13.1,15.95 13.1,13 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="0.3" y="9.8" width="3.2" height="6.4"></rect>
+                <rect id="Rectangle-path" x="35.5" y="9.8" width="3.2" height="6.4"></rect>
+                <circle id="Oval" cx="19.5" cy="13" r="3.2"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

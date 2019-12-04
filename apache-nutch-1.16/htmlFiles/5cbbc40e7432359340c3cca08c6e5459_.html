@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+<meta charset="utf-8">
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2017 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.org/
+-->
+
+<base href="http://www.altorag.ch/">
+
+<title>Altor AG: Altor AG</title>
+<meta name="generator" content="TYPO3 CMS">
+
+
+<link rel="stylesheet" type="text/css" href="typo3conf/ext/imagecycle/res/css/style.css?1433173355" media="all">
+<link rel="stylesheet" type="text/css" href="typo3temp/stylesheet_d5c8f55958.css?1523977983" media="all">
+<link rel="stylesheet" type="text/css" href="typo3conf/ext/t3colorbox/Resources/Public/Css/1.5.13/example1/colorbox.css?1433772949" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/theme/css/screen.css?1523978339" media="screen">
+<link rel="stylesheet" type="text/css" href="fileadmin/theme/ext/ke_search/ke_search.css?1433173339" media="all">
+
+
+
+<script src="uploads/tx_t3jquery/jquery-1.9.x-1.9.x-1.2.x.js?1433173425" type="text/javascript"></script>
+
+<script src="typo3conf/ext/imagecycle/res/jquery/js/jquery.cycle.all-3.0.3.min.js?1433173354" type="text/javascript"></script>
+<script src="fileadmin/theme/js/api.js?1435214491" type="text/javascript"></script>
+<script src="typo3temp/javascript_fbd462c793.js?1433928084" type="text/javascript"></script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+/*101fcac5adbca820666f7533229cf628*/
+jQuery(window).load(function() {
+	
+	
+	jQuery('#imagecycle_c40').show().cycle({
+		fx: 'fade',
+		easing: 'easeInOutBack',
+		sync: true,
+		cleartypeNoBg: false,
+		before: function(a,n,o,f) {jQuery('div', this).css('display', 'none');},
+		after: function(a,n,o,f) {jQuery('div', this).animate({opacity: 'show'},200,'swing');}
+		
+	});
+	
+	
+	jQuery('#imagecycle_c40').css('width', jQuery('#imagecycle_c40 img').css('width'));
+	jQuery('#imagecycle_c40 div').show();
+	
+	if (jQuery('#imagecycle_c40').width() > 0) {
+		jQuery('#imagecycle_c40').parent().css('width', jQuery('#imagecycle_c40').width());
+	}
+	
+	
+	
+	jQuery('div', jQuery('#imagecycle_c40')).show();
+});
+
+/*]]>*/
+</script>
+
+
+<script language="javascript" type="text/javascript" src="/fileadmin/theme/js/sameheight.js"></script>
+<script language="javascript" type="text/javascript" src="/fileadmin/theme/js/carouFredsel.js"></script>
+<script language="javascript" type="text/javascript" src="/fileadmin/theme/js/fancyBox.js"></script>
+<script language="javascript" type="text/javascript" src="/fileadmin/theme/js/jquery.cycle.js"></script>
+<script language="javascript" type="text/javascript" src="/fileadmin/theme/js/bxslider/jquery.bxslider.js"></script>
+<link media="screen" href="http://www.hoermann.de/fileadmin/fancybox/jquery.fancybox.css?v=2.1.0" type="text/css" rel="stylesheet">
+<link media="screen" href="http://www.hoermann.de/fileadmin/redesign/css/jquery.lightbox-0.5.css" type="text/css" rel="stylesheet">
+<link media="screen" href="/fileadmin/theme/js/bxslider/jquery.bxslider.css" type="text/css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+// js for all render methods
+function searchboxFocus(searchbox) {
+	if(searchbox.value == "Suchbegriff") {
+		searchbox.value = "";
+	}
+}
+
+function resetCheckboxes(filter) {
+	allLi = document.getElementsByName("optionCheckBox" + filter);
+	allCb = new Array();
+	for(i = 0; i < allLi.length; i++) {
+		allCb[i] = allLi[i].getElementsByTagName("input");
+	}
+	for(i = 0; i < allCb.length; i++) {
+		allCb[i][0].checked = false;
+	}
+}
+
+function enableCheckboxes(filter) {
+	var lis = document.getElementsByTagName("LI");
+	//alert(lis.count());
+	var allCb = new Array();
+	var allCbChecked = true;
+	var count = 0;
+	var optionClass = new Array();
+	for(var i = 0; i < lis.length; i++) {
+		if (optionClasses = lis[i].getAttribute("class", 1)) {
+			optionClassesArray = optionClasses.split(" ");
+			//alert(optionClasses);
+			if(optionClassesArray[1] == "optionCheckBox" + filter) {
+				allCb[count] = lis[i].getElementsByTagName("input")[0];
+				count++;
+			}
+		}
+	}
+	for(i = 0; i < allCb.length; i++) {
+		if(!allCb[i].checked) {
+			allCbChecked = false;
+		}
+	}
+	if(allCbChecked) {
+		for(i = 0; i < allCb.length; i++) {
+			allCb[i].checked = false;
+		}
+	} else {
+		for(i = 0; i < allCb.length; i++) {
+			allCb[i].checked = true;
+		}
+	}
+}
+//]]>
+</script>
+
+</head>
+<body id="altorag">
+
+<div id="page">
+   <!-- Der Header Bereich -->
+  <div id="header">
+	<!-- Firmen Logo wird hier gerendert -->
+	<div id="logo">
+		
+	<!--  CONTENT ELEMENT, uid:41/image [begin] -->
+		<div id="c41" class="csc-default">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-left csc-textpic-above"><div class="csc-textpic-imagewrap" data-csc-images="1" data-csc-cols="1"><figure class="csc-textpic-image csc-textpic-last"><a href="http://www.altorag.ch" target="_top"><img src="fileadmin/user_upload/altorlogo.png" width="111" height="146" alt=""></a></figure></div></div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:41/image [end] -->
+		 <!-- Einbinden der logo Extension -->
+	</div>
+	<!-- Der Text im Header wird hier gerendert -->
+	<div class="header_text">
+		
+	<!--  CONTENT ELEMENT, uid:383/header [begin] -->
+		<div id="c383" class="csc-default">
+		<!--  Header: [begin] -->
+			<div class="csc-header csc-header-n1"><h1 class="csc-firstHeader">Ihr Fachpartner in der Region</h1></div>
+		<!--  Header: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:383/header [end] -->
+		
+	</div>
+	<!-- Hörmann Logo wird hier gerendert -->
+	<div id="logo_hoermann">
+		
+	<!--  CONTENT ELEMENT, uid:272/image [begin] -->
+		<div id="c272" class="csc-default csc-space-before-10">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-left csc-textpic-above"><div class="csc-textpic-imagewrap" data-csc-images="1" data-csc-cols="1"><figure class="csc-textpic-image csc-textpic-last"><a href="http://www.hoermann.ch" target="_blank"><img src="fileadmin/user_upload/Logo.png" width="150" height="33" alt=""></a></figure></div></div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:272/image [end] -->
+		 <!-- Einbinden der hoermann_logo Extension -->
+	</div>
+	<!-- Oberer Navigationsbereich -->
+	<div id="nav_top">
+	  <ul class="dropdown"><li class="first_li" ><a href="altor/ueber-uns/">Über uns</a></li><li><a href="altor/aktuelles/">Aktuelles</a></li><li><a href="altor/partner/">Partner</a></li><li><a href="altor/kontakt/">Kontakt</a></li><li><a href="altor/team/">Team</a></li><li class="last_li"><a href="altor/bildergalerie/">Bildergalerie</a></li><li class="search">
+
+
+	<!--
+
+		BEGIN: Content of extension "ke_search", plugin "tx_kesearch_pi1"
+
+	-->
+	<div class="tx-kesearch-pi1">
+		
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+	
+	jQuery("#nav #ke_search_sword").hide();
+	jQuery("#nav #kesearch_submit").css({
+			 left: '0px',
+		});
+
+	
+	jQuery("#nav #xajax_form_kesearch_pi1").mouseover(function(){
+		
+		jQuery("#nav #kesearch_submit").animate({
+			 left: '240px',
+		});
+		jQuery("#nav #ke_search_sword").show();
+		
+	 });
+	
+	jQuery("#nav #xajax_form_kesearch_pi1").mouseleave(function(){
+			jQuery("#nav #kesearch_submit").animate({
+			 left: '0px',
+		});
+		jQuery("#nav #ke_search_sword").hide();
+	 });
+});
+		
+
+	
+</script>
+
+
+
+<form method="get" id="xajax_form_kesearch_pi1" name="xajax_form_kesearch_pi1"  action="http://www.altorag.ch/index.php" class="static" >
+	<fieldset class="kesearch_searchbox">
+	<input type="hidden" name="id" value="32" />
+	
+
+	<div class="kesearchbox">
+		<input type="text" id="ke_search_sword" name="tx_kesearch_pi1[sword]"  value="Suchbegriff" onfocus="searchboxFocus(this);" />
+		<input type="image" id="kesearch_submit" src="fileadmin/theme//img/search.png" alt="Finden" class="submit" onclick="document.getElementById('pagenumber').value=1; document.getElementById('xajax_form_kesearch_pi1').submit();" />
+		<div class="clearer">&nbsp;</div>
+	</div>
+
+	<input id="pagenumber" type="hidden" name="tx_kesearch_pi1[page]" value="1" />
+	<input id="resetFilters" type="hidden" name="tx_kesearch_pi1[resetFilters]" value="0" />
+	<input id="sortByField" type="hidden" name="tx_kesearch_pi1[sortByField]" value="" />
+	<input id="sortByDir" type="hidden" name="tx_kesearch_pi1[sortByDir]" value="" />
+
+	
+	</fieldset>
+
+</form>
+
+	</div>
+	
+	<!-- END: Content of extension "ke_search", plugin "tx_kesearch_pi1" -->
+
+	</li></ul> <!-- Einbinden der nav_top Extension -->
+	</div>
+	<!-- Der Slider Bereich -->
+	<div id="slider">
+	  
+	<!--  CONTENT ELEMENT, uid:40/list [begin] -->
+		<div id="c40" class="csc-default">
+		<!--  Plugin inserted: [begin] -->
+			<div class="tx-imagecycle-pi1"><ul id="imagecycle_c40" class="tx-imagecycle-pi1-images"><li><img src="uploads/tx_imagecycle/slider_1_01.jpg" width="1200" height="420"   alt="" ></li></ul></div><noscript><ul class="tx-imagecycle-pi1-images"><li><img src="uploads/tx_imagecycle/slider_1_01.jpg" width="1200" height="420"   alt="" ></li></ul></noscript>
+		<!--  Plugin inserted: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:40/list [end] -->
+		 <!-- Einbinden der slider Extension -->
+	  <div class="sticker">
+	<!--  CONTENT ELEMENT, uid:423/image [begin] -->
+		<div id="c423" class="csc-default">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-left csc-textpic-above"><div class="csc-textpic-imagewrap" data-csc-images="1" data-csc-cols="1"><figure class="csc-textpic-image csc-textpic-last"><a href="https://www.facebook.com/AltorAG/" target="_blank"><img src="fileadmin/_processed_/csm_facebook_91c42806ea.png" width="190" height="190" alt=""></a></figure></div></div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:423/image [end] -->
+		</div> <!-- Einbinden des Stickers -->
+	</div>
+	<!-- Hauptnavigations Bereich -->
+	<div id="nav">
+	  <ul class="dropdown"><li class="first_li" ><a href="altor/garagentore/">Garagentore</a></li><li><a href="altor/antriebe/">Antriebe</a></li><li><a href="altor/haustueren/">Haustüren</a></li><li><a href="altor/industrietore/">Industrietore</a></li><li><a href="altor/tueren/">Türen</a></li><li class="last_li"><a href="altor/dienstleistungen/">Dienstleistungen</a></li></ul> <!-- Einbinden eines Extension Templates -->
+	</div>
+  </div>
+  <!-- Der Content Bereich -->
+  <div id="content">    
+	<!-- Der content_top Bereich -->
+	<div class="content_top"> 
+		
+	<!--  CONTENT ELEMENT, uid:320/text [begin] -->
+		<div id="c320" class="csc-default">
+		<!--  Header: [begin] -->
+			<div class="csc-header csc-header-n1"><h1 class="csc-firstHeader">Willkommen bei Altor AG</h1></div>
+		<!--  Header: [end] -->
+			
+		<!--  Text: [begin] -->
+			<p class="bodytext"><b>Ihre Partner für Tore, Türen und Antriebe</b></p>
+		<!--  Text: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:320/text [end] -->
+		
+	<!--  CONTENT ELEMENT, uid:319/gridelements_pi1 [begin] -->
+		<div id="c319" class="csc-default"><div class="two_col_grid"><div class="two_col_one">
+	<!--  CONTENT ELEMENT, uid:318/textpic [begin] -->
+		<div id="c318" class="csc-default">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic-text">
+		<!--  Text: [begin] -->
+			<div><p class="bodytext">Als offizieller Hörmann-Fachpartner in der Region Solothurn&nbsp;bieten wir Ihnen sämtliche Produkte und Dienstleistungen der Hörmann-Gruppe an. In den Regionen Solothurn und Mittelland gehören wir zu den führenden Unternehmen in diesem Bereich.</p></div><div><p class="bodytext">Wir freuen uns, Ihnen unsere Produktepalette vorstellen zu dürfen, für den privaten oder öffentlichen Bereich, Gewerbe oder Industrie.</p></div>
+		<!--  Text: [end] -->
+			</div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:318/textpic [end] -->
+		</div><div class="two_col_two">
+	<!--  CONTENT ELEMENT, uid:317/textpic [begin] -->
+		<div id="c317" class="csc-default">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic-text">
+		<!--  Text: [begin] -->
+			<p class="bodytext">Für weitere Auskünfte stehen wir Ihnen jederzeit gerne zur Verfügung und freuen uns, Ihnen Lösungen aufzuzeigen, welche Ihre Bedürfnisse erfüllen werden.</p><div><p class="bodytext">Besuchen Sie unsere grosse Ausstellung nach telefonischer Vereinbarung.</p></div>
+		<!--  Text: [end] -->
+			</div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:317/textpic [end] -->
+		</div></div></div>
+	<!--  CONTENT ELEMENT, uid:319/gridelements_pi1 [end] -->
+		
+	<!--  CONTENT ELEMENT, uid:413/image [begin] -->
+		<div id="c413" class="csc-default">
+		<!--  Header: [begin] -->
+			<div class="csc-header csc-header-n3"><h1>Bildergalerie</h1></div>
+		<!--  Header: [end] -->
+			
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-left csc-textpic-above"><div class="csc-textpic-imagewrap" data-csc-images="7" data-csc-cols="8"><div class="csc-textpic-imagerow csc-textpic-imagerow-last"><div class="csc-textpic-imagecolumn csc-textpic-firstcol"><figure class="csc-textpic-image csc-textpic-last"><a href="altor/bildergalerie/"><img src="fileadmin/_processed_/csm_DSC_0520_b2d9ec1489.jpg" width="260" height="174" alt=""></a></figure></div>
+<div class="csc-textpic-imagecolumn"><figure class="csc-textpic-image csc-textpic-last"><a href="altor/bildergalerie/"><img src="fileadmin/_processed_/csm_DSC_0499_1e51e7c4fe.jpg" width="260" height="173" alt=""></a></figure></div>
+<div class="csc-textpic-imagecolumn"><figure class="csc-textpic-image csc-textpic-last"><a href="altor/bildergalerie/"><img src="fileadmin/_processed_/csm_DSC_0491_26b189dfe1.jpg" width="260" height="174" alt=""></a></figure></div>
+<div class="csc-textpic-imagecolumn"><figure class="csc-textpic-image csc-textpic-last"><a href="altor/bildergalerie/"><img src="fileadmin/_processed_/csm_DSC_0331_ed6d9aecf2.jpg" width="260" height="173" alt=""></a></figure></div>
+<div class="csc-textpic-imagecolumn"><figure class="csc-textpic-image csc-textpic-last"><a href="altor/bildergalerie/"><img src="fileadmin/_processed_/csm_DSC_0012_82f6a2c9fc.jpg" width="260" height="174" alt=""></a></figure></div>
+<div class="csc-textpic-imagecolumn"><figure class="csc-textpic-image csc-textpic-last"><a href="altor/bildergalerie/"><img src="fileadmin/_processed_/csm_DSC_0044_062ec5ec29.jpg" width="260" height="170" alt=""></a></figure></div>
+<div class="csc-textpic-imagecolumn csc-textpic-lastcol"><figure class="csc-textpic-image csc-textpic-last"><a href="altor/bildergalerie/"><img src="fileadmin/_processed_/csm_DSC_0346_2578aa6ee5.jpg" width="260" height="173" alt=""></a></figure></div></div></div></div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:413/image [end] -->
+		
+	<!--  CONTENT ELEMENT, uid:414/html [begin] -->
+		<div id="c414" class="csc-default">
+		<!--  Raw HTML content: [begin] -->
+			<script type="text/javascript">
+  $(document).ready(function(){
+  $('#c413 .csc-textpic-imagerow').bxSlider({
+    slideWidth: 260,
+    minSlides: 4,
+    maxSlides: 4,
+    slideMargin: 10
+  });
+});
+
+</script>
+		<!--  Raw HTML content: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:414/html [end] -->
+		 <!-- Einbinden der content_top Extension -->
+	</div>
+	<!-- Der content_bottom Bereich -->
+	<div class="content_bottom">
+		
+	<!--  CONTENT ELEMENT, uid:321/header [begin] -->
+		<div id="c321" class="csc-default">
+		<!--  Header: [begin] -->
+			<div class="csc-header csc-header-n1"><h1 class="csc-firstHeader">Aktuelles</h1></div>
+		<!--  Header: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:321/header [end] -->
+		
+	<!--  CONTENT ELEMENT, uid:110/gridelements_pi1 [begin] -->
+		<div id="c110" class="csc-default"><div class="three_col_grid"><div class="three_col_one">
+	<!--  CONTENT ELEMENT, uid:378/image [begin] -->
+		<div id="c378" class="csc-default">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-left csc-textpic-above"><div class="csc-textpic-imagewrap" data-csc-images="1" data-csc-cols="1"><figure class="csc-textpic-image csc-textpic-last"><img src="fileadmin/altor/bilder/Hoermann_2019_web.jpg" width="248" height="285" alt=""></figure></div></div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:378/image [end] -->
+		
+	<!--  CONTENT ELEMENT, uid:109/textpic [begin] -->
+		<div id="c109" class="csc-default">
+		<!--  Header: [begin] -->
+			<div class="csc-header csc-header-n2"><h1>Aktionen</h1></div>
+		<!--  Header: [end] -->
+			
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic-text">
+		<!--  Text: [begin] -->
+			<p class="bodytext"><a href="fileadmin/altor/86177-EP2019-Beilage-CH-DE-O-Altor.pdf" title="Initiates file download" class="download">Hörmann Jahresaktion 2019</a></p>
+		<!--  Text: [end] -->
+			</div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:109/textpic [end] -->
+		</div><div class="three_col_two">
+	<!--  CONTENT ELEMENT, uid:379/image [begin] -->
+		<div id="c379" class="csc-default">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-left csc-textpic-above"><div class="csc-textpic-imagewrap" data-csc-images="1" data-csc-cols="1"><figure class="csc-textpic-image csc-textpic-last"><img src="fileadmin/altor/bilder/Ausstellung__380x285_.jpg" width="380" height="285" alt=""></figure></div></div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:379/image [end] -->
+		
+	<!--  CONTENT ELEMENT, uid:108/textpic [begin] -->
+		<div id="c108" class="csc-default">
+		<!--  Header: [begin] -->
+			<div class="csc-header csc-header-n2"><h1>MESSEN </h1></div>
+		<!--  Header: [end] -->
+			
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic-text">
+		<!--  Text: [begin] -->
+			<p class="bodytext"><b>Eigenheim&nbsp;Solothurn 2020<br /></b>05.03. - 08.03.2020</p>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext"><b>Herbstmesse&nbsp;Solothurn HESO&nbsp;2020<br /></b>18.09. - 27.09.2020</p>
+		<!--  Text: [end] -->
+			</div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:108/textpic [end] -->
+		</div><div class="three_col_three">
+	<!--  CONTENT ELEMENT, uid:380/image [begin] -->
+		<div id="c380" class="csc-default">
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic csc-textpic-left csc-textpic-above"><div class="csc-textpic-imagewrap" data-csc-images="1" data-csc-cols="1"><figure class="csc-textpic-image csc-textpic-last"><img src="fileadmin/altor/bilder/Holzinnentueren__380x285_.jpg" width="380" height="285" alt=""></figure></div></div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:380/image [end] -->
+		
+	<!--  CONTENT ELEMENT, uid:107/textpic [begin] -->
+		<div id="c107" class="csc-default">
+		<!--  Header: [begin] -->
+			<div class="csc-header csc-header-n2"><h1>Neuheiten</h1></div>
+		<!--  Header: [end] -->
+			
+		<!--  Image block: [begin] -->
+			<div class="csc-textpic-text">
+		<!--  Text: [begin] -->
+			<ul><li>Innentüren aus Holz - Ob klassisch oder modern, Weisslack oder Buche, mit Glas-Elementen oder Edelstahl-Applikationen. Für jeden Bauherrn die passende neue Holz-Innentüre.</li></ul><p class="bodytext">&nbsp;</p>
+<p class="bodytext">&nbsp;</p>
+		<!--  Text: [end] -->
+			</div>
+		<!--  Image block: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:107/textpic [end] -->
+		</div></div></div>
+	<!--  CONTENT ELEMENT, uid:110/gridelements_pi1 [end] -->
+		 <!-- Einbinden der content_bottom Extension -->
+	</div>
+  </div>
+  <!-- Der Footer Bereich --> 
+  <div id="footer">
+	<div class="address"></div> <!-- Einbinden der footer Extension -->
+	<div class="hotline">
+	<!--  CONTENT ELEMENT, uid:43/text [begin] -->
+		<div id="c43" class="csc-default">
+		<!--  Text: [begin] -->
+			<ul><li>Altor AG | Hans Huber-Strasse 38 | 4500 Solothurn | Telefon 032 938 20 20 | <a href="javascript:linkTo_UnCryptMailto('thpsav1pumvGhsavyhn5jo');" title="Öffnet ein Fenster zum Versenden der E-Mail" class="mail">info(at)altorag.ch</a></li></ul>
+		<!--  Text: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:43/text [end] -->
+		</div> <!-- Einbinden der footer_hotline Extension -->
+	<div class="urheberecht">
+	<!--  CONTENT ELEMENT, uid:23/text [begin] -->
+		<div id="c23" class="csc-default">
+		<!--  Text: [begin] -->
+			<p class="bodytext"><b>URHEBERECHTE</b><br />Die Bilder und Texte sind urheberrechtlich geschützt. Sämtliches Herunterladen, Kopieren und Weiterverwenden der Bilder und Texte ist untersagt und wird rechtlich geahndet. Die Urheberrechte liegen bei Loop &amp; Partner GmbH, Hörmann Schweiz AG und&nbsp;algate ag&nbsp;</p>
+		<!--  Text: [end] -->
+			</div>
+	<!--  CONTENT ELEMENT, uid:23/text [end] -->
+		</div> <!-- Einbinden der footer_text Extension -->
+  </div>
+</div>
+<script src="typo3conf/ext/t3colorbox/Resources/Public/JavaScript/jquery.colorbox-1.5.13.min.js?1433772949" type="text/javascript"></script>
+
+<script src="typo3conf/ext/powermail/Resources/Public/JavaScripts/jquery.datetimepicker.js?1433773126" type="text/javascript"></script>
+<script src="typo3conf/ext/powermail/Resources/Public/JavaScripts/parsley.min.js?1433773126" type="text/javascript"></script>
+<script src="typo3conf/ext/powermail/Resources/Public/JavaScripts/tabs.js?1433773126" type="text/javascript"></script>
+<script src="typo3conf/ext/powermail/Resources/Public/JavaScripts/form.js?1433773126" type="text/javascript"></script>
+<script src="typo3conf/ext/powermail/Resources/Public/JavaScripts/powermail_frontend.js?1433773126" type="text/javascript"></script>
+<script src="typo3temp/javascript_e5ee3d85bb.js?1433928084" type="text/javascript"></script>
+
+
+
+</body>
+</html>

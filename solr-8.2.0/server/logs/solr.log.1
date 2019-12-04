@@ -1,0 +1,1052 @@
+2019-11-25 15:13:03.707 INFO  (main) [   ] o.e.j.u.log Logging initialized @15889ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-11-25 15:13:03.786 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/etc/jetty.xml
+2019-11-25 15:13:03.837 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-11-25 15:13:03.837 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/etc/jetty-http.xml
+2019-11-25 15:13:03.841 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_222-b10
+2019-11-25 15:13:03.861 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/contexts/] at interval 0
+2019-11-25 15:13:04.091 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-11-25 15:13:04.099 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-11-25 15:13:04.100 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-11-25 15:13:04.101 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-11-25 15:13:04.157 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-11-25 15:13:04.161 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.2.0
+2019-11-25 15:13:04.161 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-11-25 15:13:04.161 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0
+2019-11-25 15:13:04.162 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-11-25T15:13:04.162Z
+2019-11-25 15:13:04.190 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr
+2019-11-25 15:13:04.195 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/solr.xml
+2019-11-25 15:13:04.248 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e, but no JMX reporters were configured - adding default JMX reporter.
+2019-11-25 15:13:04.519 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-11-25 15:13:04.622 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@7803bfd[provider=null,keyStore=null,trustStore=null]
+2019-11-25 15:13:04.622 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@7803bfd[provider=null,keyStore=null,trustStore=null]
+2019-11-25 15:13:04.738 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@60975100[provider=null,keyStore=null,trustStore=null]
+2019-11-25 15:13:04.738 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@60975100[provider=null,keyStore=null,trustStore=null]
+2019-11-25 15:13:09.894 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-11-25 15:13:09.895 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-11-25 15:13:09.950 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-25 15:13:09.950 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-25 15:13:09.955 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-25 15:13:09.989 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr
+2019-11-25 15:13:09.990 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [indeed, indeed2]
+2019-11-25 15:13:10.045 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4d02f94e{/solr,file:///Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr-webapp/webapp}
+2019-11-25 15:13:10.045 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.SolrResourceLoader [indeed] Added 61 libs to classloader, from paths: [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/clustering/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/extraction/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/langid/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/velocity/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/dist]
+2019-11-25 15:13:10.045 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.c.SolrResourceLoader [indeed2] Added 61 libs to classloader, from paths: [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/clustering/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/extraction/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/langid/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/velocity/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/dist]
+2019-11-25 15:13:10.069 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@131ef10{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-11-25 15:13:10.069 INFO  (main) [   ] o.e.j.s.Server Started @22252ms
+2019-11-25 15:13:10.173 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.2.0
+2019-11-25 15:13:10.173 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.2.0
+2019-11-25 15:13:10.367 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.s.IndexSchema [indeed] Schema name=nutch
+2019-11-25 15:13:10.368 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.s.IndexSchema [indeed2] Schema name=nutch
+2019-11-25 15:13:10.402 WARN  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.402 WARN  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.405 WARN  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.405 WARN  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.408 WARN  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.408 WARN  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.411 WARN  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.411 WARN  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.417 WARN  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.417 WARN  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.419 WARN  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.419 WARN  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.455 WARN  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.462 WARN  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2019-11-25 15:13:10.569 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2019-11-25 15:13:10.569 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2019-11-25 15:13:10.580 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.CoreContainer Creating SolrCore 'indeed' using configuration from instancedir /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/indeed, trusted=true
+2019-11-25 15:13:10.581 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.c.CoreContainer Creating SolrCore 'indeed2' using configuration from instancedir /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/indeed2, trusted=true
+2019-11-25 15:13:10.602 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.indeed2' (registry 'solr.core.indeed2') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-25 15:13:10.602 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.indeed' (registry 'solr.core.indeed') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-25 15:13:10.616 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.c.SolrCore [[indeed] ] Opening new SolrCore at [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/indeed], dataDir=[/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/indeed/data/]
+2019-11-25 15:13:10.616 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.c.SolrCore [[indeed2] ] Opening new SolrCore at [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/indeed2], dataDir=[/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/indeed2/data/]
+2019-11-25 15:13:10.654 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-11-25 15:13:10.654 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-11-25 15:13:16.162 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-11-25 15:13:16.162 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-11-25 15:13:16.194 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-11-25 15:13:16.194 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-11-25 15:13:16.286 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.s.SolrIndexSearcher Opening [Searcher@43566170[indeed2] main]
+2019-11-25 15:13:16.294 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/indeed2/conf
+2019-11-25 15:13:16.311 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-11-25 15:13:16.317 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-11-25 15:13:16.329 INFO  (coreLoadExecutor-9-thread-2) [   x:indeed2] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-11-25 15:13:16.346 INFO  (searcherExecutor-11-thread-1-processing-x:indeed2) [   x:indeed2] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@43566170[indeed2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_c(8.2.0):C490/1:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=9, timestamp=1574682739951}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_d(8.2.0):C2:[diagnostics={java.vendor=AdoptOpenJDK, os=Mac OS X, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574684103242}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 15:13:16.346 INFO  (searcherExecutor-11-thread-1-processing-x:indeed2) [   x:indeed2] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 15:13:16.346 INFO  (searcherExecutor-11-thread-1-processing-x:indeed2) [   x:indeed2] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-11-25 15:13:16.351 INFO  (searcherExecutor-11-thread-1-processing-x:indeed2) [   x:indeed2] o.a.s.c.SolrCore [indeed2] Registered new searcher Searcher@43566170[indeed2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_c(8.2.0):C490/1:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=9, timestamp=1574682739951}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_d(8.2.0):C2:[diagnostics={java.vendor=AdoptOpenJDK, os=Mac OS X, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574684103242}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 15:13:21.017 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-11-25 15:13:21.017 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-11-25 15:13:21.019 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-11-25 15:13:21.019 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-11-25 15:13:21.021 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.s.SolrIndexSearcher Opening [Searcher@3456f69f[indeed] main]
+2019-11-25 15:13:21.021 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/indeed/conf
+2019-11-25 15:13:21.022 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-11-25 15:13:21.022 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-11-25 15:13:21.023 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-11-25 15:13:21.023 INFO  (coreLoadExecutor-9-thread-1) [   x:indeed] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1651187175677493248
+2019-11-25 15:13:21.024 INFO  (searcherExecutor-10-thread-1-processing-x:indeed) [   x:indeed] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3456f69f[indeed] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-11-25 15:13:21.024 INFO  (searcherExecutor-10-thread-1-processing-x:indeed) [   x:indeed] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 15:13:21.024 INFO  (searcherExecutor-10-thread-1-processing-x:indeed) [   x:indeed] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-11-25 15:13:21.026 INFO  (searcherExecutor-10-thread-1-processing-x:indeed) [   x:indeed] o.a.s.c.SolrCore [indeed] Registered new searcher Searcher@3456f69f[indeed] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-11-25 15:14:31.137 INFO  (qtp961712517-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=18
+2019-11-25 15:14:31.218 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=12
+2019-11-25 15:14:31.228 INFO  (qtp961712517-20) [   x:companysearch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=companysearch&action=STATUS&wt=json} status=0 QTime=1
+2019-11-25 15:14:31.260 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.h.a.CoreAdminOperation core create command name=companysearch&action=CREATE&instanceDir=companysearch&wt=json
+2019-11-25 15:14:31.277 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.c.SolrResourceLoader [companysearch] Added 61 libs to classloader, from paths: [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/clustering/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/extraction/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/langid/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/velocity/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/dist]
+2019-11-25 15:14:31.289 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.2.0
+2019-11-25 15:14:31.309 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.s.ManagedIndexSchemaFactory The schema is configured as managed, but managed schema resource managed-schema not found - loading non-managed schema schema.xml instead
+2019-11-25 15:14:31.320 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.s.IndexSchema [companysearch] Schema name=nutch
+2019-11-25 15:14:31.391 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2019-11-25 15:14:31.408 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch/conf/managed-schema
+2019-11-25 15:14:31.409 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.s.ManagedIndexSchemaFactory After upgrading to managed schema, renamed the non-managed schema /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch/conf/schema.xml to /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch/conf/schema.xml.bak
+2019-11-25 15:14:31.409 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.c.CoreContainer Creating SolrCore 'companysearch' using configuration from instancedir /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch, trusted=true
+2019-11-25 15:14:31.409 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.companysearch' (registry 'solr.core.companysearch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-25 15:14:31.410 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.c.SolrCore [[companysearch] ] Opening new SolrCore at [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch], dataDir=[/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch/data/]
+2019-11-25 15:14:31.417 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-11-25 15:14:36.472 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-11-25 15:14:36.472 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-11-25 15:14:36.474 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-11-25 15:14:36.474 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-11-25 15:14:36.476 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@3446f401[companysearch] main]
+2019-11-25 15:14:36.476 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch/conf
+2019-11-25 15:14:36.476 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-11-25 15:14:36.476 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-11-25 15:14:36.477 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-11-25 15:14:36.478 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1651187254797795328
+2019-11-25 15:14:36.479 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3446f401[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-11-25 15:14:36.479 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 15:14:36.479 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-11-25 15:14:36.480 INFO  (qtp961712517-17) [   x:companysearch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=companysearch&action=CREATE&instanceDir=companysearch&wt=json} status=0 QTime=5219
+2019-11-25 15:14:36.480 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.SolrCore [companysearch] Registered new searcher Searcher@3446f401[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-11-25 15:32:25.279 INFO  (qtp961712517-20) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[https://tel.local.ch/en/q/Bern (1651188375441375232), https://tel.local.ch/en/q/Bern?page=2 (1651188375486464000), https://tel.local.ch/en/q/Bern?page=3 (1651188375490658304), https://tel.local.ch/en/q/Graub%C3%BCnden (1651188375494852608), https://tel.local.ch/en/q/Graub%C3%BCnden?page=2 (1651188375499046912), https://tel.local.ch/en/q/ticino (1651188375505338368), https://tel.local.ch/en/q/ticino/?page=2 (1651188375509532672), https://tel.local.ch/en/q/ticino/?page=3 (1651188375513726976)]} 0 95
+2019-11-25 15:32:25.292 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1651188375530504192,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-11-25 15:32:25.293 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4fe8a123 commitCommandVersion:1651188375530504192
+2019-11-25 15:32:25.351 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@174186c6[companysearch] main]
+2019-11-25 15:32:25.352 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-11-25 15:32:25.352 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@174186c6[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.2.0):C8:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574695945339}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 15:32:25.352 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 15:32:25.356 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.SolrCore [companysearch] Registered new searcher Searcher@174186c6[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.2.0):C8:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574695945339}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 15:32:25.360 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 68
+2019-11-25 15:32:25.362 INFO  (qtp961712517-25) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1651188375603904512,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-11-25 15:32:25.363 INFO  (qtp961712517-25) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2019-11-25 15:32:25.363 INFO  (qtp961712517-25) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-11-25 15:32:25.363 INFO  (qtp961712517-25) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 1
+2019-11-25 15:32:47.942 INFO  (qtp961712517-26) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1651188399280750592,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-11-25 15:32:47.942 INFO  (qtp961712517-26) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2019-11-25 15:32:47.943 INFO  (qtp961712517-26) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-11-25 15:32:47.943 INFO  (qtp961712517-26) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 1
+2019-11-25 15:33:15.588 INFO  (qtp961712517-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574695995483} status=0 QTime=0
+2019-11-25 15:33:15.600 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574695995483} status=0 QTime=12
+2019-11-25 15:33:18.676 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574695995483} status=0 QTime=0
+2019-11-25 15:33:18.681 INFO  (qtp961712517-25) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1574695998667} status=0 QTime=1
+2019-11-25 15:33:18.692 INFO  (qtp961712517-24) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1574695995484&ts=1574695995484} status=503 QTime=3
+2019-11-25 15:33:18.693 INFO  (qtp961712517-51) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/replication params={wt=json&command=details&_=1574695998667} status=0 QTime=9
+2019-11-25 15:33:18.703 INFO  (qtp961712517-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574695995483} status=0 QTime=27
+2019-11-25 15:33:18.708 INFO  (qtp961712517-50) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/system params={wt=json&_=1574695998667} status=0 QTime=29
+2019-11-25 15:33:28.321 INFO  (qtp961712517-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574695995483} status=0 QTime=0
+2019-11-25 15:33:28.333 INFO  (qtp961712517-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574695995483} status=0 QTime=12
+2019-11-25 15:33:30.327 INFO  (qtp961712517-24) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=*:*&_=1574695995559} hits=8 status=0 QTime=26
+2019-11-25 15:33:46.850 INFO  (qtp961712517-22) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=content:"amavita"&_=1574695995559} hits=1 status=0 QTime=7
+2019-11-25 15:44:59.688 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[https://tel.local.ch/en/q/Bern (1651189166551072768), https://tel.local.ch/en/q/Bern?page=2 (1651189166555267072), https://tel.local.ch/en/q/Bern?page=3 (1651189166557364224), https://tel.local.ch/en/q/Graub%C3%BCnden (1651189166559461376), https://tel.local.ch/en/q/Graub%C3%BCnden?page=2 (1651189166562607104), https://tel.local.ch/en/q/Ticino0(Canton)?filter%5Bentry_type%5D=business&rid=hVe6&sort=name (1651189166567849984), https://tel.local.ch/en/q/ticino/?page=2 (1651189166568898560), https://tel.local.ch/en/q/ticino/?page=5 (1651189166570995712)]} 0 21
+2019-11-25 15:44:59.700 INFO  (qtp961712517-20) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1651189166584627200,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-11-25 15:44:59.700 INFO  (qtp961712517-20) [   x:companysearch] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4fe8a123 commitCommandVersion:1651189166584627200
+2019-11-25 15:44:59.729 INFO  (qtp961712517-20) [   x:companysearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@4cc700[companysearch] main]
+2019-11-25 15:44:59.730 INFO  (qtp961712517-20) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-11-25 15:44:59.730 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4cc700[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.2.0):C8/6:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574695945339}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(8.2.0):C8:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574696699713}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 15:44:59.730 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 15:44:59.734 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.SolrCore [companysearch] Registered new searcher Searcher@4cc700[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.2.0):C8/6:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574695945339}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(8.2.0):C8:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574696699713}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 15:44:59.735 INFO  (qtp961712517-20) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 35
+2019-11-25 15:44:59.737 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1651189166623424512,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-11-25 15:44:59.737 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4fe8a123 commitCommandVersion:1651189166623424512
+2019-11-25 15:44:59.740 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@bb4a756[companysearch] main]
+2019-11-25 15:44:59.740 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-11-25 15:44:59.741 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@bb4a756[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.2.0):C8/6:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574695945339}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(8.2.0):C8:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574696699713}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 15:44:59.741 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 15:44:59.743 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.SolrCore [companysearch] Registered new searcher Searcher@bb4a756[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.2.0):C8/6:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574695945339}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(8.2.0):C8:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574696699713}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 15:44:59.744 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 7
+2019-11-25 15:45:22.515 INFO  (qtp961712517-26) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1651189190507888640,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-11-25 15:45:22.515 INFO  (qtp961712517-26) [   x:companysearch] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4fe8a123 commitCommandVersion:1651189190507888640
+2019-11-25 15:45:22.522 INFO  (qtp961712517-26) [   x:companysearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@33c10bf3[companysearch] main]
+2019-11-25 15:45:22.522 INFO  (qtp961712517-26) [   x:companysearch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-11-25 15:45:22.522 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@33c10bf3[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574696699726}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 15:45:22.522 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 15:45:22.524 INFO  (searcherExecutor-20-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.SolrCore [companysearch] Registered new searcher Searcher@33c10bf3[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574696699726}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 15:45:22.530 INFO  (qtp961712517-26) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 15
+2019-11-25 16:19:54.890 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{} 0 53
+2019-11-25 16:19:54.890 ERROR (qtp961712517-23) [   x:companysearch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: copyField dest :'DetailEntryName_str' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:916)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:784)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:82)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:450)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 16:19:54.891 ERROR (qtp961712517-23) [   x:companysearch] o.a.s.s.HttpSolrCall null:org.apache.solr.common.SolrException: copyField dest :'DetailEntryName_str' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:916)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:784)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:82)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:450)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 16:24:54.335 INFO  (qtp961712517-52) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_15 (1651191677540368384)]} 0 2
+2019-11-25 16:24:54.341 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_16 (1651191677546659840)]} 0 2
+2019-11-25 16:24:54.346 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_17 (1651191677551902720)]} 0 1
+2019-11-25 16:24:54.350 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_18 (1651191677557145600)]} 0 1
+2019-11-25 16:24:54.355 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_19 (1651191677561339904)]} 0 1
+2019-11-25 16:24:54.359 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_20 (1651191677566582784)]} 0 1
+2019-11-25 16:24:54.364 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_21 (1651191677570777088)]} 0 1
+2019-11-25 16:24:54.368 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_22 (1651191677576019968)]} 0 1
+2019-11-25 16:24:54.373 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_23 (1651191677580214272)]} 0 1
+2019-11-25 16:24:54.377 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_24 (1651191677585457152)]} 0 1
+2019-11-25 16:24:54.382 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_25 (1651191677589651456)]} 0 1
+2019-11-25 16:24:54.386 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_26 (1651191677593845760)]} 0 0
+2019-11-25 16:24:54.390 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_27 (1651191677599088640)]} 0 0
+2019-11-25 16:24:54.394 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_28 (1651191677603282944)]} 0 1
+2019-11-25 16:24:54.399 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_29 (1651191677607477248)]} 0 1
+2019-11-25 16:24:54.403 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_30 (1651191677611671552)]} 0 1
+2019-11-25 16:24:54.408 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_31 (1651191677616914432)]} 0 1
+2019-11-25 16:24:54.412 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_32 (1651191677621108736)]} 0 0
+2019-11-25 16:24:54.416 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_33 (1651191677625303040)]} 0 0
+2019-11-25 16:24:54.420 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_34 (1651191677630545920)]} 0 1
+2019-11-25 16:24:54.425 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_35 (1651191677634740224)]} 0 0
+2019-11-25 16:24:54.429 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_36 (1651191677638934528)]} 0 0
+2019-11-25 16:24:54.432 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_37 (1651191677643128832)]} 0 0
+2019-11-25 16:24:54.436 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_38 (1651191677647323136)]} 0 0
+2019-11-25 16:24:54.441 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_39 (1651191677651517440)]} 0 1
+2019-11-25 16:24:54.445 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_40 (1651191677655711744)]} 0 1
+2019-11-25 16:24:54.449 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_41 (1651191677660954624)]} 0 0
+2019-11-25 16:24:54.453 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_42 (1651191677665148928)]} 0 0
+2019-11-25 16:24:54.457 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_43 (1651191677668294656)]} 0 0
+2019-11-25 16:24:54.460 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_44 (1651191677672488960)]} 0 0
+2019-11-25 16:24:54.464 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_45 (1651191677675634688)]} 0 0
+2019-11-25 16:24:54.468 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_46 (1651191677679828992)]} 0 1
+2019-11-25 16:24:54.472 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_47 (1651191677684023296)]} 0 0
+2019-11-25 16:24:54.476 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_48 (1651191677689266176)]} 0 0
+2019-11-25 16:24:54.480 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_49 (1651191677693460480)]} 0 0
+2019-11-25 16:24:54.484 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_50 (1651191677697654784)]} 0 0
+2019-11-25 16:24:54.488 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_51 (1651191677701849088)]} 0 0
+2019-11-25 16:24:54.492 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_52 (1651191677706043392)]} 0 0
+2019-11-25 16:24:54.496 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_53 (1651191677709189120)]} 0 0
+2019-11-25 16:24:54.500 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_54 (1651191677713383424)]} 0 0
+2019-11-25 16:24:54.504 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_55 (1651191677718626304)]} 0 0
+2019-11-25 16:24:54.508 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_56 (1651191677722820608)]} 0 0
+2019-11-25 16:24:54.512 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_57 (1651191677727014912)]} 0 0
+2019-11-25 16:24:54.516 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_58 (1651191677730160640)]} 0 0
+2019-11-25 16:24:54.520 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_59 (1651191677734354944)]} 0 0
+2019-11-25 16:24:54.523 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_60 (1651191677738549248)]} 0 0
+2019-11-25 16:24:54.528 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_61 (1651191677742743552)]} 0 1
+2019-11-25 16:24:54.532 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_62 (1651191677747986432)]} 0 0
+2019-11-25 16:24:54.536 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_63 (1651191677752180736)]} 0 0
+2019-11-25 16:24:54.540 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_64 (1651191677756375040)]} 0 0
+2019-11-25 16:24:54.544 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.u.p.LogUpdateProcessorFactory [companysearch]  webapp=/solr path=/update params={}{add=[doc_65 (1651191677760569344)]} 0 0
+2019-11-25 16:25:03.603 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 16:25:03.616 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=13
+2019-11-25 16:25:06.448 INFO  (qtp961712517-20) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=*:*&_=1574699103574} hits=10 status=0 QTime=0
+2019-11-25 16:25:09.340 INFO  (commitScheduler-23-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-11-25 16:25:09.340 INFO  (commitScheduler-23-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4fe8a123 commitCommandVersion:0
+2019-11-25 16:25:09.355 INFO  (commitScheduler-23-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@31ee0ecf[companysearch] realtime]
+2019-11-25 16:25:09.355 INFO  (commitScheduler-23-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-11-25 16:25:29.759 INFO  (qtp961712517-24) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=id:"doc_"&_=1574699103574} hits=0 status=0 QTime=0
+2019-11-25 16:25:44.762 INFO  (qtp961712517-20) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=*:*&_=1574699103574} hits=10 status=0 QTime=0
+2019-11-25 16:26:19.029 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 16:26:19.032 INFO  (qtp961712517-25) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1574699179013} status=0 QTime=2
+2019-11-25 16:26:19.046 INFO  (qtp961712517-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=17
+2019-11-25 16:26:34.003 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 16:26:34.007 INFO  (qtp961712517-18) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1574699179013} status=0 QTime=0
+2019-11-25 16:26:34.008 INFO  (qtp961712517-24) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/replication params={wt=json&command=details&_=1574699193990} status=0 QTime=0
+2019-11-25 16:26:34.012 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1574699103495&ts=1574699103495} status=503 QTime=0
+2019-11-25 16:26:34.033 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/system params={wt=json&_=1574699193990} status=0 QTime=23
+2019-11-25 16:26:34.035 INFO  (qtp961712517-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=28
+2019-11-25 16:26:53.777 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=10
+2019-11-25 16:27:16.282 INFO  (qtp961712517-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 16:27:16.285 INFO  (qtp961712517-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574699103495} status=0 QTime=2
+2019-11-25 16:27:16.296 INFO  (qtp961712517-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=14
+2019-11-25 16:27:16.313 INFO  (qtp961712517-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 16:27:16.316 INFO  (qtp961712517-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574699103495} status=0 QTime=1
+2019-11-25 16:27:16.334 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=19
+2019-11-25 16:27:27.587 INFO  (qtp961712517-24) [   x:test] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=test&action=CREATE&config=solrconfig.xml&instanceDir=test&wt=json&_=1574699103495
+2019-11-25 16:27:27.590 ERROR (qtp961712517-24) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'test': Unable to create core [test] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/test'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1195)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:92)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:360)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:396)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:180)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:820)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:786)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:546)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [test]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1266)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1156)
+	... 44 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core test: Error loading solr config from /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/test/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:96)
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1294)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1241)
+	... 45 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/test/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:189)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:108)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:90)
+	... 47 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/test'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:407)
+	at org.apache.solr.core.SolrResourceLoader.openConfig(SolrResourceLoader.java:362)
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:117)
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:204)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:181)
+	... 49 more
+
+2019-11-25 16:27:27.591 INFO  (qtp961712517-24) [   x:test] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=test&action=CREATE&config=solrconfig.xml&instanceDir=test&wt=json&_=1574699103495} status=400 QTime=3
+2019-11-25 16:27:40.556 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.c.SolrResourceLoader [companysearch] Added 61 libs to classloader, from paths: [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/clustering/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/extraction/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/langid/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/velocity/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/dist]
+2019-11-25 16:27:40.568 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.2.0
+2019-11-25 16:27:40.591 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.s.IndexSchema [companysearch] Schema name=nutch
+2019-11-25 16:27:40.648 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2019-11-25 16:27:40.653 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.c.CoreContainer Reloading SolrCore 'companysearch' using configuration from instancedir /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch
+2019-11-25 16:27:40.666 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.companysearch' (registry 'solr.core.companysearch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-25 16:27:40.666 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.c.SolrCore [[companysearch] ] Opening new SolrCore at [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch], dataDir=[/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch/data/]
+2019-11-25 16:27:40.668 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-11-25 16:27:45.713 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-11-25 16:27:45.714 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-11-25 16:27:45.716 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@2d95823e[companysearch] main]
+2019-11-25 16:27:45.717 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch/conf
+2019-11-25 16:27:45.717 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-11-25 16:27:45.717 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-11-25 16:27:45.718 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-11-25 16:27:45.722 INFO  (searcherExecutor-25-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2d95823e[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574696699726}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.2.0):C51:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574699109345}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 16:27:45.722 INFO  (searcherExecutor-25-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 16:27:45.722 INFO  (searcherExecutor-25-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-11-25 16:27:45.724 INFO  (searcherExecutor-25-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.SolrCore [companysearch] Registered new searcher Searcher@2d95823e[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574696699726}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.2.0):C51:[diagnostics={os=Mac OS X, java.vendor=AdoptOpenJDK, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574699109345}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 16:27:45.726 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2019-11-25 16:27:45.729 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@461e3916[companysearch] main]
+2019-11-25 16:27:45.729 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.c.SolrCore [companysearch]  CLOSING SolrCore org.apache.solr.core.SolrCore@15b67858
+2019-11-25 16:27:45.729 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.companysearch, tag=15b67858
+2019-11-25 16:27:45.729 INFO  (searcherExecutor-25-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@461e3916[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574696699726}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.2.0):C51:[diagnostics={java.vendor=AdoptOpenJDK, os=Mac OS X, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574699109345}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 16:27:45.729 INFO  (searcherExecutor-25-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 16:27:45.730 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@42bf8e4f: rootName = null, domain = solr.core.companysearch, service url = null, agent id = null] for registry solr.core.companysearch / com.codahale.metrics.MetricRegistry@72ec9ce0
+2019-11-25 16:27:45.731 INFO  (searcherExecutor-25-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.SolrCore [companysearch] Registered new searcher Searcher@461e3916[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574696699726}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.2.0):C51:[diagnostics={java.vendor=AdoptOpenJDK, os=Mac OS X, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574699109345}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 16:27:45.735 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=companysearch&action=RELOAD&wt=json&_=1574699103495} status=0 QTime=5192
+2019-11-25 16:27:46.763 INFO  (qtp961712517-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 16:27:46.766 INFO  (qtp961712517-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574699103495} status=0 QTime=3
+2019-11-25 16:27:46.777 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=13
+2019-11-25 16:27:55.951 INFO  (qtp961712517-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 16:27:55.970 INFO  (qtp961712517-26) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1574699179013} status=0 QTime=0
+2019-11-25 16:27:55.971 INFO  (qtp961712517-58) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/replication params={wt=json&command=details&_=1574699193990} status=0 QTime=0
+2019-11-25 16:27:55.976 INFO  (qtp961712517-25) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1574699103495&ts=1574699103495} status=503 QTime=0
+2019-11-25 16:27:55.997 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=28
+2019-11-25 16:27:55.999 INFO  (qtp961712517-20) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/system params={wt=json&_=1574699193990} status=0 QTime=28
+2019-11-25 16:27:58.638 INFO  (qtp961712517-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 16:27:58.651 INFO  (qtp961712517-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=13
+2019-11-25 16:28:07.424 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=id:"dic_"&_=1574699103574} hits=0 status=0 QTime=0
+2019-11-25 16:28:25.557 INFO  (qtp961712517-23) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=*:*&_=1574699103574} hits=61 status=0 QTime=0
+2019-11-25 16:28:42.160 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=*:*&rows=61&_=1574699103574} hits=61 status=0 QTime=0
+2019-11-25 16:33:23.795 INFO  (qtp961712517-22) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=content:"sorengo"&rows=61&_=1574699103574} hits=0 status=0 QTime=1
+2019-11-25 16:33:28.151 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=content:"Sorengo"&rows=61&_=1574699103574} hits=0 status=0 QTime=0
+2019-11-25 16:33:46.813 INFO  (qtp961712517-22) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=*:*&rows=61&_=1574699103574} hits=61 status=0 QTime=0
+2019-11-25 16:34:34.268 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=content:"Chiasso"&rows=61&_=1574699103574} hits=1 status=0 QTime=0
+2019-11-25 16:34:42.074 INFO  (qtp961712517-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 16:34:42.077 INFO  (qtp961712517-18) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1574699179013} status=0 QTime=0
+2019-11-25 16:34:42.081 INFO  (qtp961712517-22) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1574699103495&ts=1574699103495} status=503 QTime=0
+2019-11-25 16:34:42.081 INFO  (qtp961712517-25) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/replication params={wt=json&command=details&_=1574699193990} status=0 QTime=0
+2019-11-25 16:34:42.098 INFO  (qtp961712517-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=20
+2019-11-25 16:34:42.098 INFO  (qtp961712517-65) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/admin/system params={wt=json&_=1574699193990} status=0 QTime=20
+2019-11-25 16:34:46.746 INFO  (qtp961712517-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 16:34:46.758 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=12
+2019-11-25 16:34:49.027 INFO  (qtp961712517-22) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=*:*&_=1574699103574} hits=61 status=0 QTime=0
+2019-11-25 16:35:00.169 INFO  (qtp961712517-19) [   x:companysearch] o.a.s.c.S.Request [companysearch]  webapp=/solr path=/select params={q=*:*&rows=61&_=1574699103574} hits=61 status=0 QTime=0
+2019-11-25 16:58:59.599 INFO  (qtp961712517-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=11
+2019-11-25 16:58:59.659 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=9
+2019-11-25 16:58:59.665 INFO  (qtp961712517-64) [   x:test] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test&action=STATUS&wt=json} status=0 QTime=0
+2019-11-25 17:00:53.962 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 17:00:53.964 INFO  (qtp961712517-72) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574699103495} status=0 QTime=1
+2019-11-25 17:00:53.980 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=18
+2019-11-25 17:00:53.999 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574699103495} status=0 QTime=0
+2019-11-25 17:00:54.002 INFO  (qtp961712517-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574699103495} status=0 QTime=1
+2019-11-25 17:00:54.022 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574699103495} status=0 QTime=22
+2019-11-25 17:01:04.306 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:04.325 INFO  (qtp961712517-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=18
+2019-11-25 17:01:04.341 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=13
+2019-11-25 17:01:09.899 INFO  (qtp961712517-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:09.912 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1574701269894} status=0 QTime=12
+2019-11-25 17:01:09.917 INFO  (qtp961712517-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=17
+2019-11-25 17:01:11.222 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:11.224 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701264213} status=0 QTime=1
+2019-11-25 17:01:11.236 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=13
+2019-11-25 17:01:11.257 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:11.259 INFO  (qtp961712517-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701264213} status=0 QTime=2
+2019-11-25 17:01:11.271 INFO  (qtp961712517-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=13
+2019-11-25 17:01:13.511 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:13.513 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701264213} status=0 QTime=1
+2019-11-25 17:01:13.529 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=18
+2019-11-25 17:01:14.262 INFO  (qtp961712517-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:14.264 INFO  (qtp961712517-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701264213} status=0 QTime=1
+2019-11-25 17:01:14.276 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=14
+2019-11-25 17:01:16.750 INFO  (qtp961712517-58) [   x:indeed2] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.indeed2, tag=null
+2019-11-25 17:01:16.750 INFO  (qtp961712517-58) [   x:indeed2] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1182a948: rootName = null, domain = solr.core.indeed2, service url = null, agent id = null] for registry solr.core.indeed2 / com.codahale.metrics.MetricRegistry@57eb4f0a
+2019-11-25 17:01:16.757 INFO  (qtp961712517-58) [   x:indeed2] o.a.s.c.SolrCore [indeed2]  CLOSING SolrCore org.apache.solr.core.SolrCore@26c941e
+2019-11-25 17:01:16.757 INFO  (qtp961712517-58) [   x:indeed2] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.indeed2, tag=26c941e
+2019-11-25 17:01:16.762 INFO  (qtp961712517-58) [   x:indeed2] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=indeed2&action=UNLOAD&wt=json&_=1574701264213} status=0 QTime=13
+2019-11-25 17:01:16.793 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:16.797 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701264213} status=0 QTime=1
+2019-11-25 17:01:16.814 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=17
+2019-11-25 17:01:16.828 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:16.830 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:16.845 INFO  (qtp961712517-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=16
+2019-11-25 17:01:18.037 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:18.038 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701264213} status=0 QTime=1
+2019-11-25 17:01:18.052 INFO  (qtp961712517-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=15
+2019-11-25 17:01:19.174 INFO  (qtp961712517-58) [   x:indeed] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.indeed, tag=null
+2019-11-25 17:01:19.174 INFO  (qtp961712517-58) [   x:indeed] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4ec65398: rootName = null, domain = solr.core.indeed, service url = null, agent id = null] for registry solr.core.indeed / com.codahale.metrics.MetricRegistry@561d0d40
+2019-11-25 17:01:19.178 INFO  (qtp961712517-58) [   x:indeed] o.a.s.c.SolrCore [indeed]  CLOSING SolrCore org.apache.solr.core.SolrCore@16ebacc
+2019-11-25 17:01:19.178 INFO  (qtp961712517-58) [   x:indeed] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.indeed, tag=16ebacc
+2019-11-25 17:01:19.180 INFO  (qtp961712517-58) [   x:indeed] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=indeed&action=UNLOAD&wt=json&_=1574701264213} status=0 QTime=7
+2019-11-25 17:01:19.205 INFO  (qtp961712517-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:19.209 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:19.227 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=18
+2019-11-25 17:01:19.242 INFO  (qtp961712517-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:19.243 INFO  (qtp961712517-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701264213} status=0 QTime=0
+2019-11-25 17:01:19.256 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701264213} status=0 QTime=13
+2019-11-25 17:01:52.500 INFO  (qtp961712517-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=10
+2019-11-25 17:01:52.562 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=9
+2019-11-25 17:01:52.568 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=mytest1&action=STATUS&wt=json} status=0 QTime=0
+2019-11-25 17:01:52.609 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.h.a.CoreAdminOperation core create command name=mytest1&action=CREATE&instanceDir=mytest1&wt=json
+2019-11-25 17:01:52.620 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.SolrResourceLoader [mytest1] Added 61 libs to classloader, from paths: [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/clustering/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/extraction/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/langid/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/velocity/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/dist]
+2019-11-25 17:01:52.633 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.2.0
+2019-11-25 17:01:52.649 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.s.ManagedIndexSchemaFactory The schema is configured as managed, but managed schema resource managed-schema not found - loading non-managed schema schema.xml instead
+2019-11-25 17:01:52.653 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.s.IndexSchema [mytest1] Schema name=nutch
+2019-11-25 17:01:52.683 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2019-11-25 17:01:52.689 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1/conf/managed-schema
+2019-11-25 17:01:52.690 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.s.ManagedIndexSchemaFactory After upgrading to managed schema, renamed the non-managed schema /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1/conf/schema.xml to /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1/conf/schema.xml.bak
+2019-11-25 17:01:52.690 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.CoreContainer Creating SolrCore 'mytest1' using configuration from instancedir /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1, trusted=true
+2019-11-25 17:01:52.691 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mytest1' (registry 'solr.core.mytest1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-25 17:01:52.691 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.SolrCore [[mytest1] ] Opening new SolrCore at [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1], dataDir=[/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1/data/]
+2019-11-25 17:01:52.694 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-11-25 17:01:57.742 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-11-25 17:01:57.743 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-11-25 17:01:57.744 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-11-25 17:01:57.745 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-11-25 17:01:57.750 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.s.SolrIndexSearcher Opening [Searcher@76ec2965[mytest1] main]
+2019-11-25 17:01:57.751 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1/conf
+2019-11-25 17:01:57.751 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-11-25 17:01:57.751 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-11-25 17:01:57.753 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-11-25 17:01:57.754 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1651194008965218304
+2019-11-25 17:01:57.756 INFO  (searcherExecutor-29-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@76ec2965[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-11-25 17:01:57.756 INFO  (searcherExecutor-29-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 17:01:57.756 INFO  (searcherExecutor-29-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-11-25 17:01:57.757 INFO  (searcherExecutor-29-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.SolrCore [mytest1] Registered new searcher Searcher@76ec2965[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-11-25 17:01:57.757 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=mytest1&action=CREATE&instanceDir=mytest1&wt=json} status=0 QTime=5147
+2019-11-25 17:04:01.604 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Canvetto Federale (1651194138829258752)]} 0 3
+2019-11-25 17:04:01.610 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Canvetto Federale (1651194138836598784)]} 0 1
+2019-11-25 17:04:01.614 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Canvetto Federale (1651194138840793088)]} 0 0
+2019-11-25 17:04:01.618 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Canvetto Federale (1651194138846035968)]} 0 1
+2019-11-25 17:04:01.623 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Canvetto Federale (1651194138850230272)]} 0 0
+2019-11-25 17:04:01.627 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Garni Villa Siesta Park (1651194138854424576)]} 0 0
+2019-11-25 17:04:01.630 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Garni Villa Siesta Park (1651194138858618880)]} 0 0
+2019-11-25 17:04:01.633 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Garni Villa Siesta Park (1651194138861764608)]} 0 0
+2019-11-25 17:04:01.636 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Garni Villa Siesta Park (1651194138864910336)]} 0 0
+2019-11-25 17:04:01.639 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Garni Villa Siesta Park (1651194138868056064)]} 0 0
+2019-11-25 17:04:01.643 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Garni Villa Siesta Park (1651194138871201792)]} 0 0
+2019-11-25 17:04:01.647 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_ECOTAXI (1651194138875396096)]} 0 0
+2019-11-25 17:04:01.651 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_ECOTAXI (1651194138879590400)]} 0 0
+2019-11-25 17:04:01.655 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_ECOTAXI (1651194138883784704)]} 0 0
+2019-11-25 17:04:01.658 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_ECOTAXI (1651194138887979008)]} 0 0
+2019-11-25 17:04:01.662 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_ECOTAXI (1651194138892173312)]} 0 0
+2019-11-25 17:04:01.666 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_I Grappoli (1651194138896367616)]} 0 1
+2019-11-25 17:04:01.671 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_I Grappoli (1651194138900561920)]} 0 0
+2019-11-25 17:04:01.674 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_I Grappoli (1651194138904756224)]} 0 0
+2019-11-25 17:04:01.677 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_I Grappoli (1651194138907901952)]} 0 0
+2019-11-25 17:04:01.680 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_I Grappoli (1651194138911047680)]} 0 0
+2019-11-25 17:04:01.683 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Salone Rosita (1651194138914193408)]} 0 0
+2019-11-25 17:04:01.686 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Salone Rosita (1651194138917339136)]} 0 0
+2019-11-25 17:04:01.690 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Salone Rosita (1651194138921533440)]} 0 0
+2019-11-25 17:04:01.694 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Hotel Ristorante America (1651194138924679168)]} 0 0
+2019-11-25 17:04:01.698 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Hotel Ristorante America (1651194138928873472)]} 0 0
+2019-11-25 17:04:01.701 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Hotel Ristorante America (1651194138933067776)]} 0 0
+2019-11-25 17:04:01.705 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Hotel Ristorante America (1651194138936213504)]} 0 0
+2019-11-25 17:04:01.708 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Hotel Ristorante America (1651194138940407808)]} 0 0
+2019-11-25 17:04:01.711 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_San Giorgio (1651194138943553536)]} 0 0
+2019-11-25 17:04:01.714 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_San Giorgio (1651194138946699264)]} 0 0
+2019-11-25 17:04:01.717 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_San Giorgio (1651194138949844992)]} 0 0
+2019-11-25 17:04:01.720 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_San Giorgio (1651194138952990720)]} 0 0
+2019-11-25 17:04:01.723 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_dr. med. dent. Benatti Gianfranco (1651194138956136448)]} 0 0
+2019-11-25 17:04:01.726 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_dr. med. dent. Benatti Gianfranco (1651194138958233600)]} 0 0
+2019-11-25 17:04:01.729 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_dr. med. dent. Benatti Gianfranco (1651194138961379328)]} 0 0
+2019-11-25 17:04:01.732 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_dr. med. dent. Benatti Gianfranco (1651194138965573632)]} 0 0
+2019-11-25 17:04:01.737 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_FM Hair and Beauty (1651194138969767936)]} 0 0
+2019-11-25 17:04:01.741 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_FM Hair and Beauty (1651194138973962240)]} 0 0
+2019-11-25 17:04:01.744 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_FM Hair and Beauty (1651194138978156544)]} 0 0
+2019-11-25 17:04:01.748 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_FM Hair and Beauty (1651194138982350848)]} 0 0
+2019-11-25 17:04:01.751 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_FM Hair and Beauty (1651194138985496576)]} 0 0
+2019-11-25 17:04:01.754 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_FM Hair and Beauty (1651194138988642304)]} 0 0
+2019-11-25 17:04:01.757 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Pasinelli Francesco SA (1651194138991788032)]} 0 0
+2019-11-25 17:04:01.760 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Pasinelli Francesco SA (1651194138994933760)]} 0 0
+2019-11-25 17:04:01.764 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Pasinelli Francesco SA (1651194138998079488)]} 0 1
+2019-11-25 17:04:01.769 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Pasinelli Francesco SA (1651194139003322368)]} 0 0
+2019-11-25 17:04:01.772 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Pasinelli Francesco SA (1651194139007516672)]} 0 0
+2019-11-25 17:04:01.775 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Pasinelli Francesco SA (1651194139010662400)]} 0 0
+2019-11-25 17:04:16.608 INFO  (commitScheduler-32-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-11-25 17:04:16.609 INFO  (commitScheduler-32-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4ae4fc38 commitCommandVersion:0
+2019-11-25 17:04:16.624 INFO  (commitScheduler-32-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@440d076b[mytest1] realtime]
+2019-11-25 17:04:16.624 INFO  (commitScheduler-32-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-11-25 17:04:17.934 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:04:17.937 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701457856} status=0 QTime=2
+2019-11-25 17:04:17.948 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=13
+2019-11-25 17:04:20.306 INFO  (qtp961712517-83) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:04:20.307 INFO  (qtp961712517-73) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1574701460299} status=0 QTime=0
+2019-11-25 17:04:20.313 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/replication params={wt=json&command=details&_=1574701460299} status=0 QTime=1
+2019-11-25 17:04:20.315 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1574701457857&ts=1574701457857} status=503 QTime=0
+2019-11-25 17:04:20.333 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=26
+2019-11-25 17:04:20.333 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/admin/system params={wt=json&_=1574701460299} status=0 QTime=20
+2019-11-25 17:04:27.972 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:04:27.974 INFO  (qtp961712517-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701457856} status=0 QTime=1
+2019-11-25 17:04:27.988 INFO  (qtp961712517-83) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=15
+2019-11-25 17:04:28.012 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:04:28.013 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701457856} status=0 QTime=1
+2019-11-25 17:04:28.025 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=12
+2019-11-25 17:04:29.395 INFO  (qtp961712517-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:04:29.399 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701457856} status=0 QTime=1
+2019-11-25 17:04:29.410 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=14
+2019-11-25 17:04:30.522 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.c.SolrResourceLoader [mytest1] Added 61 libs to classloader, from paths: [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/clustering/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/extraction/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/langid/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/velocity/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/dist]
+2019-11-25 17:04:30.533 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.2.0
+2019-11-25 17:04:30.554 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.s.IndexSchema [mytest1] Schema name=nutch
+2019-11-25 17:04:30.604 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2019-11-25 17:04:30.608 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.c.CoreContainer Reloading SolrCore 'mytest1' using configuration from instancedir /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1
+2019-11-25 17:04:30.618 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mytest1' (registry 'solr.core.mytest1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-25 17:04:30.618 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.c.SolrCore [[mytest1] ] Opening new SolrCore at [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1], dataDir=[/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1/data/]
+2019-11-25 17:04:30.619 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-11-25 17:04:35.653 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-11-25 17:04:35.653 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-11-25 17:04:35.655 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.s.SolrIndexSearcher Opening [Searcher@7add0ac2[mytest1] main]
+2019-11-25 17:04:35.655 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1/conf
+2019-11-25 17:04:35.655 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-11-25 17:04:35.655 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-11-25 17:04:35.656 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-11-25 17:04:35.659 INFO  (searcherExecutor-34-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7add0ac2[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=1, timestamp=1574701456622}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 17:04:35.659 INFO  (searcherExecutor-34-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 17:04:35.659 INFO  (searcherExecutor-34-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-11-25 17:04:35.660 INFO  (searcherExecutor-34-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.SolrCore [mytest1] Registered new searcher Searcher@7add0ac2[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=1, timestamp=1574701456622}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 17:04:35.666 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2019-11-25 17:04:35.668 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.s.SolrIndexSearcher Opening [Searcher@7e606771[mytest1] main]
+2019-11-25 17:04:35.668 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.c.SolrCore [mytest1]  CLOSING SolrCore org.apache.solr.core.SolrCore@2b02a4fe
+2019-11-25 17:04:35.668 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mytest1, tag=2b02a4fe
+2019-11-25 17:04:35.668 INFO  (searcherExecutor-34-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7e606771[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=1, timestamp=1574701456622}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 17:04:35.668 INFO  (searcherExecutor-34-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 17:04:35.668 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3f30e649: rootName = null, domain = solr.core.mytest1, service url = null, agent id = null] for registry solr.core.mytest1 / com.codahale.metrics.MetricRegistry@7232fc6e
+2019-11-25 17:04:35.669 INFO  (searcherExecutor-34-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.SolrCore [mytest1] Registered new searcher Searcher@7e606771[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=1, timestamp=1574701456622}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 17:04:35.671 INFO  (qtp961712517-19) [   x:mytest1] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=mytest1&action=RELOAD&wt=json&_=1574701457856} status=0 QTime=5158
+2019-11-25 17:04:36.698 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:04:36.701 INFO  (qtp961712517-83) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701457856} status=0 QTime=2
+2019-11-25 17:04:36.713 INFO  (qtp961712517-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=14
+2019-11-25 17:04:43.418 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:04:43.423 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1574701483408} status=0 QTime=5
+2019-11-25 17:04:43.435 INFO  (qtp961712517-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=16
+2019-11-25 17:04:45.333 INFO  (qtp961712517-83) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:04:45.335 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1574701460299} status=0 QTime=1
+2019-11-25 17:04:45.337 INFO  (qtp961712517-73) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/replication params={wt=json&command=details&_=1574701460299} status=0 QTime=2
+2019-11-25 17:04:45.340 INFO  (qtp961712517-20) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1574701457857&ts=1574701457857} status=503 QTime=0
+2019-11-25 17:04:45.357 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=23
+2019-11-25 17:04:45.357 INFO  (qtp961712517-83) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/admin/system params={wt=json&_=1574701460299} status=0 QTime=18
+2019-11-25 17:04:47.386 INFO  (qtp961712517-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:04:47.399 INFO  (qtp961712517-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=12
+2019-11-25 17:04:49.035 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&_=1574701487359} hits=10 status=0 QTime=0
+2019-11-25 17:06:01.913 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:"Taxi"&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:06:12.645 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:taxi&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:06:19.004 ERROR (qtp961712517-64) [   x:mytest1] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'content:"Taxi': Lexical error at line 1, column 14.  Encountered: <EOF> after : "\"Taxi"
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'content:"Taxi': Lexical error at line 1, column 14.  Encountered: <EOF> after : "\"Taxi"
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:264)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 14.  Encountered: <EOF> after : "\"Taxi"
+	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
+	at org.apache.solr.parser.QueryParser.jj_ntk(QueryParser.java:815)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:267)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
+	... 44 more
+
+2019-11-25 17:06:19.004 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:"Taxi&_=1574701487359} status=400 QTime=1
+2019-11-25 17:06:29.441 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:"Taxi"&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:06:40.235 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&_=1574701487359} hits=10 status=0 QTime=0
+2019-11-25 17:06:52.365 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:*&_=1574701487359} hits=10 status=0 QTime=10
+2019-11-25 17:07:11.516 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=id:"doc_Canvetto+Federale"&_=1574701487359} hits=1 status=0 QTime=1
+2019-11-25 17:07:17.210 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=id:"Canvetto+Federale"&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:07:22.410 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=id:"*Canvetto+Federale"&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:07:31.275 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={_=1574701487359} hits=0 status=0 QTime=1
+2019-11-25 17:07:41.789 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&_=1574701487359} hits=10 status=0 QTime=0
+2019-11-25 17:07:46.298 ERROR (qtp961712517-71) [   x:mytest1] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'title', pos=5
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:281)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 17:07:46.298 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&sort=title&_=1574701487359} status=400 QTime=9
+2019-11-25 17:07:51.190 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&_=1574701487359} hits=10 status=0 QTime=0
+2019-11-25 17:16:30.699 INFO  (qtp961712517-84) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=title:taxi&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:16:47.559 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=title:Taxi&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:16:50.378 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=title:Taxi&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:16:58.307 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&_=1574701487359} hits=10 status=0 QTime=0
+2019-11-25 17:17:06.544 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=title:canvetto&_=1574701487359} hits=1 status=0 QTime=0
+2019-11-25 17:17:26.064 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:canvetto&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:17:26.885 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:canvetto&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:17:37.760 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=title:canvetto&_=1574701487359} hits=1 status=0 QTime=0
+2019-11-25 17:18:00.487 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:DetailEntryCity&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:18:23.511 ERROR (qtp961712517-67) [   x:mytest1] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field _text_
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1311)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:448)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:524)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1083)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:541)
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:822)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:260)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:279)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 17:18:23.511 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:DetailEntryCity%3D"Canvetto+Federale"&_=1574701487359} status=400 QTime=3
+2019-11-25 17:18:34.790 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:canvetto&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:18:50.035 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:lugano&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:19:05.037 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=title:canvetto&_=1574701487359} hits=1 status=0 QTime=0
+2019-11-25 17:19:14.609 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=id:canvetto&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:19:19.064 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=id:Canvetto&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:19:35.216 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=id:"doc_Canvetto+Federale"&_=1574701487359} hits=1 status=0 QTime=0
+2019-11-25 17:19:44.629 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=id:Federale&_=1574701487359} hits=0 status=0 QTime=0
+2019-11-25 17:24:59.217 INFO  (qtp961712517-84) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Carrozzeria Moderna SA (1651195457532067840)]} 0 2
+2019-11-25 17:24:59.223 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Carrozzeria Moderna SA (1651195457538359296)]} 0 1
+2019-11-25 17:24:59.227 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Carrozzeria Moderna SA (1651195457543602176)]} 0 0
+2019-11-25 17:24:59.231 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Carrozzeria Moderna SA (1651195457547796480)]} 0 0
+2019-11-25 17:24:59.235 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Carrozzeria Moderna SA (1651195457551990784)]} 0 0
+2019-11-25 17:24:59.238 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_dr. med. dent. Nyffeler Tino Dr. - Studio Medico Dentistico (1651195457556185088)]} 0 0
+2019-11-25 17:24:59.242 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_dr. med. dent. Nyffeler Tino Dr. - Studio Medico Dentistico (1651195457560379392)]} 0 0
+2019-11-25 17:24:59.246 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_dr. med. dent. Nyffeler Tino Dr. - Studio Medico Dentistico (1651195457563525120)]} 0 0
+2019-11-25 17:24:59.249 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_dr. med. dent. Nyffeler Tino Dr. - Studio Medico Dentistico (1651195457567719424)]} 0 0
+2019-11-25 17:24:59.253 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_dr. med. dent. Nyffeler Tino Dr. - Studio Medico Dentistico (1651195457571913728)]} 0 0
+2019-11-25 17:24:59.257 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_dr. med. dent. Nyffeler Tino Dr. - Studio Medico Dentistico (1651195457575059456)]} 0 0
+2019-11-25 17:24:59.261 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_RB SWISS DENTAL SA (1651195457579253760)]} 0 1
+2019-11-25 17:24:59.265 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_RB SWISS DENTAL SA (1651195457583448064)]} 0 0
+2019-11-25 17:24:59.268 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_RB SWISS DENTAL SA (1651195457587642368)]} 0 0
+2019-11-25 17:24:59.272 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_RB SWISS DENTAL SA (1651195457590788096)]} 0 0
+2019-11-25 17:24:59.275 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_RB SWISS DENTAL SA (1651195457594982400)]} 0 0
+2019-11-25 17:24:59.279 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Interfood di Giampietro Ceppi (1651195457599176704)]} 0 0
+2019-11-25 17:24:59.283 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Interfood di Giampietro Ceppi (1651195457603371008)]} 0 0
+2019-11-25 17:24:59.287 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Interfood di Giampietro Ceppi (1651195457606516736)]} 0 0
+2019-11-25 17:24:59.290 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Interfood di Giampietro Ceppi (1651195457609662464)]} 0 0
+2019-11-25 17:24:59.293 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Interfood di Giampietro Ceppi (1651195457612808192)]} 0 0
+2019-11-25 17:24:59.295 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Interfood di Giampietro Ceppi (1651195457615953920)]} 0 0
+2019-11-25 17:24:59.298 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_IL PIACERE.CH SAGL (1651195457619099648)]} 0 0
+2019-11-25 17:24:59.301 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_IL PIACERE.CH SAGL (1651195457622245376)]} 0 0
+2019-11-25 17:24:59.305 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_IL PIACERE.CH SAGL (1651195457626439680)]} 0 0
+2019-11-25 17:24:59.309 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_IL PIACERE.CH SAGL (1651195457629585408)]} 0 0
+2019-11-25 17:24:59.312 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_IL PIACERE.CH SAGL (1651195457633779712)]} 0 0
+2019-11-25 17:24:59.316 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Farmacia Tosi (1651195457637974016)]} 0 0
+2019-11-25 17:24:59.320 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Farmacia Tosi (1651195457641119744)]} 0 0
+2019-11-25 17:24:59.323 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Farmacia Tosi (1651195457645314048)]} 0 0
+2019-11-25 17:24:59.326 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Farmacia Tosi (1651195457648459776)]} 0 0
+2019-11-25 17:24:59.330 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Farmacia Tosi (1651195457652654080)]} 0 0
+2019-11-25 17:24:59.334 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Gandola Studio (1651195457655799808)]} 0 0
+2019-11-25 17:24:59.337 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Gandola Studio (1651195457659994112)]} 0 0
+2019-11-25 17:24:59.340 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Gandola Studio (1651195457663139840)]} 0 0
+2019-11-25 17:24:59.343 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Gandola Studio (1651195457666285568)]} 0 0
+2019-11-25 17:24:59.347 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Gandola Studio (1651195457670479872)]} 0 0
+2019-11-25 17:24:59.351 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Globocar SA (1651195457673625600)]} 0 0
+2019-11-25 17:24:59.355 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Globocar SA (1651195457677819904)]} 0 0
+2019-11-25 17:24:59.358 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Globocar SA (1651195457682014208)]} 0 0
+2019-11-25 17:24:59.362 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Globocar SA (1651195457686208512)]} 0 0
+2019-11-25 17:24:59.366 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Globocar SA (1651195457689354240)]} 0 0
+2019-11-25 17:24:59.370 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Acqualife Relax & Wellness Sagl (1651195457693548544)]} 0 1
+2019-11-25 17:24:59.373 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Acqualife Relax & Wellness Sagl (1651195457697742848)]} 0 0
+2019-11-25 17:24:59.376 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Acqualife Relax & Wellness Sagl (1651195457700888576)]} 0 0
+2019-11-25 17:24:59.379 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Acqualife Relax & Wellness Sagl (1651195457704034304)]} 0 0
+2019-11-25 17:24:59.383 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Acqualife Relax & Wellness Sagl (1651195457707180032)]} 0 0
+2019-11-25 17:24:59.386 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_Acqualife Relax & Wellness Sagl (1651195457710325760)]} 0 0
+2019-11-25 17:24:59.388 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_CENTRO OCULISTICO BESSO Sanchez Lasa Enrique (1651195457713471488)]} 0 0
+2019-11-25 17:24:59.391 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_CENTRO OCULISTICO BESSO Sanchez Lasa Enrique (1651195457716617216)]} 0 0
+2019-11-25 17:24:59.394 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_CENTRO OCULISTICO BESSO Sanchez Lasa Enrique (1651195457719762944)]} 0 0
+2019-11-25 17:24:59.398 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{add=[doc_CENTRO OCULISTICO BESSO Sanchez Lasa Enrique (1651195457723957248)]} 0 0
+2019-11-25 17:25:06.569 INFO  (qtp961712517-83) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:25:06.571 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701457856} status=0 QTime=2
+2019-11-25 17:25:06.584 INFO  (qtp961712517-73) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=15
+2019-11-25 17:25:06.609 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:25:06.612 INFO  (qtp961712517-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701457856} status=0 QTime=1
+2019-11-25 17:25:06.625 INFO  (qtp961712517-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=16
+2019-11-25 17:25:08.467 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:25:08.471 INFO  (qtp961712517-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701457856} status=0 QTime=1
+2019-11-25 17:25:08.481 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=14
+2019-11-25 17:25:09.282 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.SolrResourceLoader [mytest1] Added 61 libs to classloader, from paths: [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/clustering/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/extraction/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/langid/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/velocity/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/dist]
+2019-11-25 17:25:09.295 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.2.0
+2019-11-25 17:25:09.315 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.s.IndexSchema [mytest1] Schema name=nutch
+2019-11-25 17:25:09.340 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2019-11-25 17:25:09.344 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.CoreContainer Reloading SolrCore 'mytest1' using configuration from instancedir /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1
+2019-11-25 17:25:09.353 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mytest1' (registry 'solr.core.mytest1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-25 17:25:09.353 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.SolrCore [[mytest1] ] Opening new SolrCore at [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1], dataDir=[/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1/data/]
+2019-11-25 17:25:09.356 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-11-25 17:25:14.221 INFO  (commitScheduler-36-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-11-25 17:25:14.221 INFO  (commitScheduler-36-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@696aeb0 commitCommandVersion:0
+2019-11-25 17:25:14.234 INFO  (commitScheduler-36-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@2429e988[mytest1] realtime]
+2019-11-25 17:25:14.234 INFO  (commitScheduler-36-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-11-25 17:25:14.385 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-11-25 17:25:14.385 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-11-25 17:25:14.387 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.s.SolrIndexSearcher Opening [Searcher@7b7e75fe[mytest1] main]
+2019-11-25 17:25:14.388 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1/conf
+2019-11-25 17:25:14.388 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-11-25 17:25:14.388 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-11-25 17:25:14.389 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-11-25 17:25:14.391 INFO  (searcherExecutor-38-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7b7e75fe[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(8.2.0):C20:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574702714232}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 17:25:14.391 INFO  (searcherExecutor-38-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 17:25:14.391 INFO  (searcherExecutor-38-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-11-25 17:25:14.393 INFO  (searcherExecutor-38-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.SolrCore [mytest1] Registered new searcher Searcher@7b7e75fe[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(8.2.0):C20:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574702714232}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 17:25:14.402 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2019-11-25 17:25:14.404 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.s.SolrIndexSearcher Opening [Searcher@47f569ed[mytest1] main]
+2019-11-25 17:25:14.405 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.SolrCore [mytest1]  CLOSING SolrCore org.apache.solr.core.SolrCore@6df8fbc5
+2019-11-25 17:25:14.405 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mytest1, tag=6df8fbc5
+2019-11-25 17:25:14.405 INFO  (searcherExecutor-38-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@47f569ed[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(8.2.0):C20:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574702714232}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 17:25:14.405 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@af2fceb: rootName = null, domain = solr.core.mytest1, service url = null, agent id = null] for registry solr.core.mytest1 / com.codahale.metrics.MetricRegistry@7232fc6e
+2019-11-25 17:25:14.405 INFO  (searcherExecutor-38-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-25 17:25:14.406 INFO  (searcherExecutor-38-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.SolrCore [mytest1] Registered new searcher Searcher@47f569ed[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(8.2.0):C20:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574702714232}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-25 17:25:14.409 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=mytest1&action=RELOAD&wt=json&_=1574701457856} status=0 QTime=5133
+2019-11-25 17:25:15.439 INFO  (qtp961712517-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:25:15.442 INFO  (qtp961712517-73) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1574701457856} status=0 QTime=2
+2019-11-25 17:25:15.452 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=12
+2019-11-25 17:25:19.445 INFO  (qtp961712517-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:25:19.449 INFO  (qtp961712517-83) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1574701460299} status=0 QTime=0
+2019-11-25 17:25:19.450 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/replication params={wt=json&command=details&_=1574701460299} status=0 QTime=1
+2019-11-25 17:25:19.458 INFO  (qtp961712517-73) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1574701457857&ts=1574701457857} status=503 QTime=0
+2019-11-25 17:25:19.470 INFO  (qtp961712517-71) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=22
+2019-11-25 17:25:19.477 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/admin/system params={wt=json&_=1574701460299} status=0 QTime=19
+2019-11-25 17:25:21.761 INFO  (qtp961712517-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574701457856} status=0 QTime=0
+2019-11-25 17:25:21.774 INFO  (qtp961712517-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574701457857} status=0 QTime=12
+2019-11-25 17:25:25.400 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&_=1574701487359} hits=20 status=0 QTime=0
+2019-11-25 17:25:44.913 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&rows=20&_=1574701487359} hits=20 status=0 QTime=0
+2019-11-25 17:26:34.890 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:+u'Restaurant&rows=20&_=1574701487359} hits=3 status=0 QTime=0
+2019-11-25 17:26:42.378 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:+*Restaurant&rows=20&_=1574701487359} hits=3 status=0 QTime=18
+2019-11-25 17:26:43.678 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:+*Restaurant&rows=20&_=1574701487359} hits=3 status=0 QTime=4
+2019-11-25 17:27:07.822 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:+*5.0&rows=20&_=1574701487359} hits=4 status=0 QTime=2
+2019-11-25 17:27:30.730 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=content:+*Canvetto&rows=20&_=1574701487359} hits=1 status=0 QTime=2
+2019-11-25 19:55:48.317 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 19:56:15.393 INFO  (qtp961712517-67) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1574711775293} status=0 QTime=0
+2019-11-25 19:56:15.404 INFO  (qtp961712517-83) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1574711775293} status=0 QTime=11
+2019-11-25 19:56:20.955 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&_=1574711775362} hits=20 status=0 QTime=0
+2019-11-25 19:57:26.750 INFO  (qtp961712517-76) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=10
+2019-11-25 19:57:27.593 INFO  (qtp961712517-84) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 19:57:29.141 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:00:07.755 INFO  (qtp961712517-73) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:00:49.502 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:01:46.867 INFO  (qtp961712517-83) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:02:25.652 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:04:14.913 INFO  (qtp961712517-72) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:05:07.876 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:08:59.683 INFO  (qtp961712517-83) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:12:57.373 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:22:05.287 INFO  (qtp961712517-67) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:23:28.980 INFO  (qtp961712517-84) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:25:51.116 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:26:19.239 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:26:41.144 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:27:22.373 INFO  (qtp961712517-73) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:27:33.122 INFO  (qtp961712517-72) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:28:37.142 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:30:04.185 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:33:24.683 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:33:59.147 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:34:30.382 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:35:20.995 INFO  (qtp961712517-73) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:36:36.182 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:38:02.914 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:43:14.136 INFO  (qtp961712517-71) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:44:28.262 INFO  (qtp961712517-83) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:44:46.905 INFO  (qtp961712517-64) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:47:18.230 INFO  (qtp961712517-72) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:47:35.886 INFO  (qtp961712517-58) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:47:37.155 INFO  (qtp961712517-76) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:49:08.876 INFO  (qtp961712517-83) [   x:mytest1] o.a.s.c.S.Request [mytest1]  webapp=/solr path=/select params={q=*:*&wt=json} hits=20 status=0 QTime=0
+2019-11-25 20:50:58.465 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@131ef10{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-11-25 20:50:58.465 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-11-25 20:50:58.467 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1344697180
+2019-11-25 20:50:58.469 INFO  (coreCloseExecutor-42-thread-2) [   x:mytest1] o.a.s.c.SolrCore [mytest1]  CLOSING SolrCore org.apache.solr.core.SolrCore@7fe24723
+2019-11-25 20:50:58.469 INFO  (coreCloseExecutor-42-thread-1) [   x:companysearch] o.a.s.c.SolrCore [companysearch]  CLOSING SolrCore org.apache.solr.core.SolrCore@7e8615aa
+2019-11-25 20:50:58.469 INFO  (coreCloseExecutor-42-thread-1) [   x:companysearch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.companysearch, tag=7e8615aa
+2019-11-25 20:50:58.469 INFO  (coreCloseExecutor-42-thread-1) [   x:companysearch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@31feddb8: rootName = null, domain = solr.core.companysearch, service url = null, agent id = null] for registry solr.core.companysearch / com.codahale.metrics.MetricRegistry@72ec9ce0
+2019-11-25 20:50:58.471 INFO  (coreCloseExecutor-42-thread-2) [   x:mytest1] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mytest1, tag=7fe24723
+2019-11-25 20:50:58.471 INFO  (coreCloseExecutor-42-thread-2) [   x:mytest1] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@58d363e7: rootName = null, domain = solr.core.mytest1, service url = null, agent id = null] for registry solr.core.mytest1 / com.codahale.metrics.MetricRegistry@7232fc6e
+2019-11-25 20:50:58.478 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-11-25 20:50:58.478 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5b58ed3c: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@1dd45ddb
+2019-11-25 20:50:58.479 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-11-25 20:50:58.479 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6326d182: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@6e5fa51b
+2019-11-25 20:50:58.479 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-11-25 20:50:58.479 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5241cf67: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@44ca1a8a
+2019-11-25 20:50:58.487 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4d02f94e{/solr,null,UNAVAILABLE}{/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr-webapp/webapp}

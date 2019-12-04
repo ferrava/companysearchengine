@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="rubedo" ng-controller="RubedoController as rubedo" ng-attr-lang="{{rubedo.current.page.locale}}">
+<head>
+    <!--[if lte IE 8]>
+    <script type="text/javascript" >
+        document.createElement('ng-include');
+        document.createElement('ng-repeat');
+        document.createElement('ng-view');
+        document.createElement('rubedo-block');
+        document.createElement('rubedo-field');
+        document.createElement('rubedo-notification');
+        document.createElement('snap-drawer');
+        document.createElement('snap-content');
+        document.createElement('rubedo-custom-template');
+    </script>
+    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="fragment" content="!">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{rubedo.current.page.title}}" />
+    <meta ng-if="rubedo.current.page.description" name="description" property="og:description"
+          ng-attr-content="{{rubedo.current.page.description}}"/>
+    <meta ng-if="rubedo.current.page.metaKeywords" name="keywords"
+          ng-attr-content="{{ rubedo.current.page.metaKeywords }}">
+    <meta ng-if="rubedo.current.page.metaRobots" name="robots" ng-attr-content="{{ rubedo.current.page.metaRobots }}">
+    <meta ng-if="rubedo.current.page.metaAuthor" name="author" ng-attr-content="{{ rubedo.current.page.metaAuthor }}">
+    <meta ng-if="rubedo.current.page.fbPage" property="article:publisher"  ng-attr-content="{{ rubedo.current.page.fbPage }}">
+    <meta ng-if="rubedo.current.page.fbPage" property="article:author"  ng-attr-content="{{ rubedo.current.page.fbPage }}">
+    <meta name="property" property="fb:admins" content="1143642138" /> <!--for Facebook Insights-->
+    <link ng-if="rubedo.current.page.contentCanonicalUrl" rel="canonical"
+          ng-href="{{ rubedo.current.page.contentCanonicalUrl }}" />
+    <link rel="alternate" ng-repeat="alternate in rubedo.current.page.i18n track by $index" ng-href="{{alternate.fullUrl}}" hreflang="{{alternate.locale}}" />
+    
+    <meta property="og:image" ng-if="!rubedo.current.page.metaImage || rubedo.current.page.metaImage==''" content="http://www.salesianum.ch/theme/cte/img/image.jpg" />
+    <meta property="og:image" ng-if="rubedo.current.page.metaImage&&rubedo.current.page.metaImage!=''" ng-attr-content="{{rubedo.getMetaImageURL()}}" />
+    <meta name="twitter:image" ng-if="rubedo.current.page.metaImage&&rubedo.current.page.metaImage!=''" ng-attr-content="{{rubedo.getMetaImageURL()}}" />
+    <meta property="og:url" ng-if="rubedo.current.page.video" content="{{rubedo.current.page.video}}">
+    <link rel="shortcut icon" href="/theme/cte/img/favicon.ico" type="image/x-icon" />
+    
+
+    <!--mobile meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title ng-bind-template="{{rubedo.current.page.title}}" ></title>
+    <!--css-->
+
+                    <link rel="stylesheet" type="text/css" href="/components/twbs/bootstrap/dist/css/bootstrap.min.css">
+    
+    
+
+            <link rel="stylesheet" type="text/css" href="/components/jtrussell/angular-snap.js-bower/angular-snap-only.min.css">
+        <link href='/components/jquery/fullCalendar/fullcalendar.css' rel='stylesheet' type="text/css" />
+        <link href='/components/jquery/fullCalendar/fullcalendar.print.css' rel='stylesheet' media='print' type="text/css" />
+        <link rel="stylesheet" type="text/css" href="/components/OwlFonk/OwlCarousel/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="/components/OwlFonk/OwlCarousel/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" type="text/css" href="/components/vitalets/angular-xeditable/dist/css/xeditable.css">
+        <link rel="stylesheet" type="text/css" href="/components/dalelotts/angular-bootstrap-datetimepicker/src/css/datetimepicker.css">
+                <link rel="stylesheet" type="text/css" href="/theme/cte/css/rubedo.css">
+        <link rel="stylesheet" type="text/css" href="/theme/cte/libraryOverrides/chosen.css">
+    
+    <!--external resource styles-->
+            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic">
+            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <!--internal resource styles-->
+                        <link rel="stylesheet" type="text/css" href="/theme/cte/css/cte.css">
+                                <link rel="stylesheet" type="text/css" href="/theme/cte/css/font-awesome.css">
+                                <link rel="stylesheet" type="text/css" href="/theme/cte/css/cheminneuf.css">
+                <!--[if lte IE 8]>
+    <script type="text/javascript" src="/theme/cte/legacyFixes/respond.js"></script>
+    <![endif]-->
+    <!--library scripts-->
+            <script type="text/javascript" src="/components/jquery/jquery/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="/components/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--[if lte IE 9]>
+    <script type="text/javascript" src="/theme/cte/legacyFixes/angular.js"></script>
+    <script type="text/javascript" src="/theme/cte/legacyFixes/history.js"></script>
+    <![endif]-->
+    <![if !lte IE 9]>
+            <script type="text/javascript" src="/components/angular/angular.js/angular.min.js"></script>
+        <![endif]>
+            <script type="text/javascript" src="/components/angular/angular.js/angular-route.min.js"></script>
+        <script type="text/javascript" src='/components/lodash/lodash/dist/lodash.underscore.min.js'></script>
+        <script type="text/javascript" src='/components/jakiestfu/Snap.js/snap.min.js'></script>
+        <script type="text/javascript" src="/components/jquery/fullCalendar/lib/moment.min.js"></script>
+        <script type="text/javascript" src="/components/ded/script.js/dist/script.min.js"></script>
+       <!-- <script  type="text/javascript" src="https://content.jwplatform.com/libraries/B5vNto39.js"></script>-->
+        <script type="text/javascript" src="/components/components/jquery-htmlclean/jquery.htmlClean.min.js"></script>
+        <script type="text/javascript" src='/components/jtrussell/angular-snap.js-bower/angular-snap.min.js'></script>
+        <script type="text/javascript" src='/components/vitalets/angular-xeditable/dist/js/xeditable.min.js'></script>
+        <script type="text/javascript" src='/components/vitalets/angular-xeditable/libs/checklist-model.js'></script>
+
+        <script type="text/javascript" src='/components/webtales/ckeditor/ckeditor.js'></script>
+        <script type="text/javascript" src='//maps.googleapis.com/maps/api/js?sensor=true&libraries=places,visualization&key=AIzaSyCW28bJWHRY1LU48PXzjPckEsVmiQMKbUY'></script>
+
+        <script type="text/javascript" src='/components/lemonde/angular-ckeditor/angular-ckeditor.min.js'></script>
+        <script type="text/javascript" src='/components/angular-ui/angular-google-maps/dist/angular-google-maps.min.js'></script>
+        <script type="text/javascript" src="/components/ivpusic/angular-cookie/angular-cookie.min.js"></script>
+                    <script type="text/javascript"
+                    src="/components/angular/angular.js/i18n/angular-locale_fr.js"></script>
+            
+            <!--<script type="text/javascript"
+                    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/locale/fr.js"></script>-->
+               <script type="text/javascript"  src="/components/dalelotts/angular-bootstrap-datetimepicker/src/js/datetimepicker.js"></script>
+                     <script type="text/javascript" src="/components/Valve/fingerprintjs2/dist/fingerprint2.min.js"></script>
+            
+
+
+
+    <!--internal angular modules scripts-->
+                <script type="text/javascript" src="/theme/cte/lib/ngFileUpload.js"></script>
+            <script type="text/javascript">
+        window.rubedoConfig = {
+            siteTheme: "cte",
+            isMimified:false,
+            extensionAngularModules:["ngFileUpload"]        };
+    </script>
+
+    <!--frontoffice scripts-->
+            <script type="text/javascript" src="/theme/cte/libraryOverrides/lrInfiniteScroll.js"></script>
+        <script type="text/javascript" src="/theme/cte/libraryOverrides/angular-google-map.js"></script>
+        <script type="text/javascript" src="/theme/cte/libraryOverrides/chosen.jquery.js"></script>
+        <script type="text/javascript" src="/theme/cte/libraryOverrides/angular-inview.js"></script>
+
+        <script type="text/javascript" src="/theme/cte/lib/toaster/jquery.toaster.js"></script>
+        <script type="text/javascript" src="/theme/cte/lib/angularStrap/ngStrap.js"></script>
+        <script type="text/javascript" src="/theme/cte/src/modules/rubedoDataAccess/rubedoDataAccess.js"></script>
+        <script type="text/javascript" src="/theme/cte/src/modules/rubedoFields/rubedoFields.js"></script>
+        <script type="text/javascript" src="/theme/cte/src/modules/rubedoBlocks/rubedoBlocks.js"></script>
+        <script type="text/javascript" src="/theme/cte/src/modules/rubedo/rubedo.js"></script>
+    
+    <!--external resource scripts-->
+        <!--internal resource scripts-->
+                        <script type="text/javascript" src="/theme/cte/js/cte.js"></script>
+                                <script type="text/javascript" src="/theme/cte/js/lazy-image.js"></script>
+                                <script type="text/javascript" src="/extension-path/survey/js/survey.js"></script>
+                <!--base href for angular routing-->
+    <base href="/">
+
+    <!-- Disable addThis Share thrackers in URL -->
+    ​<script type="text/javascript">
+        var addthis_config = addthis_config||{};
+        addthis_config.data_track_addressbar = false;
+        addthis_config.data_track_clickback = false;
+    </script>
+
+    <!-- Script for google analytics -->
+            <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-117268997-1', 'auto', {'allowAnchor': true});
+//            ga('send', 'pageview', location.pathname + location.search + location.hash);
+            ga('require', 'linkid', 'linkid.js');
+        </script>
+        <!-- Script for sitelinks search box -->
+            <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "url": "https://www.salesianum.ch/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.salesianum.ch/fr/recherche?query={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+        </script>
+        
+</head>
+<body ng-class="rubedo.current.page.pageProperties.bodyClass">
+<snap-drawer ng-if="rubedo.current.user.rights.canEdit" class="rubedo-admin-drawer" style="display: none;">
+    <ng-include src="rubedo.themePath+'/templates/admin/admin.html'"></ng-include>
+</snap-drawer>
+<div class="btn-group-vertical  rubedo-admin-btn" ng-if="rubedo.current.user.rights.canEdit">
+    <button title="Admin" ng-click="rubedo.toggleAdminPanel()" class="btn btn-default">
+        <span ng-class="rubedo.adminBtnIconClass"></span>
+    </button>
+    <button ng-click="rubedo.persistChanges()"
+            class="btn btn-default"
+            ng-if="rubedo.fieldEditMode&&rubedo.current.user.rights.canEdit"
+            title="{{rubedo.translate('Edition.Label.SaveChanges','Save changes')}}">
+        <span class="glyphicon glyphicon-ok"></span>
+    </button>
+    <button ng-click="rubedo.revertChanges()"
+            class="btn btn-default"
+            ng-if="rubedo.fieldEditMode&&rubedo.current.user.rights.canEdit"
+            title="{{rubedo.translate('Edition.Label.DiscardChanges','Discard changes')}}">
+        <span class="glyphicon glyphicon-remove"></span>
+    </button>
+</div>
+<snap-content snap-options="rubedo.snapOpts" class="rubedo-page-holder">
+    <div ng-view></div>
+</snap-content>
+</body>
+</html>

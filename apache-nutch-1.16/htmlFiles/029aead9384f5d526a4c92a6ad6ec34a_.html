@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SPORT PhysiotherapieBern</title>
+    <meta name="keywords" content="Physiotherapie Bern, PhysiotherapieBern, Physio Bern, Physio in Bern, Physio, SportphysiotherapieBern, SportmassageBern, Sportmassage, Massage Bern, Medizinische Massage, Rehabilitation, Sportverletzung, Medizinische Trainingstherapie, MTT" />
+    <link href="css/physio_main.css" rel="stylesheet" type="text/css" />                       
+    <link href="css/physio_slidedown.css" rel="stylesheet" type="text/css" />  
+    <script type="text/javascript" src="js/physio_slidedown.js"></script>
+    <script type="text/javascript" src="js/physio_hover.js"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function() {      
+            $("#windows").position().center 
+            $("a img").hover(function() {
+                $(this).animate({   
+                    height: "+=3",
+                    width: "+=3",
+                }, "fast");
+            }, function() {
+                $(this).animate({  
+                    height: "-=3",
+                    width: "-=3"    
+                }, "fast");
+            });  
+        }); 
+    </script>
+</head>
+<body>
+<div id="container">         
+    <!-- header -->               
+    <div id="header_top">                
+    </div>
+    <div id="header_left">
+        <div id="contact_title">
+            <span><font color="#ca1d00"><i>Sport </i></font>PhysiotherapieBern</span><br /> 
+        </div>
+        Randweg 9<br />
+        3013 Bern<br />
+        T: 031 333 16 32<br />
+        F: 031 333 16 38<br />
+        &#x2709;&nbsp;&nbsp;<a href="mailto:info@physiotherapiebern.ch">E-Mail</a><br />
+    </div> 
+    <a href="index.php"><span id="header_right"></span></a> 
+    <div id="header_bottom"></div>       
+    <!-- menu -->               
+    <div id="hr_white"></div>   
+    <div id="hr_black"></div> 
+    <div class="menu"></div>       
+    <div id="hr_black"></div>
+    <div id="hr_white"></div>     
+    <!-- content -->      		
+    <div id="header_top"></div> 
+    <div id="windows" style="float:left;">
+        <div id="box">
+            <table align="center" width="983px" height="210px" border="0px">
+                <td width="165px"> 
+                    <div onMouseOver="document.getElementById('lastminute').src='/img/lastminute_r.jpg'" onMouseOut="document.getElementById('lastminute').src='/img/lastminute.jpg'" style="z-index:1;"><a href="massage.php"><img id="lastminute" src="/img/lastminute.jpg" border="0" /></a></div>
+                </td>
+                <td width="205px"> 
+                    <div onMouseOver="document.getElementById('rehatraining').src='/img/rehatraining_r.jpg'" onMouseOut="document.getElementById('rehatraining').src='/img/rehatraining.jpg'" style="z-index:2;"><a href="rehatraining.php"><img id="rehatraining" src="/img/rehatraining.jpg" border="0" /></a></div>                                                                                               
+                </td>
+                <td width="233px"> 
+                    <div onMouseOver="document.getElementById('angebot').src='/img/angebot_r.jpg'" onMouseOut="document.getElementById('angebot').src='/img/angebot.jpg'" style="z-index:3;"><a href="treatments.php"><i><img id="angebot" src="/img/angebot.jpg" border="0" /></a></i></div>                                                                                                  
+                </td>
+                <td width="210px"> 
+                    <div onMouseOver="document.getElementById('praxis').src='/img/praxis_r.jpg'" onMouseOut="document.getElementById('praxis').src='/img/praxis.jpg'" style="z-index:4;"><a href="opening.php"><img id="praxis" src="/img/praxis.jpg" border="0" /></a></div>                                                                                                      
+                </td>
+                <td width="165px"> 
+                    <div onMouseOver="document.getElementById('kontakt').src='/img/kontakt_r.jpg'" onMouseOut="document.getElementById('kontakt').src='/img/kontakt.jpg'" style="z-index:5;"><a href="contact.php"><img id="kontakt" src="/img/kontakt.jpg" border="0" /></a></div>
+                </td>
+            </table>
+        </div>     
+    </div>   
+    <div id="header_bottom"></div>       
+    <!-- footer -->
+    <div id="footer">Copyright © Sport PhysiotherpieBern GmbH · Designed by A. Bronner</div>    
+</div>   
+</body>
+</html>

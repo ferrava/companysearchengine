@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6 page-schreinerei-das-team" lang="de"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7 page-schreinerei-das-team" lang="de"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 page-schreinerei-das-team" lang="de"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class=" page-schreinerei-das-team" lang="de"> <!--<![endif]-->
+    <head>
+
+        <!-- created by mesch web consulting & design GmbH 2019 --> 
+        <!-- consulting - webdesign - programmierungen - cms - support --> 
+        <!-- www.mesch.ch --> 
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+        <meta name="p:domain_verify" content="e675dd62bbc27d3f5a3239799776fb8f" />
+        <link rel="stylesheet" type="text/css" href="/css/7d06087f1abaed264cc997e2dd035157.css?v=f0cfc024db1e0c1b8492a3137e394a0f" />        <link rel="stylesheet" media="screen" type="text/css" href="/themes/portmannmeier/typography.css" />
+
+        <script src="/themes/portmannmeier/modernizr.custom.js"></script>
+        <script>
+            /*! A fix for the iOS orientationchange zoom bug.
+             Script by @scottjehl, rebound by @wilto.
+             MIT / GPLv2 License.
+             */
+            (function(w) {
+
+                // This fix addresses an iOS bug, so return early if the UA claims it's something else.
+                var ua = navigator.userAgent;
+                if (!(/iPhone|iPad|iPod/.test(navigator.platform) && /OS [1-5]_[0-9_]* like Mac OS X/i.test(ua) && ua.indexOf("AppleWebKit") > -1)) {
+                    return;
+                }
+
+                var doc = w.document;
+
+                if (!doc.querySelector) {
+                    return;
+                }
+
+                var meta = doc.querySelector("meta[name=viewport]"),
+                        initialContent = meta && meta.getAttribute("content"),
+                        disabledZoom = initialContent + ",maximum-scale=1",
+                        enabledZoom = initialContent + ",maximum-scale=10",
+                        enabled = true,
+                        x, y, z, aig;
+
+                if (!meta) {
+                    return;
+                }
+
+                function restoreZoom() {
+                    meta.setAttribute("content", enabledZoom);
+                    enabled = true;
+                }
+
+                function disableZoom() {
+                    meta.setAttribute("content", disabledZoom);
+                    enabled = false;
+                }
+
+                function checkTilt(e) {
+                    aig = e.accelerationIncludingGravity;
+                    x = Math.abs(aig.x);
+                    y = Math.abs(aig.y);
+                    z = Math.abs(aig.z);
+
+                    // If portrait orientation and in one of the danger zones
+                    if ((!w.orientation || w.orientation === 180) && (x > 7 || ((z > 6 && y < 8 || z < 8 && y > 6) && x > 5))) {
+                        if (enabled) {
+                            disableZoom();
+                        }
+                    }
+                    else if (!enabled) {
+                        restoreZoom();
+                    }
+                }
+
+                w.addEventListener("orientationchange", restoreZoom, false);
+                w.addEventListener("devicemotion", checkTilt, false);
+
+            })(this);
+
+
+            function openFacebook() {
+                var task = '/schreinerei/das-team';
+                var img = $('#content img:first').attr('src');
+                if (img === undefined || img == '') {
+                    img = $('#navigation .logo img').attr('src');
+                }
+                var w = 480;
+                var h = 380;
+                var x = Number(($(window).width() - w) / 2);
+                var y = Number(($(window).height() - h) / 2);
+                //
+                window.open("http://www.facebook.com/sharer.php?s=100&p[url]=https://www.portmann-meier.ch" + task + "&p[images][0]=https://www.portmann-meier.ch" + img + "&p[title]=Das Team&p[summary]=", '', 'width=' + w + ',height=' + h + ',left=' + x + ',top=' + y + ',scrollbars=no');
+                //window.open("http://www.facebook.com/sharer.php?u="+$('meta[property="og:url"]').attr('content'), '', 'width=' + w + ',height=' + h + ',left=' + x + ',top=' + y + ',scrollbars=no');
+            }
+            function openTwitter() {
+                var task = '/schreinerei/das-team';
+                var w = 480;
+                var h = 380;
+                var x = Number(($(window).width() - w) / 2);
+                var y = Number(($(window).height() - h) / 2);
+                window.open("https://twitter.com/share?text=''&amp;hashtags=&amp;via=Portmann + Meier AG&amp;url=https://www.portmann-meier.ch/das-team", '', 'width=' + w + ',height=' + h + ',left=' + x + ',top=' + y + ',scrollbars=no');
+            }
+
+            function openGooglePlus() {
+                var w = 480;
+                var h = 380;
+                var x = Number(($(window).width() - w) / 2);
+                var y = Number(($(window).height() - h) / 2);
+                window.open('https://plus.google.com/share?url=' + encodeURIComponent(location.href) + '&hl=de', '', 'width=' + w + ',height=' + h + ',left=' + x + ',top=' + y + ',scrollbars=no');
+            }
+            
+        </script>
+
+        
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Das Team</title>
+<meta name="description" content="" />
+<meta name="generator" content="concrete5 - 5.6.4.0" />
+<script type="text/javascript">
+var CCM_DISPATCHER_FILENAME = '/index.php';var CCM_CID = 214;var CCM_EDIT_MODE = false;var CCM_ARRANGE_MODE = false;var CCM_IMAGE_PATH = "/concrete/images";
+var CCM_TOOLS_PATH = "/index.php/tools/required";
+var CCM_BASE_URL = "https://www.portmann-meier.ch";
+var CCM_REL = "";
+
+</script>
+
+	<link rel="shortcut icon" href="/files/1513/7093/3270/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="/files/1513/7093/3270/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/concrete/css/ccm.base.css" />
+<script type="text/javascript" src="/concrete/js/jquery.js"></script>
+<script type="text/javascript" src="/concrete/js/ccm.base.js"></script>
+<script type="text/javascript" src="/packages/mesch_postinstaller/js/email.obfuscator.js"></script>
+<link rel="alternate" type="application/rss+xml" title="Das Team" href="/index.php?cID=214&amp;bID=1162&amp;arHandle=Inhalt&amp;ccm_token=1575315884:f36d71c0d4ebbd3917526e7ec046317a&amp;btask=passthru&amp;method=rss" />
+<script src="/themes/portmannmeier/js/supersized.core.3.2.1.min.js"></script>
+                <script>
+                $(document).ready(function() {
+                   $.supersized({slides : [ {image : '/files/cache/ba9c58b44e029c80d02c2a7cf899eb57_f325.jpg'} ]});
+                });
+                </script>
+                        <script>
+            $(function() {
+                $('.scroll-top').click(function(e) {
+                    e.preventDefault()
+                    $(document).scrollTop(0);
+                })
+
+                if ($('.back-btn').hasClass('magic-back-button')) {
+                    var referurl = document.referrer;
+                    if (referurl.match(CCM_BASE_URL)) {
+                        $('.magic-back-button').attr('href', 'javascript:history.back()');
+                    } else {
+                        $('.magic-back-button').attr('href', '../');
+                    }
+                }
+
+            })
+        </script>
+            </head>
+    <body>
+        <nav id="mobile_navigation" style="" class="hidden-phone hidden-tablet hidden-desktop">
+        
+    <ul class="nav"><li class=""><a href="/kuechen/" target="_self" class="">Küchen</a></li><li class=""><a href="/innenausbau/" target="_self" class="">Innenausbau</a><ul><li class=""><a href="/innenausbau/schranke/" target="_self" class="">Schränke</a></li><li class=""><a href="/innenausbau/bader/" target="_self" class="">Bäder</a></li><li class=""><a href="/innenausbau/tueren/" target="_self" class="">Türen</a></li><li class=""><a href="/innenausbau/arztpraxen/" target="_self" class="">Arztpraxen</a></li><li class=""><a href="/innenausbau/gastro-und-ladenbau/" target="_self" class="">Gastro- und Ladenbau</a></li><li class=""><a href="/innenausbau/hotels-und-kliniken/" target="_self" class="">Hotels und Kliniken</a></li><li class=""><a href="/innenausbau/buro/" target="_self" class="">Büro</a></li></ul></li><li class=""><a href="/mobel/" target="_self" class="">Möbel</a></li><li class="nav-path-selected"><a href="/schreinerei/" target="_self" class="nav-path-selected">Schreinerei</a><ul><li class="nav-selected nav-path-selected"><a href="/schreinerei/das-team/" target="_self" class="nav-selected nav-path-selected">Das Team</a></li><li class=""><a href="/schreinerei/die-werkstatt/" target="_self" class="">Die Werkstatt</a></li><li class=""><a href="/schreinerei/holzdeklaration/" target="_self" class="">Deklarationen</a></li><li class=""><a href="/schreinerei/offene-stellen/" target="_self" class="">Offene Stellen</a></li></ul></li><li class=""><a href="/kontakt/" target="_self" class="">Kontakt</a></li></ul>  
+
+</nav>
+
+        <div id="wrapper">
+            <div id="top"></div>
+            <nav id="navigation" class=" visible-desktop visible-tablet hidden-phone">
+                <a style="border:0;" class="logo" href="/">
+                    <img src="/themes/portmannmeier/images/Logo-P-M.png" alt="Portmann + Meier AG Logo">
+                </a>
+                <ul class="nav"><li class=""><a href="/kuechen/" target="_self" class="">Küchen</a></li><li class=""><a href="/innenausbau/" target="_self" class="">Innenausbau</a></li><li class=""><a href="/mobel/" target="_self" class="">Möbel</a></li><li class="nav-path-selected"><a href="/schreinerei/" target="_self" class="nav-path-selected">Schreinerei</a><ul><li class="nav-selected nav-path-selected"><a href="/schreinerei/das-team/" target="_self" class="nav-selected nav-path-selected">Das Team</a></li><li class=""><a href="/schreinerei/die-werkstatt/" target="_self" class="">Die Werkstatt</a></li><li class=""><a href="/schreinerei/holzdeklaration/" target="_self" class="">Deklarationen</a></li><li class=""><a href="/schreinerei/offene-stellen/" target="_self" class="">Offene Stellen</a></li></ul></li><li class=""><a href="/kontakt/" target="_self" class="">Kontakt</a></li></ul>         
+            </nav>
+
+<section id="content">
+     <div class="mobile-nav-header"><a style="border:0;" href="/"><img class="visible-phone hidden-tablet" src="/themes/portmannmeier/images/wortmarke_web.png" alt="Portman Meier Logo" /></a><div class="menu_button_wrapper hidden-tablet visible-phone icon-nav">
+    <a href="#">
+        <div id="sidebarButton">
+            <div id="sidebarButtonTitle"><span class="icon-font">k</span></div>
+        </div>
+    </a>    
+</div>    
+<div class="box-border"></div></div>    <h1>Das Team</h1>
+    
+        <div id="filter_1162" class="filter"> 
+        <form>
+            <input type="hidden" name="blockID" value="1162" />
+            <input type="hidden" name="pageID" value="214" /> 
+                         
+        </form>
+    </div>
+    <div style="clear:both;"></div>
+
+    
+        <div class="mesch-filter-list-result team" data-bid="1162" data-pageid="214">        
+                <div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/2f9d72796ab8be80abd9bea5739f03b0_f457.jpg" height="160" width="240" alt="" />
+                                                <p>Markus Meier</p>
+                        <p>Geschäftsleitung</p>
+                        <p>041 250 62 44</p>
+                        <p><a href="mailto:m.meier@portmann-meier.ch">m.meier@portmann-meier.ch</a></p>
+                    </div>
+                                        <div class="team-member">
+                                                    <img src="/files/cache/82ce2056954e052b0583f44392428a1b_f458.jpg" height="160" width="240" alt="" />
+                                                <p>Marcel Renggli</p>
+                        <p>Geschäftsleitung / Projektleiter</p>
+                        <p>041 250 62 77</p>
+                        <p><a href="mailto:m.renggli@portmann-meier.ch">m.renggli@portmann-meier.ch</a></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/9b2b1a5aeed790812beef8befc4dedaa_f462.jpg" height="160" width="240" alt="" />
+                                                <p>Andi Fischer</p>
+                        <p>Projektleiter</p>
+                        <p>041 250 62 33</p>
+                        <p><a href="mailto:a.fischer@portmann-meier.ch">a.fischer@portmann-meier.ch</a></p>
+                    </div>
+                                        <div class="team-member">
+                                                    <img src="/files/cache/4f039e4bf27ea39182cfe483742f93b9_f574.jpg" height="160" width="240" alt="" />
+                                                <p>Reto Schmidli</p>
+                        <p>Projektleiter</p>
+                        <p>041 252 20 21</p>
+                        <p><a href="mailto:r.schmidli@portmann-meier.ch">r.schmidli@portmann-meier.ch</a></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/826f3c1795661590e672615373f68da3_f539.jpg" height="160" width="240" alt="" />
+                                                <p>Pascal Aeschlimann</p>
+                        <p>Projektleiter</p>
+                        <p>041 252 20 26</p>
+                        <p><a href="mailto:p.aeschlimann@portmann-meier.ch">p.aeschlimann@portmann-meier.ch</a></p>
+                    </div>
+                                        <div class="team-member">
+                                                    <img src="/files/cache/7b1f19a71e378d8b0df20a3d5205839b_f510.jpg" height="160" width="240" alt="" />
+                                                <p>Simon Odermatt</p>
+                        <p>Projektleiter / Lernendenbetreuung</p>
+                        <p>041 252 20 25</p>
+                        <p><a href="mailto:s.odermatt@portmann-meier.ch">s.odermatt@portmann-meier.ch</a></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/b0e6411a42af0c5abf1121f34eecaa47_f598.jpg" height="160" width="240" alt="" />
+                                                <p>Lukas Hofstetter</p>
+                        <p>Projektleiter</p>
+                        <p>041 252 20 23</p>
+                        <p><a href="mailto:l.hofstetter@portmann-meier.ch">l.hofstetter@portmann-meier.ch</a></p>
+                    </div>
+                                        <div class="team-member">
+                                                    <img src="/files/cache/4e37d0f384af09483424ad3f7de9f1d5_f599.jpg" height="160" width="240" alt="" />
+                                                <p>Rafael Kirchhofer</p>
+                        <p>Projektleiter</p>
+                        <p>041 252 20 22</p>
+                        <p><a href="mailto:r.kirchhofer@portmann-meier.ch">r.kirchhofer@portmann-meier.ch</a></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/25e90f1c21a10f34f635f3a33f0c0ced_f463.jpg" height="160" width="240" alt="" />
+                                                <p>Jeanette Meier</p>
+                        <p>Buchhaltung</p>
+                        <p>041 252 20 24</p>
+                        <p><a href="mailto:j.meier@portmann-meier.ch">j.meier@portmann-meier.ch</a></p>
+                    </div>
+                                        <div class="team-member">
+                                                <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/a0ebb4dc35541f0b18990758e5bc8f3f_f465.jpg" height="160" width="240" alt="" />
+                                                <p>Christian Huber</p>
+                        <p>Maschinist</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                                        <div class="team-member">
+                                                    <img src="/files/cache/869160b275d30d27584abc2fbafb04c7_f538.jpg" height="160" width="240" alt="" />
+                                                <p>Corsin Frey</p>
+                        <p>Maschinist</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/6c3bc0d7d3817fc989f29cb9e509f2b6_f467.jpg" height="160" width="240" alt="" />
+                                                <p>Oskar Sartirana</p>
+                        <p>Zuschneider</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                                        <div class="team-member">
+                                                <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/bc03a2a95a147d51a3a5afc2b7b8e47c_f468.jpg" height="160" width="240" alt="" />
+                                                <p>Andi Heini</p>
+                        <p>Bankschreiner</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                                        <div class="team-member">
+                                                    <img src="/files/cache/014f1635831b605df3f6a588654bd450_f594.jpg" height="160" width="240" alt="" />
+                                                <p>Marco Wermelinger</p>
+                        <p>Bankschreiner</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/121e08e4b87d49757b40ef943dc6e427_f473.jpg" height="160" width="240" alt="" />
+                                                <p>Cyrill Burch</p>
+                        <p>Bankschreiner</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                                        <div class="team-member">
+                                                    <img src="/files/cache/de28bf92f6393ef1b23de4764dfec4f0_f474.jpg" height="160" width="240" alt="" />
+                                                <p>Leo Z’Rotz</p>
+                        <p>Bankschreiner</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/a35aecc956612ccfe9d031844c196420_f469.jpg" height="160" width="240" alt="" />
+                                                <p>Annika Brommer</p>
+                        <p>Lackiererin</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                                        <div class="team-member">
+                                                <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/33bd5c2533ea10ae09221b5fd23b8300_f471.jpg" height="160" width="240" alt="" />
+                                                <p>René Röthlin</p>
+                        <p>Monteur</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                                        <div class="team-member">
+                                                    <img src="/files/cache/06f9bd26e56b874b62e945bf63ed2b69_f573.jpg" height="160" width="240" alt="" />
+                                                <p>Hanspeter Bieri</p>
+                        <p>Monteur</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/20a2268b96e26af8fa79e7e4153b0281_f595.jpg" height="160" width="240" alt="" />
+                                                <p>Dominik Stutz</p>
+                        <p>Monteur</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                                        <div class="team-member">
+                                                <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/ecaff280a56946798f941afe2f0fd8b1_f475.jpg" height="160" width="240" alt="" />
+                                                <p>Livio Erni</p>
+                        <p>Lernender 4. Lehrjahr</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                                        <div class="team-member">
+                                                    <img src="/files/cache/5feeec65e0890866f0faf5df99c1ffff_f515.jpg" height="160" width="240" alt="" />
+                                                <p>Thomas Zemp</p>
+                        <p>Lernender 3. Lehrjahr</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/ffc286c098f21d44fd289fad6ed28ca4_f540.jpg" height="160" width="240" alt="" />
+                                                <p>Raphael Mosses</p>
+                        <p>Lernender 2. Lehrjahr</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                                        <div class="team-member">
+                                                    <img src="/files/cache/c80e83ac32bbac75eb9b14ed5e37a34e_f541.jpg" height="160" width="240" alt="" />
+                                                <p>Lorenzo Caviglia</p>
+                        <p>Lernender 2. Lehrjahr</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    </div><div class="row">                    <div class="team-member">
+                                                    <img src="/files/cache/6447cd1b92168e59395132e0e771f600_f597.jpg" height="160" width="240" alt="" />
+                                                <p>Chantal Brun</p>
+                        <p>Lernende 1. Lehrjahr</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                                        <div class="team-member">
+                                                    <img src="/files/cache/60fab80eaf966c76e9d8d324d2fc40fa_f596.jpg" height="160" width="240" alt="" />
+                                                <p>Vincent Schmid</p>
+                        <p>Lernender 1. Lehrjahr</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    </div>        </div>
+    <br style="clear:both;"/>
+    <div class="mesch-line"></div>            
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33903544-29', 'portmann-meier.ch');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script><script type="text/javascript" src="/packages/mesch_postinstaller/js/view.js"></script>
+<script type="text/javascript" src="/packages/mesch_postinstaller/js/jquery.fitvids.min.js"></script>
+
+        <script>
+            $(function() {
+                $('.menu_button_wrapper a').click(function(event) {
+                    event.preventDefault();                                      
+                    $('#mobile_navigation').toggleClass('nav_active');                    
+                    $('#sidebarButton').toggleClass('nav_active_btn');                    
+                    $('body').toggleClass('nav-body-active');                    
+                }) 
+            });
+        </script>
+<script type="text/javascript" src="/packages/mesch_filter_list/js/mesch.filter.js"></script>
+        <div class="social-bar-new clearfix">
+            <div class="col-xs-12">
+                <p>Weiterempfehlen</p>
+                <ul class="social clearfix">
+                                        <li>
+                        <a class="mesch-mail-to-link" href="mailto:info@portmann-meier.ch?subject=Portmann%20%2B%20Meier%20AG%20%3A%3A%20Das%20Team&amp;body=Portmann%20%2B%20Meier%20AG%20%3A%3A%20Das%20Team%0D%0A%0D%0Ahttps://www.portmann-meier.ch/schreinerei/das-team/">
+                            <span class="icon-font">i</span>
+                        </a>
+                    </li>
+                    <li><a class="mesch-facebook-link" href="javascript:openFacebook()"><span class="icon-font">&#101;</span></a></li>
+                    <li><a class="mesch-twitter-link" href="javascript:openTwitter()"><span class="icon-font">&#102;</span></a></li>
+                    <li><a class="mesch-google-plus-link" data-annotation="none" href="javascript:openGooglePlus()"><span class="icon-font">&#103;</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="about-us">
+                &copy; Portmann + Meier AG <br class="visible-phone hidden-tablet"/>| <a href="mailto:info@portmann-meier.ch">info@portmann-meier.ch</a><br/>
+                <a href="/impressum">Impressum und Datenschutzerklärung</a> | webdesign by <a href="http://www.mesch.ch" target="_blank">mesch.ch</a><a href="#top" class="scroll-top"><span class="icon-font">h</span></a>
+            </div>
+            <div class="follow-us clearfix">
+                <p>Folgen Sie uns</p>
+                <a href="http://www.facebook.com/PortmannMeier" class="clearfix" title="Facebook">
+                    <img src="/themes/portmannmeier/images/facebook.svg" class="facebook" alt="facebook social link">
+                </a>
+                <a href="http://www.instagram.com/portmannmeier/" class="clearfix" target="_blank" title="instagram">
+                    <img src="/themes/portmannmeier/images/instagram.svg" class="instagram" alt="instagram social link">
+                </a>
+                <a href="http://de.pinterest.com/portmannmeierag/" class="clearfix" target="_blank" title="pinterest">
+                    <img src="/themes/portmannmeier/images/pinterest.svg" class="pinterest" alt="pinterest social link">
+                </a>
+            </div>
+        </footer>
+        </section> <!-- END content -->
+</div>
+<script>
+    $(window).load(function() {
+        $('.nav li').not('.nav li ul li').each(function() {
+            //$(this).css('min-height', $(this).height() + 2 + 'px');
+        });
+    });
+
+</script>
+</body>
+</html>

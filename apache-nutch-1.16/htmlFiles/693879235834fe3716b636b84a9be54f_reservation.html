@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <base href="https://www.akropolisgreek.ch/"><!--[if lte IE 6]></base><![endif]-->
+        <title>Reservation</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="SilverStripe - http://silverstripe.org" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+        
+
+        <link rel="shortcut icon" href="themes/baeren/images/favicon.ico?v=2" />
+    <link rel="stylesheet" type="text/css" href="https://fast.fonts.net/cssapi/72ba2d74-1e3a-4ef2-9ae1-6fe5ce599c91.css" />
+<link rel="stylesheet" type="text/css" href="/themes/baeren/combinedfiles/masterCSS.css?m=1563354746" />
+<link rel="stylesheet" type="text/css" href="/themes/baeren/css/font-awesome/css/font-awesome.min.css?m=1416490150" />
+<link rel="stylesheet" type="text/css" href="/display-logic/css/display_logic.css?m=1397652104" />
+
+			<noscript>
+				<div id="JSDisabeltError">JavaScript ist in Ihrem Browser deaktiviert. Ohne JavaScript funktioniert die Website nicht korrekt.</div>
+			</noscript>
+		
+<script type="text/javascript" src="/themes/baeren/combinedfiles/masterJS.js?m=1563354746"></script>
+<script type="text/javascript" src="/framework/thirdparty/jquery/jquery.js?m=1397652247"></script>
+<script type="text/javascript" src="/userforms/thirdparty/jquery-validate/jquery.validate.js?m=1397652660"></script>
+<script type="text/javascript" src="/userforms/javascript/UserForm_frontend.js?m=1397652652"></script>
+<script type="text/javascript" src="/framework/thirdparty/jquery-entwine/dist/jquery.entwine-dist.js?m=1397652322"></script>
+<script type="text/javascript" src="/display-logic/javascript/display_logic.js?m=1397652104"></script>
+<script type="text/javascript">
+//<![CDATA[
+			(function($) {
+				$(document).ready(function() {
+					$("#Form_Form").validate({
+						ignore: ':hidden',
+						errorClass: "required",	
+						errorPlacement: function(error, element) {
+							if(element.is(":radio")) {
+								error.insertAfter(element.closest("ul"));
+							} else {
+								error.insertAfter(element);
+							}
+						},
+						messages:
+							{
+EditableTextField6:"&#039;Name&#039; ist ein Pflichtfeld.", EditableTextField10:"&#039;Tel.&#039; ist ein Pflichtfeld.", EditableEmailField11:"&#039;E-Mail&#039; ist ein Pflichtfeld.", EditableTextField15:"&#039;Datum&#039; ist ein Pflichtfeld.", EditableTextField16:"&#039;Zeit&#039; ist ein Pflichtfeld.", EditableTextField12:"&#039;Anzahl Personen&#039; ist ein Pflichtfeld.", EditableTextField14:"&#039;Bemerkungen&#039; ist ein Pflichtfeld."
+}
+
+						,
+						rules: 
+						 	{
+EditableTextField6:{
+required:1
+}
+, EditableEmailField11:{
+required:1, email:1
+}
+, EditableTextField15:{
+required:1
+}
+, EditableTextField16:{
+required:1
+}
+, EditableTextField12:{
+required:1
+}
+
+}
+
+						
+					});
+					
+				});
+			})(jQuery);
+
+//]]>
+</script>
+</head>
+    <body class="UserDefinedFormPage">
+    	
+    	
+    	<div class="headercontainer">
+    <div class="header">
+        <div class="headercontent">
+            <div id="MobileNavIcon">
+                <div class="navicon"><i class="fa fa-bars"></i></div>
+                <div class="facebookIcon">
+                <a href="https://www.facebook.com/pages/Akropolis-Solothurn/742781349149312?fref=ts" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                </div>
+            </div>
+            <span class="blockerLeft">&nbsp;</span>
+            <div id="Logo">
+            <div class="jubilaeum">
+                <img src="themes/baeren/images/jubilaeum.jpg" alt=""/>
+            </div>
+            <div class="logo">
+                <a href="https://www.akropolisgreek.ch/">
+                    <img src="themes/baeren/images/logo-akropolis.png" alt="Akropolis Greek Restaurant" title="Akropolis Greek Restaurant" />
+                </a>
+            </div>
+            </div>
+            <span class="blockerRight">&nbsp;</span>
+            <div id="Navigation">
+    <ul>
+        
+            <li>
+                <a href="/" class="link  ">Home</a>
+                
+            </li>
+        
+            <li>
+                <a href="/menukarte/" class="link  childborder">Menukarte</a>
+                
+                    <div class="subNav">
+                        <ul>
+                            
+                                <li>
+                                    <a href="/menukarte/aperitif/" class="link">Aperitif</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <a href="/menukarte/vorspeisen/" class="link">Vorspeisen</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <a href="/menukarte/kria-puata-hauptgerichte/" class="link">Kria Puata / Hauptgerichte</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <a href="/menukarte/warme-vegetarische-gerichte/" class="link">Warme vegetarische Gerichte</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <a href="/menukarte/dessert/" class="link">Dessert</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <a href="/menukarte/weinkarte/" class="link">Weinkarte</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <a href="/menukarte/spirituosen/" class="link">Spirituosen</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <a href="/menukarte/getraenke/" class="link">Getränke</a>
+                                    
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </li>
+        
+            <li>
+                <a href="/akropolis/ueber-uns/" class="link  childborder">Akropolis</a>
+                
+                    <div class="subNav">
+                        <ul>
+                            
+                                <li>
+                                    <a href="/akropolis/ueber-uns/" class="link">Über uns</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <a href="/akropolis/geschichte/" class="link">Geschichte</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <a href="/akropolis/gaestebuch/" class="link">Gästebuch</a>
+                                    
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </li>
+        
+            <li>
+                <a href="/kontakt/kontaktinfo/" class="link  childborder">Kontakt</a>
+                
+                    <div class="subNav">
+                        <ul>
+                            
+                                <li>
+                                    <a href="/kontakt/kontaktinfo/" class="link">Kontaktinfo</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <a href="/kontakt/lageplan/" class="link">Lageplan</a>
+                                    
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </li>
+        
+            <li>
+                <a href="/fotos/" class="link  ">Fotos</a>
+                
+            </li>
+        
+    </ul>
+</div>
+        </div>
+    </div>
+</div>
+         
+            
+                
+	<div id="TeaserContainer">
+        <!--div id="Teasertextholder">
+            <div id="TeasertextContainer">
+                <div id="Teasertop"></div>
+                <div id="Teasertext"><h1></h1></div>
+                <div id="Teaserbottom"></div>
+            </div>
+        </div-->
+	    <div id="Teaser">
+    		
+    			<div class="teaser activ" style="opacity: 1;">
+    				<div class="teaserImg">
+                        
+                            <img src="/assets/Teaser/_resampled/CroppedImage20001600-DSC-7126.JPG" />
+                        
+    				</div>
+                        
+    				
+    			</div>
+    		
+		</div>
+	</div>
+
+
+
+            
+            <div id="Container">
+                <div class="main">
+                    <div id="Layout">
+                        
+    <div id="LanguageSwitcher">
+        <ul class="translations">
+            
+              <li class="de-DE first last">
+                <a class="active" href="/reservation/" hreflang="de-DE">
+                    
+                        DE
+                    
+                </a>
+                
+                
+              </li>
+            
+        </ul>
+    </div>
+
+                        <div id="Content" class="typography">
+    <h1>Reservation</h1>
+    
+	
+    
+
+    
+    
+
+    
+
+    
+    
+<form id="Form_Form" action="/reservation/Form" method="post" enctype="application/x-www-form-urlencoded">
+
+	
+	<p id="Form_Form_error" class="message " style="display: none"></p>
+	
+	
+	<fieldset>
+		 
+		
+			<div id="EditableTextField6" class="field text requiredField" >
+	<label class="left" for="Form_Form_EditableTextField6">Name</label>
+	<div class="middleColumn">
+		<input type="text" name="EditableTextField6" class="text requiredField" id="Form_Form_EditableTextField6" />
+	</div>
+	
+	
+
+	
+</div>
+
+		
+			<div id="EditableTextField10" class="field text" >
+	<label class="left" for="Form_Form_EditableTextField10">Tel.</label>
+	<div class="middleColumn">
+		<input type="text" name="EditableTextField10" class="text" id="Form_Form_EditableTextField10" />
+	</div>
+	
+	
+
+	
+</div>
+
+		
+			<div id="EditableEmailField11" class="field email text requiredField" >
+	<label class="left" for="Form_Form_EditableEmailField11">E-Mail</label>
+	<div class="middleColumn">
+		<input type="email" name="EditableEmailField11" class="email text requiredField" id="Form_Form_EditableEmailField11" />
+	</div>
+	
+	
+
+	
+</div>
+
+		
+			<div id="EditableTextField15" class="field text requiredField" >
+	<label class="left" for="Form_Form_EditableTextField15">Datum</label>
+	<div class="middleColumn">
+		<input type="text" name="EditableTextField15" class="text requiredField" id="Form_Form_EditableTextField15" />
+	</div>
+	
+	
+
+	
+</div>
+
+		
+			<div id="EditableTextField16" class="field text requiredField" >
+	<label class="left" for="Form_Form_EditableTextField16">Zeit</label>
+	<div class="middleColumn">
+		<input type="text" name="EditableTextField16" class="text requiredField" id="Form_Form_EditableTextField16" />
+	</div>
+	
+	
+
+	
+</div>
+
+		
+			<div id="EditableTextField12" class="field text requiredField" >
+	<label class="left" for="Form_Form_EditableTextField12">Anzahl Personen</label>
+	<div class="middleColumn">
+		<input type="text" name="EditableTextField12" class="text requiredField" id="Form_Form_EditableTextField12" />
+	</div>
+	
+	
+
+	
+</div>
+
+		
+			<div id="EditableTextField14" class="field textarea" >
+	<label class="left" for="Form_Form_EditableTextField14">Bemerkungen</label>
+	<div class="middleColumn">
+		<textarea name="EditableTextField14" class="textarea" id="Form_Form_EditableTextField14" rows="5" cols="20"></textarea>
+	</div>
+	
+	
+
+	
+</div>
+
+		
+			<input type="hidden" name="SecurityID" value="b9929debe62d11b98fd8b09a09795bc4d68280fb" class="hidden" id="Form_Form_SecurityID" />
+
+		
+		<div class="clear"><!-- --></div>
+	</fieldset>
+
+	
+	<div class="Actions">
+		
+			
+	<input type="submit" name="action_process" value="Reservieren" class="action" id="Form_Form_action_process" />
+
+
+		
+	</div>
+	
+
+</form>
+
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+        <div id="FooterContainer">
+	<div id="Footer">
+		<div class="footerBlock">
+	    <div class="innerfooter">
+	    	<div id="Facebook">
+	    		<a href="https://www.facebook.com/pages/Akropolis-Solothurn/742781349149312?fref=ts" target="_blank">
+	    			<img src="themes/baeren/images/facebook.png" alt="Bären Bätterkinden auf Favebook" />
+	    		</a>
+	    	</div>
+	    	<!--<div class="footernews" style="display: none;">
+	    		
+	    		
+	    	</div>-->
+            <div class="footertext menu">
+                
+                    <div class="lunchMenu">
+                        
+                            <h4>Mittagsmenu Mo - Fr</h4>
+
+                            
+                                02.12.19
+                                <img src="/assets/Uploads/IMG-20191202-103018-191.jpg" class="img-responsive" alt=""/>
+                            
+                        
+                    </div>
+                
+                <div class="menuLink">
+                
+                    <a href="/admin">Login</a>
+                
+                </div>
+            </div>
+	        <div class="footertext openingTimes">
+                <h4>Öffnungszeiten</h4>
+<table border="0"><tbody><tr><td class="days" style="width: 53%;" valign="top">Montag bis Samstag:</td>
+<td class="second" style="width: 4%;"> </td>
+<td class="times" style="width: 53%;">11:00 – 14:00 18:00 – 23:30 </td>
+</tr><tr><td> </td>
+<td> </td>
+<td> </td>
+</tr><tr><td>Sonntag:</td>
+<td> </td>
+<td>Ruhetag</td>
+</tr></tbody></table>
+	        </div>
+	        <div class="footertext reservation">
+                <h4>Reservation</h4>
+                <p>Reservieren Sie telefonisch unter <br><span class="telNr">+41 32 621 20 07 oder<br>+41 76 473 59 22</span><br>
+                    oder reservieren Sie Online
+                </p>
+                <span class="buttondiv"><a href="/reservation">zur Online reservierung</a></span>
+	        </div>
+
+	    </div>
+	</div>
+	</div>
+</div>
+    </body>
+</html>

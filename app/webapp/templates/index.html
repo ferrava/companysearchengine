@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fffdf7; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to bottom right, #FEDCD2, #DF744A); 
+        color: #4E4E50
+      }
+      h1 {
+        color: #4E4E50
+      }
+      h2 {
+        color: #4E4E50
+      }
+      h3{
+        color: #DF744A
+      }
+      .search{
+        float: left;
+        width: 50%;
+        padding: 0 10px;
+        margin: 5px 0;
+      }
+      .search input{
+        width: 100%;
+        height: 75px;
+        background-color: #4E4E50;
+        padding: 0 10px;
+        text-align: right;
+        border: none;
+        color:#DF744A;
+        font-size: 1.5em;
+      }
+      .search input::placeholder{
+        color:#DF744A;
+        opacity: 0.50;
+        font-size: 1em;
+      }
+      .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+        margin: 5px 0;
+      }
+      .row {margin: 0 -5px;}
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      .card {
+        height: 35%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        text-align: center;
+        background-color: #fffdf7;
+        vertical-align: middle;
+        border-radius: 25px;
+        color: #4E4E50;
+      }
+      fieldset {
+        text-align: right;
+        background-color:rgba(0, 0, 0, 0.75);
+        color: #fffdf7;
+        border: none;
+        margin: none;
+      }
+      .title {
+        height: 10%;
+        padding: 10px;
+        text-align: center;
+        color: #fffdf7
+      }
+      strong{
+        color: #DF744A
+      }
+      a, a:visited {
+        text-decoration: none;
+        color: rgba(223,116,74,0.5);
+        /* color: #DF744A; */
+      }
+      a:hover, a:active{
+        color: rgba(223,116,74,1);
+      }
+      .search-select{
+        float: left;
+        width: 50%;
+        padding: 0 10px;
+        margin: 5px 0;
+      }
+      .search-select select{
+        background-color: #DF744A;
+        border: none;
+        color: #4E4E50;
+        height: 40px;
+        font-size: 1em;
+      }
+      button {
+        max-width: 75px;
+        height: 40px;
+        color: #4E4E50;
+        font-size: 1em;
+        background-color: #DF744A;
+        border: none;
+      }
+      button:hover {
+        max-width: 80px;
+        height: 45px;
+        color: #4E4E50;
+        background-color: #DF744A;
+        border: none;
+        margin-right: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <form action="/" method="POST">
+        <fieldset>
+          <h1 class="title">Find the company you are looking for!</h1>
+        <div>
+          <div class="search">
+            <input id="company" type="text" name="who" placeholder="WHO? Company name" />
+          </div>
+          <div class="search">
+            <input id="location" type="text" name="where" placeholder="WHERE? City name" />
+          </div>
+          <div class="search-select">
+            <select name="category">
+              <option value="nocategory">--category--</option>
+              {% for category in categories%}
+              <option value="{{category}}">{{category}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="search-select">
+            <button class="btn-search" type="submit">Search</button>
+          </div>
+        </div>
+        </fieldset>
+      </form>
+    </div>
+    <div>
+      {% if response %}
+        <h2>{{response}}</h3>
+      {% endif %}
+        <h3># results : {{numFound}}</h3>
+      <div class="row">
+        {% for company in companies %}
+        <div class="column">
+          <div class="card">
+            <h3>{{company.title}}</h2>
+            {% if company.contentName %}
+            <p scope="col">{{company.contentName}}</p>
+            {% endif %}
+            <p scope="col"> <strong>City</strong> : {{company.cityName}}</p>
+            {% if company.url %}
+            <p scope="col"> <a href={{company.url}} target="_blank">Contacts</a></p>
+            {% endif %}
+            {% if company.rating %}
+            <img src="https://img.icons8.com/cotton/64/000000/star.png" width="20px" height="20px"> 
+            <p scope="col">{{company.rating}}</p>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>   
+    </div>
+  </body>
+</html>

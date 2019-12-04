@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="40px" viewBox="0 0 33 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-plants</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="New-Icons---no-artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-plants" transform="translate(-15.000000, -12.000000)" fill-rule="nonzero" fill="#000000">
+            <g transform="translate(15.500000, 12.500000)" id="Shape">
+                <path d="M10.75,15.1 C12.45,13.15 12.25,10.2 10.3,8.55 C8.35,6.85 0.25,5.95 0.25,5.95 C0.25,5.95 1.9,13.5 4.25,15.55 C6.15,17.2 9.05,17 10.75,15.1 Z"></path>
+                <path d="M18.25,17.7 C18.25,17.1 18.45,16.35 18.8,15.65 C21.45,17.35 25.05,17.05 27.3,14.7 C29.9,12.05 31.9,0.3 31.9,0.3 C31.9,0.3 20.8,2.05 17.65,5.25 C15.75,7.2 15.25,10.05 16.25,12.45 C15.05,14.2 14.45,16.1 14.45,17.7 L14.45,23.35 L18.3,23.35 L18.3,17.7 L18.25,17.7 Z"></path>
+                <path d="M27.2,25.25 L5.4,25.25 C4.8,25.25 4.25,25.55 3.85,26 C3.5,26.5 3.35,27.1 3.55,27.7 L6.3,37.3 C6.55,38.1 7.3,38.7 8.15,38.7 L24.5,38.7 C25.35,38.7 26.1,38.15 26.35,37.3 L29.1,27.7 C29.25,27.1 29.15,26.5 28.8,26 C28.4,25.55 27.8,25.25 27.2,25.25 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

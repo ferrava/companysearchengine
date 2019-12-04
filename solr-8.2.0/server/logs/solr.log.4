@@ -1,0 +1,597 @@
+2019-11-26 12:16:51.874 INFO  (main) [   ] o.e.j.u.log Logging initialized @877ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-11-26 12:16:51.956 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/etc/jetty.xml
+2019-11-26 12:16:52.005 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-11-26 12:16:52.005 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/etc/jetty-http.xml
+2019-11-26 12:16:52.009 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_222-b10
+2019-11-26 12:16:52.028 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/contexts/] at interval 0
+2019-11-26 12:16:52.277 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-11-26 12:16:52.285 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-11-26 12:16:52.285 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-11-26 12:16:52.286 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-11-26 12:16:52.354 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-11-26 12:16:52.358 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.2.0
+2019-11-26 12:16:52.358 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-11-26 12:16:52.359 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0
+2019-11-26 12:16:52.359 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-11-26T12:16:52.359Z
+2019-11-26 12:16:52.379 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr
+2019-11-26 12:16:52.384 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/solr.xml
+2019-11-26 12:16:52.438 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e, but no JMX reporters were configured - adding default JMX reporter.
+2019-11-26 12:16:52.793 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-11-26 12:16:52.896 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@7803bfd[provider=null,keyStore=null,trustStore=null]
+2019-11-26 12:16:52.896 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@7803bfd[provider=null,keyStore=null,trustStore=null]
+2019-11-26 12:16:53.017 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@60975100[provider=null,keyStore=null,trustStore=null]
+2019-11-26 12:16:53.018 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@60975100[provider=null,keyStore=null,trustStore=null]
+2019-11-26 12:16:53.182 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-11-26 12:16:53.184 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-11-26 12:16:53.235 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-26 12:16:53.236 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-26 12:16:53.240 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-26 12:16:53.272 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr
+2019-11-26 12:16:53.272 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [companysearch, mytest1]
+2019-11-26 12:16:53.321 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4d02f94e{/solr,file:///Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr-webapp/webapp}
+2019-11-26 12:16:53.321 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.c.SolrResourceLoader [companysearch] Added 61 libs to classloader, from paths: [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/clustering/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/extraction/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/langid/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/velocity/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/dist]
+2019-11-26 12:16:53.321 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.SolrResourceLoader [mytest1] Added 61 libs to classloader, from paths: [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/clustering/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/extraction/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/langid/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/contrib/velocity/lib, /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/dist]
+2019-11-26 12:16:53.339 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@131ef10{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-11-26 12:16:53.339 INFO  (main) [   ] o.e.j.s.Server Started @2344ms
+2019-11-26 12:16:53.429 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.2.0
+2019-11-26 12:16:53.429 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.2.0
+2019-11-26 12:16:53.619 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.s.IndexSchema [companysearch] Schema name=nutch
+2019-11-26 12:16:53.619 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.s.IndexSchema [mytest1] Schema name=nutch
+2019-11-26 12:16:53.650 WARN  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.650 WARN  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.653 WARN  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.654 WARN  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.656 WARN  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.656 WARN  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.660 WARN  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.660 WARN  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.664 WARN  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.664 WARN  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.666 WARN  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.666 WARN  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.710 WARN  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.716 WARN  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2019-11-26 12:16:53.821 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2019-11-26 12:16:53.823 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2019-11-26 12:16:53.832 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.CoreContainer Creating SolrCore 'mytest1' using configuration from instancedir /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1, trusted=true
+2019-11-26 12:16:53.832 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.c.CoreContainer Creating SolrCore 'companysearch' using configuration from instancedir /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch, trusted=true
+2019-11-26 12:16:53.854 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.companysearch' (registry 'solr.core.companysearch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-26 12:16:53.854 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mytest1' (registry 'solr.core.mytest1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2019-11-26 12:16:53.867 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.c.SolrCore [[mytest1] ] Opening new SolrCore at [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1], dataDir=[/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1/data/]
+2019-11-26 12:16:53.867 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.c.SolrCore [[companysearch] ] Opening new SolrCore at [/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch], dataDir=[/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch/data/]
+2019-11-26 12:16:53.905 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-11-26 12:16:53.905 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-11-26 12:16:54.443 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-11-26 12:16:54.443 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-11-26 12:16:54.443 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-11-26 12:16:54.443 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-11-26 12:16:54.464 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-11-26 12:16:54.464 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-11-26 12:16:54.464 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-11-26 12:16:54.464 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-11-26 12:16:54.553 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@6a416a0a[companysearch] main]
+2019-11-26 12:16:54.554 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.s.SolrIndexSearcher Opening [Searcher@764549d4[mytest1] main]
+2019-11-26 12:16:54.562 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/companysearch/conf
+2019-11-26 12:16:54.562 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr/mytest1/conf
+2019-11-26 12:16:54.578 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-11-26 12:16:54.578 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-11-26 12:16:54.585 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-11-26 12:16:54.585 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-11-26 12:16:54.598 INFO  (coreLoadExecutor-9-thread-2) [   x:mytest1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-11-26 12:16:54.598 INFO  (coreLoadExecutor-9-thread-1) [   x:companysearch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-11-26 12:16:54.612 INFO  (searcherExecutor-10-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@764549d4[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(8.2.0):C30:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574770257297}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-26 12:16:54.612 INFO  (searcherExecutor-10-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-26 12:16:54.612 INFO  (searcherExecutor-10-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-11-26 12:16:54.615 INFO  (searcherExecutor-11-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6a416a0a[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574696699726}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.2.0):C51:[diagnostics={java.vendor=AdoptOpenJDK, os=Mac OS X, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574699109345}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-26 12:16:54.615 INFO  (searcherExecutor-11-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-11-26 12:16:54.615 INFO  (searcherExecutor-11-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-11-26 12:16:54.618 INFO  (searcherExecutor-10-thread-1-processing-x:mytest1) [   x:mytest1] o.a.s.c.SolrCore [mytest1] Registered new searcher Searcher@764549d4[mytest1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(8.2.0):C30:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574770257297}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-26 12:16:54.618 INFO  (searcherExecutor-11-thread-1-processing-x:companysearch) [   x:companysearch] o.a.s.c.SolrCore [companysearch] Registered new searcher Searcher@6a416a0a[companysearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(8.2.0):C10:[diagnostics={os=Mac OS X, java.version=1.8.0_222, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=merge, os.version=10.14.6, java.vendor=AdoptOpenJDK, java.vm.version=25.222-b10, lucene.version=8.2.0, mergeMaxNumSegments=-1, mergeFactor=2, timestamp=1574696699726}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_3(8.2.0):C51:[diagnostics={java.vendor=AdoptOpenJDK, os=Mac OS X, java.version=1.8.0_222, java.vm.version=25.222-b10, lucene.version=8.2.0, os.arch=x86_64, java.runtime.version=1.8.0_222-b10, source=flush, os.version=10.14.6, timestamp=1574699109345}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-11-26 12:17:12.112 INFO  (qtp961712517-24) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{} 0 67
+2019-11-26 12:17:12.113 ERROR (qtp961712517-24) [   x:mytest1] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: copyField dest :'categoryName_str' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:916)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:784)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:82)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:450)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:17:12.114 ERROR (qtp961712517-24) [   x:mytest1] o.a.s.s.HttpSolrCall null:org.apache.solr.common.SolrException: copyField dest :'categoryName_str' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:916)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:784)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:82)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:450)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:21:26.967 INFO  (qtp961712517-25) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{} 0 7
+2019-11-26 12:21:26.967 ERROR (qtp961712517-25) [   x:mytest1] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: copyField dest :'categoryName_str' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:916)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:784)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:82)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:450)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:21:26.968 ERROR (qtp961712517-25) [   x:mytest1] o.a.s.s.HttpSolrCall null:org.apache.solr.common.SolrException: copyField dest :'categoryName_str' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:916)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:784)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:82)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:450)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:21:57.885 INFO  (qtp961712517-20) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{} 0 8
+2019-11-26 12:21:57.885 ERROR (qtp961712517-20) [   x:mytest1] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: copyField dest :'categoryName_str' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:916)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:784)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:82)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:450)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:21:57.886 ERROR (qtp961712517-20) [   x:mytest1] o.a.s.s.HttpSolrCall null:org.apache.solr.common.SolrException: copyField dest :'categoryName_str' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:916)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:784)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:82)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:450)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:23:42.131 INFO  (qtp961712517-17) [   x:mytest1] o.a.s.u.p.LogUpdateProcessorFactory [mytest1]  webapp=/solr path=/update params={}{} 0 8
+2019-11-26 12:23:42.131 ERROR (qtp961712517-17) [   x:mytest1] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: copyField dest :'categoryName_str' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:916)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:784)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:82)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:450)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:23:42.132 ERROR (qtp961712517-17) [   x:mytest1] o.a.s.s.HttpSolrCall null:org.apache.solr.common.SolrException: copyField dest :'categoryName_str' is not an explicit field and doesn't match a dynamicField.
+	at org.apache.solr.schema.IndexSchema.registerCopyField(IndexSchema.java:916)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:784)
+	at org.apache.solr.schema.ManagedIndexSchema.addCopyFields(ManagedIndexSchema.java:82)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:450)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2578)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:780)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:566)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:423)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:350)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-26 12:25:00.877 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@131ef10{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-11-26 12:25:00.877 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-11-26 12:25:00.880 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1344697180
+2019-11-26 12:25:00.882 INFO  (coreCloseExecutor-20-thread-1) [   x:mytest1] o.a.s.c.SolrCore [mytest1]  CLOSING SolrCore org.apache.solr.core.SolrCore@474f154f
+2019-11-26 12:25:00.882 INFO  (coreCloseExecutor-20-thread-1) [   x:mytest1] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mytest1, tag=474f154f
+2019-11-26 12:25:00.882 INFO  (coreCloseExecutor-20-thread-2) [   x:companysearch] o.a.s.c.SolrCore [companysearch]  CLOSING SolrCore org.apache.solr.core.SolrCore@13947ffa
+2019-11-26 12:25:00.883 INFO  (coreCloseExecutor-20-thread-1) [   x:mytest1] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@19104292: rootName = null, domain = solr.core.mytest1, service url = null, agent id = null] for registry solr.core.mytest1 / com.codahale.metrics.MetricRegistry@309c915
+2019-11-26 12:25:00.893 INFO  (coreCloseExecutor-20-thread-2) [   x:companysearch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.companysearch, tag=13947ffa
+2019-11-26 12:25:00.894 INFO  (coreCloseExecutor-20-thread-2) [   x:companysearch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@46ac524d: rootName = null, domain = solr.core.companysearch, service url = null, agent id = null] for registry solr.core.companysearch / com.codahale.metrics.MetricRegistry@26cbf6d0
+2019-11-26 12:25:00.906 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-11-26 12:25:00.906 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5b58ed3c: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@6d39496f
+2019-11-26 12:25:00.908 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-11-26 12:25:00.908 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6326d182: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@37920b8a
+2019-11-26 12:25:00.909 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-11-26 12:25:00.909 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5241cf67: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@4ab3e398
+2019-11-26 12:25:00.915 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4d02f94e{/solr,null,UNAVAILABLE}{/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/solr-8.2.0/server/solr-webapp/webapp}

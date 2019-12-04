@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="de-ch" dir="ltr" vocab="http://schema.org/">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/images/Logos/Favicon.png">
+        <link rel="apple-touch-icon-precomposed" href="/templates/yootheme/vendor/yootheme/theme-joomla/assets/images/apple-touch-icon.png">
+        <meta charset="utf-8" />
+	<base href="https://www.loewenverwaltungen.ch/index.php/kontakt3" />
+	<meta name="author" content="Super User" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Kontakt</title>
+	<link href="/media/com_visforms/css/visforms.min.css" rel="stylesheet" />
+	<link href="/templates/yootheme/css/theme.9.css?v=1573044812" rel="stylesheet" id="theme-style-css" />
+	<link href="/templates/yootheme/css/theme.update.css?v=1.22.5" rel="stylesheet" id="theme-style-update-css" />
+	<style>
+form#mod-visform1 div.control-group.required span.control-label:before {content:"*"; color:red; display: inline-block; padding-right: 0;} form#mod-visform1 div.control-group.required .control-label:before {content:"*"; color:red; display: inline-block; padding-right: 10px;} form#mod-visform1 .vflocationsubform {display: block;}form#mod-visform1 .vflocationsubform .locationinput, form#mod-visform1 .vflocationsubform .getmylocationbutton {display: inline-block; margin-bottom: 0; vertical-align: middle;}
+	</style>
+	<script src="/media/jui/js/jquery.min.js?dfe43faca31ab576c135476687b4a692"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?dfe43faca31ab576c135476687b4a692"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?dfe43faca31ab576c135476687b4a692"></script>
+	<script src="/media/com_visforms/js/jquery.validate.min.js"></script>
+	<script src="/media/com_visforms/js/visforms.js"></script>
+	<script src="/templates/yootheme/vendor/yootheme/theme-analytics/app/analytics.min.js?v=1.22.5" defer></script>
+	<script src="/templates/yootheme/vendor/yootheme/theme-cookie/app/cookie.min.js?v=1.22.5" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js" defer></script>
+	<script src="/templates/yootheme/vendor/yootheme/builder/elements/map/app/map.min.js?v=1.22.5" defer></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js?v=1.22.5"></script>
+	<script src="/templates/yootheme/js/theme.js?v=1.22.5"></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons-horizon.min.js?v=1.22.5"></script>
+	<script>
+jQuery(document).ready(function () {
+            jQuery.extend(jQuery.validator.messages, {
+            required: "This field is required.",
+            remote: "Please fix this field.",
+            email: "Please enter a valid email: <span>E.g. yourname&#64;domain.com</span>",
+            url: "Please enter a valid url: <span>E.g. http://www.domain.com</span>",
+            date: "Please enter a valid date.",
+            dateISO: "Please enter a valid date (ISO).",
+            number: "Please enter a valid number.",
+            digits: "Please enter a digit.",
+            creditcard: "Please enter a valid credit card number.",
+            equalTo: "Please repeat the value.",
+            maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
+            minlength: jQuery.validator.format("Please enter at least {0} characters."),
+            rangelength: jQuery.validator.format("Please enter {0} to {1} character."),
+            range: jQuery.validator.format("Please enter a number between {0} and {1}."),
+            max: jQuery.validator.format("Please enter a number lower or equal {0}."),
+            min: jQuery.validator.format("Please enter a number greater or equal {0}."),
+            customvalidation: "Invalid Input",
+            ispair: "Latitude and longigute must be valid geocoordinates in decimal format and must be entered as pair."
+            });
+            });jQuery(document).ready(function () {
+            jQuery.validator.addMethod("dateDMY", function (value, element) {
+                var check = false;
+                var re = /^(0[1-9]|[12][0-9]|3[01])[\.](0[1-9]|1[012])[\.]\d{4}$/;
+                    if (re.test(value)) {
+                        var adata = value.split(".");
+                        var day = parseInt(adata[0], 10);
+                        var month = parseInt(adata[1], 10);
+                        var year = parseInt(adata[2], 10);
+                        if (day == 31 && (month == 4 || month == 6 || month == 9 || month == 11)) {
+                            check = false; // 31st of a month with 30 days
+                        } else if (day >= 30 && month == 2) {
+                            check = false; // February 30th or 31st
+                        } else if (month == 2 && day == 29 && !(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))) {
+                            check = false; // February 29th outside a leap year
+                        } else {
+                            check = true; // Valid date
+                        }
+                    }
+                    //the calender does not allow to clear values if it is required (js). So the required option in this validation is just a workaround fallback
+                    if (value == "0000-00-00 00:00:00" && !jQuery(element).prop("required")) {
+                        check = true;
+                    }
+                    return this.optional(element) || check;
+            });
+            jQuery.validator.addMethod("dateMDY", function (value, element) {
+                var check = false;
+                var re = /^(0[1-9]|1[012])[\/](0[1-9]|[12][0-9]|3[01])[\/]\d{4}$/;
+                    if (re.test(value)) {
+                        var adata = value.split("/");
+                        var month = parseInt(adata[0], 10);
+                        var day = parseInt(adata[1], 10);
+                        var year = parseInt(adata[2], 10);
+                        if (day == 31 && (month == 4 || month == 6 || month == 9 || month == 11)) {
+                            check = false; // 31st of a month with 30 days
+                        } else if (day >= 30 && month == 2) {
+                            check = false; // February 30th or 31st
+                        } else if (month == 2 && day == 29 && !(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))) {
+                            check = false; // February 29th outside a leap year
+                        } else {
+                            check = true; // Valid date
+                        }
+                    }
+                    //the calender does not allow to clear values if it is required (js). So the required option in this validation is just a workaround fallback
+                    if (value == "0000-00-00 00:00:00" && !jQuery(element).prop("required")) {
+                        check = true;
+                    }
+                    return this.optional(element) || check;
+            });
+            jQuery.validator.addMethod("dateYMD", function (value, element) {
+                var check = false;
+                var re = /^\d{4}[\-](0[1-9]|1[012])[\-](0[1-9]|[12][0-9]|3[01])$/;
+                    if (re.test(value)) {
+                        var adata = value.split("-");
+                        var year = parseInt(adata[0], 10);
+                        var month = parseInt(adata[1], 10);
+                        var day = parseInt(adata[2], 10);
+                        if (day == 31 && (month == 4 || month == 6 || month == 9 || month == 11)) {
+                            check = false; // 31st of a month with 30 days
+                        } else if (day >= 30 && month == 2) {
+                            check = false; // February 30th or 31st
+                        } else if (month == 2 && day == 29 && !(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))) {
+                            check = false; // February 29th outside a leap year
+                        } else {
+                            check = true; // Valid date
+                        }
+                    }
+                    //the calender does not allow to clear values if it is required (js). So the required option in this validation is just a workaround fallback
+                    if (value == "0000-00-00 00:00:00" && !jQuery(element).prop("required")) {
+                        check = true;
+                    }
+                    return this.optional(element) || check;
+            });
+            jQuery.validator.addMethod("filesize", function (value, element, maxsize) {
+                var check = false;
+                if ((maxsize === 0) || ((!(element.files.length == 0)) && (element.files[0].size < maxsize)))
+                {
+                    check = true;
+                }
+                return this.optional(element) || check;
+            });
+            jQuery.validator.addMethod("fileextension", function (value, element, allowedextension) {
+                var check = false;
+                allowedextension = allowedextension.replace(/\s/g, "");
+                allowedextension = allowedextension.split(",");
+                var fileext = jQuery(element).val().split(".").pop().toLowerCase();
+                if (jQuery.inArray(fileext, allowedextension) > -1)
+                {
+                    check = true;
+                }
+                return this.optional(element) || check;
+            });
+            jQuery.validator.addMethod("customvalidation", function (value, element, re) {
+                return this.optional(element) || re.test(value);
+            });
+            jQuery.validator.addMethod("ispair", function (value, element, id) {
+                var latval = document.getElementById(id+"_lat").value;
+                var lngval = document.getElementById(id+"_lng").value;
+                //false if on field is empty and the other not
+                var check = ((latval === "" && lngval === "") || (latval !== "" && lngval !== ""));
+                var relatval = /^[-]?(([0-8]?[0-9])\.(\d+))|(90(\.0+)?)$/;
+                var relngval = /^[-]?((((1[0-7][0-9])|([0-9]?[0-9]))\.(\d+))|180(\.0+)?)$/;
+                check = (latval === "" || relatval.test(latval)) && check;
+                check = (lngval === "" || relngval.test(lngval)) && check;
+                return check;
+            });
+            jQuery.validator.addMethod("mindate", function(value, element, options) {
+	            var check = false;
+	            var minDate = "";
+	            if (value) {
+	                if (options.fromField) {
+	                    var fieldId = options.value;
+	                    var field = document.getElementById(fieldId);
+	                    if (!field) {
+	                        return true;
+	                    }
+	                    if (field.disabled) {
+	                        return true;
+	                    }
+	                    minDate = field.value;
+	                    if (!minDate) {
+	                        return true;
+	                    }
+	                } else {
+	                    minDate = options.value;
+	                }
+	                var  format, i = 0, fmt = {}, minDateFormat, j = 0, minDateFmt = {}, day;
+	                format = (value.indexOf(".") > -1) ? "dd.mm.yyyy" : ((value.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+	                format.replace(/(yyyy|dd|mm)/g, function(part) { fmt[part] = i++; });
+	                minDateFormat = (minDate.indexOf(".") > -1) ? "dd.mm.yyyy" : ((minDate.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+	                minDateFormat.replace(/(yyyy|dd|mm)/g, function(part) { minDateFmt[part] = j++; });
+	                var minDateParts = minDate.match(/(\d+)/g);
+	                var valueParts = value.match(/(\d+)/g);
+	                minDate = new Date(minDateParts[minDateFmt["yyyy"]], minDateParts[minDateFmt["mm"]]-1, minDateParts[minDateFmt["dd"]],0,0,0,0);
+	                if (options.shift) {
+	                    var shift = options.shift;
+	                    day = minDate.getDate();
+	                    day = day + parseInt(shift);
+	                    minDate.setDate(day);
+	                }
+	                value = new Date(valueParts[fmt["yyyy"]], valueParts[fmt["mm"]]-1, valueParts[fmt["dd"]],0,0,0,0);
+	                check = value >= minDate;
+                }
+                return this.optional(element) || check;
+            }, function(options, element) {
+            //validation message
+             if (options.fromField) {
+                    var minDate = "";
+                    var fieldId = options.value;
+                    var field = document.getElementById(fieldId);
+                    if (field) {
+                        minDate = field.value;
+                    }
+                } else {
+                    minDate = options.value;
+                }
+                var format, minDateFormat, j = 0, minDateFmt = {}, day, month, year, valDate;
+                minDateFormat = (minDate.indexOf(".") > -1) ? "dd.mm.yyyy" : ((minDate.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+                minDateFormat.replace(/(yyyy|dd|mm)/g, function(part) { minDateFmt[part] = j++; });
+                var minDateParts = minDate.match(/(\d+)/g);
+                minDate = new Date(minDateParts[minDateFmt["yyyy"]], minDateParts[minDateFmt["mm"]]-1, minDateParts[minDateFmt["dd"]],0,0,0,0);
+                if (options.shift) {
+                    var shift = options.shift;
+                    day = minDate.getDate();
+                    day = day + parseInt(shift);
+                    minDate.setDate(day);
+                }
+                format = options.format;
+                valDate = "";
+                day = minDate.getDate();
+                if (day < 10) {
+                    day = "0" + day;
+                }
+                month = 1 + minDate.getMonth();
+                if (month < 10) {
+                    month = "0" + month;
+                }
+                year = minDate.getFullYear();
+                switch (format) {
+                    case "%Y-%m-%d" :
+                        valDate = year + "-" + month + "-" + day;
+                        break;
+                    case "%m/%d/%Y" :
+                        valDate = month + "/" + day  + "/" + year;
+                        break;
+                    default :
+                        valDate = day + "." + month + "." + year;
+                        break;
+                }
+                return jQuery.validator.format("Please select a date greater or equal to {0}.", valDate);               
+            });
+            jQuery.validator.addMethod("maxdate", function(value, element, options) {
+	            var check = false;
+	            var minDate = "";
+	            if (value) {
+	                if (options.fromField) {
+	                    var fieldId = options.value;
+	                    var field = document.getElementById(fieldId);
+	                    if (!field) {
+	                        return true;
+	                    }
+	                    if (field.disabled) {
+	                        return true;
+	                    }
+	                    minDate = field.value;
+	                    if (!minDate) {
+	                        return true;
+	                    }
+	                } else {
+	                    minDate = options.value;
+	                }
+	                var  format, i = 0, fmt = {}, minDateFormat, j = 0, minDateFmt = {}, day;
+	                format = (value.indexOf(".") > -1) ? "dd.mm.yyyy" : ((value.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+	                format.replace(/(yyyy|dd|mm)/g, function(part) { fmt[part] = i++; });
+	                minDateFormat = (minDate.indexOf(".") > -1) ? "dd.mm.yyyy" : ((minDate.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+	                minDateFormat.replace(/(yyyy|dd|mm)/g, function(part) { minDateFmt[part] = j++; });
+	                var minDateParts = minDate.match(/(\d+)/g);
+	                var valueParts = value.match(/(\d+)/g);
+	                minDate = new Date(minDateParts[minDateFmt["yyyy"]], minDateParts[minDateFmt["mm"]]-1, minDateParts[minDateFmt["dd"]],0,0,0,0);
+	                if (options.shift) {
+	                    var shift = options.shift;
+	                    day = minDate.getDate();
+	                    day = day + parseInt(shift);
+	                    minDate.setDate(day);
+	                }
+	                value = new Date(valueParts[fmt["yyyy"]], valueParts[fmt["mm"]]-1, valueParts[fmt["dd"]],0,0,0,0);
+	                check = value <= minDate;
+                }
+                return this.optional(element) || check;
+            }, function(options, element) {
+            //validation message
+             if (options.fromField) {
+                    var minDate = "";
+                    var fieldId = options.value;
+                    var field = document.getElementById(fieldId);
+                    if (field) {
+                        minDate = field.value;
+                    }
+                } else {
+                    minDate = options.value;
+                }
+                var format, minDateFormat, j = 0, minDateFmt = {}, day, month, year, valDate;
+                minDateFormat = (minDate.indexOf(".") > -1) ? "dd.mm.yyyy" : ((minDate.indexOf("/") > -1) ? "mm/dd/yyyy" : "yyyy-mm-dd");
+                minDateFormat.replace(/(yyyy|dd|mm)/g, function(part) { minDateFmt[part] = j++; });
+                var minDateParts = minDate.match(/(\d+)/g);
+                minDate = new Date(minDateParts[minDateFmt["yyyy"]], minDateParts[minDateFmt["mm"]]-1, minDateParts[minDateFmt["dd"]],0,0,0,0);
+                if (options.shift) {
+                    var shift = options.shift;
+                    day = minDate.getDate();
+                    day = day + parseInt(shift);
+                    minDate.setDate(day);
+                }
+                format = options.format;
+                valDate = "";
+                day = minDate.getDate();
+                if (day < 10) {
+                    day = "0" + day;
+                }
+                month = 1 + minDate.getMonth();
+                if (month < 10) {
+                    month = "0" + month;
+                }
+                year = minDate.getFullYear();
+                switch (format) {
+                    case "%Y-%m-%d" :
+                        valDate = year + "-" + month + "-" + day;
+                        break;
+                    case "%m/%d/%Y" :
+                        valDate = month + "/" + day  + "/" + year;
+                        break;
+                    default :
+                        valDate = day + "." + month + "." + year;
+                        break;
+                }
+                return jQuery.validator.format("Please select a date lower or equal to {0}.", valDate);
+            });
+        });jQuery(document).ready( function(){jQuery("#field1").focus();});document.addEventListener('DOMContentLoaded', function() {
+Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+    span.innerText = span.textContent;
+});
+});var $theme = {"google_analytics":"UA-76305618-1","google_analytics_anonymize":null,"cookie":{"mode":"notification","template":"<div class=\"uk-section uk-section-xsmall uk-section-primary uk-position-bottom uk-position-fixed uk-position-z-index\">\n        <div class=\"uk-container uk-container-expand uk-text-center\">\n\n            <p>Durch die Nutzung dieser Website stimmen Sie der Verwendung von Cookies zu, wie in unserer <a href=\"index.php\/impressum\">Datenschutzerkl\u00e4rung <\/a>beschrieben.<\/p>\n                            <button type=\"button\" class=\"js-accept uk-button uk-button-default uk-margin-small-left\" data-uk-toggle=\"target: !.uk-section; animation: true\">Ok<\/button>\n            \n            \n        <\/div>\n    <\/div>"}};
+	</script>
+
+    </head>
+    <body class="">
+
+        
+        
+        <div class="tm-page">
+
+                        
+<div class="tm-header-mobile uk-hidden@m">
+
+
+    <div class="uk-navbar-container">
+        <nav uk-navbar>
+
+                        <div class="uk-navbar-left">
+
+                                <a class="uk-navbar-item uk-logo" href="https://www.loewenverwaltungen.ch">
+                    <img alt src="/templates/yootheme/cache/Lowe_ohne-Schrift-bac82f54.png" srcset="/templates/yootheme/cache/Lowe_ohne-Schrift-bac82f54.png 77w, /templates/yootheme/cache/Lowe_ohne-Schrift-74235130.png 154w" sizes="(min-width: 77px) 77px" data-width="77" data-height="100">                </a>
+                
+                
+                
+            </div>
+            
+            
+                        <div class="uk-navbar-right">
+
+                
+                                <a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle>
+                                        <div uk-navbar-toggle-icon></div>
+                </a>
+                
+                
+            </div>
+            
+        </nav>
+    </div>
+
+    
+
+<div id="tm-mobile" uk-offcanvas mode="reveal" overlay flip>
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        
+            
+<div class="uk-child-width-1-1" uk-grid>    <div>
+<div class="uk-panel" id="module-0">
+
+    
+    
+<ul class="uk-nav uk-nav-default">
+    
+	<li><a href="/index.php">Home</a></li>
+	<li><a href="/index.php/bewirtschaftung">Bewirtschaftung</a></li>
+	<li><a href="/index.php/vermietung">Vermietung</a></li>
+	<li><a href="/index.php/verkauf">Verkauf</a></li>
+	<li><a href="/index.php/ueber-uns">über uns</a></li>
+	<li class="uk-active"><a href="/index.php/kontakt3">Kontakt</a></li>
+	<li><a href="/index.php/impressum">Impressum / Datenschutz</a></li>
+	<li><a href="/index.php/reparaturauftrag-haushaltsgeraete">Reparaturauftrag Haushaltsgeräte</a></li></ul>
+
+</div>
+</div></div>
+
+            
+    </div>
+</div>
+
+</div>
+
+
+<div class="tm-header uk-visible@m" uk-header>
+
+
+
+
+        <div class="tm-headerbar-top">
+        <div class="uk-container uk-container-expand">
+
+                        <div class="uk-text-center">
+                
+<a href="https://www.loewenverwaltungen.ch" class="uk-logo">
+    <img alt src="/templates/yootheme/cache/Lowe_mit-Schrift-ohne-AG_neuer_Slogan_29-3bde7d52.png" srcset="/templates/yootheme/cache/Lowe_mit-Schrift-ohne-AG_neuer_Slogan_29-3bde7d52.png 607w, /templates/yootheme/cache/Lowe_mit-Schrift-ohne-AG_neuer_Slogan_29-016e68df.png 768w, /templates/yootheme/cache/Lowe_mit-Schrift-ohne-AG_neuer_Slogan_29-b8834533.png 1024w, /templates/yootheme/cache/Lowe_mit-Schrift-ohne-AG_neuer_Slogan_29-7c266016.png 1212w, /templates/yootheme/cache/Lowe_mit-Schrift-ohne-AG_neuer_Slogan_29-dcc3bfcb.png 1214w" sizes="(min-width: 607px) 607px" data-width="607" data-height="150"><img class="uk-logo-inverse" alt width="auto" height="150" src="/images/yootheme/logo-inverse.svg"></a>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+                <div uk-sticky media="@m" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+        
+            <div class="uk-navbar-container">
+
+                <div class="uk-container uk-container-expand">
+                    <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;boundary&quot;:&quot;!.uk-navbar-container&quot;,&quot;dropbar&quot;:true,&quot;dropbar-anchor&quot;:&quot;!.uk-navbar-container&quot;,&quot;dropbar-mode&quot;:&quot;push&quot;}">
+
+                        <div class="uk-navbar-center">
+
+                                                            
+<ul class="uk-navbar-nav">
+    
+	<li><a href="/index.php">Home</a></li>
+	<li><a href="/index.php/bewirtschaftung">Bewirtschaftung</a></li>
+	<li><a href="/index.php/vermietung">Vermietung</a></li>
+	<li><a href="/index.php/verkauf">Verkauf</a></li>
+	<li><a href="/index.php/ueber-uns">über uns</a></li>
+	<li class="uk-active"><a href="/index.php/kontakt3">Kontakt</a></li>
+	<li><a href="/index.php/impressum">Impressum / Datenschutz</a></li>
+	<li><a href="/index.php/reparaturauftrag-haushaltsgeraete">Reparaturauftrag Haushaltsgeräte</a></li></ul>
+
+                            
+                        </div>
+
+                    </nav>
+                </div>
+
+            </div>
+
+                </div>
+        
+    
+    
+
+
+
+</div>
+            
+            
+
+            
+            <div id="system-message-container" data-messages="[]">
+</div>
+
+            <!-- Builder #page -->
+<div class="uk-section-default uk-section uk-section-xsmall uk-padding-remove-top uk-padding-remove-bottom" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: false;">
+    
+        
+        
+        
+            
+            <div class="uk-container"><div class="uk-margin-small uk-margin-remove-bottom uk-container"><div class="uk-margin-remove-bottom" uk-grid>
+<div class="uk-grid-item-match uk-flex-auto uk-width-1-1@m">
+        <div class="uk-tile-default uk-tile uk-tile-xsmall">    
+        
+            
+            
+                
+<div class="uk-margin" uk-scrollspy-class>
+        <img class="el-image" alt data-src="/templates/yootheme/cache/basel-5cf9a1f1.jpeg" data-srcset="/templates/yootheme/cache/basel-4ce22347.jpeg 768w, /templates/yootheme/cache/basel-3e3e389a.jpeg 1024w, /templates/yootheme/cache/basel-661e7ebf.jpeg 1366w, /templates/yootheme/cache/basel-40547e33.jpeg 1600w, /templates/yootheme/cache/basel-3c16cbdf.jpeg 1920w, /templates/yootheme/cache/basel-5cf9a1f1.jpeg 4140w" data-sizes="(min-width: 4140px) 4140px" data-width="4140" data-height="631" uk-img>    
+    
+</div>
+
+<div class="uk-margin" uk-scrollspy-class>
+        <img class="el-image" alt data-src="/templates/yootheme/cache/Loebalken-9852b722.png" data-srcset="/templates/yootheme/cache/Loebalken-e1c592f9.png 768w, /templates/yootheme/cache/Loebalken-4438d691.png 1024w, /templates/yootheme/cache/Loebalken-4a6e93ec.png 1366w, /templates/yootheme/cache/Loebalken-c99ebc6e.png 1600w, /templates/yootheme/cache/Loebalken-4c043d34.png 1920w, /templates/yootheme/cache/Loebalken-9852b722.png 2000w" data-sizes="(min-width: 2000px) 2000px" data-width="2000" data-height="5" uk-img>    
+    
+</div>
+<div class="uk-margin-medium uk-text-left" uk-scrollspy-class><p><span style="color: #000000; font-family: 'Neue Haas Unica', Helvetica, sans-serif; font-size: 18px;">Senden Sie uns eine Nachricht und wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.</span></p></div>
+<div class="uk-panel uk-margin-small uk-margin-remove-top uk-margin-remove-bottom" uk-scrollspy-class>
+    
+    <noscript><div class="alert alert-danger">Warning! JavaScript must be enabled for this form to work properly.</div></noscript>
+<div class="visforms visforms-form">
+
+        
+    <div class="alert alert-danger error-note" style="display: none;"></div>    <script type="text/javascript">
+        jQuery(document).ready(function () {
+                jQuery('#mod-visform1').validate({
+                    submitHandler: function (form) {
+                        var returnVal = true;
+                        if (window["mod-visform1SubmitAction"] && typeof window["mod-visform1SubmitAction"] !== "undefined") {
+                            returnVal = window["mod-visform1SubmitAction"](this);
+                        }
+                        if (!returnVal) {
+                            return false;
+                        }
+                        form.submit();
+                        jQuery(form).find('input[type="submit"]').prop("disabled", true);
+                        jQuery(form).find('input[type="reset"]').prop("disabled", true);
+                        jQuery(form).find('input[type="image"]').prop("disabled", true);
+                                            },
+                    wrapper: "p",
+                    //absolutly necessary when working with tinymce!
+                    ignore: ".ignore",
+                    rules: {                     },
+                    messages: {                     },
+                    //in accordion view, display a summary message, that form contains errors
+                                        errorPlacement: function (error, element) {
+                        var errorfieldid = element.attr("data-error-container-id");
+                        if (!errorfieldid && element.attr("id") === "g-recaptcha-response") {
+                            errorfieldid = 'fc-tbxrecaptcha_response_field';
+                        }
+                        jQuery('#mod-visform1' + ' div.' + errorfieldid).html('');
+                        error.appendTo('#mod-visform1' + ' div.' + errorfieldid);
+                        error.addClass("errorcontainer");
+                    },
+                });
+
+            jQuery('.captcharefresh1').on(
+                'click', function () {
+                    if (jQuery('#captchacode1')) {
+                        jQuery('#captchacode1').attr('src', '/index.php?option=com_visforms&task=visforms.captcha&sid=' + Math.random() + '&id=1');
+                    }
+                });
+                jQuery('#mod-visform1').initVisform({
+                    visform: {"fid":"1","initEditor":false,"parentFormId":"mod-visform1","steps":1,"nbFields":8,"summaryLayout":"table","summaryLayoutClass":"table","summaryRowLayout":"tr","oSummaryFirstElementLayout":"<td>","cSummaryFirstElementLayout":"<\/td>","oSummarySecondElementLayout":"<td>","cSummarySecondElementLayout":"<\/td>","displaysummarypage":false,"hideemptyfieldsinsummary":false,"summaryemptycaliszero":false,"fields":{"0":{"id":1,"type":"text","label":"Name"},"1":{"id":2,"type":"text","label":" Vorname "},"2":{"id":3,"type":"text","label":"Adresse "},"3":{"id":4,"type":"text","label":" PLZ\/Ort"},"4":{"id":6,"type":"text","label":" Telefon "},"5":{"id":8,"type":"email","label":"E-Mail Adresse"},"6":{"id":9,"type":"textarea","label":"Nachricht"},"7":{"id":10,"type":"submit","label":"Senden"}}},
+                    restrictData: {},
+                    userInputs:  [{"type":"text","label":"field1","value":"","isDisabled":false,"isForbidden":false},{"type":"text","label":"field2","value":"","isDisabled":false,"isForbidden":false},{"type":"text","label":"field3","value":"","isDisabled":false,"isForbidden":false},{"type":"text","label":"field4","value":"","isDisabled":false,"isForbidden":false},{"type":"text","label":"field6","value":"","isDisabled":false,"isForbidden":false},{"type":"email","label":"field8","value":"","isDisabled":false,"isForbidden":false},{"type":"textarea","label":"field9","value":"","isDisabled":false,"isForbidden":false}]});
+        });
+    </script>
+ <form action="/index.php?option=com_visforms&amp;task=visforms.send&amp;id=1&amp;Itemid=104" method="post" name="visform"
+	id="mod-visform1" 
+	class="visform bthorizontal  form-horizontal " role="form"> <fieldset class="fieldset-1 active"><div class="control-group"><label class="control-label vis_mandatory">Required *</label></div><div class="fc-tbxfield1"></div> <div class="control-group field1 required"><label class="  control-label  " id="modvisform91namelbl" for="field1">Name</label><div class="controls"><input class="" id="field1" data-error-container-id="fc-tbxfield1" aria-labelledby="modvisform91namelbl" name="modvisform91name" aria-required="true" required="required" value="" type="text"/></div></div><div class="fc-tbxfield2"></div> <div class="control-group field2 required"><label class="  control-label  " id="modvisform91vornamelbl" for="field2"> Vorname </label><div class="controls"><input class="" id="field2" data-error-container-id="fc-tbxfield2" aria-labelledby="modvisform91vornamelbl" name="modvisform91vorname" aria-required="true" required="required" value="" type="text"/></div></div><div class="fc-tbxfield3"></div> <div class="control-group field3 required"><label class="  control-label  " id="modvisform91name-3lbl" for="field3">Adresse </label><div class="controls"><input class="" id="field3" data-error-container-id="fc-tbxfield3" aria-labelledby="modvisform91name-3lbl" name="modvisform91name-3" aria-required="true" required="required" value="" type="text"/></div></div><div class="fc-tbxfield4"></div> <div class="control-group field4 required"><label class="  control-label  " id="modvisform91name-4lbl" for="field4"> PLZ/Ort</label><div class="controls"><input class="" id="field4" data-error-container-id="fc-tbxfield4" aria-labelledby="modvisform91name-4lbl" name="modvisform91name-4" aria-required="true" required="required" value="" type="text"/></div></div><div class="fc-tbxfield6"></div> <div class="control-group field6 required"><label class="  control-label  " id="modvisform91name-6lbl" for="field6"> Telefon </label><div class="controls"><input class="" id="field6" data-error-container-id="fc-tbxfield6" aria-labelledby="modvisform91name-6lbl" name="modvisform91name-6" aria-required="true" required="required" value="" type="text"/></div></div><div class="fc-tbxfield8"></div> <div class="control-group field8 required"><label class="  control-label  " id="modvisform91e-maillbl" for="field8">E-Mail Adresse</label><div class="controls"><input class="" id="field8" data-error-container-id="fc-tbxfield8" aria-labelledby="modvisform91e-maillbl" name="modvisform91e-mail" aria-required="true" required="required" value="" type="email"/></div></div><div class="fc-tbxfield9"></div> <div class="control-group field9 required"><label class="  control-label  " id="modvisform91nachrichtlbl" for="field9">Nachricht</label>  <div class="controls"><textarea class="" id="field9" data-error-container-id="fc-tbxfield9" cols="10" rows="5" aria-labelledby="modvisform91nachrichtlbl" name="modvisform91nachricht" placeholder="Ihr Anliegen" aria-required="true" required="required"></textarea>   
+</div></div> <div class="form-actions"><input class="btn " id="field10" aria-label="Senden" value="Senden" disabled="disabled" name="modvisform91senden" type="submit"/>&nbsp;</div></fieldset>    <input type="hidden" name="return" value="aHR0cHM6Ly93d3cubG9ld2VudmVyd2FsdHVuZ2VuLmNoL2luZGV4LnBocC9rb250YWt0Mw,," />
+	<input type="hidden" value="1" name="postid" />
+	<input type="hidden" value="modvisform91" name="context" />
+	<input type="hidden" value="pagebreak" name="addSupportedFieldType[]" />
+	<input type="hidden" name="a4a75aec1763d0af40b99b2e54dfae7d" value="1" /></form>
+</div>
+
+</div>
+
+            
+        
+        </div>
+    
+</div>
+</div></div></div>
+            
+        
+    
+</div>
+
+<div class="uk-section-default uk-section uk-section-xsmall uk-padding-remove-top uk-padding-remove-bottom">
+    
+        
+        
+        
+            
+            <div class="uk-container"><div class="uk-margin-remove-top uk-margin-remove-bottom uk-grid-small uk-margin-small uk-margin-remove-top uk-margin-remove-bottom" uk-grid>
+<div class="uk-grid-item-match uk-width-expand@m">
+        <div class="uk-tile-default uk-tile uk-tile-xsmall">    
+        
+            
+            
+                <div class="uk-position-relative uk-position-z-index uk-margin-small uk-margin-remove-top uk-margin-remove-bottom" style="height: 500px" uk-map="{&quot;map&quot;:{&quot;type&quot;:&quot;roadmap&quot;,&quot;zoom&quot;:&quot;16&quot;,&quot;controls&quot;:true,&quot;zooming&quot;:true,&quot;dragging&quot;:true,&quot;center&quot;:{&quot;lat&quot;:47.5531,&quot;lng&quot;:7.59629},&quot;markers&quot;:[{&quot;lat&quot;:47.5531,&quot;lng&quot;:7.59629,&quot;title&quot;:&quot;L\u00d6WEN Verwaltungen AG &quot;,&quot;content&quot;:&quot;&lt;strong class=\&quot;uk-display-block uk-margin\&quot;&gt;L\u00d6WEN Verwaltungen AG &lt;\/strong&gt;&lt;p&gt;&lt;span style=\&quot;color: #696969; font-family: Roboto; font-size: 15px;\&quot;&gt;Lautengartenstrasse 7\u00a0\u00a0&lt;\/span&gt;&lt;br style=\&quot;color: #696969; font-family: Roboto; font-size: 15px;\&quot; \/&gt;&lt;span style=\&quot;color: #696969; font-family: Roboto; font-size: 15px;\&quot;&gt;CH-4052 Basel&lt;\/span&gt;&lt;\/p&gt;&quot;,&quot;show_popup&quot;:true}],&quot;lazyload&quot;:true,&quot;baseUrl&quot;:&quot;https:\/\/cdn.jsdelivr.net\/npm\/leaflet@1.5.1\/dist&quot;}}"></div>
+            
+        
+        </div>
+    
+</div>
+
+<div class="uk-grid-item-match uk-width-expand@m">
+        <div class="uk-tile-default uk-tile uk-tile-xsmall">    
+        
+            
+            
+                <div class="uk-margin-small uk-margin-remove-top"><p>Kontakt: <br />Löwen Verwaltungen AG <br />Lautengartenstrasse 7 <br />4052 Basel <br /><br />Tel. 061/279 95 45 <br />Fax 061/279 95 30 <br /><br /><span id="cloakbdebb6af0fce6ed93f0034897933532b">Diese E-Mail-Adresse ist vor Spambots geschützt! Zur Anzeige muss JavaScript eingeschaltet sein!</span><script type='text/javascript'>
+				document.getElementById('cloakbdebb6af0fce6ed93f0034897933532b').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addybdebb6af0fce6ed93f0034897933532b = '&#105;nf&#111;' + '&#64;';
+				addybdebb6af0fce6ed93f0034897933532b = addybdebb6af0fce6ed93f0034897933532b + 'l&#111;&#101;w&#101;nv&#101;rw&#97;lt&#117;ng&#101;n' + '&#46;' + 'ch';
+				var addy_textbdebb6af0fce6ed93f0034897933532b = '&#105;nf&#111;@l&#111;&#101;w&#101;nv&#101;rw&#97;lt&#117;ng&#101;n.ch ';document.getElementById('cloakbdebb6af0fce6ed93f0034897933532b').innerHTML += '<a ' + path + '\'' + prefix + ':' + addybdebb6af0fce6ed93f0034897933532b + '\'>'+addy_textbdebb6af0fce6ed93f0034897933532b+'<\/a>';
+		</script><br />www.loewenverwaltungen.ch</p></div><div class="uk-margin"><p>Öffnungszeiten:<br />Mo. – Do. 09.00 – 11.00 Uhr / 14.00 – 16.00 Uhr<br />Fr. 09.00 – 11.00 Uhr</p>
+<p>Ausserhalb der Öffnungszeiten Termine nach Vereinbarung<br /><br />Vor Feiertagen nur vormittags geöffnet<br />Brückentage geschlossen</p>
+<p><br /><br /></p></div>
+            
+        
+        </div>
+    
+</div>
+</div><div class="uk-grid-margin" uk-grid>
+<div class="uk-flex-auto uk-width-1-1@m">
+    
+        
+            
+            
+                
+<div class="uk-margin">
+        <img class="el-image" alt data-src="/templates/yootheme/cache/Loebalken-9852b722.png" data-srcset="/templates/yootheme/cache/Loebalken-e1c592f9.png 768w, /templates/yootheme/cache/Loebalken-4438d691.png 1024w, /templates/yootheme/cache/Loebalken-4a6e93ec.png 1366w, /templates/yootheme/cache/Loebalken-c99ebc6e.png 1600w, /templates/yootheme/cache/Loebalken-4c043d34.png 1920w, /templates/yootheme/cache/Loebalken-9852b722.png 2000w" data-sizes="(min-width: 2000px) 2000px" data-width="2000" data-height="5" uk-img>    
+    
+</div>
+
+            
+        
+    
+</div>
+</div></div>
+            
+        
+    
+</div>
+
+
+            
+            
+
+            <!-- Builder #footer -->
+<div class="uk-section-default uk-section uk-section-xsmall uk-padding-remove-bottom" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: false;">
+    
+        
+        
+        
+            
+            <div class="uk-container"><div class="uk-grid-small uk-grid-margin-small" uk-grid>
+<div class="uk-flex-auto uk-width-1-4@m uk-width-1-2@s">
+    
+        
+            
+            
+                
+<div class="uk-panel uk-margin-remove-first-child uk-margin" uk-scrollspy-class>
+    
+        <div class="uk-child-width-expand uk-grid-small" uk-grid>            <div class="uk-width-auto@m"><img class="el-image" alt data-src="/templates/yootheme/cache/Lowe_ohne-Schrift-0a0a28ad.png" data-srcset="/templates/yootheme/cache/Lowe_ohne-Schrift-0a0a28ad.png 90w, /templates/yootheme/cache/Lowe_ohne-Schrift-a9fc23d6.png 180w" data-sizes="(min-width: 90px) 90px" data-width="90" data-height="116" uk-img></div>            <div class="uk-margin-remove-first-child">
+                                    
+
+        
+                <h3 class="el-title uk-h3 uk-margin-top uk-margin-remove-bottom">                        Adresse                    </h3>        
+        
+    
+        
+        
+                <div class="el-content uk-panel uk-margin-top"><p>Löwen Verwaltungen AG<br />Lautengartenstrasse 7  <br />4052 Basel</p></div>        
+        
+        
+                
+            </div>        </div>
+
+    
+</div>
+            
+        
+    
+</div>
+
+<div class="uk-flex-auto uk-width-1-4@m uk-width-1-2@s">
+    
+        
+            
+            
+                
+<h3 class="uk-h3" uk-scrollspy-class>        Kontakt    </h3><div class="uk-margin" uk-scrollspy-class><p><span id="cloak2a1d9a8b49f416e84bae7bd2017c3537">Diese E-Mail-Adresse ist vor Spambots geschützt! Zur Anzeige muss JavaScript eingeschaltet sein!</span><script type='text/javascript'>
+				document.getElementById('cloak2a1d9a8b49f416e84bae7bd2017c3537').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy2a1d9a8b49f416e84bae7bd2017c3537 = '&#105;nf&#111;' + '&#64;';
+				addy2a1d9a8b49f416e84bae7bd2017c3537 = addy2a1d9a8b49f416e84bae7bd2017c3537 + 'l&#111;&#101;w&#101;nv&#101;rw&#97;lt&#117;ng&#101;n' + '&#46;' + 'ch';
+				var addy_text2a1d9a8b49f416e84bae7bd2017c3537 = '&#105;nf&#111;' + '&#64;' + 'l&#111;&#101;w&#101;nv&#101;rw&#97;lt&#117;ng&#101;n' + '&#46;' + 'ch';document.getElementById('cloak2a1d9a8b49f416e84bae7bd2017c3537').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy2a1d9a8b49f416e84bae7bd2017c3537 + '\'>'+addy_text2a1d9a8b49f416e84bae7bd2017c3537+'<\/a>';
+		</script><br /> Tel. +41 61 279 95 45<br /> Fax +41 61 279 95 30</p></div>
+            
+        
+    
+</div>
+
+<div class="uk-flex-auto uk-width-1-4@m uk-width-1-2@s">
+    
+        
+            
+            
+                
+<h1 class="uk-h3" uk-scrollspy-class>        Öffnungszeiten    </h1><div class="uk-margin" uk-scrollspy-class><p style="font-size: 12.16px;">Mo.-Do. 09.00 –11.00 / 14.00 –16.00 Uhr<br />Fr. 09.00 –11.00 Uhr / Nachmittag geschlossen</p>
+<p style="font-size: 12.16px;">Ausserhalb der Öffnungszeiten Termine nach Vereinbarung.</p></div>
+            
+        
+    
+</div>
+
+<div class="uk-flex-auto uk-width-1-4@m uk-width-1-2@s">
+    
+        
+            
+            
+                
+<h1 class="uk-h3" uk-scrollspy-class>        Mitgliedschaften    </h1><div class="uk-margin" uk-scrollspy-class><p><img src="/images/Logos/logo-hev.png" alt="" width="105" height="42" />    <img src="/images/Logos/svit20logo.png" alt="" width="70" height="48" /></p></div>
+            
+        
+    
+</div>
+</div></div>
+            
+        
+    
+</div>
+
+        </div>
+
+        
+        
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Click2Date</title><link rel=favicon href=/static/favicon.png><script>if (!String.prototype.includes) {
+      String.prototype.includes = function(search, start) {
+        'use strict';
+        if (typeof start !== 'number') {
+          start = 0;
+        }
+        
+        if (start + search.length > this.length) {
+          return false;
+        } else {
+          return this.indexOf(search, start) !== -1;
+        }
+      };
+    }
+
+    if (typeof Object.assign != 'function') {
+      // Must be writable: true, enumerable: false, configurable: true
+      Object.defineProperty(Object, "assign", {
+        value: function assign(target, varArgs) { // .length of function is 2
+          'use strict';
+          if (target == null) { // TypeError if undefined or null
+            throw new TypeError('Cannot convert undefined or null to object');
+          }
+
+          var to = Object(target);
+
+          for (var index = 1; index < arguments.length; index++) {
+            var nextSource = arguments[index];
+
+            if (nextSource != null) { // Skip over if undefined or null
+              for (var nextKey in nextSource) {
+                // Avoid bugs when hasOwnProperty is shadowed
+                if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+                  to[nextKey] = nextSource[nextKey];
+                }
+              }
+            }
+          }
+          return to;
+        },
+        writable: true,
+        configurable: true
+      });
+    }</script><script src=https://www.google.com/recaptcha/api.js></script><link href=/static/css/app.40eee154b789d1a1b2baede88a26e3b3.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.62df4bbef722781c3ad6.js></script><script type=text/javascript src=/static/js/app.eb9858915fbd0bd91a20.js></script></body></html>

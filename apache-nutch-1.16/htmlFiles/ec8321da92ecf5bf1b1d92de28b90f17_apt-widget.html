@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="app"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="app"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="app"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="app"> <!--<![endif]-->
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+  <title>Terminbuchung</title>
+  <meta name="keywords" content="Augenklinik Augenarzt Theo Seiler Zürich sehen ohne Brille Lasik Augen lasern Grauer Star Katarakt Alterskatarakt Trübung der Augenlinse Kunstlinse Glaukom Grüner Star Hornhaut Keratokonus Transplantation Riboflavin Crosslinking Lidchirurgie Makula Gelber Fleck Netzhaut Retina Makuladegeneration Selektive Trabekuloplastik SLT">
+
+  <meta name="description" content="Augen lasern Terminbest&auml;tigung">
+  <meta name="language" content="de, en">
+  <meta name="Content-Language" content="de">
+  <meta name="robots" content="index, follow">
+
+  <!-- open graph meta tags-->
+  <meta property="og:title" content="IROC. Klar besser sehen.">
+  <meta property="og:site_name" content="IROC">
+  <meta property="og:url" content="www.iroc.ch">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Style -->
+  <link media="all" type="text/css" rel="stylesheet" href="https://www.iroc.ch/css/bootstrap.min.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="https://www.iroc.ch/css/jqueryCustomScroll.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="https://www.iroc.ch/css/modification.min.css">
+
+
+  <!-- widget style --> 
+  <link media="all" type="text/css" rel="stylesheet" href="https://www.iroc.ch/Assets/apt-widget/css/external/jquery.steps.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="https://www.iroc.ch/Assets/apt-widget/css/external/fullcalendar.min.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="https://www.iroc.ch/Assets/apt-widget/css/external/jquery-ui.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="https://www.iroc.ch/Assets/css/app.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="https://www.iroc.ch/Assets/apt-widget/css/aptWidget.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="https://www.iroc.ch/css/apt-widget.css">
+
+
+  <!-- JavaScript -->
+  <script src="https://www.iroc.ch/js/libs/angular.min.js"></script>
+
+
+  <!-- Begin Tracking Code --> 
+  <script type="text/javascript">
+    var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.astratracker.net/" : "http://www.astratracker.net/");
+    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 706);
+      piwikTracker.trackPageView();
+      piwikTracker.enableLinkTracking();
+    } catch( err ) {}
+  </script>
+  <noscript>
+    <!--<p><img src="http://www.astratracker.net/piwik.php?idsite=706" style="border:0" alt="" /></p>-->
+  </noscript>
+  <!-- End  Tracking Code -->
+</head>
+<body ng-controller="MainController as mainCtrl">
+  <!-- navigation style -->
+  <header>
+        <div class="top-menu">
+            <ul class="navbar-right">
+                <li><span class="info-icons working-time"></span>Montag - Freitag / 08:00 - 17:00</li>
+                <li><a href="mailto:info@iroc.ch"><span class="info-icons email"></span>info@iroc.ch </a></li>
+                <li><span class="info-icons phone"></span>+41 (0) 43 488 38 00</li>
+            </ul>
+        </div>
+        <nav ontouchstart="">
+            <span class="icon-menu" onclick="toggleSubmenu(event, this);"></span>
+                        <a href="/" class="iroc-logo"></a>
+            <ul id="menu-holder" class="nav navbar-nav">
+                <li class="submenu">
+                    <a href="" onclick="toggleSubmenuList(event, this, 'menu-holder');">Behandlungen</a>
+                    <ul class="submenu-list treatments">
+                        <li><a href="eye-laser">Augenlaser / LASIK / SMILE / PRK</a></li>
+                        <li><a href="grauer-star">Grauer Star / Kataraktoperation</a></li>
+                        <li><a href="hornhauterkrankungen">Keratokonus / Crosslinking / CXL</a></li>
+                        <li><a href="lidchirurgie">Lidchirurgie</a></li>
+                        <li><a href="makulatherapie">Makulatherapie</a></li>
+                        <li><a href="glaukom">Gr&uuml;ner Star / Glaukom</a></li>
+                    </ul>
+                    
+                </li>
+                <li class="submenu">
+                    <a href="" onclick="toggleSubmenuList(event, this, 'menu-holder');">&Uuml;ber die Klinik</a>
+                    <ul class="submenu-list">
+                        <li><a href="uber-uns">IROC</a></li>
+                        <li><a href="augenarzte-zurich-iroc">Augen&auml;rzte IROC</a></li>
+                        <li><a href="weiterbildungen-iroc-zurich">Weiterbildungen</a></li>
+                        <li><a href="karriere-augenarzt-zurich">Karriere</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="" onclick="toggleSubmenuList(event, this, 'menu-holder');">Infos &amp; Service</a>
+                    <ul class="submenu-list">
+                        <li><a href="info-augenlasern-zurich">Informationsveranstaltungen</a></li>
+                        <li><a href="broschuren-augenlasern">Informationsbrosch&uuml;ren</a></li>
+                        <li><a href="neugkeiten-augenarzt">Neuigkeiten</a></li>
+                        <li><a href="preise-augenlaser">Preise / Kosten</a></li>
+                        <li><a href="fragen-und-antworten">Fragen und Antworten</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="" onclick="toggleSubmenuList(event, this, 'menu-holder');">Kontakt</a>
+                    <ul class="submenu-list">
+                        <li><a href="anschrift-augenarzt-zurich">Anschrift und Anfahrt</a></li>
+                        <li><a href="kontakt">Kontaktformular</a></li>
+                    </ul>
+                </li>    
+            </ul>               
+            <ul class="languages-menu">
+                <li class="font-sizes">
+                    <h6 class="large">A</h6>
+                    <h6 class="medium">A</h6>
+                    <h6 class="small">A</h6>
+                </li>
+                <li class="language-switcher">
+
+                  
+                                    <a href="https://www.iroc.ch/en/apt-widget" class="flag-en"></a>
+                    <a class="flag-de"></a>
+                               </li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="" style="padding: 0px 11% 50px 11%;margin-top: 150px;">
+    <div id="appointment-widget-container" style=""></div>
+</div>
+
+<!--<div class="" style="padding: 100px 11% 100px 11%; margin-top: 150px;">
+    <p>Die Online-Terminbuchung ist aktuell aufgrund von Wartungsarbeiten nicht verfügbar.</p>
+    <p>Bitte buchen Sie Ihre Termine vorübergehend telefonisch unter folgender Nummer +41(0) 43 488 38 00.</p>
+    <p>Vielen Dank für Ihr Verständnis.</p>
+</div>-->
+
+
+<footer>
+        <ul class="footer-top">
+            <li><span class="info-icons working-time"></span>Montag - Freitag / 08:00 - 17:00</li>
+            <li><a href="mailto:info@iroc.ch"><span class="info-icons email"></span>info@iroc.ch </a></li>
+            <li><span class="info-icons phone"></span>+41 (0) 43 488 38 00</li>
+        </ul>
+        <div class="row">
+            <ul class="col-xs-3">
+                <li><a  href="eye-laser">Augenlaser / LASIK / SMILE / PRK</a></li>
+                <li><a  href="grauer-star">Grauer Star / Katarakt</a></li>
+                <li><a  href="hornhauterkrankungen">Keratokonus / Crosslinking / CXL</a></li>
+                <li><a  href="lidchirurgie">Lidchirurgie</a></li>
+                <li><a  href="makulatherapie">Makulatherapie</a></li>
+                <li><a  href="glaukom">Gr&uuml;ner Star / Glaukom</a></li>
+                <li><a  href="notfall-augenarzt">Notfalluntersuchung</a></li>
+            </ul>
+
+            <ul class="col-xs-3 shorter">
+                <li><a  href="uber-uns">IROC</a></li>
+                <li><a  href="augenarzte-zurich-iroc">Augen&auml;rzte IROC</a></li>
+                <li><a  href="weiterbildungen-iroc-zurich">Weiterbildungen</a></li>
+                <li><a  href="karriere-augenarzt-zurich">Karriere</a></li>
+            </ul>
+
+            <ul class="col-xs-3 longer">
+                <li><a  href="info-augenlasern-zurich">Informationsveranstaltungen</a></li>
+                <li><a  href="broschuren-augenlasern">Informationsbrosch&uuml;ren</a></li>
+                <li><a  href="neugkeiten-augenarzt">Neuigkeiten</a></li>
+                <li><a  href="preise-augenlaser">Preise / Kosten</a></li>
+                <li><a  href="fragen-und-antworten">Fragen und Antworten</a></li>
+            </ul>
+            <ul class="col-xs-3">
+                <li><a href="anschrift-augenarzt-zurich">Anschrift und Anfahrt</a></li>
+                <li><a href="kontakt">Kontaktformular</a></li>
+                <li><a href="impressum">Impressum</a></li>
+                <li><a href="datenschutz">Datenschutzerkl&auml;rung</a></li>
+                <li><a href="allgemeine-geschaftsbedingungen">Allgemeine Gesch&auml;ftsbedingungen</a></li>
+            </ul>
+        </div>
+  <div class="footer-bottom">
+    <p class="pull-left hidden-sm hidden-xs">© 2019 IROC AG - Institut für Refraktive und Ophthalmo-Chirurgie</p>
+    <ul class="links">
+        <li class="hidden-sm hidden-xs">Folgen Sie uns:</li>
+        <li><a href="https://www.facebook.com/IROC-143424649035829/" target="_blank" class="icon-facebook"></a></li>
+        <li><a href="https://www.linkedin.com/company/iroc" target="_blank" class="icon-linkedin"></a></li>
+        <!-- <li><a href="http://www.leading-medicine-guide.ch/Experte-Augenheilkunde-Zuerich-Prof-Seiler" target="_blank" class="lmg-link"></a></li> -->
+        <li>
+            <span target="_blank" class="primo-link">
+                <a href="https://www.primomedico.com/de/" target="_blank" class="primo-de"></a>
+                <a href="https://www.primomedico.com/en/" target="_blank" class="primo-en"></a>
+                <a href="https://www.primomedico.com/fr/" target="_blank" class="primo-fr"></a>
+                <a href="https://www.primomedico.com/ru/" target="_blank" class="primo-ru"></a>
+                <a href="https://www.primomedico.com/ar/" target="_blank" class="primo-ar"></a>
+            </span>
+        </li>
+    </ul>
+  </div>
+  <p class="visible-sm visible-xs link-xs">@ 2019 IROC AG</p>
+</footer>
+
+    <script src="https://www.iroc.ch/js/libs/jquery-2.2.0.min.js"></script>
+
+    <script src="https://www.iroc.ch/js/libs/bootstrap.min.js"></script>
+
+    <script src="https://www.iroc.ch/js/libs/jquery.flexslider-min.js"></script>
+
+    <script src="https://www.iroc.ch/js/main.min.js"></script>
+
+    <script src="https://www.iroc.ch/js/libs/jquery.bsPhotoGallery.js"></script>
+
+    <script src="https://www.iroc.ch/js/libs/jqueryCustomScroll.min.js"></script>
+
+
+    <!-- Initialize Angular, must have PHP access for CSRF Token -->
+    <script type="application/javascript">
+      var app = angular.module('app', [], function($interpolateProvider) {
+        $interpolateProvider.startSymbol('<%');
+        $interpolateProvider.endSymbol('%>');
+      }).constant('CSRF_TOKEN', 'nnp4o3EGRP1ceKKnlAsU8ELBVkv8yWrsQo6CJRln');
+      app.run(['$http', 'CSRF_TOKEN', function ($http, CSRF_TOKEN) {
+        $http.defaults.headers.common['X-Csrf-Token'] = CSRF_TOKEN;
+      }]);
+    </script>
+
+    <script src="https://www.iroc.ch/js/controllers/MainController.js"></script>
+
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/external/jquery.steps.min.js"></script>
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/external/jquery.validate.min.js"></script>
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/external/bootbox.min.js"></script>
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/external/moment.min.js"></script>
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/external/moment-timezone-with-data-2010-2020.min.js"></script>
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/external/fullcalendar.min.js"></script>
+
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/aw/event-handlers/global.js"></script>
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/aw/event-handlers/treatmentStep.js"></script>
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/aw/event-handlers/calendarStep.js"></script>
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/aw/event-handlers/identificationStep.js"></script>
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/aw/event-handlers/finishStep.js"></script>
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/aw/aw.js"></script>
+
+    <script src="https://www.iroc.ch/Assets/apt-widget/js/aptWidget.js"></script>
+
+	<script src="https://www.iroc.ch/Assets/apt-widget/js/resources/localizations.js"></script>
+
+
+  <script type="text/javascript">
+    $('#appointment-widget-container').aptWidget(
+      {
+        //apiDomain: 'https://general-demo-en.pm.b-op.com/doc-booker/ab/api/v1',                    // General Demo om.b-op
+        //apiDomain: 'https://gemini.b-op.com/doc-booker/ab/api/v1',                              // Live server
+	apiDomain: 'https://apps.b-op.com/doc-booker/ab/api/v1',
+        layoutFilePath: '/Assets/apt-widget/js/resources/aptWidgetLayout.html',
+        securityToken: '629A180294A2483A9D8290B9809E9B3F',                                      // General Demo om.b-op
+        languageCode: 'de',
+		firstSlotOffsetHours: '24',
+        resultPageUrl: 'http://iroc.ch/',
+        emails: ['benjamin.isler@iroc.ch', 'michelle.fiechter@iroc.ch', 'christina.myrczik@iroc.ch', 'ana.marija.ciric@m-pioneers.com'],
+        calendarConfigurations: {
+	minTime: '07:00:00',
+          maxTime: '18:00:00',
+          contentHeight: "auto",
+          timezone: 'local', //'Europe/Zurich', //'local',
+          columnFormat: "D.M.YYYY.",
+		  weekends: true,
+                }
+            });
+    </script>

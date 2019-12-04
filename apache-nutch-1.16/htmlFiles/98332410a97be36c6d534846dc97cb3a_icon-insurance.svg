@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="43px" viewBox="0 0 40 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-insurance</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="New-Icons---no-artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-insurance" transform="translate(-12.000000, -9.000000)" fill-rule="nonzero" fill="#000000">
+            <g transform="translate(12.500000, 9.500000)" id="Shape">
+                <path d="M23.35,36.9 C23.35,37.45 22.9,37.85 22.4,37.85 C21.9,37.85 21.45,37.4 21.45,36.9 L21.45,28.25 L17.6,28.25 L17.6,36.9 C17.6,39.55 19.75,41.7 22.4,41.7 C25.05,41.7 27.2,39.55 27.2,36.9 L27.2,35.95 L23.35,35.95 L23.35,36.9 L23.35,36.9 Z"></path>
+                <path d="M21.45,4.05 L21.45,2.05 C21.45,1 20.6,0.15 19.55,0.15 C18.5,0.15 17.65,1 17.65,2.05 L17.65,4.05 C7.95,5 0.4,13.1 0.3,23 C2.85,20.7 6.2,19.3 9.9,19.3 C13.6,19.3 16.95,20.7 19.5,23 C22.05,20.7 25.4,19.3 29.1,19.3 C32.8,19.3 36.15,20.7 38.7,23 C38.6,13.1 31.1,5 21.45,4.05 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

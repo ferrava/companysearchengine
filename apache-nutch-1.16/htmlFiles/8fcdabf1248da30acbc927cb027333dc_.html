@@ -1,0 +1,727 @@
+<!-- html -->
+
+
+           <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <link rel="shortcut icon" href="http://www.kosmetik-salvel.ch/themes/default/assets/images/favicon.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet"
+        type="text/css" />
+    <meta name="format-detection" content="telephone=no">
+	<!--<link rel="stylesheet" href="https://www.netagenda.com/BookIt/css/main.css" type="text/css" media="screen" />-->
+	
+    <link type="text/css" rel="Stylesheet" href="http://www.kosmetik-salvel.ch/themes/default/assets/styles/bootstrap.css" />
+    <link type="text/css" rel="Stylesheet" href="http://www.kosmetik-salvel.ch/themes/default/assets/styles/bootstrap-responsive.css" />
+    <link type="text/css" rel="Stylesheet" href="http://www.kosmetik-salvel.ch/themes/default/assets/styles/shot.css" />
+    <link type="text/css" rel="Stylesheet" href="http://www.kosmetik-salvel.ch/themes/default/assets/styles/thickbox.css" />
+    <link type="text/css" rel="Stylesheet" href="http://www.kosmetik-salvel.ch/themes/default/assets/styles/jquery.minicolors.css" />
+
+    <link type="text/css" rel="Stylesheet" href="http://www.kosmetik-salvel.ch/themes/default/assets/styles/custom.css" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/thickbox.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/jquery.cycle.all.js"></script>
+	
+    
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/jquery.jscrollpane.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/jquery-ui-1.9.2.custom.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/jquery.validate.pack.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/ttw-music-player.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/myplaylist.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/scrollTo.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/jquery.minicolors.js"></script>
+    <script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/custom.js"></script>
+	<script type="text/javascript" src="http://www.kosmetik-salvel.ch/themes/default/assets/scripts/jquery.maximage.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	
+		
+	<!-- Add fancyBox -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+	
+	
+    <script type="text/javascript">
+    //<![CDATA[
+
+        function loading() {
+            document.getElementById("divLoading").style.visibility = "visible";
+            setTimeout('loadingVisible()', 1000);
+        }
+
+        function loadingVisible() {
+            document.getElementById("divLoading").style.visibility = "hidden";
+
+            $('div#player').ttwMusicPlayer(myPlaylist, {
+                autoPlay: true,
+                jPlayer: {
+                    swfPath: 'Jplayer'
+                }
+            });
+        }
+
+        $(document).ready(function () {
+
+            $.jPlayer.pause();
+            $('a.musicPlayer').addClass('off');
+
+            $('#slides').maximage({
+                cycleOptions: {
+                    fx: 'fade',
+                    speed: 3000,
+                    //timeout: 0,
+                    prev: 'a.prev',
+                    next: 'a.next',
+                    pause: 1,
+                    before: function (last, current) {
+                    },
+                    after: function (last, current) {
+                    }
+                },
+                onFirstImageLoaded: function () {
+                    jQuery('#slides').fadeIn('fast');
+                }
+            });
+
+            $('a.musicPlayer').click(function () {
+                if ($(this).hasClass('off')) {
+                    $(this).removeClass('off');
+                    $.jPlayer.play();
+                }
+                else {
+                    $(this).addClass('off');
+                    $.jPlayer.pause();
+                }
+            });
+        });
+
+        //]]>
+    </script>
+	<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1480739435557954'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1"
+src="https://www.facebook.com/tr?id=1480739435557954&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+	
+<title>Home | Kosmetik Salvel</title>
+
+	<script>var BASE_HREF="http://www.kosmetik-salvel.ch/"</script><script type="text/javascript">
+     
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', '14']);
+                    _gaq.push(['_trackPageview']);
+     
+                    (function() {
+                      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                    })();
+     
+                  </script>
+
+<!--[if lt IE 9]>
+	<script src="http://cdn.schweizerpunkt.com/html5-3.6-respond-1.1.0.min.js"></script>
+	<script src="http://cdn.schweizerpunkt.com/html5.js"></script>
+<![endif]-->
+
+<body onload="loading();">
+    <a href="javascript:;" class="top hidden-tablet"></a>
+    <div id="player" style="display: none;">
+    </div>
+    <div id="divLoading" enableviewstate="false">
+        <div id="divLoad">
+            <img alt="loading" src="http://kosmetik-salvel.ch/themes/default/assets/images/loading.gif" alt="loading"/>
+        </div>
+    </div>
+    <div id="loading">
+        <img src="http://kosmetik-salvel.ch/themes/default/assets/images/loading.gif" alt="loading" />
+    </div>
+	<style>
+		.slide-text{
+			overflow: visible;
+		}
+		.virtualTour{
+			position: absolute;
+			z-index: 9998;
+			bottom: 209px;
+			display: none;
+		}
+		@media (max-width: 703px){
+			.virtualTour{
+				bottom: 234px;
+			}
+		}
+		@media (min-width: 1600px){
+			.virtualTour{
+				bottom: 232px;
+			}
+		}
+		@media (min-width: 704px) and (max-width:800px){
+			.virtualTour{
+				margin-left: calc(50% - 72px);
+			}
+		}
+		/*.virtualTourBig{
+			padding: 15px;
+			background-color: rgba(0, 0, 0, 0.80);
+		}*/
+		.virtualTourSmall{
+				display: none;
+			}
+		.virtualTourSmall a{
+			color: #fff;
+			font-size: 26px;
+			/*background-color: rgba(0, 0, 0, 0.80);*/
+			/*padding: 7px 20px;*/
+		}
+		@media (max-width: 1029px){
+			.virtualTourBig{
+				display: none;
+			}
+			.virtualTourSmall{
+				display: block;
+			}
+		}
+		@media (max-height: 730px){
+			.virtualTourBig{
+				display: none;
+			}
+			.virtualTourSmall{
+				display: block;
+			}
+		}
+		.virutalTourBig iframe{
+			width: 445px !important;
+			height: 250px !important;
+		}
+	</style>
+	<!--<div class="virtualTour">
+		<div class="virtualTourBig">
+			<iframe width='623' height='350' src='https://my.matterport.com/show/?m=x4PY4Ck6vb2' frameborder='0' allowfullscreen allow='vr'></iframe>
+		</div>
+		<div class="virtualTourSmall">
+			<a class="vtLink" href="https://youtu.be/MU6s5WGmKyw" target="_blank">Virtual Tour</a>
+		</div>
+	</div>-->
+    <div id="slides">
+        <div>
+            <img src="http://www.kosmetik-salvel.ch/themes/default/assets/images/Slider/01.jpg" width="1920" height="1080" alt="" />
+            <div class="slide-text">
+				<div class="virtualTour">
+		<div class="virtualTourBig">
+			<iframe width='445' height='250' src='https://my.matterport.com/show/?m=x4PY4Ck6vb2' frameborder='0' allowfullscreen allow='vr'></iframe>
+		</div>
+		<div class="virtualTourSmall">
+			<a class="vtLink" href="https://youtu.be/MU6s5WGmKyw" target="_blank">Virtual Tour</a>
+		</div>
+	</div>
+                <h2 class="text-color">
+                    WILLKOMMEN zum Salvel Kosmetikinstitut</h2>
+				<br>
+                <div class="jetztBuchenDiv">
+                    <span class="text-color">Kosmetikstudio Susanne Salvel - Herrenacker 2, 8200 Schaffhausen - tel. 052 620 20 24 - info@kosmetik-salvel.ch</span>
+				</div>
+				<a class="jetztBuchen" target="_blank" href="https://booking.localsearch.ch//widget/kosmetik-institut-salvel?locale=de-CH"><svg width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"><title>K</title><path d="M16.74 1.37c.618 0 1.143.216 1.575.649.432.432.66.969.685 1.61v12.778c0 .618-.222 1.149-.667 1.593a2.174 2.174 0 0 1-1.592.667H2.259A2.174 2.174 0 0 1 .667 18 2.174 2.174 0 0 1 0 16.407V3.63c0-.642.222-1.18.667-1.611a2.205 2.205 0 0 1 1.592-.649h2.89v-1c0-.247.123-.37.37-.37h.11C5.878 0 6 .123 6 .37v1h6.963v-1c0-.247.123-.37.37-.37h.111c.247 0 .37.123.37.37v1h2.927zm-14.48.852a1.3 1.3 0 0 0-.982.408c-.26.271-.39.605-.39 1v3.222h17.186V3.63a1.36 1.36 0 0 0-.407-1 1.317 1.317 0 0 0-.963-.408h-2.926v.963c0 .247-.124.37-.37.37h-.112c-.247 0-.37-.123-.37-.37v-.963H6v.963c0 .247-.123.37-.37.37h-.111c-.247 0-.37-.123-.37-.37v-.963h-2.89zm14.48 15.556c.371 0 .686-.13.945-.39.26-.258.39-.586.39-.98V7.74H.888v8.666c0 .395.13.723.389.982.259.26.586.389.981.389h14.482z" fill="currentColor" fill-rule="evenodd"></path></svg> Jetzt Termin buchen</a>					
+            </div>
+            <div class="pattern style1">
+            </div>
+        </div>
+        <div>
+            <img src="http://www.kosmetik-salvel.ch/themes/default/assets/images/Slider/02.jpg" width="1920" height="1080" alt="" />
+            <div class="slide-text"> <!-- hidden-phone class removed -->
+				<div class="virtualTour">
+		<div class="virtualTourBig">
+			<iframe width='445' height='250' src='https://my.matterport.com/show/?m=x4PY4Ck6vb2' frameborder='0' allowfullscreen allow='vr'></iframe>
+		</div>
+		<div class="virtualTourSmall">
+			<a class="vtLink" href="https://youtu.be/MU6s5WGmKyw" target="_blank">Virtual Tour</a>
+		</div>
+	</div>
+                <h2 class="text-color">
+                    WELCOME to Salvel Cosmetics Institute</h2><br>
+                <div class="jetztBuchenDiv">
+                    <span class="text-color">Kosmetikstudio Susanne Salvel - Herrenacker 2, 8200 Schaffhausen - tel. 052 620 20 24 - info@kosmetik-salvel.ch</span>
+				</div>
+				<a class="jetztBuchen" target="_blank" href="https://booking.localsearch.ch//widget/kosmetik-institut-salvel?locale=de-CH"><svg width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"><title>K</title><path d="M16.74 1.37c.618 0 1.143.216 1.575.649.432.432.66.969.685 1.61v12.778c0 .618-.222 1.149-.667 1.593a2.174 2.174 0 0 1-1.592.667H2.259A2.174 2.174 0 0 1 .667 18 2.174 2.174 0 0 1 0 16.407V3.63c0-.642.222-1.18.667-1.611a2.205 2.205 0 0 1 1.592-.649h2.89v-1c0-.247.123-.37.37-.37h.11C5.878 0 6 .123 6 .37v1h6.963v-1c0-.247.123-.37.37-.37h.111c.247 0 .37.123.37.37v1h2.927zm-14.48.852a1.3 1.3 0 0 0-.982.408c-.26.271-.39.605-.39 1v3.222h17.186V3.63a1.36 1.36 0 0 0-.407-1 1.317 1.317 0 0 0-.963-.408h-2.926v.963c0 .247-.124.37-.37.37h-.112c-.247 0-.37-.123-.37-.37v-.963H6v.963c0 .247-.123.37-.37.37h-.111c-.247 0-.37-.123-.37-.37v-.963h-2.89zm14.48 15.556c.371 0 .686-.13.945-.39.26-.258.39-.586.39-.98V7.74H.888v8.666c0 .395.13.723.389.982.259.26.586.389.981.389h14.482z" fill="currentColor" fill-rule="evenodd"></path></svg> Jetzt Termin buchen</a>  
+            </div>
+            <div class="pattern style1">
+            </div>
+        </div>
+        <div>
+            <img src="http://www.kosmetik-salvel.ch/themes/default/assets/images/Slider/03.jpg" width="1920" height="1080" alt="" />
+            <div class="slide-text">
+				<div class="virtualTour">
+		<div class="virtualTourBig">
+			<iframe width='445' height='250' src='https://my.matterport.com/show/?m=x4PY4Ck6vb2' frameborder='0' allowfullscreen allow='vr'></iframe>
+		</div>
+		<div class="virtualTourSmall">
+			<a class="vtLink" href="https://youtu.be/MU6s5WGmKyw" target="_blank">Virtual Tour</a>
+		</div>
+	</div>
+                <h2 class="text-color">
+                    BIENVENUE à Salvel Cosmétique Institut</h2><br>
+                <div class="jetztBuchenDiv">
+                    <span class="text-color">Kosmetikstudio Susanne Salvel - Herrenacker 2, 8200 Schaffhausen - tel. 052 620 20 24 - info@kosmetik-salvel.ch</span>
+                </div>
+				<a class="jetztBuchen" target="_blank" href="https://booking.localsearch.ch//widget/kosmetik-institut-salvel?locale=de-CH"><svg width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"><title>K</title><path d="M16.74 1.37c.618 0 1.143.216 1.575.649.432.432.66.969.685 1.61v12.778c0 .618-.222 1.149-.667 1.593a2.174 2.174 0 0 1-1.592.667H2.259A2.174 2.174 0 0 1 .667 18 2.174 2.174 0 0 1 0 16.407V3.63c0-.642.222-1.18.667-1.611a2.205 2.205 0 0 1 1.592-.649h2.89v-1c0-.247.123-.37.37-.37h.11C5.878 0 6 .123 6 .37v1h6.963v-1c0-.247.123-.37.37-.37h.111c.247 0 .37.123.37.37v1h2.927zm-14.48.852a1.3 1.3 0 0 0-.982.408c-.26.271-.39.605-.39 1v3.222h17.186V3.63a1.36 1.36 0 0 0-.407-1 1.317 1.317 0 0 0-.963-.408h-2.926v.963c0 .247-.124.37-.37.37h-.112c-.247 0-.37-.123-.37-.37v-.963H6v.963c0 .247-.123.37-.37.37h-.111c-.247 0-.37-.123-.37-.37v-.963h-2.89zm14.48 15.556c.371 0 .686-.13.945-.39.26-.258.39-.586.39-.98V7.74H.888v8.666c0 .395.13.723.389.982.259.26.586.389.981.389h14.482z" fill="currentColor" fill-rule="evenodd"></path></svg> Jetzt Termin buchen</a>
+            </div>
+            <div class="pattern style1">
+            </div>
+        </div>
+        <div>
+            <img src="http://www.kosmetik-salvel.ch/themes/default/assets/images/Slider/04.jpg" width="1920" height="1080" alt="" />
+            <div class="slide-text">
+				<div class="virtualTour">
+		<div class="virtualTourBig">
+			<iframe width='445' height='250' src='https://my.matterport.com/show/?m=x4PY4Ck6vb2' frameborder='0' allowfullscreen allow='vr'></iframe>
+		</div>
+		<div class="virtualTourSmall">
+			<a class="vtLink" href="https://youtu.be/MU6s5WGmKyw" target="_blank">Virtual Tour</a>
+		</div>
+	</div>
+                <h2 class="text-color">
+                    BENVENUTI al Salvel Cosmetics Istituto</h2><br>
+                <div class="jetztBuchenDiv">
+                    <span class="text-color">Kosmetikstudio Susanne Salvel - Herrenacker 2, 8200 Schaffhausen - tel. 052 620 20 24 - info@kosmetik-salvel.ch</span>
+                </div>
+				<a class="jetztBuchen" target="_blank" href="https://booking.localsearch.ch//widget/kosmetik-institut-salvel?locale=de-CH"><svg width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"><title>K</title><path d="M16.74 1.37c.618 0 1.143.216 1.575.649.432.432.66.969.685 1.61v12.778c0 .618-.222 1.149-.667 1.593a2.174 2.174 0 0 1-1.592.667H2.259A2.174 2.174 0 0 1 .667 18 2.174 2.174 0 0 1 0 16.407V3.63c0-.642.222-1.18.667-1.611a2.205 2.205 0 0 1 1.592-.649h2.89v-1c0-.247.123-.37.37-.37h.11C5.878 0 6 .123 6 .37v1h6.963v-1c0-.247.123-.37.37-.37h.111c.247 0 .37.123.37.37v1h2.927zm-14.48.852a1.3 1.3 0 0 0-.982.408c-.26.271-.39.605-.39 1v3.222h17.186V3.63a1.36 1.36 0 0 0-.407-1 1.317 1.317 0 0 0-.963-.408h-2.926v.963c0 .247-.124.37-.37.37h-.112c-.247 0-.37-.123-.37-.37v-.963H6v.963c0 .247-.123.37-.37.37h-.111c-.247 0-.37-.123-.37-.37v-.963h-2.89zm14.48 15.556c.371 0 .686-.13.945-.39.26-.258.39-.586.39-.98V7.74H.888v8.666c0 .395.13.723.389.982.259.26.586.389.981.389h14.482z" fill="currentColor" fill-rule="evenodd"></path></svg> Jetzt Termin buchen</a>
+            </div>
+            <div class="pattern style1">
+            </div>
+        </div>
+		
+        <div>
+            <img src="http://www.kosmetik-salvel.ch/themes/default/assets/images/Slider/05.jpg" width="1920" height="1080" alt="" />
+            <div class="slide-text">
+				<div class="virtualTour">
+		<div class="virtualTourBig">
+			<iframe width='445' height='250' src='https://my.matterport.com/show/?m=x4PY4Ck6vb2' frameborder='0' allowfullscreen allow='vr'></iframe>
+		</div>
+		<div class="virtualTourSmall">
+			<a class="vtLink" href="https://youtu.be/MU6s5WGmKyw" target="_blank">Virtual Tour</a>
+		</div>
+	</div>
+                <h2 class="text-color">
+                    BIENVENIDO a Instituto Cosméticos Salvel</h2><br>
+                <div class="jetztBuchenDiv">
+                    <span class="text-color">Kosmetikstudio Susanne Salvel - Herrenacker 2, 8200 Schaffhausen - tel. 052 620 20 24 - info@kosmetik-salvel.ch</span>
+                </div>
+				<a class="jetztBuchen" target="_blank" href="https://booking.localsearch.ch//widget/kosmetik-institut-salvel?locale=de-CH"><svg width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"><title>K</title><path d="M16.74 1.37c.618 0 1.143.216 1.575.649.432.432.66.969.685 1.61v12.778c0 .618-.222 1.149-.667 1.593a2.174 2.174 0 0 1-1.592.667H2.259A2.174 2.174 0 0 1 .667 18 2.174 2.174 0 0 1 0 16.407V3.63c0-.642.222-1.18.667-1.611a2.205 2.205 0 0 1 1.592-.649h2.89v-1c0-.247.123-.37.37-.37h.11C5.878 0 6 .123 6 .37v1h6.963v-1c0-.247.123-.37.37-.37h.111c.247 0 .37.123.37.37v1h2.927zm-14.48.852a1.3 1.3 0 0 0-.982.408c-.26.271-.39.605-.39 1v3.222h17.186V3.63a1.36 1.36 0 0 0-.407-1 1.317 1.317 0 0 0-.963-.408h-2.926v.963c0 .247-.124.37-.37.37h-.112c-.247 0-.37-.123-.37-.37v-.963H6v.963c0 .247-.123.37-.37.37h-.111c-.247 0-.37-.123-.37-.37v-.963h-2.89zm14.48 15.556c.371 0 .686-.13.945-.39.26-.258.39-.586.39-.98V7.74H.888v8.666c0 .395.13.723.389.982.259.26.586.389.981.389h14.482z" fill="currentColor" fill-rule="evenodd"></path></svg> Jetzt Termin buchen</a>
+            </div>
+            <div class="pattern style1">
+            </div>
+        </div>
+    </div>
+	
+    <div class="slides-navigation hidden-phone">
+        <a href="javascript:;" class="next">Next</a> <a href="javascript:;" class="prev">Previous</a>
+    </div>
+    <a style="width:400px;" href="javascript:;" class="logo hidden-tablet hidden-phone" onclick="goHome();">
+        <img style="width:400px;" src="http://www.kosmetik-salvel.ch/themes/default/assets/images/logo2.png" alt="Salvel" />
+    </a>
+    <div class="footer hidden-tablet hidden-phone">
+        <ul class="socialLinks">
+			<li>
+				<div class="shop1">   
+					<a target="_blank" href="https://salvelkosmetik.juchheim-methode.de/">
+						<span>J<br>U<br>C<br>H<br>H<br>E<br>I<br>M</span>
+						<span class="inner_shop">Juchheim<br>Methode</span>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="shop1">   
+					<a target="_blank" href="https://deynique-shop.ch/">
+						<span>S<br>H<br>O<br>P</span>
+						<span class="inner_shop img-shop"><img src="http://www.kosmetik-salvel.ch/themes/default/assets/images/deyniqueshop_logo.png" alt="" /></span>
+					</a>
+				</div>
+			</li>
+			<!--<li>
+				<div class="shop">
+				    <a target="_blank" href="https://deynique-shop.ch/"></a>
+				</div>
+			</li>-->
+			
+			<li>
+                 <div>
+                    <a class="gp text-color" target="_blank" href="https://plus.google.com/+KosmetikstudioSalvelSchaffhausen/about">Google+</a>
+				</div>
+            </li>
+            <li>
+                <div>
+                    <a class="fb text-color" target="_blank" href="https://www.facebook.com/pages/Kosmetikstudio-Salvel/128406907369607">Facebook</a>
+				</div>
+
+            </li>
+			<li>
+                <div>
+                    <a class="lock text-color" target="_blank" href="https://crm.schweizerpunkt.ch/authentication/login">Login</a>
+				</div>
+
+            </li>
+        </ul>
+        <a class="musicPlayer" href="javascript:;">MUSIC</a>
+    </div>
+    <div class="containerWrap">
+        <div id="select" class="row-fluid visible-tablet visible-phone">
+            <div class="logoWrap span12">
+                <a href="javascript:;" class="logo2" onclick="goHome();">
+                    <img src="http://www.kosmetik-salvel.ch/themes/default/assets/images/logo2.png" alt="Shot-Logo" />
+                </a>
+            </div>
+            <div class="selectWrap span11">
+                <div class="row-fluid">
+                    <select id="selectBox" class="mainMenu span12" onchange="changeFunc();">
+                        <option value="index">HOME</option>
+                        <option value="ubermich.html">ÜBER MICH</option>
+						<option value="news.html">NEWS</option>						
+                        <option value="behandlungen.html">BEHANDLUNGEN</option>						
+                        <option value="produkte.html">PRODUKTE</option>
+                        <option value="studio.html">STUDIO</option>
+                        <option value="contactGoogle.html">KONTAKT</option>
+                        
+                    </select>
+                </div>
+            </div>
+        </div>
+        <ul id="menu" class="mainMenu hidden-tablet hidden-phone"> <!-- homePage class removed -->
+            <li class="menuItem"><a class="text-color" href="javascript:;" onclick="goHome();">HOME</a></li>
+            <li class="menuItem"><a class="text-color" href="ubermich.html">ÜBER MICH</a></li>
+			 <li class="menuItem"><a class="text-color" href="news.html">NEWS</a></li>			
+            <li class="menuItem"><a class="text-color" href="behandlungen.html">BEHANDLUNGEN</a></li>
+            <li class="menuItem"><a class="text-color" href="produkte.html">PRODUKTE</a></li>
+            <li class="menuItem"><a class="text-color" href="studio.html">STUDIO</a></li>
+            <li class="menuItem"><a class="text-color" href="contactGoogle.html">KONTAKT</a>
+                <!--<ul class="subMenu">
+                     <li><a class="text-color" href="contactGoogle.html">Google Map</a></li>
+                   <li><a class="text-color" href="contact.html">Stamen Map</a></li>
+                </ul>-->
+            </li>
+        </ul>
+        <div class="pages row-fluid">
+        </div>
+    </div>
+
+<div id="modal" class="modaloverlay">
+  <div class="modal">
+    <a href="#close" class="close">&times;</a>
+    <div>
+		<h3>Kosmetik Salvel</h3>
+		<br>
+
+<p><b>Copyright © 2015 Schweizerpunkt - Aliu Media</b> <br> Alle Inhalte dieser Webseite sind urheberrechtlich geschützt. Das Copyright liegt, sofern nicht anders vermerkt, bei Schweizerpunkt - Aliu Media. <br><br>
+
+Speziell die Weiterverwendung von Bildern und Videos jeglicher Art bedarf dem schriftlichen Einverständnis von Schweizerpunkt - Aliu Media und ist nur unter Erwähnung der Copyrightangaben zulässig. Die kommerzielle Nutzung ohne weitere Absprachen ist nicht statthaft.</p><br>
+
+<h3>Konzept & Design</h3>
+
+<p>Schweizerpunkt.ch <br>
+Gotthelfstrasse 41 <br>
+8172 Niederglatt <br>
+info@schweizerpunkt.ch</p><br>
+
+<h3>Text und Bild</h3>
+
+<p>Die redaktionelle Verantwortung für die Texte und Bilder liegt bei Kosmetik Salvel.</p><br>
+
+<h3>Haftungshinweis</h3>
+
+<p>Alle Inhalte dieser Seite wurden mit grösst-möglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. <br><br>
+
+Unsere Webseite enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Betreiber der Seiten verantwortlich.</p><br>
+
+
+<h3>Technisches</h3>
+
+<p>Diese Website basiert auf validem XHTML 5.0 und CSS 3.0. Für ein optimales «Look and Feel» empfehlen wir den Browser Google Crome mit aktiviertem JavaScript und installiertem Flash Player.</p>	
+    </div>
+  </div>
+</div>
+
+	<style>
+		.jetztBuchen{
+			color: rgb(255, 255, 255);
+			background-color: rgba(0, 0, 0, 0.85);
+			/* height: 54px; */
+			padding: 15px 30px;
+			margin-left: 7px;
+			display: inline-block;
+		}
+		
+		.jetztBuchen svg{
+			margin-right: 5px;
+		}
+		.jetztBuchenDiv{
+			display: inline-block !important;
+		}
+		@media (max-width: 900px){
+			.jetztBuchen{
+				margin-left: 0px;
+				margin-top: 5px;
+				/*display: block;*/
+			}
+			.jetztBuchenDiv{
+				/*display: block !important;*/
+			}
+		}
+		@media (max-width: 700px){
+			.slide-text > h2 {
+				margin-top: 0px;
+				margin-left: auto;
+				line-height: 1;
+				padding: 20px;
+			}
+		}
+		@media screen and (max-width: 480px){
+			.slide-text > div {
+				font-size: 16px;
+				line-height: 21px;
+				padding: 7px 20px;
+			}
+			.jetztBuchen{
+				padding: 8px 30px;
+			}
+			
+		}
+	</style>
+	
+	<script>
+		/* !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;
+                js.src="https://www.netagenda.com/BookIt/js/fancy.js";
+                fjs.parentNode.insertBefore(js,fjs);
+                }
+	}(document,"script","netagenda-pop-up"); */
+    </script>
+	<script>
+		$(document).ready(function(){
+			$('a#sett').click(function(){
+				$(this).parent().addClass('pop-up');
+			
+			});
+			
+			
+			
+			if(location.pathname == '/#' || location.pathname == '/'){
+				$('.virtualTour').css('display','block');
+			}
+			
+
+			
+		});
+		/*$('ul.mainMenu > li > a').click(function(){
+				if(location.pathname == '/#' || location.pathname == '/'){
+					$('.virtualTour').css('display','block');
+				}
+				else{
+					$('.virtualTour').css('display','block');
+				}
+		});*/
+		
+		function changeFunc(){
+				var selectBox = document.getElementById("selectBox");
+    			var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+				if(selectedValue === 'index'){
+					goHome();
+				}
+			}
+	</script>
+</body>
+</html>
+
+
+
+
+	<script>var BASE_HREF="http://www.kosmetik-salvel.ch/"</script>
+<!--<script>
+$('ul.nav li').click(function(){ 
+ window.location.href = $(this).children('a').attr('href');
+})
+$(function(){
+	$('#slides').height ( $(document).height() )	
+})
+$(window).resize(function(){
+	$('#slides').height ( $(document).height() )		
+})
+</script>-->
+
+<script type="text/javascript">
+    //<![CDATA[
+
+        function loading() {
+            document.getElementById("divLoading").style.visibility = "visible";
+            setTimeout('loadingVisible()', 1000);
+        }
+
+        function loadingVisible() {
+            document.getElementById("divLoading").style.visibility = "hidden";
+
+            $('div#player').ttwMusicPlayer(myPlaylist, {
+                autoPlay: false,
+                jPlayer: {
+                    swfPath: 'Jplayer'
+                }
+            });
+        }
+
+        $(document).ready(function () {
+			
+		setTimeout(function(){
+			$(document).trigger('resize');
+			$(document).resize(function() { MapLoad(); });
+		},2000);
+			
+            $('#slides').maximage({
+                cycleOptions: {
+                    fx: 'fade',
+                    speed: 3000,
+                    //timeout: 0,
+                    prev: 'a.prev',
+                    next: 'a.next',
+                    pause: 1,
+                    before: function (last, current) {
+                    },
+                    after: function (last, current) {
+                    }
+                },
+				fillElement: 'window',
+                onFirstImageLoaded: function () {
+                    jQuery('#slides').fadeIn('fast');
+                }
+            });
+
+            $('a.musicPlayer').click(function () {
+                if ($(this).hasClass('off')) {
+                    $(this).removeClass('off');
+                    $.jPlayer.play();
+                }
+                else {
+                    $(this).addClass('off');
+                    $.jPlayer.pause();
+                }
+            });
+        });
+
+        //]]>
+    </script>
+
+
+<style>
+	
+
+
+
+
+.cta {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  color: tomato;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  padding: .3em 1em;
+  text-decoration: none;
+}
+.cta:hover {
+  background-color: lightgrey;
+  color: slategrey;
+  text-decoration: none;
+}
+
+.modaloverlay {
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  z-index: -1;
+  display: block;
+}
+.modaloverlay:target {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 99999;
+}
+.modaloverlay .modal {
+  background-color: white;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 3em;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+@media (min-width: 60em) {
+  .modaloverlay .modal {
+    height: 75%;
+    margin: 5% auto;
+    max-height: 57em;
+    max-width: 66em;
+    width: 85%;
+	left:0;		
+  }
+}
+.modaloverlay .modal > iframe, .modaloverlay .modal > div {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.modaloverlay .close {
+  background-color: #62C1ED;
+  color: white;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  z-index: 1;
+}
+
+</style>
+
+
+</body>
+</html>
+

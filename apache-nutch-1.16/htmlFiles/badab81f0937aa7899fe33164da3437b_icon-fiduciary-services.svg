@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="36px" viewBox="0 0 44 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-fiduciary-services</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="New-Icons---no-artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-fiduciary-services" transform="translate(-11.000000, -12.000000)" fill-rule="nonzero" fill="#000000">
+            <g transform="translate(11.000000, 12.500000)" id="Shape">
+                <path d="M33.2,17.75 C38,17.75 41.95,13.85 41.95,9 C41.95,4.15 38.05,0.25 33.2,0.25 C28.35,0.25 24.5,4.2 24.5,9.05 C24.5,13.9 28.4,17.75 33.2,17.75 Z M33.2,3.8 C36.1,3.8 38.45,6.15 38.45,9.05 C38.45,11.95 36.1,14.3 33.2,14.3 C30.3,14.3 28,11.9 28,9.05 C28,6.2 30.35,3.8 33.2,3.8 Z"></path>
+                <path d="M41.45,24.25 C41.1,23.5 40.25,23.15 39.45,23.35 L26.1,26.7 L21.85,24.6 L23.65,22.8 C24.35,22.1 24.35,21 23.65,20.35 L21.9,18.6 C21.4,18.1 20.65,17.95 20,18.2 L12,21.4 L12,33.75 L25.75,35.5 C25.8,35.5 25.9,35.5 25.95,35.5 C26.15,35.5 26.3,35.45 26.5,35.4 L42.2,30.15 C42.7,30 43.05,29.65 43.25,29.15 C43.45,28.7 43.4,28.15 43.2,27.7 L41.45,24.25 Z"></path>
+                <path d="M5.3,19.8 L1.8,19.8 C0.85,19.8 0.05,20.6 0.05,21.55 L0.05,33.75 C0.05,34.7 0.85,35.5 1.8,35.5 L5.3,35.5 C6.25,35.5 7.05,34.7 7.05,33.75 L7.05,21.55 C7.05,20.55 6.25,19.8 5.3,19.8 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

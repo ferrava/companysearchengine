@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html ng-app="foratableApp" lang="{{ language }}" id="ng-app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"">
+    <meta name="description" content="Reservieren Sie sich einen Tisch im Restaurant Löwenzorn, Gemsberg 2/4, 4051, Basel">
+    <meta name="keywords" content="Tisch reservieren, Tisch buchen, Reservation, Restaurant Löwenzorn, Basel, Lunchgate">
+        <title>Restaurant Löwenzorn in Basel | Reservation</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://foratable.com/js/ie8fixes.js"></script>
+    <script>
+        document.createElement('ng-hide');
+        document.createElement('ng-show');
+        document.createElement('ng-cloak');
+        document.createElement('ng-controller');
+        document.createElement('ng-repeat');
+        document.createElement('ng-model');
+        document.createElement('ng-class');
+        document.createElement('ng-bind-html');
+        document.createElement('ng-click');
+        document.createElement('ng-submit');
+        document.createElement('ng-form');
+
+        document.createElement("tabset");
+        document.createElement("tab");
+        document.createElement("tab-heading");
+        document.createElement("daypicker");
+        document.createElement("monthpicker");
+        document.createElement("yearpicker");
+        document.createElement("datepicker");
+
+        // Optionally these for CSS
+        document.createElement('ng:cloak');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+
+    </script>
+    <![endif]-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.28/angular-route.js"></script>-->
+    <script src="https://foratable.com/js/angular/angular.min.js"></script>
+    <script src="https://foratable.com/js/angular/angular-route.js"></script>
+    <script src="https://foratable.com/js/angular/i18n/angular-locale_en.js"></script>
+    <script src="https://foratable.com/js/ui-bootstrap-custom-build/tmhDynamicLocale.js"></script>
+    <script src="https://foratable.com/js/ui-bootstrap-custom-build/ui-bootstrap-custom-tpls-0.12.0.min.js"></script>
+    <script src="https://foratable.com/reserve/app/b159dceb13743b3b9f4b526aa9a6f5bd/0/0"></script>
+    <script src="https://foratable.com/js/controller.js"></script>
+    <script src="https://foratable.com/js/placeholders.min.js"></script>
+    <script type="text/javascript" src="https://foratable.com/js/addthisevent/js/atc.min.js" async defer></script>
+
+<!--    <script type="text/javascript" src="--><!--js/addthisevent/js/atemay.js"></script>-->
+<!--    <script type="text/javascript">-->
+<!--        -->
+<!--        addthisevent.settings({-->
+<!--            license   : "abel5vdxyz52cdlbem2s399"-->
+<!--        });-->
+<!--//        var resizeTimeout = 0;-->
+<!--//-->
+<!--//        function onresize() {-->
+<!--//-->
+<!--//            console.log('resize');-->
+<!--//-->
+<!--//            clearTimeout(resizeTimeout);-->
+<!--//-->
+<!--//            resizeTimeout = setTimeout(function() {-->
+<!--//-->
+<!--//                if (window.parent && document.body.offsetHeight) {-->
+<!--//-->
+<!--//                    window.parent.postMessage({ windowHeight: document.body.offsetHeight }, '*');-->
+<!--//-->
+<!--//                }-->
+<!--//-->
+<!--//            }, 100);-->
+<!--//-->
+<!--//        }-->
+<!--//        window.addEventListener('resize', onresize);-->
+<!--//        window.addEventListener('load', onresize);-->
+<!--//        window.addEventListener('resizeiframe', onresize);-->
+<!--//    </script>-->
+    <script type="text/javascript">
+        window.addeventasync = function(){
+            addeventatc.settings({
+                appleical  : {show:true, text:"Apple Calendar"},
+                google     : {show:true, text:"Google <em>(online)</em>"},
+                outlook    : {show:true, text:"Outlook"},
+                outlookcom : {show:true, text:"Outlook.com <em>(online)</em>"},
+                yahoo      : {show:true, text:"Yahoo <em>(online)</em>"}
+            });
+        };
+    </script>
+
+    <link rel="stylesheet" href="https://foratable.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://foratable.com/css/reserve.css" media="screen">
+        <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/a1c5b13f-a9f0-4867-bea3-b12a3da5a827.css"/>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://foratable.com/css/ie8.css"/>
+    <![endif]-->
+    </head>
+<body>
+    <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W3RX35"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-W3RX35');
+            
+        </script>
+                
+    <!-- End Google Tag Manager -->
+    <div class="supercontainer">
+    <div class="reservation-box">
+        <div class="loader-box" ng-show="loading"><img src="https://foratable.com/images/ajax-loader.gif" class="loader"/></div>
+        <header>
+            <ul class="steps clear" ng-show="state == 'ok'">
+                <li ng-repeat="(k, number) in breadcrumbs" ng-class="{'active' : k == breadcrumbIndex,'inactive': k > breadcrumbIndex,'done' : k < breadcrumbIndex}">
+                    <button type="button">
+                        <i class="glyphicon glyphicon-ok"></i>
+                        <span class="number">{{ k + 1 }}</span>
+                    </button>
+                </li>
+            </ul>
+        </header>
+        <div class="reservation-inner" resize>
+            <div ng-view autoscroll="true">
+                <script type="text/ng-template" id="../partial/table">
+                    
+<div class="chooser-box">
+    <div class="restaurant-box">
+        {{ text.you_reserve_in }}:
+        <h1>{{ restaurant.name }} <span ng-show="withRoom" class="room-name">({{ roomName }})</span></h1>
+        <p>{{ restaurant.address }}<br>{{ restaurant.telefon }} </p>
+    </div>
+    <div ng-bind-html="gastro_message" class="restaurant-box"></div>
+    <hr class="line"/>
+    <div class="person-widget">
+        <table width="100%">
+            <thead>
+            <tr>
+                <th style="width:100%;"><button style="width:100%;text-align:left" class="btn btn-default btn-sm" type="button" ng-click="plusPerson()">
+                    <strong>{{ uinput.person }}{{ personCheck }} {{ uinput.person == 1 ? text.person : text.persons }}</strong>
+                </button></th>
+                <th><button class="btn btn-default btn-sm pull-right btn-grey" type="button"  ng-click="minusPerson()">
+                    <i class="glyphicon glyphicon-minus"></i>
+                </button></th>
+                <th><button class="btn btn-default btn-sm pull-right btn-grey" type="button"  ng-click="plusPerson()">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </button></th>
+                </tr>
+            </thead>
+        </table>
+        <div class="message person-message" ng-show="personCheck">
+            <p class="info">{{ getTooMuchPersons() }}</p>
+            <p class="thanks">{{ text.thanks }}</p>
+        </div>
+    </div>
+    <hr class="line"/>
+    <div class="form-date" ng-show="dateMode == 1">
+        <div style="display:inline-block;width:100%">
+            <datepicker ng-model="uinput.date" min-date="minDate" starting-day="1" show-weeks="false" class="dp" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" style="" ng-class="{'choosen' : choosen == 1}"></datepicker>
+        </div>
+    </div>
+    <div ng-show="dateMode == 2">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th><button tabindex="-1" class="btn btn-default btn-sm pull-left" type="button" ng-click="previousDay()"><i class="glyphicon glyphicon-chevron-left"></i></button></th>
+                    <th style="width:100%;"><button style="width:100%;" tabindex="-1" class="btn btn-default btn-sm" type="button" aria-atomic="true" aria-live="assertive" role="heading" ng-click="changeDateMode(1)"><strong>{{ uinput.date | date: "dd.MM.yyyy" }}</strong></button></th>
+                    <th><button tabindex="-1"  class="btn btn-default btn-sm pull-right" type="button" ng-click="nextDay()"><i class="glyphicon glyphicon-chevron-right"></i></button></th>
+                </tr>
+            </thead>
+        </table>
+        <div class="time-selector">
+            <ul ng-show="isOpen()">
+                <li ng-repeat="time in timeOptions | filter:filterTime(time)" ng-class="{'selected' : uinput.time == time }" ng-disabled="isEmptySlot(time)" ng-click="setTime(time)">{{ time }}</li>
+            </ul>
+            <div ng-show="!isOpen()" class="message close-message">
+                <p class="info">{{ text.closed_day }}</p>
+                <p class="thanks">{{ text.thanks }}</p>
+            </div>
+            <div ng-show="isOpen() && !hasTimeOptions()" class="message close-message">
+                <p class="info"  ng-bind-html="renderHtml(text.call_direct)"></p>
+                <p class="thanks">{{ text.thanks }}</p>
+            </div>
+        </div>
+
+    </div>
+    <div  class="hint" ng-show="dateMode == 1" >{{ text.hint_date }}</div>
+    <div class="hint" ng-show="dateMode == 2 && !uinput.time" >{{ text.hint_time }}</div>
+    <div class="message table-message" ng-show="message">{{ message }}</div>
+    <div class="message event-message" ng-show="event">
+        <p>{{ event }}</p>
+    </div>
+</div>
+<hr class="line" ng-show="uinput.time && !message"/>
+<div class="output-box" ng-show="uinput.time && !message">
+
+    <p>{{ text.your_reservation }}:<br><strong>{{ restaurant.name }}</strong> {{ text.phrase_am }} <strong>{{ uinput.date | date: "dd.MM.yyyy" }} </strong> {{ text.phrase_for }} <strong>{{ uinput.person }} {{ uinput.person == 1 ? text.person : text.persons }}</strong> {{ text.phrase_um }}  <strong>{{ uinput.time }}</strong></p>
+
+</div>
+<hr class="line" ng-show="uinput.time && !message && !personCheck"/>
+<div class="button-container">
+    <button ng-click="goBack()" class="fat-btn back-btn" type="button" ng-show="withRoom">{{ text.btn_back }}</button>
+    <button class="next-btn fat-btn second right" type="button" name="submit" ng-show="uinput.time && !message && !personCheck" ng-click="setTable()">{{ text.button_next }}</button>
+    <hr class="clearer" />
+</div>
+                </script>
+            </div>
+            <footer>
+                <hr class="clearer"/>
+                <ul class="language-switcher">
+                    <li ng-repeat="myLanguage in languages"><button ng-click="changeLanguage(myLanguage)" ng-class="{'selected' : myLanguage == language, 'last': $last}">{{ myLanguage }} <span>|</span></button></li>
+                </ul>
+                <div class="provided">
+                    <div class="col-25">  &nbsp; </div>
+                    <div class="col-50"><a href="//www.lunchgate.ch" target="_blank"><img src="https://foratable.com//images/frontend/lunchgatelogo.png"/></a></div>
+                    <div class="col-25 text-right">© 2019</div>
+                </div>
+                <hr class="clearer"/>
+
+                <p>&nbsp;</p>
+            </footer>
+            <hr class="clearer"/>
+        </div>
+    </div>
+</body>
+</html>

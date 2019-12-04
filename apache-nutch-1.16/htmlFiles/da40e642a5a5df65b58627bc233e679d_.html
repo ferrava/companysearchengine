@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="fr">
+
+	<head>
+	    <title>Accueil</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="fr" />
+		<meta name="description" content=""/>
+		<meta name="keywords" content=""/>	
+		<link rel="icon" type="image/png" href="/data/standards/img/favicon.png" />
+		<link rel="shortcut icon" href="/data/standards/img/favicon.ico" type="image/x-icon" />
+		<!--link rel="apple-touch-icon" href="/data/standards/img/custom_icon_retina.png"/-->   
+
+		<meta name="google-site-verification" content="cT0lX3lEHG-vTxxFekiisnK2cVuSvR0hp2VCMaVQzqM" />
+		
+		<link rel="stylesheet" href="/data/standards/css/reset.css" type="text/css" />
+		<link rel="stylesheet" href="/data/web/jardin-des-sens.ch/templates/css/defaults.css" type="text/css" />
+		
+		<!-- v2-658 -->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+		google.load("jquery", "1.7.1");
+			google.load("jqueryui", "1.8.16");
+		  </script><script type="text/javascript" src="/data/themes/js/login.js"></script>
+		
+		<!-- Facebook Image -->
+		<meta property="og:image" content="http://www.jardin-des-sens.ch//data/web/jardin-des-sens.ch/uploads//img/slider/footer_bg.jpg?t=1575314918" />
+		
+		
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <!-- <meta name="twitter:site" content="@"> -->
+        <meta name="twitter:title" content="Accueil">
+        <meta name="twitter:description" content="">
+        <!-- <meta name="twitter:creator" content="@"> -->
+        
+        
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Accueil" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://www.jardin-des-sens.ch/" />
+        <meta property="og:description" content="" /> 
+        <meta property="og:site_name" content="jardin-des-sens.ch" />
+        <!-- <meta property="fb:admins" content="" /> -->        
+        <link rel="stylesheet" type="text/css" href="/data/standards/css/style-projects-jquery.css" />
+<!--<link href="/external/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css" />-->
+            <script type="text/javascript" src="/data/standards/js/jquery.lightbox-0.5.js"></script>
+            <script type="text/javascript" src="/data/standards/js/kampageing.js"></script>
+            <link rel="stylesheet" type="text/css" href="/data/standards/css/kameleo.lightbox.css" media="screen"/>
+            <link rel="icon" type="image/x-icon" href="/data/web/jardin-des-sens.ch/favicon.png" /> 
+            <script type="text/javascript">
+            $(function() {
+                var $kamGallery = $("#kamGallery");
+                $kamGallery.find("li a").lightBox();
+                kamLightboxPaging($kamGallery)
+            });
+            </script>
+            <link rel="stylesheet" type="text/css" href="/data/standards/css/form.css?h=982741" />
+            <script type="text/javascript" src="/data/standards/js/validate/jquery.validate.min.js"></script>
+            <script type="text/javascript" src="/data/standards/js/validate/localization/messages_fr.js"></script>
+        <script type="text/javascript">
+           $(function(){
+           
+           //workaround for jqueryvalidate bug: in testing
+           $.validator.setDefaults({
+			showErrors: function (errorMap, errorList) {
+				this.errorList = $.grep(errorList, function (error) {
+					return error.element !== undefined;
+				});
+				this.defaultShowErrors();
+			}
+			});
+
+				   
+           
+           
+           
+           	 var $validator = $("form.kSiteForm").validate();
+			
+			$("form.kSiteForm").submit(function(ev){
+				var errors;
+				//handle checkbox groups manually cause the validator doesnt work for a checkbox group
+	           	
+	           	 $("form.kSiteForm .div_mandatory").each(function(i,e){
+	           	 	if($(e).find("input[type=checkbox]:checked, input[type=radio]:checked").length == 0)  {
+	           	 		
+		           	 	$(e).find(".checkbox_error").remove();
+		           	 	$(e).append("<label style='width:100%' class='error checkbox_error'>Veuillez sélectionner au moins une case</label>");
+						ev.preventDefault();
+		           	 	errors = { error: "Please enter an ID to check" };
+						$validator.showErrors(errors); 
+	           	 	}
+	           	 });
+	           	
+			})
+			
+			 
+			  })
+        </script>
+            <script src="/data/standards/js/mobilenav.js?h=982741" type="text/javascript"></script>
+            <link rel="stylesheet" href="/data/standards/css/responsive.css" type="text/css" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2" />
+      <!-- Cookies info --><!-- 658 --> <!-- for responsive viewport add "noViewport=1" -->
+		
+	    <!-- Uncomment following lines to activate Slider jQuery (nivo). Doc: http://nivo.dev7studios.com/ 
+		    <link rel="stylesheet" href="/data/standards/js/kSlider/nivo-slider.css" type="text/css" />
+		    <script src="/data/standards/js/kSlider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+		    <script src="/data/standards/js/kSlider/kSlider.js" type="text/javascript"></script>
+	    -->
+	   
+	    <script type="text/javascript" src="/data/web/jardin-des-sens.ch/templates/js/drop_menu.js"></script>
+	   
+		<link href="/data/web/jardin-des-sens.ch/templates/css/select2.css" rel="stylesheet" />
+		<script src="/data/web/jardin-des-sens.ch/templates/js/select2.min.js"></script>
+
+
+	    <link rel="stylesheet" href="/data/web/jardin-des-sens.ch/templates/css/slick.css" type="text/css" /> <!-- slider css base -->
+		<link rel="stylesheet" href="/data/web/jardin-des-sens.ch/templates/css/config.css?v=2" type="text/css" />
+
+
+		
+		<!-- Intégrez vos fonts ou autres .css,.js,... ici SVP -->
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:700i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Fauna+One:400" rel="stylesheet">
+
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
+		<!-- lightboxes -->
+		
+		
+	</head>
+	<body class="desktop home">
+		
+		<!-- preparing data for includes -->
+
+		
+
+		<div id="w0">
+			<div id="w1">
+				<div id="w2">
+					
+					
+					<div id="mobile-nav">
+						<div id="top-bar">
+							<strong id="logomobile"><a href="/fr/accueil.html">jardin-des-sens.ch</a></strong>
+							<a href="/" id="togglemenu" title="menu">menu<span></span></a></div><ul id="mobileNav"><li  class="nochilds on current home first" rel="2"><a href="http://www.jardin-des-sens.ch/fr/accueil" title="Accueil">Accueil</a></li>
+<li  class="childs  default" rel="328"><a href="http://www.jardin-des-sens.ch/fr/onglerie/stylisme-et-soins" title="Onglerie">Onglerie</a></li>
+<li  class="childs  default" rel="4"><a href="http://www.jardin-des-sens.ch/fr/esthetique" title="Esthétique">Esthétique</a></li>
+<li  class="childs  default" rel="331"><a href="http://www.jardin-des-sens.ch/fr/massages/types-de-massage" title="Massages">Massages</a></li>
+<li  class="childs  default" rel="7"><a href="http://www.jardin-des-sens.ch/fr/silhouette" title="Silhouette">Silhouette</a></li>
+<li  class="nochilds  contact last" rel="208"><a href="http://www.jardin-des-sens.ch/fr/contact" title="Contact / Rendez-vous">Contact / Rendez-vous</a></li>
+<li class="lan"></li></ul>
+
+</div>
+					<div id="mobile-secnav"></div>
+					
+					<div id="cn">
+						
+						<div id="hd">
+							<div class="topbar">
+								<strong id="logo"><a href="http://www.jardin-des-sens.ch/fr">jardin-des-sens.ch</a></strong>
+								 
+								
+								<!-- Menu navigation -->
+								<div id="mainNavCt">
+									<ul id="mainNav"><li class=" childs  default first menu328" rel="328"><a class="hasNoContent" href="http://www.jardin-des-sens.ch/fr/onglerie/stylisme-et-soins" title="Onglerie" >Onglerie</a><ul>
+<li class=" default first first last" rel="3"><a href="http://www.jardin-des-sens.ch/fr/onglerie/stylisme-et-soins" title="Stylisme et soins">Stylisme et soins</a>
+</li></ul></li>
+<li class=" childs  default menu4" rel="4"><a class="" href="http://www.jardin-des-sens.ch/fr/esthetique" title="Esthétique" >Esthétique</a><ul>
+<li class=" default first" rel="21"><a href="http://www.jardin-des-sens.ch/fr/esthetique/epilation" title="Epilation">Epilation</a>
+</li><li class=" default" rel="276"><a href="http://www.jardin-des-sens.ch/fr/esthetique/epilation-definitive" title="Epilation définitive">Epilation définitive</a>
+</li><li class=" default" rel="62"><a href="http://www.jardin-des-sens.ch/fr/esthetique/cils-et-sourcils" title="Cils & sourcils">Cils & sourcils</a>
+</li><li class=" default" rel="64"><a href="http://www.jardin-des-sens.ch/fr/esthetique/maquillage" title="Maquillage">Maquillage</a>
+</li><li class=" default" rel="277"><a href="http://www.jardin-des-sens.ch/fr/esthetique/blanchiment-dentaire" title="Blanchiment dentaire">Blanchiment dentaire</a>
+</li><li class=" default" rel="68"><a href="http://www.jardin-des-sens.ch/fr/esthetique/soins-du-corps" title="Soins du corps">Soins du corps</a>
+</li><li class=" default last" rel="71"><a href="http://www.jardin-des-sens.ch/fr/esthetique/soins-du-visage" title="Soins du visage">Soins du visage</a>
+</li></ul></li>
+<li class=" childs  default menu331" rel="331"><a class="hasNoContent" href="http://www.jardin-des-sens.ch/fr/massages/types-de-massage" title="Massages" >Massages</a><ul>
+<li class=" default first last" rel="6"><a href="http://www.jardin-des-sens.ch/fr/massages/types-de-massage" title="Prestations & tarifs">Prestations & tarifs</a>
+</li></ul></li>
+<li class=" childs  default menu7" rel="7"><a class="" href="http://www.jardin-des-sens.ch/fr/silhouette" title="Silhouette" >Silhouette</a><ul>
+<li class=" default first" rel="280"><a href="http://www.jardin-des-sens.ch/fr/silhouette/cinetic-tm-lift-expert" title="Cinetic">Cinetic</a>
+</li><li class="" rel="49"><a href="http://www.jardin-des-sens.ch/fr/silhouette/icoone" title="Icoone">Icoone</a>
+</li><li class=" default last" rel="281"><a href="http://www.jardin-des-sens.ch/fr/silhouette/cryolipolyse" title="Cryolipolyse">Cryolipolyse</a>
+</li></ul></li>
+<li class=" nochilds  contact last menu208" rel="208"><a class="" href="http://www.jardin-des-sens.ch/fr/contact" title="Contact / Rendez-vous" >Contact / Rendez-vous</a></li>
+<div class="clr"></div></ul>
+
+
+								</div>
+								<!---->
+								
+								<div class="clr">&nbsp;</div>
+							</div><!-- /.topbar -->
+						
+							
+														
+							<!-- Slider here -->
+							<div class="slider">
+								<div class=" first standard object default  default" id="id-333"><div>
+<div class="wrapimg"><img src="/data/web/jardin-des-sens.ch/uploads//img/slider/_thumb/2200x800/footer_bg.jpg"  title="" alt="" /></div><div class="wrapobject"><h2>Prenez soins de vous et découvrez...</h2>
+
+</div><div class="clr">&nbsp;</div></div></div>
+<div class="standard object default  default" id="id-316"><div>
+<div class="wrapimg"><img src="/data/web/jardin-des-sens.ch/uploads//headers-bandeaux/1-500.jpg" width="2000" height="500" class='noResize'  title="" alt="" /></div><div class="wrapobject"><h2>Onglerie: stylisme et soins des ongles</h2>
+<p><a href="/fr/onglerie/stylisme-et-soins" class="internal button" target="" class="button">D&eacute;couvrez nos offres</a><br></p>
+</div><div class="clr">&nbsp;</div></div></div>
+<div class="standard object default  default" id="id-214"><div>
+<div class="wrapimg"><img src="/data/web/jardin-des-sens.ch/uploads//headers-bandeaux/11-600.jpg" width="2000" height="600" class='noResize'  title="" alt="" /></div><div class="wrapobject"><h2>Nos soins esthétiques</h2>
+<p><a href="/fr/esthetique" class="internal button" target="" class="button">D&eacute;couvrez les soins</a><br></p>
+</div><div class="clr">&nbsp;</div></div></div>
+<div class="standard object default  color01" id="id-313"><div>
+<div class="wrapimg"><img src="/data/web/jardin-des-sens.ch/uploads//headers-bandeaux/4-600.jpg" width="2000" height="600" class='noResize'  title="" alt="" /></div><div class="wrapobject"><h2>Espace coiffure</h2>
+<p><a href="#" target="" class="button">D&eacute;couvrez nos offres</a><br></p>
+</div><div class="clr">&nbsp;</div></div></div>
+<div class="standard object default  default" id="id-213"><div>
+<div class="wrapimg"><img src="/data/web/jardin-des-sens.ch/uploads//headers-bandeaux/6-600.jpg" width="2000" height="600" class='noResize'  title="" alt="" /></div><div class="wrapobject"><h2>Nos massages</h2>
+<p><a href="/fr/massages/types-de-massage" class="internal button" target="" class="button">D&eacute;couvrez les offres</a></p>
+</div><div class="clr">&nbsp;</div></div></div>
+<div class="standard object default  default" id="id-314"><div>
+<div class="wrapimg"><img src="/data/web/jardin-des-sens.ch/uploads//headers-bandeaux/12-600.jpg" width="2000" height="600" class='noResize'  title="" alt="" /></div><div class="wrapobject"><h2>Silhouette</h2>
+<p><a href="/fr/silhouette" class="internal button" target="" class="button">D&eacute;couvrez nos offres</a><br></p>
+</div><div class="clr">&nbsp;</div></div></div>
+<div class=" last standard object default  default" id="id-315"><div>
+<div class="wrapimg"><img src="/data/web/jardin-des-sens.ch/uploads//headers-bandeaux/9-600.jpg" width="2000" height="600" class='noResize'  title="" alt="" /></div><div class="wrapobject"><h2>Contact</h2>
+<p><a href="/fr/contact" class="internal button" target="" class="button">Trouver un salon proche de chez vous</a><br></p>
+</div><div class="clr">&nbsp;</div></div></div>
+
+							</div>
+							<!---->
+													</div><!-- /#hd -->
+						
+						<div id="bd">
+							<div id="bd_bg">
+																<!-- Database Content -->
+								<div id="databaseContent">
+									
+								</div>
+								<!---->
+								
+																
+								<div class="cn">
+
+									<!-- Introduction Content -->
+									<div id="introContent">
+																					<h1 class=" page" >Accueil</h1>
+
+																				
+									</div>
+									<!---->
+									
+									
+									<!-- Main Content here -->
+									<div id="mainContent">
+								    	<div class=" first standard object default  color03" id="id-216"><div>
+<div class="wrapimg"><img src="/data/web/jardin-des-sens.ch/uploads//headers-bandeaux/_thumb/500x500/20-600.jpg"  title="" alt="" /></div><div class="wrapobject"><h2>EPILATION DEFINITIVE - CRYOTHERAPIE</h2>
+<p><strong>EPILATION AU LASER - CRYOLIPOLISE</strong></p><p><strong>50%</strong> sur chaque s&eacute;ance</p><p>OFFRE Valable durant tout le traitement<br></p>
+</div><div class="clr">&nbsp;</div></div></div>
+<div class=" last standard object default  default" id="id-339"><div>
+<div class="wrapimg"><img src="/data/web/jardin-des-sens.ch/uploads//headers-bandeaux/_thumb/500x500/19-600.jpg"  title="" alt="" /></div><div class="wrapobject"><h2>OFFRE DE SAISON</h2>
+<p><strong><em>SOIN DU VISAGE NETTOYANT</em></strong></p><p>A base <em><strong>d'acyde glycolique</strong></em>  <em>avec <strong>radio-fr&eacute;quence</strong></em></p><p><strong>Prix 120.- au lieu de 160.- (1 heure de soin)</strong></p><strong></strong>
+</div><div class="clr">&nbsp;</div></div></div>
+
+								    	<div class="clr">&nbsp;</div>
+								    </div>
+								    <!---->
+							   </div>
+							    <!-- prefooter Content here -->
+							    <div id="prefooterContent">
+									<div class=" last  first  code object" id="id-215">
+
+<!--
+-->
+<div class="cn">
+	<div class="block_shadow">
+		<div class="database_container">
+			<div class="localisation_btn"></div>
+			<!--div class="select_topage">
+				<select name="placeSelector2" onchange="location = this.value;">
+					<option class="default" style="display: none;" value="?setPlace=" disabled selected>Sélectionnez le salon le plus proche</option>
+					<option class="default" value="?setPlace=Fribourg-Places" >Fribourg - Square des Places</option>
+					<option class="default" value="?setPlace=Fribourg-Simplon" >Fribourg - Rue du Simplon</option>
+					<option class="default" value="?setPlace=Bulle" >Bulle - Rue de Vevey</option>
+					<option class="default" value="?setPlace=Lausanne" >Lausanne - Place Grand St-Jean 1</option>
+				</select>
+				<select class="placeSelector" data-placeholder="Sélectionnez le salon le plus proche">
+					<option></option>
+										<option class="default" value="?setPlace=Fribourg-Simplon" >Fribourg - Rue du Simplon 5</option>
+									</select-->
+				
+				
+				<!--	Sélectionnez le salon le plus proche<span></span>
+				-->
+				
+				<!--					-->
+				
+			<!--/div-->
+
+			<!--
+			 -->
+
+			<table>
+				<tbody>
+					<tr>
+						<td><strong>Jardin des Sens</strong><br><a href="tel:0041263212537">+41 26 321 25 37</a></td>
+						<td>lundi-vendredi: 08:30 - 18:30<br>samedi: 08:00 - 16:00</td>
+						<td><a class="button" href="http://www.jardin-des-sens.ch/fr/contact">Formulaire de contact <br> Rendez-vous</a></td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>
+	</div>
+</div>
+
+
+<!--? if(in_array($_COOKIE["place"], $GLOBALS['jdsauthorizedNames']) && $GLOBALS['jdspageMyparamsType'] != "contact"){ ?-->
+<div id="locations" class="listing">
+	<div id="locationsmap">
+		<div id="map"></div>
+	</div>
+	<div class="clr"></div>
+</div>
+<!--? } ?-->
+
+
+<script>
+
+	// If you're adding a number of markers, you may want to drop them on the map
+	// consecutively rather than all at once. This example shows how to use
+	// window.setTimeout() to space your markers' animation.
+	/*function initMap() {
+	  var map = new google.maps.Map(document.getElementById('map'), {
+	    zoom: 8,
+	    center: {lat: -34.397, lng: 150.644}
+	  });
+	  var geocoder = new google.maps.Geocoder();
+
+	  geocodeAddress(geocoder, map);
+	}
+
+	function geocodeAddress(geocoder, resultsMap) {
+	  var address = 'Rte des Daillettes 21,1700 Fribourg';
+	  alert(address);
+	  geocoder.geocode({'address': address}, function(results, status) {
+	    if (status === google.maps.GeocoderStatus.OK) {
+	      resultsMap.setCenter(results[0].geometry.location);
+	      var marker = new google.maps.Marker({
+	        map: resultsMap,
+	        position: results[0].geometry.location
+	      });
+	    } else {
+	      alert('Geocode was not successful for the following reason: ' + status);
+	    }
+	  });
+	}*/	
+	
+	jdslocations = [];			
+	jdslocations = [{"id":"Fribourg-Simplon","nom":"Jardin des Sens","npa":"1700","commune":"Fribourg","adresse":"Rue du Simplon 5","adressed\u00e9tails":"","t\u00e9l\u00e9phone":"+41 26 321 25 37","phonelink":"0041263212537","horaires":"lundi-vendredi: 08:30 - 18:30<br \/>samedi: 08:00 - 16:00","email":"fribourg@jardin-des-sens.ch","":""}];
+
+	markers = [];
+	markers2 = [];
+	infowindows = [];
+	
+//	var placeselected = "";
+	var placeselected = "Fribourg-Simplon";
+	
+	if ( $( "#map" ).length ) {
+		var map;
+	}
+	if ( $( "#map2" ).length ) {
+		var map2;
+	}
+	
+
+	function initMap() {
+
+	  if ( $( "#map" ).length ) {
+		  map = new google.maps.Map(document.getElementById('map'), {
+		    zoom: 14,
+		    scrollwheel: false,
+		    center: {lat: 46.803227, lng: 7.149672},
+		    styles: [{"featureType":"all","elementType":"geometry","stylers":[{"lightness":"26"},{"gamma":"1.14"},{"saturation":"38"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#c7c7c7"}]}]
+		  });
+
+		  /* pins for selectedlocationmap */
+		  var geocoder = new google.maps.Geocoder();
+		  bounds = new google.maps.LatLngBounds();
+		  
+		  for (var i = 0; i < jdslocations.length; i++) {
+		  	if ( placeselected == jdslocations[i].id ){
+			  	var locationSelectedAddress = jdslocations[i].adresse + ',' + jdslocations[i].npa + ' ' + jdslocations[i].commune;
+				geocodeAddress(geocoder, map, locationSelectedAddress, 200, 10);
+			}
+		  }
+	  }
+
+	  if ( $( "#map2" ).length ) {
+		  map2 = new google.maps.Map(document.getElementById('map2'), {
+		    zoom: 14,
+		    scrollwheel: false,
+		    center: {lat: 46.803227, lng: 7.149672},
+		    styles: [{"featureType":"all","elementType":"geometry","stylers":[{"lightness":"26"},{"gamma":"1.14"},{"saturation":"38"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#c7c7c7"}]}]
+		  });
+
+	      /* pins for globalmap in prefooter */
+		  var geocoder2 = new google.maps.Geocoder();
+		  bounds2 = new google.maps.LatLngBounds();
+
+		  for (var i = 0; i < jdslocations.length; i++) {
+		  	var locationGlobalAddress = jdslocations[i].adresse + ',' + jdslocations[i].npa + ' ' + jdslocations[i].commune;
+		  	var locationTitle = jdslocations[i].commune;
+		  	var locationAdresse = jdslocations[i].adresse;
+		  	var locationPlace = jdslocations[i].npa + ' ' + jdslocations[i].commune;;
+		  	var locationPhone = jdslocations[i].téléphone;
+		  	var locationPhonelink = jdslocations[i].phonelink;
+		  	var locationTime = jdslocations[i].horaires;
+		  	var locationDetails = '<a href="/fr/contact?setPlace=' + jdslocations[i].id + '">Détails</a>';
+		  	var contentString = '<div id="content" style="padding: 10px 5px 5px 5px;"><h2>Jardin Des Sens<br/>' + locationTitle + '</h2><p><strong><a href="tel:' + locationPhonelink + '">' + locationPhone + '</a></strong><br/>' + locationAdresse + '<br/>' + locationPlace + '</p><p></p><p>' + locationTime + '</p></div>';
+		  	var last = false;
+		  	if ( i == jdslocations.length - 1 ){
+		  		last = true;
+			}
+			
+		    geocodeAddress2(geocoder2, map2, locationGlobalAddress, contentString, i * 200, i, last);
+		  }
+	  }
+
+	}
+
+	function clearAllInfowindows(){
+		$.each(infowindows,function(k,e){
+			e.close();
+		})
+	}
+
+	function geocodeAddress(geocoder, resultsMap, locationSelectedAddress, timeout, count) {
+	  var address = locationSelectedAddress;
+
+	  geocoder.geocode({'address': address}, function(results, status) {
+	    if (status === google.maps.GeocoderStatus.OK) {
+
+			var decenteredLatLng = new google.maps.LatLng((results[0].geometry.location.lat())+0.005,results[0].geometry.location.lng());
+			resultsMap.setCenter(decenteredLatLng);
+
+	    	window.setTimeout(function() {
+			    markers.push(new google.maps.Marker({
+		        	position: results[0].geometry.location,
+			    	map: resultsMap
+					/*icon: new google.maps.MarkerImage('http://lapati.kameleo.ch/data/web/lapati.ch/templates/img/patinoires.png',
+					null, null, null, new google.maps.Size(40,51)),
+			    	animation: google.maps.Animation.DROP*/
+			    }));
+				
+				//console.log(count);
+			    bounds.extend(markers[count].position);
+			    
+
+				map.fitBounds(bounds);
+				zoomChangeBoundsListener = 
+				    google.maps.event.addListenerOnce(map, 'bounds_changed', function(event) {
+				        if (this.getZoom() > 14) {
+				            this.setZoom(14);
+				        }
+				});
+				setTimeout(function(){google.maps.event.removeListener(zoomChangeBoundsListener)}, 2000);
+			}, timeout);
+	    } else {
+	      alert('Geocode was not successful for the following reason: ' + status);
+	    }
+	  });
+	}
+
+	function geocodeAddress2(geocoder2, resultsMap, locationGlobalAddress, contentString, timeout, count, last) {
+	  var address2 = locationGlobalAddress;
+	  
+	  geocoder2.geocode({'address': address2}, function(results, status) {
+	    if (status === google.maps.GeocoderStatus.OK) {
+	    	window.setTimeout(function() {
+			    markers2.push(new google.maps.Marker({
+		        	position: results[0].geometry.location,
+			    	map: resultsMap,
+			    	animation: google.maps.Animation.DROP
+					/*icon: new google.maps.MarkerImage('http://lapati.kameleo.ch/data/web/lapati.ch/templates/img/patinoires.png',
+					null, null, null, new google.maps.Size(40,51)),
+			    	animation: google.maps.Animation.DROP*/
+			    }));
+			    bounds2.extend(markers2[count].position);
+				if (last == true ) {
+					map2.fitBounds(bounds2);
+					zoomChangeBoundsListener = 
+					    google.maps.event.addListenerOnce(map2, 'bounds_changed', function(event) {
+					        if (this.getZoom() > 9) {
+					            this.setZoom(9);
+					        }
+					});
+					setTimeout(function(){google.maps.event.removeListener(zoomChangeBoundsListener)}, 2000);
+				}
+
+			    infowindows.push( new google.maps.InfoWindow({
+			      content: contentString
+				}));
+				markers2[count].addListener('click', function() {
+			        clearAllInfowindows();
+				  	infowindows[count].open(map2, markers2[count]);
+				});
+		 	}, timeout);
+	    } else {
+	      alert('Geocode was not successful for the following reason: ' + status);
+	    }
+	  });
+	}
+
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2-C-evrmnuCRnQISkne-Q3Eiz7zKhLFc&callback=initMap" async defer></script>
+</div>
+									<div class="clr">&nbsp;</div>
+								</div>
+								<!---->
+
+								<div class="clr">&nbsp;</div>
+							</div><!-- /#bd_bg -->
+						</div><!-- /#bd -->
+					</div><!-- /#cn -->
+					
+					<div id="ft">
+						<div class="cn">
+							<strong id="logo_footer"><a href="http://www.jardin-des-sens.ch/fr">jardin-des-sens.ch</a></strong>
+							
+							<!-- footer Content here -->
+							<div id="footerContent">
+								<div class=" last  first text object column  default" id="id-209"><div>
+<h2>Jardin des Sens</h2>
+<p>Rue du Simplon 5<br>1700 Fribourg<br><a href="026 321 25 37" target=" _blank">+41 26 321 25 37</a></p><p>lundi-vendredi: 08:30 - 18:30<br>samedi: 08:00 - 16:00</p>
+<div class="clr">&nbsp;</div></div></div>
+
+							</div>
+							<!---->
+							
+							<!-- footer navigation -->
+							<div class="footerNav">
+								<h2>Nos soins</h2>
+								<ul id="footerNav-main"><li  class="childs  default first" rel="328"><a href="http://www.jardin-des-sens.ch/fr/onglerie/stylisme-et-soins" title="Onglerie">Onglerie</a></li>
+<li  class="childs  default" rel="4"><a href="http://www.jardin-des-sens.ch/fr/esthetique" title="Esthétique">Esthétique</a></li>
+<li  class="childs  default" rel="331"><a href="http://www.jardin-des-sens.ch/fr/massages/types-de-massage" title="Massages">Massages</a></li>
+<li  class="childs  default last" rel="7"><a href="http://www.jardin-des-sens.ch/fr/silhouette" title="Silhouette">Silhouette</a></li>
+</ul>
+
+
+							</div>
+							<!---->
+							<div class="clr">&nbsp;</div>
+						</div><!-- /.cn --> 
+						
+						<!-- copyright and login kameleo -->
+						<div class="powered">
+							<div class="cn">
+							    <div id="copyright">
+								2019 &copy | Jardin des Sens
+							    </div> 
+							    <div id="loginAndPowered">
+								<div id="kLogin">Login</div>
+              <a href="http://www.kameleo.ch" id="kPowered" target="_blank" class="blank">Création site Internet</a>
+							    </div>
+							    <div class="clr">&nbsp;</div>
+							</div>
+						</div>
+						<!---->
+						
+					</div><!-- /#ft -->
+				</div><!-- /#w2 -->
+			</div><!-- /#w1 -->
+		</div><!-- /#w0 -->
+		
+		
+		<script type="text/javascript" src="/data/web/jardin-des-sens.ch/templates/js/slick.min.js"></script> <!-- slider activation -->
+		<script type="text/javascript" src="/data/web/jardin-des-sens.ch/templates/js/main.js"></script>
+
+		
+			
+		
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34273105-38', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

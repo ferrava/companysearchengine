@@ -1,0 +1,302 @@
+<!DOCTYPE HTML> <html class="no-js responsivelayout supportsbreakout" lang="de"> <head> <script>
+		document.documentElement.className = document.documentElement.className.replace(/no-js/g, 'js');
+	</script> <title>Layout Bella Responsive f&#252;r Zeta Producer</title> <meta charset="utf-8"> <meta name="description" content="Layout Bella Responsive f&#252;r Zeta Producer"> <meta name="keywords" content=""> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="generator" content="Zeta Producer 14.3.3.0, ZP14X, 04.09.2018 12:40:38"> <meta name="robots" content="index, follow"> <link rel="shortcut icon" type="image/x-icon" href="assets/stock-files/standard-favicon.ico"> <script>
+		// if after 1000ms we haven't got webfonts, show the user something, a FOUT is better than nothing
+		// http://kevindew.me/post/47052453532/a-fallback-for-when-google-web-font-loader-fails
+		setTimeout(function() {
+			// you can have the webfont.js cached but still have no classes fire and you will have a window.WebFontConfig object
+			if ( ! ("WebFont" in window)) {
+				// non wfl loader class name because their events could still fire
+				document.getElementsByTagName("html")[0].className += " wf-fail";
+			}
+		}, 1000);
+	
+		WebFontConfig = {
+			google: { families: [ 'Roboto:300,400,700' ] }
+		};
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = "assets/js/webfont/1.5.18/webfont.js";
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})(); 
+	</script> <noscript> <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,700"> </noscript> <link rel="stylesheet" type="text/css" href="assets/bundle.css?v=636904244297216763"> <link rel="stylesheet" type="text/css" href="assets/bundle-print.css?v=636898900824278011" media="print"> <style>
+#a2076.zpwButton p{text-align: left;}
+#a2076.zpwButton a.button{border-style: solid; border-width: 0px !important;}
+#a2076.zpwButton a.button:hover{border-style: solid; border-width: 0px !important;}
+#a2076.zpwButton a.button{border-radius: 0px !important;}
+
+</style> <script type="text/javascript" src="assets/bundle.js?v=636904244297216763"></script> <script>
+			function search1(){
+				if (document.forms.searchengine1.q.value.length == 0) {
+					alert("Bitte geben Sie einen Suchbegriff ein.");
+					return false;
+				}
+			}
+		</script> </head> <body id="flat-responsive" class="notouch haswebdescription hasfixednav hasheader"> <a id="top"></a> <div id="header"> <div id="webdescription"> <div id="logo"><a href="index.html"><img src="assets/logo.png" width="500" height="150" alt="index.html"></a></div> <div id="webtext"> </div> </div> <div id="nav"> <ul data-trianglemode="true" class="submenu touchhovermenu clickhovermenu"> <li class="logo"><a class="logo" href="index.html"><img src="assets/logo.png" width="500" height="150" alt="index.html"></a></li> <li class="haschilds open active"> <a class="active" href="index.html">Restaurant</a> <ul> <li> <a href="menue.html">Menü</a> </li> <li> <a href="speisekarte.html">Speisekarte</a> </li> <li> <a href="das-team.html">Das Team</a> </li> <li> <a href="oeffnungszeiten.html">Öffnungszeiten</a> </li> <li> <a href="romantik-aktion.html">Aktuelles</a> </li> <li> <a href="geschichte.html">Geschichte</a> </li> <li> <a href="clubs-vereine.html">Clubs &amp; Vereine</a> </li> <li> <a href="bilder.html">Bilder</a> </li> </ul> </li> <li> <a href="service.html">Service</a> </li> <li class="overflownonly"><a href="#" id="mobilenavtoggle" class="tabletonly toggle" aria-label="Menü ein-/ausblenden">&#9776; Menü</a></li> </ul> </div> </div> <div id="slider" class="noprint"> <a id="a2069"></a> <div id="headerslider" class="flexslider"> <div class="flex-container" style="height: 0; padding-bottom: 25.454545454545453%;"> <ul class="slides"> <li> <img src="media/images/burger1-large.jpg" width="1100" height="350" alt=""> <div class="flex-caption"> <h2 style="">Burger</h2> </div> </li> <li> <img src="media/images/verschiedenebiere-large.jpg" width="1100" height="350" alt=""> <div class="flex-caption"> <h2 style="">Biere aus aller Welt</h2> </div> </li> <li> <img src="media/images/tartar01-large.jpg" width="1100" height="350" alt=""> <div class="flex-caption"> <h2 style="">Tartar</h2> </div> </li> <li> <img src="media/images/635494784038507013-large.jpg" width="1100" height="350" alt=""> <div class="flex-caption"> <h2 style="">Cocktails</h2> </div> </li> <li> <img src="media/images/salat1-large.jpg" width="1100" height="280" alt=""> <div class="flex-caption"> <h2 style="">Salate</h2> </div> </li> </ul> </div> </div> <script>
+		function initSlider(){
+			$z('#headerslider .flex-container').flexslider({
+				useCSS: true,
+				touch: true,
+				keyboard: true,
+				itemMargin: 0,
+				animation: 'slide',
+				controlsContainer: '#headerslider.flexslider',
+				slideshow: true,
+				slideshowSpeed: 20000,
+				directionNav: true,
+				controlNav: false,
+				randomize: false,
+				
+				pauseOnHover: true,
+				smoothHeight: false,
+				prevText: "zur&#252;ck",
+				nextText: "weiter"
+			});
+		}
+		$z(document).ready(function() {
+			if ( $z('#headerslider .flex-container ul.slides li img').length > 0 ){
+				// init flexslider after 1st image has loaded, so have dimensions as quickly as possible without having to wait too long on window loaded or such and can start right with doc ready
+				$z('#headerslider .flex-container ul.slides li img').first().one("load", initSlider).each(function() {
+					if(this.complete) $z(this).load();
+				}); // .each() is to work around a browser bugs which don't fire load() for cached images http://stackoverflow.com/a/3877079
+			} 
+			else{
+				// also init flexslider if it doesn't contain images and is text only
+				initSlider();
+			}
+			
+			// activate links for individual slideshow
+			$z('#headerslider .flex-container ul.slides li[data-clickurl]').css("cursor","pointer");
+			$z('#headerslider .flex-container ul.slides li[data-clickurl]').click(function (event){
+				// Because this script captures clicks for a container, it will also fire when a regular link inside the container 
+				// is clicked. Therefore, we check below, if a regular link i.e. <a href="#"> was the target of the click.
+				// Depending on the browser used, event.target might not be available, but event.srcElement would…
+				var targ;
+				if (event.target){
+					targ = event.target;
+				}
+				else if (event.srcElement) {
+					targ = event.srcElement;
+				}
+				if (targ.nodeName == "A") {
+					// a regular link i.e. in a Caption was clicked. Return early, so the link's href doesn't get overridden
+					return;
+				}
+				
+				if ( $z(this).data("clicktarget") ){
+					window.open($z(this).data("clickurl"), $z(this).data("clicktarget"));
+				}
+				else{
+					window.location = $z(this).data("clickurl");
+				}
+				event.preventDefault;
+				return false;
+			});
+		});
+  	</script> </div> <div id="content" class="main"> <div class="zparea zpgrid" data-numcolumns="" data-areaname="Standard"> <div class="zpContainer "> <div class="zpRow standard "><div class="zpRowInner"> <div class="zpColumn odd zpColumnWidth3 c4" style=" "> <div class="zpColumnItem"> <div id="a2115" data-articleid="2115" class="articlearea zpwBild popupimage"> <div id="igal2115" class="zpImageGallery" data-kind="singleimage" data-titleshow="1" data-htmltitle="" data-width="auto" data-height="auto" data-bordercolor="default" data-borderwidth="0" data-margin="0" data-titleposition="outside" data-transition="elastic" data-slideshow="0"> <a class="fancybox zpnolayoutlinkstyles" href="media/images/dohaeregeytme_transparent-large.png" title=""> <img class="singleImage" src="media/images/dohaeregeytme_transparent.png" width="336" height="111" alt=""> </a> </div> </div> </div> </div> <div class="zpColumn even zpColumnWidth3 c6" style=" "> <div class="zpColumnItem"> <div id="a2120" data-articleid="2120" class="articlearea zpwText"> &nbsp; </div> </div> </div> <div class="zpColumn odd zpColumnWidth3 c2" style=" "> <div class="zpColumnItem"> <div id="a2332" data-articleid="2332" class="articlearea zpwBild popupimage"> <div id="igal2332" class="zpImageGallery" data-kind="singleimage" data-titleshow="1" data-htmltitle="" data-width="auto" data-height="auto" data-bordercolor="default" data-borderwidth="0" data-margin="0" data-titleposition="outside" data-transition="elastic" data-slideshow="0"> <a class="fancybox zpnolayoutlinkstyles" href="media/images/20jahre-large.png" title=""> <img class="singleImage" src="media/images/20jahre.png" width="153" height="134" alt=""> </a> </div> </div> </div> </div> </div></div> <div class="zpRow standard "><div class="zpRowInner"> <div class="zpColumn odd zpColumnWidth1 c12" style=" "> <div class="zpColumnItem"> <div id="a2071" data-articleid="2071" class="articlearea zpwText"> <h1 style="text-align:left;">Willkommen in der Krone Liestal</h1> <p>Seit&nbsp;20 Jahren heisst es "do häre geyt me". Das ganze Krone Team bedankt sich bei allen Gästen, welche in den Jahren den Weg zu uns gefunden haben und hoffen, dass wir Euch auch in Zukunft begrüssen dürfen.</p> </div> </div> </div> </div></div> <div class="zpRow standard "><div class="zpRowInner"> <div class="zpColumn odd zpColumnWidth2 c4" style=" "> <div class="zpColumnItem"> <div id="a2072" data-articleid="2072" class="articlearea zpwText"> <h2 style="text-align:left;">Monatsburger</h2> <p>Diesen Monat ist der&nbsp;Alpburger unser Buger des Monats</p> </div> </div> </div> <div class="zpColumn even zpColumnWidth2 c3" style=" "> <div class="zpColumnItem"> <div id="a2073" data-articleid="2073" class="articlearea zpwBild popupimage"> <div id="igal2073" class="zpImageGallery" data-kind="singleimage" data-titleshow="1" data-htmltitle="" data-width="auto" data-height="auto" data-bordercolor="default" data-borderwidth="0" data-margin="0" data-titleposition="outside" data-transition="elastic" data-slideshow="0"> <div class="productimage zoomable zpnolayoutlinkstyles" data-zoom="media/images/monatsburgeralpburgerweb-large.jpg" title=""> <img class="singleImage" src="media/images/monatsburgeralpburgerweb.jpg" width="245" height="348" alt=""> </div> </div> </div> </div> </div> </div></div> <div class="zpRow standard "><div class="zpRowInner"> <div class="zpColumn odd zpColumnWidth1 c12" style=" "> <div class="zpColumnItem"> <div id="a2075" data-articleid="2075" class="articlearea zpwGoogle_Maps zpBreakout"> <h2 style="text-align:left;">Hier finden Sie uns</h2> <iframe id="zgmap2075" name="zgmap2075" class="zgmap" width="6000" height="400" src="https://maps.google.com/maps?q=Kasernenstrasse%2014%2C%204410%20Liestal&amp;ie=UTF8&amp;hnear=Kasernenstrasse%2014%2C%204410%20Liestal&amp;t=m&amp;z=14&amp;output=embed"> </iframe> <script>
+		// prevent scroll-wheel-support in map while browser window is being scrolled
+		var allSet2075 = false;
+		$z(window).off('scroll.zgmap2075');
+		$z(window).on('scroll.zgmap2075', function(){
+			if ( !allSet2075 ){
+				$z("#zgmap2075").css("pointer-events", "none");
+				allSet2075 = true;
+			}
+			
+			clearTimeout($.data(this, 'scrollTimer2075'));
+			$.data(this, 'scrollTimer2075', setTimeout(function() {
+				$z("#zgmap2075").css("pointer-events", "");
+				allSet2075 = false;
+			}, 250));
+			
+			
+		});
+	</script> </div> </div> </div> </div></div> <div class="zpRow standard "><div class="zpRowInner"> <div class="zpColumn odd zpColumnWidth1 c12" style=" "> <div class="zpColumnItem"> <div id="a2076" data-articleid="2076" class="articlearea zpwButton"> <p> <a href="#" class="button"> <span>E Guete!</span> </a> </p> </div> </div> </div> </div></div> </div> </div> </div> <div id="search" class="container"> <script>
+		function getParameterByNamezpsearchform(name) {
+			name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+			var regexS = "[\\?&]" + name + "=([^&#]*)";
+			var regex = new RegExp(regexS);
+			var results = regex.exec(window.location.search);
+			if(results == null) {
+				return "";
+			}
+			else {
+				return decodeURIComponent(results[1].replace(/\+/g, " "));
+			}
+		}
+		function encode_htmlzpsearchform(astring) { //helps prevent XSS e.g. when printing search strings
+			astring = typeof astring !== 'undefined' ? astring : "";
+
+			astring = astring.replace(/</g, "&lt;");
+			astring = astring.replace(/>/g, "&gt;");
+			astring = astring.replace(/"/g, "&quo" + "t;");
+			astring = astring.replace(/'/g, "&#x27;");
+			astring = astring.replace(/\//g, "&#x2F;");
+			astring = astring.replace(/\[\$/g, "");
+			astring = astring.replace(/\$\]/g, "");
+
+			return astring;
+		}
+		function searchzpsearchform() {
+			var formId = "zpsearchform";
+			if (document.getElementById(formId).q.value == 'Suchbegriff') {
+				return false;
+			}
+			else if ($z.trim(document.getElementById(formId).q.value).length === 0) {
+				alert("Bitte geben Sie einen Suchbegriff ein.");
+				return false;
+			}
+			else{
+				return;
+			}
+		}
+	</script> <form id="zpsearchform" name="searchengine1" onsubmit="return searchzpsearchform()" action="suche.html" method="get" class="zpsearchform"> <input id="zpsearchfield" class="zpsearchfield typetext" type="text" name="q" placeholder="Suchbegriff" aria-label="Suchbegriff"> <input id="zpsearchbutton" class="zpsearchbutton" type="image" name="submit" src="assets/stock-images/magnifier.png" alt="Suchen" aria-label="Suchen"> </form> <script>
+	$(document).ready(function(){
+		// set form field value to searchstring
+		var tmpSearchstring = getParameterByNamezpsearchform("q");
+		if ( tmpSearchstring ){
+			// fill layout searchfield with searchsting
+			document.getElementById("zpsearchform").q.value = tmpSearchstring;
+			// fill search page searchfield with searchsting
+			document.getElementById("zpsearchengine").q2.value = tmpSearchstring;
+			// focus search page searchfield
+			document.getElementById("zpsearchengine").q2.focus();
+		}
+	});
+	</script> </div> <div id="afterfooter" class="container"> <div class="zparea zpgrid" data-numcolumns="" data-areaname="Footer"> <div class="zpContainer "> <div class="zpRow standard "><div class="zpRowInner"> <div class="zpColumn odd zpColumnWidth1 c12" style=" "> <div class="zpColumnItem"> <div id="a2068" data-articleid="2068" class="articlearea zpwText"> <p><b>Bar Restaurant Krone </b>·&nbsp;Kasernenstrasse 14&nbsp;· 4410 Liestal<br></p> <p><span style="font-family: Arial">Öffnungszeiten:&nbsp;</span></p> <p><span style="font-family: Arial">Montag bis Mittwoch jeweils 16:00 – 23:00&nbsp;Uhr </span></p> <p><span style="font-family: Arial">Donnerstag 11:00&nbsp;– 14:00 Uhr&nbsp;und 16:00&nbsp;– 24:00 Uhr</span></p> <p><span style="font-family: Arial">Freitag 11:00 – 14:00 Uhr und 16:00&nbsp;– 01:00 Uhr</span></p> <p><span style="font-family: Arial">Samstag 16:00 – 24:00 Uhr&nbsp;&nbsp;</span></p> <p><span style="font-family: Arial">Sonntag geschlossen</span></p> <p><br>Reservierungen: +41-61 921 32 72</p> </div> </div> </div> </div></div> </div> </div> </div> <div id="footer" class="container"> <div id="xmenu" class=""> <a href="index.html">Startseite</a> <a href="speisekarte.html">Speisekarte</a> <a href="impressum.html">Impressum</a> </div> <div id="copyright"> © 2019 Krone Liestal </div> </div> <div id="totop" class="container noprint"> <a href="#top" class="zpSO-Uplink-Flat zpnolayoutlinkstyles" title="Nach oben / To top"></a> </div> <script>	
+		function setoverflown(s){
+			var retcode = false;
+			if ( $z("#nav").is(":hover") || ! $z("#nav > ul > li").length ){
+				// mouse is over nav, which opens submenues and might cause the overflow
+				// OR empty nav - needed because for IE an empty #nav == overflown()
+				return false;
+			}
+			
+			$z("#nav > ul").removeClass("overflown");
+			if ( $z("#nav:not(.on) > ul").overflown() ){
+				// nav is already overflown by 1st-Level Menu entries (too many entries)
+				$z("#nav > ul").addClass("overflown");
+				retcode = true;
+			}
+			else{
+				// on non touch devices, check if nav would be overflown horizontally if all submenues are visible (i.e. too many submenues expanding to the right)
+				$z("#nav > ul ul:not(.nocalcoverflow)").css("display", "block");
+				if ( $z("#nav:not(.on) > ul").overflown("x") ){
+					$z("#nav > ul").addClass("overflown");
+					retcode = true;
+				}
+				$z("#nav > ul ul:not(.nocalcoverflow)").css("display", "");
+				
+				// if the previous check didn't already match, check if one of the submenus is higher than the available space in the window because the nav is fixed and wouldn't scroll
+				if ( !retcode && $z("#nav.fixed").length ){
+					$z("#nav.fixed > ul ul:not(.nocalcoverflow)").css("display", "block");
+					$z("#nav.fixed > ul ul:not(.nocalcoverflow)").each(function(){
+						var eltop = $z(this).offset().top - $(window).scrollTop(); // gets the effective top position relative to the window
+						if ( (eltop + $(this).innerHeight()) > $z(window).innerHeight() ){
+							// submenu doesn't fit on screen and would be cut off
+							$z("#nav.fixed > ul").addClass("overflown");
+							retcode = true;
+							$z("#nav.fixed > ul ul:not(.nocalcoverflow)").css("display", "");
+							// exit the each loop early
+							return false;
+						}
+					});
+					$z("#nav.fixed > ul ul:not(.nocalcoverflow)").css("display", "");
+				}
+			}
+			
+			// see if we need to scale to the logo to fit besides the mobile menu-button
+			var availspace = $z("#nav > ul").width() - $z("#nav > ul > li.overflownonly").width();
+			$z("#nav > ul > li.logo").css("max-width", availspace + "px");
+			
+			return retcode;
+		}
+		
+		function stickyNav(topoffset){
+			var scrolltop = $z("body").scrollTop() || (document.documentElement && document.documentElement.scrollTop) || 0;
+			
+			if ( scrolltop - topoffset >= 0){
+				$z("body").addClass("padded");
+				$z("#nav").addClass("fixed");
+			}
+			else{
+				$z("body").removeClass("padded");
+				$z("#nav").removeClass("fixed");
+			}
+			setTimeout(function(){setoverflown();}, 100);
+		}
+		// globals
+		var navOffset;
+		
+		$z(document).ready(function(){
+			// smooth scroll the layout specific go to top link
+			$z("a.zpSO-Uplink-Flat").click(function(e){
+				e.preventDefault();
+				if ( $z(this.hash).length ){
+					$z('html,body').animate({
+							scrollTop: $z(this.hash).offset().top - parseInt($z("body").css("padding-top"))
+					}, 500);
+					window.location.hash = this.hash;
+				}
+			});
+		
+			// switches the Mobile Navigation-Menu on/off, when "Menu" link is clicked.
+			$z("a#mobilenavtoggle").on("click", function(e){
+				e.preventDefault();
+				$z("#nav").toggleClass("on");
+				setoverflown();
+			});	
+			
+			setoverflown();
+			var resizeTimeout = null;
+			$z(window).resize(zpthrottle(100, function(event) {
+				var event = event || window.event;
+				if ( event && $z(event.target.nodeType).length == 0 ){// enable window.resize only for the window object (resizing elements might also trigger window.resize) which doesn't have a nodeType
+					setoverflown();
+				}
+			}));	
+			
+			if ( "false" == "false" && ("true" == "true" || "false" == "true") ){
+				navOffset = $z("#nav:not(.fixed)").offset().top;
+				setTimeout(function(){stickyNav(navOffset);}, 100);
+			}
+		});
+		
+		$z(window).load(function(){
+			setTimeout(function(){setoverflown();}, 500);
+			var navheight = 0;
+			if ( "false" == "false" ){
+				navheight = $z("#nav").outerHeight();
+			}
+			// pull anchors below fixed header into visible area
+			if ( location.hash != "" && $z(':target').length ) {
+				$z('html,body').animate({scrollTop: $z(':target').offset().top - navheight - 10 }, 600);
+			}
+			$z("a[href*='#']:not([href='#'])").not(".zpNoScroll").click(function () {
+				var target = $z(this).attr("href");
+				target = target.substring(target.indexOf("#"));
+				if ( $z(target).length ){
+					$z('html,body').animate({scrollTop: $z(target).offset().top - navheight - 10 }, 600);
+				}
+			});
+			
+			if ( "false" == "false" && ("true" == "true" || "false" == "true") ){
+				if ( $z("#nav:not(.fixed)").length ){
+					navOffset = $z("#nav:not(.fixed)").offset().top;
+				}
+				setTimeout(function(){stickyNav(navOffset);}, 500);
+				$z(window).scroll(zpthrottle(100, function(event) {
+					stickyNav(navOffset);
+				}));
+			}
+
+		});
+	</script> 
+<!--
+* Layout: Flat Responsive by StS
+* $Id: default.html 64933 2018-08-03 13:24:43Z sseiz $
+-->
+ </body> </html>

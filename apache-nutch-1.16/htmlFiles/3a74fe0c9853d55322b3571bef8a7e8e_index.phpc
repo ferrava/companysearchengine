@@ -1,0 +1,101 @@
+
+
+	
+
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<base href="https://advokatur-zeiter.ch/" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Advokatur Zeiter</title>
+	
+<meta name=“keywords“ content="Rita Zeiter, Recht, Rechtsanwältin, Zug, Rechtsberatung, Rechtsvertretung, Rechtliche Dienstleistungen, Rechtsgeschäfte, rechtlich, Rechtsvermittlung">
+<meta name="description" content="Rechtsanwältin Rita Zeiter, Rechtsberatung & Rechtsvertretung" />
+<meta name="author" content="Advokatur Rita Zeiter, 6300 Zug" />
+<meta name="rights" content="Rita Zeiter" />    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, projection" />
+	   
+</head>
+
+
+<body>
+
+
+<div id="main_wrapper">
+	<div class="header_wrapper">
+		<div class="header">
+		</div>
+	</div>
+	
+	
+	<div class="navigation_wrapper">
+		<div class="navigation">
+		
+		<div class="left_navigation">
+		<ul>
+	    <li><a href='index.php?content=index&lang=de' class='current_link'>Home</a></li><li><a href='index.php?content=profile&lang=de'>Anwältin</a></li><li><a href='index.php?content=services&lang=de'>Dienstleistungen</a></li><li><a href='index.php?content=offer&lang=de'>Rechtsgebiete</a></li><li><a href='index.php?content=contact&lang=de'>Kontakt</a></li>		</ul>
+		</div>
+		
+		<div class="right_navigation">
+		<ul>
+		Language: <a href='index.php?content=index&lang=en'>English</a>		</ul>
+		</div>
+		
+		</div>
+	</div>
+
+
+    <div id="content_wrapper">
+
+	   <div class="content_main">
+
+		<h1>Herzlich willkommen bei Rechtsanwältin Rita Zeiter!</h1>
+
+		<p><img src="../images/Rita Zeiter at Work.png" alt="Rita Zeiter Rechtsanwältin" width="350" height="263" style="padding:2px; border:1px solid #a0a0a0;"/><br />
+		</p>
+		<p>	    Sie besuchen meine Homepage, weil Sie rechtliche Dienstleistungen benötigen. Als im Anwaltsregister des Kantons Zug eingetragene Rechtsanwältin stehe ich Ihnen in sämtlichen rechtlichen Angelegenheiten innerhalb der ganzen Schweiz gerne umfassend zur Seite.</p>
+<p>Erfahren Sie hier mehr über mich, meine Dienstleistungen und Rechtsgebiete. Sind Sie an meiner Beratung interessiert oder haben Sie weitere Fragen? <a href="http://advokatur-zeiter.ch/index.php?content=contact&lang=de" target="_self">Kontaktieren</a> Sie mich persönlich oder via Kontaktformular.</p>
+		<p>Vielen Dank für Ihr Interesse!</p>
+
+
+
+		</div>
+
+		
+
+	
+		<div class="content_sidebar">
+		<h2>Kontakt</h2>
+		<br />
+		MLaw Rita Zeiter<br />
+Rechtsanwältin<br />
+Baarerstrasse 23<br />
+6300 Zug<br />
+		
+	     <br />
+		Tel. 041 202 16 16 <br />
+		<a href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#114;&#046;&#122;&#101;&#105;&#116;&#101;&#114;&#064;&#097;&#100;&#118;&#111;&#107;&#097;&#116;&#117;&#114;&#045;&#122;&#101;&#105;&#116;&#101;&#114;&#046;&#099;&#104;"><img src="images/mail_kl.png" alt="E-Mail" width="184" height="16" class="mail_image" /></a>
+		
+		<br /><br />
+		<a href="http://advokatur-zeiter.ch/index.php?content=contact&lang=de">Kontatkformular</a>
+		
+		</div>     
+				
+    </div>
+
+    <div id="footer_wrapper">
+      <div class="footer_container">
+		
+		<div class="footer">
+		content & copyright © by Rita Zeiter
+		</div>
+		
+		
+		</div>
+    </div>
+</div>
+		
+</body>
+</html>

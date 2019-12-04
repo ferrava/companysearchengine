@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300,100' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400italic' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="fr" />
+<meta name="keywords" content="ramada encore geneva, hotel ramada geneve, hotel ramada encore geneve, restaurant the hub geneve, the hub geneve, centre conferences geneve, hotel ramada geneva" />
+<meta name="description" content="L’hôtel Ramada Encore à Genève, son restaurant ainsi que son centre de conférences vous accueillent dans un cadre moderne et chaleureux, à deux pas du centre-ville.  " />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Hôtel Ramada Encore Geneva, hôtel, restaurant et centre de conférences à Genève</title>
+	<link href="/styles/cms/layouts/hotel-ramada/modules/jpgrotator.css" media="" rel="stylesheet" type="text/css" />
+<link href="/styles/cms/layouts/hotel-ramada/modules/news.css" media="" rel="stylesheet" type="text/css" />
+<link href="/styles/cms/layouts/hotel-ramada/modules/googlemapsv3.css" media="" rel="stylesheet" type="text/css" />
+<link href="/styles/cms/layouts/hotel-ramada/modules/newsletter.css" media="" rel="stylesheet" type="text/css" />
+<link href="/styles/cms/layouts/hotel-ramada/modules/footerpages.css" media="" rel="stylesheet" type="text/css" />
+<link href="/styles/cms/layouts/hotel-ramada.css" media="" rel="stylesheet" type="text/css" />
+<link href="/styles/cms/layouts/hotel-ramada/i18n/fr.css" media="" rel="stylesheet" type="text/css" />
+<link href="/styles/cms/layouts/hotel-ramada/templates/tpl_home.css" media="" rel="stylesheet" type="text/css" />
+<link href="/styles/jqueryUI/jqueryUI.css" media="" rel="stylesheet" type="text/css" />
+<link href="/styles/cms/layouts/hotel-ramada/responsive.css" media="" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+//<![CDATA[
+
+		var _fxcv4_url_root			= "";
+		var _fxcv4_images_folder	= "images";
+		var _fxcv4_site_id			= "1";
+		var _fxcv4_front_layout		= "hotel-ramada";
+	
+//]]>
+</script>
+<script type="text/javascript" src="/scripts/jquery/jquery.js"></script>
+<script type="text/javascript" src="/scripts/modules/jpgrotator/slick.js"></script>
+<script type="text/javascript" src="/scripts/modules/jpgrotator/fancybox.js"></script>
+<script type="text/javascript" src="/scripts/modules/jpgrotator/fancybox.pack.js"></script>
+<script type="text/javascript" src="/scripts/modules/jpgrotator/fancybox-media.js"></script>
+<script type="text/javascript" src="/scripts/modules/googlemapsv3/markerclusterer/v3/src/markerclusterer.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZo2GAS0M9cgLQMonnaOC6H0ftrCE2Bmk&amp;sensor=false"></script>
+<script type="text/javascript">
+//<![CDATA[
+var directionsDisplay = new google.maps.DirectionsRenderer();
+		function initializeGmapv31() {
+
+			var myOptions = {
+	    		zoom: 15,scrollwheel:  false };
+				map = new google.maps.Map(document.getElementById("gmapsv3_1_map"), myOptions);
+				/* contrôles */
+				
+				directionsDisplay.setPanel(document.getElementById('directionsPanel'));
+
+				/* centrage */
+				map.setCenter(new google.maps.LatLng(46.179307, 6.127334));
+
+				/* typage*/
+				map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+				
+				// groupement des points pour cluster
+				var markers = [];
+				
+				// points
+				var marker0 = new google.maps.Marker({
+	     		'position': new google.maps.LatLng(46.179307, 6.127334),'title': "Hotel Ramada"});
+ 			var infoWindow0 = new google.maps.InfoWindow({
+                content: "Hotel Ramada"
+            });
+ 			
+            google.maps.event.addListener(marker0, 'click', function () {
+                infoWindow0.open(map, marker0);
+            });markers.push(marker0);
+
+				var markerCluster = new MarkerClusterer(map, markers);
+				
+		}
+		 function codeAddress() {
+	  var directionsService = new google.maps.DirectionsService();
+   	/* Récupération de la valeur de l'adresse saisie */
+
+   				var address = document.getElementById("address").value;
+
+				var optionsCarte = {
+					zoom: 7,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				map = new google.maps.Map(document.getElementById("gmapsv3_1_map"), optionsCarte);
+				// groupement des points pour cluster
+				var markers = [];
+				
+				// points
+				var marker = new google.maps.Marker({
+	     		'position': new google.maps.LatLng(46.179307, 6.127334),'title': "Hotel Ramada"});
+ 			var infoWindow = new google.maps.InfoWindow({
+                content: test
+            });
+ 			
+            google.maps.event.addListener(marker, 'click', function () {
+                infoWindow.open(map, marker);
+            });
+ 			markers.push(marker);
+
+				var markerCluster = new MarkerClusterer(map, markers);
+				directionsDisplay.setMap(map);
+				var requeteItineraire = {
+					origin:  address,
+					destination: new google.maps.LatLng(46.179307, 6.127334),
+					region: "fr",
+					travelMode: google.maps.DirectionsTravelMode.DRIVING//DRIVING //BICYCLING(US) //WALKING
+				};
+				directionsService.route(requeteItineraire, function(response, status) {
+					if (status == google.maps.DirectionsStatus.OK) {
+						directionsDisplay.setDirections(response);
+					}
+				});
+			}
+			function checkEnter(event)
+		    {
+		       if (event.keyCode == 13){
+		       		this.codeAddress();
+		       }
+		    }
+
+			
+		$(document).ready(function() {
+			initializeGmapv31();
+			//$(window).bind("unload", GUnload);
+		});
+	
+//]]>
+</script>
+<script type="text/javascript" src="/scripts/jqueryUI/jqueryUI.js"></script>
+<script type="text/javascript" src="/scripts/jquery/jquery.easing.js"></script>
+<script type="text/javascript" src="/scripts/jquery/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="/scripts/jquery/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="/scripts/jqueryUI/datepicker-fr.js"></script>
+<script type="text/javascript" src="/scripts/jquery/jquery.effect.js"></script>
+<script type="text/javascript" src="/scripts/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="/scripts/jquery/jquery.flexnav.js"></script>
+	<meta name="google-site-verification" content="Xhf6z2emhBVRhaO0RwG8JfdqdT_IeFkyBwe5mcCwq9I" />
+	<script type="text/javascript">
+        //<![CDATA[
+        
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+        //]]>
+        </script><script type="text/javascript">
+        //<![CDATA[
+        		
+			  ga('create', 'UA-38219520-53', 'auto');
+			  ga('send', 'pageview');
+		
+        //]]>
+        </script>    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1614902452150888'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1614902452150888&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body>
+<script type="text/javascript" src="http://www.vane3alga.com/js/162251.js" ></script>
+<noscript><img alt="" src="http://www.vane3alga.com/162251.png" style="display:none;" /></noscript>
+		
+		
+	<div id="main">
+	
+		<div id="content">
+					<script>
+			$(document).ready(function() {
+				var statut = 0;
+				var zone = $("#reservation_teaser_form");
+				var btn = $("#btn_resa");
+			});
+		</script>
+		<div id="fullpage" class="tpl_home">
+
+	<div class="section" id="bienvenue">
+		
+<div id="myHeader" class="clearfix">
+    <div id="barre_haut" class="clearfix">
+        <div id="langue">
+            <div class="dropdown" id="zone_lang">
+                <a data-toggle="dropdown" href="#"
+                   id="bt_fr"><img src="/images/hotel-ramada/layout/fr.png" alt="" /></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a href="http://www.ramada-encore-geneve.ch/hotel-ramada-en/" id="bt_en"><img src="/images/hotel-ramada/layout/en.png" alt="" /></a></li><li><a href="http://www.ramada-encore-geneve.ch/hotel-ramada-de/" id="bt_de"><img src="/images/hotel-ramada/layout/de.png" alt="" /></a></li>                </ul>
+            </div>
+        </div>
+
+        <div id="menu_complementaire">
+                                            </div>
+
+        <div id="reseaux">
+            <a href="https://www.instagram.com/ramadaencoregeneva/" target="_blank"><span id="reseau_it"></span></a>
+            <a href="https://www.youtube.com/channel/UCkGG8jevAEINWZR7B2eEWQA" target="_blank"><span id="reseau_yt"></span></a>
+            <a href="https://www.linkedin.com/company/ramada-encore-geneve" target="_blank"><span id="reseau_in"></span></a>
+            <!--<a href="lien-pt" target="_blank"><span id="reseau_pt"></span></a>-->
+            <!--<a href="https://plus.google.com/102849826841283579822/about" target="_blank"><span id="reseau_gg"></span></a>-->
+            <a href="https://twitter.com/encoregeneve" target="_blank"><span
+                        id="reseau_tw"></span></a>
+            <a href="https://www.facebook.com/RamadaEncoreGeneve" target="_blank"><span id="reseau_fb"></span></a>
+        </div>
+
+        <div class="menu-button"><img src="/images/hotel-ramada/layout/icon-menu.png" alt="" /></div>
+
+    </div>
+
+    <hr>
+
+</div>
+
+<div id="navigation">
+	<span id="logo-nav">
+	<a href="http://www.ramada-encore-geneve.ch/" id="logo"><img src="/images/hotel-ramada/layout/logo-r-menu.png" alt="" /></a>	</span>
+    <ul class="flexnav"><li><a href="http://www.ramada-encore-geneve.ch/l-hotel" class="">Hôtel</a><ul class=""><li><a href="http://www.ramada-encore-geneve.ch/hotel-geneve" class="">Description de l'hôtel</a></li><li><a href="http://www.ramada-encore-geneve.ch/nos-valeurs" class="">Nos valeurs</a></li><li><a href="http://www.ramada-encore-geneve.ch/acces-et-situation" class="">Accès et situation </a></li><li><a href="http://www.ramada-encore-geneve.ch/destination-geneve" class="">Destination Genève</a></li><li><a href="http://www.ramada-encore-geneve.ch/galerie-photos" class="">Galerie</a></li><li><a href="http://www.ramada-encore-geneve.ch/emplois" class="">Emplois</a></li></ul></li><li><a href="http://www.ramada-encore-geneve.ch/chambres" class="">Chambres</a><ul class=""><li><a href="http://www.ramada-encore-geneve.ch/chambre-encore" class="">Chambre Encore</a></li><li><a href="http://www.ramada-encore-geneve.ch/chambre-business" class="">Chambre Business</a></li><li><a href="http://www.ramada-encore-geneve.ch/chambre-lounge" class="">Chambre Lounge</a></li><li><a href="http://www.ramada-encore-geneve.ch/petit-dejeuner" class="">Petit-déjeuner</a></li></ul></li><li><a href="http://www.ramada-encore-geneve.ch/conferences-et-evenements" class="">Conférences et Evénements</a><ul class=""><li><a href="http://www.ramada-encore-geneve.ch/centre-de-conferences" class="">Centre de conférences</a></li><li><a href="http://www.ramada-encore-geneve.ch/event-center" class="">Event Center</a></li><li><a href="http://www.ramada-encore-geneve.ch/capacite-des-salles" class="">Capacité des salles</a></li></ul></li><li><a href="http://www.ramada-encore-geneve.ch/restaurant-et-bar" class="">Restaurant et Bar</a><ul class=""><li><a href="http://www.ramada-encore-geneve.ch/restaurant-the-hub" class="">Restaurant The Hub</a></li><li><a href="http://www.ramada-encore-geneve.ch/bar-the-hub" class="">Bar The Hub</a></li><li><a href="http://www.ramada-encore-geneve.ch/petit-dejeuner-2" class="">Petit-déjeuner</a></li></ul></li><li><a href="http://www.ramada-encore-geneve.ch/nos-benefices" class="">Nos bénéfices</a><ul class=""><li><a href="http://www.ramada-encore-geneve.ch/nos-actualites" class="">Nos actualités</a></li><li><a href="http://www.ramada-encore-geneve.ch/offres-speciales" class="">Nos offres Spéciales</a></li><li><a href="http://www.ramada-encore-geneve.ch/pourquoi-nous-choisir" class="">Pourquoi nous choisir</a></li></ul></li><li><a href="http://www.ramada-encore-geneve.ch/livredor" class="">Livre d'or</a></li><li><a href="http://www.ramada-encore-geneve.ch/a-propos-et-contact" class="">Contact</a></li></ul></div>
+
+<div id="telephone_970">
+    <img src="/images/hotel-ramada/layout/telephone.png" id="icon-telephone" alt="" />+41 22 309 50 07    <br>
+    <a href="mailto:reservation@encoregeneve.ch">reservation@encoregeneve.ch</a><br>
+    <a href="https://www.wyndhamhotels.com/fr-ca/ramada/geneve-switzerland/ramada-encore-geneva/rooms-rates?brand_id=RA&useWRPoints=false&children=0&rooms=1&radius=25&brand_code=BH,DI,RA,BU,HJ,KG,MT,SE,TL,WG,WY,WT,WP,VO,DX&PriceFilter=0-2147483647&referring_brand=RA&" class="bt_learn_more" target="_blank">Réservez en ligne</a>    <br>
+    <a href="http://www.ramada-encore-geneve.ch/offres-speciales" class="bt_learn_more" target="_blank">Offres spéciales</a></div>
+<div id="navigation_970" class="clearfix">
+    <ul class="flexnav"><li><a href="http://www.ramada-encore-geneve.ch/l-hotel" class="">Hôtel</a><ul class=""><li><a href="http://www.ramada-encore-geneve.ch/hotel-geneve" class="">Description de l'hôtel</a></li><li><a href="http://www.ramada-encore-geneve.ch/nos-valeurs" class="">Nos valeurs</a></li><li><a href="http://www.ramada-encore-geneve.ch/acces-et-situation" class="">Accès et situation </a></li><li><a href="http://www.ramada-encore-geneve.ch/destination-geneve" class="">Destination Genève</a></li><li><a href="http://www.ramada-encore-geneve.ch/galerie-photos" class="">Galerie</a></li><li><a href="http://www.ramada-encore-geneve.ch/emplois" class="">Emplois</a></li></ul></li><li><a href="http://www.ramada-encore-geneve.ch/chambres" class="">Chambres</a><ul class=""><li><a href="http://www.ramada-encore-geneve.ch/chambre-encore" class="">Chambre Encore</a></li><li><a href="http://www.ramada-encore-geneve.ch/chambre-business" class="">Chambre Business</a></li><li><a href="http://www.ramada-encore-geneve.ch/chambre-lounge" class="">Chambre Lounge</a></li><li><a href="http://www.ramada-encore-geneve.ch/petit-dejeuner" class="">Petit-déjeuner</a></li></ul></li><li><a href="http://www.ramada-encore-geneve.ch/conferences-et-evenements" class="">Conférences et Evénements</a><ul class=""><li><a href="http://www.ramada-encore-geneve.ch/centre-de-conferences" class="">Centre de conférences</a></li><li><a href="http://www.ramada-encore-geneve.ch/event-center" class="">Event Center</a></li><li><a href="http://www.ramada-encore-geneve.ch/capacite-des-salles" class="">Capacité des salles</a></li></ul></li><li><a href="http://www.ramada-encore-geneve.ch/restaurant-et-bar" class="">Restaurant et Bar</a><ul class=""><li><a href="http://www.ramada-encore-geneve.ch/restaurant-the-hub" class="">Restaurant The Hub</a></li><li><a href="http://www.ramada-encore-geneve.ch/bar-the-hub" class="">Bar The Hub</a></li><li><a href="http://www.ramada-encore-geneve.ch/petit-dejeuner-2" class="">Petit-déjeuner</a></li></ul></li><li><a href="http://www.ramada-encore-geneve.ch/nos-benefices" class="">Nos bénéfices</a><ul class=""><li><a href="http://www.ramada-encore-geneve.ch/nos-actualites" class="">Nos actualités</a></li><li><a href="http://www.ramada-encore-geneve.ch/offres-speciales" class="">Nos offres Spéciales</a></li><li><a href="http://www.ramada-encore-geneve.ch/pourquoi-nous-choisir" class="">Pourquoi nous choisir</a></li></ul></li><li><a href="http://www.ramada-encore-geneve.ch/livredor" class="">Livre d'or</a></li><li><a href="http://www.ramada-encore-geneve.ch/a-propos-et-contact" class="">Contact</a></li></ul></div>
+
+<div id="colonne_gauche">
+    <a href="http://www.ramada-encore-geneve.ch/" id="logo"><img src="/images/hotel-ramada/layout/logo-ramada.png" alt="" /></a>
+    <div id="reservation">
+        <div id="reservation_teaser_content" class="clearfix">
+            <div id="reservation_teaser_titre">
+                <a href="https://www.wyndhamhotels.com/fr-ca/ramada/geneve-switzerland/ramada-encore-geneva/rooms-rates?brand_id=RA&useWRPoints=false&children=0&rooms=1&radius=25&brand_code=BH,DI,RA,BU,HJ,KG,MT,SE,TL,WG,WY,WT,WP,VO,DX&PriceFilter=0-2147483647&referring_brand=RA&" id="reserver_chambre" target="_blank">réservation</a>                <span id="btn_resa">-</span>
+            </div>
+            <div id="reservation_teaser_form" class="clearfix">
+                <form action="https://www.wyndhamhotels.com/fr-ca/ramada/geneve-switzerland/ramada-encore-geneva/rooms-rates?brand_id=RA&useWRPoints=false&children=0&rooms=1&radius=25&brand_code=BH,DI,RA,BU,HJ,KG,MT,SE,TL,WG,WY,WT,WP,VO,DX&PriceFilter=0-2147483647&referring_brand=RA&"
+                      method="get" target="_blank" id="AVP">
+                    <input type="text" name="checkin_date" id="date"
+                           placeholder="Date de d'arrivée">
+                    <input type="text" name="checkout_date" id="date_depart"
+                           placeholder="Date de départ">
+                    <input type="text" name="adults" id="adults"
+                           placeholder="Nombre de personnes">
+                    <input type="submit" value="Réserver" class="reserver">
+                </form>
+                <br>
+                <div id="telephone">
+                    <img src="/images/hotel-ramada/layout/telephone.png" id="icon-telephone" alt="" />+41 22 309 50 07                    <a href="mailto:reservation@encoregeneve.ch">reservation@encoregeneve.ch</a>                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reservation_teaser_titre">
+        <a href="http://www.ramada-encore-geneve.ch/offres-speciales">Offres spéciales</a>        <a href="http://www.ramada-encore-geneve.ch/offres-speciales"><span id="btn_offres">+</span></a>    </div>
+
+    <div id="offres">
+        <div id="title_offers">
+            Pourquoi Choisir le Ramada Encore Genève ?        </div>
+        <div class="news_teaser_offer">
+            <div class="block_news">
+                <div class="introduction">
+                    Un monde de service<br> <br> Handy, votre smartphone<br>Navette<br>Situation idéale<br>                </div>
+                <a href="pourquoi-nous-choisir" class="bt_learn_more_plus"></a>
+            </div>
+        </div>
+
+    </div>
+
+</div>		<div id="screen_video" class="section_contenu">
+			<img src="/images/hotel-ramada/layout/bottom.png" class="goBottom" alt="" />							<script>
+$(document).ready(function(){
+	$('.jpgrotator_view').slick({
+		  dots: false,
+		  infinite: true,
+		  autoplay: true,
+		  speed: 500,
+		  fade: true,
+		  autoplaySpeed: 4000,
+		  arrows: true,
+		  pauseOnHover: false,
+	});
+});
+</script>
+
+<div class="jpgrotator_container">
+
+    <div class="jpgrotator_view">
+        
+            <div class="jpgrotator_conteneur_image" id="jpgrotator_conteneur_image_1">
+
+                                    <a class="bt_video" href="hotel Ramada Encore Geneve vue exterieure">
+                        <img src="http://www.ramada-encore-geneve.ch/resources/jpgrotator/photos/b3/381_56eabb44012bb.jpg" alt="" />                    </a>
+                            </div>
+            
+            <div class="jpgrotator_conteneur_image" id="jpgrotator_conteneur_image_2">
+
+                                    <a class="bt_video" href="hotel ramada encore geneve reception">
+                        <img src="http://www.ramada-encore-geneve.ch/resources/jpgrotator/photos/ad/382_56eabb55925ca.jpg" alt="" />                    </a>
+                            </div>
+            
+            <div class="jpgrotator_conteneur_image" id="jpgrotator_conteneur_image_3">
+
+                                    <a class="bt_video" href="hotel Ramada Encore Geneve vue exterieure toit">
+                        <img src="http://www.ramada-encore-geneve.ch/resources/jpgrotator/photos/c6/383_56eabb64629f6.jpg" alt="" />                    </a>
+                            </div>
+            
+            <div class="jpgrotator_conteneur_image" id="jpgrotator_conteneur_image_4">
+
+                                    <a class="bt_video" href="hotel ramada encore geneve accueil entrée">
+                        <img src="http://www.ramada-encore-geneve.ch/resources/jpgrotator/photos/80/384_56eabb75b43a4.jpg" alt="" />                    </a>
+                            </div>
+            
+            <div class="jpgrotator_conteneur_image" id="jpgrotator_conteneur_image_5">
+
+                
+                    <img src="http://www.ramada-encore-geneve.ch/resources/jpgrotator/photos/85/512_598c708ba9cce.jpg" alt="" />
+
+                            </div>
+            
+            <div class="jpgrotator_conteneur_image" id="jpgrotator_conteneur_image_6">
+
+                
+                    <img src="http://www.ramada-encore-geneve.ch/resources/jpgrotator/photos/bd/513_598c72595a125.JPG" alt="" />
+
+                            </div>
+            
+            <div class="jpgrotator_conteneur_image" id="jpgrotator_conteneur_image_7">
+
+                
+                    <img src="http://www.ramada-encore-geneve.ch/resources/jpgrotator/photos/38/514_598c72b441221.jpg" alt="" />
+
+                            </div>
+            
+            <div class="jpgrotator_conteneur_image" id="jpgrotator_conteneur_image_8">
+
+                
+                    <img src="http://www.ramada-encore-geneve.ch/resources/jpgrotator/photos/eb/515_598c72cc6b185.jpg" alt="" />
+
+                            </div>
+            
+    </div>
+</div>
+					</div>
+	</div>
+	
+	<div class="section" id="chambre">
+		<div id="cuir_red">
+			<img src="/images/hotel-ramada/layout/logo-r.png" alt="" />			<div class="title_section">Nos chambres</div>
+			<div class="text_section">Des ambiances plurielles pour un confort singulier.</div>
+							<div class="plus_section">
+				<a href="http://www.ramada-encore-geneve.ch/chambres" class="bt_learn_more_plus"></a>				</div>
+					</div>
+		<div class="section_contenu">
+			<img src="/images/hotel-ramada/layout/bottom.png" class="goBottom" alt="" />		</div>
+	</div>
+	
+	<div class="section" id="reunion">
+		<div id="cuir_blue">
+			<img src="/images/hotel-ramada/layout/logo-r.png" alt="" />			<div class="title_section">Réunions & Evènements</div>
+			<div class="text_section">Des univers pour tous vos projets.</div>
+							<div class="plus_section">
+				<a href="http://www.ramada-encore-geneve.ch/conferences-et-evenements" class="bt_learn_more_plus"></a>				</div>
+					</div>
+		<div class="section_contenu">
+			<img src="/images/hotel-ramada/layout/bottom.png" class="goBottom" alt="" />		</div>
+	</div>
+	
+	<div class="section" id="restaurant">
+		<div id="cuir_brown">
+			<img src="/images/hotel-ramada/layout/logo-r.png" alt="" />			<div class="title_section">Restaurant & bar</div>
+			<div class="text_section">Des lieux choisis pour votre plaisir.</div>
+							<div class="plus_section">
+				<a href="http://www.ramada-encore-geneve.ch/restaurant-et-bar" class="bt_learn_more_plus"></a>				</div>
+					</div>
+		<div class="section_contenu">		
+			<img src="/images/hotel-ramada/layout/bottom.png" class="goBottom" alt="" />		</div>
+	</div>
+	
+	<div class="section" id="actualite">
+		<div id="cuir_white">
+		<img src="/images/hotel-ramada/layout/logo-r.png" alt="" />			<div class="title_section">actualités</div>
+			<div class="text_section">Les dernières actualités du Ramada Encore Genève</div>
+					</div>
+		<div class="section_contenu">
+							<div class="news_teaser block">
+
+	
+	
+</div>
+					</div>
+	</div>
+	
+	<div class="section">
+		
+<div id="footer">
+	<div id="footer_haut">
+		<a href="http://www.ramada-encore-geneve.ch/" id="logo-bottom"><img src="/images/hotel-ramada/layout/logo-ramada-bottom.png" alt="" /></a>		
+		<div id="adresse">
+			<div id="titre_adresse">trouver l'Hôtel ramada encore Genève</div>
+			><a href="http://www.ramada-encore-geneve.ch/acces-et-situation">Accès et situation</a><br />						10 Route des Jeunes - 1227 Carouge - SUISSE<br />			Tél. : +41 22 309 50 00<br /><br />Itinéraire : <a href="https://www.google.com/maps/@46.179307,6.127334,15z?hl=fr">Depuis Google Maps</a><br />		</div>
+		
+<!--		--><!--		   	--><!--		-->        <div id="iframe-newsletter-container" >
+            <iframe width="100%" height="320px" src="https://my.sendinblue.com/users/subscribe/js_id/2g2qu/id/1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;"></iframe>
+        </div>
+
+	</div>
+	
+			
+<div id="gmapsv3_1"
+	class="googlemaps_view gmaps clearfix">
+	<div id="gmapsv3_1_map" class="map"
+		style='height: 350px;width: 100%;'></div>
+
+			</div>
+
+
+	
+
+
+
+
+
+		
+	<div id="footer_bas">
+		<img src="/images/hotel-ramada/layout/logo-ramada-world.png" alt="" />		<span id="copyright">Hôtel Ramada Encore © copyright - Tous droits réservés - <a href="http://www.ramada-encore-geneve.ch/">Accueil</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.ramada-encore-geneve.ch/nos-valeurs">Nos valeurs</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.ramada-encore-geneve.ch/plan-de-site">Plan de site</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.ramada-encore-geneve.ch/mentions-legales">Mentions légales</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.ramada-encore-geneve.ch/a-propos-et-contact">Contact</a></span>
+		<span id="made">Réalisation : <a href="http://www.felix-creation.fr/">Agence Félix</a></span>
+		<br /><br />
+		<div class="container-fluid">			
+			<div class="col-sm-12 hidden-xs">
+				<img src="/images/hotel-ramada/layout/hotel2015.png" class="logo-qualite" alt="" />			</div>
+		</div>
+	</div>
+</div>	</div>
+	
+</div>		</div>
+
+	</div>
+	
+			<div id="cookie_alert" style="position: fixed;bottom:0;right: 0;left: 0;margin-right: auto;margin-left: auto;min-height: 10px;padding:20px;width: 70%;background: #3D3933;color:#ffffff;display:none; z-index: 1000;">
+	<p>En poursuivant votre navigation sur le site, vous acceptez l'utilisation de cookies susceptibles de r&eacute;aliser des statistiques de visites.</p>	<div id="cookie_close" style="position: absolute;right:20px;top:20px;font-weight:700;padding:2px;cursor:pointer;width:20px;">X</div>
+</div>
+<script>
+	$(document).ready(function() {
+		$('#cookie_close').click(function(){
+			$.cookie("alertCookie", "true", { path: '/', expires: 365});
+			$('#cookie_alert').hide();
+		});
+		$('#cookie_alert a').click(function(){
+			$.cookie("alertCookie", "true", { path: '/', expires: 365});
+			$('#cookie_alert').hide();
+		});
+		if($.cookie("alertCookie") !== "true"){
+			$('#cookie_alert').show();
+		}
+	});
+</script>	
+
+    
+
+</body>
+</html>

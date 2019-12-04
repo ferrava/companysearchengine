@@ -1,0 +1,1669 @@
+2019-11-12 11:16:05,463 INFO  crawl.Injector - Injector: starting at 2019-11-12 11:16:05
+2019-11-12 11:16:05,464 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2019-11-12 11:16:05,464 INFO  crawl.Injector - Injector: urlDir: urls
+2019-11-12 11:16:05,464 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2019-11-12 11:16:05,573 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 11:16:05,894 INFO  crawl.Injector - Injecting seed URL file file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/urls/seed
+2019-11-12 11:16:06,328 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 11:16:06,329 INFO  mapreduce.Job - Running job: job_local638531423_0001
+2019-11-12 11:16:06,574 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2019-11-12 11:16:06,685 INFO  crawl.Injector - Injector: overwrite: false
+2019-11-12 11:16:06,686 INFO  crawl.Injector - Injector: update: false
+2019-11-12 11:16:07,335 INFO  mapreduce.Job - Job job_local638531423_0001 running in uber mode : false
+2019-11-12 11:16:07,338 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 11:16:07,339 INFO  mapreduce.Job - Job job_local638531423_0001 completed successfully
+2019-11-12 11:16:07,349 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=1855138
+		FILE: Number of bytes written=2976672
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Map output bytes=79
+		Map output materialized bytes=87
+		Input split bytes=310
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=87
+		Reduce input records=1
+		Reduce output records=1
+		Spilled Records=2
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=5
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	injector
+		urls_injected=1
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=439
+2019-11-12 11:16:07,358 INFO  crawl.Injector - Injector: Total urls rejected by filters: 0
+2019-11-12 11:16:07,358 INFO  crawl.Injector - Injector: Total urls injected after normalization and filtering: 1
+2019-11-12 11:16:07,358 INFO  crawl.Injector - Injector: Total urls injected but already in CrawlDb: 0
+2019-11-12 11:16:07,358 INFO  crawl.Injector - Injector: Total new urls injected: 1
+2019-11-12 11:16:07,378 INFO  crawl.Injector - Injector: finished at 2019-11-12 11:16:07, elapsed: 00:00:01
+2019-11-12 11:17:00,878 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 11:17:01,151 INFO  crawl.Generator - Generator: starting at 2019-11-12 11:17:01
+2019-11-12 11:17:01,151 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2019-11-12 11:17:01,151 INFO  crawl.Generator - Generator: filtering: true
+2019-11-12 11:17:01,151 INFO  crawl.Generator - Generator: normalizing: true
+2019-11-12 11:17:01,157 INFO  crawl.Generator - Generator: running in local mode, generating exactly one partition.
+2019-11-12 11:17:01,562 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 11:17:01,563 INFO  mapreduce.Job - Running job: job_local429204947_0001
+2019-11-12 11:17:01,804 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2019-11-12 11:17:01,804 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2019-11-12 11:17:01,804 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2019-11-12 11:17:01,899 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2019-11-12 11:17:02,568 INFO  mapreduce.Job - Job job_local429204947_0001 running in uber mode : false
+2019-11-12 11:17:02,570 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 11:17:02,571 INFO  mapreduce.Job - Job job_local429204947_0001 completed successfully
+2019-11-12 11:17:02,582 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=1855204
+		FILE: Number of bytes written=2984622
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Map output bytes=108
+		Map output materialized bytes=116
+		Input split bytes=178
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=116
+		Reduce input records=1
+		Reduce output records=0
+		Spilled Records=2
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=4
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=185
+	File Output Format Counters 
+		Bytes Written=8
+2019-11-12 11:17:02,582 INFO  crawl.Generator - Generator: number of items rejected during selection:
+2019-11-12 11:17:02,585 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2019-11-12 11:17:03,590 INFO  crawl.Generator - Generator: segment: crawl/segments/20191112111703
+2019-11-12 11:17:03,730 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 11:17:03,730 INFO  mapreduce.Job - Running job: job_local29024803_0002
+2019-11-12 11:17:04,735 INFO  mapreduce.Job - Job job_local29024803_0002 running in uber mode : false
+2019-11-12 11:17:04,735 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 11:17:04,736 INFO  mapreduce.Job - Job job_local29024803_0002 completed successfully
+2019-11-12 11:17:04,739 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=3710940
+		FILE: Number of bytes written=5959618
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Map output bytes=154
+		Map output materialized bytes=162
+		Input split bytes=215
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=162
+		Reduce input records=1
+		Reduce output records=1
+		Spilled Records=2
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=725614592
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=236
+	File Output Format Counters 
+		Bytes Written=206
+2019-11-12 11:17:04,752 INFO  crawl.Generator - Generator: finished at 2019-11-12 11:17:04, elapsed: 00:00:03
+2019-11-12 11:18:26,590 INFO  fetcher.Fetcher - Fetcher: starting at 2019-11-12 11:18:26
+2019-11-12 11:18:26,590 INFO  fetcher.Fetcher - Fetcher: segment: crawl/segments/20191112111703
+2019-11-12 11:18:26,722 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 11:18:27,346 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 11:18:27,347 INFO  mapreduce.Job - Running job: job_local108843580_0001
+2019-11-12 11:18:27,459 INFO  fetcher.FetchItemQueues - Using queue mode : byHost
+2019-11-12 11:18:27,459 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2019-11-12 11:18:27,459 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2019-11-12 11:18:27,463 INFO  fetcher.QueueFeeder - QueueFeeder finished: total 1 records hit by time limit : 0
+2019-11-12 11:18:27,589 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 11:18:27,602 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 11:18:27,602 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 11:18:27,602 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/Stellen-in-Canton-of-Ticino (queue crawl delay=5000ms)
+2019-11-12 11:18:27,603 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 11:18:27,603 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 11:18:27,603 INFO  fetcher.FetcherThread - FetcherThread 41 has no more work available
+2019-11-12 11:18:27,603 INFO  fetcher.FetcherThread - FetcherThread 41 -finishing thread FetcherThread, activeThreads=1
+2019-11-12 11:18:27,709 INFO  protocol.RobotRulesParser - robots.txt whitelist not configured.
+2019-11-12 11:18:27,710 INFO  http.Http - http.proxy.host = null
+2019-11-12 11:18:27,710 INFO  http.Http - http.proxy.port = 8080
+2019-11-12 11:18:27,710 INFO  http.Http - http.proxy.exception.list = false
+2019-11-12 11:18:27,710 INFO  http.Http - http.timeout = 10000
+2019-11-12 11:18:27,710 INFO  http.Http - http.content.limit = 1048576
+2019-11-12 11:18:27,710 INFO  http.Http - http.agent = Gwen/Nutch-1.16
+2019-11-12 11:18:27,710 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2019-11-12 11:18:27,710 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2019-11-12 11:18:27,711 INFO  http.Http - http.enable.cookie.header = true
+2019-11-12 11:18:27,711 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 11:18:27,711 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 11:18:27,711 INFO  fetcher.FetcherThread - FetcherThread 42 has no more work available
+2019-11-12 11:18:27,711 INFO  fetcher.FetcherThread - FetcherThread 42 -finishing thread FetcherThread, activeThreads=1
+2019-11-12 11:18:27,712 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 11:18:27,712 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 11:18:27,712 INFO  fetcher.FetcherThread - FetcherThread 43 has no more work available
+2019-11-12 11:18:27,712 INFO  fetcher.FetcherThread - FetcherThread 43 -finishing thread FetcherThread, activeThreads=1
+2019-11-12 11:18:27,712 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 11:18:27,712 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 11:18:27,712 INFO  fetcher.FetcherThread - FetcherThread 44 has no more work available
+2019-11-12 11:18:27,712 INFO  fetcher.FetcherThread - FetcherThread 44 -finishing thread FetcherThread, activeThreads=1
+2019-11-12 11:18:27,713 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 11:18:27,713 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 11:18:27,713 INFO  fetcher.FetcherThread - FetcherThread 45 has no more work available
+2019-11-12 11:18:27,713 INFO  fetcher.FetcherThread - FetcherThread 45 -finishing thread FetcherThread, activeThreads=1
+2019-11-12 11:18:27,713 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 11:18:27,714 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 11:18:27,713 INFO  fetcher.FetcherThread - FetcherThread 46 has no more work available
+2019-11-12 11:18:27,714 INFO  fetcher.FetcherThread - FetcherThread 46 -finishing thread FetcherThread, activeThreads=1
+2019-11-12 11:18:27,714 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 11:18:27,714 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 11:18:27,714 INFO  fetcher.FetcherThread - FetcherThread 47 has no more work available
+2019-11-12 11:18:27,714 INFO  fetcher.FetcherThread - FetcherThread 47 -finishing thread FetcherThread, activeThreads=1
+2019-11-12 11:18:27,714 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 11:18:27,715 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 11:18:27,715 INFO  fetcher.FetcherThread - FetcherThread 48 has no more work available
+2019-11-12 11:18:27,715 INFO  fetcher.FetcherThread - FetcherThread 48 -finishing thread FetcherThread, activeThreads=1
+2019-11-12 11:18:27,715 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 11:18:27,715 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2019-11-12 11:18:27,715 INFO  fetcher.FetcherThread - FetcherThread 49 has no more work available
+2019-11-12 11:18:27,715 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2019-11-12 11:18:27,715 INFO  fetcher.FetcherThread - FetcherThread 49 -finishing thread FetcherThread, activeThreads=1
+2019-11-12 11:18:28,350 INFO  mapreduce.Job - Job job_local108843580_0001 running in uber mode : false
+2019-11-12 11:18:28,352 INFO  mapreduce.Job -  map 0% reduce 0%
+2019-11-12 11:18:28,723 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0, fetchQueues.getQueueCount=1
+2019-11-12 11:18:29,250 INFO  fetcher.FetcherThread - FetcherThread 40 has no more work available
+2019-11-12 11:18:29,250 INFO  fetcher.FetcherThread - FetcherThread 40 -finishing thread FetcherThread, activeThreads=0
+2019-11-12 11:18:29,724 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0, fetchQueues.getQueueCount=0
+2019-11-12 11:18:29,724 INFO  fetcher.Fetcher - -activeThreads=0
+2019-11-12 11:18:30,359 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 11:18:30,360 INFO  mapreduce.Job - Job job_local108843580_0001 completed successfully
+2019-11-12 11:18:30,371 INFO  mapreduce.Job - Counters: 32
+	File System Counters
+		FILE: Number of bytes read=2869008
+		FILE: Number of bytes written=4583829
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=2
+		Map output bytes=506974
+		Map output materialized bytes=506988
+		Input split bytes=197
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=506988
+		Reduce input records=2
+		Reduce output records=2
+		Spilled Records=4
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=51
+		Total committed heap usage (bytes)=765460480
+	FetcherStatus
+		bytes_downloaded=504674
+		success=1
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=206
+	File Output Format Counters 
+		Bytes Written=89365
+2019-11-12 11:18:30,372 INFO  fetcher.Fetcher - Fetcher: finished at 2019-11-12 11:18:30, elapsed: 00:00:03
+2019-11-12 11:19:07,512 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 11:19:07,760 INFO  parse.ParseSegment - ParseSegment: starting at 2019-11-12 11:19:07
+2019-11-12 11:19:07,760 INFO  parse.ParseSegment - ParseSegment: segment: crawl/segments/20191112111703
+2019-11-12 11:19:08,169 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 11:19:08,169 INFO  mapreduce.Job - Running job: job_local2019671690_0001
+2019-11-12 11:19:08,584 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2019-11-12 11:19:08,592 INFO  parse.ParseSegment - Parsed (181ms):https://www.indeed.ch/Stellen-in-Canton-of-Ticino
+2019-11-12 11:19:08,663 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 11:19:08,722 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2019-11-12 11:19:09,177 INFO  mapreduce.Job - Job job_local2019671690_0001 running in uber mode : false
+2019-11-12 11:19:09,178 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 11:19:09,180 INFO  mapreduce.Job - Job job_local2019671690_0001 completed successfully
+2019-11-12 11:19:09,190 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=2078214
+		FILE: Number of bytes written=3065618
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Map output bytes=23265
+		Map output materialized bytes=23275
+		Input split bytes=195
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=23275
+		Reduce input records=1
+		Reduce output records=1
+		Spilled Records=2
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=5
+		Total committed heap usage (bytes)=514850816
+	ParserStatus
+		success=1
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=88512
+	File Output Format Counters 
+		Bytes Written=0
+2019-11-12 11:19:09,232 INFO  parse.ParseSegment - ParseSegment: finished at 2019-11-12 11:19:09, elapsed: 00:00:01
+2019-11-12 11:19:37,332 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 11:19:37,614 INFO  crawl.CrawlDb - CrawlDb update: starting at 2019-11-12 11:19:37
+2019-11-12 11:19:37,615 INFO  crawl.CrawlDb - CrawlDb update: db: crawl/crawldb
+2019-11-12 11:19:37,615 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl/segments/20191112111703]
+2019-11-12 11:19:37,615 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2019-11-12 11:19:37,615 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: false
+2019-11-12 11:19:37,615 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: false
+2019-11-12 11:19:37,615 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2019-11-12 11:19:37,616 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2019-11-12 11:19:38,028 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 11:19:38,028 INFO  mapreduce.Job - Running job: job_local1467817781_0001
+2019-11-12 11:19:38,477 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2019-11-12 11:19:38,477 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2019-11-12 11:19:38,477 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2019-11-12 11:19:39,036 INFO  mapreduce.Job - Job job_local1467817781_0001 running in uber mode : false
+2019-11-12 11:19:39,037 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 11:19:39,038 INFO  mapreduce.Job - Job job_local1467817781_0001 completed successfully
+2019-11-12 11:19:39,050 INFO  mapreduce.Job - Counters: 32
+	File System Counters
+		FILE: Number of bytes read=3766679
+		FILE: Number of bytes written=6008551
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=103
+		Map output records=103
+		Map output bytes=7965
+		Map output materialized bytes=8190
+		Input split bytes=571
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=48
+		Reduce shuffle bytes=8190
+		Reduce input records=103
+		Reduce output records=48
+		Spilled Records=206
+		Shuffled Maps =3
+		Failed Shuffles=0
+		Merged Map outputs=3
+		GC time elapsed (ms)=5
+		Total committed heap usage (bytes)=1556611072
+	CrawlDB status
+		db_fetched=1
+		db_unfetched=47
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=9275
+	File Output Format Counters 
+		Bytes Written=4595
+2019-11-12 11:19:39,062 INFO  crawl.CrawlDb - CrawlDb update: finished at 2019-11-12 11:19:39, elapsed: 00:00:01
+2019-11-12 11:21:08,450 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 11:21:08,703 INFO  crawl.LinkDb - LinkDb: starting at 2019-11-12 11:21:08
+2019-11-12 11:21:08,703 INFO  crawl.LinkDb - LinkDb: linkdb: crawl/linkdb
+2019-11-12 11:21:08,703 INFO  crawl.LinkDb - LinkDb: URL normalize: true
+2019-11-12 11:21:08,703 INFO  crawl.LinkDb - LinkDb: URL filter: true
+2019-11-12 11:21:08,704 INFO  crawl.LinkDb - LinkDb: internal links will be ignored.
+2019-11-12 11:21:08,704 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments
+2019-11-12 11:21:08,811 ERROR crawl.LinkDb - LinkDb job failed: Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/parse_data
+2019-11-12 11:21:08,813 ERROR crawl.LinkDb - LinkDb: org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/parse_data
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:329)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:271)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat.listStatus(SequenceFileInputFormat.java:59)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:393)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:314)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:331)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:202)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1570)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1567)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1893)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1567)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1588)
+	at org.apache.nutch.crawl.LinkDb.invert(LinkDb.java:227)
+	at org.apache.nutch.crawl.LinkDb.run(LinkDb.java:372)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.LinkDb.main(LinkDb.java:332)
+
+2019-11-12 11:22:08,209 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 11:22:08,464 INFO  crawl.LinkDb - LinkDb: starting at 2019-11-12 11:22:08
+2019-11-12 11:22:08,464 INFO  crawl.LinkDb - LinkDb: linkdb: crawl/linkdb
+2019-11-12 11:22:08,464 INFO  crawl.LinkDb - LinkDb: URL normalize: true
+2019-11-12 11:22:08,464 INFO  crawl.LinkDb - LinkDb: URL filter: true
+2019-11-12 11:22:08,464 INFO  crawl.LinkDb - LinkDb: internal links will be ignored.
+2019-11-12 11:22:08,465 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments
+2019-11-12 11:22:24,594 ERROR crawl.LinkDb - LinkDb job failed: Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/parse_data
+2019-11-12 11:22:24,595 ERROR crawl.LinkDb - LinkDb: org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/parse_data
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:329)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:271)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat.listStatus(SequenceFileInputFormat.java:59)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:393)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:314)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:331)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:202)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1570)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1567)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1893)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1567)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1588)
+	at org.apache.nutch.crawl.LinkDb.invert(LinkDb.java:227)
+	at org.apache.nutch.crawl.LinkDb.run(LinkDb.java:372)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.LinkDb.main(LinkDb.java:332)
+
+2019-11-12 11:23:09,227 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 11:23:09,514 INFO  crawl.LinkDb - LinkDb: starting at 2019-11-12 11:23:09
+2019-11-12 11:23:09,514 INFO  crawl.LinkDb - LinkDb: linkdb: crawl/linkdb
+2019-11-12 11:23:09,514 INFO  crawl.LinkDb - LinkDb: URL normalize: true
+2019-11-12 11:23:09,514 INFO  crawl.LinkDb - LinkDb: URL filter: true
+2019-11-12 11:23:09,514 INFO  crawl.LinkDb - LinkDb: internal links will be ignored.
+2019-11-12 11:23:09,514 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments/20191112111703
+2019-11-12 11:23:49,390 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 11:23:49,663 ERROR crawl.LinkDb - LinkDb: java.io.IOException: lock file crawl/linkdb/.locked already exists.
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:50)
+	at org.apache.nutch.crawl.LinkDb.invert(LinkDb.java:193)
+	at org.apache.nutch.crawl.LinkDb.run(LinkDb.java:372)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.LinkDb.main(LinkDb.java:332)
+
+2019-11-12 11:24:42,219 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 11:24:42,473 INFO  crawl.LinkDb - LinkDb: starting at 2019-11-12 11:24:42
+2019-11-12 11:24:42,473 INFO  crawl.LinkDb - LinkDb: linkdb: crawl/linkdb
+2019-11-12 11:24:42,473 INFO  crawl.LinkDb - LinkDb: URL normalize: true
+2019-11-12 11:24:42,473 INFO  crawl.LinkDb - LinkDb: URL filter: true
+2019-11-12 11:24:42,473 INFO  crawl.LinkDb - LinkDb: internal links will be ignored.
+2019-11-12 11:24:42,473 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments/20191112111703/content
+2019-11-12 11:24:42,475 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments/20191112111703/crawl_fetch
+2019-11-12 11:24:42,475 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments/20191112111703/crawl_generate
+2019-11-12 11:24:42,475 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments/20191112111703/crawl_parse
+2019-11-12 11:24:42,476 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments/20191112111703/parse_data
+2019-11-12 11:24:42,476 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments/20191112111703/parse_text
+2019-11-12 11:24:42,582 ERROR crawl.LinkDb - LinkDb job failed: Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/content/parse_data
+Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/crawl_fetch/parse_data
+Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/crawl_generate/parse_data
+Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/crawl_parse/parse_data
+Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/parse_data/parse_data
+Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/parse_text/parse_data
+2019-11-12 11:24:42,584 ERROR crawl.LinkDb - LinkDb: org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/content/parse_data
+Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/crawl_fetch/parse_data
+Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/crawl_generate/parse_data
+Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/crawl_parse/parse_data
+Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/parse_data/parse_data
+Input path does not exist: file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/crawl/segments/20191112111703/parse_text/parse_data
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:329)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:271)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat.listStatus(SequenceFileInputFormat.java:59)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:393)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:314)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:331)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:202)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1570)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1567)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1893)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1567)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1588)
+	at org.apache.nutch.crawl.LinkDb.invert(LinkDb.java:227)
+	at org.apache.nutch.crawl.LinkDb.run(LinkDb.java:372)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.LinkDb.main(LinkDb.java:332)
+
+2019-11-12 11:26:20,712 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 11:26:20,965 INFO  crawl.LinkDb - LinkDb: starting at 2019-11-12 11:26:20
+2019-11-12 11:26:20,965 INFO  crawl.LinkDb - LinkDb: linkdb: crawl/linkdb
+2019-11-12 11:26:20,965 INFO  crawl.LinkDb - LinkDb: URL normalize: true
+2019-11-12 11:26:20,965 INFO  crawl.LinkDb - LinkDb: URL filter: true
+2019-11-12 11:26:20,965 INFO  crawl.LinkDb - LinkDb: internal links will be ignored.
+2019-11-12 11:26:20,965 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments/20191112111703
+2019-11-12 11:26:21,356 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 11:26:21,356 INFO  mapreduce.Job - Running job: job_local1360607501_0001
+2019-11-12 11:26:21,614 INFO  regex.RegexURLNormalizer - can't find rules for scope 'linkdb', using default
+2019-11-12 11:26:22,359 INFO  mapreduce.Job - Job job_local1360607501_0001 running in uber mode : false
+2019-11-12 11:26:22,361 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 11:26:22,362 INFO  mapreduce.Job - Job job_local1360607501_0001 completed successfully
+2019-11-12 11:26:22,372 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=1859552
+		FILE: Number of bytes written=2983621
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Map output bytes=158
+		Map output materialized bytes=166
+		Input split bytes=198
+		Combine input records=1
+		Combine output records=1
+		Reduce input groups=1
+		Reduce shuffle bytes=166
+		Reduce input records=1
+		Reduce output records=1
+		Spilled Records=2
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=5
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=2288
+	File Output Format Counters 
+		Bytes Written=591
+2019-11-12 11:26:22,384 INFO  crawl.LinkDb - LinkDb: finished at 2019-11-12 11:26:22, elapsed: 00:00:01
+2019-11-12 12:07:25,271 INFO  crawl.Injector - Injector: starting at 2019-11-12 12:07:25
+2019-11-12 12:07:25,271 INFO  crawl.Injector - Injector: crawlDb: crawl/crawldb
+2019-11-12 12:07:25,271 INFO  crawl.Injector - Injector: urlDir: urls
+2019-11-12 12:07:25,272 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2019-11-12 12:07:25,363 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 12:07:25,657 INFO  crawl.Injector - Injecting seed URL file file:/Users/vale/Qsync/INFO-RET/Project/Prova/Tutorial1/apache-nutch-1.16/urls/seed
+2019-11-12 12:07:26,066 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 12:07:26,067 INFO  mapreduce.Job - Running job: job_local1129981225_0001
+2019-11-12 12:07:26,401 INFO  regex.RegexURLNormalizer - can't find rules for scope 'inject', using default
+2019-11-12 12:07:26,508 INFO  crawl.Injector - Injector: overwrite: false
+2019-11-12 12:07:26,508 INFO  crawl.Injector - Injector: update: false
+2019-11-12 12:07:27,071 INFO  mapreduce.Job - Job job_local1129981225_0001 running in uber mode : false
+2019-11-12 12:07:27,072 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 12:07:27,073 INFO  mapreduce.Job - Job job_local1129981225_0001 completed successfully
+2019-11-12 12:07:27,084 INFO  mapreduce.Job - Counters: 32
+	File System Counters
+		FILE: Number of bytes read=2805717
+		FILE: Number of bytes written=4493629
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=50
+		Map output records=49
+		Map output bytes=3823
+		Map output materialized bytes=3934
+		Input split bytes=650
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=48
+		Reduce shuffle bytes=3934
+		Reduce input records=49
+		Reduce output records=48
+		Spilled Records=98
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=5
+		Total committed heap usage (bytes)=983040000
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	injector
+		urls_injected=1
+		urls_merged=1
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=4595
+2019-11-12 12:07:27,095 INFO  crawl.Injector - Injector: Total urls rejected by filters: 0
+2019-11-12 12:07:27,095 INFO  crawl.Injector - Injector: Total urls injected after normalization and filtering: 1
+2019-11-12 12:07:27,095 INFO  crawl.Injector - Injector: Total urls injected but already in CrawlDb: 1
+2019-11-12 12:07:27,095 INFO  crawl.Injector - Injector: Total new urls injected: 0
+2019-11-12 12:07:27,106 INFO  crawl.Injector - Injector: finished at 2019-11-12 12:07:27, elapsed: 00:00:01
+2019-11-12 12:07:50,701 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 12:07:50,976 INFO  crawl.Generator - Generator: starting at 2019-11-12 12:07:50
+2019-11-12 12:07:50,976 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2019-11-12 12:07:50,976 INFO  crawl.Generator - Generator: filtering: true
+2019-11-12 12:07:50,976 INFO  crawl.Generator - Generator: normalizing: true
+2019-11-12 12:07:50,983 INFO  crawl.Generator - Generator: running in local mode, generating exactly one partition.
+2019-11-12 12:07:51,380 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 12:07:51,381 INFO  mapreduce.Job - Running job: job_local134647653_0001
+2019-11-12 12:07:51,624 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2019-11-12 12:07:51,624 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2019-11-12 12:07:51,624 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2019-11-12 12:07:51,736 INFO  regex.RegexURLNormalizer - can't find rules for scope 'generate_host_count', using default
+2019-11-12 12:07:52,389 INFO  mapreduce.Job - Job job_local134647653_0001 running in uber mode : false
+2019-11-12 12:07:52,391 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 12:07:52,392 INFO  mapreduce.Job - Job job_local134647653_0001 completed successfully
+2019-11-12 12:07:52,402 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=1873234
+		FILE: Number of bytes written=3004579
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=48
+		Map output records=47
+		Map output bytes=4898
+		Map output materialized bytes=4999
+		Input split bytes=178
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=4
+		Reduce shuffle bytes=4999
+		Reduce input records=47
+		Reduce output records=0
+		Spilled Records=94
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=5
+		Total committed heap usage (bytes)=514850816
+	Generator
+		SCHEDULE_REJECTED=1
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=4316
+	File Output Format Counters 
+		Bytes Written=8
+2019-11-12 12:07:52,402 INFO  crawl.Generator - Generator: number of items rejected during selection:
+2019-11-12 12:07:52,405 INFO  crawl.Generator - Generator:      1  SCHEDULE_REJECTED
+2019-11-12 12:07:52,406 INFO  crawl.Generator - Generator: Partitioning selected urls for politeness.
+2019-11-12 12:07:53,406 INFO  crawl.Generator - Generator: segment: crawl/segments/20191112120753
+2019-11-12 12:07:53,553 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 12:07:53,553 INFO  mapreduce.Job - Running job: job_local1354739051_0002
+2019-11-12 12:07:54,555 INFO  mapreduce.Job - Job job_local1354739051_0002 running in uber mode : false
+2019-11-12 12:07:54,555 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 12:07:54,555 INFO  mapreduce.Job - Job job_local1354739051_0002 completed successfully
+2019-11-12 12:07:54,558 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=3762856
+		FILE: Number of bytes written=6026019
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=47
+		Map output records=47
+		Map output bytes=6882
+		Map output materialized bytes=6983
+		Input split bytes=215
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=47
+		Reduce shuffle bytes=6983
+		Reduce input records=47
+		Reduce output records=47
+		Spilled Records=94
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=725614592
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=5474
+	File Output Format Counters 
+		Bytes Written=5072
+2019-11-12 12:07:54,571 INFO  crawl.Generator - Generator: finished at 2019-11-12 12:07:54, elapsed: 00:00:03
+2019-11-12 12:08:11,596 INFO  fetcher.Fetcher - Fetcher: starting at 2019-11-12 12:08:11
+2019-11-12 12:08:11,597 INFO  fetcher.Fetcher - Fetcher: segment: crawl/segments/20191112120753
+2019-11-12 12:08:11,725 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 12:08:12,348 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 12:08:12,349 INFO  mapreduce.Job - Running job: job_local1869143864_0001
+2019-11-12 12:08:12,463 INFO  fetcher.FetchItemQueues - Using queue mode : byHost
+2019-11-12 12:08:12,463 INFO  fetcher.Fetcher - Fetcher: threads: 10
+2019-11-12 12:08:12,463 INFO  fetcher.Fetcher - Fetcher: time-out divisor: 2
+2019-11-12 12:08:12,473 INFO  fetcher.QueueFeeder - QueueFeeder finished: total 47 records hit by time limit : 0
+2019-11-12 12:08:12,595 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 12:08:12,608 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 12:08:12,608 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 12:08:12,609 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/Coop-Jobs (queue crawl delay=5000ms)
+2019-11-12 12:08:12,609 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 12:08:12,609 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 12:08:12,609 INFO  fetcher.FetcherThread - FetcherThread 41 fetching https://d2q79iu7y748jz.cloudfront.net/s/_logo/b74b3f723c69a5610b6506bc5733c98e (queue crawl delay=5000ms)
+2019-11-12 12:08:12,719 INFO  protocol.RobotRulesParser - robots.txt whitelist not configured.
+2019-11-12 12:08:12,721 INFO  http.Http - http.proxy.host = null
+2019-11-12 12:08:12,721 INFO  http.Http - http.proxy.port = 8080
+2019-11-12 12:08:12,721 INFO  http.Http - http.proxy.exception.list = false
+2019-11-12 12:08:12,721 INFO  http.Http - http.timeout = 10000
+2019-11-12 12:08:12,721 INFO  http.Http - http.content.limit = 1048576
+2019-11-12 12:08:12,721 INFO  http.Http - http.agent = Gwen/Nutch-1.16
+2019-11-12 12:08:12,721 INFO  http.Http - http.accept.language = en-us,en-gb,en;q=0.7,*;q=0.3
+2019-11-12 12:08:12,721 INFO  http.Http - http.accept = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2019-11-12 12:08:12,721 INFO  http.Http - http.enable.cookie.header = true
+2019-11-12 12:08:12,722 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 12:08:12,722 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 12:08:12,722 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 12:08:12,722 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 12:08:12,723 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 12:08:12,723 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 12:08:12,723 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 12:08:12,723 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 12:08:12,724 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 12:08:12,724 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 12:08:12,724 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 12:08:12,724 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 12:08:12,724 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 12:08:12,725 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 12:08:12,725 INFO  fetcher.FetcherThread - FetcherThread 36 Using queue mode : byHost
+2019-11-12 12:08:12,725 INFO  fetcher.Fetcher - Fetcher: throughput threshold: -1
+2019-11-12 12:08:12,725 INFO  fetcher.Fetcher - Fetcher: throughput threshold retries: 5
+2019-11-12 12:08:13,355 INFO  mapreduce.Job - Job job_local1869143864_0001 running in uber mode : false
+2019-11-12 12:08:13,357 INFO  mapreduce.Job -  map 0% reduce 0%
+2019-11-12 12:08:13,731 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=45, fetchQueues.getQueueCount=1
+2019-11-12 12:08:14,731 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=45, fetchQueues.getQueueCount=1
+2019-11-12 12:08:15,733 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=45, fetchQueues.getQueueCount=1
+2019-11-12 12:08:16,739 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=45, fetchQueues.getQueueCount=1
+2019-11-12 12:08:17,745 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=45, fetchQueues.getQueueCount=1
+2019-11-12 12:08:18,745 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=45, fetchQueues.getQueueCount=1
+2019-11-12 12:08:19,080 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/Coop-Jobs-in-Canton-of-Ticino (queue crawl delay=5000ms)
+2019-11-12 12:08:19,749 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=44, fetchQueues.getQueueCount=1
+2019-11-12 12:08:20,754 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=44, fetchQueues.getQueueCount=1
+2019-11-12 12:08:21,757 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=44, fetchQueues.getQueueCount=1
+2019-11-12 12:08:22,758 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=44, fetchQueues.getQueueCount=1
+2019-11-12 12:08:23,761 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=44, fetchQueues.getQueueCount=1
+2019-11-12 12:08:24,487 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/Suisse-Jobs-in-Canton-of-Ticino (queue crawl delay=5000ms)
+2019-11-12 12:08:24,764 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=43, fetchQueues.getQueueCount=1
+2019-11-12 12:08:25,402 INFO  mapreduce.Job -  map 67% reduce 0%
+2019-11-12 12:08:25,770 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=43, fetchQueues.getQueueCount=1
+2019-11-12 12:08:26,771 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=43, fetchQueues.getQueueCount=1
+2019-11-12 12:08:27,776 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=43, fetchQueues.getQueueCount=1
+2019-11-12 12:08:28,779 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=43, fetchQueues.getQueueCount=1
+2019-11-12 12:08:29,783 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=43, fetchQueues.getQueueCount=1
+2019-11-12 12:08:29,963 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/Vente-Jobs-in-Canton-of-Ticino (queue crawl delay=5000ms)
+2019-11-12 12:08:30,785 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=42, fetchQueues.getQueueCount=1
+2019-11-12 12:08:31,785 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=42, fetchQueues.getQueueCount=1
+2019-11-12 12:08:32,789 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=42, fetchQueues.getQueueCount=1
+2019-11-12 12:08:33,790 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=42, fetchQueues.getQueueCount=1
+2019-11-12 12:08:34,790 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=42, fetchQueues.getQueueCount=1
+2019-11-12 12:08:35,507 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/Stellen-in-Bellinzona,-TI (queue crawl delay=5000ms)
+2019-11-12 12:08:35,791 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=41, fetchQueues.getQueueCount=1
+2019-11-12 12:08:36,796 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=41, fetchQueues.getQueueCount=1
+2019-11-12 12:08:37,801 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=41, fetchQueues.getQueueCount=1
+2019-11-12 12:08:38,806 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=41, fetchQueues.getQueueCount=1
+2019-11-12 12:08:39,807 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=41, fetchQueues.getQueueCount=1
+2019-11-12 12:08:40,814 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=41, fetchQueues.getQueueCount=1
+2019-11-12 12:08:41,432 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/cmp/Migros-b2d53d9b/reviews (queue crawl delay=5000ms)
+2019-11-12 12:08:41,815 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=40, fetchQueues.getQueueCount=1
+2019-11-12 12:08:42,821 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=40, fetchQueues.getQueueCount=1
+2019-11-12 12:08:43,826 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=40, fetchQueues.getQueueCount=1
+2019-11-12 12:08:44,829 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=40, fetchQueues.getQueueCount=1
+2019-11-12 12:08:45,830 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=40, fetchQueues.getQueueCount=1
+2019-11-12 12:08:46,833 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=40, fetchQueues.getQueueCount=1
+2019-11-12 12:08:46,894 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/Helsana-Jobs (queue crawl delay=5000ms)
+2019-11-12 12:08:47,836 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=39, fetchQueues.getQueueCount=1
+2019-11-12 12:08:48,841 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=39, fetchQueues.getQueueCount=1
+2019-11-12 12:08:49,845 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=39, fetchQueues.getQueueCount=1
+2019-11-12 12:08:50,849 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=39, fetchQueues.getQueueCount=1
+2019-11-12 12:08:51,854 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=39, fetchQueues.getQueueCount=1
+2019-11-12 12:08:52,420 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/cmp/Interio/reviews (queue crawl delay=5000ms)
+2019-11-12 12:08:52,858 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=38, fetchQueues.getQueueCount=1
+2019-11-12 12:08:53,862 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=38, fetchQueues.getQueueCount=1
+2019-11-12 12:08:54,865 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=38, fetchQueues.getQueueCount=1
+2019-11-12 12:08:55,869 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=38, fetchQueues.getQueueCount=1
+2019-11-12 12:08:56,873 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=38, fetchQueues.getQueueCount=1
+2019-11-12 12:08:57,689 INFO  fetcher.FetcherThread - FetcherThread 41 fetching https://www.indeed.ch/browsejobs (queue crawl delay=5000ms)
+2019-11-12 12:08:57,878 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=37, fetchQueues.getQueueCount=1
+2019-11-12 12:08:58,882 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=37, fetchQueues.getQueueCount=1
+2019-11-12 12:08:59,886 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=37, fetchQueues.getQueueCount=1
+2019-11-12 12:09:00,890 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=37, fetchQueues.getQueueCount=1
+2019-11-12 12:09:01,895 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=37, fetchQueues.getQueueCount=1
+2019-11-12 12:09:02,899 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=37, fetchQueues.getQueueCount=1
+2019-11-12 12:09:02,937 INFO  fetcher.FetcherThread - FetcherThread 41 fetching https://www.indeed.ch/cmp/Betterhomes-(schweiz)-Ag-1/reviews (queue crawl delay=5000ms)
+2019-11-12 12:09:03,903 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=36, fetchQueues.getQueueCount=1
+2019-11-12 12:09:04,907 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=36, fetchQueues.getQueueCount=1
+2019-11-12 12:09:05,911 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=36, fetchQueues.getQueueCount=1
+2019-11-12 12:09:06,915 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=36, fetchQueues.getQueueCount=1
+2019-11-12 12:09:07,919 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=36, fetchQueues.getQueueCount=1
+2019-11-12 12:09:08,307 INFO  fetcher.FetcherThread - FetcherThread 41 fetching https://www.indeed.ch/cmp/Wesser/reviews (queue crawl delay=5000ms)
+2019-11-12 12:09:08,923 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=35, fetchQueues.getQueueCount=1
+2019-11-12 12:09:09,928 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=35, fetchQueues.getQueueCount=1
+2019-11-12 12:09:10,933 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=35, fetchQueues.getQueueCount=1
+2019-11-12 12:09:11,937 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=35, fetchQueues.getQueueCount=1
+2019-11-12 12:09:12,938 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=35, fetchQueues.getQueueCount=1
+2019-11-12 12:09:13,691 INFO  fetcher.FetcherThread - FetcherThread 41 fetching https://www.indeed.ch/Tiffany-&-Co.-Jobs (queue crawl delay=5000ms)
+2019-11-12 12:09:13,942 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=34, fetchQueues.getQueueCount=1
+2019-11-12 12:09:14,945 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=34, fetchQueues.getQueueCount=1
+2019-11-12 12:09:15,949 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=34, fetchQueues.getQueueCount=1
+2019-11-12 12:09:16,953 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=34, fetchQueues.getQueueCount=1
+2019-11-12 12:09:17,958 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=34, fetchQueues.getQueueCount=1
+2019-11-12 12:09:18,962 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=34, fetchQueues.getQueueCount=1
+2019-11-12 12:09:19,068 INFO  fetcher.FetcherThread - FetcherThread 41 fetching https://www.indeed.ch/Alpha-Swiss-Real-Estate-Jobs (queue crawl delay=5000ms)
+2019-11-12 12:09:19,965 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=33, fetchQueues.getQueueCount=1
+2019-11-12 12:09:20,968 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=33, fetchQueues.getQueueCount=1
+2019-11-12 12:09:21,972 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=33, fetchQueues.getQueueCount=1
+2019-11-12 12:09:22,976 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=33, fetchQueues.getQueueCount=1
+2019-11-12 12:09:23,979 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=33, fetchQueues.getQueueCount=1
+2019-11-12 12:09:24,604 INFO  fetcher.FetcherThread - FetcherThread 49 fetching https://www.indeed.ch/Migros-Jobs-in-Canton-of-Ticino (queue crawl delay=5000ms)
+2019-11-12 12:09:24,983 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=32, fetchQueues.getQueueCount=1
+2019-11-12 12:09:25,988 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=32, fetchQueues.getQueueCount=1
+2019-11-12 12:09:26,994 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=32, fetchQueues.getQueueCount=1
+2019-11-12 12:09:27,997 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=32, fetchQueues.getQueueCount=1
+2019-11-12 12:09:29,002 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=32, fetchQueues.getQueueCount=1
+2019-11-12 12:09:30,004 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=32, fetchQueues.getQueueCount=1
+2019-11-12 12:09:30,008 INFO  fetcher.FetcherThread - FetcherThread 49 fetching https://www.indeed.ch/cmp/Coop/faq (queue crawl delay=5000ms)
+2019-11-12 12:09:31,009 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=31, fetchQueues.getQueueCount=1
+2019-11-12 12:09:32,013 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=31, fetchQueues.getQueueCount=1
+2019-11-12 12:09:33,017 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=31, fetchQueues.getQueueCount=1
+2019-11-12 12:09:34,021 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=31, fetchQueues.getQueueCount=1
+2019-11-12 12:09:35,025 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=31, fetchQueues.getQueueCount=1
+2019-11-12 12:09:35,479 INFO  fetcher.FetcherThread - FetcherThread 49 fetching https://www.indeed.ch/promo/resume (queue crawl delay=5000ms)
+2019-11-12 12:09:35,696 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2019-11-12 12:09:36,028 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=30, fetchQueues.getQueueCount=1
+2019-11-12 12:09:37,033 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=30, fetchQueues.getQueueCount=1
+2019-11-12 12:09:38,037 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=30, fetchQueues.getQueueCount=1
+2019-11-12 12:09:39,039 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=30, fetchQueues.getQueueCount=1
+2019-11-12 12:09:40,043 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=30, fetchQueues.getQueueCount=1
+2019-11-12 12:09:40,699 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.indeed.ch/Produktionsmitarbeiter-Jobs-in-Canton-of-Ticino (queue crawl delay=5000ms)
+2019-11-12 12:09:41,046 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=29, fetchQueues.getQueueCount=1
+2019-11-12 12:09:42,051 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=29, fetchQueues.getQueueCount=1
+2019-11-12 12:09:43,055 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=29, fetchQueues.getQueueCount=1
+2019-11-12 12:09:44,059 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=29, fetchQueues.getQueueCount=1
+2019-11-12 12:09:45,063 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=29, fetchQueues.getQueueCount=1
+2019-11-12 12:09:46,067 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=29, fetchQueues.getQueueCount=1
+2019-11-12 12:09:46,171 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.indeed.ch/cmp/Das-Team-Ag/reviews (queue crawl delay=5000ms)
+2019-11-12 12:09:47,071 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=28, fetchQueues.getQueueCount=1
+2019-11-12 12:09:48,075 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=28, fetchQueues.getQueueCount=1
+2019-11-12 12:09:49,080 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=28, fetchQueues.getQueueCount=1
+2019-11-12 12:09:50,084 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=28, fetchQueues.getQueueCount=1
+2019-11-12 12:09:51,088 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=28, fetchQueues.getQueueCount=1
+2019-11-12 12:09:51,592 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.indeed.ch/Mitarbeiter-Jobs-in-Canton-of-Ticino (queue crawl delay=5000ms)
+2019-11-12 12:09:52,093 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=27, fetchQueues.getQueueCount=1
+2019-11-12 12:09:53,094 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=27, fetchQueues.getQueueCount=1
+2019-11-12 12:09:54,098 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=27, fetchQueues.getQueueCount=1
+2019-11-12 12:09:55,102 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=27, fetchQueues.getQueueCount=1
+2019-11-12 12:09:56,106 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=27, fetchQueues.getQueueCount=1
+2019-11-12 12:09:57,080 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.indeed.ch/Vendeuse-Jobs-in-Canton-of-Ticino (queue crawl delay=5000ms)
+2019-11-12 12:09:57,110 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=26, fetchQueues.getQueueCount=1
+2019-11-12 12:09:58,115 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=26, fetchQueues.getQueueCount=1
+2019-11-12 12:09:59,120 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=26, fetchQueues.getQueueCount=1
+2019-11-12 12:10:00,124 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=26, fetchQueues.getQueueCount=1
+2019-11-12 12:10:01,128 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=26, fetchQueues.getQueueCount=1
+2019-11-12 12:10:02,133 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=26, fetchQueues.getQueueCount=1
+2019-11-12 12:10:02,618 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.indeed.ch/companies (queue crawl delay=5000ms)
+2019-11-12 12:10:03,138 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=25, fetchQueues.getQueueCount=1
+2019-11-12 12:10:04,140 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=25, fetchQueues.getQueueCount=1
+2019-11-12 12:10:05,144 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=25, fetchQueues.getQueueCount=1
+2019-11-12 12:10:06,148 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=25, fetchQueues.getQueueCount=1
+2019-11-12 12:10:07,153 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=25, fetchQueues.getQueueCount=1
+2019-11-12 12:10:07,985 INFO  fetcher.FetcherThread - FetcherThread 44 fetching https://www.indeed.ch/cmp/Tiffany-&-Co./reviews (queue crawl delay=5000ms)
+2019-11-12 12:10:08,156 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=24, fetchQueues.getQueueCount=1
+2019-11-12 12:10:09,159 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=24, fetchQueues.getQueueCount=1
+2019-11-12 12:10:10,163 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=24, fetchQueues.getQueueCount=1
+2019-11-12 12:10:11,171 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=24, fetchQueues.getQueueCount=1
+2019-11-12 12:10:12,174 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=24, fetchQueues.getQueueCount=1
+2019-11-12 12:10:13,178 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=24, fetchQueues.getQueueCount=1
+2019-11-12 12:10:13,351 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.indeed.ch/Genossenschaft-Migros-Aare-Jobs (queue crawl delay=5000ms)
+2019-11-12 12:10:14,182 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=23, fetchQueues.getQueueCount=1
+2019-11-12 12:10:15,186 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=23, fetchQueues.getQueueCount=1
+2019-11-12 12:10:16,191 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=23, fetchQueues.getQueueCount=1
+2019-11-12 12:10:17,194 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=23, fetchQueues.getQueueCount=1
+2019-11-12 12:10:18,198 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=23, fetchQueues.getQueueCount=1
+2019-11-12 12:10:19,202 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=23, fetchQueues.getQueueCount=1
+2019-11-12 12:10:19,609 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.indeed.ch/Stellen-in-Chiasso,-TI (queue crawl delay=5000ms)
+2019-11-12 12:10:20,207 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2019-11-12 12:10:21,210 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2019-11-12 12:10:22,214 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2019-11-12 12:10:23,217 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2019-11-12 12:10:24,221 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2019-11-12 12:10:25,224 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=22, fetchQueues.getQueueCount=1
+2019-11-12 12:10:25,407 INFO  fetcher.FetcherThread - FetcherThread 42 fetching https://www.indeed.ch/Offene-Stellen-Jobs-in-Canton-of-Ticino (queue crawl delay=5000ms)
+2019-11-12 12:10:26,228 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=21, fetchQueues.getQueueCount=1
+2019-11-12 12:10:27,232 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=21, fetchQueues.getQueueCount=1
+2019-11-12 12:10:28,236 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=21, fetchQueues.getQueueCount=1
+2019-11-12 12:10:29,240 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=21, fetchQueues.getQueueCount=1
+2019-11-12 12:10:30,244 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=21, fetchQueues.getQueueCount=1
+2019-11-12 12:10:30,933 INFO  fetcher.FetcherThread - FetcherThread 47 fetching https://www.indeed.ch/cmp/Wesser (queue crawl delay=5000ms)
+2019-11-12 12:10:31,249 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=20, fetchQueues.getQueueCount=1
+2019-11-12 12:10:32,252 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=20, fetchQueues.getQueueCount=1
+2019-11-12 12:10:33,256 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=20, fetchQueues.getQueueCount=1
+2019-11-12 12:10:34,259 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=20, fetchQueues.getQueueCount=1
+2019-11-12 12:10:35,263 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=20, fetchQueues.getQueueCount=1
+2019-11-12 12:10:36,267 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/Direzione-Generale-E-Servizi-Centrali-Jobs (queue crawl delay=5000ms)
+2019-11-12 12:10:36,267 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=19, fetchQueues.getQueueCount=1
+2019-11-12 12:10:37,271 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=19, fetchQueues.getQueueCount=1
+2019-11-12 12:10:38,275 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=19, fetchQueues.getQueueCount=1
+2019-11-12 12:10:39,280 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=19, fetchQueues.getQueueCount=1
+2019-11-12 12:10:40,285 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=19, fetchQueues.getQueueCount=1
+2019-11-12 12:10:41,287 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=19, fetchQueues.getQueueCount=1
+2019-11-12 12:10:41,660 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/cmp/Tiffany-&-Co (queue crawl delay=5000ms)
+2019-11-12 12:10:41,919 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2019-11-12 12:10:42,292 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=18, fetchQueues.getQueueCount=1
+2019-11-12 12:10:43,294 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=18, fetchQueues.getQueueCount=1
+2019-11-12 12:10:44,299 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=18, fetchQueues.getQueueCount=1
+2019-11-12 12:10:45,303 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=18, fetchQueues.getQueueCount=1
+2019-11-12 12:10:46,308 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=18, fetchQueues.getQueueCount=1
+2019-11-12 12:10:46,944 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/Teilzeit-Jobs-in-Canton-of-Ticino (queue crawl delay=5000ms)
+2019-11-12 12:10:47,312 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:48,316 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:49,320 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:50,323 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:51,324 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:52,328 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:53,329 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:54,330 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:55,334 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:56,335 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:57,340 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:58,342 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:10:59,343 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=17, fetchQueues.getQueueCount=1
+2019-11-12 12:11:00,090 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.indeed.ch/cmp/Coop (queue crawl delay=5000ms)
+2019-11-12 12:11:00,346 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=16, fetchQueues.getQueueCount=1
+2019-11-12 12:11:01,348 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=16, fetchQueues.getQueueCount=1
+2019-11-12 12:11:02,352 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=16, fetchQueues.getQueueCount=1
+2019-11-12 12:11:03,356 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=16, fetchQueues.getQueueCount=1
+2019-11-12 12:11:04,362 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=16, fetchQueues.getQueueCount=1
+2019-11-12 12:11:05,363 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=16, fetchQueues.getQueueCount=1
+2019-11-12 12:11:05,436 INFO  fetcher.FetcherThread - FetcherThread 47 fetching https://www.indeed.ch/ (queue crawl delay=5000ms)
+2019-11-12 12:11:06,364 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=15, fetchQueues.getQueueCount=1
+2019-11-12 12:11:07,365 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=15, fetchQueues.getQueueCount=1
+2019-11-12 12:11:08,368 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=15, fetchQueues.getQueueCount=1
+2019-11-12 12:11:09,374 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=15, fetchQueues.getQueueCount=1
+2019-11-12 12:11:10,378 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=15, fetchQueues.getQueueCount=1
+2019-11-12 12:11:10,822 INFO  fetcher.FetcherThread - FetcherThread 47 fetching https://www.indeed.ch/cmp/Helsana (queue crawl delay=5000ms)
+2019-11-12 12:11:11,380 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=14, fetchQueues.getQueueCount=1
+2019-11-12 12:11:12,386 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=14, fetchQueues.getQueueCount=1
+2019-11-12 12:11:13,389 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=14, fetchQueues.getQueueCount=1
+2019-11-12 12:11:14,394 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=14, fetchQueues.getQueueCount=1
+2019-11-12 12:11:15,398 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=14, fetchQueues.getQueueCount=1
+2019-11-12 12:11:16,188 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/Stellen-in-Taverne,-TI (queue crawl delay=5000ms)
+2019-11-12 12:11:16,399 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=13, fetchQueues.getQueueCount=1
+2019-11-12 12:11:17,405 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=13, fetchQueues.getQueueCount=1
+2019-11-12 12:11:18,410 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=13, fetchQueues.getQueueCount=1
+2019-11-12 12:11:19,411 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=13, fetchQueues.getQueueCount=1
+2019-11-12 12:11:20,415 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=13, fetchQueues.getQueueCount=1
+2019-11-12 12:11:21,420 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=13, fetchQueues.getQueueCount=1
+2019-11-12 12:11:21,834 INFO  fetcher.FetcherThread - FetcherThread 40 fetching https://www.indeed.ch/cmp/Betterhomes-(schweiz)-Ag-1 (queue crawl delay=5000ms)
+2019-11-12 12:11:22,424 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=12, fetchQueues.getQueueCount=1
+2019-11-12 12:11:23,425 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=12, fetchQueues.getQueueCount=1
+2019-11-12 12:11:24,431 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=12, fetchQueues.getQueueCount=1
+2019-11-12 12:11:25,432 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=12, fetchQueues.getQueueCount=1
+2019-11-12 12:11:26,433 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=12, fetchQueues.getQueueCount=1
+2019-11-12 12:11:27,238 INFO  fetcher.FetcherThread - FetcherThread 47 fetching https://www.indeed.ch/cmp/Migros-b2d53d9b/faq (queue crawl delay=5000ms)
+2019-11-12 12:11:27,434 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2019-11-12 12:11:28,440 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2019-11-12 12:11:29,445 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2019-11-12 12:11:30,450 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2019-11-12 12:11:31,455 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2019-11-12 12:11:32,461 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2019-11-12 12:11:33,464 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=11, fetchQueues.getQueueCount=1
+2019-11-12 12:11:33,688 INFO  fetcher.FetcherThread - FetcherThread 47 fetching https://www.indeed.ch/cmp/Betterhomes-(schweiz)-Ag-1/photos (queue crawl delay=5000ms)
+2019-11-12 12:11:34,467 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=10, fetchQueues.getQueueCount=1
+2019-11-12 12:11:35,468 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=10, fetchQueues.getQueueCount=1
+2019-11-12 12:11:36,471 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=10, fetchQueues.getQueueCount=1
+2019-11-12 12:11:37,475 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=10, fetchQueues.getQueueCount=1
+2019-11-12 12:11:38,480 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=10, fetchQueues.getQueueCount=1
+2019-11-12 12:11:39,082 INFO  fetcher.FetcherThread - FetcherThread 47 fetching https://www.indeed.ch/Reinigung-Jobs-in-Canton-of-Ticino (queue crawl delay=5000ms)
+2019-11-12 12:11:39,483 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2019-11-12 12:11:40,488 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2019-11-12 12:11:41,493 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2019-11-12 12:11:42,498 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2019-11-12 12:11:43,502 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2019-11-12 12:11:44,505 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2019-11-12 12:11:45,510 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=9, fetchQueues.getQueueCount=1
+2019-11-12 12:11:45,660 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.indeed.ch/cmp/Interio (queue crawl delay=5000ms)
+2019-11-12 12:11:46,516 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=8, fetchQueues.getQueueCount=1
+2019-11-12 12:11:47,521 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=8, fetchQueues.getQueueCount=1
+2019-11-12 12:11:48,522 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=8, fetchQueues.getQueueCount=1
+2019-11-12 12:11:49,527 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=8, fetchQueues.getQueueCount=1
+2019-11-12 12:11:50,533 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=8, fetchQueues.getQueueCount=1
+2019-11-12 12:11:51,015 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.indeed.ch/Stellen-in-Paradiso,-TI (queue crawl delay=5000ms)
+2019-11-12 12:11:51,536 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2019-11-12 12:11:52,537 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2019-11-12 12:11:53,538 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2019-11-12 12:11:54,543 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2019-11-12 12:11:55,545 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2019-11-12 12:11:56,551 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=7, fetchQueues.getQueueCount=1
+2019-11-12 12:11:57,141 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.indeed.ch/Interio-Jobs (queue crawl delay=5000ms)
+2019-11-12 12:11:57,553 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=6, fetchQueues.getQueueCount=1
+2019-11-12 12:11:58,554 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=6, fetchQueues.getQueueCount=1
+2019-11-12 12:11:59,558 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=6, fetchQueues.getQueueCount=1
+2019-11-12 12:12:00,564 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=6, fetchQueues.getQueueCount=1
+2019-11-12 12:12:01,569 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=6, fetchQueues.getQueueCount=1
+2019-11-12 12:12:02,572 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=6, fetchQueues.getQueueCount=1
+2019-11-12 12:12:02,670 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.indeed.ch/cmp/Helsana/reviews (queue crawl delay=5000ms)
+2019-11-12 12:12:03,574 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=5, fetchQueues.getQueueCount=1
+2019-11-12 12:12:04,575 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=5, fetchQueues.getQueueCount=1
+2019-11-12 12:12:05,580 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=5, fetchQueues.getQueueCount=1
+2019-11-12 12:12:06,582 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=5, fetchQueues.getQueueCount=1
+2019-11-12 12:12:07,587 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=5, fetchQueues.getQueueCount=1
+2019-11-12 12:12:08,316 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.indeed.ch/cmp/Das-Team-Ag (queue crawl delay=5000ms)
+2019-11-12 12:12:08,590 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=4, fetchQueues.getQueueCount=1
+2019-11-12 12:12:08,591 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:08,591 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:08,591 INFO  fetcher.FetchItemQueue -   inProgress    = 1
+2019-11-12 12:12:08,591 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:08,591 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:08,591 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557128274
+2019-11-12 12:12:08,591 INFO  fetcher.FetchItemQueue -   now           = 1573557128591
+2019-11-12 12:12:08,591 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Coop/reviews
+2019-11-12 12:12:08,591 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:08,591 INFO  fetcher.FetchItemQueue -   2. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:08,591 INFO  fetcher.FetchItemQueue -   3. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:09,594 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4, fetchQueues.getQueueCount=1
+2019-11-12 12:12:09,598 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:09,598 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:09,598 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:09,598 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:09,598 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:09,598 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557133941
+2019-11-12 12:12:09,598 INFO  fetcher.FetchItemQueue -   now           = 1573557129598
+2019-11-12 12:12:09,598 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Coop/reviews
+2019-11-12 12:12:09,598 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:09,598 INFO  fetcher.FetchItemQueue -   2. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:09,598 INFO  fetcher.FetchItemQueue -   3. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:10,599 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4, fetchQueues.getQueueCount=1
+2019-11-12 12:12:10,599 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:10,599 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:10,599 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:10,599 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:10,599 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:10,599 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557133941
+2019-11-12 12:12:10,599 INFO  fetcher.FetchItemQueue -   now           = 1573557130599
+2019-11-12 12:12:10,599 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Coop/reviews
+2019-11-12 12:12:10,599 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:10,599 INFO  fetcher.FetchItemQueue -   2. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:10,599 INFO  fetcher.FetchItemQueue -   3. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:11,604 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4, fetchQueues.getQueueCount=1
+2019-11-12 12:12:11,604 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:11,604 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:11,604 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:11,604 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:11,604 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:11,604 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557133941
+2019-11-12 12:12:11,604 INFO  fetcher.FetchItemQueue -   now           = 1573557131604
+2019-11-12 12:12:11,604 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Coop/reviews
+2019-11-12 12:12:11,604 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:11,604 INFO  fetcher.FetchItemQueue -   2. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:11,604 INFO  fetcher.FetchItemQueue -   3. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:12,608 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4, fetchQueues.getQueueCount=1
+2019-11-12 12:12:12,609 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:12,609 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:12,609 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:12,609 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:12,609 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:12,609 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557133941
+2019-11-12 12:12:12,609 INFO  fetcher.FetchItemQueue -   now           = 1573557132609
+2019-11-12 12:12:12,609 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Coop/reviews
+2019-11-12 12:12:12,609 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:12,609 INFO  fetcher.FetchItemQueue -   2. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:12,609 INFO  fetcher.FetchItemQueue -   3. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:13,614 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=4, fetchQueues.getQueueCount=1
+2019-11-12 12:12:13,614 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:13,614 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:13,614 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:13,614 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:13,614 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:13,614 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557133941
+2019-11-12 12:12:13,614 INFO  fetcher.FetchItemQueue -   now           = 1573557133614
+2019-11-12 12:12:13,614 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Coop/reviews
+2019-11-12 12:12:13,614 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:13,614 INFO  fetcher.FetchItemQueue -   2. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:13,614 INFO  fetcher.FetchItemQueue -   3. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:13,964 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.indeed.ch/cmp/Coop/reviews (queue crawl delay=5000ms)
+2019-11-12 12:12:14,619 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3, fetchQueues.getQueueCount=1
+2019-11-12 12:12:14,619 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:14,619 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:14,619 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:14,619 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:14,619 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:14,619 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557139359
+2019-11-12 12:12:14,619 INFO  fetcher.FetchItemQueue -   now           = 1573557134619
+2019-11-12 12:12:14,620 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:14,620 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:14,620 INFO  fetcher.FetchItemQueue -   2. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:15,621 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3, fetchQueues.getQueueCount=1
+2019-11-12 12:12:15,621 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:15,621 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:15,621 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:15,622 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:15,622 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:15,622 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557139359
+2019-11-12 12:12:15,622 INFO  fetcher.FetchItemQueue -   now           = 1573557135622
+2019-11-12 12:12:15,622 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:15,622 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:15,622 INFO  fetcher.FetchItemQueue -   2. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:16,623 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3, fetchQueues.getQueueCount=1
+2019-11-12 12:12:16,623 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:16,623 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:16,623 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:16,623 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:16,623 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:16,623 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557139359
+2019-11-12 12:12:16,623 INFO  fetcher.FetchItemQueue -   now           = 1573557136623
+2019-11-12 12:12:16,623 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:16,623 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:16,623 INFO  fetcher.FetchItemQueue -   2. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:17,628 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3, fetchQueues.getQueueCount=1
+2019-11-12 12:12:17,628 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:17,628 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:17,628 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:17,628 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:17,628 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:17,628 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557139359
+2019-11-12 12:12:17,628 INFO  fetcher.FetchItemQueue -   now           = 1573557137628
+2019-11-12 12:12:17,628 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:17,628 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:17,628 INFO  fetcher.FetchItemQueue -   2. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:18,633 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=3, fetchQueues.getQueueCount=1
+2019-11-12 12:12:18,633 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:18,633 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:18,634 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:18,634 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:18,634 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:18,634 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557139359
+2019-11-12 12:12:18,634 INFO  fetcher.FetchItemQueue -   now           = 1573557138634
+2019-11-12 12:12:18,634 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:18,634 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:18,634 INFO  fetcher.FetchItemQueue -   2. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:19,390 INFO  fetcher.FetcherThread - FetcherThread 43 fetching https://www.indeed.ch/Stellen-in-Contone,-TI (queue crawl delay=5000ms)
+2019-11-12 12:12:19,638 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=9, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2019-11-12 12:12:19,638 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:19,638 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:19,638 INFO  fetcher.FetchItemQueue -   inProgress    = 1
+2019-11-12 12:12:19,638 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:19,638 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:19,638 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557139359
+2019-11-12 12:12:19,638 INFO  fetcher.FetchItemQueue -   now           = 1573557139638
+2019-11-12 12:12:19,638 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:19,638 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:20,644 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2019-11-12 12:12:20,644 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:20,644 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:20,644 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:20,644 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:20,644 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:20,644 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557144920
+2019-11-12 12:12:20,644 INFO  fetcher.FetchItemQueue -   now           = 1573557140644
+2019-11-12 12:12:20,644 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:20,644 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:21,647 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2019-11-12 12:12:21,647 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:21,647 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:21,647 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:21,647 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:21,647 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:21,647 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557144920
+2019-11-12 12:12:21,647 INFO  fetcher.FetchItemQueue -   now           = 1573557141647
+2019-11-12 12:12:21,647 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:21,647 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:22,648 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2019-11-12 12:12:22,648 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:22,648 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:22,649 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:22,649 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:22,649 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:22,649 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557144920
+2019-11-12 12:12:22,649 INFO  fetcher.FetchItemQueue -   now           = 1573557142649
+2019-11-12 12:12:22,649 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:22,649 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:23,652 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2019-11-12 12:12:23,652 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:23,652 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:23,652 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:23,652 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:23,652 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:23,652 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557144920
+2019-11-12 12:12:23,653 INFO  fetcher.FetchItemQueue -   now           = 1573557143653
+2019-11-12 12:12:23,653 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:23,653 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:24,656 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=2, fetchQueues.getQueueCount=1
+2019-11-12 12:12:24,656 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:24,656 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:24,656 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:24,656 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:24,656 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:24,656 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557144920
+2019-11-12 12:12:24,656 INFO  fetcher.FetchItemQueue -   now           = 1573557144656
+2019-11-12 12:12:24,656 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:24,656 INFO  fetcher.FetchItemQueue -   1. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:24,925 INFO  fetcher.FetcherThread - FetcherThread 47 fetching https://www.indeed.ch/cmp/Migros-b2d53d9b (queue crawl delay=5000ms)
+2019-11-12 12:12:25,661 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1, fetchQueues.getQueueCount=1
+2019-11-12 12:12:25,661 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:25,661 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:25,661 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:25,661 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:25,661 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:25,661 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557150295
+2019-11-12 12:12:25,661 INFO  fetcher.FetchItemQueue -   now           = 1573557145661
+2019-11-12 12:12:25,661 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:26,667 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1, fetchQueues.getQueueCount=1
+2019-11-12 12:12:26,667 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:26,667 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:26,667 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:26,667 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:26,667 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:26,667 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557150295
+2019-11-12 12:12:26,667 INFO  fetcher.FetchItemQueue -   now           = 1573557146667
+2019-11-12 12:12:26,667 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:27,672 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1, fetchQueues.getQueueCount=1
+2019-11-12 12:12:27,672 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:27,673 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:27,673 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:27,673 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:27,673 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:27,673 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557150295
+2019-11-12 12:12:27,673 INFO  fetcher.FetchItemQueue -   now           = 1573557147673
+2019-11-12 12:12:27,673 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:28,678 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1, fetchQueues.getQueueCount=1
+2019-11-12 12:12:28,678 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:28,678 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:28,678 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:28,678 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:28,678 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:28,678 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557150295
+2019-11-12 12:12:28,678 INFO  fetcher.FetchItemQueue -   now           = 1573557148678
+2019-11-12 12:12:28,678 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:29,683 INFO  fetcher.Fetcher - -activeThreads=10, spinWaiting=10, fetchQueues.totalSize=1, fetchQueues.getQueueCount=1
+2019-11-12 12:12:29,683 INFO  fetcher.FetchItemQueues - * queue: www.indeed.ch
+2019-11-12 12:12:29,683 INFO  fetcher.FetchItemQueue -   maxThreads    = 1
+2019-11-12 12:12:29,683 INFO  fetcher.FetchItemQueue -   inProgress    = 0
+2019-11-12 12:12:29,683 INFO  fetcher.FetchItemQueue -   crawlDelay    = 5000
+2019-11-12 12:12:29,683 INFO  fetcher.FetchItemQueue -   minCrawlDelay = 0
+2019-11-12 12:12:29,683 INFO  fetcher.FetchItemQueue -   nextFetchTime = 1573557150295
+2019-11-12 12:12:29,683 INFO  fetcher.FetchItemQueue -   now           = 1573557149683
+2019-11-12 12:12:29,683 INFO  fetcher.FetchItemQueue -   0. https://www.indeed.ch/intl/en/about.html
+2019-11-12 12:12:30,324 INFO  fetcher.FetcherThread - FetcherThread 47 fetching https://www.indeed.ch/intl/en/about.html (queue crawl delay=5000ms)
+2019-11-12 12:12:30,474 INFO  fetcher.FetcherThread - FetcherThread 43 has no more work available
+2019-11-12 12:12:30,474 INFO  fetcher.FetcherThread - FetcherThread 43 -finishing thread FetcherThread, activeThreads=9
+2019-11-12 12:12:30,585 INFO  fetcher.FetcherThread - FetcherThread 42 has no more work available
+2019-11-12 12:12:30,585 INFO  fetcher.FetcherThread - FetcherThread 40 has no more work available
+2019-11-12 12:12:30,585 INFO  fetcher.FetcherThread - FetcherThread 42 -finishing thread FetcherThread, activeThreads=8
+2019-11-12 12:12:30,585 INFO  fetcher.FetcherThread - FetcherThread 40 -finishing thread FetcherThread, activeThreads=7
+2019-11-12 12:12:30,658 INFO  fetcher.FetcherThread - FetcherThread 41 has no more work available
+2019-11-12 12:12:30,658 INFO  fetcher.FetcherThread - FetcherThread 45 has no more work available
+2019-11-12 12:12:30,658 INFO  fetcher.FetcherThread - FetcherThread 48 has no more work available
+2019-11-12 12:12:30,658 INFO  fetcher.FetcherThread - FetcherThread 45 -finishing thread FetcherThread, activeThreads=5
+2019-11-12 12:12:30,658 INFO  fetcher.FetcherThread - FetcherThread 41 -finishing thread FetcherThread, activeThreads=6
+2019-11-12 12:12:30,659 INFO  fetcher.FetcherThread - FetcherThread 48 -finishing thread FetcherThread, activeThreads=4
+2019-11-12 12:12:30,666 INFO  fetcher.FetcherThread - FetcherThread 44 has no more work available
+2019-11-12 12:12:30,666 INFO  fetcher.FetcherThread - FetcherThread 49 has no more work available
+2019-11-12 12:12:30,666 INFO  fetcher.FetcherThread - FetcherThread 49 -finishing thread FetcherThread, activeThreads=2
+2019-11-12 12:12:30,666 INFO  fetcher.FetcherThread - FetcherThread 46 has no more work available
+2019-11-12 12:12:30,666 INFO  fetcher.FetcherThread - FetcherThread 44 -finishing thread FetcherThread, activeThreads=3
+2019-11-12 12:12:30,667 INFO  fetcher.FetcherThread - FetcherThread 46 -finishing thread FetcherThread, activeThreads=1
+2019-11-12 12:12:30,684 INFO  fetcher.Fetcher - -activeThreads=1, spinWaiting=0, fetchQueues.totalSize=0, fetchQueues.getQueueCount=1
+2019-11-12 12:12:30,830 INFO  regex.RegexURLNormalizer - can't find rules for scope 'fetcher', using default
+2019-11-12 12:12:30,845 INFO  fetcher.FetcherThread - FetcherThread 47 has no more work available
+2019-11-12 12:12:30,845 INFO  fetcher.FetcherThread - FetcherThread 47 -finishing thread FetcherThread, activeThreads=0
+2019-11-12 12:12:31,685 INFO  fetcher.Fetcher - -activeThreads=0, spinWaiting=0, fetchQueues.totalSize=0, fetchQueues.getQueueCount=0
+2019-11-12 12:12:31,685 INFO  fetcher.Fetcher - -activeThreads=0
+2019-11-12 12:12:32,231 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 12:12:32,232 INFO  mapreduce.Job - Job job_local1869143864_0001 completed successfully
+2019-11-12 12:12:32,245 INFO  mapreduce.Job - Counters: 34
+	File System Counters
+		FILE: Number of bytes read=30394668
+		FILE: Number of bytes written=48174258
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=47
+		Map output records=95
+		Map output bytes=14264570
+		Map output materialized bytes=14264951
+		Input split bytes=197
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=48
+		Reduce shuffle bytes=14264951
+		Reduce input records=95
+		Reduce output records=95
+		Spilled Records=190
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=67
+		Total committed heap usage (bytes)=760217600
+	FetcherStatus
+		bytes_downloaded=14185290
+		moved=2
+		success=44
+		temp_moved=1
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=5072
+	File Output Format Counters 
+		Bytes Written=2400391
+2019-11-12 12:12:32,245 INFO  fetcher.Fetcher - Fetcher: finished at 2019-11-12 12:12:32, elapsed: 00:04:20
+2019-11-12 12:12:48,024 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 12:12:48,285 INFO  parse.ParseSegment - ParseSegment: starting at 2019-11-12 12:12:48
+2019-11-12 12:12:48,285 INFO  parse.ParseSegment - ParseSegment: segment: crawl/segments/20191112120753
+2019-11-12 12:12:48,696 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 12:12:48,696 INFO  mapreduce.Job - Running job: job_local1530380002_0001
+2019-11-12 12:12:48,947 INFO  parse.ParserFactory - The parsing plugins: [org.apache.nutch.parse.tika.TikaParser] are enabled via the plugin.includes system property, and all claim to support the content type image/png, but they are not mapped to it  in the parse-plugins.xml file
+2019-11-12 12:12:49,700 INFO  mapreduce.Job - Job job_local1530380002_0001 running in uber mode : false
+2019-11-12 12:12:49,701 INFO  mapreduce.Job -  map 0% reduce 0%
+2019-11-12 12:12:49,767 INFO  crawl.SignatureFactory - Using Signature impl: org.apache.nutch.crawl.MD5Signature
+2019-11-12 12:12:49,768 INFO  parse.ParseSegment - Parsed (827ms):https://d2q79iu7y748jz.cloudfront.net/s/_logo/b74b3f723c69a5610b6506bc5733c98e
+2019-11-12 12:12:49,909 INFO  parse.ParseSegment - Parsed (139ms):https://www.indeed.ch/
+2019-11-12 12:12:49,948 INFO  parse.ParseSegment - Parsed (37ms):https://www.indeed.ch/Alpha-Swiss-Real-Estate-Jobs
+2019-11-12 12:12:50,011 INFO  parse.ParseSegment - Parsed (60ms):https://www.indeed.ch/Coop-Jobs
+2019-11-12 12:12:50,041 INFO  parse.ParseSegment - Parsed (28ms):https://www.indeed.ch/Coop-Jobs-in-Canton-of-Ticino
+2019-11-12 12:12:50,058 INFO  parse.ParseSegment - Parsed (14ms):https://www.indeed.ch/Direzione-Generale-E-Servizi-Centrali-Jobs
+2019-11-12 12:12:50,082 INFO  parse.ParseSegment - Parsed (22ms):https://www.indeed.ch/Genossenschaft-Migros-Aare-Jobs
+2019-11-12 12:12:50,111 INFO  parse.ParseSegment - Parsed (27ms):https://www.indeed.ch/Helsana-Jobs
+2019-11-12 12:12:50,140 INFO  parse.ParseSegment - Parsed (27ms):https://www.indeed.ch/Interio-Jobs
+2019-11-12 12:12:50,158 INFO  parse.ParseSegment - Parsed (16ms):https://www.indeed.ch/Migros-Jobs-in-Canton-of-Ticino
+2019-11-12 12:12:50,179 INFO  parse.ParseSegment - Parsed (19ms):https://www.indeed.ch/Mitarbeiter-Jobs-in-Canton-of-Ticino
+2019-11-12 12:12:50,193 INFO  parse.ParseSegment - Parsed (12ms):https://www.indeed.ch/Offene-Stellen-Jobs-in-Canton-of-Ticino
+2019-11-12 12:12:50,205 INFO  parse.ParseSegment - Parsed (9ms):https://www.indeed.ch/Produktionsmitarbeiter-Jobs-in-Canton-of-Ticino
+2019-11-12 12:12:50,223 INFO  parse.ParseSegment - Parsed (17ms):https://www.indeed.ch/Reinigung-Jobs-in-Canton-of-Ticino
+2019-11-12 12:12:50,244 INFO  parse.ParseSegment - Parsed (19ms):https://www.indeed.ch/Stellen-in-Bellinzona,-TI
+2019-11-12 12:12:50,264 INFO  parse.ParseSegment - Parsed (17ms):https://www.indeed.ch/Stellen-in-Chiasso,-TI
+2019-11-12 12:12:50,281 INFO  parse.ParseSegment - Parsed (15ms):https://www.indeed.ch/Stellen-in-Contone,-TI
+2019-11-12 12:12:50,300 INFO  parse.ParseSegment - Parsed (17ms):https://www.indeed.ch/Stellen-in-Paradiso,-TI
+2019-11-12 12:12:50,316 INFO  parse.ParseSegment - Parsed (14ms):https://www.indeed.ch/Stellen-in-Taverne,-TI
+2019-11-12 12:12:50,333 INFO  parse.ParseSegment - Parsed (15ms):https://www.indeed.ch/Suisse-Jobs-in-Canton-of-Ticino
+2019-11-12 12:12:50,347 INFO  parse.ParseSegment - Parsed (13ms):https://www.indeed.ch/Teilzeit-Jobs-in-Canton-of-Ticino
+2019-11-12 12:12:50,357 INFO  parse.ParseSegment - Parsed (9ms):https://www.indeed.ch/Tiffany-&-Co.-Jobs
+2019-11-12 12:12:50,367 INFO  parse.ParseSegment - Parsed (9ms):https://www.indeed.ch/Vendeuse-Jobs-in-Canton-of-Ticino
+2019-11-12 12:12:50,383 INFO  parse.ParseSegment - Parsed (15ms):https://www.indeed.ch/Vente-Jobs-in-Canton-of-Ticino
+2019-11-12 12:12:50,387 INFO  parse.ParseSegment - Parsed (4ms):https://www.indeed.ch/browsejobs
+2019-11-12 12:12:50,394 INFO  parse.ParseSegment - Parsed (6ms):https://www.indeed.ch/cmp/Betterhomes-(schweiz)-Ag-1
+2019-11-12 12:12:50,399 INFO  parse.ParseSegment - Parsed (5ms):https://www.indeed.ch/cmp/Betterhomes-(schweiz)-Ag-1/photos
+2019-11-12 12:12:50,411 INFO  parse.ParseSegment - Parsed (11ms):https://www.indeed.ch/cmp/Betterhomes-(schweiz)-Ag-1/reviews
+2019-11-12 12:12:50,418 INFO  parse.ParseSegment - Parsed (6ms):https://www.indeed.ch/cmp/Coop
+2019-11-12 12:12:50,425 INFO  parse.ParseSegment - Parsed (6ms):https://www.indeed.ch/cmp/Coop/faq
+2019-11-12 12:12:50,441 INFO  parse.ParseSegment - Parsed (15ms):https://www.indeed.ch/cmp/Coop/reviews
+2019-11-12 12:12:50,449 INFO  parse.ParseSegment - Parsed (7ms):https://www.indeed.ch/cmp/Das-Team-Ag
+2019-11-12 12:12:50,459 INFO  parse.ParseSegment - Parsed (9ms):https://www.indeed.ch/cmp/Das-Team-Ag/reviews
+2019-11-12 12:12:50,466 INFO  parse.ParseSegment - Parsed (6ms):https://www.indeed.ch/cmp/Helsana
+2019-11-12 12:12:50,483 INFO  parse.ParseSegment - Parsed (16ms):https://www.indeed.ch/cmp/Helsana/reviews
+2019-11-12 12:12:50,488 INFO  parse.ParseSegment - Parsed (5ms):https://www.indeed.ch/cmp/Interio
+2019-11-12 12:12:50,494 INFO  parse.ParseSegment - Parsed (6ms):https://www.indeed.ch/cmp/Interio/reviews
+2019-11-12 12:12:50,501 INFO  parse.ParseSegment - Parsed (7ms):https://www.indeed.ch/cmp/Migros-b2d53d9b
+2019-11-12 12:12:50,505 INFO  parse.ParseSegment - Parsed (4ms):https://www.indeed.ch/cmp/Migros-b2d53d9b/faq
+2019-11-12 12:12:50,523 INFO  parse.ParseSegment - Parsed (17ms):https://www.indeed.ch/cmp/Migros-b2d53d9b/reviews
+2019-11-12 12:12:50,531 INFO  parse.ParseSegment - Parsed (7ms):https://www.indeed.ch/cmp/Tiffany-&-Co./reviews
+2019-11-12 12:12:50,537 INFO  parse.ParseSegment - Parsed (5ms):https://www.indeed.ch/cmp/Wesser
+2019-11-12 12:12:50,545 INFO  parse.ParseSegment - Parsed (8ms):https://www.indeed.ch/cmp/Wesser/reviews
+2019-11-12 12:12:50,549 INFO  parse.ParseSegment - Parsed (4ms):https://www.indeed.ch/companies
+2019-11-12 12:12:50,615 INFO  net.URLExemptionFilters - Found 0 extensions at point:'org.apache.nutch.net.URLExemptionFilter'
+2019-11-12 12:12:50,674 INFO  regex.RegexURLNormalizer - can't find rules for scope 'outlink', using default
+2019-11-12 12:12:50,704 INFO  mapreduce.Job -  map 100% reduce 0%
+2019-11-12 12:12:51,706 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 12:12:51,706 INFO  mapreduce.Job - Job job_local1530380002_0001 completed successfully
+2019-11-12 12:12:51,718 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=7784792
+		FILE: Number of bytes written=5074630
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=47
+		Map output records=44
+		Map output bytes=575406
+		Map output materialized bytes=575588
+		Input split bytes=195
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=44
+		Reduce shuffle bytes=575588
+		Reduce input records=44
+		Reduce output records=44
+		Spilled Records=88
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=58
+		Total committed heap usage (bytes)=857735168
+	ParserStatus
+		success=44
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=2389488
+	File Output Format Counters 
+		Bytes Written=0
+2019-11-12 12:12:51,728 INFO  parse.ParseSegment - ParseSegment: finished at 2019-11-12 12:12:51, elapsed: 00:00:03
+2019-11-12 12:13:39,158 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 12:13:39,455 INFO  crawl.CrawlDb - CrawlDb update: starting at 2019-11-12 12:13:39
+2019-11-12 12:13:39,455 INFO  crawl.CrawlDb - CrawlDb update: db: crawl/crawldb
+2019-11-12 12:13:39,455 INFO  crawl.CrawlDb - CrawlDb update: segments: [crawl/segments/20191112120753]
+2019-11-12 12:13:39,455 INFO  crawl.CrawlDb - CrawlDb update: additions allowed: true
+2019-11-12 12:13:39,455 INFO  crawl.CrawlDb - CrawlDb update: URL normalizing: false
+2019-11-12 12:13:39,455 INFO  crawl.CrawlDb - CrawlDb update: URL filtering: false
+2019-11-12 12:13:39,455 INFO  crawl.CrawlDb - CrawlDb update: 404 purging: false
+2019-11-12 12:13:39,456 INFO  crawl.CrawlDb - CrawlDb update: Merging segment data into db.
+2019-11-12 12:13:39,853 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 12:13:39,854 INFO  mapreduce.Job - Running job: job_local1024887278_0001
+2019-11-12 12:13:40,384 INFO  crawl.FetchScheduleFactory - Using FetchSchedule impl: org.apache.nutch.crawl.DefaultFetchSchedule
+2019-11-12 12:13:40,384 INFO  crawl.AbstractFetchSchedule - defaultInterval=2592000
+2019-11-12 12:13:40,384 INFO  crawl.AbstractFetchSchedule - maxInterval=7776000
+2019-11-12 12:13:40,861 INFO  mapreduce.Job - Job job_local1024887278_0001 running in uber mode : false
+2019-11-12 12:13:40,862 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 12:13:40,863 INFO  mapreduce.Job - Job job_local1024887278_0001 completed successfully
+2019-11-12 12:13:40,874 INFO  mapreduce.Job - Counters: 34
+	File System Counters
+		FILE: Number of bytes read=5044479
+		FILE: Number of bytes written=7091849
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2740
+		Map output records=2740
+		Map output bytes=205227
+		Map output materialized bytes=210775
+		Input split bytes=571
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1037
+		Reduce shuffle bytes=210775
+		Reduce input records=2740
+		Reduce output records=1037
+		Spilled Records=5480
+		Shuffled Maps =3
+		Failed Shuffles=0
+		Merged Map outputs=3
+		GC time elapsed (ms)=5
+		Total committed heap usage (bytes)=1556611072
+	CrawlDB status
+		db_fetched=45
+		db_redir_perm=2
+		db_redir_temp=1
+		db_unfetched=989
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=231996
+	File Output Format Counters 
+		Bytes Written=93203
+2019-11-12 12:13:40,887 INFO  crawl.CrawlDb - CrawlDb update: finished at 2019-11-12 12:13:40, elapsed: 00:00:01
+2019-11-12 12:14:23,117 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 12:14:23,385 INFO  crawl.LinkDb - LinkDb: starting at 2019-11-12 12:14:23
+2019-11-12 12:14:23,385 INFO  crawl.LinkDb - LinkDb: linkdb: crawl/linkdb
+2019-11-12 12:14:23,385 INFO  crawl.LinkDb - LinkDb: URL normalize: true
+2019-11-12 12:14:23,385 INFO  crawl.LinkDb - LinkDb: URL filter: true
+2019-11-12 12:14:23,385 INFO  crawl.LinkDb - LinkDb: internal links will be ignored.
+2019-11-12 12:14:23,385 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments/20191112111703
+2019-11-12 12:14:23,386 INFO  crawl.LinkDb - LinkDb: adding segment: crawl/segments/20191112120753
+2019-11-12 12:14:23,786 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 12:14:23,786 INFO  mapreduce.Job - Running job: job_local3788511_0001
+2019-11-12 12:14:24,790 INFO  mapreduce.Job - Job job_local3788511_0001 running in uber mode : false
+2019-11-12 12:14:24,791 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 12:14:24,792 INFO  mapreduce.Job - Job job_local3788511_0001 completed successfully
+2019-11-12 12:14:24,804 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=3099064
+		FILE: Number of bytes written=4703928
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=45
+		Map output records=600
+		Map output bytes=51632
+		Map output materialized bytes=49833
+		Input split bytes=396
+		Combine input records=600
+		Combine output records=546
+		Reduce input groups=545
+		Reduce shuffle bytes=49833
+		Reduce input records=546
+		Reduce output records=545
+		Spilled Records=1092
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=983040000
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=72745
+	File Output Format Counters 
+		Bytes Written=56259
+2019-11-12 12:14:24,804 INFO  crawl.LinkDb - LinkDb: merging with existing linkdb: crawl/linkdb
+2019-11-12 12:14:24,954 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 12:14:24,954 INFO  mapreduce.Job - Running job: job_local1212295586_0002
+2019-11-12 12:14:25,131 INFO  regex.RegexURLNormalizer - can't find rules for scope 'linkdb', using default
+2019-11-12 12:14:25,288 INFO  regex.RegexURLNormalizer - can't find rules for scope 'linkdb', using default
+2019-11-12 12:14:25,955 INFO  mapreduce.Job - Job job_local1212295586_0002 running in uber mode : false
+2019-11-12 12:14:25,955 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 12:14:25,955 INFO  mapreduce.Job - Job job_local1212295586_0002 completed successfully
+2019-11-12 12:14:25,959 INFO  mapreduce.Job - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=6352688
+		FILE: Number of bytes written=9645430
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=546
+		Map output records=546
+		Map output bytes=48797
+		Map output materialized bytes=49909
+		Input split bytes=357
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=545
+		Reduce shuffle bytes=49909
+		Reduce input records=546
+		Reduce output records=545
+		Spilled Records=1092
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=5
+		Total committed heap usage (bytes)=1615331328
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=56238
+	File Output Format Counters 
+		Bytes Written=56259
+2019-11-12 12:14:25,973 INFO  crawl.LinkDb - LinkDb: finished at 2019-11-12 12:14:25, elapsed: 00:00:02
+2019-11-12 12:31:52,508 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-11-12 12:31:52,769 WARN  segment.SegmentChecker - The input path at segments is not a segment... skipping
+2019-11-12 12:31:52,783 INFO  segment.SegmentChecker - Segment dir is complete: crawl/segments/20191112111703.
+2019-11-12 12:31:52,785 INFO  segment.SegmentChecker - Segment dir is complete: crawl/segments/20191112120753.
+2019-11-12 12:31:52,786 INFO  indexer.IndexingJob - Indexer: starting at 2019-11-12 12:31:52
+2019-11-12 12:31:52,792 INFO  indexer.IndexingJob - Indexer: deleting gone documents: false
+2019-11-12 12:31:52,792 INFO  indexer.IndexingJob - Indexer: URL filtering: true
+2019-11-12 12:31:52,792 INFO  indexer.IndexingJob - Indexer: URL normalizing: true
+2019-11-12 12:31:52,793 INFO  indexer.IndexerMapReduce - IndexerMapReduce: crawldb: crawl/crawldb
+2019-11-12 12:31:52,793 INFO  indexer.IndexerMapReduce - IndexerMapReduce: linkdb: crawl/linkdb
+2019-11-12 12:31:52,793 INFO  indexer.IndexerMapReduce - IndexerMapReduces: adding segment: crawl/segments/20191112111703
+2019-11-12 12:31:52,796 INFO  indexer.IndexerMapReduce - IndexerMapReduces: adding segment: crawl/segments/20191112120753
+2019-11-12 12:31:53,257 INFO  mapreduce.Job - The url to track the job: http://localhost:8080/
+2019-11-12 12:31:53,258 INFO  mapreduce.Job - Running job: job_local43197849_0001
+2019-11-12 12:31:53,518 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2019-11-12 12:31:53,817 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2019-11-12 12:31:53,943 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2019-11-12 12:31:54,014 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2019-11-12 12:31:54,090 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2019-11-12 12:31:54,174 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2019-11-12 12:31:54,213 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2019-11-12 12:31:54,248 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2019-11-12 12:31:54,262 INFO  mapreduce.Job - Job job_local43197849_0001 running in uber mode : false
+2019-11-12 12:31:54,262 INFO  mapreduce.Job -  map 100% reduce 0%
+2019-11-12 12:31:54,274 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2019-11-12 12:31:54,322 INFO  regex.RegexURLNormalizer - can't find rules for scope 'indexer', using default
+2019-11-12 12:31:54,394 INFO  indexer.IndexWriters - Index writer org.apache.nutch.indexwriter.solr.SolrIndexWriter identified.
+2019-11-12 12:31:54,406 WARN  exchange.Exchanges - No exchange was configured. The documents will be routed to all index writers.
+2019-11-12 12:31:54,636 INFO  indexer.IndexerOutputFormat - Active IndexWriters :
+SolrIndexWriter:
+┌────────────┬────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────────────────────────────┐
+│type        │Specifies the SolrClient implementation to use. This is a string value of one of the  following  "cloud"│http                              │
+│            │or "http". The values represent CloudSolrServer or HttpSolrServer respectively.                         │                                  │
+├────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────┤
+│url         │Defines the fully qualified URL of Solr into which data should be indexed. Multiple URL can be  provided│http://localhost:8983/solr/indeed2│
+│            │using comma as a delimiter. When the value of type property is cloud, the URL  should  not  include  any│                                  │
+│            │collections or cores; just the root Solr path.                                                          │                                  │
+├────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────┤
+│collection  │The collection used in requests. Only used when the value of type property is cloud.                    │                                  │
+├────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────┤
+│commitSize  │Defines the number of documents to send to Solr in a single update batch. Decrease  when  handling  very│1000                              │
+│            │large documents to prevent Nutch from running out of memory. Note: It  does  not  explicitly  trigger  a│                                  │
+│            │server side commit.                                                                                     │                                  │
+├────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────┤
+│weight.field│Field's name where the weight of the documents will be written. If it is empty no field will be used.   │                                  │
+├────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────┤
+│auth        │Whether to enable HTTP basic authentication for communicating with Solr. Use the username  and  password│false                             │
+│            │properties to configure your credentials.                                                               │                                  │
+├────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────┤
+│username    │The username of Solr server.                                                                            │username                          │
+├────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────┤
+│password    │The password of Solr server.                                                                            │password                          │
+└────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────┘
+
+
+2019-11-12 12:31:54,641 INFO  anchor.AnchorIndexingFilter - Anchor deduplication is: off
+2019-11-12 12:31:54,710 INFO  solr.SolrIndexWriter - Indexing 45/45 documents
+2019-11-12 12:31:54,710 INFO  solr.SolrIndexWriter - Deleting 0 documents
+2019-11-12 12:31:55,268 INFO  mapreduce.Job -  map 100% reduce 100%
+2019-11-12 12:31:55,269 INFO  mapreduce.Job - Job job_local43197849_0001 completed successfully
+2019-11-12 12:31:55,285 INFO  mapreduce.Job - Counters: 31
+	File System Counters
+		FILE: Number of bytes read=16977173
+		FILE: Number of bytes written=24254465
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=4466
+		Map output records=4466
+		Map output bytes=775428
+		Map output materialized bytes=784691
+		Input split bytes=1933
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1037
+		Reduce shuffle bytes=784691
+		Reduce input records=4466
+		Reduce output records=45
+		Spilled Records=8932
+		Shuffled Maps =10
+		Failed Shuffles=0
+		Merged Map outputs=10
+		GC time elapsed (ms)=98
+		Total committed heap usage (bytes)=7148666880
+	IndexerStatus
+		indexed (add/update)=45
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=540194
+	File Output Format Counters 
+		Bytes Written=0
+2019-11-12 12:31:55,285 INFO  indexer.IndexingJob - Indexer: number of documents indexed, deleted, or skipped:
+2019-11-12 12:31:55,289 INFO  indexer.IndexingJob - Indexer:     45  indexed (add/update)
+2019-11-12 12:31:55,290 INFO  indexer.IndexingJob - Indexer: finished at 2019-11-12 12:31:55, elapsed: 00:00:02

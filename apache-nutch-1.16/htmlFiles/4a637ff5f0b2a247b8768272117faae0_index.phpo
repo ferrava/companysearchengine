@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-de" lang="de-de" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="joomla, Joomla" />
+  <meta name="title" content="Kontakt" />
+  <meta name="author" content="Administrator" />
+  <meta name="description" content="Joomla! - Das dynamische Rahmen- und Inhaltsverwaltungssystem" />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Kontakt</title>
+  <link href="/templates/juli/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="/media/system/js/caption.js"></script>
+
+<script type="text/javascript" src="/templates/juli/js/stylechanger.js"></script>
+<script type="text/javascript" src="/templates/juli/js/zeit.js"></script><link rel="stylesheet" href="/templates/juli/css/template.css" type="text/css" />
+<link rel="stylesheet" href="/templates/juli/css/blue.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/templates/juli/css/superfish.css" media="screen" />
+<script type="text/javascript" src="/templates/juli/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="/templates/juli/js/hoverIntent.js"></script>
+<script type="text/javascript" src="/templates/juli/js/superfish.js"></script>
+<script type="text/javascript" src="/templates/juli/js/supersubs.js"></script>
+<script type="text/javascript"> 
+ 
+    $(document).ready(function(){ 
+        $("ul.menu-nav").supersubs({ 
+			animation:   {opacity:'show',height:'show'},
+            minWidth:    12,   // minimum width of sub-menus in em units 
+            maxWidth:    27,   // maximum width of sub-menus in em units 
+            extraWidth:  1     // extra width can ensure lines don't sometimes turn over 
+			
+                               // due to slight rounding differences and font-family 
+        }).superfish();  // call supersubs first, then superfish, so that subs are 
+                         // not display:none when measuring. Call before initialising 
+                         // containing tabs for same reason. 
+    }); 
+ 
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div class="inside">
+    	<div id="toolbar">
+        	<div id="toolbar_inside">
+    			<div id="time"><div id="Uhr">&nbsp;</div></div>        		            	<div id="search"></div>
+                <div id="fontsize"><script type="text/javascript">
+				//<![CDATA[
+					document.write('<a href="/index.php" title="Schrift vergr&ouml;&szlig;ern" onclick="changeFontSize(2); return false;"><img src="/templates/juli/images/bigger.png" alt="Schrift vergr&ouml;&szlig;ern" /></a>');
+					document.write('<a href="/index.php" title="Schrift zur&uuml;cksetzen" onclick="revertStyles(); return false;"><img src="/templates/juli/images/normal.png" alt="Schrift zur&uuml;cksetzen" /></a>');
+					document.write('<a href="/index.php" title="Schrift verkleinern" onclick="changeFontSize(-2); return false;"><img src="/templates/juli/images/smaller.png" alt="Schrift verkleinern" /></a></p>');
+				//]]>
+		</script></div>
+            </div>
+        </div>
+        <div id="header">
+        	<div id="logo"></div>
+      <div id="news">
+            	<div class="newsinside">
+            		
+                </div>
+            </div>
+		</div>
+        <div id="topmenu"></div>
+            
+        <div id="left">		<div class="moduletable_menu">
+					<h3>Hauptmenü</h3>
+					<ul class="menu"><li class="item1"><a href="http://www.sigristundrohrer.ch/"><span>Home</span></a></li><li class="item2"><a href="/index.php?option=com_content&amp;view=article&amp;id=14&amp;Itemid=2"><span>Über uns</span></a></li><li class="item3"><a href="/index.php?option=com_content&amp;view=article&amp;id=6&amp;Itemid=3"><span>Platten im Wohnbereich</span></a></li><li class="item29"><a href="/index.php?option=com_content&amp;view=article&amp;id=19&amp;Itemid=29"><span>Platten im Badezimmer</span></a></li><li class="item25"><a href="/index.php?option=com_content&amp;view=article&amp;id=7&amp;Itemid=25"><span>Platten in Dienstleitung und Gewerbe</span></a></li><li class="item26"><a href="/index.php?option=com_content&amp;view=article&amp;id=8&amp;Itemid=26"><span>Platten in der Landwirtschaft</span></a></li><li class="item27"><a href="/index.php?option=com_content&amp;view=article&amp;id=9&amp;Itemid=27"><span>Platten im Wellness Bereich</span></a></li><li class="item30"><a href="/index.php?option=com_content&amp;view=article&amp;id=20&amp;Itemid=30"><span>Ausstellung</span></a></li><li class="item6"><a href="/index.php?option=com_content&amp;view=article&amp;id=10&amp;Itemid=6"><span>Verlegearten</span></a></li><li class="item4"><a href="/index.php?option=com_content&amp;view=article&amp;id=11&amp;Itemid=4"><span>Lieferanten</span></a></li><li id="current" class="active item7"><a href="/index.php?option=com_content&amp;view=article&amp;id=12&amp;Itemid=7"><span>Kontakt</span></a></li></ul>		</div>
+			<div class="moduletable">
+					<h3>Map24</h3>
+					        <div><center>  
+        <a href='http://link2.map24.com/?lid=472c835f&amp;maptype=JAVA&amp;width0=1500&amp;q0=Brünigstrasse 270 6072 Sachseln&amp;country0=CH&amp;logo_url0=http://www.sigristundrohrer.ch/images/stories/key.jpg&amp;name0=Sigrist und Rohrer GmbH&amp;description0=Und so finden Sie uns...' target='_blank'>
+        <img src='http://img.map24.com/map24/portal/common/show_address_7.gif' border='0' alt='Map24' />
+        </a><br /><span class="small">
+        developed by<a href="http://www.gcsoft.de">&nbsp;gcsoft.de</a></span>
+        <!-- Don't remove this line: <a href="http://www.gcsoft.de">gcsoft.de</a> //-->
+        </center>
+        </div>        
+        		</div>
+	<div id="sb"><div id="lu"></div></div></div>
+        <div id="content_big"><div class="ininside"><table class="contentpaneopen">
+<tr>
+		<td class="contentheading" width="100%">
+					Kontakt			</td>
+				
+		
+					</tr>
+</table>
+
+<table class="contentpaneopen">
+
+
+
+<tr>
+<td valign="top" colspan="2">
+<span style="font-family: tahoma,arial,helvetica,sans-serif;"><span style="font-size: x-small;"> 
+<table frame="void" rules="none" style="background-image: url(none); width: 96%; height: 178px; cssfloat: none; border-style: none;" border="1" cellpadding="1" cellspacing="1">
+<tbody>
+<tr>
+<td style="width: 33%;">
+<p><span style="font-size: 10pt;"><strong>Sigrist und Rohrer GmbH<br /></strong><span style="font-family: tahoma,arial,helvetica,sans-serif;">Keramik + Natursteinbeläge </span><br />Brünigstrasse 270<br />6072 Sachseln<br /></span></p>
+<p><span style="font-size: 10pt;"><br />Telefon&nbsp;&nbsp;041 661 22 35<br />Telefax&nbsp;&nbsp;041 661 22 34</span></p>
+</td>
+<td style="background-image: none; width: 60%; border-style: none;">
+<p><strong><span style="font-size: 10pt;">&nbsp;</span></strong></p>
+<p><strong><span style="font-size: 10pt;">&nbsp;</span></strong></p>
+<p><strong><span style="font-size: 10pt;">&nbsp;</span></strong></p>
+<p><strong><span style="font-size: 10pt;"><img src="/images/stories/Wir/109-0964_IMG.gif" alt="109-0964_IMG" width="283" height="133" /></span></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 10pt;">&nbsp;</span></p>
+</span></span><span style="font-family: Tahoma;"><span style="font-size: 10pt;">oder per E-Mail an </span></span><a href="mailto:
+ <script language='JavaScript' type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy73958 = '&#105;nf&#111;' + '&#64;';
+ addy73958 = addy73958 + 's&#105;gr&#105;st&#117;ndr&#111;hr&#101;r' + '&#46;' + 'ch';
+ document.write( '<a ' + path + '\'' + prefix + ':' + addy73958 + '\'>' );
+ document.write( addy73958 );
+ document.write( '<\/a>' );
+ //-->\n </script><script language='JavaScript' type='text/javascript'>
+ <!--
+ document.write( '<span style=\'display: none;\'>' );
+ //-->
+ </script>Diese E-Mail-Adresse ist gegen Spambots geschützt! Sie müssen JavaScript aktivieren, damit Sie sie sehen können.
+ <script language='JavaScript' type='text/javascript'>
+ <!--
+ document.write( '</' );
+ document.write( 'span>' );
+ //-->
+ </script>"><span style="font-family: Tahoma;"><span style="font-size: 10pt;">
+ <script language='JavaScript' type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy32363 = '&#105;nf&#111;' + '&#64;';
+ addy32363 = addy32363 + 's&#105;gr&#105;st&#117;ndr&#111;hr&#101;r' + '&#46;' + 'ch';
+ document.write( '<a ' + path + '\'' + prefix + ':' + addy32363 + '\'>' );
+ document.write( addy32363 );
+ document.write( '<\/a>' );
+ //-->\n </script><script language='JavaScript' type='text/javascript'>
+ <!--
+ document.write( '<span style=\'display: none;\'>' );
+ //-->
+ </script>Diese E-Mail-Adresse ist gegen Spambots geschützt! Sie müssen JavaScript aktivieren, damit Sie sie sehen können.
+ <script language='JavaScript' type='text/javascript'>
+ <!--
+ document.write( '</' );
+ document.write( 'span>' );
+ //-->
+ </script></span></span></a></td>
+</tr>
+
+</table>
+<span class="article_separator">&nbsp;</span>
+</div></div>
+                <div id="footer">
+        	<div id="bread"></div>
+        	<div id="user1"></div>
+        	<div id="user2"></div>
+            <div id="user5"></div>
+            <div id="foot">            </div>
+                    </div>
+    </div>
+    
+</div>
+</body>
+</html>

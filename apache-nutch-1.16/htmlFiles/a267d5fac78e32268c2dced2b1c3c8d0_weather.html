@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({ "Slot": "weather" });
+  dataLayer.push({ "PageType": "Content" });
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NT77MB');</script>
+<!-- End Google Tag Manager -->
+
+  <script>
+    var _rollbarConfig = {
+      accessToken: "a4f7d09bc8d9461192b4873850876f7b",
+      captureUncaught: true,
+      payload: {
+        environment: "production"
+      }
+    };
+    // Rollbar Snippet
+    !function(r){function o(e){if(n[e])return n[e].exports;var t=n[e]={exports:{},id:e,loaded:!1};return r[e].call(t.exports,t,t.exports,o),t.loaded=!0,t.exports}var n={};return o.m=r,o.c=n,o.p="",o(0)}([function(r,o,n){"use strict";var e=n(1),t=n(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.0.1/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=e.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=e.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,o,n){"use strict";function e(r){return function(){try{return r.apply(this,arguments)}catch(o){try{console.error("[Rollbar]: Internal error",o)}catch(n){}}}}function t(r,o){this.options=r,this._rollbarOldOnError=null;var n=s++;this.shimId=function(){return n},window&&window._rollbarShims&&(window._rollbarShims[n]={handler:o,messages:[]})}function a(r,o){var n=o.globalAlias||"Rollbar";if("object"==typeof r[n])return r[n];r._rollbarShims={},r._rollbarWrappedError=null;var t=new p(o);return e(function(){return o.captureUncaught&&(t._rollbarOldOnError=r.onerror,i.captureUncaughtExceptions(r,t),i.wrapGlobals(r,t)),o.captureUnhandledRejections&&i.captureUnhandledRejections(r,t),r[n]=t,t})()}function l(r){return e(function(){var o=this,n=Array.prototype.slice.call(arguments,0),e={shim:o,method:r,args:n,ts:new Date};window._rollbarShims[this.shimId()].messages.push(e)})}var i=n(2),s=0,c=n(3),d=function(r,o){return new t(r,o)},p=c.bind(null,d);t.prototype.loadFull=function(r,o,n,t,a){var l=function(){var o;if(void 0===r._rollbarDidLoad){o=new Error("rollbar.js did not load");for(var n,e,t,l,i=0;n=r._rollbarShims[i++];)for(n=n.messages||[];e=n.shift();)for(t=e.args||[],i=0;i<t.length;++i)if(l=t[i],"function"==typeof l){l(o);break}}"function"==typeof a&&a(o)},i=!1,s=o.createElement("script"),c=o.getElementsByTagName("script")[0],d=c.parentNode;s.crossOrigin="",s.src=t.rollbarJsUrl,n||(s.async=!0),s.onload=s.onreadystatechange=e(function(){if(!(i||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){s.onload=s.onreadystatechange=null;try{d.removeChild(s)}catch(r){}i=!0,l()}}),d.insertBefore(s,c)},t.prototype.wrap=function(r,o){try{var n;if(n="function"==typeof o?o:function(){return o||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._wrapped){r._wrapped=function(){try{return r.apply(this,arguments)}catch(o){var e=o;throw"string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e,e}},r._wrapped._isWrap=!0;for(var e in r)r.hasOwnProperty(e)&&(r._wrapped[e]=r[e])}return r._wrapped}catch(t){return r}};for(var u="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection".split(","),f=0;f<u.length;++f)t.prototype[u[f]]=l(u[f]);r.exports={setupShim:a,Rollbar:p}},function(r,o){"use strict";function n(r,o){if(r){var n;"function"==typeof o._rollbarOldOnError?n=o._rollbarOldOnError:r.onerror&&!r.onerror.belongsToRollbar&&(n=r.onerror,o._rollbarOldOnError=n);var t=function(){var t=Array.prototype.slice.call(arguments,0);e(r,o,n,t)};t.belongsToRollbar=!0,r.onerror=t}}function e(r,o,n,e){r._rollbarWrappedError&&(e[4]||(e[4]=r._rollbarWrappedError),e[5]||(e[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null),o.handleUncaughtException.apply(o,e),n&&n.apply(r,e)}function t(r,o){if(r){"function"==typeof r._rollbarURH&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var n=r.reason,e=r.promise,t=r.detail;!n&&t&&(n=t.reason,e=t.promise),o&&o.handleUnhandledRejection&&o.handleUnhandledRejection(n,e)};r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}function a(r,o){if(r){var n,e,t="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(n=0;n<t.length;++n)e=t[n],r[e]&&r[e].prototype&&l(o,r[e].prototype)}}function l(r,o){if(o.hasOwnProperty&&o.hasOwnProperty("addEventListener")){var n=o.addEventListener;n._rollbarOldAdd&&(n=n._rollbarOldAdd);var e=function(o,e,t){n.call(this,o,r.wrap(e),t)};e._rollbarOldAdd=n,o.addEventListener=e;var t=o.removeEventListener;t._rollbarOldRemove&&(t=t._rollbarOldRemove);var a=function(r,o,n){t.call(this,r,o&&o._wrapped||o,n)};a._rollbarOldRemove=t,o.removeEventListener=a}}r.exports={captureUncaughtExceptions:n,captureUnhandledRejections:t,wrapGlobals:a}},function(r,o){"use strict";function n(r,o){this.impl=r(o,this),this.options=o,e(n.prototype)}function e(r){for(var o=function(r){return function(){var o=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,o)}},n="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,_createItem,wrap,loadFull,shimId".split(","),e=0;e<n.length;e++)r[n[e]]=o(n[e])}n.prototype._swapAndProcessMessages=function(r,o){this.impl=r(this.options);for(var n,e,t;n=o.shift();)e=n.method,t=n.args,this[e]&&"function"==typeof this[e]&&this[e].apply(this,t);return this},r.exports=n},function(r,o){"use strict";r.exports=function(r){return function(o){if(!o&&!window._rollbarInitialized){r=r||{};for(var n,e,t=r.globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;n=window._rollbarShims[i++];)e||(e=n.handler),n.handler._swapAndProcessMessages(l,n.messages);window[t]=e,window._rollbarInitialized=!0}}}}]);
+    // End Rollbar Snippet
+  </script>
+<script>
+var _rollbarConfig = {
+    accessToken: "a4f7d09bc8d9461192b4873850876f7b",
+    captureUncaught: true,
+    captureUnhandledRejections: true,
+    payload: {
+        environment: "production"
+    }
+};
+
+</script>
+
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='DPR' http-equiv='Accept-CH'>
+<meta content='origin' name='referrer'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta content='Your local weather from local.ch' name='description'>
+<link href='https://www.local.ch/en/weather' rel='canonical'>
+<link href='https://www.local.ch/en/weather' hreflang='de' rel='alternate'>
+<link href='https://www.local.ch/en/weather' hreflang='fr' rel='alternate'>
+<link href='https://www.local.ch/en/weather' hreflang='it' rel='alternate'>
+
+<title>Weather forecast for Switzerland for the next 7 days</title>
+<link rel="icon" type="image/x-icon" href="/weather/assets/local-ui/favicons/local_favicon-29494f44ac3bfd600e3516715eb833612a24e472a16a3bceda7a7bf737b23d33.ico" />
+<link rel="icon" type="image/png" href="/weather/assets/local-ui/favicons/local_icon_128-b31be62573dfb2bb118fa2a9067e2a7b5f95027417b2c066ced0214a4786dbd6.png" sizes="128x128" />
+<link rel="icon" type="image/png" href="/weather/assets/local-ui/favicons/local_icon_192-eb4c9f2cc9ef80fb69621dd20c28a187a2d5dced852c00f208fd0ba28a0084f9.png" sizes="192x192" />
+<link rel="apple-touch-icon" type="image/png" href="/weather/assets/local-ui/favicons/local_icon_180-fd4da6dc8e989959cd4c84fcfb4b59bf4c5d8aed6e441af96d7643d221fd56cf.png" />
+<link rel="apple-touch-icon" type="image/png" href="/weather/assets/local-ui/favicons/local_icon_76-a5b7ce0fd870ff36cbc953f26a79e27cea9dd72cbd38eb643b0847cfdd440005.png" sizes="76x76" />
+<link rel="apple-touch-icon" type="image/png" href="/weather/assets/local-ui/favicons/local_icon_120-f7bfcacdba1b1daab23d3b95dd70824629e9346fa89cf73397104451480f6893.png" sizes="120x120" />
+<link rel="apple-touch-icon" type="image/png" href="/weather/assets/local-ui/favicons/local_icon_152-a0ee035152f382e725ed43f7cccbb6ae040fadda6fbc9eb6ff395fb1135207b3.png" sizes="152x152" />
+<link rel="apple-touch-icon" type="image/png" href="/weather/assets/local-ui/favicons/local_icon_167-e8012d4fa72a21479ab1137aab00a02a7ffc6ae5c30a0ba37be85052a6f762eb.png" sizes="167x167" />
+<link rel="apple-touch-icon" type="image/png" href="/weather/assets/local-ui/favicons/local_icon_180-fd4da6dc8e989959cd4c84fcfb4b59bf4c5d8aed6e441af96d7643d221fd56cf.png" sizes="180x180" />
+<meta content='#009ee3' name='apple-mobile-web-app-status-bar-style'>
+<meta content='#009ee3' name='theme-color'>
+<meta content='#009ee3' name='msapplication-TileColor'>
+<meta content='https://www.local.ch/weather/assets/local-ui/favicons/local_icon_192-eb4c9f2cc9ef80fb69621dd20c28a187a2d5dced852c00f208fd0ba28a0084f9.png' name='msapplication-TileImage'>
+
+<link rel="stylesheet" media="all" href="/weather/assets/application-0d1b9bc17e2830e5dae812cf0c59f8562ce06c9ae9019964661dd743933668c3.css" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="5PoaGUIVPANGHmmW3GcAh0lfLwUSkgZFjrYpYitM6Svz2oXCItqo0urpm72RsG0YxuE+gymtAWXQSdohBKqQpQ==" />
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT77MB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager -->
+
+<div id='header'>
+
+<nav class='navbar navbar-default navbar-static-top' id='site-navigation'>
+<div class='container-semi-fluid'>
+<div aria-expanded='false' class='pull-left navbar-toggle collapsed' data-target='#slot-navigation-selector' data-toggle='collapse'>
+<i class='icon-hamburger'></i>
+</div>
+<!-- / Languange Picker -->
+<ul class='nav pull-right' id='language-selector'>
+<li class='dropdown dropdown-nav text-uppercase'>
+<a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle navbar-link navbar-link-vertical-centered js-gtm-event' data-gtm-action='click' data-gtm-category='Header' data-gtm-label='dropdown-toggle' data-toggle='dropdown' href='#site-navigation-locale-dropdown'>
+<span>
+en
+</span>
+<span class='caret caret-navbar'></span>
+</a>
+<ul class='dropdown-menu dropdown-menu-nav'>
+<li>
+<a class="de js-gtm-event" data-gtm-category="Header" data-gtm-label="de" data-gtm-action="click" href="/de/weather">de</a>
+</li>
+<li>
+<a class="fr js-gtm-event" data-gtm-category="Header" data-gtm-label="fr" data-gtm-action="click" href="/fr/weather">fr</a>
+</li>
+<li>
+<a class="it js-gtm-event" data-gtm-category="Header" data-gtm-label="it" data-gtm-action="click" href="/it/weather">it</a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- / User Navigation -->
+<ul class='nav pull-right nav-username'>
+<li>
+<a class="cc-login js-gtm-event" data-gtm-category="Header" data-gtm-label="Customer Center" data-gtm-action="click" href="/weather/auth/localch?locale=en&amp;origin=https%3A%2F%2Fwww.local.ch%2Fen%2Fweather">Log in</a>
+</li>
+</ul>
+<div class='collapse navbar-collapse' id='slot-navigation-selector'>
+<ul class='nav navbar-nav'>
+<li class='active menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Www" data-gtm-action="click" title="local.ch - the official phonebook and yellow pages of Switzerland" href="https://www.local.ch">Home</a>
+</li>
+<li class='menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Tel" data-gtm-action="click" title="Official phonebook of Switzerland – local.ch" data-add-search-params="" href="https://tel.local.ch">Phone Book</a>
+</li>
+<li class='menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Yellow" data-gtm-action="click" title="Switzerland&#39;s Yellow Pages at local.ch - Find a company quickly" data-add-search-params="" href="https://yellow.local.ch">The Yellow Pages</a>
+</li>
+<li class='menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Free-table-search" data-gtm-action="click" title="Find and book a free table in a restaurant" href="https://www.local.ch/en/restaurants">Book a table</a>
+</li>
+<li class='menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Maps" data-gtm-action="click" title="Map of Switzerland for address searches and route planning - now on local.ch" data-add-search-params="" href="https://www.local.ch/en/map">Map</a>
+</li>
+<li class='active menu-item'>
+<a target="_top" class="js-gtm-event" data-gtm-category="Header" data-gtm-label="Weather" data-gtm-action="click" title="Weather" href="https://www.local.ch/en/weather">Weather</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+</div>
+
+<div class='container weather-header'>
+<div class='row'>
+<div class='col-md-6 col-xs-3'>
+<a title="Switzerland&#39;s official Phone Book by local.ch" class="lui-logo js-gtm-event" data-gtm-category="Header" data-gtm-label="Logo" data-gtm-action="click" href="https://www.local.ch/en"><img alt="Logo local.ch" class="lui-logo-img" srcset="https://www.local.ch/weather/assets/local-ui/local_logo@2x-587e3ba4db265aa373c78f37e419342f9eafd63ffd5f61f4c65d986bfd7c9846.png 2x" src="https://www.local.ch/weather/assets/local-ui/local_logo-96b29ea0ed57b9657006a8aa8b4c2dfcf673c2e977cb20df64e7a6e754f162a7.png" />
+</a>
+</div>
+<div class='col-md-6 col-xs-9'>
+<div class='weather-location-selector'>
+<div class='weather-location-select2' data-placeholder='Weather in...' data-src='https://www.local.ch/en/weather/api/autosuggest'></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='container'>
+<div class='row'>
+<div class='col-xs-12'>
+<div class='weather-overview'>
+<div class='btn-toolbar weather-time-selector' data-component='day-picker'>
+<div class='btn-group btn-group-sm btn-group-justified weather-time-selector-group' role='group'>
+<a class='active btn btn-default js-gtm weather-time-selector-item' data-gtm-category='Daypicker' data-gtm-label='Button' data-time='2019-12-02' href='javascript:void(0)'>Monday</a>
+<a class='btn btn-default js-gtm weather-time-selector-item' data-gtm-category='Daypicker' data-gtm-label='Button' data-time='2019-12-03' href='javascript:void(0)'>Tuesday</a>
+<a class='btn btn-default js-gtm weather-time-selector-item' data-gtm-category='Daypicker' data-gtm-label='Button' data-time='2019-12-04' href='javascript:void(0)'>Wednesday</a>
+<a class='btn btn-default js-gtm weather-time-selector-item' data-gtm-category='Daypicker' data-gtm-label='Button' data-time='2019-12-05' href='javascript:void(0)'>Thursday</a>
+<a class='btn btn-default js-gtm weather-time-selector-item' data-gtm-category='Daypicker' data-gtm-label='Button' data-time='2019-12-06' href='javascript:void(0)'>Friday</a>
+</div>
+</div>
+
+<div class='weather-map' data-bounds='{&quot;west&quot;:5.956389,&quot;north&quot;:47.817449,&quot;south&quot;:45.675056,&quot;east&quot;:10.49194}'>
+<div class='weather-overview-locations'></div>
+<img class="map-image weather-map-image" src="/weather/assets/weather/map/flat-map-fcf514253d88461df6bdf6f5336df4c2bef7ce4e18694bdb117902caa3d11799.png" alt="Flat map" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div class='row'>
+<div class='col-xs-12 col-sm-6'>
+<div class='weather-additional-content weather-current'>
+<h2 class='weather-h2'>Weather in Switzerland</h2>
+<table class='weather-current-table table-striped lui-table'>
+<tbody>
+<tr class='weather-current-table-row'>
+<td class='weather-current-table-cell'>
+<a href='https://www.local.ch/en/weather/8001-Zurich'>Zurich</a>
+</td>
+<td class='weather-current-table-cell weather-current-table-cell-temp weather-current-table-right'>3.2 °C</td>
+<td class='weather-current-table-cell weather-current-table-cell-wind weather-current-table-right'>8.9 km/h</td>
+<td class='weather-current-table-cell'>Northeast</td>
+<td class='weather-current-table-cell weather-current-table-centre'>
+<img alt='partly cloudy' class='icon' height='24' src='/weather/assets/weather/svg-icons/4-535b0f951e3c7af60bdd01c9c2213c50ec78ed66004c06a3e18ce10b3cc8c4ea.svg' title='partly cloudy' width='24'>
+</td>
+</tr>
+<tr class='weather-current-table-row'>
+<td class='weather-current-table-cell'>
+<a href='https://www.local.ch/en/weather/1000-Lausanne'>Lausanne</a>
+</td>
+<td class='weather-current-table-cell weather-current-table-cell-temp weather-current-table-right'>4.0 °C</td>
+<td class='weather-current-table-cell weather-current-table-cell-wind weather-current-table-right'>45.3 km/h</td>
+<td class='weather-current-table-cell'>Northeast</td>
+<td class='weather-current-table-cell weather-current-table-centre'>
+<img alt='mostly sunny' class='icon' height='24' src='/weather/assets/weather/svg-icons/2-f995a343cb83f6ca0c59cdc08532b8ff0d8087886c1decd490bf3e53ea29a2e4.svg' title='mostly sunny' width='24'>
+</td>
+</tr>
+<tr class='weather-current-table-row'>
+<td class='weather-current-table-cell'>
+<a href='https://www.local.ch/en/weather/3004-Bern'>Bern</a>
+</td>
+<td class='weather-current-table-cell weather-current-table-cell-temp weather-current-table-right'>2.2 °C</td>
+<td class='weather-current-table-cell weather-current-table-cell-wind weather-current-table-right'>5.7 km/h</td>
+<td class='weather-current-table-cell'>Northeast</td>
+<td class='weather-current-table-cell weather-current-table-centre'>
+<img alt='fog' class='icon' height='24' src='/weather/assets/weather/svg-icons/28-17d094b27eafd8346eee5cebad3400506ebbdf2af56b1e4d7c651c941226f227.svg' title='fog' width='24'>
+</td>
+</tr>
+<tr class='weather-current-table-row'>
+<td class='weather-current-table-cell'>
+<a href='https://www.local.ch/en/weather/1950-Sion'>Sion</a>
+</td>
+<td class='weather-current-table-cell weather-current-table-cell-temp weather-current-table-right'>7.0 °C</td>
+<td class='weather-current-table-cell weather-current-table-cell-wind weather-current-table-right'>2.7 km/h</td>
+<td class='weather-current-table-cell'>West</td>
+<td class='weather-current-table-cell weather-current-table-centre'>
+<img alt='cloudy' class='icon' height='24' src='/weather/assets/weather/svg-icons/5-7fb670499672846a821498006cc6736a64112d2850395f713f156be9c382ad9e.svg' title='cloudy' width='24'>
+</td>
+</tr>
+<tr class='weather-current-table-row'>
+<td class='weather-current-table-cell'>
+<a href='https://www.local.ch/en/weather/6900-Lugano'>Lugano</a>
+</td>
+<td class='weather-current-table-cell weather-current-table-cell-temp weather-current-table-right'>9.0 °C</td>
+<td class='weather-current-table-cell weather-current-table-cell-wind weather-current-table-right'>20.8 km/h</td>
+<td class='weather-current-table-cell'>North</td>
+<td class='weather-current-table-cell weather-current-table-centre'>
+<img alt='sunny' class='icon' height='24' src='/weather/assets/weather/svg-icons/1-af1380221ae40efab944cf41fe7ed232dc3d408aba9e3631939ee20c53da9652.svg' title='sunny' width='24'>
+</td>
+</tr>
+<tr class='weather-current-table-row'>
+<td class='weather-current-table-cell'>
+<a href='https://www.local.ch/en/weather/7000-Chur'>Chur</a>
+</td>
+<td class='weather-current-table-cell weather-current-table-cell-temp weather-current-table-right'>3.0 °C</td>
+<td class='weather-current-table-cell weather-current-table-cell-wind weather-current-table-right'>24.4 km/h</td>
+<td class='weather-current-table-cell'>Northeast</td>
+<td class='weather-current-table-cell weather-current-table-centre'>
+<img alt='cloudy' class='icon' height='24' src='/weather/assets/weather/svg-icons/5-7fb670499672846a821498006cc6736a64112d2850395f713f156be9c382ad9e.svg' title='cloudy' width='24'>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class='col-xs-12 col-sm-6'>
+<div class='weather-additional-content'>
+<h2 class='weather-h2'>Weather Radar</h2>
+</div>
+<a href='https://www.local.ch/en/weather/radar' onclick='location.href=this.href'>
+<video autoplay class='video radar-video-preview' height='690' loop muted onclick='return false;' playsinline preload='auto' width='970'>
+<source src='//d23jthpf76at9r.cloudfront.net/inca/precipitation-1167fb313f6294cc.mp4' type='video/mp4'>
+<source src='//d23jthpf76at9r.cloudfront.net/inca/precipitation-1167fb313f6294cc.webm' type='video/webm; codecs=vp9'>
+</video>
+</a>
+</div>
+</div>
+</div>
+
+<div class='footer'>
+<div class='lui-padding-top-l lui-padding-bottom-l'>
+<div class='container'>
+<div class='row'>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'>Customer service</h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a class="footer-link" rel="nofollow" target="_top" href="http://info.local.ch/en/medien/kontakt">Contact local.ch</a>
+</li>
+</ul>
+</div>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'><a target="_top" class="footer-link" href="https://www.localsearch.ch/en/dienste-fur-kmu">Advertising</a></h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/solutions-for-smb/directory-listing">Directory listing for SMB</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/solutions-for-smb/personal-website">Personal website</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/ratings-reviews">Customer recommendation for SME</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/customer-management/mylocalina">For restaurateurs: MyLOCALINA</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://xpress.local.ch/locksmith">localXpress</a>
+</li>
+</ul>
+</div>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'><a target="_top" class="footer-link" href="http://info.local.ch/en/your-listing">Your listing</a></h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/your-listing/kostenlos-firmenprasenz-erstellen">Business listing</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/your-listing/kostenlos-als-privatperson-eintragen">Private listing</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://tel.local.ch/en/advertising-calls">Telemarketing</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='row'>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'>Directories</h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/directories/print">Print</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/directories/mobile">Mobile</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/directories/online">Online</a>
+</li>
+</ul>
+</div>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'><a target="_top" class="footer-link" href="http://info.local.ch/en/about-us">About local.ch</a></h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/about-us/organisation">Organisation</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="https://info.local.ch/en/our-services">Our services</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/about-us/jobs">Careers</a>
+</li>
+</ul>
+</div>
+<div class='col-xs-12 col-md-4'>
+<h3 class='footer-header'><a target="_top" class="footer-link" href="http://info.local.ch/en/medien">Media</a></h3>
+<ul class='footer-list'>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/medien/medienmitteilungen">Media information</a>
+</li>
+<li class='footer-list-item'>
+<a target="_top" class="footer-link" href="http://info.local.ch/en/medien/local-dot-ch-in-den-medien">local.ch in the media</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='footer-bottom'>
+<div class='container'>
+<div class='row lui-padding-top-m'>
+<div class='col-sm-6'>
+<small class='lui-margin-bottom-xs'>
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/legal-notice">Imprint</a>
+|
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/terms-and-conditions-use">Terms and Conditions of Use</a>
+|
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/general-terms-and-conditions">GT &amp; C</a>
+|
+<a target="_top" class="footer-link" href="https://www.localsearch.ch/en/privacy-statement">Privacy Statement</a>
+</small>
+</div>
+<div class='col-sm-6'>
+<div class='clearfix'>
+<ul class='footer-sozial-media list-inline lui-margin-bottom-m'>
+<li>
+<a class="footer-social-media-link" rel="nofollow" target="_top" href="http://www.facebook.com/localch"><i class='icon-facebook'></i>
+</a></li>
+<li>
+<a class="footer-social-media-link" rel="nofollow" target="_top" href="http://twitter.com/localch"><i class='icon-twitter'></i>
+</a></li>
+<li>
+<a class="footer-social-media-link" rel="publisher" target="_top" href="https://www.instagram.com/local_ch/"><i class='icon-instagram'></i>
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<script src="/weather/assets/application-d317bb2d88cba82cd504a36bdc7754fc2c87ac4f55519a694a29e4a2dda9274d.js"></script>
+<!-- NET-Metrix-Audit version="1.5" -->
+<script id="netmetrix" type="text/javascript">
+  var WEMF = "https://loca-ssl.wemfbox.ch/cgi-bin/ivw/CP/web/content/weather";
+  document.write('<img src="' + WEMF + '?r=' + escape(document.referrer) + '&d=' + (Math.random() * 100000) + '&x=' + screen.width + 'x' + screen.height + '" width="1" height="1" alt="" style="width:1px;height:1px;position:fixed"/>');
+  var szmvars="local//CP//web/content/weather";
+</script>
+<noscript>
+  <img src="https://loca-ssl.wemfbox.ch/cgi-bin/ivw/CP/web/content/weather" width="1" height="1" alt="" style="width:1px;height:1px;position:fixed"/>
+</noscript>
+<script src="https://loca-ssl.wemfbox.ch/2004/01/survey.js" async defer></script>
+<!-- /NET-Metrix-Audit -->
+
+<!-- / Qualaroo for local.ch -->
+<script>
+  var _kiq = _kiq || [];
+  (function() {
+    setTimeout(function() {
+      var d = document,
+          f = d.getElementsByTagName('script')[0],
+          s = d.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//d3vk40ihlliju7.cloudfront.net/49252/acC.js';
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  })();
+</script>
+
+</body>
+</html>

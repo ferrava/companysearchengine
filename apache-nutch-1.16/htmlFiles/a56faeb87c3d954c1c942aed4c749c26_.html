@@ -1,0 +1,127 @@
+<!DOCTYPE html> <html class="no-js responsivelayout" lang="de"> <head> <title>Startseite</title> <meta name="robots" content="index, follow"> <meta name="keywords" content=""> <meta name="description" content="B&#228;ckerei Schl&#228;pfer Homepage"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="generator" content="Zeta Producer 14.2.0.0, ZP14X, 27.11.2017 20:38:32"> <link rel="shortcut icon" type="image/x-icon" href="?v=2"> <link rel="stylesheet" type="text/css" href="assets/bundle.css?v=636486919418764367"> <link rel="stylesheet" type="text/css" href="assets/bundle-print.css?v=636486919418451865" media="print"> <style>
+		  body{
+		  	
+		  	
+		  }
+		</style> <script type="text/javascript" src="assets/bundle.js?v=636486919418764367"></script> </head> <body id="album-responsive" class="notouch"> <a id="top"></a> <div id="page"> <div id="sidebar"> <div id="logo"> <a class="logo" href="http://www.beckschlaepfer.ch"><img src="assets/logo.png" width="300" height="200" alt="http://www.beckschlaepfer.ch" title="beckschlaepfer.ch fürs tägliche Brot!"></a> </div> <p class="webname"> <b>beckschlaepfer.ch</b><br> fürs tägliche Brot! </p> <div id="nav"> <a href="#" id="mobilenavtoggle" class="tabletonly" aria-label="Menü ein-/ausblenden">Menü</a> <script type="text/javascript">
+		function getParameterByNamezpsearchform(name) {
+			name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+			var regexS = "[\\?&]" + name + "=([^&#]*)";
+			var regex = new RegExp(regexS);
+			var results = regex.exec(window.location.search);
+			if(results == null) {
+				return "";
+			}
+			else {
+				return decodeURIComponent(results[1].replace(/\+/g, " "));
+			}
+		}
+		function encode_htmlzpsearchform(astring) { //helps prevent XSS e.g. when printing search strings
+			astring = typeof astring !== 'undefined' ? astring : "";
+
+			astring = astring.replace(/</g, "&lt;");
+			astring = astring.replace(/>/g, "&gt;");
+			astring = astring.replace(/"/g, "&quo" + "t;");
+			astring = astring.replace(/'/g, "&#x27;");
+			astring = astring.replace(/\//g, "&#x2F;");
+			astring = astring.replace(/\[\$/g, "");
+			astring = astring.replace(/\$\]/g, "");
+
+			return astring;
+		}
+		function searchzpsearchform() {
+			var formId = "zpsearchform";
+			if (document.getElementById(formId).q.value == 'Suchbegriff') {
+				return false;
+			}
+			else if ($z.trim(document.getElementById(formId).q.value).length === 0) {
+				alert("Bitte geben Sie einen Suchbegriff ein.");
+				return false;
+			}
+			else{
+				return;
+			}
+		}
+	</script> <form id="zpsearchform" name="searchengine1" onsubmit="return searchzpsearchform()" action="suche.html" method="get" class="zpsearchform"> <input id="zpsearchfield" class="zpsearchfield typetext" type="text" name="q" placeholder="Suchbegriff" aria-label="Suchbegriff"> <input id="zpsearchbutton" class="zpsearchbutton" type="image" name="submit" src="assets/stock-images/default-magnifier.png" alt="Suchen" aria-label="Suchen"> </form> <script>
+	$(document).ready(function(){
+		// set form field value to searchstring
+		var tmpSearchstring = getParameterByNamezpsearchform("q");
+		if ( tmpSearchstring ){
+			// fill layout searchfield with searchsting
+			document.getElementById("zpsearchform").q.value = tmpSearchstring;
+			// fill search page searchfield with searchsting
+			document.getElementById("zpsearchengine").q2.value = tmpSearchstring;
+			// focus search page searchfield
+			document.getElementById("zpsearchengine").q2.focus();
+		}
+	});
+	</script> <ul data-breakpointmobilemenu="768" class="touchhovermenu clickhovermenu"> <li class="haschilds open active"> <a class="active" href="index.html">Startseite</a> <ul> <li> <a href="filiale-schwellbrunnerstrasse.html">Filiale Schwellbrunnerstrasse</a> </li> </ul> </li> <li> <a href="aktuelles.html">Aktuelles</a> </li> <li class="haschilds"> <a href="oberdorfkafi.html">Oberdorfkafi</a> <ul> <li> <a href="speisekarte.html">Speisekarte</a> </li> </ul> </li> <li class="haschilds"> <a href="backstube.html">Backstube</a> <ul> <li> <a href="brote.html">Brote</a> </li> <li> <a href="biber.html">Biber</a> </li> <li> <a href="torten.html">Torten</a> </li> </ul> </li> <li> <a href="geschenke.html">Geschenke</a> </li> <li class="haschilds"> <a href="catering.html">Catering</a> <ul> <li> <a href="apero.html">Apero</a> </li> <li> <a href="gebaeck-und-broetchen.html">Gebäck und Brötchen</a> </li> <li> <a href="dessertbuffet.html">Dessertbuffet</a> </li> </ul> </li> <li> <a href="ueber-uns.html">Über uns</a> </li> <li> <a href="kontakt.html">Kontakt</a> </li> </ul> </div> </div> <div id="contentframe"> <div id="header"> <a id="a1407"></a> <div id="headerslider" class="flexslider"> <div class="flex-container"> <ul class="slides"> <li> <img src="media/images/80d275995c2e41d98aa30068cdd3bf13-large.png" alt=""> </li> <li> <img src="media/images/biber_alpaufzug-large.jpg" alt=""> </li> <li> <img src="media/images/vermicelles-large.jpg" alt=""> </li> <li> <img src="media/images/geschenk_2-large.jpg" alt=""> </li> <li> <img src="media/images/partybrot-01-large.jpg" alt=""> </li> <li> <img src="media/images/torte-large.jpg" alt=""> </li> <li> <img src="media/images/biber-large.jpg" alt=""> </li> <li> <img src="media/images/marron-large.jpg" alt=""> </li> </ul> </div> </div> <script type="text/javascript">
+		$z(document).ready(function() {
+			var useCssAnimation = true;
+			if ( $z.browser.safari ){
+				useCssAnimation = false;
+			}
+			
+			// init flexslider after 1st image has loaded, so have dimensions as quickly as possible without having to wait too long on window loaded or such and can start right with doc ready
+			$z('#headerslider .flex-container ul.slides li img').first().one("load", function(){
+				$z('#headerslider .flex-container').flexslider({
+					useCSS: useCssAnimation,
+					touch: true,
+					keyboard: true,
+					itemMargin: 0,
+					animation: 'slide',
+					controlsContainer: '#headerslider.flexslider',
+					slideshow: true,
+					slideshowSpeed: 4000,
+					directionNav: false,
+					controlNav: true,
+					randomize: true,
+					
+					pauseOnHover: true,
+					smoothHeight: true,
+					prevText: "zur&#252;ck",
+					nextText: "weiter"
+				});
+
+			}).each(function() {
+				if(this.complete) $z(this).load();
+			}); // .each() is to work around a browser bugs which don't fire load() for cached images http://stackoverflow.com/a/3877079
+			
+			// activate links for individual slideshow
+			$z('#headerslider .flex-container ul.slides li[data-clickurl]').css("cursor","pointer");
+			$z('#headerslider .flex-container ul.slides li[data-clickurl]').click(function (event){
+				// Because this script captures clicks for a container, it will also fire when a regular link inside the container 
+				// is clicked. Therefore, we check below, if a regular link i.e. <a href="#"> was the target of the click.
+				// Depending on the browser used, event.target might not be available, but event.srcElement would…
+				var targ;
+				if (event.target){
+					targ = event.target;
+				}
+				else if (event.srcElement) {
+					targ = event.srcElement;
+				}
+				if (targ.nodeName == "A") {
+					// a regular link i.e. in a Caption was clicked. Return early, so the link's href doesn't get overridden
+					return;
+				}
+				
+				if ( $z(this).data("clicktarget") ){
+					window.open($z(this).data("clickurl"), $z(this).data("clicktarget"));
+				}
+				else{
+					window.location = $z(this).data("clickurl");
+				}
+				event.preventDefault;
+				return false;
+			});
+		});
+  	</script> </div> <div id="content"> <div id="breadcrumb"> Sie befinden sich hier:&nbsp; <a style="pointer-events: none; color: inherit; text-decoration: none; border: 0;">Startseite</a> </div> <div class="articles zpgrid"> <div class="zparea " data-numcolumns="12" data-areaname="Standard"> <div class="zpContainer "> <div class="zpRow standard "><div class="zpRowInner"> <div class="zpColumn zpColumnWidth2 c8" style=" "> <div class="zpColumnItem"> <div id="a1406" data-articleid="1406" class="articlearea zpwText"> <h1>Sönd willkomm!</h1> <p style="text-align: left"><img title="" class="singleImage" style="HEIGHT: 132px; FLOAT: right; MARGIN: 4px 0px 10px 20px" alt="" src="media/images/schaufenster-01.jpg" width="191" height="123"> Die Bäckerei Konditorei Schläpfer ist mit&nbsp;Ihrem Laden und der angrenzenden Backstube im Herzen von Herisau zu finden. Es ist unsere Leidenschaft, jeden Tag frische, genussvolle und schöne <a href="brote.html">Brotwaren</a>, Gebäcke und <a href="geschenke.html">Confiserie-Produkte</a> herzustellen.</p> <h3>Backen ist unser tägliches Brot! </h3> <p>Unsere Biberspezialitäten erfreuen sich grosser Beliebtheit, sei es in traditioneller Form oder verziert mit Ihrem persönlichen Foto; als Kleingebäck oder in grosser Ausführung zum Verschenken. </p> <p style="text-align: left"><img title="" class="singleImage" style="HEIGHT: 131px; WIDTH: 204px; FLOAT: left; MARGIN: 4px 20px 10px 0px" alt="" src="media/images/urdinkel-biber-01.png" width="204" height="131">Speziell für Naschkatzen, finden Sie bei uns ein beachtliches Sortiment an Pralinen und weiteren Schokolade-Kreationen. Für jeden Anlass fertigen wir auf Ihren Wunsch die entsprechenden Köstlichkeiten. Darf es ein Partybrot sein, Apéro-Gebäck für Ihre Feier, ein Dessertbuffet oder für einen der schönsten Tage Ihres Lebens eine prächtige Hochzeitstorte? Gerne beraten wir Sie und zeigen Ihnen die Möglichkeiten und Varianten auf.</p> </div> </div> </div> <div class="zpColumn zpColumnWidth2 c4" style=" "> <div class="zpColumnItem"> <div id="a1442" data-articleid="1442" class="articlearea zpwHinweisbox"> <div class="zpSO-hint" style="padding: 8px 16px; background: rgba(153, 102, 51, 0.9); border: 1px solid transparent; "> <h3 style="color: #F0E2D3; ">Einige unserer Spezialitäten</h3> <div style="color: #F0E2D3;"><p>Kennen Sie bereits unsere feinen <a href="geschenke.html">Geschenksartikel</a> welche wir liebevoll für Sie verpacken.</p> <p><img title="" class="singleImage" alt="" src="media/images/pralinengeschenke-01.jpg"></p> <p><a href="oberdorfkafi.html">Oberdorfkafi</a></p> <p><a href="backstube.html">Backwaren</a></p> <p><a href="catering.html">Catering</a></p></div> </div> </div> </div> </div> </div></div> <div class="zpRow standard "><div class="zpRowInner"> <div class="zpColumn zpColumnWidth1 c12" style=" "> <div class="clearx"></div> <div class="zpColumnItem"> <div id="a1546" data-articleid="1546" class="articlearea zpwTrennlinie zpSO-separator"> <hr class="zpSO-separator" style="display:block;border:none;height:1px;line-height:1px;color:#F0E2D3;background-color:#F0E2D3;margin-top:10px;margin-bottom:10px;"> </div> </div> </div> </div></div> <div class="zpRow standard "><div class="zpRowInner"> <div class="zpColumn zpColumnWidth1 c12" style=" "> <div class="zpColumnItem"> <div id="a1545" data-articleid="1545" class="articlearea zpwText"> <h2>Öffnungszeiten</h2> <p>&nbsp;</p> <p> </p><table style="WIDTH: 80%"> <tbody> <tr> <td>Montag geschlossen</td> <td></td> <td>Samstag</td></tr> <tr> <td></td> <td></td> <td>06.30 Uhr bis 15.00 Uhr</td></tr> <tr> <td>Dienstag - Freitag</td> <td></td> <td></td></tr> <tr> <td>06.00 Uhr bis 12.15 Uhr</td> <td></td> <td>Sonntag</td></tr> <tr> <td>13.30 Uhr bis 18.15 Uhr</td> <td></td> <td>07.30 Uhr bis 11.00 Uhr</td></tr></tbody></table> </div> </div> </div> </div></div> </div> </div> </div> </div> <div id="footer"> <div id="xmenu"> <a href="kontakt.html">Kontakt</a> <a href="sitmap.html">Sitmap</a> <a href="impressum.html">Impressum</a> </div> <div id="footerinfo"> © 2016 Bäckerei Konditorei Confiserie Schläpfer, Herisau </div> </div> </div> </div> <script>
+	$z(document).ready(function () {
+		// switches the Mobile Navigation-Menu on/off, when "Menu" link is clicked.
+		$z("a#mobilenavtoggle").on("click", function(e){
+			$z("#sidebar #nav").toggleClass("on");
+		});
+	});
+	
+	
+</script> </body> </html>

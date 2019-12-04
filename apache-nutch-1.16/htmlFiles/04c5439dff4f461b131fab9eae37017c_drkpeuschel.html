@@ -1,0 +1,1474 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Dr. med. Karin Peuschel Praxis Erlenhof
+</title><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="all" /><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="/js/b.min.js?v=111"></script>
+</head>
+<body>
+  <div id="divLang" style="display: none">DE</div>
+  <div id="root" class="container" style="display: none">
+    <div class="containerFlex">
+      <div id="myLinks">
+        <div id="divCompInfoMobile">
+        </div>
+        <a id="mobileIconX" href="javascript:void(0);" onclick="mobileMenu()">
+          <?xml version="1.0" encoding="utf-8" ?>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="0.9625em" height="0.9625em" viewBox="0 0 16 16" style="enable-background: new 0 0 16 16;" xml:space="preserve">
+            <g>
+              <path class="mobileIcons" d="M13.2,15L0.4,2.2c-0.5-0.5-0.5-1.3,0-1.9c0.5-0.5,1.3-0.5,1.9,0L15,13.2c0.5,0.5,0.5,1.3,0,1.9   C14.5,15.5,13.7,15.5,13.2,15" />
+              <path class="mobileIcons" d="M0.4,15c-0.5-0.5-0.5-1.3,0-1.9L13.2,0.4c0.5-0.5,1.3-0.5,1.9,0c0.5,0.5,0.5,1.3,0,1.9L2.2,15   C1.7,15.5,0.9,15.5,0.4,15" />
+            </g>
+          </svg>
+        </a>
+        <div class="ratingsMobile" id="ratingsM">
+          <a href="javascript:void(0);" onclick="loadRatingsText(1)" id="ratingsMA">
+            Bewertungen</a>
+        </div>
+        
+      </div>
+      <div id="divTitle" class="nav-container">
+        <div class="divTitleFirstLine" id="divTitleSecondLine">
+          <div id="headerLogo" class="logo" onclick="showPage(1, true); return false;">
+          </div>
+          <div id="divCompInfo">
+          </div>
+        </div>
+
+        <a id="mobileIcon" href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="1.8em" height="1.25em" viewBox="0 0 29 20" style="enable-background: new 0 0 29 20;" xml:space="preserve">
+            <g>
+              <path class="mobileIcons" d="M27.7,11.2H1.2C0.5,11.2,0,10.6,0,10c0-0.6,0.5-1.2,1.2-1.2h26.5c0.6,0,1.2,0.5,1.2,1.2   C28.8,10.6,28.3,11.2,27.7,11.2" />
+              <path class="mobileIcons" d="M27.7,2.3H1.2C0.5,2.3,0,1.8,0,1.2S0.5,0,1.2,0h26.5c0.6,0,1.2,0.5,1.2,1.2S28.3,2.3,27.7,2.3" />
+              <path class="mobileIcons" d="M27.7,20H1.2C0.5,20,0,19.5,0,18.8c0-0.6,0.5-1.2,1.2-1.2h26.5c0.6,0,1.2,0.5,1.2,1.2   C28.8,19.5,28.3,20,27.7,20" />
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div id="slider">
+      <div class="slides-container" id="slidercont">
+      </div>
+      <div class="timer"></div>
+      <div class="arrows">
+        <a class="prev" href="#"><</a>
+        <a class="next" href="#">></a>
+      </div>
+    </div>
+    <div id="itext" class="infotext">
+    </div>
+    <div id="divTitleMin" style="display: none">
+    </div>
+    <div id="ratingsModal" class="displayNone modalDialog">
+    </div>
+    <div class="bookingWidget">
+      <div id="p-1" style="display: none">
+        <div id="divAppData" class="s s1 marginRight0" style="cursor: default;">
+        </div>
+      </div>
+      <div id="p0">
+        <div class="p0C">
+          <div id="divLogin">
+            <div class="p0COverlay">
+              <div class="iconLogin">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="5em" height="3.125em" viewBox="0 0 500 365.2" style="enable-background: new 0 0 500 365.2;" xml:space="preserve">
+                  <g>
+                    <path class="c2" d="M183.1,176l18.2-6.1l9.6,28.8l-18.2,6.1L183.1,176z M183.1,176" />
+                    <rect class="c2" x="153.7" y="317.1" width="1.2em" height="1.2em" />
+                    <path class="c2" d="M163.4,192.2c-42.4,0-76.9-47.4-76.9-105.7v-9.6C86.5,34.5,121,0,163.4,0   c42.4,0,76.9,34.5,76.9,76.9v9.6C240.2,144.8,205.7,192.2,163.4,192.2L163.4,192.2z M163.4,19.2c-31.8,0-57.7,25.9-57.7,57.7v9.6   c0,47.7,25.9,86.5,57.7,86.5c31.8,0,57.7-38.8,57.7-86.5v-9.6C221,45.1,195.2,19.2,163.4,19.2L163.4,19.2z M163.4,19.2" />
+                    <path class="c2" d="M211.4,288.3c-1.2,0-2.4-0.2-3.6-0.7l-44.5-17.8l-44.5,17.8c-2.7,1.1-5.8,0.9-8.3-0.6   c-2.5-1.4-4.3-3.9-4.8-6.8l-9.6-57.7c-0.5-3.1,0.5-6.2,2.7-8.4l19.2-19.2c3.4-3.4,8.7-3.8,12.6-0.9l32.7,24.5l32.7-24.5   c3.8-2.9,9.2-2.5,12.6,0.9l19.2,19.2c2.2,2.2,3.2,5.3,2.7,8.4l-9.6,57.7c-0.5,2.9-2.2,5.4-4.8,6.8   C214.7,287.9,213,288.3,211.4,288.3L211.4,288.3z M163.4,249.8c1.2,0,2.4,0.2,3.6,0.7l37,14.8l6.8-41l-9.8-9.8l-31.8,23.8   c-3.4,2.6-8.1,2.6-11.5,0l-31.8-23.8l-9.8,9.8l6.8,41l37-14.8C160.9,250.1,162.1,249.8,163.4,249.8L163.4,249.8z M163.4,249.8" />
+                    <path class="c2" d="M19.2,365.2H0v-57.7c0-27.8,16.4-52.6,43.7-66.3l57.7-28.8l8.6,17.2l-57.7,28.8   c-20.7,10.4-33.1,28.7-33.1,49.1V365.2z M19.2,365.2" />
+                    <path class="c2" d="M326.7,365.2h-19.2v-57.7c0-20.4-12.4-38.7-33.1-49.1l-57.7-28.8l8.6-17.2l57.7,28.8   c27.4,13.7,43.7,38.5,43.7,66.2V365.2z M326.7,365.2" />
+                    <path class="c2" d="M192.2,86.5H173c-14.5,0-27.8-5.2-38.4-14.7c-10.6,9.6-23.9,14.7-38.4,14.7c-5.3,0-9.6-4.3-9.6-9.6   c0-5.3,4.3-9.6,9.6-9.6c12.1,0,23.1-5.5,30.8-15.5c3.6-4.7,11.5-4.7,15.2,0c7.8,10,18.7,15.5,30.8,15.5h19.2c5.3,0,9.6,4.3,9.6,9.6   C201.8,82.2,197.5,86.5,192.2,86.5L192.2,86.5z M192.2,86.5" />
+                    <rect class="c2" x="57.7" y="317.1" width="1.2em" height="3em" />
+                    <rect class="c2" x="249.8" y="317.1" width="1.2em" height="3em" />
+                    <path class="c1" d="M404,289.7c-15.9,0-28.8-12.9-28.8-28.8c0-15.9,12.9-28.8,28.8-28.8c15.9,0,28.8,12.9,28.8,28.8   C432.8,276.7,419.9,289.7,404,289.7L404,289.7z M404,251.3c-5.3,0-9.6,4.3-9.6,9.6c0,5.3,4.3,9.6,9.6,9.6c5.3,0,9.6-4.3,9.6-9.6   C413.6,255.6,409.3,251.3,404,251.3L404,251.3z M404,251.3" />
+                    <path class="c1" d="M404,318.5c-5.3,0-9.6-4.3-9.6-9.6v-28.8c0-5.3,4.3-9.6,9.6-9.6c5.3,0,9.6,4.3,9.6,9.6v28.8   C413.6,314.2,409.3,318.5,404,318.5L404,318.5z M404,318.5" />
+                    <path class="c1" d="M452,203.3c-5.3,0-9.6-4.3-9.6-9.6v-76.8c0-5.1-2-9.9-5.6-13.6c-3.6-3.6-8.4-5.6-13.6-5.6h-38.4   c-5.1,0-9.9,2-13.6,5.6c-3.6,3.6-5.6,8.4-5.6,13.6v48c0,5.3-4.3,9.6-9.6,9.6c-5.3,0-9.6-4.3-9.6-9.6v-48c0-10.3,4-19.9,11.2-27.1   c7.3-7.3,16.9-11.2,27.1-11.2h38.4c10.2,0,19.9,4,27.1,11.2c7.3,7.2,11.2,16.9,11.2,27.1v76.8C461.6,199,457.3,203.3,452,203.3   L452,203.3z M452,203.3" />
+                    <path class="c1" d="M308,211.6V202c0-5.3,4.3-9.6,9.6-9.6h172.8c5.3,0,9.6,4.3,9.6,9.6v153.6c0,5.3-4.3,9.6-9.6,9.6l0,0   h-131V346h121.4V211.6H327.2H308z" />
+                    <path class="c1" d="M327.2,202.1v29.2c0,5.3-4.3,9.6-9.6,9.6c-5.3,0-9.6-4.3-9.6-9.6v-29.2" />
+                    <path class="c1" d="M381.5,365.2h-29.2c-5.3,0-9.6-4.3-9.6-9.6c0-5.3,4.3-9.6,9.6-9.6h29.2" />
+                  </g>
+                </svg>
+              </div>
+              <span id="locLogin">
+                <b>Willkommen auf unserer Online Buchungsseite</b><br>Bitte melden Sie sich mit Ihren Zugangsdaten an, die Sie bei der erstmaligen Registrierung erhalten haben. 
+              </span>
+              <div class="float-container">
+                <label class="label-float-container" for="u">
+                  <span id="locLoginID">
+                    E-Mail Adresse
+                  </span>
+                </label>
+                <input name="u" type="text" id="u" class="input-float-container" data-placeholder="" autocomplete="new-password" />
+              </div>
+              <div id="divPassword" class="float-container">
+                <label id="lblPassword" class="label-float-container" for="password">
+                  <span>
+                    Passwort
+                  </span>
+                </label>
+                <input name="password" type="password" id="password" class="input-float-container" data-placeholder="" autocomplete="new-password" />
+              </div>
+              <button id="cmdLogin" class="btn btn-orange margin10Left0" onclick="return login(0)">Login</button>
+              <span style="font-size: smaller" class="link" id="divForgotPW">
+                <a href="#" onclick="return showRestPW(0)">
+                  Passwort vergessen?
+                </a>
+              </span>
+              <div id="divLoginFailed" class="colorRed">
+                Login fehlgeschlagen.
+              </div>
+              <div id="divPWReset" style="display: none">
+                Bitte geben Sie Ihre E-Mail Adresse ein und klicken Sie danach auf die Schaltfläche 'Passwort zurücksetzen'. Sie erhalten umgehend ein temporäres Passwort via E-Mail zugesendet.
+                <div class="float-container">
+                  <label class="label-float-container" for="emReset">
+                    E-Mail Adresse
+                  </label>
+                  <input name="emReset" type="text" id="emReset" class="input-float-container" data-placeholder="" autocomplete="new-password" />
+                </div>
+                <button id="cmdResetPW" class="btn btn-orange margin10" onclick="return resetpw(0)">
+                  Passwort zurücksetzen
+                </button>
+                <div id="divPWResetMsg">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="divRegInfo" class="p0COverlay">
+            <div class="iconLogin centered">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="5em" height="3.125em" viewBox="0 0 500 365.2" style="enable-background: new 0 0 500 365.2;" xml:space="preserve">
+                <path class="c3" d="M183.1,176l18.2-6.1l9.6,28.8l-18.2,6.1L183.1,176z M183.1,176" />
+                <rect class="c3" x="153.7" y="317.1" width="1.2em" height="1.2em" />
+                <path class="c3" d="M163.4,192.2c-42.4,0-76.9-47.4-76.9-105.7v-9.6C86.5,34.5,121,0,163.4,0c42.4,0,76.9,34.5,76.9,76.9  v9.6C240.2,144.8,205.7,192.2,163.4,192.2L163.4,192.2z M163.4,19.2c-31.8,0-57.7,25.9-57.7,57.7v9.6c0,47.7,25.9,86.5,57.7,86.5  c31.8,0,57.7-38.8,57.7-86.5v-9.6C221,45.1,195.2,19.2,163.4,19.2L163.4,19.2z M163.4,19.2" />
+                <path class="c3" d="M211.4,288.3c-1.2,0-2.4-0.2-3.6-0.7l-44.5-17.8l-44.5,17.8c-2.7,1.1-5.8,0.9-8.3-0.6  c-2.5-1.4-4.3-3.9-4.8-6.8l-9.6-57.7c-0.5-3.1,0.5-6.2,2.7-8.4l19.2-19.2c3.4-3.4,8.7-3.8,12.6-0.9l32.7,24.5l32.7-24.5  c3.8-2.9,9.2-2.5,12.6,0.9l19.2,19.2c2.2,2.2,3.2,5.3,2.7,8.4l-9.6,57.7c-0.5,2.9-2.2,5.4-4.8,6.8  C214.7,287.9,213,288.3,211.4,288.3L211.4,288.3z M163.4,249.8c1.2,0,2.4,0.2,3.6,0.7l37,14.8l6.8-41l-9.8-9.8l-31.8,23.8  c-3.4,2.6-8.1,2.6-11.5,0l-31.8-23.8l-9.8,9.8l6.8,41l37-14.8C160.9,250.1,162.1,249.8,163.4,249.8L163.4,249.8z M163.4,249.8" />
+                <path class="c3" d="M19.2,365.2H0v-57.7c0-27.8,16.4-52.6,43.7-66.3l57.7-28.8l8.6,17.2l-57.7,28.8  c-20.7,10.4-33.1,28.7-33.1,49.1V365.2z M19.2,365.2" />
+                <path class="c3" d="M326.7,365.2h-19.2v-57.7c0-20.4-12.4-38.7-33.1-49.1l-57.7-28.8l8.6-17.2l57.7,28.8  c27.4,13.7,43.7,38.5,43.7,66.2V365.2z M326.7,365.2" />
+                <path class="c3" d="M192.2,86.5H173c-14.5,0-27.8-5.2-38.4-14.7c-10.6,9.6-23.9,14.7-38.4,14.7c-5.3,0-9.6-4.3-9.6-9.6  c0-5.3,4.3-9.6,9.6-9.6c12.1,0,23.1-5.5,30.8-15.5c3.6-4.7,11.5-4.7,15.2,0c7.8,10,18.7,15.5,30.8,15.5h19.2c5.3,0,9.6,4.3,9.6,9.6  C201.8,82.2,197.5,86.5,192.2,86.5L192.2,86.5z M192.2,86.5" />
+                <rect class="c3" x="57.7" y="317.1" width="1.2em" height="3em" />
+                <rect class="c3" x="249.8" y="317.1" width="1.2em" height="3em" />
+                <path class="c1" d="M452,203.3" />
+                <path class="c1" d="M308,211.6V202c0-5.3,4.3-9.6,9.6-9.6h172.8c5.3,0,9.6,4.3,9.6,9.6v153.6c0,5.3-4.3,9.6-9.6,9.6l0,0  h-131V346h121.4V211.6H327.2H308z" />
+                <path class="c1" d="M327.2,202.1v29.2c0,5.3-4.3,9.6-9.6,9.6c-5.3,0-9.6-4.3-9.6-9.6v-29.2" />
+                <path class="c1" d="M381.5,365.2h-29.2c-5.3,0-9.6-4.3-9.6-9.6c0-5.3,4.3-9.6,9.6-9.6h29.2" />
+                <g>
+                  <path class="c1" d="M363,269.4c1.5-1.5,3.6-2.4,5.9-2.4l70.3,0c4.6,0,8.3,3.7,8.3,8.3c0,4.6-3.7,8.3-8.3,8.3h-70.3   c-4.6,0-8.3-3.7-8.3-8.3C360.6,273,361.5,270.9,363,269.4L363,269.4z M363,269.4" />
+                  <path class="c1" d="M398.2,234.3c1.5-1.5,3.6-2.4,5.9-2.4c4.6,0,8.3,3.7,8.3,8.3v70.3c0,4.6-3.7,8.3-8.3,8.3   c-4.6,0-8.3-3.7-8.3-8.3l0-70.3C395.7,237.8,396.7,235.8,398.2,234.3L398.2,234.3z M398.2,234.3" />
+                </g>
+              </svg>
+            </div>
+            <b>Sie haben noch kein Konto?</b><br> Klicken Sie bitte auf „Zugang anfordern“. Nach erfolgreicher Eingabe Ihrer Kontaktdaten erhalten Sie Ihre Zugangsdaten.
+            <button id="cmdRequestAccess" class="btn btn-reg marginTop20" onclick="return requestAccess()">
+              Zugang anfordern
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="main" class="divMain">
+        <div id="loader" class="modal">
+          <div class="center">
+            <div class="lds-roller">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div id="p1">
+          <div class="p1C">
+            <div id="servicesError" class="inputerror">
+            </div>
+            <div id="services">
+            </div>
+          </div>
+        </div>
+        <div id="p2" class="hide">
+          <div class="p2C">
+            <div id="calSel">
+              <div id="locCalendarSelection" class="pageHeader">
+                Mitarbeiter auswählen
+              </div>
+              <div id="calSelOverlay">
+              </div>
+            </div>
+
+            <div id="divDateTime" class="p2divDateTime">
+              <div id="divTimeZone" class="selTimeZone clear">
+                <select id="timezones" onchange="timezoneSelected()">
+                  <option value="Dateline Standard Time">(GMT-12:00) International Date Line West</option>
+                  <option value="Samoa Standard Time">(GMT-11:00) Midway Island, Samoa</option>
+                  <option value="Hawaiian Standard Time">(GMT-10:00) Hawaii</option>
+                  <option value="Alaskan Standard Time">(GMT-09:00) Alaska</option>
+                  <option value="Pacific Standard Time">(GMT-08:00) Pacific Time (US & Canada)</option>
+                  <option value="Mountain Standard Time">(GMT-07:00) Mountain Time (US & Canada)</option>
+                  <option value="Central America Standard Time">(GMT-06:00) Central America</option>
+                  <option value="Central Standard Time">(GMT-06:00) Central Time (US & Canada)</option>
+                  <option value="Eastern Standard Time">(GMT-05:00) Eastern Time (US & Canada)</option>
+                  <option value="Atlantic Standard Time">(GMT-04:00) Atlantic Time (Canada)</option>
+                  <option value="Newfoundland Standard Time">(GMT-03:30) Newfoundland</option>
+                  <option value="Greenland Standard Time">(GMT-03:00) Greenland</option>
+                  <option value="Mid-Atlantic Standard Time">(GMT-02:00) Mid-Atlantic</option>
+                  <option value="Azores Standard Time">(GMT-01:00) Azores</option>
+                  <option value="GMT Standard Time">(GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+                  <option value="W. Europe Standard Time">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna </option>
+                  <option value="FLE Standard Time">(GMT+02:00) Helsinki, Kyiv, Minsk, Riga, Sofia, Tallinn, Vilnius</option>
+                  <option value="Russian Standard Time">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                  <option value="Arabian Standard Time">(GMT+04:00) Abu Dhabi, Muscat</option>
+                  <option value="Pakistan Standard Time">(GMT+05:00) Islamabad, Karachi</option>
+                  <option value="India Standard Time">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                  <option value="N. Central Asia Standard Time">(GMT+06:00) Almaty, Novosibirsk</option>
+                  <option value="SE Asia Standard Time">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                  <option value="W. Australia Standard Time">(GMT+08:00) Perth</option>
+                  <option value="Tokyo Standard Time">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                  <option value="Korea Standard Time">(GMT+09:00) Seoul</option>
+                  <option value="E. Australia Standard Time">(GMT+10:00) Brisbane</option>
+                  <option value="Central Pacific Standard Time">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+                  <option value="New Zealand Standard Time">(GMT+12:00) Auckland, Wellington</option>
+                </select>
+              </div>
+              <div id="locPage2Info" class="pageHeader">
+                Tag & Uhrzeit wählen
+              </div>
+              <div class="p2DateTime">
+                <div id="divDP" class="p2Cal">
+                </div>
+                <div id="divSlotsList">
+                </div>
+                <div id="divSlotListError" class="hide">
+                  Bitte wählen Sie einen Termin!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="p3" class="hide">
+          <div class="p3C">
+            <div id="clientAccount">
+              <div class="pageHeader">
+                Kundenkonto
+              </div>
+              <div class="divClientAccount">
+                <div id="clientLogin" class="clientAccountLogin">
+                  <div class="clientLogin" id="divLoginData">
+                    <div class="iconClientLogin">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="2.5em" height="2.5em" viewBox="0 0 500 365.2" style="enable-background: new 0 0 500 365.2;" xml:space="preserve">
+                        <g>
+                          <path class="c2" d="M183.1,176l18.2-6.1l9.6,28.8l-18.2,6.1L183.1,176z M183.1,176" />
+                          <rect class="c2" x="153.7" y="317.1" width="1.2em" height="1.2em" />
+                          <path class="c2" d="M163.4,192.2c-42.4,0-76.9-47.4-76.9-105.7v-9.6C86.5,34.5,121,0,163.4,0   c42.4,0,76.9,34.5,76.9,76.9v9.6C240.2,144.8,205.7,192.2,163.4,192.2L163.4,192.2z M163.4,19.2c-31.8,0-57.7,25.9-57.7,57.7v9.6   c0,47.7,25.9,86.5,57.7,86.5c31.8,0,57.7-38.8,57.7-86.5v-9.6C221,45.1,195.2,19.2,163.4,19.2L163.4,19.2z M163.4,19.2" />
+                          <path class="c2" d="M211.4,288.3c-1.2,0-2.4-0.2-3.6-0.7l-44.5-17.8l-44.5,17.8c-2.7,1.1-5.8,0.9-8.3-0.6   c-2.5-1.4-4.3-3.9-4.8-6.8l-9.6-57.7c-0.5-3.1,0.5-6.2,2.7-8.4l19.2-19.2c3.4-3.4,8.7-3.8,12.6-0.9l32.7,24.5l32.7-24.5   c3.8-2.9,9.2-2.5,12.6,0.9l19.2,19.2c2.2,2.2,3.2,5.3,2.7,8.4l-9.6,57.7c-0.5,2.9-2.2,5.4-4.8,6.8   C214.7,287.9,213,288.3,211.4,288.3L211.4,288.3z M163.4,249.8c1.2,0,2.4,0.2,3.6,0.7l37,14.8l6.8-41l-9.8-9.8l-31.8,23.8   c-3.4,2.6-8.1,2.6-11.5,0l-31.8-23.8l-9.8,9.8l6.8,41l37-14.8C160.9,250.1,162.1,249.8,163.4,249.8L163.4,249.8z M163.4,249.8" />
+                          <path class="c2" d="M19.2,365.2H0v-57.7c0-27.8,16.4-52.6,43.7-66.3l57.7-28.8l8.6,17.2l-57.7,28.8   c-20.7,10.4-33.1,28.7-33.1,49.1V365.2z M19.2,365.2" />
+                          <path class="c2" d="M326.7,365.2h-19.2v-57.7c0-20.4-12.4-38.7-33.1-49.1l-57.7-28.8l8.6-17.2l57.7,28.8   c27.4,13.7,43.7,38.5,43.7,66.2V365.2z M326.7,365.2" />
+                          <path class="c2" d="M192.2,86.5H173c-14.5,0-27.8-5.2-38.4-14.7c-10.6,9.6-23.9,14.7-38.4,14.7c-5.3,0-9.6-4.3-9.6-9.6   c0-5.3,4.3-9.6,9.6-9.6c12.1,0,23.1-5.5,30.8-15.5c3.6-4.7,11.5-4.7,15.2,0c7.8,10,18.7,15.5,30.8,15.5h19.2c5.3,0,9.6,4.3,9.6,9.6   C201.8,82.2,197.5,86.5,192.2,86.5L192.2,86.5z M192.2,86.5" />
+                          <rect class="c2" x="57.7" y="317.1" width="1.2em" height="3em" />
+                          <rect class="c2" x="249.8" y="317.1" width="1.2em" height="3em" />
+                          <path class="c1" d="M404,289.7c-15.9,0-28.8-12.9-28.8-28.8c0-15.9,12.9-28.8,28.8-28.8c15.9,0,28.8,12.9,28.8,28.8   C432.8,276.7,419.9,289.7,404,289.7L404,289.7z M404,251.3c-5.3,0-9.6,4.3-9.6,9.6c0,5.3,4.3,9.6,9.6,9.6c5.3,0,9.6-4.3,9.6-9.6   C413.6,255.6,409.3,251.3,404,251.3L404,251.3z M404,251.3" />
+                          <path class="c1" d="M404,318.5c-5.3,0-9.6-4.3-9.6-9.6v-28.8c0-5.3,4.3-9.6,9.6-9.6c5.3,0,9.6,4.3,9.6,9.6v28.8   C413.6,314.2,409.3,318.5,404,318.5L404,318.5z M404,318.5" />
+                          <path class="c1" d="M452,203.3c-5.3,0-9.6-4.3-9.6-9.6v-76.8c0-5.1-2-9.9-5.6-13.6c-3.6-3.6-8.4-5.6-13.6-5.6h-38.4   c-5.1,0-9.9,2-13.6,5.6c-3.6,3.6-5.6,8.4-5.6,13.6v48c0,5.3-4.3,9.6-9.6,9.6c-5.3,0-9.6-4.3-9.6-9.6v-48c0-10.3,4-19.9,11.2-27.1   c7.3-7.3,16.9-11.2,27.1-11.2h38.4c10.2,0,19.9,4,27.1,11.2c7.3,7.2,11.2,16.9,11.2,27.1v76.8C461.6,199,457.3,203.3,452,203.3   L452,203.3z M452,203.3" />
+                          <path class="c1" d="M308,211.6V202c0-5.3,4.3-9.6,9.6-9.6h172.8c5.3,0,9.6,4.3,9.6,9.6v153.6c0,5.3-4.3,9.6-9.6,9.6l0,0   h-131V346h121.4V211.6H327.2H308z" />
+                          <path class="c1" d="M327.2,202.1v29.2c0,5.3-4.3,9.6-9.6,9.6c-5.3,0-9.6-4.3-9.6-9.6v-29.2" />
+                          <path class="c1" d="M381.5,365.2h-29.2c-5.3,0-9.6-4.3-9.6-9.6c0-5.3,4.3-9.6,9.6-9.6h29.2" />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="float-container">
+                      <label class="label-float-container" for="emailLogin">
+                        <span>
+                          E-Mail
+                        </span>
+                      </label>
+                      <input name="emailLogin" type="text" id="emailLogin" class="input-float-container" data-placeholder="" />
+                    </div>
+                    <div class="float-container">
+                      <label class="label-float-container" for="passwordLogin">
+                        <span>
+                          Passwort
+                        </span>
+                      </label>
+                      <input name="passwordLogin" type="password" id="passwordLogin" class="input-float-container" data-placeholder="" autocomplete="new-password" />
+                    </div>
+                    <button class="btn btn-orange margin10" onclick="return login(3)">Login</button>
+                    <span class="fontSmaller">
+                      <a href="#" onclick="return showRestPW(3)">
+                        Passwort vergessen?
+                      </a>
+                    </span>
+                    <div id="divLoginFailedLogin" class="colorRed">
+                      Login fehlgeschlagen.
+                    </div>
+                    <div id="divPWResetLogin" style="display: none">
+                      Bitte geben Sie Ihre E-Mail Adresse ein und klicken Sie danach auf die Schaltfläche 'Passwort zurücksetzen'. Sie erhalten umgehend ein temporäres Passwort via E-Mail zugesendet.
+                      <div class="float-container">
+                        <label class="label-float-container" for="emResetLogin">
+                          E-Mail Adresse
+                        </label>
+                        <input name="emResetLogin" type="text" id="emResetLogin" class="input-float-container" data-placeholder="" autocomplete="new-password" />
+                      </div>
+                      <button class="btn btn-orange margin10" onclick="return resetpw(3)">
+                        Passwort zurücksetzen
+                      </button>
+                      <div id="divPWResetMsgLogin">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="marginTop20">
+                    <label data-info="" class="float-containerChk chkBox margin10Left0">
+                      Neues Kundenkonto erstellen (optional)
+
+                      <input id="chkCreateAccount" type="checkbox" onclick="return toogleClientReg()" /><span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div id="divClientReg" class="clientAccountRegister">
+                  <div class="iconClientLogin">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="2.5em" height="2.5em" viewBox="0 0 500 365.2" style="enable-background: new 0 0 500 365.2;" xml:space="preserve">
+                      <path class="c2" d="M183.1,176l18.2-6.1l9.6,28.8l-18.2,6.1L183.1,176z M183.1,176" />
+                      <rect x="153.7" y="317.1" class="c2" width="1.2em" height="1.2em" />
+                      <path class="c2" d="M163.4,192.2c-42.4,0-76.9-47.4-76.9-105.7v-9.6C86.5,34.5,121,0,163.4,0c42.4,0,76.9,34.5,76.9,76.9  v9.6C240.2,144.8,205.7,192.2,163.4,192.2L163.4,192.2z M163.4,19.2c-31.8,0-57.7,25.9-57.7,57.7v9.6c0,47.7,25.9,86.5,57.7,86.5  c31.8,0,57.7-38.8,57.7-86.5v-9.6C221,45.1,195.2,19.2,163.4,19.2L163.4,19.2z M163.4,19.2" />
+                      <path class="c2" d="M211.4,288.3c-1.2,0-2.4-0.2-3.6-0.7l-44.5-17.8l-44.5,17.8c-2.7,1.1-5.8,0.9-8.3-0.6  c-2.5-1.4-4.3-3.9-4.8-6.8l-9.6-57.7c-0.5-3.1,0.5-6.2,2.7-8.4l19.2-19.2c3.4-3.4,8.7-3.8,12.6-0.9l32.7,24.5l32.7-24.5  c3.8-2.9,9.2-2.5,12.6,0.9l19.2,19.2c2.2,2.2,3.2,5.3,2.7,8.4l-9.6,57.7c-0.5,2.9-2.2,5.4-4.8,6.8  C214.7,287.9,213,288.3,211.4,288.3L211.4,288.3z M163.4,249.8c1.2,0,2.4,0.2,3.6,0.7l37,14.8l6.8-41l-9.8-9.8l-31.8,23.8  c-3.4,2.6-8.1,2.6-11.5,0l-31.8-23.8l-9.8,9.8l6.8,41l37-14.8C160.9,250.1,162.1,249.8,163.4,249.8L163.4,249.8z M163.4,249.8" />
+                      <path class="c2" d="M19.2,365.2H0v-57.7c0-27.8,16.4-52.6,43.7-66.3l57.7-28.8l8.6,17.2l-57.7,28.8  c-20.7,10.4-33.1,28.7-33.1,49.1V365.2z M19.2,365.2" />
+                      <path class="c2" d="M326.7,365.2h-19.2v-57.7c0-20.4-12.4-38.7-33.1-49.1l-57.7-28.8l8.6-17.2l57.7,28.8  c27.4,13.7,43.7,38.5,43.7,66.2V365.2z M326.7,365.2" />
+                      <path class="c2" d="M192.2,86.5H173c-14.5,0-27.8-5.2-38.4-14.7c-10.6,9.6-23.9,14.7-38.4,14.7c-5.3,0-9.6-4.3-9.6-9.6  c0-5.3,4.3-9.6,9.6-9.6c12.1,0,23.1-5.5,30.8-15.5c3.6-4.7,11.5-4.7,15.2,0c7.8,10,18.7,15.5,30.8,15.5h19.2c5.3,0,9.6,4.3,9.6,9.6  C201.8,82.2,197.5,86.5,192.2,86.5L192.2,86.5z M192.2,86.5" />
+                      <rect x="57.7" y="317.1" class="c2" width="1.2em" height="3em" />
+                      <rect x="249.8" y="317.1" class="c2" width="1.2em" height="3em" />
+                      <path class="c1" d="M452,203.3" />
+                      <path class="c1" d="M308,211.6V202c0-5.3,4.3-9.6,9.6-9.6h172.8c5.3,0,9.6,4.3,9.6,9.6v153.6c0,5.3-4.3,9.6-9.6,9.6l0,0  h-131V346h121.4V211.6H327.2H308z" />
+                      <path class="c1" d="M327.2,202.1v29.2c0,5.3-4.3,9.6-9.6,9.6c-5.3,0-9.6-4.3-9.6-9.6v-29.2" />
+                      <path class="c1" d="M381.5,365.2h-29.2c-5.3,0-9.6-4.3-9.6-9.6c0-5.3,4.3-9.6,9.6-9.6h29.2" />
+                      <g>
+                        <path class="c1" d="M363,269.4c1.5-1.5,3.6-2.4,5.9-2.4l70.3,0c4.6,0,8.3,3.7,8.3,8.3c0,4.6-3.7,8.3-8.3,8.3h-70.3   c-4.6,0-8.3-3.7-8.3-8.3C360.6,273,361.5,270.9,363,269.4L363,269.4z M363,269.4" />
+                        <path class="c1" d="M398.2,234.3c1.5-1.5,3.6-2.4,5.9-2.4c4.6,0,8.3,3.7,8.3,8.3v70.3c0,4.6-3.7,8.3-8.3,8.3   c-4.6,0-8.3-3.7-8.3-8.3l0-70.3C395.7,237.8,396.7,235.8,398.2,234.3L398.2,234.3z M398.2,234.3" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="fontSmaller">
+                    Um in Zukunft schneller und bequemer einen Termin zu buchen, empfehlen wir, ein Passwort für das Kundenkonto festzulegen. Bei der nächsten Online Buchung werden die Kontaktdaten nach erfolgreichem Login automatisch geladen.
+                  </div>
+                  <div class="showFlex">
+                    <div class="float-container">
+                      <label class="label-float-container" for="cPassword">
+                        <span>
+                          Passwort
+                        </span>
+                      </label>
+                      <input name="passwordReg" type="password" id="passwordReg" class="input-float-container" data-placeholder="" autocomplete="new-password" />
+                    </div>
+                    <div class="float-container">
+                      <label class="label-float-container" for="cPasswordRepeat">
+                        <span>
+                          Passwort wiederholen
+                        </span>
+                      </label>
+                      <input name="passwordRegCheck" type="password" id="passwordRegCheck" class="input-float-container" data-placeholder="" autocomplete="new-password" />
+                    </div>
+                    <div id="divPwError" class="fontSmaller"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="divS" class="fields" style="display: none">
+              <div class="pageHeader">
+                Suche
+              </div>
+              <div class="float-container overlay" id="search">
+                <label class="label-float-container" for="txtS">
+                  Name, Vorname, E-Mail oder Telefon</label>
+                <input name="txtS" type="text" id="txtS" data-errmsg="" data-regex="" data-placeholder="" data-required="False" />
+              </div>
+              <div id="divSRes"></div>
+            </div>
+            <div id="divFieldContainer" class="fields">
+              <div class="pageHeader" id="locFieldsHeader">
+                Ihre Daten
+              </div>
+              <div id="divFields">
+              </div>
+              <div id="divUserQueries" class="overlay">
+              </div>
+              <div id="divVoucherField" class="overlay">
+                <div class="divFlex flexCentered">
+                  <div class="iconSummaryPayment paddingRight20">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="2.5em" height="2.5em" viewBox="0 0 40 40" style="enable-background: new 0 0 40 40;" xml:space="preserve">
+                      <path class="c1" d="M37.5,33.333h-35c-1.379,0-2.5-1.122-2.5-2.5V9.166c0-1.378,1.121-2.5,2.5-2.5h35  c1.379,0,2.5,1.121,2.5,2.5v21.667C40,32.211,38.879,33.333,37.5,33.333L37.5,33.333z M2.5,8.333c-0.459,0-0.833,0.374-0.833,0.833  v21.667c0,0.46,0.374,0.833,0.833,0.833h35c0.46,0,0.833-0.373,0.833-0.833V9.166c0-0.459-0.373-0.833-0.833-0.833H2.5z M2.5,8.333" />
+                      <rect x="3.334" y="28.333" class="c1" width="33.333" height="1.667" />
+                      <g>
+                        <g>
+                          <path class="c2" d="M11.82,24.704h-3.64c-1.505,0-2.73-1.225-2.73-2.73c0-0.502,0.406-0.91,0.91-0.91    c0.503,0,0.91,0.407,0.91,0.91c0,0.501,0.408,0.91,0.911,0.91h3.64c0.502,0,0.911-0.408,0.911-0.91v-1.82    c0-0.501-0.408-0.91-0.911-0.91h-3.64c-1.505,0-2.73-1.225-2.73-2.73v-1.82c0-1.505,1.225-2.73,2.73-2.73h3.64    c1.505,0,2.73,1.225,2.73,2.73c0,0.502-0.406,0.911-0.91,0.911c-0.503,0-0.91-0.408-0.91-0.911c0-0.501-0.408-0.91-0.911-0.91    h-3.64c-0.502,0-0.911,0.408-0.911,0.91v1.82c0,0.501,0.408,0.91,0.911,0.91h3.64c1.505,0,2.73,1.225,2.73,2.73v1.82    C14.55,23.478,13.325,24.704,11.82,24.704" />
+                          <path class="c2" d="M10.001,26.524c-0.503,0-0.91-0.408-0.91-0.91V11.053c0-0.502,0.406-0.91,0.91-0.91    c0.503,0,0.91,0.407,0.91,0.91v14.561C10.91,26.115,10.504,26.524,10.001,26.524" />
+                        </g>
+                        <g>
+                          <rect x="25" y="12.5" class="c2" width="1.667" height="1.666" />
+                          <rect x="21.667" y="12.5" class="c2" width="1.667" height="1.666" />
+                          <rect x="18.334" y="12.5" class="c2" width="1.667" height="1.666" />
+                          <rect x="18.334" y="15.833" class="c2" width="15" height="1.667" />
+                          <rect x="18.334" y="19.166" class="c2" width="15" height="1.667" />
+                          <rect x="18.334" y="22.5" class="c2" width="8.333" height="1.667" />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  
+
+                  <div class="float-container" id="divVoucher">
+                    <label class="label-float-container" for="txtVoucher">
+                      <div id="locEnterVoucher">
+                        Gutscheincode eingeben
+                      </div>
+                    </label>
+                    <input name="txtVoucher" type="text" id="txtVoucher" data-errmsg="" data-placeholder="" data-required="False" />
+                  </div>
+                  <span id="voucherMsg"></span>
+                  <div class="btnVoucher">
+                    <button class="btn btn-orange" onclick="return redeemVoucher();">
+                      Einlösen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="divSMSValidation" class="overlay" style="display: none">
+              <div class="divFlex flexCentered">
+                <div class="iconSummaryPayment paddingRight20">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Ebene_1" x="0px" y="0px" width="2.5em" height="2.5em" viewBox="0 0 426.8 500" style="enable-background: new 0 0 426.8 500;" xml:space="preserve">
+                    <g>
+                      <rect x="145.8" y="41.7" class="c2" width="20.8" height="20.8" />
+                      <path class="c2" d="M177.1,458.3h-41.7c-5.7,0-10.4-4.7-10.4-10.4s4.7-10.4,10.4-10.4h41.7c5.8,0,10.4,4.7,10.4,10.4   S182.8,458.3,177.1,458.3L177.1,458.3z M177.1,458.3" />
+                      <path class="c2" d="M10.4,374.9c-5.7,0-10.4-4.7-10.4-10.4V52.1C0,23.4,23.4,0,52.1,0h208.3c28.7,0,52.1,23.4,52.1,52.1   v41.7c0,5.8-4.7,10.4-10.4,10.4H20.8v260.3C20.8,370.2,16.2,374.9,10.4,374.9L10.4,374.9z M20.8,83.3h270.8V52.1   c0-17.2-14-31.2-31.2-31.2H52.1c-17.2,0-31.2,14-31.2,31.2V83.3z M20.8,83.3" />
+                      <g>
+                        <path class="c1" d="M302,374.9c-68.9,0-124.9-56-124.9-124.9c0-68.9,56-124.9,124.9-124.9c68.9,0,124.9,56,124.9,124.9    C426.8,318.9,370.8,374.9,302,374.9L302,374.9z M302,146c-57.4,0-104.1,46.7-104.1,104.1c0,57.4,46.7,104.1,104.1,104.1    c57.4,0,104.1-46.7,104.1-104.1C406,192.7,359.3,146,302,146L302,146z M302,146" />
+                        <path class="c1" d="M291.6,291.7c-2.7,0-5.3-1-7.4-3.1L253,257.4c-4.1-4.1-4.1-10.6,0-14.7c4.1-4.1,10.6-4.1,14.7,0    l23.9,23.9l44.7-44.7c4.1-4.1,10.6-4.1,14.7,0c4.1,4.1,4.1,10.6,0,14.7l-52,52C296.9,290.6,294.2,291.7,291.6,291.7L291.6,291.7z     M291.6,291.7" />
+                      </g>
+                      <path class="c2" d="M302.1,395.7H20.8v0.1H10.4c-5.7,0-10.4,4.7-10.4,10.4v41.7C0,476.6,23.4,500,52.1,500h208.3   c28.7,0,52.1-23.4,52.1-52.1v-0.1V411v-4.9C312.5,400.4,307.8,395.7,302.1,395.7z M291.7,447.9c0,17.2-14,31.2-31.2,31.2H52.1   c-17.2,0-31.2-14-31.2-31.2v-31.2h270.8v31.1h0V447.9z" />
+                      <path style="fill: #403E3E;" d="M32.7,359.3" />
+                    </g>
+                  </svg>
+                </div>
+                <div class="float-container" id="divValS1">
+                  <label class="label-float-container" for="txtValS1">
+                    Um die Buchung fortsetzen zu können, müssen Sie zuerst die Mobiltelefonnummer verifizieren.
+                  </label>
+                  <input type="text" />
+                </div>
+                <div class="btnVoucher">
+                  <button id="cmdValNumber" class="btn btn-orange" onclick="return smsValidationS1();">
+                    Verifizierung starten
+                  </button>
+                </div>
+                <div class="float-container" id="divValS2" style="display: none">
+                  <label class="label-float-container" for="txtSMSCode">
+                    Geben Sie den Code ein, den Sie soeben per SMS erhalten haben.
+                  </label>
+                  <input name="txtSMSCode" type="text" id="txtSMSCode" data-placeholder="" />
+                </div>
+                <div id="divSMSInfoMsg" class="errMsg">
+                </div>
+                <div class="btnVoucher" id="divValS3" style="display: none">
+                  <button class="btn btn-orange" onclick="return smsValidationS2();">
+                    Code überprüfen
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div id="divPaymentOptions" class="hide">
+              <div class="pageHeader paddingTopSeparator">
+                Wie möchten Sie bezahlen?
+              </div>
+              <div class="selPayment">
+                <div id="divPaymentOnline" class="payOverlay s">
+                  <div class="divFlex flexCentered">
+                    <div class="iconSummaryPayment paddingRight20">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="2.5em" height="2.5em" viewBox="0 0 53.335 40" style="enable-background: new 0 0 53.335 40;" xml:space="preserve">
+                        <g>
+                          <path class="c1" d="M38.89,27.779h-2.222c-1.838,0-3.334-1.496-3.334-3.334c0-0.614,0.497-1.111,1.112-1.111   c0.614,0,1.111,0.497,1.111,1.111c0,0.613,0.497,1.111,1.111,1.111h2.222c0.613,0,1.111-0.498,1.111-1.111v-2.222   c0-0.613-0.498-1.111-1.111-1.111h-2.222c-1.838,0-3.334-1.496-3.334-3.333v-2.223c0-1.837,1.496-3.333,3.334-3.333h2.222   c1.838,0,3.334,1.496,3.334,3.333c0,0.614-0.497,1.111-1.112,1.111c-0.614,0-1.111-0.497-1.111-1.111   c0-0.612-0.498-1.111-1.111-1.111h-2.222c-0.614,0-1.111,0.499-1.111,1.111v2.223c0,0.612,0.497,1.111,1.111,1.111h2.222   c1.838,0,3.334,1.495,3.334,3.333v2.222C42.224,26.283,40.728,27.779,38.89,27.779" />
+                          <path class="c1" d="M37.779,14.445c-0.615,0-1.111-0.498-1.111-1.111v-2.222c0-0.614,0.496-1.111,1.111-1.111   c0.614,0,1.111,0.497,1.111,1.111v2.222C38.89,13.947,38.393,14.445,37.779,14.445" />
+                          <path class="c1" d="M37.779,30c-0.615,0-1.111-0.497-1.111-1.111v-2.222c0-0.615,0.496-1.111,1.111-1.111   c0.614,0,1.111,0.496,1.111,1.111v2.222C38.89,29.503,38.393,30,37.779,30" />
+                          <path class="c1" d="M37.779,35.556c-2.987,0-5.885-0.849-8.379-2.455c-0.517-0.332-0.666-1.02-0.334-1.535   c0.333-0.517,1.021-0.665,1.536-0.333c2.135,1.375,4.617,2.101,7.177,2.101c7.352,0,13.333-5.981,13.333-13.334   c0-7.352-5.981-13.333-13.333-13.333c-2.56,0-5.042,0.726-7.177,2.102c-0.514,0.333-1.203,0.184-1.536-0.332   c-0.332-0.516-0.183-1.204,0.334-1.536c2.493-1.607,5.392-2.457,8.379-2.457c8.577,0,15.556,6.978,15.556,15.556   S46.356,35.556,37.779,35.556" />
+                        </g>
+                        <rect x="45.556" y="18.889" class="c1" width="2.223" height="2.222" />
+                        <g>
+                          <path class="c2" d="M15.556,6.667C8.204,6.667,2.223,12.648,2.223,20c0,7.353,5.981,13.334,13.333,13.334   S28.889,27.353,28.889,20C28.889,12.648,22.908,6.667,15.556,6.667 M15.556,35.556C6.979,35.556,0,28.578,0,20   S6.979,4.444,15.556,4.444c8.578,0,15.556,6.978,15.556,15.556S24.134,35.556,15.556,35.556" />
+                          <path class="c2" d="M15.556,6.667C11.943,6.667,8.89,12.772,8.89,20s3.053,13.334,6.666,13.334S22.223,27.228,22.223,20   S19.169,6.667,15.556,6.667 M15.556,35.556c-4.984,0-8.889-6.833-8.889-15.556s3.905-15.556,8.889-15.556   c4.985,0,8.889,6.833,8.889,15.556S20.541,35.556,15.556,35.556" />
+                          <path class="c2" d="M15.556,35.556c-0.613,0-1.111-0.497-1.111-1.111V5.556c0-0.613,0.498-1.112,1.111-1.112   c0.613,0,1.111,0.499,1.111,1.112v28.889C16.667,35.059,16.169,35.556,15.556,35.556" />
+                          <path class="c2" d="M30.001,21.111H1.112c-0.614,0-1.111-0.498-1.111-1.111c0-0.613,0.497-1.111,1.111-1.111h28.889   c0.615,0,1.111,0.498,1.111,1.111C31.112,20.613,30.616,21.111,30.001,21.111" />
+                          <path class="c2" d="M28.889,2.222h-10c-0.614,0-1.111-0.497-1.111-1.111C17.778,0.498,18.275,0,18.889,0h10   C29.503,0,30,0.498,30,1.111C30,1.725,29.503,2.222,28.889,2.222" />
+                        </g>
+                        <rect x="32.223" y="0.001" class="c2" width="2.222" height="2.221" />
+                        <g>
+                          <path class="c2" d="M34.445,40h-10c-0.613,0-1.111-0.496-1.111-1.111s0.498-1.111,1.111-1.111h10   c0.614,0,1.111,0.496,1.111,1.111S35.059,40,34.445,40" />
+                        </g>
+                        <rect x="18.889" y="37.778" class="c2" width="2.222" height="2.222" />
+                      </svg>
+                    </div>
+                    <div class="TextSummary">
+                      <div id="locSelOnline">
+                        Online Zahlung
+                      </div>
+                    </div>
+                  </div>
+                  <span class="imgRBToggle imgRBChecked" id="spanDivPaymentOnline">
+                    <span class="imgRB">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="0.66875em" height="0.4975em" viewBox="0 0 10.693 7.961" style="enable-background: new 0 0 10.693 7.961;" xml:space="preserve">
+                        <g>
+                          <path class="c1Text" d="M9.383,0.226l-5.911,5.88L1.315,3.937C1.013,3.635,0.529,3.635,0.227,3.93   c-0.302,0.296-0.302,0.786-0.006,1.088l2.697,2.717c0.151,0.151,0.346,0.226,0.547,0.226c0.195,0,0.39-0.075,0.541-0.226   l6.459-6.421c0.302-0.302,0.302-0.786,0.006-1.088C10.169-0.075,9.685-0.075,9.383,0.226"></path>
+                        </g></svg></span>
+                  </span>
+                </div>
+
+                <div id="divPaymentOnTheSpot" class="payOverlay s">
+                  <div class="divFlex flexCentered">
+                    <div class="iconSummaryPayment paddingRight20">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="2.5em" height="2.187em" viewBox="0 0 40 40" style="enable-background: new 0 0 40 40;" xml:space="preserve">
+                        <rect x="16.25" y="23.267" transform="matrix(0.9487 -0.3162 0.3162 0.9487 -6.8976 6.6637)" class="c2" width="1.667" height="2.635" />
+                        <rect x="13.333" y="35.833" class="c2" width="1.667" height="1.667" />
+                        <g>
+                          <path class="c2" d="M14.167,10c-2.757,0-5,2.243-5,5v0.833c0,4.135,2.243,7.5,5,7.5c2.758,0,5-3.365,5-7.5V15   C19.167,12.243,16.925,10,14.167,10 M14.167,25C10.491,25,7.5,20.887,7.5,15.833V15c0-3.676,2.991-6.667,6.667-6.667   s6.667,2.991,6.667,6.667v0.833C20.834,20.887,17.843,25,14.167,25" />
+                          <path class="c2" d="M14.167,30.001c0.105,0,0.21,0.019,0.31,0.059l3.205,1.282l0.593-3.557l-0.853-0.851L14.667,29   c-0.295,0.223-0.704,0.223-1,0l-2.755-2.066l-0.852,0.851l0.592,3.557l3.205-1.282C13.957,30.02,14.062,30.001,14.167,30.001    M18.334,33.333c-0.105,0-0.21-0.019-0.31-0.059l-3.857-1.544l-3.857,1.544c-0.234,0.093-0.499,0.076-0.718-0.049   c-0.22-0.123-0.371-0.34-0.413-0.589l-0.833-5c-0.045-0.265,0.042-0.536,0.232-0.726l1.667-1.666   c0.293-0.294,0.757-0.329,1.089-0.078l2.833,2.125l2.834-2.125c0.331-0.251,0.796-0.216,1.089,0.078l1.666,1.666   c0.191,0.191,0.278,0.461,0.233,0.726l-0.834,5c-0.041,0.249-0.193,0.466-0.413,0.589C18.616,33.298,18.476,33.333,18.334,33.333" />
+                          <path class="c2" d="M1.667,40H0v-5c0-2.411,1.419-4.558,3.794-5.746l5-2.5l0.746,1.491l-5,2.5   c-1.799,0.9-2.873,2.49-2.873,4.255V40z" />
+                          <path class="c2" d="M28.334,40h-1.667v-5c0-1.765-1.074-3.355-2.872-4.254l-5-2.5l0.746-1.491l5,2.5   c2.375,1.188,3.793,3.335,3.793,5.745V40z" />
+                          <path class="c2" d="M16.667,15.833H15c-1.257,0-2.413-0.448-3.333-1.278c-0.92,0.83-2.076,1.278-3.334,1.278   C7.873,15.833,7.5,15.46,7.5,15c0-0.46,0.373-0.834,0.833-0.834c1.054,0,2.003-0.477,2.676-1.344c0.315-0.406,1.001-0.406,1.316,0   c0.673,0.867,1.622,1.344,2.675,1.344h1.667c0.46,0,0.833,0.374,0.833,0.834C17.5,15.46,17.127,15.833,16.667,15.833" />
+                        </g>
+                        <rect x="5" y="35.833" class="c2" width="1.666" height="4.167" />
+                        <rect x="21.667" y="35.833" class="c2" width="1.667" height="4.167" />
+                        <g>
+                          <path class="c1" d="M27.5,25c-2.092,0-4.253-0.615-6.253-1.78c-0.398-0.232-0.532-0.742-0.3-1.139   c0.23-0.398,0.741-0.533,1.139-0.301c1.77,1.031,3.591,1.553,5.414,1.553c5.973,0,10.833-4.86,10.833-10.833   S33.473,1.667,27.5,1.667c-3.851,0-7.32,2.025-9.279,5.416c-0.229,0.4-0.74,0.535-1.138,0.306   c-0.399-0.231-0.535-0.741-0.305-1.139C19.038,2.337,23.047,0,27.5,0C34.393,0,40,5.608,40,12.5C40,19.393,34.393,25,27.5,25" />
+                          <path class="c1" d="M29.167,18.333h-3.333c-1.378,0-2.5-1.122-2.5-2.5c0-0.46,0.372-0.833,0.833-0.833   c0.461,0,0.833,0.373,0.833,0.833c0,0.459,0.374,0.833,0.834,0.833h3.333c0.46,0,0.834-0.374,0.834-0.833v-1.667   c0-0.459-0.374-0.833-0.834-0.833h-3.333c-1.378,0-2.5-1.122-2.5-2.5V9.167c0-1.378,1.122-2.5,2.5-2.5h3.333   c1.378,0,2.5,1.122,2.5,2.5c0,0.46-0.372,0.834-0.833,0.834c-0.461,0-0.833-0.374-0.833-0.834c0-0.459-0.374-0.833-0.834-0.833   h-3.333C25.374,8.333,25,8.708,25,9.167v1.667c0,0.459,0.374,0.833,0.834,0.833h3.333c1.378,0,2.5,1.122,2.5,2.5v1.667   C31.667,17.212,30.545,18.333,29.167,18.333" />
+                          <path class="c1" d="M27.5,20c-0.461,0-0.833-0.374-0.833-0.833V5.833C26.667,5.373,27.039,5,27.5,5   c0.461,0,0.833,0.373,0.833,0.833v13.334C28.333,19.626,27.961,20,27.5,20" />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="TextSummary">
+                      <div id="locSelCash">
+                        Zahlung vor Ort
+                      </div>
+                    </div>
+                  </div>
+                  <span class="imgRBToggle imgRBChecked" id="spanDivPaymentOnTheSpot">
+                    <span class="imgRB">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="0.66875em" height="0.4975em" viewBox="0 0 10.693 7.961" style="enable-background: new 0 0 10.693 7.961;" xml:space="preserve">
+                        <g>
+                          <path class="c1Text" d="M9.383,0.226l-5.911,5.88L1.315,3.937C1.013,3.635,0.529,3.635,0.227,3.93   c-0.302,0.296-0.302,0.786-0.006,1.088l2.697,2.717c0.151,0.151,0.346,0.226,0.547,0.226c0.195,0,0.39-0.075,0.541-0.226   l6.459-6.421c0.302-0.302,0.302-0.786,0.006-1.088C10.169-0.075,9.685-0.075,9.383,0.226"></path>
+                        </g>
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+
+                <div id="divPaymentInvoice" class="payOverlay s marginRight0">
+                  <div class="divFlex flexCentered">
+                    <div class="iconSummaryPayment paddingRight20">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="2.5em" height="2.187em" viewBox="0 0 500 500" style="enable-background: new 0 0 500 500;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path class="c2" d="M456.5,76.1c-24,0-43.5,19.5-43.5,43.5v337c0,12-9.7,21.7-21.7,21.7c-5.8,0-11.3-2.3-15.4-6.4    c-4.1-4.1-6.4-9.6-6.4-15.4V97.8h21.7c6,0,10.9-4.9,10.9-10.9c0-6-4.9-10.9-10.9-10.9h-21.7V32.6c0-2.9-1.1-5.7-3.2-7.7L344.6,3.2    c-4.2-4.3-11.1-4.3-15.4,0l-14.1,14.1L301.2,3.2c-4.3-4.3-11.1-4.3-15.4,0l-14.1,14.1L257.7,3.2c-4.3-4.3-11.1-4.3-15.4,0    l-14.1,14.1L214.2,3.2c-4.3-4.3-11.1-4.3-15.4,0l-14.1,14.1L170.7,3.2c-4.3-4.3-11.1-4.3-15.4,0l-14.1,14.1l-14-14.1    c-4.3-4.3-11.1-4.3-15.4,0L97.8,17.2l-14-14.1c-4.3-4.3-11.1-4.3-15.4,0L54.4,17.2L40.3,3.2c-4.3-4.3-11.1-4.3-15.4,0L3.2,24.9    c-2,2-3.2,4.8-3.2,7.7v423.9c0,11.6,4.5,22.5,12.7,30.7c8.2,8.2,19.1,12.7,30.7,12.7h347.8c24,0,43.5-19.5,43.5-43.5v-337    c0-12,9.7-21.7,21.7-21.7s21.7,9.7,21.7,21.7v358.7h-21.7c-6,0-10.9,4.9-10.9,10.9c0,6,4.9,10.9,10.9,10.9h32.6    c6,0,10.9-4.9,10.9-10.9V119.6C500,95.6,480.5,76.1,456.5,76.1z M43.5,478.3c-5.8,0-11.3-2.3-15.4-6.4c-4.1-4.1-6.4-9.6-6.4-15.4    V37.1l10.9-10.9l14,14.1c4.1,4.1,11.3,4.1,15.4,0l14.1-14.1l14,14.1c4.1,4.1,11.3,4.1,15.4,0l14.1-14.1l14.1,14.1    c4.1,4.1,11.3,4.1,15.4,0L163,26.2l14.1,14.1c4.1,4.1,11.3,4.1,15.4,0l14.1-14.1l14.1,14.1c4.1,4.1,11.3,4.1,15.4,0L250,26.2    l14.1,14.1c4.1,4.1,11.3,4.1,15.4,0l14.1-14.1l14.1,14.1c4.1,4.1,11.3,4.1,15.4,0L337,26.2l10.9,10.9v419.4c0,7.8,2,15.2,5.8,21.7    H43.5z" />
+                            <rect x="206.5" y="163" class="c2" width="65.2" height="21.7" />
+                            <rect x="173.9" y="206.5" class="c2" width="130.4" height="21.7" />
+                            <rect x="173.9" y="250" class="c2" width="130.4" height="21.7" />
+                            <rect x="173.9" y="293.5" class="c2" width="130.4" height="21.7" />
+                            <rect x="173.9" y="337" class="c2" width="130.4" height="21.7" />
+                            <rect x="65.2" y="380.4" class="c2" width="87" height="21.7" />
+                            <rect x="173.9" y="380.4" class="c2" width="130.4" height="21.7" />
+                            <rect x="65.2" y="423.9" class="c2" width="21.7" height="21.7" />
+                            <rect x="108.7" y="423.9" class="c2" width="21.7" height="21.7" />
+                            <rect x="152.2" y="423.9" class="c2" width="21.7" height="21.7" />
+                            <rect x="195.7" y="423.9" class="c2" width="21.7" height="21.7" />
+                            <rect x="239.1" y="423.9" class="c2" width="21.7" height="21.7" />
+                            <rect x="282.6" y="423.9" class="c2" width="21.7" height="21.7" />
+                          </g>
+                          <g>
+                            <path class="c1" d="M293.5,76.1H76.1c-6,0-10.9,4.9-10.9,10.9v43.5c0,6,4.9,10.9,10.9,10.9c6,0,10.9-4.9,10.9-10.9    V97.8h195.6v21.7h-163c-6,0-10.9,4.9-10.9,10.9c0,6,4.9,10.9,10.9,10.9h173.9c6,0,10.9-4.9,10.9-10.9V87    C304.4,81,299.5,76.1,293.5,76.1z" />
+                            <path class="c1" d="M108.7,206.5c12,0,21.7,9.7,21.7,21.7c0,6,4.9,10.9,10.9,10.9c6,0,10.9-4.9,10.9-10.9    c0-20.2-13.9-37.3-32.6-42.1v-12.2c0-6-4.9-10.9-10.9-10.9c-6,0-10.9,4.9-10.9,10.9v12.2C79.1,191,65.2,208,65.2,228.3    c0,24,19.5,43.5,43.5,43.5c0,0,0,0,0,0s0,0,0,0h0c5.8,0,11.2,2.3,15.4,6.4c4.1,4.1,6.4,9.6,6.4,15.4c0,12-9.8,21.7-21.8,21.7    c-12,0-21.7-9.7-21.7-21.7c0-6-4.9-10.9-10.9-10.9c-6,0-10.9,4.9-10.9,10.9c0,20.2,13.9,37.3,32.6,42.1v12.2    c0,6,4.9,10.9,10.9,10.9c6,0,10.9-4.9,10.9-10.9v-12.2c18.7-4.8,32.6-21.9,32.6-42.1c0-11.6-4.5-22.5-12.7-30.7    c-8.2-8.2-19.1-12.7-30.7-12.7h0c0,0,0,0,0,0c0,0,0,0,0,0c-12,0-21.7-9.8-21.7-21.7C87,216.3,96.7,206.5,108.7,206.5z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="TextSummary">
+                      <div id="locSelInvoice">
+                        Zahlung per Rechnung
+                      </div>
+                    </div>
+                  </div>
+                  <span class="imgRBToggle imgRBChecked" id="spanDivPaymentInvoice">
+                    <span class="imgRB">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="0.66875em" height="0.4975em" viewBox="0 0 10.693 7.961" style="enable-background: new 0 0 10.693 7.961;" xml:space="preserve">
+                        <g>
+                          <path class="c1Text" d="M9.383,0.226l-5.911,5.88L1.315,3.937C1.013,3.635,0.529,3.635,0.227,3.93   c-0.302,0.296-0.302,0.786-0.006,1.088l2.697,2.717c0.151,0.151,0.346,0.226,0.547,0.226c0.195,0,0.39-0.075,0.541-0.226   l6.459-6.421c0.302-0.302,0.302-0.786,0.006-1.088C10.169-0.075,9.685-0.075,9.383,0.226"></path>
+                        </g>
+                      </svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div id="divSelPaymentMethod" style="display: none" class="inputerror">
+                Bitte wählen Sie eine Zahlungsmethode
+              </div>
+            </div>
+            <div id="divInfoMsg">
+            </div>
+          </div>
+        </div>
+
+        <div id="divPayments" class="hide">
+          <div class="pageHeader" id="divPaymentHeader">
+            Bezahlung
+          </div>
+          <div class="divSummaryText divSummaryTextPayment">
+            <div id="bookPayment" class="iconSummary">
+              <svg version="1.1" x="0px" y="0px" width="2.5em" height="2.187em" viewBox="0 0 39.607 35" style="enable-background: new 0 0 39.607 35;" xml:space="preserve">
+                <g>
+                  <path class="payment" d="M39.248,31.036C36.374,26.059,24.943,6.266,22.1,1.342C21.632,0.509,20.779,0.007,19.817,0h-0.018   c-0.953,0-1.804,0.493-2.28,1.319l-0.773,1.34c-0.214,0.369-0.087,0.843,0.283,1.056c0.37,0.214,0.843,0.087,1.056-0.283   l0.774-1.34c0.282-0.489,0.747-0.544,0.941-0.544h0.007c0.4,0.002,0.753,0.209,0.945,0.553c0.002,0.004,0.004,0.007,0.005,0.01   c2.844,4.926,14.278,24.722,17.151,29.699c0.201,0.347,0.201,0.744,0.001,1.09c-0.198,0.344-0.551,0.549-0.944,0.549h-0.001   L2.642,33.453c-0.4,0-0.769-0.219-0.964-0.571c-0.116-0.207-0.259-0.634,0.07-1.16c0.005-0.008,0.01-0.016,0.014-0.024   C4.948,26.18,14.991,8.791,14.991,8.791c0.214-0.369,0.087-0.843-0.283-1.056c-0.371-0.214-0.844-0.087-1.057,0.283   c0,0-10.039,17.382-13.222,22.895c-0.533,0.86-0.572,1.875-0.105,2.719C0.792,34.476,1.68,35,2.642,35l34.321-0.004h0.002   c0.952,0,1.806-0.494,2.284-1.323C39.726,32.848,39.725,31.862,39.248,31.036" />
+                  <path class="payment" d="M19.029,21.513V13.95c0-0.427,0.347-0.774,0.773-0.774h0.001c0.426,0,0.773,0.347,0.773,0.774v7.563   c0,0.427-0.347,0.774-0.774,0.774C19.376,22.287,19.029,21.94,19.029,21.513 M22.123,21.513V13.95c0-1.28-1.041-2.321-2.321-2.321   c-1.279,0-2.32,1.041-2.32,2.321v7.563c0,1.28,1.041,2.321,2.321,2.321C21.082,23.834,22.123,22.793,22.123,21.513" />
+                  <path class="payment" d="M19.802,26.154c0.426,0,0.773,0.347,0.773,0.773c0,0.427-0.347,0.774-0.773,0.774   c-0.427,0-0.774-0.347-0.774-0.774C19.028,26.501,19.375,26.154,19.802,26.154 M19.802,29.248c1.279,0,2.32-1.041,2.32-2.321   c0-1.279-1.041-2.32-2.32-2.32c-1.28,0-2.321,1.041-2.321,2.32C17.481,28.207,18.522,29.248,19.802,29.248" />
+                  <path class="payment" d="M15.439,6.369c0.132,0.088,0.281,0.13,0.428,0.13c0.25,0,0.496-0.121,0.645-0.345   c0.237-0.355,0.141-0.836-0.214-1.073c-0.356-0.236-0.836-0.14-1.073,0.215C14.987,5.652,15.084,6.132,15.439,6.369" />
+                </g>
+              </svg>
+            </div>
+            <div class="TextSummary">
+              <div id="locPayApp" class="textBold">
+                Der Termin wurde vorgemerkt, ist aber erst nach der Bezahlung gültig.
+              </div>
+              <div id="locPayAppInfo">
+                Bitte nehmen Sie die Zahlung innerhalb der nächsten 15 Minuten vor, sonst wird der soeben gebuchte Termin automatisch storniert.
+              </div>
+            </div>
+          </div>
+          <div class="overlay centered">
+            <div class="pageHeader divSumSpace">
+              Zahlungsmethoden
+            </div>
+            <div id="divPaymentMethods">
+            </div>
+            <div class=""></div>
+          </div>
+
+        </div>
+      </div>
+      <div id="p4" class="hide">
+        <div class="p4C">
+          <div id="divSummaryText">
+            <div id="divSummaryHeader" class="pageHeader">
+              Zusammenfassung
+            </div>
+            <div id="divSummaryTextSub" class="divSummaryText">
+              <div id="bookSuccess" class="iconSummary">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="2.5em" height="2.187em" viewBox="0 0 35 35" style="enable-background: new 0 0 35 35;" xml:space="preserve">
+                  <g>
+                    <path class="c2" d="M17.5,1.394C8.619,1.394,1.394,8.619,1.394,17.5S8.619,33.606,17.5,33.606   S33.606,26.381,33.606,17.5S26.381,1.394,17.5,1.394 M17.5,35c-4.674,0-9.069-1.82-12.374-5.126C1.82,26.569,0,22.174,0,17.5   S1.82,8.431,5.126,5.126C8.431,1.82,12.826,0,17.5,0s9.069,1.82,12.374,5.126C33.18,8.431,35,12.826,35,17.5   s-1.82,9.069-5.126,12.374C26.569,33.18,22.174,35,17.5,35" />
+                    <path class="c2" d="M8.645,17.57c-0.268,0-0.535,0.102-0.739,0.306c-0.408,0.407-0.408,1.071,0,1.479l5.09,5.089   c0.197,0.198,0.46,0.307,0.739,0.307c0.279,0,0.542-0.109,0.74-0.307l11.991-11.992c0.408-0.408,0.408-1.071,0-1.479   c-0.407-0.408-1.071-0.408-1.479,0l-10.759,10.76c-0.272,0.272-0.714,0.272-0.986,0l-3.857-3.857   C9.181,17.672,8.913,17.57,8.645,17.57 M13.735,26.145c-0.652,0-1.265-0.254-1.725-0.715l-5.09-5.089   c-0.952-0.952-0.952-2.5,0-3.451c0.951-0.952,2.499-0.952,3.451,0l3.364,3.364L24.001,9.987c0.952-0.951,2.5-0.951,3.451,0   c0.952,0.952,0.952,2.5,0.001,3.451L15.461,25.43C15,25.891,14.387,26.145,13.735,26.145" />
+                    <path class="c2" d="M17.5,32.56c-0.385,0-0.697-0.312-0.697-0.697c0-0.385,0.312-0.697,0.697-0.697   c6.256,0,11.702-4.228,13.243-10.282c0.095-0.373,0.474-0.599,0.848-0.504c0.373,0.095,0.599,0.475,0.504,0.848   C30.395,27.9,24.394,32.56,17.5,32.56" />
+                    <path class="c2" d="M31.85,18.825c-0.01,0-0.02,0-0.031-0.001c-0.384-0.016-0.683-0.342-0.666-0.726   c0.008-0.197,0.013-0.398,0.013-0.598c0-0.385,0.312-0.697,0.697-0.697c0.385,0,0.697,0.312,0.697,0.697   c0,0.22-0.005,0.441-0.014,0.658C32.53,18.532,32.221,18.825,31.85,18.825" />
+                  </g>
+                </svg>
+              </div>
+              <div id="bookWL" class="iconSummary">
+              </div>
+              <div id="bookFailed" class="iconSummary">
+                <svg version="1.1" x="0px" y="0px" width="2.5em" height="2.187em" viewBox="0 0 39.607 35" style="enable-background: new 0 0 39.607 35;" xml:space="preserve">
+                  <g>
+                    <path class="warning" d="M39.248,31.036C36.374,26.059,24.943,6.266,22.1,1.342C21.632,0.509,20.779,0.007,19.817,0h-0.018   c-0.953,0-1.804,0.493-2.28,1.319l-0.773,1.34c-0.214,0.369-0.087,0.843,0.283,1.056c0.37,0.214,0.843,0.087,1.056-0.283   l0.774-1.34c0.282-0.489,0.747-0.544,0.941-0.544h0.007c0.4,0.002,0.753,0.209,0.945,0.553c0.002,0.004,0.004,0.007,0.005,0.01   c2.844,4.926,14.278,24.722,17.151,29.699c0.201,0.347,0.201,0.744,0.001,1.09c-0.198,0.344-0.551,0.549-0.944,0.549h-0.001   L2.642,33.453c-0.4,0-0.769-0.219-0.964-0.571c-0.116-0.207-0.259-0.634,0.07-1.16c0.005-0.008,0.01-0.016,0.014-0.024   C4.948,26.18,14.991,8.791,14.991,8.791c0.214-0.369,0.087-0.843-0.283-1.056c-0.371-0.214-0.844-0.087-1.057,0.283   c0,0-10.039,17.382-13.222,22.895c-0.533,0.86-0.572,1.875-0.105,2.719C0.792,34.476,1.68,35,2.642,35l34.321-0.004h0.002   c0.952,0,1.806-0.494,2.284-1.323C39.726,32.848,39.725,31.862,39.248,31.036" />
+                    <path class="warning" d="M19.029,21.513V13.95c0-0.427,0.347-0.774,0.773-0.774h0.001c0.426,0,0.773,0.347,0.773,0.774v7.563   c0,0.427-0.347,0.774-0.774,0.774C19.376,22.287,19.029,21.94,19.029,21.513 M22.123,21.513V13.95c0-1.28-1.041-2.321-2.321-2.321   c-1.279,0-2.32,1.041-2.32,2.321v7.563c0,1.28,1.041,2.321,2.321,2.321C21.082,23.834,22.123,22.793,22.123,21.513" />
+                    <path class="warning" d="M19.802,26.154c0.426,0,0.773,0.347,0.773,0.773c0,0.427-0.347,0.774-0.773,0.774   c-0.427,0-0.774-0.347-0.774-0.774C19.028,26.501,19.375,26.154,19.802,26.154 M19.802,29.248c1.279,0,2.32-1.041,2.32-2.321   c0-1.279-1.041-2.32-2.32-2.32c-1.28,0-2.321,1.041-2.321,2.32C17.481,28.207,18.522,29.248,19.802,29.248" />
+                    <path class="warning" d="M15.439,6.369c0.132,0.088,0.281,0.13,0.428,0.13c0.25,0,0.496-0.121,0.645-0.345   c0.237-0.355,0.141-0.836-0.214-1.073c-0.356-0.236-0.836-0.14-1.073,0.215C14.987,5.652,15.084,6.132,15.439,6.369" />
+                  </g>
+                </svg>
+              </div>
+              <div id="bookConfirm" class="iconSummary">
+                <?xml version="1.0" encoding="iso-8859-1" ?>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="2.5em" height="2.187em" viewBox="0 0 38.676 35" style="enable-background: new 0 0 38.676 35;" xml:space="preserve">
+                  <g>
+                    <path style="fill: #9D9D9C;" d="M31.488,2.999h-3.249V2.045C28.239,0.917,27.322,0,26.194,0c-1.127,0-2.044,0.917-2.044,2.045v0.954
+		H12.7V2.045C12.7,0.917,11.782,0,10.655,0C9.528,0,8.61,0.917,8.61,2.045v0.979C8.552,3.008,8.492,2.999,8.429,2.999H5.713
+		c-1.879,0-3.408,1.529-3.408,3.408v21.38c0,0.376,0.305,0.681,0.682,0.681c0.376,0,0.681-0.305,0.681-0.681V10.019h24.571
+		c0.376,0,0.682-0.305,0.682-0.681c0-0.377-0.306-0.682-0.682-0.682H3.668V6.407c0-1.128,0.917-2.045,2.045-2.045h2.716
+		c0.063,0,0.123-0.009,0.181-0.025v0.877c0,1.128,0.918,2.045,2.045,2.045c1.127,0,2.045-0.917,2.045-2.045V4.362h11.45v0.852
+		c0,1.128,0.917,2.045,2.044,2.045c1.128,0,2.045-0.917,2.045-2.045V4.362h3.249c1.127,0,2.044,0.917,2.044,2.045v2.931
+		c0,0.376,0.306,0.681,0.682,0.681s0.682-0.305,0.682-0.681V6.407C34.896,4.528,33.367,2.999,31.488,2.999 M11.336,5.214
+		c0,0.376-0.305,0.682-0.681,0.682c-0.376,0-0.682-0.306-0.682-0.682V2.045c0-0.376,0.306-0.682,0.682-0.682
+		c0.376,0,0.681,0.306,0.681,0.682V5.214z M26.876,5.214c0,0.376-0.306,0.682-0.682,0.682c-0.375,0-0.681-0.306-0.681-0.682V2.045
+		c0-0.376,0.306-0.682,0.681-0.682c0.376,0,0.682,0.306,0.682,0.682V5.214z" />
+                    <path style="fill: #9D9D9C;" d="M31.436,8.656c-0.179,0-0.355,0.073-0.482,0.2c-0.127,0.126-0.199,0.302-0.199,0.481
+		c0,0.18,0.072,0.356,0.199,0.482c0.127,0.127,0.303,0.2,0.482,0.2c0.179,0,0.355-0.073,0.482-0.2
+		c0.127-0.126,0.199-0.302,0.199-0.482c0-0.179-0.072-0.355-0.199-0.481C31.791,8.729,31.615,8.656,31.436,8.656" />
+                    <path style="fill: #9D9D9C;" d="M20.354,31.025c0.127-0.128,0.2-0.303,0.2-0.482c0-0.18-0.073-0.355-0.2-0.482
+		c-0.127-0.127-0.303-0.199-0.482-0.199c-0.179,0-0.355,0.072-0.482,0.199c-0.126,0.127-0.199,0.302-0.199,0.482
+		c0,0.179,0.073,0.354,0.199,0.482c0.127,0.127,0.303,0.199,0.482,0.199C20.051,31.224,20.227,31.152,20.354,31.025" />
+                    <path style="fill: #9D9D9C;" d="M15.42,25.9c1.428,0,2.59-1.162,2.59-2.59c0-1.428-1.162-2.59-2.59-2.59
+		c-1.428,0-2.59,1.162-2.59,2.59C12.83,24.738,13.992,25.9,15.42,25.9 M15.42,22.083c0.676,0,1.227,0.55,1.227,1.227
+		c0,0.676-0.551,1.227-1.227,1.227c-0.676,0-1.227-0.551-1.227-1.227C14.193,22.633,14.744,22.083,15.42,22.083" />
+                    <path style="fill: #9D9D9C;" d="M9.059,18.812c1.428,0,2.59-1.162,2.59-2.59s-1.162-2.59-2.59-2.59s-2.59,1.162-2.59,2.59
+		S7.631,18.812,9.059,18.812 M9.059,14.994c0.676,0,1.227,0.55,1.227,1.227c0,0.676-0.551,1.227-1.227,1.227
+		c-0.676,0-1.227-0.551-1.227-1.227C7.832,15.545,8.383,14.994,9.059,14.994" />
+                    <path style="fill: #9D9D9C;" d="M9.059,25.9c1.428,0,2.59-1.162,2.59-2.59c0-1.428-1.162-2.59-2.59-2.59s-2.59,1.162-2.59,2.59
+		C6.469,24.738,7.631,25.9,9.059,25.9 M9.059,22.083c0.676,0,1.227,0.55,1.227,1.227c0,0.676-0.551,1.227-1.227,1.227
+		c-0.676,0-1.227-0.551-1.227-1.227C7.832,22.633,8.383,22.083,9.059,22.083" />
+                    <path style="fill: #9D9D9C;" d="M23.438,14.237c0.001-0.001,0.002-0.003,0.002-0.003c-0.45-0.376-1.028-0.603-1.659-0.603
+		c-1.428,0-2.59,1.162-2.59,2.59s1.162,2.59,2.59,2.59c0.444,0,0.862-0.112,1.227-0.309l-0.002-0.003
+		c0.051-0.03,0.099-0.065,0.14-0.106c0.127-0.128,0.2-0.304,0.2-0.483c0-0.179-0.073-0.354-0.2-0.482
+		c-0.126-0.127-0.302-0.199-0.482-0.199c-0.118,0-0.235,0.032-0.337,0.09c-0.165,0.083-0.35,0.129-0.546,0.129
+		c-0.676,0-1.227-0.55-1.227-1.227c0-0.676,0.551-1.226,1.227-1.226c0.287,0,0.551,0.099,0.76,0.265
+		c0.126,0.122,0.297,0.191,0.472,0.191c0.18,0,0.356-0.072,0.482-0.199c0.127-0.128,0.2-0.303,0.2-0.483
+		c0-0.179-0.073-0.354-0.2-0.481C23.477,14.27,23.458,14.253,23.438,14.237" />
+                    <path style="fill: #9D9D9C;" d="M23.438,21.325c0.001-0.001,0.002-0.003,0.002-0.003c-0.45-0.376-1.028-0.603-1.659-0.603
+		c-1.428,0-2.59,1.162-2.59,2.59s1.162,2.59,2.59,2.59c0.444,0,0.862-0.112,1.227-0.309l-0.002-0.003
+		c0.051-0.03,0.099-0.065,0.14-0.106c0.127-0.128,0.2-0.304,0.2-0.483c0-0.179-0.073-0.354-0.2-0.482
+		c-0.126-0.127-0.302-0.199-0.482-0.199c-0.118,0-0.235,0.032-0.337,0.09c-0.165,0.083-0.35,0.129-0.546,0.129
+		c-0.676,0-1.227-0.55-1.227-1.227c0-0.676,0.551-1.227,1.227-1.227c0.287,0,0.551,0.1,0.76,0.266
+		c0.126,0.122,0.297,0.191,0.472,0.191c0.18,0,0.356-0.072,0.482-0.199c0.127-0.128,0.2-0.303,0.2-0.483
+		c0-0.179-0.073-0.354-0.2-0.481C23.477,21.358,23.458,21.341,23.438,21.325" />
+                    <path style="fill: #9D9D9C;" d="M15.42,18.812c1.428,0,2.59-1.162,2.59-2.59s-1.162-2.59-2.59-2.59c-1.428,0-2.59,1.162-2.59,2.59
+		S13.992,18.812,15.42,18.812 M15.42,14.994c0.676,0,1.227,0.55,1.227,1.227c0,0.676-0.551,1.227-1.227,1.227
+		c-0.676,0-1.227-0.551-1.227-1.227C14.193,15.545,14.744,14.994,15.42,14.994" />
+                    <path style="fill: #9D9D9C;" d="M22.928,33.533h-1.965h-6.032H2.59c-0.677,0-1.227-0.55-1.227-1.227v-1.082h15.255
+		c0.376,0,0.682-0.305,0.682-0.681c0-0.377-0.306-0.682-0.682-0.682H0.682C0.305,29.861,0,30.166,0,30.543v1.763
+		c0,1.428,1.162,2.59,2.59,2.59h8.729h9.644h1.965c0.376,0,0.681-0.305,0.681-0.682C23.609,33.838,23.304,33.533,22.928,33.533" />
+                    <path style="fill: #9D9D9C;" d="M34.253,22.901c1.052-0.639,1.922-1.538,2.517-2.6c0.586-1.046,0.896-2.229,0.896-3.421v-2.54
+		c0.527-0.187,0.906-0.691,0.906-1.281v-0.906c0-0.25-0.203-0.453-0.453-0.453H25.433c-0.25,0-0.453,0.203-0.453,0.453v0.906
+		c0,0.59,0.379,1.094,0.906,1.281v2.54c0,1.192,0.31,2.375,0.896,3.421c0.595,1.062,1.465,1.961,2.517,2.6
+		c0.134,0.081,0.214,0.23,0.214,0.397s-0.08,0.315-0.214,0.397c-1.052,0.638-1.922,1.537-2.517,2.6
+		c-0.586,1.045-0.896,2.228-0.896,3.421v2.539c-0.527,0.187-0.906,0.691-0.906,1.282v0.906c0,0.25,0.203,0.453,0.453,0.453h12.686
+		c0.25,0,0.453-0.203,0.453-0.453v-0.906c0-0.591-0.379-1.095-0.906-1.282v-2.539c0-1.193-0.31-2.376-0.896-3.421
+		c-0.595-1.063-1.466-1.962-2.517-2.6c-0.134-0.082-0.214-0.23-0.214-0.397S34.119,22.982,34.253,22.901 M25.886,12.606h11.78v0.453
+		c0,0.25-0.204,0.453-0.453,0.453H26.339c-0.25,0-0.453-0.203-0.453-0.453V12.606z M37.666,33.99h-11.78v-0.453
+		c0-0.25,0.203-0.453,0.453-0.453h10.874c0.249,0,0.453,0.203,0.453,0.453V33.99z M33.783,24.469
+		c1.864,1.132,2.976,3.094,2.976,5.247v2.462h-9.966v-2.462c0-2.153,1.112-4.115,2.976-5.247c0.408-0.247,0.65-0.685,0.65-1.171
+		s-0.242-0.924-0.65-1.171c-1.864-1.133-2.976-3.094-2.976-5.247v-2.462h9.966v2.462c0,2.153-1.112,4.114-2.976,5.247
+		c-0.407,0.247-0.65,0.685-0.65,1.171S33.376,24.222,33.783,24.469" />
+                    <path style="fill: #9D9D9C;" d="M25.991,12.71v0.349c0,0.192,0.156,0.349,0.349,0.349h10.873c0.192,0,0.349-0.157,0.349-0.349V12.71
+		H25.991z M37.213,13.616H26.34c-0.307,0-0.557-0.25-0.557-0.557v-0.557H37.77v0.557C37.77,13.366,37.52,13.616,37.213,13.616
+		 M26.897,32.073h9.759v-2.357c0-2.117-1.094-4.045-2.927-5.158c-0.438-0.266-0.7-0.737-0.7-1.26c0-0.523,0.262-0.994,0.7-1.261
+		c1.833-1.113,2.927-3.041,2.927-5.157v-2.358h-9.759v2.358c0,2.116,1.094,4.044,2.926,5.157c0.439,0.266,0.701,0.738,0.701,1.261
+		c0,0.523-0.262,0.994-0.701,1.26c-1.832,1.113-2.926,3.041-2.926,5.158V32.073z M36.864,32.282H26.689v-2.566
+		c0-2.19,1.131-4.185,3.026-5.336c0.376-0.228,0.601-0.633,0.601-1.082c0-0.45-0.225-0.855-0.601-1.082
+		c-1.895-1.152-3.026-3.147-3.026-5.336v-2.566h10.175v2.566c0,2.189-1.131,4.184-3.026,5.336c-0.376,0.228-0.601,0.632-0.601,1.082
+		c0,0.449,0.225,0.854,0.601,1.082c1.895,1.151,3.026,3.146,3.026,5.336V32.282z M25.991,33.886h11.571v-0.349
+		c0-0.193-0.157-0.349-0.349-0.349H26.34c-0.193,0-0.349,0.156-0.349,0.349V33.886z M37.77,34.094H25.783v-0.557
+		c0-0.308,0.25-0.558,0.557-0.558h10.873c0.307,0,0.557,0.25,0.557,0.558V34.094z M25.434,11.804c-0.193,0-0.349,0.156-0.349,0.349
+		v0.906c0,0.53,0.336,1.005,0.837,1.183l0.069,0.025v2.613c0,1.174,0.305,2.34,0.882,3.37c0.587,1.047,1.445,1.933,2.48,2.562
+		c0.166,0.1,0.265,0.282,0.265,0.486c0,0.203-0.099,0.385-0.265,0.486c-1.035,0.629-1.893,1.514-2.48,2.562
+		c-0.577,1.03-0.882,2.195-0.882,3.37v2.613l-0.069,0.025c-0.501,0.177-0.837,0.653-0.837,1.183v0.906
+		c0,0.192,0.156,0.349,0.349,0.349h12.685c0.192,0,0.349-0.157,0.349-0.349v-0.906c0-0.53-0.336-1.006-0.837-1.183l-0.069-0.025
+		v-2.613c0-1.175-0.305-2.34-0.882-3.37c-0.587-1.047-1.444-1.933-2.48-2.562c-0.166-0.101-0.265-0.283-0.265-0.486
+		c0-0.204,0.099-0.386,0.265-0.486c1.035-0.629,1.893-1.515,2.48-2.562c0.577-1.03,0.882-2.196,0.882-3.37v-2.613l0.069-0.025
+		c0.501-0.178,0.837-0.653,0.837-1.183v-0.906c0-0.193-0.157-0.349-0.349-0.349H25.434z M38.119,35H25.434
+		c-0.308,0-0.558-0.25-0.558-0.557v-0.906c0-0.594,0.362-1.128,0.907-1.353v-2.468c0-1.211,0.314-2.411,0.908-3.472
+		c0.605-1.079,1.488-1.991,2.554-2.638c0.103-0.063,0.165-0.178,0.165-0.308s-0.062-0.246-0.165-0.308
+		c-1.066-0.648-1.949-1.56-2.554-2.638c-0.594-1.062-0.908-2.262-0.908-3.472v-2.468c-0.545-0.225-0.907-0.76-0.907-1.353v-0.906
+		c0-0.308,0.25-0.557,0.558-0.557h12.685c0.307,0,0.557,0.249,0.557,0.557v0.906c0,0.593-0.361,1.128-0.906,1.353v2.468
+		c0,1.21-0.314,2.41-0.909,3.472c-0.604,1.078-1.487,1.99-2.553,2.638c-0.103,0.062-0.165,0.178-0.165,0.308
+		s0.062,0.245,0.165,0.308c1.066,0.647,1.949,1.56,2.553,2.638c0.595,1.061,0.909,2.261,0.909,3.472v2.468
+		c0.545,0.225,0.906,0.759,0.906,1.353v0.906C38.676,34.75,38.426,35,38.119,35" />
+                    <path style="fill: #9D9D9C;" d="M31.776,25.4c0.231,0,0.418-0.187,0.418-0.418s-0.187-0.418-0.418-0.418
+		c-0.231,0-0.418,0.187-0.418,0.418S31.545,25.4,31.776,25.4" />
+                    <path style="fill: #9D9D9C;" d="M31.776,24.661c-0.178,0-0.322,0.144-0.322,0.322c0,0.177,0.144,0.322,0.322,0.322
+		c0.178,0,0.322-0.145,0.322-0.322C32.098,24.805,31.954,24.661,31.776,24.661 M31.776,25.497c-0.283,0-0.514-0.231-0.514-0.514
+		c0-0.284,0.231-0.514,0.514-0.514c0.283,0,0.514,0.23,0.514,0.514C32.29,25.266,32.059,25.497,31.776,25.497" />
+                    <path style="fill: #9D9D9C;" d="M32.078,27.253c-0.072-0.095-0.183-0.151-0.302-0.151h-0.001c-0.118,0-0.23,0.056-0.302,0.151
+		c-0.142,0.189-0.32,0.35-0.527,0.479c-0.433,0.261-0.82,0.424-1.162,0.568c-0.757,0.319-1.41,0.595-1.41,1.643v0.166
+		c0,0.209,0.169,0.378,0.378,0.378h6.049c0.209,0,0.378-0.169,0.378-0.378v-0.166c0-1.048-0.655-1.325-1.414-1.645
+		c-0.344-0.146-0.734-0.311-1.173-0.575C32.391,27.598,32.218,27.44,32.078,27.253 M34.408,29.731h-5.263
+		c0.057-0.349,0.296-0.466,0.933-0.735c0.348-0.146,0.779-0.328,1.26-0.618c0.001,0,0.002-0.001,0.004-0.002
+		c0.156-0.097,0.301-0.208,0.433-0.332c0.128,0.121,0.269,0.229,0.421,0.323c0.001,0.001,0.002,0.002,0.004,0.003
+		c0.485,0.292,0.921,0.476,1.271,0.624C34.111,29.265,34.35,29.382,34.408,29.731" />
+                    <path style="fill: #9D9D9C;" d="M29.256,29.644h5.041c-0.074-0.215-0.28-0.325-0.86-0.57c-0.351-0.148-0.788-0.332-1.282-0.63
+		c-0.138-0.085-0.265-0.179-0.38-0.282c-0.12,0.106-0.25,0.203-0.387,0.288c-0.492,0.296-0.927,0.479-1.276,0.627
+		C29.57,29.305,29.338,29.414,29.256,29.644 M34.511,29.818h-5.468l0.016-0.101c0.065-0.398,0.333-0.525,0.985-0.801
+		c0.345-0.145,0.773-0.325,1.249-0.612c0.154-0.095,0.295-0.203,0.423-0.323l0.059-0.056l0.06,0.056
+		c0.122,0.116,0.259,0.221,0.407,0.312c0.486,0.293,0.917,0.475,1.262,0.621c0.656,0.277,0.924,0.405,0.99,0.803L34.511,29.818z
+		 M31.776,27.189c-0.092,0-0.178,0.043-0.233,0.116c-0.149,0.198-0.335,0.366-0.551,0.501c-0.44,0.265-0.83,0.429-1.174,0.574
+		c-0.758,0.319-1.357,0.572-1.357,1.563v0.166c0,0.161,0.13,0.291,0.291,0.291h6.049c0.161,0,0.291-0.13,0.291-0.291v-0.166
+		c0-0.99-0.6-1.244-1.36-1.565c-0.351-0.149-0.743-0.314-1.185-0.58c-0.211-0.132-0.392-0.297-0.539-0.493
+		C31.953,27.232,31.866,27.189,31.776,27.189 M34.801,30.574h-6.049c-0.257,0-0.465-0.208-0.465-0.465v-0.166
+		c0-1.106,0.711-1.406,1.464-1.724c0.338-0.142,0.722-0.304,1.15-0.562c0.197-0.122,0.367-0.276,0.503-0.457
+		c0.087-0.116,0.226-0.185,0.371-0.185c0.146,0,0.285,0.069,0.372,0.186c0.134,0.178,0.299,0.329,0.491,0.448
+		c0.43,0.259,0.816,0.423,1.156,0.567c0.76,0.32,1.472,0.622,1.472,1.727v0.166C35.266,30.366,35.058,30.574,34.801,30.574" />
+                    <path style="fill: none; stroke: #9D9D9C; stroke-width: 0.25; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10;" d="
+		M29.256,29.644h5.041c-0.074-0.215-0.28-0.325-0.86-0.57c-0.351-0.148-0.788-0.332-1.282-0.63c-0.138-0.085-0.265-0.179-0.38-0.282
+		c-0.12,0.106-0.25,0.203-0.387,0.288c-0.492,0.296-0.927,0.479-1.276,0.627C29.57,29.305,29.338,29.414,29.256,29.644z
+		 M34.511,29.818h-5.468l0.016-0.101c0.065-0.398,0.333-0.525,0.985-0.801c0.345-0.145,0.773-0.325,1.249-0.612
+		c0.154-0.095,0.295-0.203,0.423-0.323l0.059-0.056l0.06,0.056c0.122,0.116,0.259,0.221,0.407,0.312
+		c0.486,0.293,0.917,0.475,1.262,0.621c0.656,0.277,0.924,0.405,0.99,0.803L34.511,29.818z M31.776,27.189
+		c-0.092,0-0.178,0.043-0.233,0.116c-0.149,0.198-0.335,0.366-0.551,0.501c-0.44,0.265-0.83,0.429-1.174,0.574
+		c-0.758,0.319-1.357,0.572-1.357,1.563v0.166c0,0.161,0.13,0.291,0.291,0.291h6.049c0.161,0,0.291-0.13,0.291-0.291v-0.166
+		c0-0.99-0.6-1.244-1.36-1.565c-0.351-0.149-0.743-0.314-1.185-0.58c-0.211-0.132-0.392-0.297-0.539-0.493
+		C31.953,27.232,31.866,27.189,31.776,27.189z M34.801,30.574h-6.049c-0.257,0-0.465-0.208-0.465-0.465v-0.166
+		c0-1.106,0.711-1.406,1.464-1.724c0.338-0.142,0.722-0.304,1.15-0.562c0.197-0.122,0.367-0.276,0.503-0.457
+		c0.087-0.116,0.226-0.185,0.371-0.185c0.146,0,0.285,0.069,0.372,0.186c0.134,0.178,0.299,0.329,0.491,0.448
+		c0.43,0.259,0.816,0.423,1.156,0.567c0.76,0.32,1.472,0.622,1.472,1.727v0.166C35.266,30.366,35.058,30.574,34.801,30.574z" />
+                    <path style="fill: #9D9D9C;" d="M35.044,17.065v-0.668c0-0.132-0.071-0.254-0.187-0.318c-0.115-0.064-0.256-0.06-0.368,0.01
+		c-0.815,0.509-1.753,0.778-2.713,0.778c-0.96,0-1.899-0.269-2.713-0.778c-0.112-0.07-0.253-0.074-0.369-0.01
+		c-0.115,0.064-0.187,0.186-0.187,0.318v0.668c0,0.628,0.243,1.304,0.702,1.955c0.444,0.631,1.061,1.194,1.783,1.629
+		c0.147,0.092,0.29,0.221,0.421,0.377v1.799c0,0.2,0.162,0.363,0.363,0.363c0.2,0,0.363-0.163,0.363-0.363v-1.798
+		c0.132-0.158,0.281-0.291,0.435-0.386C34.052,19.75,35.044,18.313,35.044,17.065 M32.197,20.02
+		c-0.001,0.001-0.003,0.002-0.004,0.002c-0.144,0.09-0.285,0.201-0.416,0.328c-0.127-0.124-0.262-0.231-0.404-0.319
+		c-0.001-0.001-0.003-0.002-0.004-0.002c-1.277-0.77-2.135-1.961-2.135-2.964v-0.054c0.79,0.382,1.658,0.582,2.542,0.582
+		c0.884,0,1.752-0.2,2.542-0.582v0.054C34.318,18.052,33.446,19.268,32.197,20.02" />
+                    <path style="fill: #9D9D9C;" d="M29.319,17.143c0.044,0.958,0.874,2.079,2.093,2.813c0.129,0.08,0.25,0.173,0.365,0.279
+		c0.12-0.11,0.245-0.205,0.373-0.284l0.007-0.007l-0.003,0.004c1.192-0.718,2.034-1.86,2.079-2.805
+		c-0.767,0.349-1.614,0.533-2.457,0.533C30.932,17.676,30.086,17.492,29.319,17.143 M31.777,20.466l-0.058-0.057
+		c-0.123-0.12-0.255-0.224-0.39-0.308c-1.304-0.785-2.179-2.005-2.179-3.037v-0.186l0.12,0.058c0.776,0.375,1.643,0.573,2.506,0.573
+		c0.863,0,1.73-0.198,2.506-0.573l0.12-0.058v0.186c0,1.014-0.885,2.255-2.153,3.022l-0.013,0.008
+		c-0.136,0.084-0.272,0.191-0.401,0.316L31.777,20.466z M28.87,16.117c-0.046,0-0.093,0.011-0.135,0.035
+		c-0.089,0.049-0.144,0.142-0.144,0.244v0.668c0,0.611,0.237,1.271,0.686,1.907c0.438,0.622,1.046,1.177,1.758,1.606
+		c0.153,0.096,0.306,0.232,0.442,0.395l0.019,0.024v1.828c0,0.155,0.126,0.28,0.28,0.28c0.154,0,0.28-0.125,0.28-0.28v-1.828
+		l0.019-0.023c0.139-0.165,0.296-0.305,0.455-0.403c1.454-0.878,2.431-2.286,2.431-3.506v-0.668c0-0.102-0.055-0.195-0.144-0.244
+		c-0.089-0.05-0.198-0.047-0.284,0.007c-0.828,0.517-1.781,0.791-2.757,0.791c-0.976,0-1.93-0.274-2.757-0.791
+		C28.973,16.131,28.922,16.117,28.87,16.117 M31.776,23.271c-0.246,0-0.447-0.2-0.447-0.447v-1.768
+		c-0.119-0.139-0.251-0.255-0.381-0.336c-0.731-0.441-1.356-1.012-1.808-1.652c-0.468-0.665-0.716-1.358-0.716-2.004v-0.668
+		c0-0.162,0.088-0.312,0.23-0.39c0.142-0.079,0.316-0.075,0.453,0.012c0.801,0.5,1.724,0.765,2.669,0.765
+		c0.945,0,1.867-0.265,2.669-0.765c0.137-0.087,0.311-0.091,0.453-0.012c0.142,0.078,0.23,0.228,0.23,0.39v0.668
+		c0,1.276-1.009,2.742-2.511,3.648c-0.136,0.085-0.272,0.204-0.394,0.345v1.767C32.223,23.071,32.022,23.271,31.776,23.271" />
+                    <path style="fill: none; stroke: #9D9D9C; stroke-width: 0.25; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10;" d="
+		M29.319,17.143c0.044,0.958,0.874,2.079,2.093,2.813c0.129,0.08,0.25,0.173,0.365,0.279c0.12-0.11,0.245-0.205,0.373-0.284
+		l0.007-0.007l-0.003,0.004c1.192-0.718,2.034-1.86,2.079-2.805c-0.767,0.349-1.614,0.533-2.457,0.533
+		C30.932,17.676,30.086,17.492,29.319,17.143z M31.777,20.466l-0.058-0.057c-0.123-0.12-0.255-0.224-0.39-0.308
+		c-1.304-0.785-2.179-2.005-2.179-3.037v-0.186l0.12,0.058c0.776,0.375,1.643,0.573,2.506,0.573c0.863,0,1.73-0.198,2.506-0.573
+		l0.12-0.058v0.186c0,1.014-0.885,2.255-2.153,3.022l-0.013,0.008c-0.136,0.084-0.272,0.191-0.401,0.316L31.777,20.466z
+		 M28.87,16.117c-0.046,0-0.093,0.011-0.135,0.035c-0.089,0.049-0.144,0.142-0.144,0.244v0.668c0,0.611,0.237,1.271,0.686,1.907
+		c0.438,0.622,1.046,1.177,1.758,1.606c0.153,0.096,0.306,0.232,0.442,0.395l0.019,0.024v1.828c0,0.155,0.126,0.28,0.28,0.28
+		c0.154,0,0.28-0.125,0.28-0.28v-1.828l0.019-0.023c0.139-0.165,0.296-0.305,0.455-0.403c1.454-0.878,2.431-2.286,2.431-3.506
+		v-0.668c0-0.102-0.055-0.195-0.144-0.244c-0.089-0.05-0.198-0.047-0.284,0.007c-0.828,0.517-1.781,0.791-2.757,0.791
+		c-0.976,0-1.93-0.274-2.757-0.791C28.973,16.131,28.922,16.117,28.87,16.117z M31.776,23.271c-0.246,0-0.447-0.2-0.447-0.447
+		v-1.768c-0.119-0.139-0.251-0.255-0.381-0.336c-0.731-0.441-1.356-1.012-1.808-1.652c-0.468-0.665-0.716-1.358-0.716-2.004v-0.668
+		c0-0.162,0.088-0.312,0.23-0.39c0.142-0.079,0.316-0.075,0.453,0.012c0.801,0.5,1.724,0.765,2.669,0.765
+		c0.945,0,1.867-0.265,2.669-0.765c0.137-0.087,0.311-0.091,0.453-0.012c0.142,0.078,0.23,0.228,0.23,0.39v0.668
+		c0,1.276-1.009,2.742-2.511,3.648c-0.136,0.085-0.272,0.204-0.394,0.345v1.767C32.223,23.071,32.022,23.271,31.776,23.271z" />
+                  </g>
+                </svg>
+              </div>
+              <div id="divTextSummary" class="TextSummary">
+                <div id="locThankYou" class="textBold">
+                  Vielen Dank für Ihre Buchung!
+                </div>
+                <div id="locAppBooked">
+                  Ihre Buchungsbestätigung wird Ihnen an die angegebene E-Mail zugesendet. Bitte überprüfen Sie auch Ihren Spam-Ordner.
+                </div>
+              </div>
+              <div id="divBookingFailed" class="TextSummary" style="display: none">
+                <div id="locErrorHeader" class="textBold">
+                  Der Termin wurde nicht gebucht!
+                </div>
+                <div id="locError">
+                  Es trat ein Fehler während der Terminbuchung auf. Bitte erneut probieren.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="idSumDetails" class="divSumDetails">
+            <div class="divSummaryServices">
+              <div class="iconSummary">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="1.875em" height="1.875em" viewBox="0 0 40 40" style="enable-background: new 0 0 40 40;" xml:space="preserve">
+                  <g>
+                    <path class="c1" d="M39.131,17.392c-0.481,0-0.87-0.39-0.87-0.87V4.348c0-1.438-1.17-2.608-2.608-2.608H20.87v5.329   c0.282-0.074,0.574-0.112,0.87-0.112c1.918,0,3.478,1.56,3.478,3.478c0,1.919-1.56,3.479-3.478,3.479   c-0.296,0-0.588-0.038-0.87-0.112v2.72c0,0.48-0.39,0.87-0.87,0.87c-0.48,0-0.869-0.39-0.869-0.87v-4.154   c0-0.344,0.202-0.655,0.516-0.795c0.313-0.14,0.68-0.082,0.936,0.148c0.324,0.293,0.734,0.453,1.157,0.453   c0.959,0,1.739-0.779,1.739-1.739c0-0.959-0.78-1.739-1.739-1.739c-0.422,0-0.833,0.161-1.157,0.453   c-0.256,0.231-0.623,0.288-0.936,0.149c-0.314-0.139-0.516-0.45-0.516-0.794V0.87c0-0.48,0.389-0.869,0.869-0.869h15.653   c2.397,0,4.347,1.95,4.347,4.347v12.174C40,17.002,39.611,17.392,39.131,17.392" />
+                    <path class="c2" d="M35.652,40H23.478c-0.481,0-0.87-0.389-0.87-0.869c0-0.481,0.389-0.87,0.87-0.87h12.174   c1.438,0,2.609-1.17,2.609-2.609V20.87H32.93c0.075,0.282,0.113,0.574,0.113,0.869c0,1.919-1.56,3.479-3.478,3.479   s-3.478-1.56-3.478-3.479c0-0.295,0.038-0.587,0.113-0.869h-2.722c-0.481,0-0.87-0.39-0.87-0.87s0.389-0.869,0.87-0.869h4.155   c0.343,0,0.655,0.201,0.794,0.515c0.14,0.314,0.082,0.68-0.148,0.936c-0.206,0.23-0.453,0.618-0.453,1.157   c0,0.959,0.78,1.739,1.739,1.739c0.959,0,1.739-0.78,1.739-1.739c0-0.539-0.247-0.927-0.453-1.158   c-0.23-0.255-0.288-0.622-0.148-0.936c0.139-0.313,0.452-0.515,0.794-0.515h7.633c0.481,0,0.87,0.389,0.87,0.869v15.652   C40,38.049,38.049,40,35.652,40" />
+                    <path class="c2" d="M20,40H4.348C1.95,40,0,38.049,0,35.652V23.478c0-0.481,0.389-0.869,0.869-0.869   c0.48,0,0.87,0.388,0.87,0.869v12.174c0,1.439,1.17,2.609,2.609,2.609h14.783v-5.329c-0.283,0.073-0.574,0.112-0.87,0.112   c-1.919,0-3.479-1.56-3.479-3.479c0-1.918,1.56-3.478,3.479-3.478c0.296,0,0.587,0.038,0.87,0.113v-2.722   c0-0.481,0.389-0.869,0.869-0.869c0.48,0,0.87,0.388,0.87,0.869v4.156c0,0.344-0.203,0.655-0.517,0.795   c-0.313,0.138-0.68,0.081-0.936-0.15c-0.323-0.291-0.734-0.453-1.156-0.453c-0.959,0-1.739,0.78-1.739,1.739   c0,0.959,0.78,1.74,1.739,1.74c0.422,0,0.833-0.161,1.156-0.454c0.255-0.23,0.622-0.288,0.936-0.149   c0.314,0.14,0.517,0.451,0.517,0.796v7.633C20.87,39.611,20.48,40,20,40" />
+                    <path class="c2" d="M20,20.87h-7.633c-0.343,0-0.655-0.202-0.795-0.516c-0.14-0.314-0.082-0.681,0.148-0.936   c0.293-0.324,0.454-0.735,0.454-1.157c0-0.959-0.78-1.739-1.739-1.739s-1.74,0.78-1.74,1.739c0,0.422,0.161,0.833,0.454,1.157   c0.229,0.255,0.288,0.622,0.148,0.936c-0.14,0.314-0.451,0.516-0.795,0.516H0.869C0.389,20.87,0,20.48,0,20V4.348   C0,1.951,1.95,0,4.348,0h12.174c0.48,0,0.869,0.39,0.869,0.87s-0.389,0.869-0.869,0.869H4.348c-1.439,0-2.609,1.171-2.609,2.609   v14.783h5.33c-0.074-0.283-0.112-0.574-0.112-0.87c0-1.918,1.559-3.478,3.478-3.478c1.918,0,3.478,1.56,3.478,3.478   c0,0.296-0.038,0.587-0.112,0.87H20c0.48,0,0.87,0.389,0.87,0.869S20.48,20.87,20,20.87" />
+                  </g>
+                  <rect class="c2" x="4.348" y="4.348" width="1.739" height="1.739" />
+                  <rect class="c1" x="33.913" y="4.348" width="1.739" height="1.739" />
+                  <rect class="c2" x="4.348" y="33.913" width="1.739" height="1.739" />
+                  <rect class="c2" x="33.913" y="33.913" width="1.739" height="1.739" />
+                </svg>
+              </div>
+              <div class="TextSummary">
+              </div>
+              <div id="divSummaryServices">
+              </div>
+            </div>
+            <div id="divSummaryAppInfo" class="divSummaryAppInfo">
+              <div class="divFlex">
+                <div class="iconSummary">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="1.875em" height="1.875em" viewBox="0 0 500 500" style="enable-background: new 0 0 500 500;" xml:space="preserve">
+                    <path class="c2" d="M451.172,42.969h-46.55V29.297C404.622,13.143,391.479,0,375.325,0s-29.297,13.143-29.297,29.297  v13.672H181.966V29.297C181.966,13.143,168.823,0,152.669,0s-29.297,13.143-29.297,29.297V43.33c-0.83-0.229-1.7-0.361-2.604-0.361  h-38.91c-26.924,0-48.828,21.904-48.828,48.828v166.341c0,5.394,4.373,9.766,9.766,9.766s9.766-4.372,9.766-9.766V143.555h352.061  c5.393,0,9.766-4.372,9.766-9.766s-4.373-9.766-9.766-9.766H52.562V91.797c0-16.154,13.143-29.297,29.297-29.297h38.91  c0.903,0,1.773-0.133,2.604-0.361v12.568c0,16.154,13.143,29.297,29.297,29.297s29.297-13.143,29.297-29.297V62.5h164.062v12.207  c0,16.154,13.143,29.297,29.297,29.297s29.297-13.143,29.297-29.297V62.5h46.55c16.154,0,29.297,13.143,29.297,29.297v371.088  c0,9.695-7.888,17.584-17.584,17.584c-9.696,0-17.584-7.889-17.584-17.584v-25.263c0-5.394-4.373-9.766-9.766-9.766H321.94  c-5.393,0-9.766,4.372-9.766,9.766s4.373,9.766,9.766,9.766H425.77v15.497c0,6.358,1.609,12.347,4.439,17.584H37.109  c-9.692,0-17.578-7.886-17.578-17.578v-15.503H238.11c5.393,0,9.766-4.372,9.766-9.766s-4.373-9.766-9.766-9.766h-97.574  c17.064-14.696,27.9-36.435,27.9-60.669c0-44.155-35.923-80.078-80.078-80.078S8.28,323.032,8.28,367.188  c0,24.234,10.836,45.973,27.9,60.669H9.766c-5.393,0-9.766,4.372-9.766,9.766v25.269C0,483.353,16.647,500,37.109,500h425.775  C483.35,500,500,483.351,500,462.885V91.797C500,64.873,478.096,42.969,451.172,42.969z M162.435,74.707  c0,5.385-4.381,9.766-9.766,9.766c-5.385,0-9.766-4.381-9.766-9.766v-45.41c0-5.385,4.381-9.766,9.766-9.766  c5.385,0,9.766,4.381,9.766,9.766V74.707z M385.091,74.707c0,5.385-4.381,9.766-9.766,9.766s-9.766-4.381-9.766-9.766v-45.41  c0-5.385,4.381-9.766,9.766-9.766s9.766,4.381,9.766,9.766V74.707z M27.812,367.188c0-33.386,27.161-60.547,60.547-60.547  s60.547,27.161,60.547,60.547s-27.161,60.547-60.547,60.547S27.812,400.573,27.812,367.188z" />
+                    <path class="c2" d="M450.43,143.555c2.568,0,5.088-1.045,6.903-2.861c1.816-1.816,2.862-4.336,2.862-6.904  s-1.045-5.088-2.862-6.904c-1.815-1.816-4.335-2.861-6.903-2.861c-2.569,0-5.088,1.045-6.904,2.861  c-1.816,1.816-2.861,4.336-2.861,6.904s1.044,5.088,2.861,6.904C445.343,142.51,447.86,143.555,450.43,143.555z" />
+                    <path class="c2" d="M277.842,430.713c-1.816,1.826-2.861,4.336-2.861,6.904c0,2.578,1.044,5.088,2.861,6.914  c1.816,1.816,4.336,2.852,6.904,2.852c2.568,0,5.088-1.035,6.903-2.852c1.816-1.826,2.862-4.346,2.862-6.914  c0-2.568-1.045-5.078-2.862-6.904c-1.815-1.816-4.335-2.852-6.903-2.852C282.178,427.861,279.658,428.896,277.842,430.713z" />
+                    <path class="c1" d="M220.942,371.094c20.462,0,37.109-16.647,37.109-37.109s-16.647-37.109-37.109-37.109  s-37.109,16.647-37.109,37.109S200.48,371.094,220.942,371.094z M220.942,316.406c9.692,0,17.578,7.886,17.578,17.578  s-7.886,17.578-17.578,17.578c-9.692,0-17.578-7.886-17.578-17.578S211.25,316.406,220.942,316.406z" />
+                    <path class="c1" d="M312.088,371.094c20.462,0,37.109-16.647,37.109-37.109s-16.647-37.109-37.109-37.109  s-37.109,16.647-37.109,37.109S291.626,371.094,312.088,371.094z M312.088,316.406c9.692,0,17.578,7.886,17.578,17.578  s-7.886,17.578-17.578,17.578s-17.578-7.886-17.578-17.578S302.396,316.406,312.088,316.406z" />
+                    <path class="c1" d="M403.234,371.094c20.462,0,37.109-16.647,37.109-37.109s-16.647-37.109-37.109-37.109  s-37.109,16.647-37.109,37.109S382.772,371.094,403.234,371.094z M403.234,316.406c9.692,0,17.578,7.886,17.578,17.578  s-7.886,17.578-17.578,17.578c-9.692,0-17.578-7.886-17.578-17.578S393.542,316.406,403.234,316.406z" />
+                    <path class="c1" d="M166.906,232.422c0-20.462-16.647-37.109-37.109-37.109s-37.109,16.647-37.109,37.109  s16.647,37.109,37.109,37.109S166.906,252.884,166.906,232.422z M112.219,232.422c0-9.692,7.886-17.578,17.578-17.578  s17.578,7.886,17.578,17.578S139.489,250,129.797,250S112.219,242.114,112.219,232.422z" />
+                    <path class="c1" d="M312.088,269.531c20.462,0,37.109-16.647,37.109-37.109s-16.647-37.109-37.109-37.109  s-37.109,16.647-37.109,37.109S291.626,269.531,312.088,269.531z M312.088,214.844c9.692,0,17.578,7.886,17.578,17.578  S321.78,250,312.088,250s-17.578-7.886-17.578-17.578S302.396,214.844,312.088,214.844z" />
+                    <path class="c1" d="M403.234,269.531c20.462,0,37.109-16.647,37.109-37.109s-16.647-37.109-37.109-37.109  s-37.109,16.647-37.109,37.109S382.772,269.531,403.234,269.531z M403.234,214.844c9.692,0,17.578,7.886,17.578,17.578  S412.927,250,403.234,250c-9.692,0-17.578-7.886-17.578-17.578S393.542,214.844,403.234,214.844z" />
+                    <path class="c1" d="M220.942,269.531c20.462,0,37.109-16.647,37.109-37.109s-16.647-37.109-37.109-37.109  s-37.109,16.647-37.109,37.109S200.48,269.531,220.942,269.531z M220.942,214.844c9.692,0,17.578,7.886,17.578,17.578  S230.635,250,220.942,250c-9.692,0-17.578-7.886-17.578-17.578S211.25,214.844,220.942,214.844z" />
+                    <path class="c1" d="M70.629,395.907c1.832,1.831,4.315,2.86,6.905,2.86s5.073-1.029,6.905-2.86l38.709-38.709  c3.813-3.813,3.813-9.997,0-13.811c-3.814-3.813-9.996-3.813-13.812,0l-31.803,31.804l-10.868-10.868  c-3.814-3.813-9.996-3.813-13.812,0c-3.813,3.813-3.813,9.997,0,13.812L70.629,395.907z" />
+                  </svg>
+                </div>
+                <div class="TextSummary">
+                  <div class="">
+                    <div id="divSlotsSummary"></div>
+                  </div>
+                  <div id="divAppLocation">
+                  </div>
+                  <div class="separator"></div>
+                  <div id="addApp" class="appInfo">
+                  </div>
+                  <div id="printApp" class="appInfo">
+                  </div>
+                  <div id="shareApp" class="appInfo">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="divSummaryLocation" class="divSummaryLocation">
+              <div class="divFlex">
+                <div class="iconSummary">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="1.875em" height="1.875em" viewBox="0 0 43.636 40" style="enable-background: new 0 0 43.636 40;" xml:space="preserve">
+                    <g>
+                      <path class="c1" d="M2.727,12.727c-0.501,0-0.909,0.408-0.909,0.909v23.637c0,0.502,0.408,0.909,0.909,0.909h38.182   c0.502,0,0.909-0.407,0.909-0.909V13.636c0-0.501-0.407-0.909-0.909-0.909H2.727z M40.909,40H2.727C1.223,40,0,38.776,0,37.273   V13.636c0-1.503,1.223-2.727,2.727-2.727h38.182c1.504,0,2.727,1.224,2.727,2.727v23.637C43.636,38.776,42.413,40,40.909,40" />
+                      <path class="c2" d="M10.909,16.363c-1.003,0-1.818,0.816-1.818,1.818v1.818c0,1.003,0.815,1.819,1.818,1.819   s1.818-0.816,1.818-1.819v-1.818C12.727,17.179,11.912,16.363,10.909,16.363 M10.909,23.636c-2.005,0-3.636-1.631-3.636-3.637   v-1.818c0-2.005,1.631-3.636,3.636-3.636s3.636,1.631,3.636,3.636v1.818C14.545,22.005,12.914,23.636,10.909,23.636" />
+                      <path d="M17.273,32.727c-0.502,0-0.909-0.406-0.909-0.909V30c0-0.728-0.284-1.413-0.799-1.928   c-0.515-0.516-1.199-0.799-1.928-0.799H8.182c-0.728,0-1.413,0.284-1.928,0.799S5.455,29.272,5.455,30v0.909h8.182   c0.502,0,0.909,0.406,0.909,0.909c0,0.503-0.407,0.909-0.909,0.909H4.546c-0.502,0-0.909-0.406-0.909-0.909V30   c0-1.214,0.472-2.354,1.331-3.214c0.859-0.858,2.001-1.332,3.214-1.332h5.455c1.214,0,2.356,0.474,3.214,1.332   c0.859,0.86,1.332,2,1.332,3.214v1.818C18.183,32.321,17.774,32.727,17.273,32.727" />
+                    </g>
+                    <rect class="c1" x="3.636" y="34.545" width="36.364" height="1.818" />
+                    <rect class="c2" x="27.273" y="14.546" width="1.818" height="1.818" />
+                    <rect class="c2" x="23.636" y="14.546" width="1.818" height="1.818" />
+                    <rect class="c2" x="20" y="14.546" width="1.818" height="1.818" />
+                    <rect class="c2" x="20" y="18.182" width="16.364" height="1.818" />
+                    <rect class="c2" x="20" y="21.818" width="16.364" height="1.818" />
+                    <rect class="c2" x="20" y="25.454" style="fill: #284378;" width="9.091" height="1.818" />
+                    <g>
+                      <path class="c2" d="M40,9.091c-0.502,0-0.909-0.407-0.909-0.909c0-0.501-0.407-0.909-0.909-0.909H5.455   c-0.501,0-0.91,0.408-0.91,0.909c0,0.502-0.407,0.909-0.909,0.909c-0.501,0-0.909-0.407-0.909-0.909   c0-1.503,1.224-2.728,2.728-2.728h32.727c1.503,0,2.727,1.225,2.727,2.728C40.909,8.684,40.503,9.091,40,9.091" />
+                      <path class="c2" d="M37.273,3.636c-0.503,0-0.909-0.407-0.909-0.909c0-0.501-0.407-0.909-0.909-0.909H8.182   c-0.501,0-0.909,0.408-0.909,0.909c0,0.502-0.407,0.909-0.909,0.909c-0.502,0-0.909-0.407-0.909-0.909C5.455,1.223,6.679,0,8.182,0   h27.273c1.503,0,2.727,1.223,2.727,2.727C38.182,3.229,37.776,3.636,37.273,3.636" />
+                    </g>
+                  </svg>
+                </div>
+                <div class="TextSummary">
+                  <div id="divBookerInfo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="divSumRight">
+        <div id="YourBooking" class="sumBooking">
+          Ihre Buchung
+        </div>
+        <div id="sumBookings">
+          <div id="sumLogo" class="sumBox">
+          </div>
+          <div id="sumService" class="sumBox" onclick="showPage(1, true); return false;">
+            <div class="divSumIcon">
+              <svg class="sumIcon" width="1.25em" height="1.25em">
+                <circle class="sumBookingsIcon" fill="#f45917" r="0.563em" cx="0.625em" cy="0.625em"></circle>
+                <text y="50%" text-anchor="middle" x="50%" fill="white" font-size="0.750em" dy="0.30em">1</text>
+              </svg>
+              <span class="sumHeader">
+                <span id="Services">
+                  Leistungen
+                </span>
+              </span>
+              <span id="editSumService" class="editSumRight">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="0.85em" height="0.85em" viewBox="0 0 20.008 20.024" style="enable-background: new 0 0 20.008 20.024;" xml:space="preserve">
+                  <g>
+                    <path class="c4" d="M3.255,18.171c0.292-0.091,0.574-0.212,0.841-0.361l-1.882-1.882   c-0.15,0.267-0.271,0.548-0.362,0.841l-0.63,2.033L3.255,18.171z M10.046,12.091L7.932,9.977l-4.996,4.996   c-0.051,0.051-0.1,0.103-0.148,0.156l2.106,2.106c0.053-0.048,0.105-0.097,0.156-0.147L10.046,12.091z M11.762,10.375L9.648,8.261   l-1.029,1.03l2.114,2.114L11.762,10.375z M17.6,4.538l-2.114-2.115l-5.151,5.152l2.114,2.114L17.6,4.538z M18.9,1.722l-0.598-0.606   c-0.091-0.093-0.216-0.145-0.346-0.145c-0.13,0-0.254,0.052-0.345,0.145l-1.024,1.036l1.282,1.282l1.028-1.028   C19.085,2.217,19.086,1.912,18.9,1.722 M0.925,16.481c0.257-0.828,0.712-1.58,1.324-2.194L15.143,1.394   c0.189-0.19,0.496-0.19,0.686,0l0.072,0.072l1.019-1.032C17.193,0.157,17.567,0,17.956,0c0.39,0,0.763,0.157,1.037,0.434   l0.598,0.606c0.56,0.571,0.556,1.485-0.007,2.052l-1.025,1.025l0.377,0.373c0.459,0.454,0.719,1.073,0.72,1.718   c0.002,0.646-0.254,1.266-0.71,1.723l-3.885,3.885c-0.19,0.189-0.497,0.189-0.686,0c-0.19-0.19-0.19-0.497,0-0.687l3.884-3.884   c0.556-0.556,0.57-1.453,0.033-2.026l-6.872,6.872l-0.687,0.687l-4.997,4.996c-0.613,0.613-1.366,1.067-2.193,1.325l-2.914,0.903   c-0.172,0.053-0.36,0.007-0.487-0.121c-0.127-0.127-0.173-0.314-0.12-0.486L0.925,16.481z" />
+                  </g>
+                </svg>
+              </span>
+            </div>
+            <div id="divServicSel">
+              <div id="SelServices" class="sumItem">
+                Bitte wählen Sie Ihre gewünschten Leistungen aus
+              </div>
+            </div>
+          </div>
+
+          <div id="sumAppointment" class="hide sumBox" onclick="showPage(2, true); $('.timeslot').removeClass('timeslotsel'); return false;">
+            <div class="divSumIcon">
+              <svg class="sumIcon" width="1.25em" height="1.25em">
+                <circle class="sumBookingsIcon" fill="#f45917" r="0.563em" cx="0.625em" cy="0.625em"></circle>
+                <text y="50%" text-anchor="middle" x="50%" fill="white" font-size="0.750em" dy="0.30em">2</text>
+              </svg>
+              <span class="sumHeader">
+                Termin wählen</span>
+              <span id="editSumAppointment" class="editSumRight">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="0.85em" height="0.85em" viewBox="0 0 20.008 20.024" style="enable-background: new 0 0 20.008 20.024;" xml:space="preserve">
+                  <g>
+                    <path class="c4" d="M3.255,18.171c0.292-0.091,0.574-0.212,0.841-0.361l-1.882-1.882   c-0.15,0.267-0.271,0.548-0.362,0.841l-0.63,2.033L3.255,18.171z M10.046,12.091L7.932,9.977l-4.996,4.996   c-0.051,0.051-0.1,0.103-0.148,0.156l2.106,2.106c0.053-0.048,0.105-0.097,0.156-0.147L10.046,12.091z M11.762,10.375L9.648,8.261   l-1.029,1.03l2.114,2.114L11.762,10.375z M17.6,4.538l-2.114-2.115l-5.151,5.152l2.114,2.114L17.6,4.538z M18.9,1.722l-0.598-0.606   c-0.091-0.093-0.216-0.145-0.346-0.145c-0.13,0-0.254,0.052-0.345,0.145l-1.024,1.036l1.282,1.282l1.028-1.028   C19.085,2.217,19.086,1.912,18.9,1.722 M0.925,16.481c0.257-0.828,0.712-1.58,1.324-2.194L15.143,1.394   c0.189-0.19,0.496-0.19,0.686,0l0.072,0.072l1.019-1.032C17.193,0.157,17.567,0,17.956,0c0.39,0,0.763,0.157,1.037,0.434   l0.598,0.606c0.56,0.571,0.556,1.485-0.007,2.052l-1.025,1.025l0.377,0.373c0.459,0.454,0.719,1.073,0.72,1.718   c0.002,0.646-0.254,1.266-0.71,1.723l-3.885,3.885c-0.19,0.189-0.497,0.189-0.686,0c-0.19-0.19-0.19-0.497,0-0.687l3.884-3.884   c0.556-0.556,0.57-1.453,0.033-2.026l-6.872,6.872l-0.687,0.687l-4.997,4.996c-0.613,0.613-1.366,1.067-2.193,1.325l-2.914,0.903   c-0.172,0.053-0.36,0.007-0.487-0.121c-0.127-0.127-0.173-0.314-0.12-0.486L0.925,16.481z" />
+                  </g>
+                </svg>
+              </span>
+            </div>
+            <div id="divSlots">
+            </div>
+          </div>
+
+          <div id="sumFields" class="hide sumBox" onclick="showPage(3, true); return false;">
+            <div class="divSumIcon">
+              <svg class="sumIcon" width="1.25em" height="1.25em">
+                <circle class="sumBookingsIcon" fill="#f45917" r="0.563em" cx="0.625em" cy="0.625em"></circle>
+                <text y="50%" text-anchor="middle" x="50%" fill="white" font-size="0.750em" dy="0.30em">3</text>
+              </svg>
+              <span class="sumHeader">
+                Daten eingeben</span>
+            </div>
+          </div>
+
+          <div id="sumPayment" class="hide sumBox" style="cursor: inherit">
+            <div class="divSumIcon">
+              <svg class="sumIcon" width="1.25em" height="1.25em">
+                <circle class="sumBookingsIcon" fill="#f45917" r="0.563em" cx="0.625em" cy="0.625em"></circle>
+                <text y="50%" text-anchor="middle" x="50%" fill="white" font-size="0.750em" dy="0.30em">4</text>
+              </svg>
+              <span class="sumHeader">
+                Bezahlung</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+    <div id="divFooterGen" class="footerGen">
+      <div id="divCopyright" class="footerGenCopright">
+        Service provided by <a href="https://www.etermin.net" title="Online Terminplaner und Online Terminbuchung. Testen Sie uns 30 Tage kostenlos!" class="link" target="_blank" rel="noreferrer" >eTermin Online Terminplaner</a>
+      </div>
+      <div class="footerGenDP">
+        <div class="flex divDPAll">
+          <div class="divDataProtection">
+            Verschlüsselte Datenübertragung
+          </div>
+          <div class="flex">
+            <div id="divDataP">
+            </div>
+            <div id="divAGB">
+            </div>
+            <div id="divImprint">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div id="dpModal" class="displayNone modalDialog">
+    </div>
+    <div class="containerFlex">
+      <div class="footer" id="footer">
+        <div id="divWizard" class="wizard">
+          <div class="step1" onclick="showPage(1, true); return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sumIcon" width="1.25em" height="1.25em">
+              <circle class="sumBookingsIcon" fill="#f45917" r="0.5625em" cx="0.625em" cy="0.625em"></circle>
+              <text y="50%" text-anchor="middle" x="50%" fill="white" font-size="0.75em" dy="0.30em">1</text>
+            </svg>
+            <span class="wizardText">
+              Leistungen</span>
+          </div>
+          <span class="next">></span>
+          <div class="step2" onclick="showPage(2, true); return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sumIcon" width="1.25em" height="1.25em">
+              <circle class="sumBookingsIcon" fill="#f45917" r="0.5625em" cx="0.625em" cy="0.625em"></circle>
+              <text y="50%" text-anchor="middle" x="50%" fill="white" font-size="0.75em" dy="0.30em">2</text>
+            </svg>
+            <span class="wizardText">
+              Termin wählen</span>
+          </div>
+          <span class="next">></span>
+          <div class="step3" onclick="showPage(3, true); return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="sumIcon" width="1.25em" height="1.25em">
+              <circle class="sumBookingsIcon" fill="#f45917" r="0.5625em" cx="0.625em" cy="0.625em"></circle>
+              <text y="50%" text-anchor="middle" x="50%" fill="white" font-size="0.75em" dy="0.30em">3</text>
+            </svg>
+            <span class="wizardText">
+              Daten eingeben</span>
+          </div>
+        </div>
+        <button id="bp1" class="btn btn-orange" onclick="return showPage(2, false)">
+          Weiter zur Terminauswahl
+        </button>
+        <button id="bp2" class="btn btn-orange" style="display: none" onclick="return showPage(3, false)">
+          Termin übernehmen
+        </button>
+        <button id="cmdBookAppointment" class="btn btn-orange" style="display: none" onclick="return showPage(4, false)">
+          Termin buchen
+        </button>
+        <button id="cmdNewApp" class="btn btn-orange" style="display: none" onclick="window.name='again'; window.location.href = window.location.href">
+          Weiteren Termin buchen
+        </button>
+        <button id="cmdExecRequestAccess" class="btn btn-orange" style="display: none" onclick="return execRequestAccess()">
+          Zugang anfordern
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function getRes(key) {
+    if (key === 'Total') {
+      return 'Gesamtpreis';
+    }
+    else if (key === 'locPrivacy') {
+      return 'Datenschutzerklärung';
+    }
+    else if (key === 'locAGB') {
+      return 'AGB';
+    }
+    else if (key === 'locImprint') {
+      return 'Impressum';
+    }
+    else if (key === 'locShareText') {
+      return 'Ich habe gerade einen Termin bei @@@ online gebucht! ';
+    }
+    else if (key === 'locShareWithFriends') {
+      return 'Termin mit Freunden teilen';
+    }
+    else if (key === 'locOnRequest') {
+      return 'Auf Anfrage';
+    }
+    else if (key === 'locPriceConsulting') {
+      return 'Preis nach Beratung';
+    }
+    else if (key === 'locPricePersConsulting') {
+      return 'Preis nach persönlicher Beratung';
+    }
+    else if (key === 'locMore') {
+      return 'mehr';
+    }
+    else if (key === 'locLess') {
+      return 'weniger';
+    }
+    else if (key === 'locVendorConfirmation') {
+      return 'Der Termin wurde vorgemerkt, ist aber erst nach Bestätigung gültig! Sie werden benachrichtigt, sobald der Termin bestätigt wurde.';
+    }
+    else if (key === 'locRegistrationSuccess') {
+      return 'Die Registrierung ist abgeschlossen. Die Zugangsdaten werden per E-Mail gesendet, sobald die Freischaltung erfolgt ist.';
+    }
+    else if (key === 'locRegistrationFailed') {
+      return 'Die Registrierung konnte nicht abgeschlossen werden.';
+    }
+    else if (key === 'locPasswordSent') {
+      return 'Sie sollten innerhalb der nächsten Minuten ein E-Mail mit ihrem Passwort erhalten. Bitte überprüfen Sie auch den SPAM Ordner.';
+    }
+    else if (key === 'locPasswordFailed') {
+      return 'Es existiert kein Benutzer mit dieser E-Mail Adresse. Bitte eine andere Adresse verwenden.';
+    }
+    else if (key === 'locShowMore') {
+      return 'Weitere Termine anzeigen';
+    }
+    else if (key === 'noSlotsAvailable') {
+      return 'Keine Termine verfügbar';
+    }
+    else if (key === 'AppCalendar') {
+      return 'Termin in Kalender übernehmen';
+    }
+    else if (key === 'NotAvailable') {
+      return 'Die Buchungsseite steht derzeit nicht zur Verfügung. Bitte später nochmals probieren.';
+    }
+    else if (key === 'TrialExpired') {
+      return '<strong>Testperiode ist abgelaufen!</strong><br><br>Ihre Testperiode ist abgelaufen! Wenn Sie das Produkt käuflich erwerben wollen, klicken Sie <a href="https://www.etermin.net/manage.aspx">hier</a> um eTermin zu bestellen.<br><br>Bei Fragen wenden Sie sich bitte an uns: <a href="https://www.etermin.net/kontakt">https://www.etermin.net/kontakt</a><br><br><br><br><br><br><br>';
+    }
+    else if (key === 'locSelection') {
+      return 'Bitte auswählen';
+    }
+    else if (key === 'locCalAny') {
+      return 'Beliebig';
+    }
+    else if (key === 'locCalAny') {
+      return 'Beliebig';
+    }
+    else if (key === 'ValidVoucher') {
+      return 'Der Gutschein wurde eingelöst';
+    }
+    else if (key === 'InvalidVoucher') {
+      return 'Ungültiger Gutscheincode';
+    }
+    else if (key === 'StartAgain') {
+      return 'Der ausgewählte Termin wurde leider schon in der Zwischenzeit vergeben. Bitte erneut mit der Terminbuchung starten!';
+    }
+    else if (key === 'LimitReached') {
+      return 'Das Limit der maximal buchbaren Termine wurde erreicht!';
+    }
+    else if (key === 'Phone') {
+      return 'Telefon';
+    }
+    else if (key === 'AppLocation') {
+      return 'Terminort';
+    }
+    else if (key === 'locWaitListInfo') {
+      return '<b>Keine Termine verfügbar für diesen Tag.</b><br>Sie können sich aber auf die Warteliste setzen lassen. Geben Sie Ihre gewünschte Zeit ein und Sie werden kontaktiert, sobald ein Termin frei wird. Je länger der von Ihnen gewählte Zeitraum für einen  Wartelistenplatz ist, desto größer ist die Wahrscheinlichkeit für einen fixen Termin.';
+    }
+    else if (key === 'Period') {
+      return 'Zeitraum von';
+    }
+    else if (key === 'Next') {
+      return 'Weiter';
+    }
+    else if (key === 'WL') {
+      return 'Warteliste';
+    }
+    else if (key === 'PrintApp') {
+      return 'Terminbestätigung drucken';
+    }
+    else if (key === 'PrintAppAll') {
+      return 'Terminbestätigung drucken (+ alle zukünftige Termine)';
+    }
+    else if (key === 'locInput') {
+      return 'Eingabe erforderlich';
+    }
+    else if (key === 'Ratings') {
+      return 'Bewertungen';
+    }
+    else if (key === 'StoreDataCookie') {
+      return 'Eingaben auf diesem Gerät merken';
+    }
+    else if (key === 'StoreDataCookieTT') {
+      return 'Die eingegebenen Daten werden als Cookie auf dem Gerät gespeichert, damit diese bei einer erneuten Buchung nicht nochmals eingeben werden müssen. Wenn diese Buchung zB von einem öffentlichen Gerät vorgenommen wird, sollte diese Option nicht aktiviert werden.';
+    }
+    else if (key === 'selectFile') {
+      return 'Datei auswählen...';
+    }
+    else if (key === 'Years') {
+      return 'Jahren';
+    }
+    else if (key === 'LastYear') {
+      return 'letztes Jahr';
+    }
+    else if (key === 'Months') {
+      return 'Monaten';
+    }
+    else if (key === 'Days') {
+      return 'Tagen';
+    }
+    else if (key === 'Ago') {
+      return 'vor';
+    }
+    else if (key === 'Today') {
+      return 'Heute';
+    }
+    else if (key === 'RatingReply') {
+      return 'Antwort vom Inhaber';
+    }
+    else if (key === 'infoValidate') {
+      return 'Bitte korrigieren Sie Ihre Eingaben um fortzufahren!';
+    }
+    else if (key === 'max1Service') {
+      return 'Bitte genau eine Leistung bzw. Antwort wählen!';
+    }
+    else if (key === 'max2Service') {
+      return 'Bitte genau zwei Leistungen bzw. Antworten wählen!';
+    }
+    else if (key === 'max3Service') {
+      return 'Bitte genau drei Leistungen bzw. Antworten wählen!';
+    }
+    else if (key === 'min1Service') {
+      return 'Bitte eine Leistung bzw. Antwort wählen!';
+    }
+    else if (key === 'min2Service') {
+      return 'Bitte mindestens zwei Leistungen bzw. Antworten wählen!';
+    }
+    else if (key === 'min3Service') {
+      return 'Bitte mindestens drei Leistungen bzw. Antworten wählen!';
+    }
+    else if (key === 'max2ServiceOrLess') {
+      return 'Bitte wählen Sie maximal zwei Leistungen bzw. Antworten!';
+    }
+    else if (key === 'max3ServiceOrLess') {
+      return 'Bitte wählen Sie maximal drei Leistungen bzw. Antworten!';
+    }
+    else if (key === 'max4ServiceOrLess') {
+      return 'Bitte wählen Sie maximal vier Leistungen bzw. Antworten!';
+    }
+    else if (key === 'loc12Hour') {
+      return '12 Stunden vor Termin';
+    }
+    else if (key === 'loc1Hour') {
+      return '1 Stunde vor Termin';
+    }
+    else if (key === 'loc24Hour') {
+      return '24 Stunden vor Termin';
+    }
+    else if (key === 'loc25Hour') {
+      return '25 Stunden vor Termin';
+    }
+    else if (key === 'loc2Hour') {
+      return '2 Stunden vor Termin';
+    }
+    else if (key === 'loc3Hour') {
+      return '3 Stunden vor Termin';
+    }
+    else if (key === 'loc48Hour') {
+      return '48 Stunden vor Termin';
+    }
+    else if (key === 'loc4Hour') {
+      return '4 Stunden vor Termin';
+    }
+    else if (key === 'loc60Hour') {
+      return '60 Stunden vor Termin';
+    }
+    else if (key === 'loc72Hour') {
+      return '3 Tage vor Termin';
+    }
+    else if (key === 'loc8Hour') {
+      return '8 Stunden vor Termin';
+    }
+    else if (key === 'loc96Hour') {
+      return '4 Tage vor Termin';
+    }
+    else if (key === 'locReminder') {
+      return 'Terminerinnerung';
+    }
+    else if (key === 'locNoReminder') {
+      return 'Keine Terminerinnerung';
+    }
+    else if (key === 'Web') {
+      return 'Web';
+    }
+    else if (key === 'EMail') {
+      return 'E-Mail';
+    }
+    else if (key === 'recApp') {
+      return 'Wiederholender Termin!';
+    }
+    else if (key === 'Deposit') {
+      return 'Anzahlung';
+    }
+    else if (key === 'Surcharge') {
+      return 'Zuschlag';
+    }
+    else if (key === 'showMoreDays') {
+      return 'Weitere Tage anzeigen';
+    }
+    else if (key === 'drivingCosts') {
+      return 'Fahrtkosten';
+    }
+    else if (key === 'locSelOnline') {
+      return 'Online Zahlung';
+    }
+    else if (key === 'locSelCash') {
+      return 'Zahlung vor Ort';
+    }
+    else if (key === 'locSelInvoice') {
+      return 'Zahlung per Rechnung';
+    }
+    else if (key === 'fileTooBig') {
+      return 'Die ausgewählte Datei ist zu gross. Maximales Limit: 10 MB';
+    }
+    else if (key === 'Appointment') {
+      return 'Termin:';
+    }
+    else if (key === 'StatusActive') {
+      return 'Status: Aktiv';
+    }
+    else if (key === 'StatusCancelled') {
+      return 'Status: Storniert';
+    }
+    else if (key === 'Reason') {
+      return 'Stornierungsgrund (optional)';
+    }
+    else if (key === 'CancelApp') {
+      return 'Termin stornieren';
+    }
+    else if (key === 'AppWasDeleted') {
+      return 'Der Termin wurde storniert!<br><br>Sie können gerne jederzeit einen neuen <a href="LINK" target="_blank">Termin</a> online buchen!';
+    }
+    else if (key === 'AppNotDeleted') {
+      return 'Der Termin konnte nicht storniert werden!';
+    }
+    else if (key === 'NotPossible') {
+      return 'Eine Terminstornierung ist nur bis @@ Stunden vor Terminbeginn möglich.';
+    }
+    else if (key === 'Apply') {
+      return 'Übernehmen';
+    }
+    else if (key === 'locNoSlots') {
+      return 'Es sind keine Termine für die gewünsche Auswahl verfügbar!';
+    }
+    else if (key === 'YourBookingDu') {
+      return 'Deine Buchung';
+    }
+    else if (key === 'locFieldsPaymentDu') {
+      return 'Wie möchtest du bezahlen?';
+    }
+    else if (key === 'locThankYouDu') {
+      return 'Vielen Dank für deine Buchung!';
+    }
+    else if (key === 'locClientLoginDu') {
+      return 'Du hast bereits ein Kundenkonto?';
+    }
+    else if (key === 'locPasswordSentDu') {
+      return 'Du solltest innerhalb der nächsten Minuten ein E-Mail mit ihrem Passwort erhalten. Bitte überprüfen auch den SPAM Ordner.';
+    }
+    else if (key === 'locYourAppointmentDu') {
+      return 'Dein gewählter Termin';
+    }
+    else if (key === 'locAppBookedDu') {
+      return 'Deine Buchungsbestätigung wird dir an die angegebene E-Mail zugesendet. Bitte überprüfe auch deinen Spam-Ordner.';
+    }
+    else if (key === 'locFieldsHeaderDu') {
+      return 'Deine Daten';
+    }
+    else if (key === 'locVendorConfirmationDu') {
+      return 'Der Termin wurde vorgemerkt, ist aber erst nach Bestätigung gültig! Du wirst benachrichtigt sobald der Termin bestätigt wurde.';
+    }
+    else if (key === 'SelServicesDu') {
+      return 'Bitte wähle deine gewünschten Leistungen aus';
+    }
+    else if (key === 'locSelectSlotDu') {
+      return 'Bitte wähle einen Termin!';
+    }
+    else if (key === 'locForgotPWDu') {
+      return 'Bitte gib deine E-Mail Adresse ein und klicke danach auf die Schaltfläche "Passwort zurücksetzen". Ein temporäres Passwort wird dir umgehend via E-Mail zugesendet.';
+    }
+    else if (key === 'infoValidateDu') {
+      return 'Bitte korrigiere deine Eingaben um fortzufahren!';
+    }
+    else if (key === 'locPayAppInfoDu') {
+      return 'Bitte führe die Zahlung innerhalb der nächsten 15 Minuten durch, sonst wird der soeben gebuchte Termin automatisch storniert.';
+    }
+    else if (key === 'locWaitListInfoDu') {
+      return '<b>Keine Termine verfügbar für diesen Tag.</b><br>Du kannst dich aber auf die Warteliste setzen lassen. Gib deine  gewünschte Zeit ein und du wirst kontaktiert, sobald ein Termin frei wird. Je länger der von dir gewählte Zeitraum für einen  Wartelistenplatz ist, desto größer ist die Wahrscheinlichkeit für einen fixen Termin.';
+    }
+    else if (key === 'locRegInfoDu') {
+      return '<b>Du hast noch kein Konto?</b><br> Klicke bitte auf „Zugang anfordern“. Nach erfolgreicher Eingabe deiner Kontaktdaten bekommst du deine Zugangsdaten.';
+    }
+    else if (key === 'locLoginDu') {
+      return '<b>Willkommen auf unserer Online Buchungsseite</b><br>Bitte melde dich mit deinen Zugangsdaten an, die du bei der erstmaligen Registrierung erhalten hast.';
+    }
+    else if (key === 'locPWNoMatch') {
+      return 'Die eingegebenen Passwörter stimmen nicht überein.';
+    }
+    else if (key === 'locEnterPW') {
+      return 'Bitte ein Passwort eingeben';
+    }
+    else if (key === 'locInvalidCode') {
+      return 'Ungültiger Code';
+    }
+    else if (key === 'locValSuccessful') {
+      return 'Die Verifizierung war erfolgreich!';
+    }
+    else if (key === 'locEnterPhone') {
+      return 'Bitte eine Telefonnummer eingeben!';
+    }
+    else if (key === 'locFailedToSendSMS') {
+      return 'Die SMS konnte nicht gesendet werden!';
+    }
+    else if (key === 'locCapSlotsAvailable') {
+      return 'Plätze verfügbar';
+    }
+    else if (key === 'locCapSlotsAvailableSing') {
+      return 'Platz verfügbar';
+    }
+    else if (key === 'confirmEmail') {
+      return 'Terminbestätigung via E-mail senden';
+    }
+    else if (key === 'confirmSMS') {
+      return 'Terminbestätigung via SMS senden';
+    }
+    return '';
+  }
+</script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.16/jquery-ui.min.js"></script>
+<script src="//cdn.jsdelivr.net/bluebird/3.5.0/bluebird.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.js"></script>
+</html>

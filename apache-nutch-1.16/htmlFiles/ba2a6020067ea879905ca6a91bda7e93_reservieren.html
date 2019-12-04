@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="de-de" dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Cormorant|Cormorant+SC" rel="stylesheet"> 
+	<meta charset="utf-8" />
+	<base href="https://www.schluesselhergiswil.ch/reservieren" />
+	<meta name="keywords" content="Online Reservieren" />
+	<meta name="author" content="Super User" />
+	<meta name="description" content="Hier Online Reservieren" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Reservieren</title>
+	<link href="/templates/protostar_gasthaus/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/templates/protostar_gasthaus/css/template.css?d728eaddb01e4e7579234ac4c3bce27d" rel="stylesheet" />
+	<link href="/templates/protostar_gasthaus/css/photoswipe.css?d728eaddb01e4e7579234ac4c3bce27d" rel="stylesheet" />
+	<link href="/templates/protostar_gasthaus/css/default-skin/default-skin.css?d728eaddb01e4e7579234ac4c3bce27d" rel="stylesheet" />
+	<link href="/templates/protostar_gasthaus/css/font-awesome-4.7.0/css/font-awesome.min.css?d728eaddb01e4e7579234ac4c3bce27d" rel="stylesheet" />
+	<link href="/templates/protostar_gasthaus/css/user.css?d728eaddb01e4e7579234ac4c3bce27d" rel="stylesheet" />
+	<link href="/components/com_formmaker/views/formmaker/tmpl/jquery-ui-spinner.css" rel="stylesheet" />
+	<link href="/media/system/css/calendar-jos.css?d728eaddb01e4e7579234ac4c3bce27d" rel="stylesheet" title="Grün" media="all" />
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"082197c79a5ba48c8e97ea7027f50fb5","system.paths":{"root":"","base":""}}</script>
+	<script src="/media/jui/js/jquery.min.js?d728eaddb01e4e7579234ac4c3bce27d"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?d728eaddb01e4e7579234ac4c3bce27d"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?d728eaddb01e4e7579234ac4c3bce27d"></script>
+	<script src="/media/system/js/caption.js?d728eaddb01e4e7579234ac4c3bce27d"></script>
+	<script src="/media/jui/js/bootstrap.min.js?d728eaddb01e4e7579234ac4c3bce27d"></script>
+	<script src="/templates/protostar_gasthaus/js/template.js?d728eaddb01e4e7579234ac4c3bce27d"></script>
+	<script src="/components/com_formmaker/views/formmaker/tmpl/wdform.js"></script>
+	<script src="/components/com_formmaker/views/formmaker/tmpl/jquery-ui.js"></script>
+	<script src="/components/com_formmaker/views/formmaker/tmpl/noconflict.js"></script>
+	<script src="/components/com_formmaker/views/formmaker/tmpl/if_gmap.js"></script>
+	<script src="/components/com_formmaker/views/formmaker/tmpl/min.js"></script>
+	<script src="/components/com_formmaker/views/formmaker/tmpl/file-upload.js"></script>
+	<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="/media/system/js/mootools-core.js?d728eaddb01e4e7579234ac4c3bce27d"></script>
+	<script src="/media/system/js/core.js?d728eaddb01e4e7579234ac4c3bce27d"></script>
+	<script src="/media/system/js/mootools-more.js?d728eaddb01e4e7579234ac4c3bce27d"></script>
+	<script src="/media/system/js/calendar.js?d728eaddb01e4e7579234ac4c3bce27d"></script>
+	<script src="/media/system/js/calendar-setup.js?d728eaddb01e4e7579234ac4c3bce27d"></script>
+	<script src="/components/com_formmaker/views/formmaker/tmpl/main_div.js"></script>
+	<script>
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(function($) {
+			 $('.hasTip').each(function() {
+				var title = $(this).attr('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					var mtelement = document.id(this);
+					mtelement.store('tip:title', parts[0]);
+					mtelement.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($('.hasTip').get(), {"maxTitleChars": 50,"fixed": false});
+		});Calendar._DN = ["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag","Sonntag"]; Calendar._SDN = ["So","Mo","Di","Mi","Do","Fr","Sa","So"]; Calendar._FD = 0; Calendar._MN = ["January","February","March","April","May","June","July","August","September","October","November","December"]; Calendar._SMN = ["Jan","Feb","M\u00e4r","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"]; Calendar._TT = {"INFO":"\u00dcber den Kalender","ABOUT":"DHTML Date\/Time Selector\n(c) dynarch.com 20022005 \/ Author: Mihai Bazon\nFor latest version visit: http:\/\/www.dynarch.com\/projects\/calendar\/\nDistributed under GNU LGPL.  See http:\/\/gnu.org\/licenses\/lgpl.html for details.\n\nDatum Auswahl:\n- Die \u00ab und \u00bb Buttons nutzen, um das Jahr auszuw\u00e4hlen\n- Mit den Schaltfl\u00e4chen < und > den Monat ausw\u00e4hlen\n- Zur schnelleren Auswahl, die Maustaste auf einen der obigen Schaltfl\u00e4chen halten.","ABOUT_TIME":"\n\nTime selection:\n Click on any of the time parts to increase it\n or Shiftclick to decrease it\n or click and drag for faster selection.","PREV_YEAR":"Klick wechselt zum Vorjahr. Klicken und festhalten f\u00fcr die Jahresliste.","PREV_MONTH":"Klick wechselt zum Vormonat. Klicken und festhalten f\u00fcr die Monatsliste.","GO_TODAY":"Heutiges Datum","NEXT_MONTH":"Klick wechselt zum Folgemonat. Klicken und festhalten f\u00fcr die Monatsliste.","SEL_DATE":"Ein Datum ausw\u00e4hlen.","DRAG_TO_MOVE":"Ziehen zum Verschieben","PART_TODAY":" Heute ","DAY_FIRST":"Mit \u201e%s\u201c beginnen","WEEKEND":"0,6","CLOSE":"Schlie\u00dfen","TODAY":"Heute","TIME_PART":"(Shift-)Klicken oder Ziehen um den Wert zu \u00e4ndern","DEF_DATE_FORMAT":"%Y%m%d","TT_DATE_FORMAT":"%a, %b %e","WK":"KW","TIME":"Zeit:"};
+	</script>
+
+	<!--[if lt IE 9]><script src="/media/jui/js/html5.js"></script><![endif]-->
+	<meta property="og:url"           content="https://schluesselhergiswil.ch/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Gasthaus Schlüssel" />
+    <meta property="og:description"   content="Das gutbürgerliche Gasthaus in Hergiswil." />
+    <meta property="og:image"         content="https://schluesselhergiswil.ch/images/logo/logo_schluessel.png" />
+</head>
+<body class="site com_content view-article no-layout no-task itemid-119"
+
+>
+	<!-- Body -->
+	<div class="body">
+	  <div class="menu_button" onclick="menu_button_function(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      </div>
+			<header class="header" role="banner">
+					<div class="navbar pull-left">
+						
+					</div>
+				<div class="header-inner clearfix">
+					<a class="brand pull-right" href="/">
+						<img src="/images/logo/logo.png" class="top_logo"/>
+					</a>
+					<div class="header-search pull-right">
+						
+
+<div class="customIE_pdf_overridefix"  >
+	<iframe src="about:blank" style="position: absolute;border: none;top: 0;left: 0;height: 100%;width: 100%;"></iframe>
+<!--[if IE]>
+<style>
+    .customIE_pdf_overridefix {
+         display: block;
+    }
+</style>
+<![endif]--></div>
+
+					</div>
+				</div>
+			</header>
+			<!-- Header -->
+<div class="container">
+		  
+								<div class="moduletablemobile">
+						<ul class="nav menu_mobile" id="_mobile">
+<li class="item-101 default"><a href="/" >Home</a></li><li class="item-107"><a href="/essen-trinken" >Essen &amp; Trinken</a></li><li class="item-108"><a href="/uebernachten" >Übernachten</a></li><li class="item-109"><a href="/galerie" >Galerie</a></li><li class="item-110"><a href="/ueber-uns" >Über uns</a></li></ul>
+		</div>
+	
+			<div class="row-fluid">
+								<main id="content" role="main" class="span12">
+					<!-- Begin Content -->
+					
+					<div id="system-message-container">
+	</div>
+
+					<div class="item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="de-DE" />
+	
+		
+						
+		
+	
+	
+		
+									<div itemprop="articleBody">
+		<h3 style="text-align:center; font-size:28px; line-height:35px;">Jetzt online Reservieren</h3>
+
+	</div>
+
+	
+							</div>
+
+					﻿
+<script type="text/javascript">// Occurs before the form is loaded
+
+function before_load()
+
+{
+
+
+
+}
+
+
+
+// Occurs just before submitting  the form
+
+function before_submit()
+
+{
+
+
+
+}
+
+
+
+// Occurs just before resetting the form
+
+function before_reset()
+
+{
+
+
+
+}</script><style>#form12 .recaptcha_input_area input{height:initial !important;}#form12 input[type="radio"]{border:none !important;outline:none !important;}#form12 input[type="checkbox"]{border:none !important;outline:none !important;}#form12 a.ui-spinner-button{border-radius:0px !important;background: none!important;}#form12 a.ui-slider-handle {width: 8px;height: 8px;top: -4px;border: 0px;border-radius: 13px;background: #FAFAFA;border: 3px solid #B1B1B1;outline: none;}#form12 .ui-slider {	height: 6px;	background: #F5F5F5 !important;	margin: 7px 0px;}#form12 .wdform_grading input {	width: 100px;}#form12 .wdform-matrix-cell input[type="text"] {	width: 100px;}#form12 .wdform-matrix-cell select {	width: 60px;}#form12 .wdform_section .wdform_column:last-child {	padding-right: 0px !important;}#form12 .wdform_preload {	display: none;}#form12 .wdform_grading {	padding: 3px 0px;}#form12 .wdform-matrix-table {	display: table;	border-spacing: 0px;}#form12 .wdform-matrix-column {	text-align: left;	display: table-cell;}#form12 .wdform-matrix-cell {	text-align: center;	display: table-cell;	padding: 6px 10px;}#form12 .wdform-matrix-head>div {	display: table-cell;	text-align: center;}#form12 .wdform-matrix-head {	display: table-row;}#form12 .wdform-matrix-row0 {	background: #DFDFDF;	display: table-row;}#form12 .wdform-matrix-row1 {	background: #E9E9E9;	display: table-row;}#form12 .selected-text {	text-align: left;	color: #000;}#form12 .wdform-quantity {	width: 30px;	margin: 2px 0px;}#form12 .wdform_scale_rating label {	vertical-align: middle;}#form12 .ui-corner-all {	border-radius: 0px;}#form12 .ui-widget-content {	border: 0px;	background: transparent;}#form12 .ui-slider-range {	background: #8A8A8A !important;}#form12 .wdform_map {	border: 6px solid #fff;}#form12 .wdform-page-and-images {	width: 100%;	border: 0px solid #000 !important;}#form12 .paypal-property {	display: inline-block;	margin-right: 15px;	vertical-align: middle;}#form12 .sel-wrap {	display: inline-block;	vertical-align: middle;	width:100%;}#form12 .sel-imul {	display: none;}#form12 .sel-imul .sel-selected {	cursor: pointer;	position: relative;	display: inline-block;	border-radius: 0px;	padding: 0px 0px 0px 2px;	font-size: 13px;	height: 22px;	line-height: 22px;	overflow: hidden;	background: #F8F8F8;	border: 0px solid #D3D3D3;	background-position: right 2px center;	width: 100%;}#form12 .sel-imul.act .sel-selected {	background: #fff;}#form12 .sel-selected .sel-arraw {	height: 23px;	width: 30px;	background: url(/components/com_formmaker/images/09/01.png) 50% 50% no-repeat;	position: absolute;	top: 0px;	right: 0px;	padding: 0px;}#form12 .sel-imul:hover .sel-selected .sel-arraw {// background-color:#e0e0e0;// border-left:1px solid #bbb;}#form12 .sel-imul.act .sel-selected .sel-arraw {// background-color:#e0e0e0;// border-left:1px solid #bbb;}#form12 .sel-imul .sel-options {	background: #fff;	border: 1px solid #dbdbdb;	border-top: none;	position: absolute;	width: inherit;	display: none;	z-index: 10;	max-height: 200px;	overflow-y: auto;	overflow-x: hidden;}#form12 .sel-options .sel-option {	padding: 3px 4px;	font-size: 13px;	border: 1px solid #fff;	border-right: none;	border-left: none;	text-align: left;}#form12 .sel-options .sel-option:hover {	border-color: #dbdbdb;	cursor: pointer;}#form12 .sel-options .sel-option.sel-ed {	background: #dbdbdb;	border-color: #dbdbdb;}#form12 input[type=text]{	margin: 0px;}#form12 input[type=password]{	margin: 0px;}#form12 input[type=url]{	margin: 0px;}#form12 input[type=email]{	margin: 0px;}#form12 input.text{	margin: 0px;}#form12 input.title{	margin: 0px;}#form12 textarea{	margin: 0px;}#form12 select {	margin: 0px;}#form12 .form-error {	border-color: red !important;}#form12 .form-error:focus {	border-color: red !important;}#form12 .wdform-field {	display: table-cell;	padding: 5px 0px;}#form12 .wdform-label-section{	text-align: left;	display: table-cell;}#form12 .wdform-element-section {	text-align: left;	display: table-cell;	min-width: 150px;}#form12 .file-upload input {	position: absolute;	visibility: hidden;}#form12 .file-upload-status {	margin-left: 10px;	max-width: 200px;	font-weight: bold;	font-size: 16px;	color: #888;	position: absolute;	border-radius: 0px;	height: 23px;	padding-left: 5px;	padding-right: 5px;	white-space: nowrap;	overflow: hidden;	}#form12 .file-picker {	width: 41px;	height: 32px;	background: url(/components/com_formmaker/images/10/02/upload.png) no-repeat;	display: inline-block;}#form12 .next-page div.wdform-page-button {color: #FFF;cursor: pointer;display: inline-block;height: 38px;line-height: 35px;background:url(/components/com_formmaker/images/10/next.png) no-repeat right #000;padding: 0px 36px 0 20px;vertical-align: middle;font-size: 18px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;}#form12 .previous-page div.wdform-page-button {color: #A2A2A2;cursor: pointer;display: inline-block;height: 37px;line-height: 35px;background:url(/components/com_formmaker/images/09/previous.png) no-repeat left #F1F1F1;padding: 0 20px 0 36px;vertical-align: middle;font-size: 18px;border-top-left-radius: 7px;border-bottom-left-radius: 7px;}#form12 .button-submit {	color: #ffffff;	cursor: pointer;	display: inline-block;	line-height: 35px;	background: #000;	padding: 0px 20px;	vertical-align: middle;	font-size: 18px;	min-width: 80px;	min-height: 35px;	font-family: Segoe UI;		border: 1px solid transparent;	margin: 5px;}#form12 .button-reset {	color: #787878;	cursor: pointer;	display: inline-block;	line-height: 35px;	background: #F0EFEF;	padding: 0px 20px;	vertical-align: middle;	font-size: 18px;	min-width: 80px;	min-height: 35px;	font-family: Segoe UI;	float: right;	border: 1px solid transparent;	margin: 5px;}#form12 .wdform_page {	background: transparent;	padding-top: 15px;	border-radius: 0px;	font-family: Segoe UI;}#form12 .wdform_column {	border-right: none !important;	padding-right: 20px !important;	float: left;	border-spacing: 2px;	border-collapse: separate !important;}#form12 .wdform_section_break2 {	color: #000;	display: inline-block;	text-align: left;	font-size: 23px;margin: 16px 10px 40px 0px;}#form12 .wdform_section_break {	color: #000;	font-size: 23px;margin: 16px 0px;}#form12 .wdform_section {	display: inline-block;}#form12 select {	padding: 2px;	height: 24px;order: 1px solid #B7B7B7;border-radius: 0px;background: #F8F8F8;}#form12 input[type="text"]{	border-radius: 0px;	height: 22px;	padding:0 3px !important;box-shadow:none;	background: #F8F8F8;border:1px solid #B7B7B7;}#form12 input[type="password"]{	border-radius: 0px;	height: 22px;	padding:0 3px !important;box-shadow:none;	background: #F8F8F8;border:1px solid #B7B7B7;}#form12 textarea {	border-radius: 0px;	height: 22px;	padding:0 3px !important;box-shadow:none;	background: #F8F8F8;border:1px solid #B7B7B7;}#form12 input[type="text"]:focus{	outline: none;box-shadow:none;}#form12 input[type="password"]:focus{	outline: none;box-shadow:none;}#form12 textarea:focus{	outline: none;box-shadow:none;}#form12 select {	outline: none;}#form12 .input_deactive {	color: #999999;	font-style: italic;}#form12 .input_active {	color: #000000;	font-style: normal;}#form12 .am_pm_select {	width: 30px;	vertical-align: middle;}#form12 .wdform-calendar-button {  display:inline-block;	background: transparent url(/components/com_formmaker/images/03/date.png) no-repeat;	border: 0px;	color: transparent;	width: 22px;	height: 22px;	position: relative;	left: -22px;	vertical-align: top;	outline: none;}#form12 .forlabs {	float: right;	margin-right: 20px;}#form12 .if-ie-div-label {	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;	filter: alpha(opacity=100) !important;	opacity: 1 !important;}#form12 .wdform-ch-rad-label {	display: inline;	margin-right:5px;	float: left;	color: #000;	cursor: pointer}#form12 textarea {	padding-top: 5px;}#form12 .wdform-date {	display:inline-block;	width: 105px}#form12 .wdform_footer {	margin-top: 15px;}#form12 .page-numbers {	vertical-align: middle;}#form12 .time_box {	text-align: right;	width: 30px;	vertical-align: middle}#form12 .mini_label {	font-size: 10px;	font-family: 'Lucida Grande', Tahoma, Arial, Verdana, sans-serif;	color: #8A8A8A;}#form12 .wdform-label {	border: none;	color: #000;	vertical-align: top;	line-height: 17px;}#form12 .wdform_colon {	color: #000}#form12 .wdform_separator {	font-style: bold;	vertical-align: middle;	color: #000;}#form12 .wdform_line {	color: #000}#form12 .wdform-required {	border: none;	color: red;	vertical-align: top;}#form12 .captcha_img {	border-width: 0px;	margin: 0px;	padding: 0px;	cursor: pointer;	border-radius: 0px;}#form12 .captcha_refresh {	width: 30px;	height: 30px;	border-width: 0px;	margin: 0px;	padding: 0px;	vertical-align: middle;	cursor: pointer;	background-image: url(/components/com_formmaker/images/refresh_black.png);}#form12 .captcha_input {	height: 20px;	border-width: 1px;	margin: 0px;	padding: 0px;	vertical-align: middle;}#form12 .file_upload {	border: 0px solid white;	border-radius: 0px;	margin: 0px;	padding: 0px;	color: black;	background-color: white;}#form12 .page_deactive {color: #000;background-color: #FFF;cursor: pointer;display: inline-block;height: 29px;text-align: center;vertical-align: bottom;padding: 5px 25px 0px 25px;font-size: 20px;font-weight:bold;}#form12 .page_active {color: #FFF;cursor: pointer;background-color: #000;display: inline-block;vertical-align: bottom;height: 29px;text-align: center;font-size: 20px;padding: 5px 25px 0px 25px;line-height: 26px;font-weight:bold;}#form12 .page_percentage_active {padding: 0px;margin: 0px;border-spacing: 0px;height: 16px;line-height: 16px;font-size: 15px;float: left;text-align: right !important;z-index: 1;position: relative;vertical-align: middle;background: #000;color: #fff;border-top-left-radius: 5px;border-bottom-left-radius: 5px;}#form12 .page_percentage_deactive {height: 16px;line-height: 16px;background-color: #F1F1F1;text-align: left !important;margin-bottom: 1px;border-radius: 5px;}#form12 .page_numbers {	font-size: 14px;	color: #000;}#form12 .phone_area_code {	width: 50px;}#form12 .phone_number {	width: 100px;}#form12 button {	cursor: pointer;}#form12 .other_input {	border-radius: 0px;	border-width: 1px;	height: 16px;	font-size: 12px;	padding: 1px;	margin: 1px;	margin-left: 25px;	z-index: 100;	position: absolute;}#form12 .wdform_page_navigation {	text-align: right !important;}#form12 .wdform_percentage_text {margin: 3px 5px 3px 9px;color: #FFF;font-size: 12px;}#form12 .wdform_percentage_title {	color: #6E6E6E;	font-style: italic;	margin: 0px 0px 0px 40px;	display: inline-block;	line-height: 27px;	height: 27px;	vertical-align: middle;}#form12 .wdform_button button {	background: #4D792C;	cursor: pointer;	font-size: 17px;	border-radius: 0px;	min-width: 80px;	min-height: 31px;	color: #fff;	border: 2px solid #68943B;	margin: 5px;	box-shadow: 0px 0px 2px #c9c9c9;	font-family: Segoe UI;}#form12 
+			@media screen and (max-width: 480px) {
+			.wdform-field-section-break {
+				max-width: 220px !important;
+			}
+			.wdform_page {
+				padding: 0 !important;
+			}
+			.wdform-element-section {
+					max-width: 285px;
+					min-width: 150px !important;
+			}
+
+			div[type="type_editor"]{
+			 max-width: 280px;
+			}
+			.wdform-field{
+				max-width: 285px;
+			}
+	  }
+		@media screen and (min-width: 481px) and (max-width: 768px) {
+			div[type="type_editor"]{
+			 max-width:480px;
+			}
+	  }
+		.g-recaptcha >div {
+			height: inherit !important;
+		}
+		img {
+			max-width:none;
+		}
+
+		.mini_label{
+			display: inline;
+		}
+
+			</style><form name="form12" action="/reservieren" method="post" id="form12" enctype="multipart/form-data" onsubmit="check_required12('submit', '12'); return false;">
+<div id="12pages" class="wdform_page_navigation" show_title="false" show_numbers="true" type="none"></div>
+<input type="hidden" id="counter12" value="9" name="counter12" />
+<input type="hidden" id="Itemid12" value="" name="Itemid12" />
+
+<div class="wdform-page-and-images" style="display:table; border-top:0px solid black;"><div id="12form_view1" class="wdform_page" page_title="Untitled page" next_title="Next" next_type="text" next_class="wdform-page-button" next_checkable="false" previous_title="Previous" previous_type="text" previous_class="wdform-page-button" previous_checkable="false"><div class="wdform_section"><div class="wdform_column ui-sortable"><div wdid="1" class="wdform_row"><div type="type_name" class="wdform-field"  style="width:300px"><div class="wdform-label-section" style="; width: 300px;"><span class="wdform-label">Name:</span><span class="wdform-required">*</span></div><div class="wdform-element-section " style="display:block; width: 300px;">
+						<div style="display: table-cell; width:50%">
+							<div><input type="text" class="input_deactive" id="wdform_1_element_first12" name="wdform_1_element_first12" value="Vorname" title="Vorname"  style="width: 100%;"></div>
+							<div><label class="mini_label"></label></div>
+						</div>
+						<div style="display:table-cell;"><div style="margin: 0px 8px; padding: 0px;"></div></div>
+						<div  style="display: table-cell; width:50%">
+							<div><input type="text" class="input_deactive" id="wdform_1_element_last12" name="wdform_1_element_last12" value="Nachname" title="Nachname" style="width: 100%;" ></div>
+							<div><label class="mini_label"></label></div>
+						</div>
+						</div></div></div><div wdid="2" class="wdform_row"><div type="type_text" class="wdform-field" style="width:300px"><div class="wdform-label-section" style=" width: 300px;"><span class="wdform-label">Natel:</span><span class="wdform-required">*</span></div><div class="wdform-element-section" style="display:block; width: 200px;"><input type="text" class="input_deactive" id="wdform_2_element12" name="wdform_2_element12" value="079 xxx xx xx" title="079 xxx xx xx"  style="width: 100%" ></div></div></div><div wdid="3" class="wdform_row"><div type="type_submitter_mail" class="wdform-field" style="width:300px"><div class="wdform-label-section" style="; width: 300px;"><span class="wdform-label">E-mail:</span><span class="wdform-required">*</span></div><div class="wdform-element-section " style="display:block; width: 200px;"><input type="text" class="input_deactive" id="wdform_3_element12" name="wdform_3_element12" value="mustermann@domain.ch" title="mustermann@domain.ch"  style="width: 100%;" ></div></div></div><div wdid="8" class="wdform_row"><div type="type_date" class="wdform-field"><div class="wdform-label-section" style="; width: 300px;"><span class="wdform-label">Datum:</span><span class="wdform-required">*</span></div><div class="wdform-element-section " style="display:block;;"><input type="text" value="" class="wdform-date" id="wdform_8_element12" name="wdform_8_element12" maxlength="10" ><input id="wdform_8_button12" class="wdform-calendar-button" type="reset" value="..." format="%Y-%m-%d" alt="calendar"  "></div></div></div><div wdid="5" class="wdform_row"><div type="type_time" class="wdform-field"><div class="wdform-label-section" style="; width: 300px;"><span class="wdform-label">Uhrzeit:</span><span class="wdform-required">*</span></div><div class="wdform-element-section " style="display:block;;"><div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;"><input type="text" value="" class="time_box" id="wdform_5_hh12" name="wdform_5_hh12" onkeypress="return check_hour(event, &quot;wdform_5_hh12&quot;, &quot;23&quot;)" ></div><div align="center" style="display: table-cell;"><span class="wdform_colon" style="vertical-align: middle;">&nbsp;:&nbsp;</span></div><div style="display: table-cell;"><input type="text" value="" class="time_box" id="wdform_5_mm12" name="wdform_5_mm12" onkeypress="return check_minute(event, &quot;wdform_5_mm12&quot;)" ></div></div><div style="display: table-row;"><div style="display: table-cell;"><label class="mini_label">HH</label></div><div style="display: table-cell;"></div><div style="display: table-cell;"><label class="mini_label">MM</label></div></div></div></div></div></div><div wdid="6" class="wdform_row"><div type="type_text" class="wdform-field" style="width:330px"><div class="wdform-label-section" style=" width: 300px;"><span class="wdform-label">Anzahl Personen &amp; weitere Bemerkungen</span><span class="wdform-required">*</span></div><div class="wdform-element-section" style="display:block; width: 330px;"><input type="text" class="input_deactive" id="wdform_6_element12" name="wdform_6_element12" value="" title=""  style="width: 100%" ></div></div></div><div wdid="7" class="wdform_row"><div type="type_submit_reset" class="wdform-field"><div class="wdform-label-section" style="display: table-cell;"></div><div class="wdform-element-section " style="display: table-cell;"><button type="button" class="button-submit" onclick="check_required12('submit', '12');" >Senden</button><button type="button" class="button-reset" onclick="check_required12('reset');" style="display: none;" >Reset</button></div></div></div></div></div><div valign="top" class="wdform_footer" style="width: 100%;"><div style="width: 100%;"><div style="width: 100%; display: table;"><div style="display: table-row-group;"><div id="12page_nav1" style="display: table-row;"></div></div></div></div></div></div></div>
+<div class="wdform_preload"></div>
+
+</form>
+<script type="text/javascript">
+JURI_ROOT				='';
+WDF_GRADING_TEXT		='Your score should be less than';
+WDF_INVALID_GRADING 	= '`grading_label` Total should be less than `grading_total`';
+FormCurrency				='$';
+FormPaypalTax				='0';
+
+
+
+function formOnload12()
+{
+	if (wdformjQuery.browser.msie  && parseInt(wdformjQuery.browser.version, 10) === 8)
+	{
+		wdformjQuery("#form12").find(wdformjQuery("input[type='radio']")).click(function() {wdformjQuery("input[type='radio']+label").removeClass('if-ie-div-label'); wdformjQuery("input[type='radio']:checked+label").addClass('if-ie-div-label')});
+		wdformjQuery("#form12").find(wdformjQuery("input[type='radio']:checked+label")).addClass('if-ie-div-label');
+
+		wdformjQuery("#form12").find(wdformjQuery("input[type='checkbox']")).click(function() {wdformjQuery("input[type='checkbox']+label").removeClass('if-ie-div-label'); wdformjQuery("input[type='checkbox']:checked+label").addClass('if-ie-div-label')});
+		wdformjQuery("#form12").find(wdformjQuery("input[type='checkbox']:checked+label")).addClass('if-ie-div-label');
+	}
+
+	if(wdformjQuery.browser.msie)
+	{
+
+		wdformjQuery(".wdform-calendar-button").click(function() {
+
+			var pos = wdformjQuery(this).offset().top;
+			setTimeout(function(){
+				wdformjQuery(".calendar").each(function (){
+				if(wdformjQuery(this).css("display") == "block"){
+				wdformjQuery(this).css("top", parseInt(pos)-wdformjQuery(this).height()+"px");
+				}
+			});
+
+			},300);
+
+		});
+	}
+
+	wdformjQuery("div[type='type_text'] input, div[type='type_number'] input, div[type='type_phone'] input, div[type='type_name'] input, div[type='type_submitter_mail'] input, div[type='type_paypal_price'] input, div[type='type_textarea'] textarea").focus(function() {delete_value(this)}).blur(function() {return_value(this)});
+	wdformjQuery("div[type='type_number'] input, div[type='type_phone'] input, div[type='type_spinner'] input, div[type='type_range'] input, .wdform-quantity").keypress(function(evt) {return check_isnum(evt)});
+
+	wdformjQuery("div[type='type_grading'] input").keypress(function() {return check_isnum_or_minus(event)});
+
+	wdformjQuery("div[type='type_paypal_checkbox'] input[type='checkbox'], div[type='type_paypal_radio'] input[type='radio'], div[type='type_paypal_shipping'] input[type='radio']").click(function() {set_total_value(12)});
+	wdformjQuery("div[type='type_paypal_select'] select, div[type='type_paypal_price'] input").change(function() {set_total_value(12)});
+	wdformjQuery(".wdform-quantity").change(function() {set_total_value(12)});
+
+	wdformjQuery("div[type='type_time'] input").blur(function() {add_0(this)});
+
+	wdformjQuery('.wdform-element-section').each(function() {
+		if(!wdformjQuery(this).parent()[0].style.width && parseInt(wdformjQuery(this).width())!=0)
+		{
+
+			if(wdformjQuery(this).css('display')=="table-cell")
+			{
+				if(wdformjQuery(this).parent().attr('type')!="type_captcha")
+					wdformjQuery(this).parent().css('width', parseInt(wdformjQuery(this).width()) + parseInt(wdformjQuery(this).parent().find(wdformjQuery(".wdform-label-section"))[0].style.width)+15);
+				else
+					wdformjQuery(this).parent().css('width', (parseInt(wdformjQuery(this).parent().find(wdformjQuery(".captcha_input"))[0].style.width)*2+50) + parseInt(wdformjQuery(this).parent().find(wdformjQuery(".wdform-label-section"))[0].style.width)+15);
+			}
+		}
+
+		if(parseInt(wdformjQuery(this)[0].style.width.replace('px', '')) < parseInt(wdformjQuery(this).css('min-width').replace('px', '')))
+			wdformjQuery(this).css('min-width', parseInt(wdformjQuery(this)[0].style.width.replace('px', ''))-10);
+	});
+
+	wdformjQuery('.wdform-label').each(function() {
+		if(parseInt(wdformjQuery(this).height()) >= 2*parseInt(wdformjQuery(this).css('line-height').replace('px', '')))
+		{
+			wdformjQuery(this).parent().css('max-width',wdformjQuery(this).parent().width());
+			wdformjQuery(this).parent().css('width','');
+		}
+	});
+
+	(function(wdformjQuery){
+		wdformjQuery.fn.shuffle = function() {
+			var allElems = this.get(),
+				getRandom = function(max) {
+					return Math.floor(Math.random() * max);
+				},
+				shuffled = wdformjQuery.map(allElems, function(){
+					var random = getRandom(allElems.length),
+						randEl = wdformjQuery(allElems[random]).clone(true)[0];
+					allElems.splice(random, 1);
+					return randEl;
+			   });
+			this.each(function(i){
+				wdformjQuery(this).replaceWith(wdformjQuery(shuffled[i]));
+			});
+			return wdformjQuery(shuffled);
+		};
+	})(wdformjQuery);
+
+	Calendar.setup({inputField: "wdform_8_element12",	ifFormat: "%Y-%m-%d",button: "wdform_8_button12",align: "Tl",singleClick: true,firstDay: 0});wdformjQuery("<input type=\"hidden\" name=\"hidden_field_for_validation12\" value =\"\" />").appendTo("#form12");	
+	if(window.before_load)
+
+	{
+
+		before_load();
+
+	}
+
+}
+
+function formAddToOnload12()
+{
+
+	if(formOldFunctionOnLoad12){ formOldFunctionOnLoad12(); }
+	formOnload12();
+}
+
+function formLoadBody12()
+{
+	formOldFunctionOnLoad12 = window.onload;
+	window.onload = formAddToOnload12;
+}
+
+var formOldFunctionOnLoad12 = null;
+formLoadBody12();
+
+	form_view_count12=0;
+	for(i=1; i<=30; i++)
+	{
+		if(document.getElementById('12form_view'+i))
+		{
+			form_view_count12++;
+			form_view_max12=i;
+
+		}
+	}
+
+	if(form_view_count12>1)
+	{
+
+		for(i=1; i<=form_view_max12; i++)
+		{
+			if(document.getElementById('12form_view'+i))
+			{
+				first_form_view12=i;
+				break;
+			}
+		}
+
+		generate_page_nav(first_form_view12, '12', form_view_count12, form_view_max12);
+	}
+
+
+	function check_required12(but_type)
+	{
+		if(but_type=='reset')
+		{
+			if(window.before_reset)
+			{
+				before_reset();
+			}
+			window.location="/reservieren";
+			return;
+		}
+
+		if(window.before_submit)
+		{
+			before_submit();
+		}
+
+		x=wdformjQuery("#form12");
+		
+							if(x.find(wdformjQuery("div[wdid=1]")).length != 0 && x.find(wdformjQuery("div[wdid=1]")).css("display") != "none")
+							{
+								if(wdformjQuery("#wdform_1_element_first12").val()=="Vorname" || wdformjQuery("#wdform_1_element_first12").val()=="" || wdformjQuery("#wdform_1_element_last12").val()=="Nachname" || wdformjQuery("#wdform_1_element_last12").val()=="")
+								{
+									alert("\"Name:\" field is required.");
+									old_bg=x.find(wdformjQuery("div[wdid=1]")).css("background-color");
+									x.find(wdformjQuery("div[wdid=1]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+									wdformjQuery("#wdform_1_element_first12").focus();
+									return false;
+								}
+							}
+							
+						if(x.find(wdformjQuery("div[wdid=2]")).length != 0 && x.find(wdformjQuery("div[wdid=2]")).css("display") != "none")
+						{
+							if(wdformjQuery("#wdform_2_element12").val()=="079 xxx xx xx" || wdformjQuery("#wdform_2_element12").val()=="")
+							{
+								alert("\"Natel:\" field is required.");
+								wdformjQuery("#wdform_2_element12").addClass( "form-error" );
+								old_bg=x.find(wdformjQuery("div[wdid=2]")).css("background-color");
+								x.find(wdformjQuery("div[wdid=2]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+								wdformjQuery("#wdform_2_element12").focus();
+								wdformjQuery("#wdform_2_element12").change(function() { if( wdformjQuery(this).val()!="" ) wdformjQuery(this).removeClass("form-error"); else wdformjQuery(this).addClass("form-error");});
+								return false;
+							}
+						}
+						
+						if(x.find(wdformjQuery("div[wdid=3]")).length != 0 && x.find(wdformjQuery("div[wdid=3]")).css("display") != "none")
+						{
+							if(wdformjQuery("#wdform_3_element12").val()=="mustermann@domain.ch" || wdformjQuery("#wdform_3_element12").val()=="")
+							{
+								alert("\"E-mail:\" field is required.");
+								wdformjQuery("#wdform_3_element12").addClass( "form-error" );
+								old_bg=x.find(wdformjQuery("div[wdid=3]")).css("background-color");
+								x.find(wdformjQuery("div[wdid=3]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+								wdformjQuery("#wdform_3_element12").focus();
+								wdformjQuery("#wdform_3_element12").change(function() { if( wdformjQuery(this).val()!="" ) wdformjQuery(this).removeClass("form-error"); else wdformjQuery(this).addClass("form-error");});
+								return false;
+							}
+						}
+						
+					if(x.find(wdformjQuery("div[wdid=3]")).length != 0 && x.find(wdformjQuery("div[wdid=3]")).css("display") != "none")
+					{
+
+					if(wdformjQuery("#wdform_3_element12").val()!="" && wdformjQuery("#wdform_3_element12").val().search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) == -1 )
+						{
+							alert("This is not a valid email address.");
+							old_bg=x.find(wdformjQuery("div[wdid=3]")).css("background-color");
+							x.find(wdformjQuery("div[wdid=3]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+							wdformjQuery("#wdform_3_element12").focus();
+							return false;
+						}
+
+					}
+					
+						if(x.find(wdformjQuery("div[wdid=8]")).length != 0 && x.find(wdformjQuery("div[wdid=8]")).css("display") != "none")
+						{
+							if(wdformjQuery("#wdform_8_element12").val()=="")
+							{
+								alert("\"Datum:\" field is required.");
+								wdformjQuery("#wdform_8_element12").addClass( "form-error" );
+								old_bg=x.find(wdformjQuery("div[wdid=8]")).css("background-color");
+								x.find(wdformjQuery("div[wdid=8]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+								wdformjQuery("#wdform_8_element12").focus();
+								wdformjQuery("#wdform_8_element12").change(function() { if( wdformjQuery(this).val()!="" ) wdformjQuery(this).removeClass("form-error"); else wdformjQuery(this).addClass("form-error");});
+								return false;
+							}
+						}
+						
+						if(x.find(wdformjQuery("div[wdid=5]")).length != 0 && x.find(wdformjQuery("div[wdid=5]")).css("display") != "none")
+						{
+							if(wdformjQuery("#wdform_5_mm12").val()=="" || wdformjQuery("#wdform_5_hh12").val()=="" || (wdformjQuery("#wdform_5_ss12").length != 0 ? wdformjQuery("#wdform_5_ss12").val()=="" : false))
+							{
+								alert("\"Uhrzeit:\" field is required.");
+								old_bg=x.find(wdformjQuery("div[wdid=5]")).css("background-color");
+								x.find(wdformjQuery("div[wdid=5]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+								wdformjQuery("#wdform_5_hh12").focus();
+								return false;
+							}
+						}
+						
+						if(x.find(wdformjQuery("div[wdid=6]")).length != 0 && x.find(wdformjQuery("div[wdid=6]")).css("display") != "none")
+						{
+							if(wdformjQuery("#wdform_6_element12").val()=="" || wdformjQuery("#wdform_6_element12").val()=="")
+							{
+								alert("\"Anzahl Personen &amp; weitere Bemerkungen\" field is required.");
+								wdformjQuery("#wdform_6_element12").addClass( "form-error" );
+								old_bg=x.find(wdformjQuery("div[wdid=6]")).css("background-color");
+								x.find(wdformjQuery("div[wdid=6]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+								wdformjQuery("#wdform_6_element12").focus();
+								wdformjQuery("#wdform_6_element12").change(function() { if( wdformjQuery(this).val()!="" ) wdformjQuery(this).removeClass("form-error"); else wdformjQuery(this).addClass("form-error");});
+								return false;
+							}
+						}
+						 ;
+
+		if(a[12]==1)
+			return;
+		
+	var disabled_fields ="";
+	wdformjQuery("div[wdid]").each(function() {
+		if(wdformjQuery(this).css("display")=="none")
+		{
+			disabled_fields += wdformjQuery(this).attr("wdid");
+			disabled_fields += ",";
+		}
+
+			if(disabled_fields)
+			wdformjQuery("<input type=\"hidden\" name=\"disabled_fields12\" value =\""+disabled_fields+"\" />").appendTo("#form12");
+
+	});;
+		a[12]=1;
+		document.getElementById("form"+12).submit();
+	}
+
+
+	function check12(id)
+	{
+		x=wdformjQuery("#12form_view"+id);
+		
+							if(x.find(wdformjQuery("div[wdid=1]")).length != 0 && x.find(wdformjQuery("div[wdid=1]")).css("display") != "none")
+							{
+								if(wdformjQuery("#wdform_1_element_first12").val()=="Vorname" || wdformjQuery("#wdform_1_element_first12").val()=="" || wdformjQuery("#wdform_1_element_last12").val()=="Nachname" || wdformjQuery("#wdform_1_element_last12").val()=="")
+								{
+									alert("\"Name:\" field is required.");
+									old_bg=x.find(wdformjQuery("div[wdid=1]")).css("background-color");
+									x.find(wdformjQuery("div[wdid=1]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+									wdformjQuery("#wdform_1_element_first12").focus();
+									return false;
+								}
+							}
+							
+						if(x.find(wdformjQuery("div[wdid=2]")).length != 0 && x.find(wdformjQuery("div[wdid=2]")).css("display") != "none")
+						{
+							if(wdformjQuery("#wdform_2_element12").val()=="079 xxx xx xx" || wdformjQuery("#wdform_2_element12").val()=="")
+							{
+								alert("\"Natel:\" field is required.");
+								wdformjQuery("#wdform_2_element12").addClass( "form-error" );
+								old_bg=x.find(wdformjQuery("div[wdid=2]")).css("background-color");
+								x.find(wdformjQuery("div[wdid=2]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+								wdformjQuery("#wdform_2_element12").focus();
+								wdformjQuery("#wdform_2_element12").change(function() { if( wdformjQuery(this).val()!="" ) wdformjQuery(this).removeClass("form-error"); else wdformjQuery(this).addClass("form-error");});
+								return false;
+							}
+						}
+						
+						if(x.find(wdformjQuery("div[wdid=3]")).length != 0 && x.find(wdformjQuery("div[wdid=3]")).css("display") != "none")
+						{
+							if(wdformjQuery("#wdform_3_element12").val()=="mustermann@domain.ch" || wdformjQuery("#wdform_3_element12").val()=="")
+							{
+								alert("\"E-mail:\" field is required.");
+								wdformjQuery("#wdform_3_element12").addClass( "form-error" );
+								old_bg=x.find(wdformjQuery("div[wdid=3]")).css("background-color");
+								x.find(wdformjQuery("div[wdid=3]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+								wdformjQuery("#wdform_3_element12").focus();
+								wdformjQuery("#wdform_3_element12").change(function() { if( wdformjQuery(this).val()!="" ) wdformjQuery(this).removeClass("form-error"); else wdformjQuery(this).addClass("form-error");});
+								return false;
+							}
+						}
+						
+					if(x.find(wdformjQuery("div[wdid=3]")).length != 0 && x.find(wdformjQuery("div[wdid=3]")).css("display") != "none")
+					{
+
+					if(wdformjQuery("#wdform_3_element12").val()!="" && wdformjQuery("#wdform_3_element12").val().search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) == -1 )
+						{
+							alert("This is not a valid email address.");
+							old_bg=x.find(wdformjQuery("div[wdid=3]")).css("background-color");
+							x.find(wdformjQuery("div[wdid=3]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+							wdformjQuery("#wdform_3_element12").focus();
+							return false;
+						}
+
+					}
+					
+						if(x.find(wdformjQuery("div[wdid=8]")).length != 0 && x.find(wdformjQuery("div[wdid=8]")).css("display") != "none")
+						{
+							if(wdformjQuery("#wdform_8_element12").val()=="")
+							{
+								alert("\"Datum:\" field is required.");
+								wdformjQuery("#wdform_8_element12").addClass( "form-error" );
+								old_bg=x.find(wdformjQuery("div[wdid=8]")).css("background-color");
+								x.find(wdformjQuery("div[wdid=8]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+								wdformjQuery("#wdform_8_element12").focus();
+								wdformjQuery("#wdform_8_element12").change(function() { if( wdformjQuery(this).val()!="" ) wdformjQuery(this).removeClass("form-error"); else wdformjQuery(this).addClass("form-error");});
+								return false;
+							}
+						}
+						
+						if(x.find(wdformjQuery("div[wdid=5]")).length != 0 && x.find(wdformjQuery("div[wdid=5]")).css("display") != "none")
+						{
+							if(wdformjQuery("#wdform_5_mm12").val()=="" || wdformjQuery("#wdform_5_hh12").val()=="" || (wdformjQuery("#wdform_5_ss12").length != 0 ? wdformjQuery("#wdform_5_ss12").val()=="" : false))
+							{
+								alert("\"Uhrzeit:\" field is required.");
+								old_bg=x.find(wdformjQuery("div[wdid=5]")).css("background-color");
+								x.find(wdformjQuery("div[wdid=5]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+								wdformjQuery("#wdform_5_hh12").focus();
+								return false;
+							}
+						}
+						
+						if(x.find(wdformjQuery("div[wdid=6]")).length != 0 && x.find(wdformjQuery("div[wdid=6]")).css("display") != "none")
+						{
+							if(wdformjQuery("#wdform_6_element12").val()=="" || wdformjQuery("#wdform_6_element12").val()=="")
+							{
+								alert("\"Anzahl Personen &amp; weitere Bemerkungen\" field is required.");
+								wdformjQuery("#wdform_6_element12").addClass( "form-error" );
+								old_bg=x.find(wdformjQuery("div[wdid=6]")).css("background-color");
+								x.find(wdformjQuery("div[wdid=6]")).effect( "shake", {}, 500 ).css("background-color","#FF8F8B").animate({backgroundColor: old_bg}, {duration: 500, queue: false });
+								wdformjQuery("#wdform_6_element12").focus();
+								wdformjQuery("#wdform_6_element12").change(function() { if( wdformjQuery(this).val()!="" ) wdformjQuery(this).removeClass("form-error"); else wdformjQuery(this).addClass("form-error");});
+								return false;
+							}
+						}
+						 ;
+		return true;
+	}
+
+//	wdformjQuery('.wdform-element-section select').each(function() { reselect(this,''); })
+
+</script>
+		
+					<!-- End Content -->
+				</main>
+							</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer class="footer" role="contentinfo">
+		<div class="container_footer">
+			<!--<hr />-->
+			
+
+<div class="custom"  >
+	<div class="footer_flex">
+<div>Mattstrasse 2</div><div>6052 Hergiswil</div><div><a>041 622 44 22</a></div><div><a><span id="cloak4abdfd2c86d6dd8f18ef5d1eed9c3e92">Diese E-Mail-Adresse ist vor Spambots geschützt! Zur Anzeige muss JavaScript eingeschaltet sein!</span><script type='text/javascript'>
+				document.getElementById('cloak4abdfd2c86d6dd8f18ef5d1eed9c3e92').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy4abdfd2c86d6dd8f18ef5d1eed9c3e92 = '&#105;nf&#111;' + '&#64;';
+				addy4abdfd2c86d6dd8f18ef5d1eed9c3e92 = addy4abdfd2c86d6dd8f18ef5d1eed9c3e92 + 'schl&#117;&#101;ss&#101;lh&#101;rg&#105;sw&#105;l' + '&#46;' + 'ch';
+				var addy_text4abdfd2c86d6dd8f18ef5d1eed9c3e92 = '&#105;nf&#111;' + '&#64;' + 'schl&#117;&#101;ss&#101;lh&#101;rg&#105;sw&#105;l' + '&#46;' + 'ch';document.getElementById('cloak4abdfd2c86d6dd8f18ef5d1eed9c3e92').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy4abdfd2c86d6dd8f18ef5d1eed9c3e92 + '\'>'+addy_text4abdfd2c86d6dd8f18ef5d1eed9c3e92+'<\/a>';
+		</script></a></div>
+</div>
+
+
+<p style="text-align: center;font-size: 12px;margin: 0 auto;color: #BBBABA;">
+  <a href="http://www.socialcom.ch" target="blank" rel="index, follow" style="color: #BBBABA;">© SocialCom 2017</a></p>
+<!--
+<div class="footer-wrapper">
+<div class="footer-left">
+<table style="color:white;">
+  <tr>
+    <th style="text-align: left;">Öffnungszeiten</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Montag bis Freitag:</td>
+    <td>06.00 - 23.30</td>
+  </tr>
+  <tr>
+    <td>Samstag:</td>
+    <td>08.00 - 23.30</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 8px;">Sonn- und Feiertage:  </td>
+    <td>08.00 - 22.00</td>
+  </tr>
+</table>
+    </div>
+<div class="footer-right">
+Kontakt
+<br>-
+<br>-
+<br>-
+</div></div>
+--></div>
+
+			<!--<p class="pull-right">
+				<a href="#" id="back-top">
+					Back to Top				</a>
+			</p>
+			<p>
+				&copy; 2019 Gasthaus Schlüssel Hergiswil			</p>-->
+		</div>
+	</footer>
+	
+	
+	
+	<script src="/templates/protostar/js/photoswipe.js"></script>
+	<script src="/templates/protostar/js/photoswipe-ui-default.js"></script>
+	<script src="/templates/protostar/js/schluessel.js"></script>
+	
+	
+	
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+       <!-- Container that holds slides. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+  
+</body>
+</html>
